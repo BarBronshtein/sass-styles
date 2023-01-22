@@ -1,0 +1,11 @@
+#MessageBoxWindow {
+    #controlCell3Container {
+        >div>.row>.col-12 {
+            flex: 0 0 50% !important;
+
+            &:last-child {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}

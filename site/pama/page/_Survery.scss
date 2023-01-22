@@ -1,0 +1,81 @@
+#TafnitCore_SaaSServer_Survey_UI_Survey {
+
+    & .x-footer div[uxid=cSubmit] button.x-button.s-button{
+        background: #BD2E39 !important;
+    }
+
+   & .xstyle-freehandhtml-wrapper center{
+      color: #BD2E39 !important;
+      border-color: #BD2E39 !important;
+
+   }
+    & .surveyTitle{
+    
+        background: #BD2E39 !important;
+    
+     }
+
+     & .xstyle-textcontrol-wrapper {
+
+
+        & input.k-textbox:active,
+        & input.k-textbox:focus{
+          border: 1px solid #BD2E39 !important;
+        } 
+     
+     }
+
+    }
+
+
+    .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
+        padding: 0 !important;
+    
+        .k-widget.k-window:has(#MessageBoxWindow) {
+    
+            border: 1px solid #BD2E39 !important;
+            box-shadow: 0px 0px 8px rgba(139, 7, 7, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
+    
+          
+            & #MessageBoxWindow{
+    
+              
+          
+              & #ctrlSectionMainSection{
+            
+                
+                & div{
+                 
+    
+                     & .x-fa-warning{
+                        &::before{
+    
+                            color: #BD2E39 !important;
+    
+                        }
+                     }
+                }
+              }
+           & .x-fa-info{
+            color: #BD2E39;
+          }
+          
+          & .x-icons.x-fa-question {
+            color: #BD2E39;
+          }
+          
+          & .x-fa-error{
+            color: #BD2E39 ;
+          }
+          
+        
+          & button{
+            background: #BD2E39 !important;
+              &:hover{
+                background: #BD2E39 !important;
+              }
+            }
+          
+            }
+          }
+        }

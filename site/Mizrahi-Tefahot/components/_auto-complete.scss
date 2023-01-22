@@ -1,0 +1,35 @@
+$autocomplete-input-background: #ccc !default;
+$autocomplete-input-border-radius: 5px !default;
+$autocomplete-input-border: 1px solid #f00 !default;
+$autocomplete-input-border-top:0 !default;
+$autocomplete-input-border-left:0 !default;
+$autocomplete-input-border-right:0 !default;
+$autocomplete-input-border-bottom:1px solid #ccc !default;
+$autocomplete-input-color: #fff !default;
+
+.k-autocomplete {
+    border-radius: $autocomplete-input-border-radius;
+    border: 0;
+
+    &.k-state-border-down {
+        .k-input {
+            border-radius: $autocomplete-input-border-radius;
+        }
+    }
+
+    &.k-state-focused {
+        border-radius: $autocomplete-input-border-radius;
+    }
+
+    .k-textbox {
+        background: $autocomplete-input-background !important;
+        border-radius: $autocomplete-input-border-radius;
+        border: $autocomplete-input-border;
+        border-top: $autocomplete-input-border-top;
+        border-left: $autocomplete-input-border-left;
+        border-right: $autocomplete-input-border-right;
+        border-bottom: $autocomplete-input-border-bottom;
+        color: $autocomplete-input-color;
+    }
+}
+

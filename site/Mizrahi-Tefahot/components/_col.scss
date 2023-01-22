@@ -1,0 +1,23 @@
+$row-min-height:150px !default;
+$row-background-color:#fff !default;
+$row-margin:5px !default;
+$row-margin-bottom:20px !default;
+$row-padding:10px !default;
+$row-border-radius:20px !default;
+$row-box-shadow:0 2px 9px 0 rgba(0, 45, 65, 0.08) !default;
+
+
+mainbody {
+    margin-top: 150px !important;
+    .row {
+        min-height: $row-min-height;
+        background-color: $row-background-color;
+        box-shadow: $row-box-shadow;
+        border-radius: $row-border-radius;
+        padding: $row-padding;
+        margin: $row-margin;
+        margin-bottom: $row-margin-bottom;
+    }
+
+
+}

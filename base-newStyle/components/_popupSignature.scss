@@ -1,0 +1,91 @@
+@use '../variables/masterVariable' as *;
+
+
+#SignWindow ,.xstyle-signature-wrapper {
+    height: 85%;
+
+    #signatureFrame , .x-signatureFrame {
+        display: block;
+        height: 95%;
+        width: 100%;
+        direction: ltr;
+
+        img{
+            display:inline-block;
+        }
+        #toolbarSignatureFrame {
+            display: block;
+            width: 100%;
+            height: 35px;
+
+            >a {
+                float: right;
+            }
+
+            .signatureColorPicker {
+                border-radius: 50%;
+                background-color: red;
+                width: 18px;
+                height: 18px;
+                margin-left: 10px;
+                float: left;
+                margin-top: 9px;
+                cursor: pointer;
+
+                &.black {
+                    background-color: black;
+                }
+
+                &.blue {
+                    background-color: blue;
+                }
+
+                &.red {
+                    background-color: red;
+                }
+            }
+        }
+
+        .x-signature-canvas {
+            position: relative;
+            width: 99%;
+            height: 90%;
+            margin: 2px;
+            padding: 0;
+            display: block;
+            border-top: 1px solid #ccc;
+            border-bottom: 3px dashed #ccc;
+        }
+    }
+}
+
+.GraphicalSignaturePlaceHolders,
+.GraphicalSignaturePlaceHoldersSign {
+    border: 1px solid black;
+    display: inline-block;
+    width: 100%;
+    .x-popup_signatureImg {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.k-ltr {
+    .signatureColorPicker {
+        float: right;
+    }
+}
+
+.signatureUploadBg{
+    margin-top: 5px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+    
+    span{
+        color: #010101;
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,50 @@
+@use '../variables/masterVariable' as *;
+
+
+.k-window {
+    border-top-left-radius: $window-border;
+    border-top-right-radius: $window-border;
+    border-bottom-left-radius: $window-border;
+    border-bottom-right-radius: $window-border;
+
+    @media screen and (max-width:1200px) {
+        width: $window-width-query-max768 !important;
+    }
+
+    .k-window-titlebar {
+        background: $window-background;
+        border-top-left-radius: $window-border;
+        border-top-right-radius: $window-border;
+    }
+
+    .k-window-actions {
+        .k-button {
+            color: $window-color !important;
+
+            &.k-state-hover {
+                border-color: transparent !important;
+                background: 0 0 !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    .kendoToolbarHeader {
+        background: $window-kendoToolbarHeader-background !important;
+        border: $window-kendoToolbarHeader-border !important;
+    }
+
+    header {
+        background: $window-background-header !important;
+        border-radius: 0;
+
+        &.navbar-fixed-top {
+            z-index: 1030!important;
+        }
+    }
+
+    .pageContainer {
+        margin: $window-margin;
+    }
+}
+

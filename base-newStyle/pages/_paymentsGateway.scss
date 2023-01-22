@@ -1,0 +1,27 @@
+@use '../variables/masterVariable' as *;
+
+
+.iconOnly {
+    .k-button {
+        background: transparent !important;
+        border: none !important;
+        color: black !important;
+
+        .k-icon {
+            font-size: 40px !important;
+        }
+
+        &:hover {
+            box-shadow: none !important;
+        }
+
+        &:active {
+            box-shadow: none !important;
+        }
+    }
+}
+
+.rowIcons{
+    height: 75vh;
+    align-items: center;
+}

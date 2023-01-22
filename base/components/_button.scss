@@ -1,0 +1,19 @@
+@use '../variables/masterVariable' as *;
+
+.k-button {
+  background: $btn-background;
+  
+  transition: 0.2s all;
+  font-weight: $btn-font-weight;
+
+  &:focus {
+      box-shadow: $btn-focus-box-shadow;
+      border-color: $btn-focus-border-color;
+  }
+
+  &:hover {
+      background: $btn-background-hover;
+      color: map-get($map: $Colors, $key: button-important-bg );
+  }
+}
+

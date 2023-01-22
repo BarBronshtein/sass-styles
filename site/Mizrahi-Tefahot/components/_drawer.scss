@@ -1,0 +1,80 @@
+$drawer-background-color:#575757 !default;
+$drawer-icon-color:#ff0000 !default;
+$drawer-color:#fff !default;
+$drawer-popUpWindowCls-color:#2e2e2e !default;
+
+.k-drawer .k-drawer-items *:not(.popUpWindowCls * , input.k-textbox , .DrawerItem-icon){
+    color: $drawer-color !important;
+}
+
+.k-drawer {
+    border: 0 !important;
+    background: $drawer-background-color !important;
+
+    .k-drawer-items {
+        // * {
+        //     color: $drawer-color !important;
+        // }
+
+        // .popUpWindowCls {
+            
+
+        //     * {
+        //         color: $drawer-popUpWindowCls-color !important;
+        //     }
+        // }
+
+        .k-drawer-item {
+            background-image: none !important;
+
+            &.k-state-selected {
+                background: none !important;
+            }
+        }
+    }
+
+    .k-panelbar {
+        .k-item {
+            background: $drawer-background-color !important;
+
+            .k-link {
+                &.k-state-focused {
+                    box-shadow: none !important;
+                    border: 0 !important;
+                }
+
+                &.k-header {
+                    color: $drawer-color !important;
+                    background-image: none !important;
+                    background: $drawer-background-color !important;
+                }
+            }
+
+            .k-panel {
+                .k-item {
+                    background: $drawer-background-color !important;
+
+                    .k-link {
+                        &.k-state-hover {
+                            background: none !important;
+                            font-weight: bold !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//fix ie expanded
+
+.k-drawer-expanded {
+    .k-drawer {
+
+        @media all and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+            width: 280px;
+        }
+    }
+}
+

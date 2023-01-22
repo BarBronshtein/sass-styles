@@ -1,0 +1,43 @@
+@import '../variables/masterVariable' ;
+
+.k-datepicker {
+    background: $date-picker-background;
+
+    .k-picker-wrap {
+        background: $date-picker-background;
+        border: $date-picker-border;
+
+        .k-input {
+            background: $date-picker-background;
+            color: $date-picker-input-color;
+        }
+
+        .k-select {
+            color: $date-picker-icon-color;
+            border-color: $date-picker-icon-border-color;
+            background: $date-picker-icon-background;
+        }
+    }
+}
+
+/*mobile*/
+
+.x-datePicker-mobile {
+    background: $date-picker-background;
+    color: $date-picker-input-color;
+    border: $date-mobile-border;
+    border-bottom: $date-mobile-border-bottom !important;
+    border-radius: 0 !important;
+}
+
+
+
+/*mobile*/
+
+.x-datePicker-mobile {
+    background: $date-picker-background;
+    color: $date-picker-input-color;
+    border: $date-mobile-border;
+    border-bottom: $date-mobile-border-bottom !important;
+
+}

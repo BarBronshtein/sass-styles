@@ -1,0 +1,66 @@
+@use '../variables/masterVariable' as *;
+
+
+.k-window {
+    margin-top: 15px;
+    #watermark{
+        display:none;
+    }
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        footer {
+            position: absolute;
+        }
+
+        .x-pagePopup {
+            margin: 0!important;
+        }
+
+    }
+
+    footer {
+        z-index: 10003;
+
+
+    }
+
+    .k-window-content {
+        header {
+            position: relative;
+        }
+    }
+    .pageContainer.x-pagePopup {
+        height: auto!important;
+    }
+}.k-window {
+    margin-top: 15px;
+    #watermark{
+        display:none;
+    }
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        footer {
+            position: absolute;
+        }
+
+        .x-pagePopup {
+            margin: 0!important;
+        }
+
+    }
+
+    footer {
+        z-index: 10003;
+
+
+    }
+
+    .k-window-content {
+        header {
+            position: relative;
+        }
+    }
+    .pageContainer.x-pagePopup {
+        height: auto!important;
+    }
+}

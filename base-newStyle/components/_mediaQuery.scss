@@ -1,0 +1,167 @@
+@use '../variables/masterVariable' as *;
+
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+/*ios height calc fix*/
+
+@supports (-webkit-touch-callout: none) {
+    mainbody {
+        padding-top: 49px !important;
+        padding-bottom: 49px !important;
+
+        &.headerNone {
+            padding-top: 0px !important;
+        }
+    }
+}
+
+/*ie fix*/
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+    /*fix switch*/
+    .k-rtl {
+        .k-switch {
+            &.k-switch-on {
+                .k-switch-handle {
+                    left: 27px !important;
+                }
+            }
+        }
+    }
+
+    .k-switch {
+        &[dir="rtl"] {
+            &.k-switch-on {
+                .k-switch-handle {
+                    left: 27px !important;
+                }
+            }
+        }
+
+    }
+
+    /*fix lookup*/
+    .x-input-group-text {
+        height: 32px !important;
+    }
+
+    /*fix menu*/
+    .xstyle-xmenu-wrapper {
+        .k-menu-group.k-popup {
+            min-width: 200px;
+        }
+    }
+
+    /*lookup*/
+    .xstyle-lookup-wrapper {
+
+        .x-input-group-text,
+        .x-selection-lookup-button {
+            height: 100% !important;
+        }
+    }
+
+}
+
+/*min width 768 --tablets*/
+@media screen and (min-width:$breakpoint-sm) {
+    .xstyle-large-grid{
+        .k-grid {
+            .k-grid-content{
+                max-height: 40vh;
+            }
+        }
+    }
+}
+
+/*min width 992 --desktop*/
+@media screen and (min-width:$breakpoint-lg) {
+    .xstyle-large-grid{
+        .k-grid {
+            .k-grid-content{
+                max-height: 45vh;
+            }
+        }
+    }
+}
+
+/*min width 992 --desktop*/
+@media screen and (min-width:$breakpoint-xl) {
+    .xstyle-large-grid{
+        .k-grid {
+            .k-grid-content{
+                max-height: 49vh;
+            }
+        }
+    }
+}
+
+/*max width 768 --tablets*/
+@media screen and (max-width:$breakpoint-md) {
+
+    .rating-container {
+        font-size: 1.4em !important;
+    }
+
+    #TafnitCore_System_UI_App_PortalNew {
+        .x-listview-item {
+            width: 90px;
+        }
+    }
+
+    [xid="controlfhWelcome"],
+    [xid="controlfhGoodbye"] {
+        table {
+            display: block;
+
+            td {
+                display: block;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+        }
+    }
+}
+
+/*max width 576 -- phones*/
+@media screen and (max-width:$breakpoint-sm) {
+    #header {
+        >span {
+            width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .k-window  {
+        .pageContainer{
+            padding: 0;
+        }
+    }
+    .xLookupSplit {
+        right: 70%!important;
+    }
+    
+    .xLookupFullDescription{
+        right: 71%!important;
+    }
+
+    .k-stepper  {
+        .k-step-label {
+            .k-step-text{
+                white-space: break-spaces!important;
+                max-width: calc(5em - 20px)!important;
+            }
+        }
+        
+    }
+}

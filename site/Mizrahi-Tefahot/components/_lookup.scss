@@ -1,0 +1,50 @@
+$lookup-border-bottom-color:1px solid #464247 !default;
+$lookup-background-color:#fafafa !default;
+$lookup-color:#000 !default;
+$lookup-xinput-group-color:#000 !default;
+
+.xstyle-lookup-wrapper,
+.xstyle-lookuptafnit-wrapper {
+    .x-lookup {
+        .x-description-lookup {
+            .x-description-input {
+                border: 0 !important;
+                border-bottom: $lookup-border-bottom-color !important;
+                border-radius: 0 !important;
+            }
+        }
+
+        .x-selection-lookup {
+            .k-textbox:focus {
+                box-shadow: none !important;
+            }
+
+            .x-form-control {
+                border: 0;
+                border-bottom: $lookup-border-bottom-color;
+                border-radius: 0;
+                background: $lookup-background-color;
+                color: $lookup-color !important;
+            }
+
+            .x-open-lookup {
+                .x-selection-lookup-button {
+                    border: 0 !important;
+                    border-bottom: $lookup-border-bottom-color !important;
+                    border-radius: 0;
+
+                    .x-input-group-text {
+                        background: $lookup-background-color;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+
+        .x-input-group-text {
+            height: 36px !important;
+            color: $lookup-xinput-group-color !important;
+        }
+    }
+}
+

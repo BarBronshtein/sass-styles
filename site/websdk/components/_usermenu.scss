@@ -1,0 +1,33 @@
+@use '../variable/variable' as *;
+
+#TafnitCore_System_UI_App_WebSDK_UserMenu{
+
+
+    & .xstyle-kicon-wrapper{
+        
+        & .k-icon.icon-xtab-language{
+
+            top: 11px !important;
+        }
+
+    }
+
+    & .xstyle-idropdownlist-wrapper{
+          border: none !important;
+        & div.col-33{
+            flex: 0 0 55% !important;
+            max-width: 55% !important;
+            top: 13px !important;
+
+            & label{
+                padding-right: 0px !important;
+            }
+        }
+
+        & div.col-67{
+            flex: 0 0 45% !important;
+            max-width: 45% !important;
+            top: 5px;
+        }
+    }
+}

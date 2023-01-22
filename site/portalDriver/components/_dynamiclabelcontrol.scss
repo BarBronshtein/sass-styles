@@ -1,0 +1,203 @@
+@use '../varible/varible' as *;
+
+.titlePage h4{
+    font-family: 'Heebo ' !important;
+    font-style: normal ;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 140%;
+    text-align: center !important;
+    color: #000000 !important;
+    margin-bottom: 10px !important;
+    height: auto !important; 
+}
+
+
+.xstyle-dynamiclabelcontrol-wrapper{
+
+    &.textPage{
+        margin-top: -26px;
+        & span{
+            font-size: 12px !important;
+            line-height: 130% !important;
+            color: #AAAAAA !important;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            font-weight: 400 !important;
+        }
+    }
+
+    & span{
+    @extend %MainTitle;
+    
+    }
+}
+
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_HomePage{
+
+    & .lCarModel{
+         
+        & span{
+            margin-top: 30px !important;
+            margin-bottom: 0px !important;
+            line-height: 100% !important;
+            font-size: 20px !important;
+            font-weight: 400 !important;
+            color: #000000 !important;
+
+        }
+    
+    }
+    & .CurrentMilage{
+        & span{
+            margin-bottom: 0 !important;
+            color: #808080 !important;
+            font-size: 30px !important;
+            font-weight: 400 !important;
+            line-height: 130% !important;
+        }
+    }
+    & .LastUpdate2{
+        & span{
+            color: #808080 !important;
+            font-size: 12px !important;
+            font-weight: 400 !important;
+            line-height: 100% !important;
+            margin-bottom: 30px !important;
+        }
+    }
+
+    & .lLicensePlate{
+        & span{
+            font-weight: 800 !important;
+            font-size: 24px !important;
+            color: #000000 !important;
+            margin-bottom: 20px;
+        }
+}
+
+
+}
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportFiles{
+
+
+& .xstyle-dynamiclabelcontrol-wrapper{
+   
+   &.textBottom{
+       & span {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 100% !important;
+        text-align: right;
+        color: #000000 !important;
+        text-align: right !important;
+        margin-bottom: 0 !important;
+
+    }
+   }
+
+}
+}
+
+.secondaryTitle{
+    & span{
+        color: #BBBBBB !important;
+        font-size: 12px !important;
+        font-weight: 400 !important;
+    }
+}
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AppointmentSummary {
+
+
+.secondaryTitleText{
+
+    & .secondaryText span.x-dynamic-label-control.s-dynamic-label-control{
+        margin-bottom: 0 !important;
+    }
+}
+
+}
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination{
+
+    & .secondaryText2{
+
+        & span.x-dynamic-label-control {
+            margin-top: 20px !important;
+            color: #39B54A  !important;
+        }
+    }
+}
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AppointmentSummary,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact{
+   & .secondaryText{
+
+
+    & span{
+
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 130% !important;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+    color: black !important;
+   }
+}
+  
+& .secondaryText2{
+
+    &.SummaryDay,
+    &.SummaryArea,
+    &.SummaryTime{
+       & .s-control-content-wrapper{
+        text-align: center !important;
+       }
+       & span{
+           margin-bottom: 0 !important;
+       }
+    }
+    & span{
+
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 130% !important;
+    width: 75%;
+    margin: auto;
+ 
+   
+   }
+}
+}
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination{
+    & .secondaryText2{
+        text-align: center;
+        & span{
+         margin: 0 !important;
+        }    
+
+    }
+
+    & .secondaryText{
+        text-align: center;
+        & span{
+         font-size: 14px !important;
+        }    
+
+    }
+}
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportFiles{
+    & .titlePage  h4{
+
+        margin-bottom: 20px !important;
+
+
+    }
+}

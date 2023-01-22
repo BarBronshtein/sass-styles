@@ -1,0 +1,14 @@
+@use '../variables/masterVariable' as *;
+
+.xstyle-upload-wrapper {
+    .k-dropzone {
+        padding: 5px 0px;
+    }
+
+    .k-upload-files {
+        border-color: $upload-border-color;
+        .k-file{
+            border-color: $upload-border-color;
+        }
+    }
+}

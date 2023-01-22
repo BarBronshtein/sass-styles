@@ -1,0 +1,155 @@
+.k-chat {
+
+    .k-phone,
+    .k-instagram,
+    .k-facebook,
+    .fa-user {
+        background: #385898;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0px;
+        top: 6px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .k-bubble {
+        margin-right: 35px;
+        background-color: #385898 !important;
+        border-radius: 5px 0px 5px 5px !important;
+        border-color: #fff !important;
+        direction: rtl;
+
+        &.info {
+            background-color: rgba(225, 245, 254, 0.922) !important;
+            border-radius: 0px 5px 5px 5px !important;
+        }
+    }
+
+    .k-message-list-content {
+        >.k-message-group {
+            display: none;
+
+        }
+    }
+
+    .k-instagram {
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    }
+
+    .k-phone {
+        background: #28a745;
+    }
+
+    .k-message-time {
+        opacity: 1 !important;
+        top: 130%;
+        right: 0 !important;
+        left: auto !important;
+    }
+
+    .right {
+        left: 0px;
+        right: auto;
+
+        .k-bubble {
+            &:after {
+                content: '';
+                position: absolute;
+                right: 34px;
+                top: 42%;
+                width: 0;
+                height: 0;
+                border: 15px solid transparent;
+                border-left-color: #385898;
+                border-right: 0;
+                border-bottom: 0;
+                margin-top: -4px;
+                margin-right: -8px;
+            }
+        }
+    }
+
+    .left {
+        .k-bubble {
+            margin-left: 35px;
+            margin-right: 0px;
+            background-color: #28a745 !important;
+            border-radius: 0px 5px 5px 5px !important;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 34px;
+                top: 42%;
+                width: 0;
+                height: 0;
+                border: 15px solid transparent;
+                border-right-color: #28a745;
+                border-left: 0;
+                border-bottom: 0;
+                margin-top: -4px;
+                margin-left: -8px;
+            }
+        }
+
+        .k-message-time {
+            right: auto !important;
+            left: 0 !important;
+        }
+    }
+
+    .k-message-box {
+        input {
+            order: 1;
+            direction: rtl;
+        }
+    }
+
+    .k-message-alert {
+        margin: auto;
+    }
+
+    .k-card-list {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .k-message-group {
+        max-width: 100% !important;
+
+        &.k-alt {
+            align-self: flex-start !important;
+        }
+    }
+}
+
+.k-rtl,
+[dir="rtl"] {
+    .k-message-group {
+        &:not(.k-alt) {
+            align-items: flex-end;
+        }
+
+        &.k-alt {
+            text-align: right !important;
+        }
+    }
+}
+
+.k-ltr,
+[dir="ltr"] {
+    .k-message-group {
+        &:not(.k-alt) {
+            align-items: flex-end;
+        }
+
+        &.k-alt {
+            text-align: left !important;
+        }
+    }
+}

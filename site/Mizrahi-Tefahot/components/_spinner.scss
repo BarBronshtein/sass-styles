@@ -1,0 +1,15 @@
+$spinner-triple-color-1:#32323a  !default;
+$spinner-triple-color-2:#171957 !default;
+$spinner-triple-color-3:#BD2E39  !default;
+
+.triple-spinner {
+    border-top: $spinner-triple-color-1;
+
+    &::before {
+        border-top-color: $spinner-triple-color-2;
+    }
+
+    &::after {
+        border-top-color: $spinner-triple-color-3;
+    }
+}

@@ -1,0 +1,28 @@
+@use '../variables/masterVariable' as *;
+
+header {
+    background-image: none!important;
+    &.k-header {
+       
+
+
+        .k-toolbar {
+          
+            border: $header-border;
+            color: $header-color;
+            background-image: none!important;
+        }
+    }
+
+    // .popUpWindowCls {
+    //     position: fixed;
+    //     left: 0;
+    //     width: 100% !important;
+    //     max-width: 500px;
+
+    //     @media only screen and (max-width:768px) {
+    //         max-width: 250px;
+    //     }
+    // }
+}
+

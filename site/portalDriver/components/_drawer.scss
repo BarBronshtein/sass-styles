@@ -1,0 +1,109 @@
+
+
+.k-drawer-container {
+
+
+    & drawer-item-container{
+        &:active,
+        &:focus-within{
+            background: #E6E6E6 !important;
+            & span.x-dynamic-label-control.s-dynamic-label-control{
+                font-weight: 700 !important;
+           }
+
+           & span.k-icon.fas,
+           & span.k-icon.far{
+            color: #30973E !important;
+           }
+       }
+       
+    }
+    & .k-overlay{
+        background: rgb(11, 36, 15) !important;
+        opacity: 0.9 !important;
+    }
+    & .k-widget.k-drawer.hide-scroller{
+        position: absolute !important;
+        right: 10px !important;
+        top: 10px !important;
+        height: auto !important;
+        border-radius: 30px 0px !important;
+    }
+
+    & .drClose{
+        position: absolute !important;
+
+        & span{
+            font-size: 13px !important;
+            color: #000000 !important;
+        }
+    }
+
+    & .drTitle{
+
+        & span.k-icon{
+            display: none !important;
+        }
+        & span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px !important;
+            line-height: 140% !important;
+            text-align: center !important;
+            color: #000000 !important;
+            width: 90% !important;
+           white-space: break-spaces !important; 
+           display: block;
+           margin: auto;
+        }
+        
+
+        & .drawer-item-control-wrapper  {
+            text-align: center !important;
+            background: #FFFFFF !important;
+            padding: 20px !important;
+            border-bottom: 1px solid #DFDFDF !important;
+        }
+    }
+
+    & .drList {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 15px 20px;
+        gap: 10px; 
+        width: 100% !important;
+        height: 51px !important;
+        background: #FFFFFF !important;
+        border-bottom: 1px solid #DFDFDF !important;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+
+        & span{
+
+            &.k-icon{
+            right: 3px;
+            top: 12.5%;
+            color: #9CDAA5 !important;
+            font-size: 20px;
+
+            }
+        }
+        & span.x-dynamic-label-control{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400 !important;
+            font-size: 16px !important;
+            line-height: 130% !important;
+            color: #000000 !important;
+            padding-right: 0;
+            margin-top: 12px !important;
+        }
+
+    }
+}

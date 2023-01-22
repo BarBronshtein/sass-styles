@@ -1,0 +1,82 @@
+$textbox-background:#ccc !default;
+$textbox-border:0 !default;
+$textbox-border-top:0 !default;
+$textbox-border-bottom:1px solid #000 !default;
+$textbox-border-left:0 !default;
+$textbox-border-right:0 !default;
+$textbox-color:rgb(0, 0, 0) !default;
+$textbox-radius:0 !default;
+$textbox-box-shadow:none !default;
+
+.x-text-control-container {
+    .k-floating-label-container {
+        span {
+            &.k-textbox {
+                border-width: 0 !important;
+                border-bottom: 0px !important;
+                margin: 0;
+            }
+        }
+
+        input {
+            &.k-textbox {
+                background: $textbox-background;
+                border: $textbox-border !important;
+                border-top: $textbox-border-top !important;
+                border-bottom: $textbox-border-bottom !important;
+                border-left: $textbox-border-left !important;
+                border-right: $textbox-border-right !important;
+                color: $textbox-color;
+                border-radius: $textbox-radius !important;
+                margin: 0;
+
+                &:focus {
+                    box-shadow: $textbox-box-shadow;
+                }
+            }
+        }
+
+    }
+
+    >input {
+        &.k-textbox {
+            background: $textbox-background !important;
+            border: $textbox-border;
+            border-top: $textbox-border-top;
+            border-bottom: $textbox-border-bottom;
+            border-left: $textbox-border-left;
+            border-right: $textbox-border-right;
+            color: $textbox-color;
+            border-radius: $textbox-radius;
+
+            &:focus {
+                box-shadow: $textbox-box-shadow;
+            }
+        }
+    }
+}
+
+.k-daterangepicker {
+    input {
+        &.k-textbox {
+            background: $textbox-background !important;
+            border: $textbox-border;
+            border-top: $textbox-border-top;
+            border-bottom: $textbox-border-bottom;
+            border-left: $textbox-border-left;
+            border-right: $textbox-border-right;
+            color: $textbox-color;
+            border-radius: $textbox-radius;
+
+            &:focus {
+                box-shadow: $textbox-box-shadow;
+            }
+        }
+    }
+}
+
+.k-filter-menu-container {
+    @extend .x-text-control-container;
+}
+
+

@@ -1,0 +1,1485 @@
+
+
+@use '../variable/variable' as *;
+
+#TafnitCore_System_UI_App_WebSDK_DevPage{
+  & input{
+    text-align: left !important;
+  }
+}
+
+.k-widget.k-window.k-rtl.k-display-inline-flex:has(#MessageBoxWindow){
+
+  height: auto !important;
+  padding-bottom: 35px !important;
+ 
+
+
+  & .k-window-titlebar.k-hstack{
+    background: none !important;
+    top: 0;
+    left: 0;
+  }
+
+
+}
+
+.k-content:has(#TafnitCore_Salary_UI_RequestHistory){
+  & .k-widget.k-window.k-rtl.k-display-inline-flex{
+
+        height: auto !important;
+        padding-top: 15px !important;
+
+        & .k-window-actions.k-hstack{
+          margin-top: -33px;
+          margin-left: -10px;
+        }
+
+
+        & #TafnitCore_Salary_UI_RequestHistory{
+
+          & header{
+            padding-right: 15px;
+            padding-left: 15px;
+
+
+            & #tbbTitle{
+              height: 90px !important;
+              -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              border-radius: 10px !important;
+              width: 100%;
+              margin-left: 0px;
+              background-color: #FFFFFF !important;
+
+              & span{
+                color: #7B098B !important;
+                font-weight: 400 !important;
+                font-size: 30px !important;
+                line-height: 30px !important;
+                height: -webkit-fit-content !important;
+                height: -moz-fit-content !important;
+                height: fit-content !important;
+                margin: auto !important;
+                margin-right: 20px !important;
+              }
+            }
+
+            & .k-spacer{
+              display: none !important;
+            }
+
+            div.k-button-group {
+              height: 90px !important;
+              background: #FFFFFF !important;
+              -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              border-radius: 10px !important;
+              padding-right: 30px !important;
+              padding-left: 10px !important;
+              margin-left: 0px !important;
+              margin-right: 20px !important;
+
+              & a.k-button {
+                -webkit-box-shadow: 0px 4px 4px rgb(123 9 141 / 20%), 0px 0px 8px rgb(123 9 141 / 20%) !important;
+                box-shadow: 0px 4px 4px rgb(123 9 141 / 20%), 0px 0px 8px rgb(123 9 141 / 20%) !important;
+                border-radius: 10px !important;
+                margin-left: 20px !important;
+            }
+          }
+
+            & .k-toolbar{
+              
+              display: grid;
+              grid-template-columns: 85% auto;
+              padding-right: 0;
+
+              &::before{
+                content: none !important;
+              }
+            }
+
+
+          }
+          & mainbody{
+            padding-right: 20px;
+            padding-left: 20px;
+
+       
+        
+          }
+        }
+
+     
+    }
+}
+
+.k-content:has(#TafnitCore_Salary_UI_RequestBonus),
+.k-content:has(#TafnitCore_Salary_UI_RequestRaise),
+.k-content:has(#TafnitCore_Salary_UI_RequestPromotion){
+  & .k-widget.k-window.k-rtl.k-display-inline-flex{
+    max-height:  98% !important;
+    height: auto !important;
+}
+
+& .k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack{
+  background: none !important;
+}
+
+& .k-widget.k-window:has(#MessageBoxWindow) #MessageBoxWindow{
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
+}
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest){
+  
+  & .border:has( div[uxid="rIncome"].d-none){
+
+        color: #7B098B;
+    & span.k-icon{
+      transform: rotate(180deg) !important;
+
+    }
+      
+  }
+
+  & .kIncome{
+    position: absolute;
+    top: -28px;
+    left: -18%;
+
+    & span.k-icon{
+      font-size: 20px;
+      color:#7B098B !important ;
+
+      &::before{
+        transform: rotate(180deg) !important;
+      }
+
+    }
+  }
+
+  & .checkBox-Income{
+    height: 58px;
+    background: #F5F5F5;
+    padding-right: 20px;
+    margin-right: 10px;
+
+    & .x-self-container{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+      & .x-radio-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
+        & .x-RBComp{
+          padding: 0px 0px 0px 15px !important;
+        }
+      }
+    }
+  }
+& .k-widget.k-window{
+  height: 98% !important;
+  top: 8px !important;
+  padding: 0 !important;
+
+
+  & .k-window-titlebar{
+    position:absolute;
+    z-index: 1600;
+    left: 6px;
+  }
+
+  & .k-window-content{
+    overflow: auto;
+    overflow-x: hidden !important;
+    padding: 0px 15px 10px;
+  }
+}
+
+}
+
+#TafnitCore_Salary_UI_SubmitRequest .k-grid-content.k-auto-scrollable > table > tbody > tr td{
+  height: 50px !important;
+}
+
+#TafnitCore_Salary_UI_SubmitRequest div.k-button-group.k-toolbar-last-visible{
+  background: white !important;
+
+
+}
+
+#TafnitCore_Salary_UI_SubmitRequest{
+  mainbody{
+    margin-top: -4px  !important;
+    padding: 0 !important;
+  
+
+  }
+
+  
+  & .xstyle-gridv4-wrapper {
+    & thead{
+    
+           & th{
+             color: #7B098B !important;
+             font-size: 14px !important;
+             font-weight: 500 !important;
+
+             &:nth-child(1){
+               color: #7B098B !important;
+               font-size: 16px !important;
+               font-weight: bold !important;
+             }
+           }
+     }
+   }
+& .page-salary-first-table{
+
+
+  & .xstyle-gridv4-wrapper {
+   & thead{
+          & th:nth-child(1){
+            width: 21% !important;
+          }
+          & th{
+            color: #7B098B !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            &:nth-child(1){
+              color: #7B098B !important;
+              font-size: 16px !important;
+              font-weight: bold !important;
+            }
+          }
+    }
+  }
+}
+
+
+  & #rEmployee{
+    height: 90px !important;
+    -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+    box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+    border-radius: 10px !important;
+    width: 100%;
+    margin-left: 0px;
+    background-color: #FFFFFF !important;
+}
+
+& .k-spacer{
+  display: none;
+}
+& .k-toolbar.k-widget.k-toolbar-resizable{
+
+    margin-top: 38px !important;
+    display: grid;
+    grid-template-columns: 67.1% 14% 18% ;
+    padding-right: 0;
+    &::before{
+      display: none !important;
+    }
+  
+
+   
+}
+
+& .salary-employeeDetailes{
+  & .requireDesign.xstyle-textcontrol-wrapper {
+    border-right: 5px solid #ff7a00 !important;
+  }
+& .requireDesign.xstyle-textcontrol-wrapper  > div > div.x-control-caption-wrapper.s-control-caption-wrapper{
+  border-right: none !important;
+}
+  & .moreInfo {
+    display: flex ;
+    padding-right: 0 !important;
+    margin-top: 10px !important;
+    & .xstyle-radio-wrapper{
+      top: 72%;
+      transform: translateY(-50%);
+      position: absolute;
+      margin-top: 0 !important;
+      border: none !important;
+    }
+  }
+
+  & .linkHide {
+    & .col-100{
+      border: none !important;
+    }
+    & a{
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 89%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+& #rEmployee > span > span {
+  font-weight: 400 !important;
+}
+
+ & .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-widget.k-toolbar-resizable > :nth-child(2) > span{
+       color:#7B098B !important;
+       font-weight: 400 !important;
+        font-size: 30px !important;
+        line-height: 30px !important;
+        height: fit-content !important;
+        margin: auto !important;
+        margin-right: 20px !important;
+}
+& div.k-button-group{
+
+height: 90px !important;
+background: #F5F5F5 !important;
+box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
+border-radius: 10px !important;
+padding-right: 30px !important;
+padding-left: 10px !important;
+margin-left: 0px  !important;
+margin-right: 20px !important;
+
+& a.k-button{
+    box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
+    border-radius: 10px !important;
+    margin-left: 20px !important;
+}
+}
+}
+
+#TafnitCore_xAgreements_UI_SubmitSalaryRequest,
+#TafnitCore_Salary_UI_SubmitRequest{
+
+  
+
+  & .grid-salary{
+    padding-top: 0px !important;
+    margin: 0 !important;
+   }
+
+
+
+
+  & div[uxid="bSave"]{
+
+    & button.k-button{
+      width: 150px;
+      height: 50px ;
+      background: map-get($map: $Colors, $key: bg-qube ) !important;
+      box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+      border-radius: 10px !important;
+      color: #7B098B !important;
+      text-align: inherit;
+    }
+  }
+
+& .page-salary-first-table{
+
+ max-width: 65%;
+ flex: 0 0 65%;
+
+&+div{
+  padding-left: 0 !important;
+}
+}
+
+& .grid-salary{
+
+    background: none !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+& .page-salary-first-table{ 
+
+background: map-get($map: $Colors, $key: bg-qube ) !important;
+box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+border-radius: 10px !important;
+padding-top: 15px;
+padding-bottom: 15px;
+
+}
+
+& .k-grid-content.k-auto-scrollable > table > tbody > tr{
+    border-bottom: 1px solid #F5F5F5 !important;
+    & td{
+        margin-left: 15px;
+
+        &>a>i{
+          display: inline-block;
+        }
+    }
+ 
+    &:hover{
+      height: auto !important;
+    }
+
+    & td:last-child {
+        width: 60px;
+
+    &> a{
+
+        color: #7B098B !important;
+        font-size: 20px;
+        
+    
+    }
+   }
+
+
+
+    &  td:first-child{
+        background: #FBFBFB;
+    }
+
+    & td:first-child,
+    & td:nth-child(4){
+        height: 50px !important;
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 130%;
+        color: map-get($map: $Colors, $key: text-defualt ) ;
+        padding-right: 10px;
+    }
+
+    & td:nth-child(2),
+    & td:nth-child(3){
+
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 130%;
+        color: map-get($map: $Colors, $key: text-defualt );
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
+
+
+
+
+
+& thead[role="rowgroup"]{
+
+  & tr{
+
+
+    & th:last-child{
+        width: 50px;
+    }
+  }
+}
+
+& .salary-header {
+justify-content: space-between;
+
+ & div.col-100:nth-child(1){
+    flex: 0 0 75% !important;
+    align-self: center;
+
+    & >div>div>h3{
+        color: #7B098B;
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px !important;
+        line-height: 30px;
+    }
+ }
+
+ & div:nth-child(2){
+    flex: 0 0 7%;
+ }
+
+
+}
+
+& .salary-header-button{
+ flex: 0 0 44% !important;
+ margin-left: 15px;
+  & >div >div>div>button{
+
+    width: 135px;
+    height: 50px;
+    background: #7B098D !important;
+    border-radius: 10px;
+    color: #FFFFFF !important;
+    & >span{
+        float: right;
+        font-size: 22px;
+    }
+
+  }
+
+
+}
+
+& .salary-header-icon{
+
+    width: 50px;
+height: 50px;
+background: map-get($map: $Colors, $key: bg-qube );
+box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow );
+border-radius: 10px;
+margin-left: 20px ;
+
+
+& >div>div>div{
+    text-align: end;
+
+    & >span{
+        color: map-get($map: $Colors, $key: main-color );
+        font-size: 28px;
+    }
+}
+
+}
+
+
+.salary-employeeDetailes{
+    padding: 15px;
+    box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+    padding-bottom: 4px !important;
+    & >div{
+        margin-bottom: 10px;
+    }
+
+    &>div:nth-child(2){
+        flex: 0 0 33%;
+       
+    }
+
+    & .xstyle-textcontrol-wrapper{
+      border-bottom: 1px solid map-get($map: $Colors, $key: border-color );
+        border-radius: 0px;
+        margin-right: 0;
+        border-right: none !important;
+
+          &>div>div>label{
+            color:#7E7B7B !important;
+            margin-top: 5px;
+        
+          }
+    }
+
+  &>div>div>div>div:last-child>div>div>input{
+   border: none !important;
+   background: none !important;
+   color: black !important;
+  }
+
+
+
+  &>div>div>div>div:last-child{
+    border-right: 1px solid map-get($map: $Colors, $key: border-color ) ;
+
+  
+    & label{
+      color: #7E7B7B !important;
+    }
+  }
+
+  & .xstyle-date-wrapper{
+    border-bottom: 1px solid map-get($map: $Colors, $key: border-color );
+    border-radius: 0;
+    margin-top: 5px;
+    border-right: none !important;
+
+    &>div>div.x-control-caption-wrapper.s-control-caption-wrapper{
+        text-indent: 20px;
+    }
+    &>div>div>label{
+            color: #7E7B7B !important;
+            margin-top: 5px;
+    
+    }
+    & span.k-i-calendar{
+      display: none;
+    }
+  }
+
+  & .xstyle-textcontrol-wrapper.x-readonly div:last-child input{
+    color: black !important;
+  }
+
+  & .xstyle-date-wrapper>div:nth-child(3)>div>div>span{
+    border: none !important;
+    color: map-get($map: $Colors, $key: text-defualt ) !important;
+
+    & >input{
+      padding-right: 0;
+      text-indent: 10px;
+      color: black !important;
+    }
+   }
+
+
+   & .xstyle-radio-wrapper{
+
+    margin-top: 20px;
+
+     & >div{
+        border-right: none !important;
+     }
+   }
+
+    & .requireDesign>div>div.x-control-caption-wrapper.s-control-caption-wrapper{
+             
+        border-right: 5px solid map-get($map: $Colors, $key: requier )!important;
+        text-indent: 15px;
+     
+         &>label{
+            text-indent: 0px !important;
+            color: #7E7B7B !important;
+         }
+   }
+
+}  
+
+
+
+
+.salary-changeSummary{
+
+  & td i {
+    font-size:  15px !important;
+
+  }
+  & td {
+    & input{
+      color: #000 !important;
+    }
+  }
+
+& .link-income{
+  text-align: left;
+  padding-top: 9px;
+}
+
+  &>div{
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    background: map-get($map: $Colors, $key: bg-qube );
+    box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow );
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  & .k-grid-content.k-auto-scrollable >table>tbody>tr>td:nth-child(3){
+
+   
+    padding-left: 10px;
+  }
+
+
+
+
+
+}
+
+
+.s-section-header{
+ font-family: map-get($map: $typographyVariables, $key: -font-family);
+font-style: normal;
+font-weight: 700;
+font-size: 16px !important;
+line-height: 130%;
+text-align: right;
+color: #7B098B !important;
+}
+
+
+
+& .k-grid .k-grid-content {
+  height: initial !important;
+  max-height: none;
+  overflow-y: hidden;
+}
+
+
+
+}
+
+
+
+.k-rtl.k-window-content{
+
+
+  scrollbar-face-color: #8733af;
+  scrollbar-track-color: #f3e9f8;
+  scrollbar-arrow-color: #8733af;
+
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+
+  &::-webkit-scrollbar {
+    border-radius: 10px;
+    position: absolute;
+    width: 10px;
+    
+  }
+
+
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f0f0f0;
+    margin-top: 30px !important; 
+    margin-bottom: 30px !important; 
+   
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: map-get($map: $Colors , $key: main-color );
+    border-radius: 10px;
+   
+
+
+    &:hover {
+      background:  map-get($map: $Colors , $key: main-color );
+      
+    }
+  }
+
+
+ 
+  .k-button-icon.k-icon.k-i-close{
+    font-size: 25px;
+    left: 3px;
+  }
+
+}
+.k-widget.k-window.k-rtl.k-display-inline-flex{
+ 
+  
+  top: 30px !important;
+  margin: 0 auto;
+  left: 0 !important;
+  padding-bottom: 25px;
+  right: 0 !important;
+  border: none !important;
+  
+}
+
+.k-popup.k-group.k-reset{
+  width: 213px !important;
+  border: none !important;
+
+  & .k-list-content.k-list-scroller{
+    border: none !important;
+    background-color: #FFFFFF !important;
+    border-color: white;
+  }
+
+  & .k-list-optionlabel.k-state-disabled{
+    display: none;
+  }
+
+   & li{
+    height: 40px !important;
+    background: map-get($map: $Colors, $key: bg-qube ) !important; 
+    border-bottom: 1px solid map-get($map: $Colors, $key: border-color ) !important;
+
+    &:hover{
+
+      background: #F5F5F5 !important;
+    }
+   }
+
+   & li.k-list-item.k-selected{
+     display: none !important;
+   }
+  
+}
+
+#TafnitCore_Salary_UI_RequestBonus{
+  
+  .bAddSalaray{
+
+       padding: 0 !important;
+    .xstyle-buttoncontrol-wrapper{
+      position: absolute;
+      bottom: 0px;
+
+      & button{
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+        width: 140px;
+        
+
+      }
+    }
+  }
+
+  
+  .salary-bonusInput1{
+
+    margin-top: 35px !important;
+  }
+}
+#TafnitCore_xAgreements_UI_SalaryRequestBonus,#TafnitCore_Salary_UI_RequestBonus,
+#TafnitCore_Salary_UI_RequestPromotion
+{
+
+  & .firstTitle h3.x-section-header.s-section-header{
+    font-size: 20px !important;
+  }
+  & .k-grid-content.k-auto-scrollable > table > tbody > tr > td > a > i{
+    color: #A1A3A5 !important;
+  }
+
+
+& mainbody{
+  margin-top: 35px !important;
+  padding-bottom: -8px !important;
+  margin-bottom: 5px;
+  background: white !important;
+}
+    & .xstyle-idropdownlist-wrapper{
+      label{
+        padding-right: 0px !important;
+      }
+    }
+    .firstGrid .x-section-header.s-section-header{
+      font-size: 20px !important;
+    }
+
+  .x-section-header.s-section-header{
+
+    font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 130%;
+    text-align: right;
+    color: #7B098B !important;
+  }
+
+
+  height: 95% !important;
+  width: 96%;
+   & .x-cell-header.s-cell-header{
+    font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 130%;
+    text-align: right;
+  color: #7B098B !important;
+    margin-top: 33px !important;
+   }
+
+  & .headerNone{
+   
+    box-shadow: none !important;
+   background: none !important;
+    border-radius: 10px;
+   
+     & >div{
+      background: #FFFFFF !important;
+      box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
+      border-radius: 10px !important;
+       margin: 0;
+       padding: 20px 20px;
+     }
+  }
+
+   & .salary-bonusInput,
+   & .salary-bonusInput1{
+    & > div {
+      padding: 0 !important;
+    }
+    margin-top: 20px;
+
+    & .xstyle-textareacontrol-wrapper {
+
+
+      margin-top: 5px ;
+      margin-bottom: 30px ;
+      & textarea{
+        height: 100px;
+      }
+
+
+
+    & label{
+
+      width: 100% !important;
+      border: none !important;
+      color: #000 !important;
+      padding-right: 0 !important;
+    }
+    }
+    & .xstyle-date-wrapper{
+      & input{
+        text-indent: 10px !important;
+        border-right: none !important;
+        color: #000 !important;
+        padding: 0 !important;
+
+        &::placeholder{
+          color: #ececec !important;
+        }
+      }
+    }
+
+    & .captionText.captionText2 span{
+      text-align: center !important;
+    }
+    & .captionText {
+      & span{
+        margin-top: 15px !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 130% !important;
+        color: black !important;
+      }
+    }
+   }
+
+   & div[uxid="newValue"]{
+
+
+    & .xstyle-textcontrol-wrapper{
+      border-right: none !important;
+      & input{
+        border-right: none !important;
+        color: black !important;
+        &::placeholder{
+          color: #d9d9d9 !important;
+        }
+      }
+    }
+
+   }
+   & div[uxid="gAsked"]{
+    margin-top: 20px !important;
+    margin-bottom: 80px !important;
+    & .k-grid-header{
+      border-bottom: 1px solid #F5F5F5 !important;
+      & th{
+        color:  #7B098B !important;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+   }
+   & .xstyle-buttoncontrol-wrapper {
+     & button{
+      width: 140px !important;
+      height: 37px !important;
+     }
+   }
+   & div[uxid="rFuture"]{
+          margin-top: 20px !important;
+    & div{
+      padding-right: 0 !important;
+      width: 100% !important;
+    }
+    & .k-grid-header{
+      border-bottom: 1px solid #F5F5F5 !important;
+      & th{
+        color:  #7B098B !important;
+        font-weight: 400 !important;
+font-size: 14px !important;
+      }
+    }
+    & h3.x-section-header.s-section-header{
+      margin-top: 15px;
+      font-family: map-get($map: $typographyVariables, $key: -font-family);
+      font-style: normal;
+      font-weight: 400 !important;
+      font-size: 20px !important;
+      line-height: 130%;
+      text-align: right;
+      color: map-get($map: $Colors, $key: text-defualt ) !important;
+    }
+  }
+
+   & div[uxid="kiAddNewValue"],
+   & div[uxid="kiAddSalaray"]{
+
+
+     & span{
+      font-size: 28px !important;
+      color: #7B098B !important;
+      margin-top: 11px;
+      margin-right: 20px;
+     }
+
+
+
+   }
+
+   & div[uxid="kiSubNewValue"],
+   & div[uxid="kiSubSalaray"]{ 
+
+    & span{
+      font-size: 28px !important;
+      color: #7B098B !important;
+      margin-top: 11px;
+      margin-right: 22px;
+    }
+   }
+
+
+ 
+
+
+    }
+
+
+
+
+
+
+    #TafnitCore_xAgreements_UI_SalaryRequestRaise,
+    #TafnitCore_Salary_UI_RequestRaise{
+       
+
+      & .bAddSalaray{
+        padding: 0  !important;
+
+        & .xstyle-buttoncontrol-wrapper{
+          padding-left: 0 !important;
+        }
+        button{
+          margin-top: 15px !important;
+          width: 140px;
+        }
+      }
+      & mainbody{
+        margin-top: 35px !important;
+        padding-bottom: -8px !important;
+        background: white !important;
+        margin-bottom: 5px;
+
+      }
+      & .xstyle-date-wrapper{
+        border-bottom: none !important;
+        margin-top: 21px !important;
+      
+      }
+
+       & .xstyle-textcontrol-wrapper{
+        border-bottom: none !important;
+        margin-bottom: 54px ;
+        margin-top: 14px;
+
+        & input{
+          border-right: none !important;
+          &:focus-within{
+            border: 1px solid #DDC3E7 !important;
+          }
+        }
+       }
+      height: 95% !important;
+      width: 96%;
+
+
+
+
+
+
+       & .x-cell-header.s-cell-header{
+        font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 130%;
+    text-align: right;
+    color: map-get($map: $Colors, $key: text-defualt );
+       }
+    & .firstGrid{
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px rgb(123 9 141 / 8%) !important;
+      border-radius: 10px;
+      padding: 20px 40px;
+    }
+    & .mainPopUp {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px rgb(123 9 141 / 8%) !important;
+      border-radius: 10px;
+      padding: 20px 40px;
+
+     
+    }
+
+    & .futureGrid{
+      margin-bottom: 80px !important;
+      margin-top: 24px;
+    }
+    & .k-grid-header{
+      border-bottom: 1px solid #F5F5F5 !important;
+    }
+      & .headerNone{
+       
+        box-shadow:none !important;
+        background: none !important;
+        border-radius: 10px;
+    
+         & >div{
+     
+           margin: 0;
+         }
+      }
+
+
+      & div[uxid="bConfirm"]{
+        position: absolute;
+        left: 16px;
+        bottom: 0px;
+
+        & button{
+          width: 140px !important;
+          height: 37px !important;
+          background: #7B098B ;
+          border-radius: 10px !important;
+          color: #FFFFFF ;
+          font-family: "Heebo" !important;
+          font-style: normal;
+          font-weight: 500 !important;
+          font-size: 14px !important;
+          line-height: 12px !important;
+        }
+      }
+
+
+
+        & div[uxid="newValue"]{
+
+
+          & input{
+            height: 40px;
+            color: black !important;
+              background: map-get($map: $Colors, $key: bg-qube ) !important;
+              border-bottom: 1px solid map-get($map: $Colors, $key: border-color ) !important;
+              position: relative;
+              z-index: 50;
+              &::placeholder{
+                color: #ececec !important;
+              }
+              
+          }
+        }
+
+        & div[uxid="fromDate"]{
+           & span{
+            border: none !important;
+            border-bottom: 1px solid #d9d9d9 !important;
+            margin-top: -3px !important;
+           }
+
+          & input{
+            height: 40px;
+              background: map-get($map: $Colors, $key: bg-qube ) !important;
+              z-index: 9;
+              color: map-get($map: $Colors, $key: text-defualt ) !important;
+              border-right: none !important;
+              &::placeholder{
+                color: #ececec !important;
+              }
+          }
+        }
+
+
+         & div[uxid=kiAddSalaray] span {
+          font-size: 28px !important;
+          color: #7B098B !important;
+          margin-top: 25px;
+          margin-right: -5px;
+      }
+       
+       & div[uxid=kiSubSalaray] span {
+        font-size: 28px !important;
+        color: #7B098B !important;
+        margin-top: 25px;
+        margin-right: 22px;
+    }
+
+    & .x-grid-control.s-grid-control.k-grid.k-widget.k-grid-display-block{
+      margin-top: -45px;
+      width:100%;
+       
+      & .k-grid-header{
+  
+        border-bottom: 1px solid #F5F5F5;
+  
+         & div>table>thead>tr>th{
+  
+          font-family: map-get($map: $typographyVariables, $key: -font-family);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px !important;
+          line-height: 130%;
+          text-align: right;
+          color: #7B098B !important;
+        
+         }
+      }
+       
+     }
+  
+     & div[uxid="cAsked"]{
+  
+        & h4{
+  
+          position: absolute;
+          top: 50px
+        }
+  
+     }
+  
+     & div[uxid="lCurrentPracentage"]{
+  
+      & span{
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px !important;
+        line-height: 130%;
+        text-align: right;
+        color: map-get($map: $Colors, $key: text-defualt );
+        margin-right: 6px;
+        margin-top: 9px;
+      }
+     }
+  
+      & .x-control-caption-text{
+  
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px !important;
+        text-align: right;
+        color: map-get($map: $Colors, $key: text-defualt ) !important;
+        margin-top: 17px;
+      }
+  
+      
+      & .k-master-row{
+  
+   
+        height: 60px;
+        background: map-get($map: $Colors, $key: bg-qube );
+     
+  
+        & td{
+       
+          border: none !important;
+          border-bottom: 1px solid #F5F5F5 !important;
+         }
+  
+         & td:last-child{
+      
+  
+           &>a>i{
+            display: inline-block;
+            font-size: 28px;
+             color:#A1A3A5 !important
+           }
+         }
+  
+    
+        
+  
+      }
+  
+      & .k-grid-content.k-auto-scrollable{
+        overflow-y: hidden !important;
+      }
+
+      & .x-section-header.s-section-header{
+
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 130%;
+        text-align: right ;
+        color:#7B098B !important;
+        margin-bottom: 10px;
+      }
+      
+      & div[uxid="rFuture"]{
+          
+        & div{
+          padding-right: 0 !important;
+        }
+
+      }
+
+      & div[uxid="rAsked"]{
+
+        & div:nth-child(1).col-100{
+
+          padding-right: 0 !important;
+      
+        }
+      }
+
+      & div[uxid="rCurrent"]{
+
+        & div:nth-child(1).col-100{
+
+          padding-right: 0 !important;
+      
+        }
+
+        & .x-section-header.s-section-header{
+
+          font-size: 20px !important;
+          margin-bottom: 20px !important;
+          color: #7B098B !important;
+          margin-top: 0 !important;
+          font-weight: 400 !important;
+          margin-bottom: 30px !important;
+        }
+      }
+
+      & div[uxid="lFromDate"]{
+
+        & span{
+          margin-top: 30px;
+    margin-right: 18px;
+    color: map-get($map: $Colors, $key: text-defualt ) !important;
+    font-size: 16px !important;
+        }
+      }
+
+      & div[uxid="kiDrawer"]{
+
+        position: absolute;
+        z-index: 3;
+        top: 41px;
+        left: 20px;
+
+        & span{
+          color: map-get($map: $Colors, $key: text-defualt ) !important;
+          font-size: 28px !important;
+        }
+      }
+     
+
+      & div[uxid="currentValue"]{
+
+        & input{
+          font-size: 40px !important;
+          background: none !important;
+          border: none;
+        }
+      }
+    }
+    
+
+    #TafnitCore_xAgreements_UI_SalaryRequestPromotion,
+    #TafnitCore_Salary_UI_RequestPromotion{
+  
+
+      & .buttonPOpUp{
+        color: #ff7a00;
+      
+      }
+      & div[uxid="rAsked"]{
+        & .sTitle{
+          margin-bottom: 25px !important;
+        }
+      }
+
+      & div[uxid=newValue]{
+        margin-top: 0 !important;
+      }
+
+      & .colInputs {
+        display: flex;
+        margin-bottom: 20px !important;
+      }
+
+ 
+      & th{
+        color: #7B098B;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      & .captionText  span{
+        margin-top: 15px !important;
+        text-align: center !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 130% !important;
+        color: black !important;
+      }
+
+      & .xstyle-date-wrapper  {
+        & input{
+          border-right: none !important;
+          text-indent: 11px !important;
+          text-align: right;
+      
+        }
+      }
+    
+    }
+
+    .k-window-title{
+
+
+      font-weight: 400;
+      font-size: 20px !important;
+      line-height: 130%;
+      text-align: right;
+      color: #7B098B !important;
+    }
+
+    .popUpWindowCls:has(#TafnitCore_Salary_UI_FutureValues){
+
+      width: 22% !important;
+      background: #FBFBFB !important;
+      & #TafnitCore_Salary_UI_FutureValues{
+        padding: 0 !important;
+        filter: drop-shadow(0px 0px 5px rgba(123, 9, 141, 0.25));
+        border-radius: 10px;
+        box-shadow: none !important;
+        background: #FBFBFB !important;
+        & .headerNone{
+          
+          & .row{
+            background: #FBFBFB !important;
+          border-radius: 0 !important;
+            box-shadow: none !important;
+            margin-bottom: 0 !important;
+          }
+        }
+
+        & table{
+          & tr{
+            background: #FBFBFB !important;
+            & td{
+              background: #FBFBFB !important;
+              font-family: 'Heebo';
+              font-style: normal !important;
+              font-weight: 400 !important;
+              font-size: 14px !important;
+              line-height: 18px !important;
+            }
+          }
+        }
+      }
+    }
+
+ 

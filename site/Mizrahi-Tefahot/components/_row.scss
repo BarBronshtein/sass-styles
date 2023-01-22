@@ -1,0 +1,54 @@
+$row-background-color:#fff !default;
+$row-margin:5px auto !default;
+$row-margin-bottom:20px !default;
+$row-padding:10px !default;
+$row-border-radius:20px !default;
+$row-box-shadow:0 2px 9px 0 #ccc !default;
+$row-header-color:#000 !default;
+
+#uber-container {
+    >.xtafnit_pageContainer {
+        >mainbody {
+            >div {
+                @media only screen and (max-width:768px) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+mainbody {
+    
+    >.row {
+        background-color: $row-background-color;
+        box-shadow: $row-box-shadow;
+        border-radius: $row-border-radius;
+        padding: $row-padding;
+        margin: $row-margin auto;
+        margin-bottom: $row-margin-bottom;
+    }
+
+    .x-section-header-wrapper {
+        background-color: $row-background-color;
+        color: $row-header-color;
+    }
+
+    .x-section-header-wrraper {
+        background: $row-background-color;
+        border: 0;
+    }
+
+
+}
+
+#TafnitCore_SaaSServer_Portal_PrivateFunding_UI_AccountDetails,
+#TafnitCore_SaaSServer_Portal_PrivateFunding_UI_BDICheck,
+#TafnitCore_SaaSServer_Portal_PrivateFunding_UI_CreateNewOffer,
+#TafnitCore_SaaSServer_Portal_PrivateFunding_UI_PrivateSurvey
+{
+    & mainbody {
+        margin-top: 160px !important;
+    }
+}
+

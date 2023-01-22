@@ -1,0 +1,14 @@
+@use '../variables/masterVariable' as *;
+
+
+.xstyle-textareacontrol-wrapper {
+    .k-textarea {
+        border-color: $textarea-border-color;
+        background-color: $textarea-background-color;
+        border-style: $textarea-border-style;
+        border-left-width: $textarea-border-left-width;
+        border-right-width: $textarea-border-right-width;
+        border-top-width: $textarea-border-top-width;
+        border-bottom-width: $textarea-border-bottom-width;
+    }
+}

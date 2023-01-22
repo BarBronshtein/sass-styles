@@ -1,0 +1,25 @@
+.x-canvas-wrapper-comp {
+    .x-canvas-button-wrapper-comp {
+        .x-canvas-button {
+            outline: none;
+            font-weight: bold;
+            font-size: 100%;
+            border-radius: 4px;
+            display: inline-block;
+            cursor: pointer;
+            padding-right: 45px;
+            padding-top: 27px;
+        }
+
+        .x-canvas-save-button,
+        .x-canvas-clear-button {
+            float: right;
+        }
+
+        .x-canvas-comp {
+            position: initial;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

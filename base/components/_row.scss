@@ -1,0 +1,34 @@
+@use '../variables/masterVariable' as *;
+
+#uber-container {
+    >.xtafnit_pageContainer {
+        >mainbody {
+            >div {
+                @media only screen and (max-width:768px) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+mainbody {
+    >.row {
+        background-color: $row-background-color;
+        box-shadow:   0px 0px 12px map-get($map: $Colors, $key: login-screen-boxshadow );
+        border-radius: 10px;
+        padding: $row-padding;
+        margin: $row-margin auto;
+        margin-bottom: $row-margin-bottom;
+    }
+
+    .x-section-header-wrapper {
+        background-color: $row-background-color;
+        color: $row-header-color;
+    }
+
+    .x-section-header-wrraper {
+        background: $row-background-color;
+        border: 0;
+    }
+}

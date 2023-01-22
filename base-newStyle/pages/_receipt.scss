@@ -1,0 +1,249 @@
+
+
+#uber-container:has(#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt){
+    background: white !important;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt{
+    
+    & div {
+        background: white ;
+    }
+    & .rececipt-foldPage{
+
+        & img{
+            width: 115px;
+        }
+        &::before{
+            content: none !important;
+        }
+    }
+
+    & .rececipt-border-dashed {
+        border: none !important;
+
+       
+    }
+}
+
+
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage{
+
+    & .logoReceipt {
+        background: none !important;
+        border: none !important;
+        & div{
+            height: 120px;
+            border: none !important;
+        }
+
+        & img{
+            position: absolute;
+            width: 43%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+    & .mainReceipt{
+        background: #FCFCFC;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        border-radius: 8px;
+        padding: 20px;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 33vh;
+
+        & div:nth-child(1){
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        & .xstyle-image-wrapper{
+            width: 65%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        & .gridReceipt{
+            & .x-grid-control.s-grid-control{
+                border: none;
+
+                & td{
+          
+                    &:hover{
+                        background: #f2f2f2  !important;
+                    }
+                }
+
+                & table{
+                    border-collapse: collapse !important;
+                    background: #FCFCFC;
+
+                    & tr:has(span){
+                        background: #E6E6E6 !important;
+                        & td{
+                            font-weight: 700 !important;
+                            font-size: 14px !important;
+                          
+                        }
+                    }
+                    & tr{
+                        background:none !important;
+                        height: 44px;
+                        border-bottom: 1px solid #F5F5F5 !important;
+                        &:hover{
+                            background: #f2f2f2  !important;
+
+                            
+                            & td{
+                                background: #f2f2f2  !important;
+                            }
+                        }
+                      
+                        & td{
+                            font-family: 'Assistant';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 100%;
+                            color: #000000;
+                            border: none !important;
+                            &:nth-child(2){
+                                width: 49%!important;
+                                direction: ltr;
+                            }
+
+                            &:hover{
+                                background: #f2f2f2  !important;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    & .tabelReceipt {
+        
+            background: none !important;
+            border: none !important;
+            width: 95%;
+            margin: auto;
+            margin-top: 50px;
+
+            & .col-12:has(label){
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            & div.col{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+      
+        & label{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 180%;
+            color: #000000 !important;
+            text-align: center !important;
+            border-bottom: 1px solid #F5F5F5 !important;
+
+        }
+
+        & span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #000000;
+            text-align: center;
+        }
+
+    }
+
+    & .bodyReceipt{
+        position: absolute;
+        bottom: 29px;
+        background: none;
+        border: none !important;
+        width: 95%;
+        }
+    & .linkReceipt {
+        background: none;
+        border: none !important;
+        & .x-control-content-wrapper {
+            text-align: center !important;
+        }
+        & a{
+            font-family: "Assistant";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            color: #0675B4 !important;
+            text-decoration: none !important;
+            text-align: center !important;
+            margin-top: 30px !important;
+            margin-bottom: 30px;
+        }
+    }
+
+    & .iconsReceipt{
+        background: none;
+        border: none !important;
+        margin-bottom: 20px;
+        & div{
+        height: 80px;
+        }
+        & .k-icon-wrapper{
+            text-align: center;
+            & span{
+                font-size: 40px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                color: #1F8FCE !important;
+            }
+        }
+
+    }
+
+    & .x-footer:has(.footerReceipt){
+        height: 46px;
+        background: #1F8FCE !important;
+        position: absolute !important;
+        & div{
+            background: none ;
+            border: none !important;
+        }
+
+        & .x-control-content-wrapper {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-13%);
+        }
+
+        & a{
+            color: white !important;
+            text-align: center;
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            text-decoration: underline;
+
+        }
+    }
+}

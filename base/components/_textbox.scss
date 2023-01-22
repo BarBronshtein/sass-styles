@@ -1,0 +1,54 @@
+@use '../variables/masterVariable' as *;
+
+.x-text-control-container {
+    .k-floating-label-container {
+        span {
+            &.k-textbox {
+                border-width: 0 !important;
+                border-bottom: 0px !important;
+                margin: 0;
+            }
+        }
+
+        input {
+            &.k-textbox {
+                
+                border: $textbox-border !important;
+           
+                &:focus {
+                    box-shadow: $textbox-box-shadow;
+                }
+            }
+        }
+
+    }
+
+    >input {
+        &.k-textbox {
+           
+            border: $textbox-border;
+        
+        
+            &:focus {
+                box-shadow: $textbox-box-shadow;
+            }
+        }
+    }
+}
+
+.k-daterangepicker {
+    input {
+        &.k-textbox {
+           
+            border: $textbox-border;
+          
+            &:focus {
+                box-shadow: $textbox-box-shadow;
+            }
+        }
+    }
+}
+
+.k-filter-menu-container {
+    @extend .x-text-control-container;
+}

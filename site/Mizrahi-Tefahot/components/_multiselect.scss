@@ -1,0 +1,44 @@
+$multiselect-border-color:#000 !default;
+$multiselect-background-color:#f7f8f9 !default;
+$multiselect-border-style:solid !default;
+$multiselect-border-left-width:0px !default;
+$multiselect-border-top-width:0px !default;
+$multiselect-border-right-width:0px !default;
+$multiselect-border-bottom-width:1px !default;
+$multiselect-color:#fff !default;
+$multiselect-placeholder-color:#000 !default;
+
+.xstyle-multiselect-wrapper {
+    .k-multiselect {
+        .k-multiselect-wrap {
+            border-color: $multiselect-border-color;
+            background-color: $multiselect-background-color;
+            border-style: $multiselect-border-style;
+            border-left-width: $multiselect-border-left-width;
+            border-right-width: $multiselect-border-right-width;
+            border-top-width: $multiselect-border-top-width;
+            border-bottom-width: $multiselect-border-bottom-width;
+            input{
+                &::placeholder{
+                    color:$multiselect-placeholder-color;
+                }
+            }
+            li {
+                &.k-button {
+                    color: $multiselect-color;
+                }
+            }
+        }
+    }
+}
+
+
+.p-floating-container {
+    ul[role="listbox"]{
+        +input{
+            +label{
+                top: -17px;
+            }
+        }
+    }
+}

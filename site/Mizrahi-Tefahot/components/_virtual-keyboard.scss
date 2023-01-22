@@ -1,0 +1,42 @@
+$virtual-keyboard-background:#ccc !default;
+$virtual-keyboard-border:0 !default;
+$virtual-keyboard-border-top:0 !default;
+$virtual-keyboard-border-bottom:1px solid #000 !default;
+$virtual-keyboard-border-left:0 !default;
+$virtual-keyboard-border-right:0 !default;
+$virtual-keyboard-color:rgb(255, 0, 179) !default;
+$virtual-keyboard-radius:0 !default;
+$virtual-keyboard-box-shadow:none !default;
+$virtual-keyboard-icon-color:#fff !default;
+$virtual-keyboard-icon-background:#F00 !default;
+
+.x-vkeyboard {
+    span {
+        &.k-textbox {
+            border: 0;
+        }
+    }
+
+    input {
+        &.k-textbox {
+            background: $virtual-keyboard-background;
+            border: $virtual-keyboard-border;
+            border-top: $virtual-keyboard-border-top;
+            border-bottom: $virtual-keyboard-border-bottom;
+            border-left: $virtual-keyboard-border-left;
+            border-right: $virtual-keyboard-border-right;
+            color: $virtual-keyboard-color;
+            border-radius: $virtual-keyboard-radius;
+
+            &:focus {
+                box-shadow: $virtual-keyboard-box-shadow;
+            }
+        }
+    }
+
+    .x-barcodeBtnContainer {
+        background: $virtual-keyboard-icon-background;
+        color: $virtual-keyboard-icon-color;
+    }
+}
+

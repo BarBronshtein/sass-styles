@@ -1,0 +1,20 @@
+@use '../variables/masterVariable' as *;
+
+
+@media only screen and (max-width: 1281px) {
+    header {
+        &.k-header {
+            background-color: $header-mobile-background !important;
+            border-bottom-left-radius: 15px;
+
+            .k-toolbar {
+                background: $header-mobile-background;
+                border-bottom-left-radius: 15px;
+            }
+        }
+
+      
+
+    }
+}
+

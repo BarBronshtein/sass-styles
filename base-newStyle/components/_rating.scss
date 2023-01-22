@@ -1,0 +1,24 @@
+/*rating - not kendo*/
+@use '../variables/masterVariable' as *;
+
+.x-rateWrapper {
+    direction: initial;
+    position: relative;
+    top: -2px;
+
+    .rating-container {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+/*kendo rating*/
+
+.kendo-rating {
+    .k-i-close-circle {
+        &:hover {
+            cursor: pointer;
+            color: red;
+        }
+    }
+}

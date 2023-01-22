@@ -1,0 +1,19 @@
+$tooltip-border-color:#fff !default;
+$tooltip-color:#464247 !default;
+$tooltip-background-color:#fff !default;
+$tooltip-box-shadow:0 2px 39px 0 rgb(219, 220, 226) !default;
+$tooltip-font-size:14px !default;
+$tooltip-border-radius:15px !default;
+
+.k-tooltip {
+    &.k-widget {
+        border-color: $tooltip-border-color;
+        color: $tooltip-color;
+        background-color: $tooltip-background-color;
+        box-shadow: $tooltip-box-shadow;
+        font-size: $tooltip-font-size;
+        border-radius: $tooltip-border-radius;
+        padding: 5px 10px;
+    }
+}
+

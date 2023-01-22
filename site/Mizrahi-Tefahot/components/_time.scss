@@ -1,0 +1,37 @@
+$time-border:0 !default;
+$time-border-bottom:1px solid #ccc !default;
+$time-background:#f5f6f7 !default;
+$time-icon-background:#000 !default;
+$time-icon-color:#fff !default;
+$time-border-radius:0px !default;
+
+.k-timepicker {
+    .k-picker-wrap {
+        border: $time-border;
+        border-bottom: $time-border-bottom;
+
+        input {
+            width: 100%;
+            background: $time-background;
+        }
+
+        .k-select {
+            border: $time-border;
+            background: $time-icon-background;
+            color: $time-icon-color;
+        }
+    }
+}
+
+//mobile//
+input {
+    &[type="time"] {
+        width: 100%;
+        border: $time-border;
+        background: $time-background;
+        border-bottom: $time-border-bottom !important;
+        border-radius: $time-border-radius !important;
+    }
+
+}
+

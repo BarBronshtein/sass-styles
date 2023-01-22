@@ -1,0 +1,39 @@
+
+
+
+@use '../varible/varible' as *;
+
+.xstyle-textareacontrol-wrapper{
+  &.k-state-disabled{
+    opacity: 1 !important;
+   & input.k-textbox{
+
+       @extend %DisableInput;
+   }
+
+   & label{
+       color: #CCCCCC !important; 
+     }
+}
+  & span.x-fild_block{
+    outline: none !important;
+  }
+  & textarea{
+        
+    @extend %SimpleInput;
+      height: 150px !important;
+            margin-bottom: 25px !important;
+            outline: none !important;
+            
+    &:focus{
+      border: 1px solid #E6E6E6 !important;
+      box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
+      border-radius: 20px 0px;
+  }
+    }
+
+    & label{
+      @extend %SimpleCaption;  
+      
+    }
+}

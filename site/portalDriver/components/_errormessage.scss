@@ -1,0 +1,17 @@
+
+
+.eroorMessage{
+
+
+    & span{
+        text-align: right !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        color: #ED2F2F !important;
+        margin-top: -10px;
+    }
+}
+
+.col-12:has(.eroorMessage){
+    padding: 0 !important;
+}

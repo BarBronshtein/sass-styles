@@ -1,0 +1,185 @@
+
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage{
+
+    & .logoReceipt {
+        background: none !important;
+        border: none !important;
+        & div{
+            height: 120px;
+            border: none !important;
+        }
+
+        & img{
+            position: absolute;
+            width: 43%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+    & .mainReceipt{
+        background: #FCFCFC;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        border-radius: 8px;
+        padding: 20px;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 33vh;
+
+        & .xstyle-image-wrapper{
+            width: 40%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        & .gridReceipt{
+            & .x-grid-control.s-grid-control{
+                border: none;
+
+                & table{
+                    border-collapse: collapse !important;
+                    background: #FCFCFC;
+                    & tr:has(span){
+                        background: #E6E6E6 !important;
+                        & td{
+                            font-weight: 700 !important;
+                            font-size: 16px !important;
+                        }
+                    }
+                    & tr{
+                        background:none !important;
+                        height: 44px;
+                        border-bottom: 1px solid #F5F5F5 !important;
+                        & td{
+                            font-family: 'Assistant';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 100%;
+                            color: #000000;
+                            border: none !important;
+                            &:nth-child(2){
+                                width: 40%!important;
+                                direction: ltr;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    & .tabelReceipt {
+        
+            background: none !important;
+            border: none !important;
+            width: 95%;
+            margin: auto;
+            margin-top: 50px;
+      
+        & label{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            color: #000000 !important;
+            text-align: center !important;
+            border-bottom: 1px solid #F5F5F5 !important;
+
+        }
+
+        & span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #000000;
+            text-align: center;
+        }
+
+    }
+
+    & .bodyReceipt{
+        position: absolute;
+        bottom: 29px;
+        background: none;
+        border: none !important;
+        width: 95%;
+        }
+    & .linkReceipt {
+        background: none;
+        border: none !important;
+        & .x-control-content-wrapper {
+            text-align: center !important;
+        }
+        & a{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            color: #0675B4 !important;
+            text-decoration: none !important;
+            text-align: center !important;
+            margin-top: 10px !important;
+            margin-bottom: 25px;
+        }
+    }
+
+    & .iconsReceipt{
+        background: none;
+        border: none !important;
+        margin-bottom: 20px;
+        & div{
+        height: 80px;
+        }
+        & .k-icon-wrapper{
+            text-align: center;
+            & span{
+                font-size: 40px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                color: #1F8FCE !important;
+            }
+        }
+
+    }
+
+    & .x-footer:has(.footerReceipt){
+        height: 46px;
+        background: #1F8FCE !important;
+        position: absolute !important;
+        & div{
+            background: none ;
+            border: none !important;
+        }
+
+        & .x-control-content-wrapper {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-13%);
+        }
+
+        & a{
+            color: white !important;
+            text-align: center;
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            text-decoration: underline;
+
+        }
+    }
+}
