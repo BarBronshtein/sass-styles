@@ -1,5 +1,5 @@
-@forward '../../base-newStyle/pages/payment';
-@forward '../../base-newStyle/components/newStyle.scss';
+
+@use './page/Survey';
 
  #uber-container{
     padding: 0 !important;
@@ -526,6 +526,9 @@ i{
 }
 
 }
+
+
+
 
 
 
