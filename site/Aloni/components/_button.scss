@@ -1,0 +1,52 @@
+@use '../variable/variable' as *;
+
+
+
+  .xstyle-buttoncontrol-wrapper{
+
+
+    &.k-state-disabled{
+      opacity: 1 ;
+      & button{
+        background: #FFFFFF;
+        border: 1px solid #ADB5BD;
+        color: #ADB5BD;
+      }
+
+    }
+    &.btn-special{
+      & button{
+
+       @extend %spicel-button;
+       padding: 0 30px;
+       width: auto !important;
+
+       .k-icon{
+        font-size: 30px;
+       }
+
+      }
+    }
+
+
+    & button{
+        @extend %button;
+        margin-bottom: 15px;
+        padding: 0 30px;
+        width: auto !important;
+        border: none;
+      &:hover{
+        background: $Button-bg-hover;
+
+        color: $Button-color-text;
+        border: 1px solid $Button-color-border;
+      }
+
+      &:focus{
+        border: 1px solid $Button-color-border-focus;
+        filter: $Button-boxshadow-focus;
+        opacity: 1;
+      }
+        }
+
+  }

@@ -34,8 +34,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
 
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page{
 
-  
-
+    margin-bottom: o !important;
     height: 100%;
     min-height: 100%;
 
@@ -474,7 +473,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
                 color: #7E7B7B !important;
             }
 
-            & .k-text-error{
+            & [class="k-file-validation-message !k-text-error"] {
                 font-family: 'Heebo' !important;
                 font-style: normal !important;
                 font-weight: 400 !important;
@@ -526,8 +525,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
                 text-align: right !important;
                 color: #7E7B7B !important;
             }
-
-            & .k-text-success{
+            & [class^="k-file-validation-message !k-text-success"]{
                 font-family: 'Heebo' !important;
                 font-style: normal !important;
                 font-weight: 400 !important;
@@ -736,116 +734,6 @@ body.bodyPayment{
 }
 
 
-html , body.bodyPayment{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-direction: rtl ;
-
-
-
-
-.warrperPayment{
-    height: 100%;
-
-}
-
-
-
-
-.headerPayment{
-    position: absolute;
-    width: 100%;
-    height: 107px;
-    max-height: 107px !important;
-    background: white !important;
-    padding: 10px 0px;
-    text-align: center;
-}
-.logoImg{
-    width: 66%;
-    position: relative;
-    top: 50%;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
-
-}
-
-
-
-.warrperPayment > div:has(.headerPayment){
-    height: 147px;
-}
-
-
-.x-icon{
-    text-align: center;
-    margin-bottom: 50px;
-}
-.title{
-    font-family: 'Assistant';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 100%;
-    color: #000000;
-    
-}
-.mainPage{
-    padding: 30px;
-}
-
-.text{
-    font-family: 'Assistant';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: right;
-    color: #000000;
-    margin-bottom:60px;
-    margin-top: 10px;
-}
-
-.x-Icons {
-    display: grid;
-    grid-template-columns: auto auto;
-  margin-top: 40px ;
-}
-
-.x-Icons p{
-  margin: 0;
-}
-
-p{
-    margin: 0 ;
-}
-
-.x-Icons .x-icon span{
-    font-size: 22px;
-    color: #6A3F75 ;
-    margin-bottom: 5px ;
-}
-
-.icon-title{
-    font-family: 'Assistant';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 120%;
-    color: #8C4D9C;
-}
-
-.icon-text{
-    font-family: 'Assistant';
-    font-style: normal ;
-    font-weight: 400 ;
-    font-size: 16px;
-    line-height: 120%;
-    text-align: center;
-    color: #000000;
-}
 
 
 
@@ -853,4 +741,12 @@ p{
 
 
 
-}
+
+
+
+
+
+
+
+
+

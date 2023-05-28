@@ -1,0 +1,329 @@
+// PALETTE 
+$Colors: (
+"action-card": #39b54a,
+"approval": #39b54a,
+"black-saturday": #000000,
+"black-text": #000000,
+"border-press-button": #7bce86,
+"button": #267831,
+"button-Bg": #39b54a,
+"card": #39b54a,
+"card-border": #bbbbbb,
+"card-date": #bbbbbb,
+"cover-screen": #133c19,
+"days-number": #7bce86,
+"disable": #cccccc,
+"disable-days-number": #e6e6e6,
+"icons": #39b54a,
+"icons-drawer": #9cdaa4,
+"important-text": #39b54a,
+"panel-tabs": #267831,
+"place-holder": #bbbbbb,
+"press-button": #267831,
+"radio-button": #7e7b7b,
+"secondary-button-Bg-press": #fafafa,
+"secondary-button-border": #267831,
+"secondary-button-text": #267831,
+"secondary-text": #aaaaaa,
+"simple-text-field-border": #e6e6e6,
+"text-field-disable-Bg": #fafafa,
+"text-fiels-border": #cccccc,
+"text-link": #267831,
+"title": #267831,
+"title-card": #39b54a,
+"title-tabs": #267831,
+"today": #39b54a,
+"today-border": #bde6c3,
+"trash": #bbbbbb,
+"upload-image": #bbbbbb,
+"warning": #ec2f2f,
+"white-background": #ffffff,
+"white-button-icon": #ffffff,
+"white-button-text": #ffffff,
+"white-cards-background": #ffffff,
+"white-secondary-button-Bg": #ffffff,
+"white-secondary-text": #ffffff,
+"white-special-button-Bg": #ffffff,
+"white-tabs": #ffffff,
+"white-text-field-Bg": #ffffff
+);
+
+// TYPOS 
+$typographyVariables: (
+"Button-color": map-get($Colors, "white-text-field-Bg"),
+"Button-font-family": 'Heebo',
+"Button-font-size": 16px,
+"Button-font-style": normal,
+"Button-font-weight": 400,
+"Button-letter-spacing": 0em,
+"Button-line-height": 1.2999999523162842em,
+"Button-text-transform": none,
+"Caption-text-color": map-get($Colors, "black-text"),
+"Caption-text-font-family": 'Heebo',
+"Caption-text-font-size": 14px,
+"Caption-text-font-style": normal,
+"Caption-text-font-weight": 400,
+"Caption-text-letter-spacing": 0em,
+"Caption-text-line-height": 1.2999999523162842em,
+"Caption-text-text-transform": none,
+"Date-color": map-get($Colors, "place-holder"),
+"Date-font-family": 'Heebo',
+"Date-font-size": rem(14px),
+"Date-font-style": normal,
+"Date-font-weight": 400,
+"Date-letter-spacing": 0em,
+"Date-line-height": 1em,
+"Date-text-transform": none,
+"close-color": map-get($Colors, "button-Bg"),
+"close-font-family": 'Heebo',
+"close-font-size": rem(12px),
+"close-font-style": normal,
+"close-font-weight": 400,
+"close-letter-spacing": 0em,
+"close-line-height": 1em,
+"close-text-transform": none,
+"current-tabs-color": map-get($Colors, "text-link"),
+"current-tabs-font-family": 'Heebo',
+"current-tabs-font-size": 14px,
+"current-tabs-font-style": normal,
+"current-tabs-font-weight": 700,
+"current-tabs-letter-spacing": 0em,
+"current-tabs-line-height": 1em,
+"current-tabs-text-transform": none,
+"default-Text-color": map-get($Colors, "black-text"),
+"default-Text-font-family": 'Heebo',
+"default-Text-font-size": 16px,
+"default-Text-font-style": normal,
+"default-Text-font-weight": 400,
+"default-Text-letter-spacing": 0em,
+"default-Text-line-height": 1.2999999523162842em,
+"default-Text-text-transform": none,
+"important-Text-color": map-get($Colors, "text-link"),
+"important-Text-font-family": 'Heebo',
+"important-Text-font-size": 16px,
+"important-Text-font-style": normal,
+"important-Text-font-weight": 700,
+"important-Text-letter-spacing": 0em,
+"important-Text-line-height": 1.5em,
+"important-Text-text-transform": none,
+"link-color": map-get($Colors, "text-link"),
+"link-font-family": 'Heebo',
+"link-font-size": 16px,
+"link-font-style": normal,
+"link-font-weight": 400,
+"link-letter-spacing": 0em,
+"link-line-height": 1.2999999523162842em,
+"link-text-transform": none,
+"medium-default Text-color": map-get($Colors, "black-text"),
+"medium-default Text-font-family": 'Heebo',
+"medium-default Text-font-size": 14px,
+"medium-default Text-font-style": normal,
+"medium-default Text-font-weight": 400,
+"medium-default Text-letter-spacing": 0em,
+"medium-default Text-line-height": 1.2999999523162842em,
+"medium-default Text-text-transform": none,
+"place-holder-color": map-get($Colors, "place-holder"),
+"place-holder-font-family": 'Heebo',
+"place-holder-font-size": 16px,
+"place-holder-font-style": normal,
+"place-holder-font-weight": 400,
+"place-holder-letter-spacing": 0em,
+"place-holder-line-height": 1.2999999523162842em,
+"place-holder-text-transform": none,
+"secondary-text-color": map-get($Colors, "secondary-text"),
+"secondary-text-font-family": 'Heebo',
+"secondary-text-font-size":12px,
+"secondary-text-font-style": normal,
+"secondary-text-font-weight": 400,
+"secondary-text-letter-spacing": 0em,
+"secondary-text-line-height": 1em,
+"secondary-text-text-transform": none,
+"tabs-color": map-get($Colors, "white-text-field-Bg"),
+"tabs-font-family": 'Heebo',
+"tabs-font-size": 14px,
+"tabs-font-style": normal,
+"tabs-font-weight": 700,
+"tabs-letter-spacing": 0em,
+"tabs-line-height": 1em,
+"tabs-text-transform": none,
+"title-color": map-get($Colors, "text-link"),
+"title-font-family": 'Heebo',
+"title-font-size": 20px,
+"title-font-style": normal,
+"title-font-weight": 700,
+"title-letter-spacing": 0em,
+"title-line-height": 1.2000000476837158em,
+"title-text-transform": none,
+"title-card-color": map-get($Colors, "button-Bg"),
+"title-card-font-family": 'Heebo',
+"title-card-font-size": 16px,
+"title-card-font-style": normal,
+"title-card-font-weight": 400,
+"title-card-letter-spacing": 0em,
+"title-card-line-height": 1.2999999523162842em,
+"title-card-text-transform": none,
+"title-card done-color": map-get($Colors, "button-Bg"),
+"title-card done-font-family": 'Heebo',
+"title-card done-font-size": 16px,
+"title-card done-font-style": normal,
+"title-card done-font-weight": 500,
+"title-card done-letter-spacing": 0em,
+"title-card done-line-height": 1.2999999523162842em,
+"title-card done-text-transform": none
+);
+
+// COMPONENTS 
+$componentsVariables: (
+
+);
+
+
+%MainTitle{
+    // font-family: map-get($map: $typographyVariables, $key: title-font-family);
+    font-style: map-get($map: $typographyVariables, $key: title-font-style);
+    font-weight: map-get($map: $typographyVariables, $key: title-font-weight) !important;
+    font-size: map-get($map: $typographyVariables, $key: title-font-size) !important;
+    line-height: map-get($map: $typographyVariables, $key: title-line-height);
+    text-align: center !important;
+    color: map-get($map: $Colors, $key: title );
+ 
+}
+
+%DefaultText{
+
+    font-family:map-get($map: $typographyVariables, $key: default-Text-font-family);
+    font-style: map-get($map: $typographyVariables, $key: default-Text-font-style);
+    font-weight: map-get($map: $typographyVariables, $key: default-Text-font-weight);
+    font-size: map-get($map: $typographyVariables, $key: default-Text-font-size);
+    line-height: map-get($map: $typographyVariables, $key: default-Text-line-height);
+    text-align: right;
+    color: map-get($map: $Colors, $key: black-text);
+}
+
+
+%IconsDrower{
+
+    color: map-get($map: $Colors, $key: icons-drawer);
+    font-size: 22px;
+
+}
+
+%IconsFooter{
+
+    color: map-get($map: $Colors, $key: icons);
+    font-size: 22px;
+    
+}
+
+
+
+%SimpleButton{
+    height: 50px;
+    background: map-get($map: $Colors, $key: button-Bg);
+    border-radius: 20px;
+    font-family: map-get($map: $typographyVariables, $key: Button-font-family);
+    font-style: map-get($map: $typographyVariables, $key: Button-font-style);
+    font-weight: map-get($map: $typographyVariables, $key: Button-font-weight);
+    font-size: map-get($map: $typographyVariables, $key: Button-font-size);
+    line-height: map-get($map: $typographyVariables, $key: Button-line-height);
+    color: map-get($map: $Colors, $key: white-button-text);
+    width: 100% !important;
+    height: 50px !important;
+    text-align: center !important;
+    padding: 10px 20px !important;
+    box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1);
+    margin-bottom: 15px !important;
+}
+
+
+
+%SimpleInput{
+
+    height: 50px !important;
+    background: map-get($map: $Colors, $key: white-text-field-Bg) !important;
+    border: 1px solid map-get($map: $Colors, $key: text-fiels-border) !important;
+    border-radius: 20px 0px !important;
+    padding: 10px 20px !important;
+    font-family: 'Heebo' !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: map-get($map: $typographyVariables, $key: fontSize-SimpleInput);
+    line-height: 130%;
+    color:map-get($map: $Colors, $key: black-text) !important;
+    margin-top: 0px;
+
+}
+
+%SpecialInput{
+    height: 50px !important;
+    background: map-get($map: $Colors, $key: white-text-field-Bg) !important;
+    border: 1px solid #CCCCCC !important;
+    box-shadow: inset 4px 4px 5px rgba(204, 204, 204, 0.5) !important;
+    border-radius: 20px !important;
+    font-family: 'Heebo' !important;
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: map-get($map: $Colors, $key: black-text) !important;
+    text-align: center !important;
+    margin-bottom: 25px;
+    text-indent: 15px ;
+}
+
+
+%SimpleLink{
+    font-family: map-get($map: $typographyVariables, $key: link-font-family);
+    font-style: map-get($map: $typographyVariables, $key: link-font-style);
+    font-weight: map-get($map: $typographyVariables, $key: link-font-weight);
+    font-size: map-get($map: $typographyVariables, $key: link-font-size);
+    line-height: map-get($map: $typographyVariables, $key: link-line-height);
+    text-align: center;
+    color: map-get($map: $Colors, $key: text-link);
+    margin-bottom: 30px !important;
+}
+
+%DisableInput{
+    background: #FBFBFB !important;
+     border: 1px solid #E6E6E6 !important;
+}
+%SimpleCaption{
+    font-family: map-get($map: $typographyVariables, $key: Caption-text-font-family);
+    font-style: map-get($map: $typographyVariables, $key: Caption-text-font-style);
+    font-weight: map-get($map: $typographyVariables, $key: Caption-text-font-weight);
+    font-size: map-get($map: $typographyVariables, $key: Caption-text-font-size);
+    line-height: map-get($map: $typographyVariables, $key: Caption-text-line-height) !important;
+    text-align: right; 
+    color: #7E7B7B;
+}
+
+
+%SpecialButton{
+
+    height: 50px;
+    background: map-get($map: $Colors, $key: white-special-button-Bg);
+    border: 1px solid map-get($map: $Colors, $key: secondary-button-border);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: map-get($map: $Colors, $key: secondary-button-text);
+    font-family: map-get($map: $typographyVariables, $key: Button-font-family);
+    font-style: map-get($map: $typographyVariables, $key: Button-font-style);
+    font-weight: map-get($map: $typographyVariables, $key: Button-font-weight);
+    font-size: map-get($map: $typographyVariables, $key: Button-font-size);
+    line-height: map-get($map: $typographyVariables, $key: Button-line-height);
+}
+
+
+%SecondaryText{
+
+    font-family: map-get($map: $typographyVariables, $key: secondary-text-font-family);
+    font-style: map-get($map: $typographyVariables, $key: secondary-text-font-style);
+    font-weight: map-get($map: $typographyVariables, $key: secondary-text-font-weight);
+    font-size: map-get($map: $typographyVariables, $key: secondary-text-font-size);
+    line-height: map-get($map: $typographyVariables, $key: secondary-text-line-height);
+    text-align: right;
+    color: map-get($map: $Colors, $key: secondary-text);
+}
+
+
+

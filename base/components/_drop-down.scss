@@ -1,6 +1,19 @@
 @use '../variables/masterVariable' as *;
 
+.xstyle-idropdownlist-wrapper{
+    & span.k-i-arrow-s{
+      
+        top: -4px;
+    }
+    .k-state-border-down{
 
+        & span.k-i-arrow-s{
+            transform: rotate(180deg);
+            left: -20px;
+            top: -1px;
+        }
+    }
+}
 .k-dropdown {
     background: $drop-down-background;
     border-bottom: $drop-down-border-bottom;

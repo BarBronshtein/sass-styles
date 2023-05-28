@@ -1,0 +1,37 @@
+.list{
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap:4px;
+    &::after{
+        width: 7px;
+    height: 7px;
+    background: #DA3382 ;
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -16px;
+       }
+    label{
+        width:max-content;
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: #323C4B;
+ 
+
+    }
+
+    span{
+        font-size: 16px !important;
+        line-height: 24px ;
+        margin-top: -4px;
+        color: #323C4B !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

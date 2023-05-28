@@ -1,0 +1,222 @@
+
+@use '../variable/variable' as *;
+
+
+.row-special{
+    background: none !important; 
+    box-shadow: none !important;
+    padding: 0 !important;
+    display: flex;
+    gap: 15px;
+    .col-main{
+        padding: 10px 40px;
+        gap: 10px;
+        min-height: 102px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15);
+        border-radius: 10px;
+        padding-top: 24px;
+    }
+}
+
+.row-hidden{
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+
+    &.stepper2{
+      background: white !important;
+      position: fixed;
+      top: 80px;
+      z-index: 10
+    }
+}
+
+
+
+.row-title{
+    .k-icon-wrapper{
+        text-align: center !important;
+    }
+    span.k-icon{
+        font-size: 30px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    span.x-dynamic-label-control{
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center !important;
+        margin-bottom: 15px;
+        color: #323C4B;
+    }
+}
+
+mainbody {
+
+& > .row {
+    
+ 
+    &.row-main{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
+        border-radius: 10px;
+        padding: 20px 10px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+
+        .col-checkbox{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            margin-bottom: 10px;
+        }
+        .col-list{
+            padding-right: 38px !important;
+        }
+
+        .col-pdf{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 5px;
+            margin-top: 15px;
+            justify-content: center;
+            align-items: center;
+            span.k-icon{
+                font-size: 26px;
+                color: #FF780B;
+            
+            }
+
+            span.x-dynamic-label-control{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: right;
+                color: #FF780B;
+                
+            }
+        }
+        & .row-title{
+            .k-icon-wrapper{
+                text-align: center !important;
+            }
+            span.k-icon{
+                font-size: 30px;
+                margin-top: 15px;
+
+            }
+
+            span.x-dynamic-label-control{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center !important;
+                margin-bottom: 15px;
+                color: #323C4B;
+            }
+        }
+
+        .x-dynamic-label-control {
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: right;
+            color: #323C4B;
+        }
+
+        &:has(.main-onborading){
+            margin-top: 250px;
+        }
+
+    }
+
+    
+    &.boxShadow-0.border-0{
+        background: none ;
+        box-shadow: none;
+        padding: 0;
+        & >div{
+            padding: 0 ;
+        }
+    }
+
+
+    &.wrapper-uplode{
+        margin-top: -20px;
+        background: none;
+        box-shadow: none;
+        display: block;
+        padding-bottom: 0;
+        padding: 40px 0px;
+        padding-bottom: 0;
+        align-items: self-start;
+        
+
+        .body-upload{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
+            border-radius: 10px;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 15px;
+            margin-top: 0;
+      
+            .k-button {
+                margin: auto;
+                padding: 10px;
+                background: none;
+                border: none; 
+                justify-content: right;
+
+                span{
+                    font-family: 'Assistant';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 100%;
+                    text-align: center;
+                    color: #026F9E;
+                    margin: 10px;
+                    display: grid !important;
+                    grid-template-columns: auto 1fr;
+                    align-items: center;
+                    gap: 15px;
+
+                    .k-icon{
+
+                       font-size: 30px;
+                       color: black;
+                       font-family: 'Font Awesome 6 Pro';
+                       font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+#TafnitCore_SaaSServer_Funding_onBorading_UI_CreateNewOfferRequest{
+    mainbody {
+
+        & > .row {
+        
+            &.row-main{
+              width: 90%;
+            }
+        }
+    }
+}

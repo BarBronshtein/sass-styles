@@ -1,0 +1,34 @@
+
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main{
+
+    
+    $B2B-row-title-color: #007FC1;
+    
+.row-title{
+    .k-icon-wrapper{
+        text-align: center !important;
+    }
+    span.k-icon{
+        font-size: 30px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    span.x-dynamic-label-control{
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 32px !important;
+        line-height: 30px;
+        text-align: center !important;
+        margin-bottom: 15px;
+        color: $B2B-row-title-color !important;
+    }
+}
+
+mainbody > .row.row-main{
+    width: 95% !important;
+}
+}

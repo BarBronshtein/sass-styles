@@ -305,7 +305,7 @@
     background-color: white !important;
 }
 .logoImg{
-    width: 32%;
+    width: 210px;
     position: relative;
     top: 82%;
     margin: 0 auto;
@@ -426,8 +426,8 @@ i{
 }
 
 .headerPayment {
-    width: 92% !important;
-    height: 330px !important;
+    width: 100% !important;
+    height: 370px !important;
     z-index: 2 !important;
     
 }
@@ -478,9 +478,9 @@ p.text-allReady {
 
 .logoImg{
    
-    top: 84% !important;
-    width: 208px;
-    right: 8px;
+    top: 79% !important;
+    width: 210px;
+    right: 0px;
    
 
 }
@@ -528,7 +528,36 @@ i{
 }
 
 
+.bg-blue{
+    background-color:#DB1C33 !important;
+    
+    }
 
+    .text-title{
+        color: #DB1C33 !important;
+    }
 
+    .card-body{
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2) !important;
+    }
 
+.note{
+    background: #FFFFFF !important;
+    color: #DB1C33 !important;
+box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2) !important;
+}
 
+.message-error{
+& p.text {
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+}
+}
+
+.icon-bell-light{
+    color: #DB1C33;
+}

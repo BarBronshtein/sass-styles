@@ -59,6 +59,8 @@
 @forward '../components/window';
 @forward '../components/autocomplete';
 @forward '../components/threeoptionsSwitch';
+@forward '../components/linke';
+@forward '../components/linklist';
 
 
 
@@ -68,9 +70,28 @@
 @forward '../pages/receipt';
 @forward '../pages/errorPage';
 @forward '../pages/FillAndSignV2Page';
+@forward '../pages/meeting';
+@forward '../pages/Transportation';
 
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;400;500;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
+
+
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),
+html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
+  max-width: 420px !important;
+  margin: auto !important;
+
+  .x-footer {
+    max-width: 420px !important;
+    margin: auto !important;
+  }
+
+  #watermark{
+    right: 0 !important;
+  }
+}
 .x-login-user-error-msg{
   color: red !important;
 }
@@ -97,7 +118,7 @@ a.k-icon{
   .xstyle-autocomplete-wrapper,
   .xstyle-timepicker-wrapper{
     & input{
-      text-align: right !important;
+      text-align: right ;
     }
   }
 
@@ -125,5 +146,51 @@ a.k-icon{
 
 
 
-
   
+
+  body.k-content{
+    padding-right: 0px !important;
+  }
+
+ .k-content:has(.k-drawer-container.k-drawer-mini){
+
+
+  #uber-container{
+
+    padding-right: 50px !important;
+  }
+ }
+
+ .redText{
+
+  & span.x-dynamic-label-control {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #EE0909;
+  }
+ }
+
+
+ .x-ltr{
+  direction: ltr;
+ }
+
+ .x-rtl{
+  direction: rtl;
+ }
+
+
+ .xstyle-textcontrol-wrapper {
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+}

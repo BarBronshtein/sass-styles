@@ -1,0 +1,89 @@
+
+
+.wrapper-cube{
+
+    .icon-cube{
+        .k-icon-wrapper{
+        text-align: center !important;
+        margin-bottom: 15px;
+        span{
+            font-size: 25px;
+        }
+    }
+    }
+
+    .num-cube {
+        span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: center !important;
+            color: #323C4B;
+            
+        }
+    }
+
+    .price-cube {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        span.x-dynamic-label-control{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 100%;
+            text-align: center;
+            color: #026F9E;
+        }
+
+        span.k-icon{
+           color: #026F9E;
+           font-size: 15px;
+           top: 22px;
+           font-weight: 400;
+        }
+    }
+
+    .route-cube {
+        .text-cube{
+            span{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 110%;
+                text-align: center;
+                color: #323C4B;
+            }
+        }
+
+        span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 110%;
+            text-align: center !important;
+            color: #026F9E;
+        }
+    }
+
+.text-cube{
+
+    span{
+       
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 110%;
+        text-align: center;
+        color: #323C4B; 
+    }
+}
+
+
+}

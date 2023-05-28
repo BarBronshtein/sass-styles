@@ -1,0 +1,196 @@
+
+
+
+
+
+
+
+@use '../variable/variable' as *;
+
+
+
+.wrapper-cube{
+
+    min-height: 315px;
+    background: #FFFFFF !important;
+    box-shadow:$cube-main-box-shadow !important;
+    border-radius: 10px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px !important;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px !important;
+    .title-cube{
+         span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center !important;
+            color: $cube-main-title-color;
+         }
+    }
+
+    .sum-cube{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        margin-top: 20px;
+     
+         .x-dynamic-label-control {
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 90px !important;
+            line-height: 100%;
+            text-align: right;
+            color: $cube-main-sum-color;
+         }
+
+         span.k-icon{
+            font-weight: 400;
+            font-size: 30px;
+            top: 30px;
+            color:$cube-main-sum-icon;
+         }
+
+
+    }
+
+
+
+    .card-cube1{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        height: 52px;
+        background: #FFFFFF;
+        border: $cube-main-card-border;
+        border-radius: 10px;
+        padding: 10px 30px;
+        margin-top: 25px;
+        align-items: center;
+
+        &:hover{
+            background: #007FC1 !important;
+
+            & span{
+                color: #FFFFFF !important;
+            }
+        }
+
+        &:focus-within,&:focus , &:active{
+            border: 1px solid #BDDFFF !important; 
+            box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.4) !important;
+            background: #FFFFFF !important;
+            .num{
+                span{
+                    color: $cube-main-card-num-color !important;
+                }
+            }
+
+            span{
+                color: $cube-main-card-text-color !important;
+            }
+        }
+        .num{
+            span{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 100%;
+                text-align: right;
+                color: $cube-main-card-num-color;
+            }
+         }
+
+         span{
+
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            text-align: center;
+            color: $cube-main-card-text-color;
+         }
+    }
+
+
+    
+
+    .card-cube2{
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 0px;
+        height: 52px;
+        background: #FFFFFF;
+        border:$cube-main-card-border;
+        border-radius: 10px;
+        padding: 10px 30px;
+        margin-top: 25px;
+        align-items: center;
+        &:hover{
+            background: #007FC1 !important;
+
+            & span{
+                color: #FFFFFF !important;
+            }
+        }
+
+        &:focus-within,&:focus , &:active{
+            border: 1px solid #BDDFFF !important; 
+            box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.4) !important;
+            background: #FFFFFF !important;
+            .num{
+                span{
+                    color: $cube-main-card-num-color !important;
+                }
+            }
+
+            span{
+                color: $cube-main-card-text-color !important;
+            }
+        }
+
+        .num{
+            span{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 100%;
+                text-align: right;
+                color: $cube-main-card-num-color;
+            }
+        }
+
+            span.k-icon{
+                font-weight: 400;
+                font-size: 18px;
+                top: 3px;
+                color: $cube-main-card-icon;
+                margin-left: 10px;
+                font-family: 'Font Awesome 6 Pro' !important;
+             }
+
+             span{
+
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                text-align: center;
+                color: $cube-main-card-text-color;
+             }
+         }
+    }
+    
+
+
+

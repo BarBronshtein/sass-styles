@@ -2,6 +2,16 @@
 
 
 .k-drawer-container {
+    .k-panelbar .k-group>.k-item>.k-link.k-focus, .k-panelbar .k-group>.k-item>.k-link.k-state-focus, .k-panelbar .k-group>.k-item>.k-link.k-state-focused, .k-panelbar .k-group>.k-item>.k-link:focus, .k-panelbar .k-group>.k-panelbar-item>.k-link.k-focus, .k-panelbar .k-group>.k-panelbar-item>.k-link.k-state-focus, .k-panelbar .k-group>.k-panelbar-item>.k-link.k-state-focused, .k-panelbar .k-group>.k-panelbar-item>.k-link:focus, .k-panelbar .k-panelbar-group>.k-item>.k-link.k-focus, .k-panelbar .k-panelbar-group>.k-item>.k-link.k-state-focus, .k-panelbar .k-panelbar-group>.k-item>.k-link.k-state-focused, .k-panelbar .k-panelbar-group>.k-item>.k-link:focus, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link.k-focus, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link.k-state-focus, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link.k-state-focused, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link:focus{
+        box-shadow: none ;
+    }
+    .k-panelbar>.k-item>.k-link.k-focus, .k-panelbar>.k-item>.k-link.k-state-focus, .k-panelbar>.k-item>.k-link.k-state-focused, .k-panelbar>.k-item>.k-link:focus, .k-panelbar>.k-panelbar-header>.k-link.k-focus, .k-panelbar>.k-panelbar-header>.k-link.k-state-focus, .k-panelbar>.k-panelbar-header>.k-link.k-state-focused, .k-panelbar>.k-panelbar-header>.k-link:focus{
+        box-shadow: none ;
+    }
+    
+    & .k-selected{
+        background: none !important;
+    }
     &.x-openDrawer {
         &.k-drawer-expanded {
             .k-overlay {

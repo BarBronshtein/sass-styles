@@ -27,7 +27,10 @@
         }
     }
 }
-
+.k-picker.k-focus, .k-picker:focus, .k-widget.k-picker.k-focus, .k-widget.k-picker:focus{
+    box-shadow: none;
+    border: none;
+}
 
 .xstyle-idropdownlist-wrapper {
 

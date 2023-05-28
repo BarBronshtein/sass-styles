@@ -1,0 +1,18 @@
+
+
+.text-line{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 10px;
+    margin-top: 20px;
+
+   .line1,
+   .line2{
+
+
+    background: #EEEEEE;
+    height: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+}

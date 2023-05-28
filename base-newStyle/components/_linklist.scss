@@ -1,0 +1,74 @@
+
+
+.xstyle-linkslist-wrapper{
+
+    div{
+        background: none;
+
+        th,td,tr{
+            background: none;
+            border: none;
+        }
+
+        
+    }
+
+    .x-grid-control{
+        border: none;
+        .k-grid-header{
+            border: none;
+
+        }
+
+        .k-grid-content{
+
+            tr{
+                background: none !important;
+                
+                &:focus,&:active{
+
+                    a{
+                        font-weight: 700;
+                    }
+                    
+
+                }
+            }
+
+            td{
+                a{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+                    text-decoration: none !important;
+
+                    &::after{
+                        content: "\e974";
+                        font-family: 'icomoon';
+                        margin-right: 5px;
+                        color: black;
+                        font-size: 12px;
+                    }
+
+
+                }
+                &:focus,&:active{
+
+                    a{
+                        font-weight: 700;
+                    }
+                    
+
+                }
+
+                &:hover{
+                    background: none !important;
+                }
+
+             
+            }
+        }
+    }
+}

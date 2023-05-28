@@ -1,0 +1,1977 @@
+
+
+@use '../variable/variable' as *;
+
+#TafnitCore_System_UI_App_WebSDK_DevPage{
+  & input{
+    text-align: left !important;
+  }
+}
+
+.k-widget.k-window:has(#TafnitCore_Salary_UI_RequestRaise),
+.k-window.k-widget:has(#TafnitCore_Salary_UI_RequestBonus),
+.k-window.k-widget:has(#TafnitCore_Salary_UI_RequestPromotion){
+  width: 60% !important;
+
+  .xstyle-gridv4-wrapper{
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  & .xstyle-checkbox-wrapper.k-state-disabled{
+     opacity: 1 !important;
+    & li {
+      & input.checkbox.x-checkbox.k-checkbox{
+        border: 1px solid black !important;
+        opacity: 1 !important;
+        &::before{
+          color: #000 !important;
+          
+        }
+      }
+
+      & label.k-checkbox-label{
+color: #000 !important;
+opacity: 1 !important;
+      }
+    }
+  }
+
+  .cancel-button{
+    & .x-button-wrapper .k-button.x-button.s-button{
+      background: #FFFFFF !important;
+      border: 1px solid #915FA5 !important;
+      color: #915FA5 !important;
+
+      &:hover{
+        border: 1px solid #7B098B !important;
+        color: #7B098B !important;
+        font-weight: 700 !important;
+      }
+    }
+  }
+
+}
+
+
+.k-widget.k-window.k-rtl.k-display-inline-flex:has(#MessageBoxWindow){
+
+  height: auto !important;
+  padding-bottom: 35px !important;
+ 
+ 
+
+
+  & .k-window-titlebar.k-hstack{
+    position: relative;
+    background: none !important;
+    top: 0;
+    left: 0;
+  }
+
+
+}
+.k-rtl.k-window-content:has(#TafnitCore_Salary_UI_RequestHistory){
+
+& .xstyle-gridv4-wrapper{
+  & .k-grid-content.k-auto-scrollable{
+    max-height: none !important;
+    
+  }
+}
+
+}
+.k-content:has(#TafnitCore_Salary_UI_RequestHistory){
+  & .k-widget.k-window.k-rtl.k-display-inline-flex{
+
+        height: auto !important;
+        padding-top: 15px !important;
+
+        & .k-window-actions.k-hstack{
+          margin-top: -33px;
+          margin-left: -10px;
+        }
+
+
+        & #TafnitCore_Salary_UI_RequestHistory{
+
+          & header{
+            padding-right: 15px;
+            padding-left: 15px;
+
+
+            & #tbbTitle{
+              height: 90px !important;
+              -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              border-radius: 10px !important;
+              width: 100%;
+              margin-left: 0px;
+              background-color: #FFFFFF !important;
+
+              & span{
+                color: #7B098B !important;
+                font-weight: 400 !important;
+                font-size: 30px !important;
+                line-height: 30px !important;
+                height: -webkit-fit-content !important;
+                height: -moz-fit-content !important;
+                height: fit-content !important;
+                margin: auto !important;
+                margin-right: 20px !important;
+              }
+            }
+
+            & .k-spacer{
+              display: none !important;
+            }
+
+            .k-button-group {
+              height: 90px !important;
+              background: #FFFFFF !important;
+              -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+              border-radius: 10px !important;
+              padding-right: 30px !important;
+              padding-left: 10px !important;
+              margin-left: 0px !important;
+              margin-right: 0px !important;
+
+              & button.k-button {
+                -webkit-box-shadow: 0px 4px 4px rgb(123 9 141 / 20%), 0px 0px 8px rgb(123 9 141 / 20%) !important;
+                box-shadow: 0px 4px 4px rgb(123 9 141 / 20%), 0px 0px 8px rgb(123 9 141 / 20%) !important;
+                border-radius: 10px !important;
+                margin-left: 20px !important;
+            }
+          }
+
+            & .k-toolbar{
+              
+              display: grid;
+              grid-template-columns: 1fr 171px;
+              gap: 15px;
+              width: 100%;
+
+              &::before{
+                content: none !important;
+              }
+            }
+
+
+          }
+          & mainbody{
+            padding-right: 20px;
+            padding-left: 20px;
+
+       
+        
+          }
+        }
+
+     
+    }
+}
+
+
+
+.k-content:has(#TafnitCore_Salary_UI_RequestBonus),
+.k-content:has(#TafnitCore_Salary_UI_RequestRaise),
+.k-content:has(#TafnitCore_Salary_UI_RequestPromotion){
+  & .k-widget.k-window.k-rtl.k-display-inline-flex{
+    max-height:  98% !important;
+    height: auto !important;
+    
+}
+
+& .k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack{
+  background: none !important;
+}
+
+& .k-widget.k-window:has(#MessageBoxWindow) #MessageBoxWindow{
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
+}
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest){
+  .xstyle-gridv4-wrapper{
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  & .xstyle-itoolbar-wrapper{
+    background: #FBFBFB;
+  }
+  & .border:has( div[uxid="rIncome"].d-none){
+
+        color: #7B098B;
+
+      
+  }
+
+  & div[uxid="lIncomeSummary"]{
+    margin-right: -25px;
+
+    & span.x-dynamic-label-control {
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 500;
+      text-align: left !important;
+      font-size: 14px !important;
+      line-height: 130% ;
+      color: #000000 !important;
+    }
+    }
+
+  & .card2 .options-card{
+    height: 40px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+  }
+
+& .card2,
+& .card1 {
+
+  & .k-overlay{
+    display: none;
+  }
+  & .col:has(.xstyle-gridv4-wrapper){
+    padding: 0;
+
+    & .xstyle-gridv4-wrapper{
+      padding: 10px ;
+    }
+  }
+}
+  & .card1 .options-card{
+    height: 40px;
+
+    & .title-card2{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      justify-content: space-between;
+      padding: 0;
+
+      & .CostSummary{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 0;
+        gap: 5px;
+        span{
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px !important;
+          line-height: 130%;
+          text-align: justify;
+          color: #000000 !important;
+        }
+        & .bold-text{
+          span{
+            font-weight: 700;
+       
+          }
+        }
+      }
+  
+    }
+  }
+
+  & .kiIncome{
+    grid-template-columns: 67% 1fr 1fr;
+    display: grid;
+
+
+
+    & .xstyle-kicon-wrapper{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+& div[uxid="rIncome"]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+& .main-OPT{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      display: grid;
+    grid-template-columns: 57% auto auto;
+}
+
+& .secndary-title{
+  align-self: center;
+}
+
+& .title-card2{
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  div[uxid="lCostSummary"]{
+    & span{
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 130%;
+    color: #000000 !important;
+    }
+  }
+
+
+  & .x-self-container {
+
+    position: relative ;
+    align-self: center;
+    width: 100%;
+
+
+    & span{
+      font-family: 'Heebo';
+      font-style: normal !important;
+      font-weight: 700 ;
+      font-size: 16px !important;
+      line-height: 130%;
+      color: #7B098B;
+    }
+  }
+}
+
+  & .kIncome{
+
+   & .k-icon-wrapper{
+    text-align: left !important;
+    margin-left: 10px;
+   }
+    & span.k-icon{
+      font-size: 20px;
+      color:#7B098B !important ;
+
+
+    }
+  }
+
+  & .checkBox-Income{
+
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 0;
+
+    & .xstyle-textcontrol-wrapper{
+     height: 37px;
+     border-bottom: 1px solid #f5f5f5!important;
+     input{
+     &:focus{
+      border: none !important;
+     }
+    }
+     &:focus-within{
+      border: 1px solid #ddc3e7 !important;
+      box-shadow: 0px 0px 10px #f6ecfb !important;
+      outline: none !important;
+     }
+    }
+
+    & .x-self-container{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+      & .x-radio-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+
+        & .x-RBComp{
+          padding: 0px 0px 0px 15px !important;
+        }
+      }
+    }
+  }
+& .k-widget.k-window{
+  height: 98% !important;
+  top: 8px !important;
+  padding: 0 !important;
+
+
+  & .k-window-titlebar{
+    position:absolute;
+    z-index: 1600;
+    left: 6px;
+  }
+
+  & .k-window-content{
+    overflow: auto;
+    overflow-x: hidden !important;
+    padding: 0px 15px 10px;
+  }
+}
+
+}
+
+#TafnitCore_Salary_UI_SubmitRequest .k-grid-content.k-auto-scrollable > table > tbody > tr td{
+  height: 50px !important;
+}
+
+#TafnitCore_Salary_UI_SubmitRequest span.k-button-group#btnSplt2{
+  background: white !important;
+
+
+}
+
+#TafnitCore_Salary_UI_SubmitRequest{
+  mainbody{
+    margin-top: -4px  !important;
+    padding: 0 !important;
+  
+
+  }
+
+  
+  & .xstyle-gridv4-wrapper {
+    & thead{
+    
+           & th{
+             color: #7B098B !important;
+             font-size: 14px !important;
+             font-weight: 500 !important;
+
+             &:nth-child(1){
+               color: #7B098B !important;
+               font-size: 16px !important;
+               font-weight: bold !important;
+             }
+           }
+     }
+   }
+& .page-salary-first-table{
+
+
+  & .xstyle-gridv4-wrapper {
+   & thead{
+          & th:nth-child(1){
+            width: 21% !important;
+          }
+          & th{
+            color: #7B098B !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            &:nth-child(1){
+              color: #7B098B !important;
+              font-size: 16px !important;
+              font-weight: bold !important;
+            }
+          }
+    }
+  }
+}
+
+
+  & #rEmployee{
+    height: 90px !important;
+    -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+    box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
+    border-radius: 10px !important;
+    width: 100%;
+    margin-left: 0px;
+    background-color: #FFFFFF !important;
+}
+
+& .k-spacer{
+  display: none;
+}
+& .k-toolbar.k-toolbar-resizable{
+
+  margin-top: 38px !important;
+  display: grid;
+  grid-template-columns: 1fr 240px 314px;
+  gap: 15px;
+  width: 100%;
+  padding: 0;
+    &::before{
+      display: none !important;
+    }
+  
+
+   
+}
+
+& .salary-employeeDetailes{
+
+& .requireDesign.xstyle-textcontrol-wrapper  > div > div.x-control-caption-wrapper.s-control-caption-wrapper{
+  border-right: none !important;
+}
+  & .moreInfo {
+    display: flex ;
+    padding-right: 0 !important;
+    margin-top: 10px !important;
+    & .xstyle-radio-wrapper{
+      top: 72%;
+      transform: translateY(-50%);
+      position: absolute;
+      margin-top: 0 !important;
+      border: none !important;
+    }
+  }
+
+  & .linkHide {
+    & .col-100{
+      border: none !important;
+    }
+    & a{
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 89%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+& #rEmployee > span > span {
+  font-weight: 400 !important;
+}
+
+ & .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable > .k-toolbar-item > span{
+       color:#7B098B !important;
+       font-weight: 400 !important;
+        font-size: 30px !important;
+        line-height: 30px !important;
+        height: fit-content !important;
+        margin: auto !important;
+        margin-right: 20px !important;
+}
+& span.k-button-group{
+
+height: 90px !important;
+background: #F5F5F5 !important;
+box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
+border-radius: 10px !important;
+padding-right: 30px !important;
+padding-left: 10px !important;
+margin-left: 0px  !important;
+margin-right: 0px !important;
+
+& button.k-button{
+    box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
+    border-radius: 10px !important;
+    margin-left: 20px !important;
+    background: white !important;
+}
+}
+}
+
+#TafnitCore_Salary_UI_RequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper:focus-within{
+
+  border-right: 1px solid #ddc3e7 !important;
+  border-bottom: 1px solid #ddc3e7 !important;
+}
+
+#TafnitCore_xAgreements_UI_SubmitSalaryRequest,
+#TafnitCore_Salary_UI_SubmitRequest{
+
+
+
+  & .grid-salary{
+    padding-top: 0px !important;
+    margin: 0 !important;
+   }
+
+
+
+
+  & div[uxid="bSave"]{
+
+    & button.k-button{
+      width: 150px;
+      height: 50px ;
+      background: map-get($map: $Colors, $key: bg-qube ) !important;
+      box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+      border-radius: 10px !important;
+      color: #7B098B !important;
+      text-align: inherit;
+    }
+  }
+
+& .page-salary-first-table{
+
+ max-width: 65%;
+ flex: 0 0 65%;
+
+&+div{
+  padding-left: 0 !important;
+}
+}
+
+& .grid-salary{
+
+    background: none !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+& .page-salary-first-table{ 
+
+  padding:0px;
+
+& .first-table{
+  background: map-get($map: $Colors, $key: bg-qube ) !important;
+  box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+  border-radius: 10px !important;
+  padding-top: 15px !important;
+}
+
+& .requestNotes-main{
+  background: map-get($map: $Colors, $key: bg-qube ) !important;
+  box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+  border-radius: 10px !important;
+  padding: 15px;
+  margin-top: 15px;
+  & .requestNotes-body{
+    height: 53px !important;
+
+
+  }
+  & .col-33{
+    max-width: 19%;
+    background: #fbfbfb;
+    & label{
+      color: #000;
+    }
+
+  }
+
+  & .col-67{
+    align-self: center;
+    & input{
+      border-right: none !important;
+    }
+  }
+}
+
+}
+
+& .k-grid-content.k-auto-scrollable > table > tbody > tr{
+    border-bottom: 1px solid #F5F5F5 !important;
+    & td{
+        margin-left: 15px;
+
+        &>a>i{
+          display: inline-block;
+        }
+    }
+ 
+    &:hover{
+      height: auto !important;
+    }
+
+    & td:last-child {
+        width: 60px;
+
+    &> a{
+
+        color: #7B098B !important;
+        font-size: 20px;
+        
+    
+    }
+   }
+
+
+
+    &  td:first-child{
+        background: #FBFBFB;
+    }
+
+    & td:first-child,
+    & td:nth-child(4){
+        height: 50px !important;
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 130%;
+        color: map-get($map: $Colors, $key: text-defualt ) ;
+        padding-right: 10px;
+    }
+
+    & td:nth-child(2),
+    & td:nth-child(3){
+
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 130%;
+        color: map-get($map: $Colors, $key: text-defualt );
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
+
+
+
+
+
+& thead[role="rowgroup"]{
+
+  & tr{
+
+
+    & th:last-child{
+        width: 50px;
+    }
+  }
+}
+
+& .salary-header {
+justify-content: space-between;
+
+ & div.col-100:nth-child(1){
+    flex: 0 0 75% !important;
+    align-self: center;
+
+    & >div>div>h3{
+        color: #7B098B;
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px !important;
+        line-height: 30px;
+    }
+ }
+
+ & div:nth-child(2){
+    flex: 0 0 7%;
+ }
+
+
+}
+
+& .salary-header-button{
+ flex: 0 0 44% !important;
+ margin-left: 15px;
+  & >div >div>div>button{
+
+    width: 135px;
+    height: 50px;
+    background: #7B098D !important;
+    border-radius: 10px;
+    color: #FFFFFF !important;
+    & >span{
+        float: right;
+        font-size: 22px;
+    }
+
+  }
+
+
+}
+
+& .salary-header-icon{
+
+    width: 50px;
+height: 50px;
+background: map-get($map: $Colors, $key: bg-qube );
+box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow );
+border-radius: 10px;
+margin-left: 20px ;
+
+
+& >div>div>div{
+    text-align: end;
+
+    & >span{
+        color: map-get($map: $Colors, $key: main-color );
+        font-size: 28px;
+    }
+}
+
+}
+
+
+.salary-employeeDetailes{
+    padding: 15px;
+    box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+    padding-bottom: 4px !important;
+    & >div{
+        margin-bottom: 10px;
+    }
+
+    &>div:nth-child(2){
+        flex: 0 0 33%;
+       
+    }
+
+    & .xstyle-textcontrol-wrapper{
+      border-bottom: 1px solid map-get($map: $Colors, $key: border-color );
+        border-radius: 0px;
+        margin-right: 0;
+        border-right: none ;
+
+          &>div>div>label{
+            color:#7E7B7B !important;
+            margin-top: 5px;
+        
+          }
+    }
+
+  &>div>div>div>div:last-child>div>div>input{
+   background: none !important;
+   color: black !important;
+  }
+
+
+
+  &>div>div>div>div:last-child{
+
+
+  
+    & label{
+      color: #7E7B7B !important;
+    }
+  }
+
+  & .xstyle-date-wrapper{
+    border-bottom: 1px solid map-get($map: $Colors, $key: border-color ) !important;
+    border-radius: 0;
+    margin-top: 5px;
+    border-right: none;
+
+    &>div>div.x-control-caption-wrapper.s-control-caption-wrapper{
+        text-indent: 20px;
+    }
+    &>div>div>label{
+            color: #7E7B7B !important;
+            margin-top: 5px;
+    
+    }
+    & span.k-i-calendar{
+      display: none;
+    }
+  }
+
+  & .xstyle-textcontrol-wrapper.x-readonly div:last-child input{
+    color: black !important;
+  }
+
+  & .xstyle-date-wrapper>div:nth-child(3)>div>div>span{
+    border: none !important;
+    color: map-get($map: $Colors, $key: text-defualt ) !important;
+
+    & >input{
+      padding-right: 0;
+      text-indent: 10px;
+      color: black !important;
+    }
+   }
+
+
+   & .xstyle-radio-wrapper{
+
+    margin-top: 20px;
+
+     & >div{
+        border-right: none !important;
+     }
+   }
+
+    & .requireDesign>div>div.x-control-caption-wrapper.s-control-caption-wrapper{
+             
+  
+         &>label{
+            text-indent: 0px !important;
+            color: #7E7B7B !important;
+         }
+   }
+
+}  
+
+
+
+
+.salary-changeSummary{
+
+  & .BackToBack{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 15px;
+    background: none !important;
+    box-shadow: none;
+    border: none !important;
+    padding: 0;
+    padding-left: 15px;
+    margin: auto;
+    & .BackToBack-textBox{
+      margin: 0;
+      height: 53px !important;
+      border-bottom: 1px solid #F5F5F5 !important;
+
+      &:focus-within{
+        border-bottom: 1px solid #ddc3e7 !important;
+      }
+      & .col-33{
+        max-width: 55%;
+        flex: 0 0 55%;
+        background: #fbfbfb !important;
+        height: 100%;
+        & label{
+          color: #000;
+        }
+      }
+
+      & .col-67{
+        max-width: 45%;
+        flex: 0 0 45%;
+        & input{
+          border-right: none !important;
+        }
+      }
+    }
+    & >div{
+      background: #ffffff;
+      box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 20px;
+      align-self: center;
+      height: 85px;
+      & >div{
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    & .xstyle-checkbox-wrapper{
+
+      &.k-state-disabled {
+        & input.k-checkbox{
+          font-weight: 500 !important;
+          border: 1px solid #7B098B !important;
+          opacity: 1;
+          filter: none;
+          &::before{
+            color: #7B098B !important;
+          }    
+        }
+    }
+      & input.x-checkbox:checked{
+        & + label.k-checkbox-label{
+          font-weight: 500 !important;
+          font-weight: 400 !important;
+          color: #7B098B !important;
+          opacity: 1;
+          filter: none;
+        }
+      }
+    }
+    & .x-cell.s-cell{
+       text-align: center ;
+       align-self: center;
+
+      ul.fieldlist{
+        top: 0px;
+      }
+
+    }
+  }
+
+  & td i {
+    font-size:  15px !important;
+
+  }
+  & td {
+    & input{
+      color: #000 !important;
+    }
+  }
+
+& .link-income{
+  text-align: left;
+  padding-top: 9px;
+}
+
+  &>div{
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    background: map-get($map: $Colors, $key: bg-qube );
+    box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow );
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  & .k-grid-content.k-auto-scrollable >table>tbody>tr>td:nth-child(3){
+
+   
+    padding-left: 10px;
+  }
+
+
+
+
+
+}
+
+
+.s-section-header{
+ font-family: map-get($map: $typographyVariables, $key: -font-family);
+font-style: normal;
+font-weight: 700;
+font-size: 16px !important;
+line-height: 130%;
+text-align: right;
+color: #7B098B !important;
+}
+
+
+
+& .k-grid .k-grid-content {
+  height: initial !important;
+  max-height: none;
+  overflow-y: hidden;
+}
+
+
+
+}
+
+
+
+.k-rtl.k-window-content{
+
+
+  scrollbar-face-color: #8733af;
+  scrollbar-track-color: #f3e9f8;
+  scrollbar-arrow-color: #8733af;
+
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+
+  &::-webkit-scrollbar {
+    border-radius: 10px;
+    position: absolute;
+    width: 10px;
+    
+  }
+
+
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f0f0f0;
+    margin-top: 30px !important; 
+    margin-bottom: 30px !important; 
+   
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: map-get($map: $Colors , $key: main-color );
+    border-radius: 10px;
+   
+
+
+    &:hover {
+      background:  map-get($map: $Colors , $key: main-color );
+      
+    }
+  }
+
+
+ 
+  .k-button-icon.k-icon.k-i-close{
+    font-size: 25px;
+    left: 3px;
+  }
+
+}
+.k-widget.k-window.k-rtl.k-display-inline-flex{
+ 
+  
+  top: 30px !important;
+  margin: 0 auto;
+  left: 0 !important;
+  padding-bottom: 25px;
+  right: 0 !important;
+  border: none !important;
+  
+}
+
+.k-popup.k-group.k-reset{
+  width: 213px ;
+  border: none !important;
+  background: white !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0px 2px 0 rgb(0 0 0 / 30%) !important;
+  
+
+  & .k-list-content.k-list-scroller{
+    border: none !important;
+    background-color: #FFFFFF !important;
+    border-color: white;
+  }
+
+  & .k-list-optionlabel.k-state-disabled{
+    display: none;
+  }
+
+   & li{
+    height: 40px !important;
+    background: map-get($map: $Colors, $key: bg-qube ) !important; 
+    border-bottom: 1px solid #D9D9D9 !important;
+    &.k-focus{
+      background: #F5F5F5 !important;
+    }
+
+    .k-link.k-menu-link{
+     
+      &:hover{
+        background: #7B098B !important;
+
+        span{
+          color: white !important;
+        }
+      }
+
+   
+
+    .k-i-grid-icon{
+      font-size: 22px;
+      color: #7B098B;
+    }
+
+    .k-menu-link-text{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: right;
+      color: #000000;
+    }
+
+    }
+
+    &:hover{
+
+      background: #F5F5F5 !important;
+    }
+   }
+
+   & li.k-list-item.k-selected{
+     display: none !important;
+   }
+  
+}
+
+#TafnitCore_Salary_UI_RequestBonus{
+  
+  .bAddSalaray{
+    position: absolute;
+    bottom: 30px;
+    left: -14px;
+       padding: 0 !important;
+    .xstyle-buttoncontrol-wrapper{
+
+      & button{
+        width: 140px;
+        
+
+      }
+    }
+  }
+
+  
+
+}
+#TafnitCore_xAgreements_UI_SalaryRequestBonus,#TafnitCore_Salary_UI_RequestBonus,
+#TafnitCore_Salary_UI_RequestPromotion
+{
+
+  & .firstTitle h3.x-section-header.s-section-header{
+    font-size: 20px !important;
+  }
+  & .k-grid-content.k-auto-scrollable > table > tbody > tr > td > a > i{
+    color: #A1A3A5 !important;
+  }
+
+
+& mainbody{
+  margin-top: 35px !important;
+  padding-bottom: -8px !important;
+  margin-bottom: 5px;
+  background: white !important;
+}
+    & .xstyle-idropdownlist-wrapper{
+      label{
+        padding-right: 0px !important;
+      }
+    }
+    .firstGrid .x-section-header.s-section-header{
+      font-size: 20px !important;
+    }
+
+  .x-section-header.s-section-header{
+
+    font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 130%;
+    text-align: right;
+    color: #7B098B !important;
+  }
+
+
+  height: 95% !important;
+  width: 96%;
+   & .x-cell-header.s-cell-header{
+    font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 130%;
+    text-align: right;
+  color: #7B098B !important;
+    margin-top: 5px !important;
+   }
+
+  & .headerNone{
+   
+    box-shadow: none !important;
+   background: none !important;
+    border-radius: 10px;
+   
+     & >div{
+      background: #FFFFFF !important;
+      box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
+      border-radius: 10px !important;
+       margin: 0;
+       padding: 20px 20px;
+     }
+  }
+
+   & .salary-bonusInput,
+   & .salary-bonusInput1{
+    & > div {
+      padding: 0 !important;
+    }
+    margin-top: 5px;
+
+    & .xstyle-textareacontrol-wrapper {
+
+
+      margin-top: 5px ;
+      margin-bottom: 30px ;
+      & textarea{
+        height: 100px;
+      }
+
+
+
+    & label{
+
+      width: 100% !important;
+      border: none !important;
+      color: #000 !important;
+      padding-right: 0 !important;
+    }
+    }
+    & .xstyle-date-wrapper{
+      & input{
+        text-indent: 10px !important;
+        border-right: none !important;
+        color: #000 !important;
+        padding: 0 !important;
+
+        &::placeholder{
+          color: #ececec !important;
+        }
+      }
+    }
+
+    & .captionText.captionText2 span{
+      text-align: center !important;
+    }
+    & .captionText {
+      & span{
+        margin-top: 15px !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 130% !important;
+        color: black !important;
+      }
+    }
+   }
+
+   & div[uxid="newValue"]{
+
+
+    & .xstyle-textcontrol-wrapper{
+      border-right: none ;
+      & input{
+        border-right: none ;
+        color: black !important;
+        &::placeholder{
+          color: #d9d9d9 !important;
+        }
+      }
+    }
+
+   }
+   & div[uxid="gAsked"]{
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+    & .k-grid-header{
+      border-bottom: 1px solid #F5F5F5 !important;
+      & th{
+        color:  #7B098B !important;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+   }
+   & .xstyle-buttoncontrol-wrapper {
+     & button{
+      width: 140px !important;
+      height: 37px !important;
+     }
+   }
+   & div[uxid="rFuture"]{
+          margin-top: 5px !important;
+    & div{
+      padding-right: 0 !important;
+      width: 100% !important;
+    }
+    & .k-grid-header{
+      border-bottom: 1px solid #F5F5F5 !important;
+      & th{
+        color:  #7B098B !important;
+        font-weight: 400 !important;
+font-size: 14px !important;
+      }
+    }
+    & h3.x-section-header.s-section-header{
+      margin-top: 15px;
+      font-family: map-get($map: $typographyVariables, $key: -font-family);
+      font-style: normal;
+      font-weight: 400 !important;
+      font-size: 20px !important;
+      line-height: 130%;
+      text-align: right;
+      color: map-get($map: $Colors, $key: text-defualt ) !important;
+    }
+  }
+
+   & div[uxid="kiAddNewValue"],
+   & div[uxid="kiAddSalaray"]{
+
+
+     & span{
+      font-size: 28px !important;
+      color: #7B098B !important;
+      margin-top: 11px;
+      margin-right: 20px;
+     }
+
+
+
+   }
+
+   & div[uxid="kiSubNewValue"],
+   & div[uxid="kiSubSalaray"]{ 
+
+    & span{
+      font-size: 28px !important;
+      color: #7B098B !important;
+      margin-top: 11px;
+      margin-right: 22px;
+    }
+   }
+
+
+ 
+
+
+    }
+
+
+
+
+
+
+    #TafnitCore_xAgreements_UI_SalaryRequestRaise,
+    #TafnitCore_Salary_UI_RequestRaise{
+       
+      .price {
+        padding-right: 0px;
+      }
+      & .bAddSalaray{
+        padding: 0  !important;
+        position: absolute;
+    left: 57px;
+    top: 66px;
+
+        & .xstyle-buttoncontrol-wrapper{
+          padding-left: 0 !important;
+        }
+        button{
+          margin-top: 15px !important;
+          width: 140px;
+        }
+      }
+      & mainbody{
+        margin-top: 35px !important;
+        padding-bottom: -8px !important;
+        background: white !important;
+        margin-bottom: 5px;
+
+      }
+      & .xstyle-date-wrapper{
+        
+        margin-top: 12px !important;
+        height: 40px;
+
+        &:focus-within{
+          border-bottom: 1px solid #ddc3e7 !important;
+        }
+        & input{
+          height: 40px !important;
+        }
+      }
+
+       & .xstyle-textcontrol-wrapper{
+        border-bottom: none ;
+        margin-bottom: 54px ;
+        margin-top: 12px;
+        height: 40px;
+
+        input{
+          &:focus{
+           border: none !important;
+          }
+         }
+       }
+      height: 95% !important;
+      width: 96%;
+
+
+
+
+
+
+       & .x-cell-header.s-cell-header{
+        font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 130%;
+    text-align: right;
+    color: map-get($map: $Colors, $key: text-defualt );
+       }
+    & .firstGrid{
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px rgb(123 9 141 / 8%) !important;
+      border-radius: 10px;
+      padding: 20px 40px;
+    }
+    & .mainPopUp {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px rgb(123 9 141 / 8%) !important;
+      border-radius: 10px;
+      padding: 20px 40px;
+
+     
+    }
+
+    & .futureGrid{
+      margin-bottom: 80px !important;
+      margin-top: 24px;
+    }
+    & .k-grid-header{
+      border-bottom: 1px solid #F5F5F5 !important;
+    }
+      & .headerNone{
+       
+        box-shadow:none !important;
+        background: none !important;
+        border-radius: 10px;
+    
+         & >div{
+     
+           margin: 0;
+         }
+      }
+
+
+      & div[uxid="bConfirm"]{
+     
+        left: 16px;
+        bottom: 0px;
+
+        & button{
+          width: 140px !important;
+          height: 37px !important;
+          background: #7B098B ;
+          border-radius: 10px !important;
+          color: #FFFFFF ;
+          font-family: "Heebo" !important;
+          font-style: normal;
+          font-weight: 500 !important;
+          font-size: 14px !important;
+          line-height: 12px !important;
+        }
+      }
+
+
+
+        & div[uxid="newValue"]{
+
+
+          & input{
+            
+            color: black !important;
+              background: map-get($map: $Colors, $key: bg-qube ) !important;
+              position: relative;
+              z-index: 50;
+              &::placeholder{
+                color: #ececec !important;
+              }
+              
+          }
+        }
+
+        & div[uxid="fromDate"]{
+           & span{
+            border: none !important;
+            margin-top: -3px !important;
+            height: auto;
+           }
+
+          & input{
+           
+              z-index: 9;
+              color: map-get($map: $Colors, $key: text-defualt ) !important;
+              border-right: none !important;
+              &::placeholder{
+                color: #ececec !important;
+              }
+          }
+        }
+
+
+         & div[uxid=kiAddSalaray] span {
+          font-size: 28px !important;
+          color: #7B098B !important;
+          margin-top: 25px;
+          margin-right: -5px;
+      }
+       
+       & div[uxid=kiSubSalaray] span {
+        font-size: 28px !important;
+        color: #7B098B !important;
+        margin-top: 25px;
+        margin-right: 22px;
+    }
+
+    & .x-grid-control.s-grid-control.k-grid.k-widget.k-grid-display-block{
+      margin-top: -45px;
+      width:100%;
+      & .k-grid-content{
+        height: inherit;
+      }
+      & .k-grid-header{
+  
+        border-bottom: 1px solid #F5F5F5;
+  
+         & div>table>thead>tr>th{
+  
+          font-family: map-get($map: $typographyVariables, $key: -font-family);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px !important;
+          line-height: 130%;
+          text-align: right;
+          color: #7B098B !important;
+        
+         }
+      }
+       
+     }
+  
+     & div[uxid="cAsked"]{
+  
+        & h4{
+  
+          position: absolute;
+          top: 50px
+        }
+  
+     }
+  
+     & div[uxid="lCurrentPracentage"]{
+  
+      & span{
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px !important;
+        line-height: 130%;
+        text-align: right;
+        color: map-get($map: $Colors, $key: text-defualt );
+        margin-right: 6px;
+        margin-top: 9px;
+      }
+     }
+  
+      & .x-control-caption-text{
+  
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px !important;
+        text-align: right;
+        color: map-get($map: $Colors, $key: text-defualt ) !important;
+        margin-top: 17px;
+      }
+  
+      
+      & .k-master-row{
+  
+   
+        height: 60px;
+        background: map-get($map: $Colors, $key: bg-qube );
+     
+  
+        & td{
+       
+          border: none !important;
+          border-bottom: 1px solid #F5F5F5 !important;
+         }
+  
+         & td:last-child{
+      
+  
+           &>a>i{
+            display: inline-block;
+            font-size: 28px;
+             color:#A1A3A5 !important
+           }
+         }
+  
+    
+        
+  
+      }
+  
+      & .k-grid-content.k-auto-scrollable{
+        overflow-y: hidden !important;
+      }
+
+      & .x-section-header.s-section-header{
+
+        font-family: map-get($map: $typographyVariables, $key: -font-family);
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 130%;
+        text-align: right ;
+        color:#7B098B !important;
+        margin-bottom: 10px;
+      }
+      
+      & div[uxid="rFuture"]{
+          
+        & div{
+          padding-right: 0 !important;
+        }
+
+      }
+
+      & div[uxid="rAsked"]{
+
+        & div:nth-child(1).col-100{
+
+          padding-right: 0 !important;
+      
+        }
+      }
+
+      & div[uxid="rCurrent"]{
+
+        & div:nth-child(1).col-100{
+
+          padding-right: 0 !important;
+      
+        }
+
+        & .x-section-header.s-section-header{
+
+          font-size: 20px !important;
+          margin-bottom: 20px !important;
+          color: #7B098B !important;
+          margin-top: 0 !important;
+          font-weight: 400 !important;
+          margin-bottom: 45px !important;
+        }
+      }
+
+      & div[uxid="lFromDate"]{
+
+        & span{
+          margin-top: 30px;
+    margin-right: 18px;
+    color: map-get($map: $Colors, $key: text-defualt ) !important;
+    font-size: 16px !important;
+        }
+      }
+
+      & div[uxid="kiDrawer"]{
+
+        position: absolute;
+        z-index: 3;
+        top: 41px;
+        left: 20px;
+
+        & span{
+          color: map-get($map: $Colors, $key: text-defualt ) !important;
+          font-size: 28px !important;
+        }
+      }
+     
+
+      & div[uxid="currentValue"]{
+
+        & input{
+          font-size: 40px !important;
+          background: none !important;
+          border: none;
+        }
+      }
+    }
+    
+
+    #TafnitCore_xAgreements_UI_SalaryRequestPromotion,
+    #TafnitCore_Salary_UI_RequestPromotion{
+  
+
+      & .buttonPOpUp{
+        color: #ff7a00;
+      
+      }
+      & div[uxid="rAsked"]{
+        & .sTitle{
+          margin-bottom: 25px !important;
+        }
+      }
+
+      & div[uxid=newValue]{
+        margin-top: 0 !important;
+      }
+
+      & .colInputs {
+        display: flex;
+        margin-bottom: 20px !important;
+        padding-right: 0px;
+      }
+
+ 
+      & th{
+        color: #7B098B;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      & .captionText  span{
+        margin-top: 15px !important;
+        text-align: center !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 130% !important;
+        color: black !important;
+      }
+
+      & .xstyle-date-wrapper  {
+        & input{
+          border-right: none !important;
+          text-indent: 11px !important;
+          text-align: right;
+      
+        }
+      }
+    
+    }
+
+    .k-window-title{
+
+
+      font-weight: 400;
+      font-size: 20px !important;
+      line-height: 130%;
+      text-align: right;
+      color: #7B098B !important;
+    }
+
+    .popUpWindowCls:has(#TafnitCore_Salary_UI_FutureValues){
+
+      width: 60% !important;
+      background: #FBFBFB !important;
+      position: absolute;
+      top: 56px !important;
+      right: -62% !important;
+      margin: 0 !important;
+      & #TafnitCore_Salary_UI_FutureValues{
+        padding: 0 !important;
+        filter: drop-shadow(0px 0px 5px rgba(123, 9, 141, 0.25));
+        border-radius: 10px;
+        box-shadow: none !important;
+        background: #FBFBFB !important;
+        & .headerNone{
+          
+          & .row{
+            background: #FBFBFB !important;
+          border-radius: 0 !important;
+            box-shadow: none !important;
+            margin-bottom: 0 !important;
+          }
+        }
+
+        & table{
+          & tr{
+            background: #FBFBFB !important;
+            & td{
+              background: #FBFBFB !important;
+              font-family: 'Heebo';
+              font-style: normal !important;
+              font-weight: 400 !important;
+              font-size: 14px !important;
+              line-height: 18px !important;
+            }
+          }
+        }
+      }
+    }
+
+ 
+    // leptop //
+
+    @media only screen and (max-width: 1281px){
+
+          #TafnitCore_Salary_UI_SubmitRequest{
+
+
+              & header.k-header.x-header{
+
+                background:none !important;
+              }
+
+
+              & .grid-salary{
+                display: block !important;
+
+                & .page-salary-first-table{
+                  max-width: 100% !important;
+                  margin-bottom: 15px !important;
+
+                  & + div{
+                    padding-right: 0 !important;
+
+                    & .salary-changeSummary{
+                         display: flex !important;
+
+                         &   div.card1{
+                          margin-left: 7.5px;
+                          max-width: 49.3% !important;
+                         }
+
+                         &   div.card2{
+                          margin-right: 7.5px;
+                          max-width: 49.3% !important;
+                         }
+                    }
+                  }
+                }
+              }
+
+
+          }
+
+
+    }
+
+
+
+  .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) {
+    .k-widget.k-window.k-rtl.k-display-inline-flex:has(#MessageBoxWindow){
+      padding-top: 0px !important;
+    }
+  .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection){
+    height: auto !important;
+
+    .k-window-titlebar.k-hstack{
+
+      height: 35px !important;
+      & .k-window-title{
+        padding-right: 40px;
+      }
+    }
+
+    & .k-window-content{
+      padding: 40px 35px 20px !important;
+    }
+    #TafnitCore_System_UI_App_Tools_LookupSelection{
+      .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper{
+
+        background-color: #fff;
+        box-shadow: 0px 0px 12px rgb(123 9 141 / 8%);
+        border-radius: 10px;
+        padding: 10px;
+        padding-left: 30px !important;
+        margin-bottom: 15px;
+
+        .x-control-content-wrapper.s-control-content-wrapper{
+          & > .k-toolbar.k-toolbar-resizable{
+            background: none;
+            border: none;
+            margin-top: 16px !important;
+            margin-bottom: 16px;
+            width: 100%;
+            & > :nth-child(2).k-button:hover{
+              & span{
+                color: white !important;
+              }
+            }
+
+
+
+            & .k-button{
+              width: 50px;
+              height: 50px;
+              background: #ffffff;
+              box-shadow: 0px 0px 8px rgb(123 9 141 / 8%);
+              border-radius: 10px !important;
+              border: none !important;
+              margin-left: 20px;
+
+              & .k-button-text{
+                width: auto !important;
+                height: auto !important;
+                font-size: 18px;
+                align-self: center;
+                opacity: 1 !important;
+                color: #7B098B !important;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

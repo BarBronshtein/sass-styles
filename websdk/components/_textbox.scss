@@ -1,0 +1,67 @@
+@use "../variable/variable" as *;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+.xstyle-textcontrol-wrapper{
+  border-bottom: $border-text-fields;
+  height: $height-text-fields !important;
+  border-radius: 0px !important;
+  margin-top: 10px;
+  align-items: center;
+  background: white;
+  label{
+    @extend %texbox-lable;
+  }
+  
+.x-link_Comp{
+  color: #1998D5 ;
+  font-size: 13px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  display: grid;
+  align-items: center;
+  height: auto !important;
+  padding-right: 15px;
+  line-height: 0.9 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  &:hover{
+    font-weight: 700 !important;
+    text-decoration: none;
+  }
+}
+  input.k-textbox.x-textbox{
+    @extend %texbox-input;
+
+
+  }
+
+  &.x-contextmenu {
+    & div:nth-child(1) > div.x-control-caption-wrapper::before {
+      content: "\f0d8" !important;
+      font-family: "Font Awesome 5 PRO";
+      font-weight: 900;
+      font-size: 14px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-right: 1px;
+      color: #037295 !important;
+    }
+  }
+
+  // focus //
+
+  &:focus-within{
+    border: 1px solid #DDC3E7 !important;
+    filter: drop-shadow(0px 4px 4px rgba(123, 9, 141, 0.1)) drop-shadow(0px 0px 3px rgba(123, 9, 141, 0.2)) !important;
+  }
+}

@@ -3,7 +3,7 @@
 .xstyle-xmenu-wrapper {
     li{
         &.k-item{
-            z-index: 1030!important;
+            z-index: auto !important;
             &:hover{
                 background-color:transparent !important;
                 box-shadow: none !important;

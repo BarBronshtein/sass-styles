@@ -1,0 +1,23 @@
+
+
+#TafnitCore_Sales_V2_UI_Login{
+
+    background-image: url(https://b2cdev-alony.tafniterp.co.il/xtafnitdev/Images/Alony/backgrounds/Login-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+    
+    .xstyle-buttoncontrol-wrapper button{
+        width: 100% !important;
+        margin-top: 50px;
+    }
+    img{
+        width: 170px;
+        margin-bottom: 30px;
+    }
+}

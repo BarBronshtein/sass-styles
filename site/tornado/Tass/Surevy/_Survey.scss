@@ -1,0 +1,332 @@
+$Title-background: #334768;
+$Title-text: White;
+$Title-secondary: #AE2A30;
+$Title-secondary-bottom-border: #FFA0A4;
+$icon-color : #334768;
+$Required: #AE2A30;
+$Focus-border:  #AE2A30;
+$High-light-caption : #AE2A30;
+$Radio-button-on-background:  #AE2A30;
+$Radio-button-on-border: white;
+$Radio-button-on-drop-shadow: #AE2A30;
+$Upload-text: #790D11;
+$Upload-icon:  #790D11;
+$Check-box-on-background: #AE2A30;
+$Check-box-on-drop-shadow: #AE2A30 20%;
+$Label-star-off-border: #FFA0A4;
+$Label-star-on-background: #790D11;
+$Link-text: #790D11;
+$Approve-icon-on: #334768;
+$Button-background: #AE2A30;
+$Button-press-background: #790D11;
+$Card-upload-file-icon-file: #334768;
+$Card-upload-file-name-file: #7E7B7B;
+$Card-upload-file-ok-text: #334768;
+$Card-upload-file-error-text: #DB1C33;
+$Card-upload-file_error-icon-file: #DB1C33;
+$Box-shadow-footer: rgba(174, 42, 48, 0.2);
+$Box-shadow-button: rgba(174, 42, 48, 0.2);
+$Box-shadow-messagebox: rgba(174, 42, 48, 0.2);
+$Messagebox-icon-color:#334768;
+$Messagebox-border-color:#334768;
+$signature-icon-before:#790D11;
+$signature-icon-after:#334768;
+
+
+
+
+
+
+
+#TafnitCore_SaaSServer_Survey_UI_Survey {
+
+   & div[uxid=SurveyLogo] img{
+    width: 270px !important; 
+    top: 50% !important;
+    transform: translateY(10px) !important;
+   } 
+    
+    & .surveyTitle{
+
+        background: $Title-background !important;
+    }
+
+& .xstyle-signature-wrapper .GraphicalSignaturePlaceHolders a:before{
+
+    color: $signature-icon-before !important;
+}
+
+& .xstyle-popupsignature-wrapper .GraphicalSignaturePlaceHolders::after{
+   color: $signature-icon-after !important;
+}
+
+
+// footer // 
+
+& .s-footer.x-footer{
+    box-shadow: 0px -4px 8px $Box-shadow-footer !important;
+}
+
+& .x-footer div[uxid=cSubmit] button.x-button.s-button.k-button,
+& .xstyle-buttoncontrol-wrapper button.x-button.k-button.s-button{
+
+    background: $Button-background !important;
+
+    &:focus-within,
+    &:focus{
+            background: $Button-press-background !important;  
+            box-shadow:  0px -4px 8px $Box-shadow-button !important;
+    }
+}
+
+}
+
+// message box //
+
+.k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) {
+
+& .k-widget.k-window.k-rtl:has(#MessageBoxWindow) {
+    border: 1px solid $Messagebox-border-color  !important;
+    box-shadow: 0px -4px 8px $Box-shadow-messagebox !important;
+
+    & .x-icons.x-fa-warning{
+
+        &::before{
+        color: $Messagebox-icon-color !important;
+        }
+    }
+     
+& #MessageBoxWindow{
+   
+
+
+& button.k-button{
+
+    background: $Button-background!important;
+    box-shadow: 0px -4px 8px $Box-shadow-button !important;
+
+    &:focus{
+
+        background: $Button-press-background !important;
+    }
+
+ }
+}
+}
+
+// button succuss canvas //
+
+& .xstyle-canvas-wrapper .x-control-content-wrapper .k-icon.k-i-check.canvasSaveBtn-indicate-saved{
+    background: $Approve-icon-on !important;
+}
+
+// radio button // 
+
+&  .xstyle-radio-wrapper.x-control-wrapper{
+ 
+
+    & input{
+        &:checked{
+            border: 2px solid $Radio-button-on-border !important;
+            box-shadow: 0px 0px 4px $Radio-button-on-drop-shadow !important;
+        }
+
+
+        &::before{
+            color: $Radio-button-on-background !important;
+            width: 10px !important;
+           height: 10px !important;
+        }
+    }
+
+   }
+
+// highlight //
+
+  &  .x-highlight{
+
+    & label{
+        color: $High-light-caption!important;
+    }
+  
+}
+
+// title // 
+
+& .x-freehandhtml-wrapper {
+    center{
+        border-bottom: 1px solid $Title-secondary-bottom-border !important;
+        color: $Title-secondary!important; 
+    }
+}
+
+   // check box //
+
+  & .xstyle-checkbox-wrapper.x-control-wrapper {
+
+    & input{
+     
+
+        &:checked{
+            box-shadow: 0px 0px 4px $Check-box-on-drop-shadow !important;
+        }
+
+        &:checked::before{
+            background: $Check-box-on-background;
+
+        }
+    }
+   }
+
+
+
+
+
+// star control //
+
+& .xstyle-krating-wrapper.x-control-wrapper{
+
+
+
+   & .kendo-rating{
+
+
+
+    &:has(.k-selected){
+        & .k-i-close-circle{
+            color: $Label-star-on-background !important ;
+        }
+    }
+    & .k-rating.k-widget{
+        display: grid;
+        grid-template-columns: 85% 15%;
+      
+        & .k-rating-container{
+           
+            
+
+            & .k-icon{
+                color:  $Label-star-off-border;
+        
+            }
+ 
+            & .k-icon.k-i-star{
+            
+                color:  $Label-star-on-background !important;
+              
+            }
+        }
+    }
+
+   }
+
+}
+
+// focus color //
+
+& .xstyle-textareacontrol-wrapper textarea{
+
+    &:focus-visible{
+
+        outline: 1px solid $Focus-border!important;
+    }
+}
+&  .xstyle-date-wrapper span.k-datepicker.k-input,
+& .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist,
+& .xstyle-textcontrol-wrapper input,
+& .xstyle-autocomplete-wrapper input,
+& .xstyle-geoaddress-wrapper input,
+& .xstyle-googleaddress-wrapper input,
+& .xstyle-intlphonenumber-wrapper input{
+    &:focus,
+    &:focus-within,
+    &:active,
+    &:focus-visible{
+        border: 1px solid $Focus-border!important; 
+        box-shadow: none !important;
+    }
+}
+
+
+// all control lbael + text //
+.xstyle-googleaddress-wrapper .x-barcodeBtnContainer a{
+    color: $icon-color !important;
+
+}
+.xstyle-geoaddress-wrapper,
+.xstyle-geoaddress-wrapper,
+.xstyle-idropdownlist-wrapper,
+.xstyle-date-wrapper,
+.xstyle-textcontrol-wrapper{
+
+
+
+    & .x-control-wrapper .k-icon, 
+    & .x-control-content-wrapper .k-icon {
+
+        color: $icon-color !important;
+    
+        &::before{
+            
+        color: $icon-color !important;
+        }
+    }
+}
+
+
+// linke //
+
+& .xstyle-ilink-wrapper a{
+
+    color: $Link-text !important;
+}
+
+//uplod control //
+
+& .k-i-file-pdf,
+& .k-i-file-data,
+& .k-i-file-txt,
+& .k-i-file,
+& .k-i-file-image.k-file-group.k-icon{
+    &::before{
+        color: $Card-upload-file-icon-file !important; 
+    }
+}
+
+& .xstyle-upload-wrapper .k-file.k-file-success [class^="k-file-validation-message !k-text-success"]{
+    color: $Card-upload-file-icon-file !important; 
+}
+
+& .xstyle-upload-wrapper .k-file-invalid [class="k-file-validation-message !k-text-error"]{
+    color: $Card-upload-file_error-icon-file;
+}
+
+& .xstyle-upload-wrapper .k-upload-button span{
+
+    color: $Upload-text !important;
+}
+
+& .k-upload-button.k-focus{
+    box-shadow: none !important;
+    border: none;
+}
+
+& .xstyle-upload-wrapper .k-upload-button span::after{
+    color: $Upload-icon !important;
+}
+
+
+// mandatory //
+
+& .mandatory{
+    & label.x-control-caption-text{
+        margin-right: 12px !important;
+        &::before{
+            content: "*";
+            color: $Required !important;
+        }
+
+    }
+}
+
+}

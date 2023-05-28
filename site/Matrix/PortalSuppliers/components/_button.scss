@@ -1,0 +1,88 @@
+@use '../variable/variable' as *;
+
+
+
+
+
+// button bordr //
+.gridHeaderButton{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+
+    & .spicelBTN{
+
+        & button{
+        @extend %spicel-button;
+        }
+    }
+
+    & button{
+       
+        @extend %button;
+
+      &:hover{
+        background: $Button-bg-hover;
+        opacity: 0.6;
+        color: $Button-color-text;
+        border: 1px solid $Button-color-border;
+      }
+
+      &:focus{
+        border: 1px solid $Button-color-border-focus;
+        opacity: 1;
+      }
+      & span{
+        color: $Button-color-icon !important;
+        &::before{
+
+            font-size: 28px;
+            right: -6px;
+            
+        }
+    }
+
+   
+    
+    }
+
+
+
+// button icon + text //
+    & .icon-btn-text{
+        & button{
+            width: 110px;
+
+            span:before{
+                right: -15px;
+            }
+        }
+    }
+// button icon //
+    & .icon-btn{
+       
+        & button{
+            width: 50px !important;
+            min-width: auto;
+        }
+    }
+  }
+
+  .xstyle-buttoncontrol-wrapper{
+    & button{
+        @extend %spicel-button;
+        
+      &:hover{
+        background: $Button-bg-hover;
+        opacity: 0.6;
+        color: $Button-color-text;
+        border: 1px solid $Button-color-border;
+      }
+
+      &:focus{
+        border: 1px solid $Button-color-border-focus;
+        opacity: 1;
+      }
+        }
+
+  }

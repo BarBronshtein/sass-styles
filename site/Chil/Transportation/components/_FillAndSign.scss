@@ -1,0 +1,29 @@
+
+
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page{
+
+    & mainbody{
+
+        margin-top: 0 !important;
+
+        & .k-header.x-section-header-wrapper{
+
+
+            border-bottom: 1px solid #F09621 !important;
+
+            & h3.x-section-header{
+
+                color: #F09621 !important;
+            }
+
+        }
+
+  
+    }
+    & .xstyle-buttoncontrol-wrapper .x-control-content-wrapper button.x-button.k-button.s-button{
+
+        margin-top: -9px !important;
+        width: 100%;
+        background: #0F6FB7 !important;
+    }
+}

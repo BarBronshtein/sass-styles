@@ -2,32 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;400;500;700&display=swap");
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;400;500;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 @keyframes spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+    transform: rotate(360deg);
   }
 }
 @keyframes fadeIn {
@@ -38,23 +19,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes anim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 @keyframes anim {
   0% {
     display: none;
@@ -63,46 +27,24 @@
   1% {
     display: block;
     opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes sk-foldCubeAngle {
-  0%, 10% {
-    -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
-    opacity: 0;
-  }
-  25%, 75% {
-    -webkit-transform: perspective(140px) rotateX(0deg);
-            transform: perspective(140px) rotateX(0deg);
-    opacity: 1;
-  }
-  90%, 100% {
-    -webkit-transform: perspective(140px) rotateY(180deg);
-            transform: perspective(140px) rotateY(180deg);
-    opacity: 0;
+    transform: scale(1);
   }
 }
 @keyframes sk-foldCubeAngle {
   0%, 10% {
-    -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
   25%, 75% {
-    -webkit-transform: perspective(140px) rotateX(0deg);
-            transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
   90%, 100% {
-    -webkit-transform: perspective(140px) rotateY(180deg);
-            transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
     opacity: 0;
   }
 }
@@ -127,15 +69,9 @@
   text-indent: 2.5em;
 }
 .x-text-with-button-wrapper .x-barcodeBtnContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 1px;
   width: 40px;
@@ -154,8 +90,7 @@
   left: 10px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .k-rtl .x-text-with-button-wrapper .x-barcodeBtnContainer {
@@ -203,8 +138,7 @@
   height: 0.5em;
   top: 2.5em;
   right: 0%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .x-crumb-wrapper.x-vertical .x-progressBread .x-breadcrumbNode .x-brscCaption {
   right: 55%;
@@ -247,8 +181,6 @@
   text-decoration: underline;
 }
 .x-crumb-wrapper .x-progressBread .x-breadcrumbNode .k-i-arrow-chevron-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .x-crumb-wrapper .x-progressBread .x-breadcrumbNode .x-brscCaption {
@@ -312,8 +244,7 @@
 }
 
 .k-ltr .k-i-arrow-chevron-left {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .k-ltr .x-crumb-wrapper .x-progressBread .x-bsLinkLi {
   text-align: left !important;
@@ -325,6 +256,10 @@
 .k-ltr .x-crumb-wrapper .x-progressBread .x-breadcrumbNode:after {
   left: 0%;
   right: 0;
+}
+
+.dotIcon.xstyle-buttoncontrol-wrapper {
+  bottom: 55%;
 }
 
 .k-button {
@@ -356,7 +291,6 @@
   position: absolute;
   left: 0;
   z-index: 10;
-  background: transparent !important;
 }
 
 /*row collapse button arrow*/
@@ -370,8 +304,7 @@
   right: auto;
 }
 .x-btn-collapse.collapsed {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .x-btn-collapse #x-arrow-collapse {
   position: absolute;
@@ -393,8 +326,7 @@
 .k-filter-menu .k-picker:focus, .k-filter-menu .k-datepicker:focus {
   color: #003f59;
   background-color: #fff !important;
-  -webkit-box-shadow: 0 0 3px 0 hsla(0deg, 0%, 0%, 0.3);
-          box-shadow: 0 0 3px 0 hsla(0deg, 0%, 0%, 0.3);
+  box-shadow: 0 0 3px 0 hsla(0, 0%, 0%, 0.3);
 }
 .k-filter-menu .k-icon-button {
   border: 0px !important;
@@ -427,6 +359,15 @@
   font-size: 14px;
   color: red;
   font-weight: bold;
+}
+
+.k-calendar td.k-focus .k-link, .k-calendar td.k-state-focused .k-link {
+  box-shadow: inset 0 0 4px 0 #DDC3E7;
+}
+
+.k-calendar td.k-selected .k-link, .k-calendar td.k-state-selected .k-link {
+  background: #DDC3E7;
+  border: none;
 }
 
 .x-canvas-wrapper-comp .x-canvas-button-wrapper-comp .x-canvas-button {
@@ -509,16 +450,10 @@
 }
 .x-sectionDamageTypeAndCamera .x-damageTypeAndCamera .x-cameraSection .x-cameraSection_btns_wrapper {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   float: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .x-sectionDamageTypeAndCamera .x-damageTypeAndCamera .x-cameraSection .x-cameraSection_btns_wrapper .x-camera1 {
   margin: 0 5%;
@@ -580,8 +515,7 @@
   display: inline-block;
   width: 100%;
   height: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .x-sectionDamageTypeAndCamera .x-confirmCancelBtns {
   display: inline-block;
@@ -667,15 +601,9 @@
   right: 0px;
   top: 6px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .k-chat .k-bubble {
   margin-right: 35px;
@@ -746,9 +674,7 @@
   left: 0 !important;
 }
 .k-chat .k-message-box input {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
   direction: rtl;
 }
 .k-chat .k-message-alert {
@@ -762,15 +688,12 @@
   max-width: 100% !important;
 }
 .k-chat .k-message-group.k-alt {
-  -ms-flex-item-align: start !important;
-      align-self: flex-start !important;
+  align-self: flex-start !important;
 }
 
 .k-rtl .k-message-group:not(.k-alt),
 [dir=rtl] .k-message-group:not(.k-alt) {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 .k-rtl .k-message-group.k-alt,
 [dir=rtl] .k-message-group.k-alt {
@@ -779,9 +702,7 @@
 
 .k-ltr .k-message-group:not(.k-alt),
 [dir=ltr] .k-message-group:not(.k-alt) {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 .k-ltr .k-message-group.k-alt,
 [dir=ltr] .k-message-group.k-alt {
@@ -858,6 +779,15 @@
   background: transparent !important;
 }
 
+.k-drawer-container .k-panelbar .k-group > .k-item > .k-link.k-focus, .k-drawer-container .k-panelbar .k-group > .k-item > .k-link.k-state-focus, .k-drawer-container .k-panelbar .k-group > .k-item > .k-link.k-state-focused, .k-drawer-container .k-panelbar .k-group > .k-item > .k-link:focus, .k-drawer-container .k-panelbar .k-group > .k-panelbar-item > .k-link.k-focus, .k-drawer-container .k-panelbar .k-group > .k-panelbar-item > .k-link.k-state-focus, .k-drawer-container .k-panelbar .k-group > .k-panelbar-item > .k-link.k-state-focused, .k-drawer-container .k-panelbar .k-group > .k-panelbar-item > .k-link:focus, .k-drawer-container .k-panelbar .k-panelbar-group > .k-item > .k-link.k-focus, .k-drawer-container .k-panelbar .k-panelbar-group > .k-item > .k-link.k-state-focus, .k-drawer-container .k-panelbar .k-panelbar-group > .k-item > .k-link.k-state-focused, .k-drawer-container .k-panelbar .k-panelbar-group > .k-item > .k-link:focus, .k-drawer-container .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-focus, .k-drawer-container .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-state-focus, .k-drawer-container .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-state-focused, .k-drawer-container .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link:focus {
+  box-shadow: none;
+}
+.k-drawer-container .k-panelbar > .k-item > .k-link.k-focus, .k-drawer-container .k-panelbar > .k-item > .k-link.k-state-focus, .k-drawer-container .k-panelbar > .k-item > .k-link.k-state-focused, .k-drawer-container .k-panelbar > .k-item > .k-link:focus, .k-drawer-container .k-panelbar > .k-panelbar-header > .k-link.k-focus, .k-drawer-container .k-panelbar > .k-panelbar-header > .k-link.k-state-focus, .k-drawer-container .k-panelbar > .k-panelbar-header > .k-link.k-state-focused, .k-drawer-container .k-panelbar > .k-panelbar-header > .k-link:focus {
+  box-shadow: none;
+}
+.k-drawer-container .k-selected {
+  background: none !important;
+}
 .k-drawer-container.x-openDrawer.k-drawer-expanded .k-overlay {
   display: none !important;
 }
@@ -884,9 +814,7 @@
   overflow-y: unset !important;
 }
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] {
-  -webkit-box-align: start !important;
-      -ms-flex-align: start !important;
-          align-items: flex-start !important;
+  align-items: flex-start !important;
   padding: 3px 0px;
 }
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] .k-icon-wrapper {
@@ -920,8 +848,7 @@
   border: 0px !important;
 }
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] .drawer-item-control-wrapper .k-panelbar .k-state-focused.k-state-selected {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] .drawer-item-control-wrapper .k-panelbar .k-item {
   font-weight: normal !important;
@@ -964,16 +891,10 @@
   margin-left: 10px;
 }
 .k-drawer-left .k-panelbar > .k-item > .k-link, .k-drawer-left .k-panelbar > .k-panelbar-header > .k-link {
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: reverse !important;
-      -ms-flex-direction: row-reverse !important;
-          flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
 }
 .k-drawer-left .k-item .k-panelbar-item > span {
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: reverse !important;
-      -ms-flex-direction: row-reverse !important;
-          flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
 }
 
 .k-dropdown {
@@ -992,6 +913,11 @@
 
 .k-rtl .k-dropdown-wrap .k-select {
   text-align: left;
+}
+
+.k-picker.k-focus, .k-picker:focus, .k-widget.k-picker.k-focus, .k-widget.k-picker:focus {
+  box-shadow: none;
+  border: none;
 }
 
 .xstyle-idropdownlist-wrapper .x-login-user-error .k-dropdown-wrap, .xstyle-idropdownlist-wrapper.x-login-user-error-msg .k-dropdown-wrap {
@@ -1027,29 +953,17 @@
 .x-file_viewer_container .x-fileViewerWrapper .x-arrowBtnsContainer {
   width: 100%;
   height: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .x-file_viewer_container .x-fileViewerWrapper .x-arrowBtnsContainer .x-viewerArrowBtn {
   width: 50px;
   height: 30px;
   text-align: center;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .x-file_viewer_container .x-fileViewerWrapper .x-arrowBtnsContainer .x-fileVPageIndex {
@@ -1140,8 +1054,6 @@
 
 /*fix badge width*/
 .x-badge {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: auto;
 }
@@ -1149,13 +1061,11 @@
 /*for UXStudio*/
 .border-studio.uxElementfocus {
   border: 5px solid rgb(255, 239, 165) !important;
-  -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
 .uxElementfocus {
   border: 5px solid rgb(255, 239, 165) !important;
-  -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
@@ -1171,29 +1081,19 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .ieFix .flex-grow-0 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
 }
 
 .checkBoxHorizontal .col-4 {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 95%;
-          flex: 0 0 95%;
+  order: 0;
+  flex: 0 0 95%;
   max-width: 90%;
   padding-right: 5px;
 }
 .checkBoxHorizontal .col-8 {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 1.2%;
-          flex: 0 0 1.2%;
+  order: -1;
+  flex: 0 0 1.2%;
 }
 
 .leftStudio,
@@ -1253,9 +1153,7 @@
 
 .fixDateRange > .col-4,
 .fixDateRange > .col-8 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   max-width: 100%;
 }
 
@@ -1319,15 +1217,12 @@
   border-bottom: 50px solid #eee;
   border-left: 50px solid #ffffff;
   /*Set to background color, not transparent!*/
-  -webkit-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
 }
 
 .rececipt-gradient {
-  background: -webkit-gradient(linear, left bottom, left top, from(#d1d1d1), to(transparent)) !important;
   background: linear-gradient(360deg, #d1d1d1, transparent) !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border-radius: 0 !important;
 }
 
@@ -1346,6 +1241,15 @@
 /*need transform to dashboard sass*/
 #TafnitCore_SaaSServer_TafnitCloud_UI_DashBorad .h-300 .k-grid-content {
   max-height: 300px !important;
+}
+
+.gridSearch.searchDesign .k-toolbar.k-toolbar-resizable {
+  background: none;
+  border: none;
+}
+
+.k-grid .k-grid-header .k-grid-header-wrap th.k-header {
+  white-space: pre-line !important;
 }
 
 .k-grid tr td {
@@ -1372,6 +1276,10 @@
 }
 .k-grid .x-searchinput {
   width: 150px;
+}
+.k-grid .k-toolbar {
+  background: none;
+  border: none;
 }
 .k-grid .k-toolbar.k-grid-toolbar:empty {
   display: none;
@@ -1483,14 +1391,12 @@ header .fal.fa-home {
   border-radius: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   direction: rtl !important;
 }
 .x-infoWrap .x-infoButton .show {
   visibility: visible !important;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 .x-infoWrap .x-infoButton .x-infoBubble {
   visibility: hidden;
@@ -1528,8 +1434,7 @@ header .fal.fa-home {
 .x-infoWrap .x-infoButton .x-infoBubble.Bottom::after {
   top: -10px;
   right: 12px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .x-infoWrap .x-infoButton .x-infoBubble.Top {
   bottom: 120%;
@@ -1538,8 +1443,7 @@ header .fal.fa-home {
 .x-infoWrap .x-infoButton .x-infoBubble.Top::after {
   bottom: -10px;
   right: 12px;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .x-infoWrap .x-infoButton .x-infoBubble.Right {
   left: 120%;
@@ -1547,8 +1451,7 @@ header .fal.fa-home {
 .x-infoWrap .x-infoButton .x-infoBubble.Right::after {
   top: 12px;
   left: -5px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .x-infoWrap .x-infoButton .x-infoBubble.Left {
   right: 100%;
@@ -1556,8 +1459,7 @@ header .fal.fa-home {
 .x-infoWrap .x-infoButton .x-infoBubble.Left::after {
   top: 12px;
   right: -11px;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 .x-infoWrap .x-infoButton .x-infoBubble .x-infoBubbleTitle {
   width: 100%;
@@ -1575,12 +1477,8 @@ header .fal.fa-home {
 
 .x-phoneNumber_wrapper .x-dailPhoneBtn .x-callBtnPhone {
   height: 37px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: unset;
   text-decoration: none;
   font-size: 30px;
@@ -1643,12 +1541,10 @@ mainbody > .row {
 }
 
 .container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container.pageContainer.xtafnit_pageContainer {
   margin: 65px auto;
@@ -1726,22 +1622,7 @@ a.x-link_Comp {
   display: inline-block;
 }
 
-::-webkit-input-placeholder {
-  color: #ccc;
-  font-weight: 400;
-}
-
 ::-moz-placeholder {
-  color: #ccc;
-  font-weight: 400;
-}
-
-:-ms-input-placeholder {
-  color: #ccc;
-  font-weight: 400;
-}
-
-::-ms-input-placeholder {
   color: #ccc;
   font-weight: 400;
 }
@@ -1766,15 +1647,9 @@ a.x-link_Comp {
   color: #f5f5f5;
   font-weight: bold;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 50px;
   z-index: -1;
   width: 100%;
@@ -1782,7 +1657,6 @@ a.x-link_Comp {
   cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -1798,15 +1672,9 @@ a.x-link_Comp {
 }
 
 #SignBack {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -1885,15 +1753,9 @@ a.x-link_Comp {
 }
 
 .x-floatbutton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -1903,13 +1765,11 @@ a.x-link_Comp {
 
 .k-animation-container li.k-fab-item.k-text-left {
   border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 3px #ccc;
-          box-shadow: 5px 5px 3px #ccc;
+  box-shadow: 5px 5px 3px #ccc;
 }
 .k-animation-container span.k-fab-item-text {
   background: transparent !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   font-size: 14px !important;
 }
 
@@ -1946,8 +1806,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 234, 97, 0) inset;
-          box-shadow: 0 0 0px 1000px rgba(255, 234, 97, 0) inset;
+  box-shadow: 0 0 0px 1000px rgba(255, 234, 97, 0) inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -1976,26 +1835,14 @@ select:-webkit-autofill:focus {
 
 /*portalNew - page */
 #TafnitCore_System_UI_App_PortalNew .k-listview-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 #TafnitCore_System_UI_App_PortalNew .x-listview-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   border-bottom: 1px solid #ccc;
 }
 #TafnitCore_System_UI_App_PortalNew .x-listview-item:hover {
@@ -2117,7 +1964,6 @@ label.btn {
   position: relative;
   border: 4px solid transparent;
   margin: 0px 5px;
-  -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 .x-listview-container .x-listview-control .x-listview-item.checker-1 {
@@ -2207,30 +2053,15 @@ label.btn {
 
 .x-loanslider-wrapper {
   min-height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .x-loanslider-wrapper .x-loanDimension-comp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 20%;
 }
 .x-loanslider-wrapper .x-loanDimension-comp .x-loanDimension-caption {
@@ -2371,12 +2202,8 @@ label.btn {
   position: absolute;
   right: 41%;
   height: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   top: 0;
   white-space: nowrap;
   width: 48%;
@@ -2413,7 +2240,7 @@ label.btn {
   }
   /*lookup*/
   .xstyle-lookup-wrapper .x-input-group-text,
-.xstyle-lookup-wrapper .x-selection-lookup-button {
+  .xstyle-lookup-wrapper .x-selection-lookup-button {
     height: 100% !important;
   }
 }
@@ -2444,15 +2271,15 @@ label.btn {
     width: 90px;
   }
   [xid=controlfhWelcome] table,
-[xid=controlfhGoodbye] table {
+  [xid=controlfhGoodbye] table {
     display: block;
   }
   [xid=controlfhWelcome] table td,
-[xid=controlfhGoodbye] table td {
+  [xid=controlfhGoodbye] table td {
     display: block;
   }
   [xid=controlfhWelcome] table td img,
-[xid=controlfhGoodbye] table td img {
+  [xid=controlfhGoodbye] table td img {
     display: block;
     width: 100%;
     max-width: none;
@@ -2481,19 +2308,17 @@ label.btn {
   }
 }
 .xstyle-xmenu-wrapper li.k-item {
-  z-index: 1030 !important;
+  z-index: auto !important;
 }
 .xstyle-xmenu-wrapper li.k-item:hover {
   background-color: transparent !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .xstyle-xmenu-wrapper .k-menu {
   float: left;
   background-color: transparent !important;
 }
 .xstyle-xmenu-wrapper .k-menu-group.k-popup {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: auto;
@@ -2504,23 +2329,13 @@ label.btn {
   border: 0 !important;
 }
 .xstyle-xmenu-wrapper .k-animation-container .k-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 .xstyle-xmenu-wrapper li[overflow=xOverflow] {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 35px;
   width: 45px;
   cursor: pointer;
@@ -2583,8 +2398,7 @@ label.btn {
   padding: 2px 15px 2px 5px;
   list-style: none;
   overflow: auto;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(171, 171, 171, 0.29);
-          box-shadow: 0px 0px 0px 1px rgba(171, 171, 171, 0.29);
+  box-shadow: 0px 0px 0px 1px rgba(171, 171, 171, 0.29);
 }
 .x-main-multiCheckbox .x-multiCheckbox dd .x-optionsList li {
   margin-bottom: 10px;
@@ -2638,10 +2452,7 @@ label.btn {
   text-align: center;
   font-weight: 600;
   line-height: 1.2em;
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 .x-multichoice-wrapper .x-multichoice-ul li .x-multichoice-row input[type=checkbox] {
   display: none;
@@ -2650,10 +2461,8 @@ label.btn {
   background: #f95e5e;
   border-color: #f95e5e;
   color: #fff;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  -webkit-transform-origin: center center center;
-          transform-origin: center center center;
+  transform: rotate(135deg);
+  transform-origin: center center center;
 }
 .x-multichoice-wrapper .x-multichoice-ul li.x-multichoice-row-selected {
   border-radius: 5px;
@@ -2691,7 +2500,7 @@ label.btn {
   -moz-transition: 0.3s all;
   transition: 0.3s all;
 }
-.p-floating-container textarea:not(:-ms-input-placeholder) + label {
+.p-floating-container textarea:not(:placeholder-shown) + label {
   transform: scale(0.7);
   opacity: 1;
   visibility: visible;
@@ -2700,36 +2509,16 @@ label.btn {
   top: -9px;
   margin: 0;
   position: absolute;
-  display: -ms-flexbox;
   display: flex;
-  -ms-transition: 0.3s all;
-  transition: 0.3s all;
-}
-.p-floating-container textarea:not(:placeholder-shown) + label {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  opacity: 1;
-  visibility: visible;
-  font-size: 16px;
-  color: #003f59;
-  top: -9px;
-  margin: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 .p-floating-container.dir-ltr label {
   left: 0 !important;
   right: unset !important;
-  -webkit-transform-origin: left !important;
-          transform-origin: left !important;
+  transform-origin: left !important;
 }
 .p-floating-container .k-dropdown.notselected label {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   top: 10px;
   right: 10px;
 }
@@ -2751,24 +2540,7 @@ label.btn {
   top: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: "all 200ms";
   transition: "all 200ms";
-}
-.p-floating-container input:not(:-ms-input-placeholder) + label {
-  transform: scale(0.7);
-  opacity: 1;
-  visibility: visible;
-  font-size: 16px;
-  color: #003f59;
-  right: 0;
-  top: -9px;
-  margin: 0;
-  position: absolute;
-  transform-origin: right;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-transition: 0.3s all;
-  transition: 0.3s all;
 }
 .p-floating-container input:not(:placeholder-shown) + label, .p-floating-container input:not(:-ms-input-placeholder) + label {
   transform: scale(0.7);
@@ -2781,7 +2553,6 @@ label.btn {
   margin: 0;
   position: absolute;
   transform-origin: right;
-  display: -ms-flexbox;
   display: flex;
   -ms-transition: 0.3s all;
   transition: 0.3s all;
@@ -2790,8 +2561,7 @@ label.btn {
   display: none;
 }
 .p-floating-container ul[role=listbox] + input + label {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  transform: scale(0.7);
   opacity: 1;
   visibility: visible;
   font-size: 16px;
@@ -2800,12 +2570,8 @@ label.btn {
   top: -9px;
   margin: 0;
   position: absolute;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform-origin: right;
   display: flex;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
@@ -2827,7 +2593,7 @@ label.btn {
   z-index: 10;
 }
 
-.k-rtl .p-floating-container input:not(:-ms-input-placeholder) + label {
+.k-rtl .p-floating-container input:not(:placeholder-shown) + label {
   transform: scale(0.7);
   opacity: 1;
   visibility: visible;
@@ -2838,31 +2604,7 @@ label.btn {
   margin: 0;
   position: absolute;
   transform-origin: right;
-  display: -ms-flexbox;
   display: flex;
-  -ms-transition: 0.3s all;
-  transition: 0.3s all;
-  margin-top: 4px;
-  z-index: 10;
-}
-
-.k-rtl .p-floating-container input:not(:placeholder-shown) + label {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  opacity: 1;
-  visibility: visible;
-  font-size: 16px;
-  color: #003f59;
-  right: 0;
-  top: -9px;
-  margin: 0;
-  position: absolute;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
   margin-top: 4px;
   z-index: 10;
@@ -2872,13 +2614,6 @@ label.btn {
 }
 
 .p-floating-container.xstyle-lookup-wrapper input:not(:-moz-placeholder-shown) + label, .p-floating-container.xstyle-lookuptafnit-wrapper input:not(:-moz-placeholder-shown) + label {
-  right: 14px !important;
-  width: 400px;
-  height: 1px;
-  top: -5px !important;
-}
-
-.p-floating-container.xstyle-lookup-wrapper input:not(:-ms-input-placeholder) + label, .p-floating-container.xstyle-lookuptafnit-wrapper input:not(:-ms-input-placeholder) + label {
   right: 14px !important;
   width: 400px;
   height: 1px;
@@ -2908,7 +2643,7 @@ label.btn {
   transition: 0.3s all;
 }
 
-.k-ltr .p-floating-container input:not(:-ms-input-placeholder) + label {
+.k-ltr .p-floating-container input:not(:placeholder-shown) + label {
   transform: scale(0.7);
   opacity: 1;
   visibility: visible;
@@ -2919,36 +2654,10 @@ label.btn {
   margin: 0;
   position: absolute;
   transform-origin: left;
-  display: -ms-flexbox;
   display: flex;
-  -ms-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.k-ltr .p-floating-container input:not(:placeholder-shown) + label {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  opacity: 1;
-  visibility: visible;
-  font-size: 16px;
-  color: #003f59;
-  left: 0;
-  top: -9px;
-  margin: 0;
-  position: absolute;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 .k-ltr .p-floating-container.xstyle-lookup-wrapper input:not(:-moz-placeholder-shown) + label, .k-ltr .p-floating-container.xstyle-lookuptafnit-wrapper input:not(:-moz-placeholder-shown) + label {
-  right: initial !important;
-  left: 15px !important;
-}
-.k-ltr .p-floating-container.xstyle-lookup-wrapper input:not(:-ms-input-placeholder) + label, .k-ltr .p-floating-container.xstyle-lookuptafnit-wrapper input:not(:-ms-input-placeholder) + label {
   right: initial !important;
   left: 15px !important;
 }
@@ -2962,15 +2671,9 @@ label.btn {
   transform-origin: right;
 }
 
-.k-rtl .p-floating-container textarea:not(:-ms-input-placeholder) + label {
-  right: 0;
-  transform-origin: right;
-}
-
 .k-rtl .p-floating-container textarea:not(:placeholder-shown) + label {
   right: 0;
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  transform-origin: right;
 }
 
 .k-ltr .p-floating-container textarea:not(:-moz-placeholder-shown) + label {
@@ -2978,15 +2681,9 @@ label.btn {
   transform-origin: left;
 }
 
-.k-ltr .p-floating-container textarea:not(:-ms-input-placeholder) + label {
-  left: 0;
-  transform-origin: left;
-}
-
 .k-ltr .p-floating-container textarea:not(:placeholder-shown) + label {
   left: 0;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
 }
 
 .k-floating-label-container {
@@ -3081,8 +2778,7 @@ label.btn {
 .popUpWindowCls .x-pagePopup {
   padding-bottom: 5px;
   background: white;
-  -webkit-box-shadow: 0px 5px 20px 0 black;
-          box-shadow: 0px 5px 20px 0 black;
+  box-shadow: 0px 5px 20px 0 black;
   background-color: #fff;
   border-radius: 20px;
   padding: 10px;
@@ -3116,8 +2812,7 @@ label.btn {
   margin-top: 0 !important;
 }
 .popUpWindowCls mainbody > .row {
-  -webkit-box-shadow: 0px 5px 20px 0 #c5c3c3;
-          box-shadow: 0px 5px 20px 0 #c5c3c3;
+  box-shadow: 0px 5px 20px 0 #c5c3c3;
 }
 .popUpWindowCls .xtafnit_pageContainer {
   margin: 0 !important;
@@ -3209,8 +2904,7 @@ label.btn {
 .k-scrollview .k-scrollview-wrap .k-scrollview-page {
   text-align: center;
   display: table;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .k-scrollview .k-scrollview-wrap .k-scrollview-page .img-wrapper {
   display: table-cell;
@@ -3218,8 +2912,7 @@ label.btn {
 }
 .k-scrollview .k-scrollview-wrap .k-scrollview-page .img-wrapper > div {
   width: 90% !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   margin-bottom: 1em;
@@ -3260,71 +2953,98 @@ label.btn {
 }
 
 /*folding cube spinner*/
-#main-spinner .sk-folding-cube {
-  margin: 20px auto;
-  width: 40px;
-  height: 40px;
+.k-loading-image {
+  width: 20px;
+  height: 10px;
+  display: block;
+  margin: auto;
   position: relative;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-  top: 45%;
-}
-#main-spinner .sk-folding-cube .sk-cube {
-  float: left;
-  width: 50%;
-  height: 50%;
-  position: relative;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-#main-spinner .sk-folding-cube .sk-cube:before {
-  content: "";
+  border-radius: 4px;
+  color: #D9D9D9;
+  background: currentColor;
+  box-sizing: border-box;
   position: absolute;
-  top: 0;
+  margin: 0 auto;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
-          animation: sk-foldCubeAngle 2.4s infinite linear both;
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: animloader 0.9s 0.3s ease infinite alternate;
 }
-#main-spinner .sk-folding-cube .sk-cube2 {
-  -webkit-transform: scale(1.1) rotateZ(90deg);
-          transform: scale(1.1) rotateZ(90deg);
+
+.k-loading-image::after,
+.k-loading-image::before {
+  content: "";
+  box-sizing: border-box;
+  width: 20px;
+  height: 10px;
+  background: currentColor;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  right: 110%;
+  animation: animloader 0.9s ease infinite alternate;
 }
-#main-spinner .sk-folding-cube .sk-cube2:before {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+
+.k-loading-image::after {
+  left: 110%;
+  right: auto;
+  animation-delay: 0.9s;
 }
-#main-spinner .sk-folding-cube .sk-cube3 {
-  -webkit-transform: scale(1.1) rotateZ(180deg);
-          transform: scale(1.1) rotateZ(180deg);
+
+@keyframes animloader {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 48px;
+  }
 }
-#main-spinner .sk-folding-cube .sk-cube3:before {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-#main-spinner .sk-folding-cube .sk-cube4 {
-  -webkit-transform: scale(1.1) rotateZ(270deg);
-          transform: scale(1.1) rotateZ(270deg);
-}
-#main-spinner .sk-folding-cube .sk-cube4:before {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-#main-spinner #main-spinner-text {
+#main-spinner:has(.sk-folding-circle) #main-spinner-text {
   position: relative;
-  top: 45%;
+  top: 43%;
   width: -webkit-fill-available;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   direction: rtl;
+  color: #7B098B !important;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.sk-folding-circle {
+  background: none !important;
+  margin: 20px auto;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transform: rotateZ(45deg);
+  top: 44%;
+}
+
+.sk-folding-circle:before, .sk-folding-circle:after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.sk-folding-circle:after {
+  box-shadow: 0 6px 0 #7B098B inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#main-spinner {
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
 /*Triple spinner*/
@@ -3338,8 +3058,7 @@ label.btn {
   border-radius: 50%;
   border: 4px solid transparent;
   border-top: 4px solid #3c6d34;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 .triple-spinner::after, .triple-spinner::before {
   content: "";
@@ -3353,8 +3072,7 @@ label.btn {
   right: 5px;
   bottom: 5px;
   border-top-color: #a4bb3d;
-  -webkit-animation: spin 3.5s linear infinite;
-          animation: spin 3.5s linear infinite;
+  animation: spin 3.5s linear infinite;
 }
 .triple-spinner::after {
   top: 15px;
@@ -3362,89 +3080,44 @@ label.btn {
   right: 15px;
   bottom: 15px;
   border-top-color: #ffc107;
-  -webkit-animation: spin 1.75s linear infinite;
-          animation: spin 1.75s linear infinite;
+  animation: spin 1.75s linear infinite;
 }
 
 /*Car*/
 .car-spinner-container {
   position: relative;
   top: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   direction: rtl;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
+  left: 15px;
 }
 .car-spinner-container .car-spinner__body {
-  -webkit-animation: shake 0.2s ease-in-out infinite alternate;
-          animation: shake 0.2s ease-in-out infinite alternate;
+  animation: shake 0.2s ease-in-out infinite alternate;
 }
 .car-spinner-container .car-spinner__line {
-  -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
   stroke-dasharray: 22;
-  -webkit-animation: line 0.8s ease-in-out infinite;
-          animation: line 0.8s ease-in-out infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: line 0.8s ease-in-out infinite;
+  animation-fill-mode: both;
 }
 .car-spinner-container .car-spinner__line--top {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 .car-spinner-container .car-spinner__line--middle {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .car-spinner-container .car-spinner__line--bottom {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translateY(-1%);
-            transform: translateY(-1%);
-  }
-  100% {
-    -webkit-transform: translateY(3%);
-            transform: translateY(3%);
-  }
+  animation-delay: 0.4s;
 }
 
 @keyframes shake {
   0% {
-    -webkit-transform: translateY(-1%);
-            transform: translateY(-1%);
+    transform: translateY(-1%);
   }
   100% {
-    -webkit-transform: translateY(3%);
-            transform: translateY(3%);
-  }
-}
-@-webkit-keyframes line {
-  0% {
-    stroke-dashoffset: 22;
-  }
-  25% {
-    stroke-dashoffset: 22;
-  }
-  50% {
-    stroke-dashoffset: 0;
-  }
-  51% {
-    stroke-dashoffset: 0;
-  }
-  80% {
-    stroke-dashoffset: -22;
-  }
-  100% {
-    stroke-dashoffset: -22;
+    transform: translateY(3%);
   }
 }
 @keyframes line {
@@ -3467,6 +3140,59 @@ label.btn {
     stroke-dashoffset: -22;
   }
 }
+#main-spinner .sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transform: rotateZ(45deg);
+  top: 45%;
+}
+#main-spinner .sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  transform: scale(1.1);
+}
+#main-spinner .sk-folding-cube .sk-cube:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  transform-origin: 100% 100%;
+}
+#main-spinner .sk-folding-cube .sk-cube2 {
+  transform: scale(1.1) rotateZ(90deg);
+}
+#main-spinner .sk-folding-cube .sk-cube2:before {
+  animation-delay: 0.3s;
+}
+#main-spinner .sk-folding-cube .sk-cube3 {
+  transform: scale(1.1) rotateZ(180deg);
+}
+#main-spinner .sk-folding-cube .sk-cube3:before {
+  animation-delay: 0.6s;
+}
+#main-spinner .sk-folding-cube .sk-cube4 {
+  transform: scale(1.1) rotateZ(270deg);
+}
+#main-spinner .sk-folding-cube .sk-cube4:before {
+  animation-delay: 0.9s;
+}
+#main-spinner #main-spinner-text {
+  position: relative;
+  top: 45%;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+}
+
 .k-switch {
   text-align: left !important;
 }
@@ -3545,16 +3271,13 @@ label.btn {
   top: 36px;
   left: 0;
   right: auto;
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg) scaleX(-1);
-          transform: translate(-50%, -50%) rotate(-45deg) scaleX(-1);
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(-1);
 }
 .k-rtl .k-timeline-vertical .k-card .k-card-callout.k-callout-w {
-  -webkit-transform: translate(1940%, -50%) rotate(45deg);
-          transform: translate(1940%, -50%) rotate(45deg);
+  transform: translate(1940%, -50%) rotate(45deg);
 }
 .k-rtl .k-timeline-vertical .k-timeline-card.k-collapsed .k-event-collapse {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .k-rtl .k-timeline-vertical .k-timeline-date-wrap {
   padding-left: 16px;
@@ -3676,8 +3399,7 @@ label.btn {
 /*unknwow hierarchy*/
 .redRect, .redElips {
   z-index: 99;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   border: 2px solid red;
   display: none;
@@ -3788,10 +3510,6 @@ label.btn {
   z-index: 10;
   margin-top: 5px;
 }
-.k-ltr > .k-autocomplete input:not(:-ms-input-placeholder) + label {
-  z-index: 10;
-  margin-top: 5px;
-}
 .k-ltr > .k-autocomplete input:not(:placeholder-shown) + label {
   z-index: 10;
   margin-top: 5px;
@@ -3831,8 +3549,7 @@ label.btn {
 
 .x-autocomplete-template-content {
   word-break: break-word;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   margin: 7px 0px 7px 0px;
@@ -3866,30 +3583,75 @@ input.k-input[dir=ltr] + .k-clear-value {
   color: grey;
   border-radius: 34px;
   background-color: transparent;
+  margin: 0 5px;
 }
 .x-threeOptionSwitch-wrapper i.tos-false-isChecked {
   color: red !important;
-  -webkit-box-shadow: 0px 0px 2px red !important;
-          box-shadow: 0px 0px 2px red !important;
+  box-shadow: 0px 0px 2px red !important;
 }
 .x-threeOptionSwitch-wrapper i.tos-true-isChecked {
   color: green !important;
-  -webkit-box-shadow: 0px 0px 2px green !important;
-          box-shadow: 0px 0px 2px green !important;
+  box-shadow: 0px 0px 2px green !important;
 }
 .x-threeOptionSwitch-wrapper .fa-check-circle:hover {
   color: green;
-  -webkit-transition: 300ms;
   transition: 300ms;
-  -webkit-box-shadow: 0px 0px 4px green;
-          box-shadow: 0px 0px 4px green;
+  box-shadow: 0px 0px 4px green;
 }
 .x-threeOptionSwitch-wrapper .fa-times-circle:hover {
   color: red;
-  -webkit-transition: 300ms;
   transition: 300ms;
-  -webkit-box-shadow: 0px 0px 4px red;
-          box-shadow: 0px 0px 4px red;
+  box-shadow: 0px 0px 4px red;
+}
+
+a:not([href]) {
+  text-decoration: underline;
+  font-weight: 700;
+}
+a:not([href]):hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.xstyle-linkslist-wrapper div {
+  background: none;
+}
+.xstyle-linkslist-wrapper div th, .xstyle-linkslist-wrapper div td, .xstyle-linkslist-wrapper div tr {
+  background: none;
+  border: none;
+}
+.xstyle-linkslist-wrapper .x-grid-control {
+  border: none;
+}
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-header {
+  border: none;
+}
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-content tr {
+  background: none !important;
+}
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-content tr:focus a, .xstyle-linkslist-wrapper .x-grid-control .k-grid-content tr:active a {
+  font-weight: 700;
+}
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-decoration: none !important;
+}
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a::after {
+  content: "\e974";
+  font-family: "icomoon";
+  margin-right: 5px;
+  color: black;
+  font-size: 12px;
+}
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-content td:focus a, .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td:active a {
+  font-weight: 700;
+}
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-content td:hover {
+  background: none !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -3900,15 +3662,9 @@ input.k-input[dir=ltr] + .k-clear-value {
   }
   #TafnitCore_System_UI_App_Login .x-section-wrraper .x-section-content-wrapper {
     height: 100% !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -3943,48 +3699,25 @@ input.k-input[dir=ltr] + .k-clear-value {
   background: #e4e4e4;
   border-radius: 0;
 }
-#TafnitCore_System_UI_App_Login input.k-textbox::-webkit-input-placeholder {
-  color: #707070;
-}
 #TafnitCore_System_UI_App_Login input.k-textbox::-moz-placeholder {
-  color: #707070;
-}
-#TafnitCore_System_UI_App_Login input.k-textbox:-ms-input-placeholder {
-  color: #707070;
-}
-#TafnitCore_System_UI_App_Login input.k-textbox::-ms-input-placeholder {
   color: #707070;
 }
 #TafnitCore_System_UI_App_Login input.k-textbox::placeholder {
   color: #707070;
 }
 #TafnitCore_System_UI_App_Login [xid=controlloginDetailsLeft] > div:first-child {
-  -webkit-box-flex: 0.7;
-      -ms-flex-positive: 0.7;
-          flex-grow: 0.7;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 0.7;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #TafnitCore_System_UI_App_Login [xid=controlloginDetailsLeft] > div:last-child {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   padding-top: 20px;
 }
 #TafnitCore_System_UI_App_Login [xid=controlcSocialBtnLogin] > div {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 49%;
-          flex: 0 0 49%;
+  flex: 0 0 49%;
 }
 #TafnitCore_System_UI_App_Login [xid=controlscrollviewColumn] {
   background: #e4e4e4;
@@ -4014,31 +3747,31 @@ input.k-input[dir=ltr] + .k-clear-value {
   position: initial !important;
 }
 #TafnitCore_System_UI_App_Login .xstyle-checkbox-wrapper .col-4 {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 95%;
-          flex: 0 0 95%;
+  order: 0;
+  flex: 0 0 95%;
   max-width: 250px;
   padding-right: 5px;
 }
 #TafnitCore_System_UI_App_Login .xstyle-checkbox-wrapper .col-8 {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 5%;
-          flex: 0 0 5%;
+  order: -1;
+  flex: 0 0 5%;
 }
 
 .k-ie #TafnitCore_System_UI_App_WebSDK_Login .d-flex.justify-content-between {
-  -ms-flex-preferred-size: 25px;
-      flex-basis: 25px;
+  flex-basis: 25px;
+}
+
+body.checkout-flow-v7.bg2 {
+  width: 90%;
+  margin: auto;
+}
+
+#uber-container {
+  padding: 0 !important;
 }
 
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment {
-  /*# sourceMappingURL=style.css.map */
+
 }
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .price {
   padding-right: 0 !important;
@@ -4150,8 +3883,7 @@ input.k-input[dir=ltr] + .k-clear-value {
     font-style: normal;
     font-size: 30px !important;
     font-weight: 700;
-    -webkit-box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
-            box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
+    box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .btnPay {
     width: 68%;
@@ -4229,9 +3961,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .buttonLayout {
     border: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     display: grid;
     grid-template-columns: auto auto auto;
     margin-bottom: 40px;
@@ -4241,8 +3971,7 @@ input.k-input[dir=ltr] + .k-clear-value {
     background-color: rgb(255, 255, 255) !important;
     border: none;
     margin-top: 30px;
-    -ms-flex-preferred-size: 29%;
-        flex-basis: 29%;
+    flex-basis: 29%;
     border-radius: 10px;
     max-width: 31%;
     color: rgb(0, 0, 0) !important;
@@ -4262,13 +3991,9 @@ input.k-input[dir=ltr] + .k-clear-value {
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .price {
     padding: 0 !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-top: 0 !important;
     border: none !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .k-icon-wrapper {
@@ -4300,9 +4025,7 @@ input.k-input[dir=ltr] + .k-clear-value {
     color: white !important;
     /* font-weight: 900 !important; */
     font-size: 30px !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
     margin-bottom: 27px;
     font-weight: 800 !important;
     font-family: "Assistant";
@@ -4378,8 +4101,7 @@ input.k-input[dir=ltr] + .k-clear-value {
     margin-right: 30%;
     margin: auto;
     border-radius: 20px;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 15px 15px rgba(113, 7, 139, 0.2);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 15px 15px rgba(113, 7, 139, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 15px 15px rgba(113, 7, 139, 0.2);
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .logoPayment {
     position: absolute;
@@ -4389,9 +4111,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .buttonLayout {
     border: none !important;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    justify-content: left;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
@@ -4402,11 +4122,7 @@ input.k-input[dir=ltr] + .k-clear-value {
     grid-template-areas: "a s c" "a s c" "a b c";
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .titlePaymentOption {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: left;
     display: flex;
     margin-top: 68px;
     padding-left: 81px;
@@ -4505,8 +4221,7 @@ input.k-input[dir=ltr] + .k-clear-value {
     font-style: normal;
     font-size: 30px !important;
     font-weight: 700;
-    -webkit-box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
-            box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
+    box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .btnPay .x-control-content-wrapper {
     width: 274px !important;
@@ -4545,8 +4260,7 @@ input.k-input[dir=ltr] + .k-clear-value {
     position: absolute;
     margin-right: 508px;
     margin-top: 237px;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 15px 15px rgba(113, 7, 139, 0.2);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 15px 15px rgba(113, 7, 139, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 15px 15px rgba(113, 7, 139, 0.2);
   }
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .iconSuccess {
     width: 230px;
@@ -4576,8 +4290,6 @@ input.k-input[dir=ltr] + .k-clear-value {
   #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .x-iframe-wrapper {
     background-color: white;
     width: 982px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     position: absolute;
@@ -4606,8 +4318,15 @@ input.k-input[dir=ltr] + .k-clear-value {
     border: none !important;
     padding-right: 30%;
     height: 580px !important;
-    width: 982px !important;
     padding-bottom: 57px !important;
+  }
+  #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .x-iframe .signup-body {
+    width: 90%;
+    margin: auto;
+  }
+  #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .signup-body {
+    width: 90%;
+    margin: auto;
   }
 }
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .col.x-col.s-col.col-12.titlePaymentOption > div > div.x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper {
@@ -4615,11 +4334,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   margin: auto;
 }
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .titlePaymentOption {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
   margin-top: 69px;
   padding-left: 0;
@@ -4659,7 +4374,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-autocomplete-wrapper input,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-geoaddress-wrapper input,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-googleaddress-wrapper input,
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-intlphonenumber-wrapper input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-textcontrol-wrapper input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-textareacontrol-wrapper textarea, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-intlphonenumber-wrapper input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-textcontrol-wrapper input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-textareacontrol-wrapper textarea, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker input, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile {
   font-family: "Assistant" !important;
   font-style: normal !important;
   font-weight: 600 !important;
@@ -4672,6 +4387,8 @@ input.k-input[dir=ltr] + .k-clear-value {
   background: #FBFBFB !important;
   border-radius: 8px !important;
   border: 1px solid #CCCCCC;
+  padding-right: 0 !important;
+  direction: rtl;
 }
 
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-autocomplete-wrapper label,
@@ -4698,6 +4415,12 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey {
   padding: 0 !important;
 }
+#TafnitCore_SaaSServer_Survey_UI_Survey .x-login-user-error {
+  border: 1px solid red !important;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .x-login-user-error-msg {
+  margin-top: 3px;
+}
 #TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=SurveyMainSec] {
   height: 118px !important;
 }
@@ -4716,8 +4439,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey .surveyTitle .surveyBodyTitle {
   position: absolute;
   top: 15%;
-  -webkit-transform: translateY(-15%);
-          transform: translateY(-15%);
+  transform: translateY(-15%);
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .surveyTitle .surveyBodyTitle .mainTitle span {
   font-weight: 700 !important;
@@ -4740,14 +4462,12 @@ input.k-input[dir=ltr] + .k-clear-value {
   background: white !important;
   color: #7E7B7B !important;
   border-radius: 40px !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-buttoncontrol-wrapper button.x-button {
   height: 46px !important;
   background: #8C4D9C !important;
-  -webkit-box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-          box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
   border-radius: 40px !important;
   font-family: "Assistant";
   font-style: normal !important;
@@ -4784,8 +4504,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=SurveyMainSec] {
   border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=sQuestions] {
   min-height: 611px;
@@ -4833,22 +4552,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   padding-top: 15px;
   border: 1px solid #CCCCCC !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile::-webkit-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile::-moz-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile:-ms-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile::-ms-input-placeholder {
   color: #BBBBBB !important;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -4860,8 +4564,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile.k-input:focus, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile.k-input:focus-within, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper input.s-datePicker-mobile.k-input:active {
   border: 1px solid #1F8FCE !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker {
   height: 50px !important;
@@ -4871,25 +4574,9 @@ input.k-input[dir=ltr] + .k-clear-value {
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker.k-input:focus, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker.k-input:focus-within, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker.k-input:active {
   border: 1px solid #1F8FCE !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker input::-webkit-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker input::-moz-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker input:-ms-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper span.k-datepicker input::-ms-input-placeholder {
   color: #BBBBBB !important;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -4901,6 +4588,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper button {
   font-size: 29px;
+  background: none;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-date-wrapper button span {
   font-size: 21px;
@@ -4915,8 +4603,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   margin-bottom: 25px !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-state-focused {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-upload-files {
   border: none !important;
@@ -4946,7 +4633,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   text-align: right !important;
   color: #7E7B7B !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file-invalid .k-text-error {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file-invalid [class="k-file-validation-message !k-text-error"] {
   font-family: "Heebo" !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -4976,7 +4663,22 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success .k-i-file-image::before {
   content: "\e9af";
   font-family: "icomoon";
-  color: #6E2C7E !important;
+  color: #6E2C7E;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success .k-i-file-data::before {
+  content: "\e9ac";
+  font-family: "icomoon";
+  color: #6E2C7E;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success .k-i-file-txt::before {
+  content: "\e9b6";
+  font-family: "icomoon";
+  color: #6E2C7E;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success .k-i-file::before {
+  content: "\e9ae";
+  font-family: "icomoon";
+  color: #6E2C7E;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success .k-file-name {
   font-family: "Heebo";
@@ -4987,7 +4689,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   text-align: right !important;
   color: #7E7B7B !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success .k-text-success {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success [class^="k-file-validation-message !k-text-success"] {
   font-family: "Heebo" !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -5000,9 +4702,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   margin-top: -15px !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-upload-button {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-upload-button span::after {
   content: "\f357";
@@ -5014,44 +4714,28 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper {
   margin-bottom: 25px !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist {
   height: 50px !important;
   background: #FBFBFB !important;
   border-radius: 8px !important;
   border: none !important;
   border: 1px solid #CCCCCC !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown:focus, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown:focus-within, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown:active {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist:focus, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist:focus-within, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist:active {
   border: 1px solid #1F8FCE !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown input::-webkit-input-placeholder {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist input::-moz-placeholder {
   color: #BBBBBB !important;
   font-weight: 600 !important;
   font-size: 16px !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown input::-moz-placeholder {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist input::placeholder {
   color: #BBBBBB !important;
   font-weight: 600 !important;
   font-size: 16px !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown input:-ms-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown input::-ms-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown input::placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdown .k-input-value-text {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist .k-input-value-text {
   font-family: "Assistant" !important;
   font-style: normal !important;
   font-weight: 600 !important;
@@ -5061,14 +4745,14 @@ input.k-input[dir=ltr] + .k-clear-value {
   text-align: right !important;
   text-indent: 10px !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper button {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper .k-icon-button {
   font-size: 29px;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper button span {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper .k-icon-button span {
   font-size: 21px;
   color: #0675B4 !important;
 }
-#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper button span::before {
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-idropdownlist-wrapper .k-icon-button span::before {
   content: "\f354";
   font-family: "Font Awesome 5 pro" !important;
   font-weight: 100;
@@ -5085,7 +4769,9 @@ input.k-input[dir=ltr] + .k-clear-value {
   border-radius: 8px;
   border: none !important;
   border: 1px solid #CCCCCC !important;
-  padding-top: 5px !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  text-indent: 0 !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-textareacontrol-wrapper textarea:focus-visible {
   outline: 1px solid #1F8FCE !important;
@@ -5164,13 +4850,11 @@ input.k-input[dir=ltr] + .k-clear-value {
   border: none !important;
   background: #F5F5F5;
   border: 1px solid #CCCCCC !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-radio-wrapper input:checked {
   border: 2px solid #FFFFFF !important;
-  -webkit-box-shadow: 0px 0px 4px #71078B !important;
-          box-shadow: 0px 0px 4px #71078B !important;
+  box-shadow: 0px 0px 4px #71078B !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-radio-wrapper input::before {
   color: #71078B !important;
@@ -5209,13 +4893,14 @@ input.k-input[dir=ltr] + .k-clear-value {
   background: #F5F5F5;
   border: 1px solid #CCCCCC;
   border-radius: 4px;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-checkbox-wrapper input:focus-within {
+  border: 1px solid #1F8FCE;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-checkbox-wrapper input:checked {
   border: 2px solid #FFFFFF !important;
-  -webkit-box-shadow: 0px 0px 4px #71078B !important;
-          box-shadow: 0px 0px 4px #71078B !important;
+  box-shadow: 0px 0px 4px #71078B !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-checkbox-wrapper input:checked::before {
   background: #8C4D9C;
@@ -5228,12 +4913,14 @@ input.k-input[dir=ltr] + .k-clear-value {
   font-size: 21px;
   color: #0675B4 !important;
 }
+#TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=SurveyMainSec] {
+  display: grid;
+  align-items: center;
+}
 #TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=SurveyLogo] img {
-  width: 270px !important;
+  max-height: 118px;
   position: relative;
   height: 80% !important;
-  -webkit-transform: translateY(19%);
-          transform: translateY(19%);
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-popupsignature-wrapper .GraphicalSignaturePlaceHolders {
   height: 237px !important;
@@ -5257,8 +4944,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-googleaddress-wrapper .x-barcodeBtnContainer.s-barcodeBtnContainer {
   top: 50% !important;
-  -webkit-transform: translateY(-50%) !important;
-          transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
   height: 45px;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-googleaddress-wrapper a {
@@ -5311,8 +4997,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-googleaddress-wrapper span.k-autocomplete:focus-within,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-intlphonenumber-wrapper span.k-autocomplete:focus,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-intlphonenumber-wrapper span.k-autocomplete:focus-within {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-autocomplete-wrapper .x-barcodeBtnContainer,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-geoaddress-wrapper .x-barcodeBtnContainer,
@@ -5349,8 +5034,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-intlphonenumber-wrapper input:focus-within,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-intlphonenumber-wrapper input:active {
   border: 1px solid #1F8FCE !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-ilink-wrapper a {
   font-weight: 600;
@@ -5391,8 +5075,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   border: none !important;
   background: #FCFCFC !important;
   height: 76px !important;
-  -webkit-box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
-          box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
+  box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .x-footer .row {
   border: none !important;
@@ -5400,8 +5083,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_SaaSServer_Survey_UI_Survey .x-footer div[uxid=cSubmit] button.x-button.s-button {
   height: 46px !important;
   background: #8C4D9C !important;
-  -webkit-box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-          box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
   border-radius: 40px !important;
   border: none !important;
   width: 95%;
@@ -5457,16 +5139,15 @@ input.k-input[dir=ltr] + .k-clear-value {
   padding-bottom: 35px !important;
   background: #FFFFFF !important;
   border: 1px solid #8C4D9C !important;
-  -webkit-box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
-          box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
+  box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
   border-radius: 20px !important;
+}
+.k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-widget.k-window:has(#MessageBoxWindow) div {
+  overflow: hidden;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
   background: none !important;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   border: none !important;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack .k-icon {
@@ -5525,8 +5206,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   height: 46px;
   margin: auto;
   background: #8C4D9C !important;
-  -webkit-box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-          box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
   border-radius: 40px !important;
   color: white !important;
   font-size: 20px !important;
@@ -5549,8 +5229,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   padding: 3px !important;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container .k-list-filter .k-input:focus {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container .k-searchbox.k-input {
   height: 40px !important;
@@ -5565,8 +5244,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container div {
   background: none !important;
   border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   height: auto !important;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container .k-popup.k-group.k-reset.k-rtl {
@@ -5579,8 +5257,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   border: 1px solid #CCCCCC !important;
   border-radius: 8px;
   top: 10px;
-  -webkit-transform: none !important;
-          transform: none !important;
+  transform: none !important;
   height: auto !important;
   min-width: auto !important;
 }
@@ -5594,15 +5271,13 @@ input.k-input[dir=ltr] + .k-clear-value {
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container li.k-focus {
   background: #F5F5F5 !important;
   border: 1px solid #1F8FCE !important;
-  -webkit-box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
-          box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
+  box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
   border-radius: 8px !important;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container li:hover {
   background: #F5F5F5 !important;
   border: 1px solid #E6E6E6 !important;
-  -webkit-box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
-          box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
+  box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
   border-radius: 8px !important;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container li span.k-list-item-text {
@@ -5622,7 +5297,6 @@ input.k-input[dir=ltr] + .k-clear-value {
   padding-bottom: 35px !important;
   background: #FFFFFF !important;
   border: 1px solid #8C4D9C !important;
-  -webkit-box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
   box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
   border-radius: 20px !important;
   width: 93%;
@@ -5668,6 +5342,57 @@ input.k-input[dir=ltr] + .k-clear-value {
   top: -4px;
 }
 
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper label {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: right;
+  color: #7E7B7B;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-off .k-switch-track {
+  background: #F5F5F5;
+  box-shadow: inset -2px 2px 4px rgba(126, 123, 123, 0.2);
+  border-radius: 10px;
+  height: 21px;
+  border: none;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-off .k-switch-track .k-switch-label-off {
+  display: none;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-off:focus {
+  box-shadow: none !important;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-off .k-switch-thumb {
+  background: #DEDEDE;
+  border: 1px solid #F5F5F5;
+  width: 28px;
+  height: 28px;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-on .k-switch-track {
+  background: #F5F5F5;
+  box-shadow: inset -2px 2px 4px rgba(126, 123, 123, 0.2);
+  border-radius: 10px;
+  height: 21px;
+  border: none;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-on .k-switch-track .k-switch-label-on {
+  display: none;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-on:focus {
+  box-shadow: none !important;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-on .k-switch-thumb {
+  width: 28px;
+  height: 28px;
+  background: #8C4D9C;
+  border: 1px solid #F5F5F5;
+  box-shadow: 0px 0px 4px rgba(113, 7, 139, 0.5);
+  width: 28px;
+  height: 28px;
+}
+
 #uber-container:has(#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt) {
   background: white !important;
 }
@@ -5697,16 +5422,14 @@ input.k-input[dir=ltr] + .k-clear-value {
   position: absolute;
   width: 43%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 #TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt {
   background: #FCFCFC;
-  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding: 20px;
   width: 95%;
@@ -5841,8 +5564,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   font-size: 40px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -5861,8 +5583,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   text-align: center;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-13%);
-          transform: translateY(-13%);
+  transform: translateY(-13%);
 }
 #TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) a {
   color: white !important;
@@ -5879,8 +5600,7 @@ input.k-input[dir=ltr] + .k-clear-value {
   width: 40%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -5889,24 +5609,27 @@ input.k-input[dir=ltr] + .k-clear-value {
 #TafnitCore_System_UI_App_ErrorPage .logoErro {
   background: none;
   border: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 #TafnitCore_System_UI_App_ErrorPage .logoErro .xstyle-image-wrapper {
-  width: 35%;
+  width: 50%;
   float: left !important;
+  margin-left: -25px;
 }
 #TafnitCore_System_UI_App_ErrorPage .row {
   background: none;
   border: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 #TafnitCore_System_UI_App_ErrorPage .k-icon {
   font-size: 45px;
   color: #8C4D9C !important;
+}
+#TafnitCore_System_UI_App_ErrorPage .titleErro {
+  padding: 0 !important;
+  max-width: none;
 }
 #TafnitCore_System_UI_App_ErrorPage .titleErro .xstyle-dynamiclabelcontrol-wrapper span {
   font-family: "Heebo";
@@ -5929,8 +5652,26 @@ input.k-input[dir=ltr] + .k-clear-value {
   font-size: 24px !important;
   line-height: 35px !important;
   text-align: right !important;
+  max-width: 90% !important;
+  flex: 0 0 90%;
+  padding: 0 !important;
 }
 
+@media only screen and (max-width: 1000px) {
+  #TafnitCore_System_UI_App_ErrorPage {
+    top: 0% !important;
+    transform: none !important;
+  }
+  #TafnitCore_System_UI_App_ErrorPage .logoErro.border {
+    margin-bottom: 90px !important;
+  }
+  #TafnitCore_System_UI_App_ErrorPage .titleErro .xstyle-dynamiclabelcontrol-wrapper span.x-dynamic-label-control {
+    font-size: 14px !important;
+  }
+  #TafnitCore_System_UI_App_ErrorPage .messageErro span.x-dynamic-label-control {
+    font-size: 14px !important;
+  }
+}
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePickerResponsive input, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input.s-datePicker-mobile, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-textcontrol-wrapper input {
   font-family: "Assistant" !important;
   font-style: normal !important;
@@ -5964,6 +5705,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
 }
 
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page {
+  margin-bottom: o !important;
   height: 100%;
   min-height: 100%;
 }
@@ -6038,14 +5780,12 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   background: white !important;
   color: #7E7B7B !important;
   border-radius: 40px !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-buttoncontrol-wrapper button {
   height: 46px !important;
   background: #8C4D9C !important;
-  -webkit-box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-          box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
   border-radius: 40px !important;
   font-family: "Assistant";
   font-style: normal !important;
@@ -6060,13 +5800,11 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-radio-wrapper input {
   background: #F5F5F5;
   border: 1px solid #CCCCCC;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-radio-wrapper input:checked {
   border: 2px solid #FFFFFF !important;
-  -webkit-box-shadow: 0px 0px 4px #71078B !important;
-          box-shadow: 0px 0px 4px #71078B !important;
+  box-shadow: 0px 0px 4px #71078B !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-radio-wrapper input.k-radio::before {
   color: #8C4D9C !important;
@@ -6088,20 +5826,17 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   font-size: 16px !important;
   line-height: 100% !important;
   color: black !important;
-  -webkit-transform: translateY(33%);
-          transform: translateY(33%);
+  transform: translateY(33%);
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper input {
   background: #F5F5F5;
   border: 1px solid #CCCCCC;
   border-radius: 4px;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper input:checked {
   border: 2px solid #FFFFFF !important;
-  -webkit-box-shadow: 0px 0px 4px #71078B !important;
-          box-shadow: 0px 0px 4px #71078B !important;
+  box-shadow: 0px 0px 4px #71078B !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper input.k-checkbox::before {
   background-color: #8C4D9C !important;
@@ -6173,8 +5908,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   border: none !important;
   background: #FCFCFC !important;
   height: 76px !important;
-  -webkit-box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
-          box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
+  box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .x-footer .row {
   border: none !important;
@@ -6182,8 +5916,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .x-footer div button.x-button.s-button {
   height: 46px !important;
   background: #8C4D9C !important;
-  -webkit-box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-          box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
   border-radius: 40px !important;
   border: none !important;
   width: 95%;
@@ -6238,13 +5971,10 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   border-bottom: 1px dashed #ccc !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-state-focused {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-upload-button {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper input + span {
   text-align: right !important;
@@ -6280,7 +6010,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   text-align: right !important;
   color: #7E7B7B !important;
 }
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file-invalid .k-text-error {
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file-invalid [class="k-file-validation-message !k-text-error"] {
   font-family: "Heebo" !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -6321,7 +6051,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   text-align: right !important;
   color: #7E7B7B !important;
 }
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success .k-text-success {
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success [class^="k-file-validation-message !k-text-success"] {
   font-family: "Heebo" !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -6340,22 +6070,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   padding-top: 15px;
   border: 1px solid #CCCCCC !important;
 }
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input.s-datePicker-mobile::-webkit-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input.s-datePicker-mobile::-moz-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input.s-datePicker-mobile:-ms-input-placeholder {
-  color: #BBBBBB !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input.s-datePicker-mobile::-ms-input-placeholder {
   color: #BBBBBB !important;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -6365,31 +6080,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   font-weight: 600 !important;
   font-size: 16px !important;
 }
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input::-webkit-input-placeholder {
-  color: #BBBBBB;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-}
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input::-moz-placeholder {
-  color: #BBBBBB;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input:-ms-input-placeholder {
-  color: #BBBBBB;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper input::-ms-input-placeholder {
   color: #BBBBBB;
   font-family: "Assistant";
   font-style: normal;
@@ -6415,31 +6106,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   border: none !important;
   background: none !important;
 }
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePickerResponsive input::-webkit-input-placeholder {
-  color: #BBBBBB;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-}
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePickerResponsive input::-moz-placeholder {
-  color: #BBBBBB;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePickerResponsive input:-ms-input-placeholder {
-  color: #BBBBBB;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePickerResponsive input::-ms-input-placeholder {
   color: #BBBBBB;
   font-family: "Assistant";
   font-style: normal;
@@ -6477,16 +6144,12 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   padding-bottom: 35px !important;
   background: #FFFFFF !important;
   border: 1px solid #8C4D9C !important;
-  -webkit-box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
-          box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
+  box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
   border-radius: 20px !important;
 }
 .k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
   background: none !important;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   border: none !important;
 }
 .k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack .k-icon {
@@ -6545,8 +6208,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   height: 46px;
   margin: auto;
   background: #8C4D9C !important;
-  -webkit-box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-          box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
   border-radius: 40px !important;
   color: white !important;
   font-size: 14px !important;
@@ -6564,98 +6226,34 @@ body.bodyPayment .logoImg {
   top: 50%;
   margin: 0 auto;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
 }
 
-html, body.bodyPayment {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  direction: rtl;
-}
-html .warrperPayment, body.bodyPayment .warrperPayment {
-  height: 100%;
-}
-html .headerPayment, body.bodyPayment .headerPayment {
-  position: absolute;
-  width: 100%;
-  height: 107px;
-  max-height: 107px !important;
-  background: white !important;
-  padding: 10px 0px;
-  text-align: center;
-}
-html .logoImg, body.bodyPayment .logoImg {
-  width: 66%;
-  position: relative;
-  top: 50%;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
-}
-html .warrperPayment > div:has(.headerPayment), body.bodyPayment .warrperPayment > div:has(.headerPayment) {
-  height: 147px;
-}
-html .x-icon, body.bodyPayment .x-icon {
-  text-align: center;
-  margin-bottom: 50px;
-}
-html .title, body.bodyPayment .title {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-  color: #000000;
-}
-html .mainPage, body.bodyPayment .mainPage {
-  padding: 30px;
-}
-html .text, body.bodyPayment .text {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: right;
-  color: #000000;
-  margin-bottom: 60px;
-  margin-top: 10px;
-}
-html .x-Icons, body.bodyPayment .x-Icons {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 40px;
-}
-html .x-Icons p, body.bodyPayment .x-Icons p {
+#TafnitCore_SaaSServer_Meeting_UI_MeetingPage {
   margin: 0;
 }
-html p, body.bodyPayment p {
-  margin: 0;
+#TafnitCore_SaaSServer_Meeting_UI_MeetingPage .headerNone .x-row {
+  border: none !important;
+  box-shadow: none;
 }
-html .x-Icons .x-icon span, body.bodyPayment .x-Icons .x-icon span {
-  font-size: 22px;
-  color: #6A3F75;
-  margin-bottom: 5px;
+#TafnitCore_SaaSServer_Meeting_UI_MeetingPage .headerNone .x-iframe {
+  border: none;
 }
-html .icon-title, body.bodyPayment .icon-title {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 120%;
-  color: #8C4D9C;
+
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),
+html:has(#TafnitCore_SaaSServer_Survey_UI_Survey) {
+  max-width: 420px !important;
+  margin: auto !important;
 }
-html .icon-text, body.bodyPayment .icon-text {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
-  text-align: center;
-  color: #000000;
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .x-footer,
+html:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .x-footer {
+  max-width: 420px !important;
+  margin: auto !important;
+}
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) #watermark,
+html:has(#TafnitCore_SaaSServer_Survey_UI_Survey) #watermark {
+  right: 0 !important;
 }
 
 .x-login-user-error-msg {
@@ -6683,7 +6281,7 @@ a.k-icon {
 .xstyle-idropdownlist-wrapper input,
 .xstyle-autocomplete-wrapper input,
 .xstyle-timepicker-wrapper input {
-  text-align: right !important;
+  text-align: right;
 }
 
 .xstyle-googleaddress-wrapper > div:nth-child(2) {
@@ -6699,3 +6297,34 @@ a.k-icon {
   top: 3px;
   border-radius: 1px;
 }
+
+body.k-content {
+  padding-right: 0px !important;
+}
+
+.k-content:has(.k-drawer-container.k-drawer-mini) #uber-container {
+  padding-right: 50px !important;
+}
+
+.redText span.x-dynamic-label-control {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  color: #EE0909;
+}
+
+.x-ltr {
+  direction: ltr;
+}
+
+.x-rtl {
+  direction: rtl;
+}
+
+.xstyle-textcontrol-wrapper input::-webkit-outer-spin-button,
+.xstyle-textcontrol-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}/*# sourceMappingURL=newStyle.css.map */

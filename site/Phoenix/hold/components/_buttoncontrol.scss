@@ -1,0 +1,45 @@
+
+.btn-page{
+    padding: 0;
+
+    & .xstyle-buttoncontrol-wrapper{
+        & button.x-button{
+            background: #14008E;
+            border-radius: 30px;
+            border: none;
+            width: 235px;
+            height: 44px !important;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+
+#TafnitCore_SaaSServer_Portal_FnxFunding_UI_SavingsProducts,
+#TafnitCore_SaaSServer_Portal_FnxFunding_UI_LoanSelection,
+#TafnitCore_SaaSServer_Portal_FnxFunding_UI_MonthlyIncome,
+#TafnitCore_SaaSServer_Portal_FnxFunding_UI_CreditCardConsent{
+    
+    & .xstyle-buttoncontrol-wrapper{
+        margin-top: 65px;
+        & button.x-button{
+            background: #14008E;
+            border-radius: 30px;
+            border: none;
+            width: 235px;
+            height: 44px !important;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+
+@import '../../../../base/variables/masterVariable';
+
+
+
+
+// PALETTE 
+$Colors: (
+"bg-main-screen": #fafafa,
+"bg-qube": #ffffff,
+"button-bg": #ffffff,
+"button-icons": #7d0a8c,
+"button-important-bg": #7d0a8c,
+"button-important-icon": #ffffff,
+"button-important-text": #ffffff,
+"button-text-defualt": #000000,
+"contacts-menu": #037194,
+"drawer": #7d0a8c,
+"drawer-icon-openclose": #ddc3e6,
+"drawer-icons": #ffffff,
+"drawer-line": #690679,
+"grid-bg-filtered": #f5f5f5,
+"grid-button-filter-button-second": #d9d9d9,
+"grid-icon-filer-on": #7d0a8c,
+"grid-icon-filter-off": #7e7a7a,
+"grid-icons": #7d0a8c,
+"grid-line": #ffffff,
+"grid-page-number": #ddc3e6,
+"grid-popup-filter-bg": #f5f5f5,
+"grid-popup-filter-bg-button-off": #ffffff,
+"grid-popup-filter-bg-subjec": #d9d9d9,
+"grid-popup-filter-bg-value ": #ffffff,
+"grid-popup-filter-button": #7d0a8c,
+"grid-popup-filter-button-text": #ffffff,
+"grid-popup-filter-stroke": #d9d9d9,
+"grid-popup-filter-title": #7d0a8c,
+"grid-stroke-under-line": #f5f5f5,
+"grid-text-defualt": #000000,
+"grid-text-title": #7e7a7a,
+"grid-title-filtered": #7e7a7a,
+"main-color": #7d0a8c,
+"page-number-current": #7d0a8c,
+"popup-bg": #7d0a8c,
+"popup-bg-press": #690679,
+"popup-bg-primary-base": #fafafa,
+"popup-icon": #ffffff,
+"popup-icons": #7d0a8c,
+"popup-stroke": #f5f5f5,
+"popup-text": #ffffff,
+"popup-text-defualt": #000000,
+"radio-button-off": #000000,
+"radio-button-on": #7d0a8c,
+"requier": #ff7a00,
+"taxt-notification": #15b0c5,
+"text": #7e7a7a,
+"text-defualt": #000000,
+"text-disable": #d9d9d9,
+"border-color": #d9d9d9,
+"text-link": #7d0a8c,
+"user-screen-button": #f5f5f5,
+"user-screen-button-primary-base": #ffffff,
+"user-screen-color-icon": #7d0a8c,
+"warning": #ee0909,
+"border-color-defualt": black,
+"checkbox-color": #7B098B,
+"login-screen-boxshadow": rgba(123, 9, 141, 8%),
+"login-screen-border" : #7d0a8c,
+"dashboardpage-boxshadow-color": rgb(0 45 65 / 8%),
+"grid-scoller-background": #7d0a8c,
+"overview-screen-color": #7B098B,
+);
+
+// TYPOS 
+$typographyVariables: (
+"-color": map-get($Colors, "text-link"),
+"-font-family": 'Heebo',
+"-font-size": rem(14px),
+"-font-style": normal,
+"-font-weight": 700,
+"-letter-spacing": 0em,
+"-line-height": rem(14px),
+"-text-transform": none,
+"button-color": map-get($Colors, "text-defualt"),
+"button-font-family": 'Heebo',
+"button-font-size": rem(14px),
+"button-font-style": normal,
+"button-font-weight": 400,
+"button-letter-spacing": 0em,
+"button-line-height": 1.2999999523162842em,
+"button-text-transform": none,
+"disable-color": map-get($Colors, "text-disable"),
+"disable-font-family": 'Heebo',
+"disable-font-size": rem(14px),
+"disable-font-style": normal,
+"disable-font-weight": 400,
+"disable-letter-spacing": 0em,
+"disable-line-height": rem(14px),
+"disable-text-transform": none,
+"header qube-color": map-get($Colors, "text-defualt"),
+"header qube-font-family": 'Heebo',
+"header qube-font-size": rem(20px),
+"header qube-font-style": normal,
+"header qube-font-weight": 400,
+"header qube-letter-spacing": 0em,
+"header qube-line-height": 1.2999999523162842em,
+"header qube-text-transform": none,
+"header table-color": map-get($Colors, "text"),
+"header table-font-family": 'Heebo',
+"header table-font-size": rem(14px),
+"header table-font-style": normal,
+"header table-font-weight": 700,
+"header table-letter-spacing": 0em,
+"header table-line-height": rem(14px),
+"header table-text-transform": none,
+"heder page-color": map-get($Colors, "text-defualt"),
+"heder page-font-family": 'Heebo',
+"heder page-font-size": rem(64px),
+"heder page-font-style": normal,
+"heder page-font-weight": 300,
+"heder page-letter-spacing": 0em,
+"heder page-line-height": 1.2999999523162842em,
+"heder page-text-transform": none,
+"link-color": map-get($Colors, "text-link"),
+"link-font-family": 'Heebo',
+"link-font-size": rem(14px),
+"link-font-style": normal,
+"link-font-weight": 400,
+"link-letter-spacing": 0em,
+"link-line-height": 1.2999999523162842em,
+"link-text-transform": none,
+"text-color": map-get($Colors, "text-defualt"),
+"text-font-family": 'Heebo',
+"text-font-size": rem(18px),
+"text-font-style": normal,
+"text-font-weight": 400,
+"text-letter-spacing": 0em,
+"text-line-height": 1.2999999523162842em,
+"text-text-transform": none,
+"toltip-color": map-get($Colors, "text-defualt"),
+"toltip-font-family": 'Heebo',
+"toltip-font-size": rem(12px),
+"toltip-font-style": normal,
+"toltip-font-weight": 300,
+"toltip-letter-spacing": 0em,
+"toltip-line-height": rem(8px),
+"toltip-text-transform": none
+
+);
+
+// COMPONENTS 
+$componentsVariables: (
+
+);
+
+//label//
+
+%texbox-lable{
+
+   
+    color: #5E6164 ;
+    font-size: 14px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    display: grid;
+    align-items: center;
+    height: auto !important;
+}
+
+//input//
+
+%texbox-input{
+
+    border: none !important;
+    background: none !important;
+    border-right: 1px solid map-get($map: $Colors, $key: border-color ) !important ;
+    color: map-get($map: $Colors, $key:  text-defualt) !important;
+    padding-right: 10px; 
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    text-align: right ;
+
+
+}

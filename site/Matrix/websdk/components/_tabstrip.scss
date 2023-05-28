@@ -1,0 +1,24 @@
+@use "../variable/variable" as *;
+
+
+//tabstrip-control//
+
+.xstyle-tab-wrapper {
+    & .k-tabstrip-item.k-item {
+      & span {
+        opacity: 1 !important;
+        color: #7b098b !important;
+      }
+    }
+  
+    & .k-tabstrip .k-tabstrip-items {
+      & .k-item.k-active {
+        border: none !important;
+  
+        & span.k-link {
+          border-bottom: 1px solid #7b098b !important;
+          font-weight: 700;
+        }
+      }
+    }
+  }

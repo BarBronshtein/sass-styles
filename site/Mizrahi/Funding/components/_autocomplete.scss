@@ -1,0 +1,60 @@
+
+
+
+
+@use '../variable/variable' as *;
+
+
+
+.xstyle-autocomplete-wrapper   {
+
+    margin-top: 15px;
+// disable // 
+
+    &.k-state-disabled{
+
+        & input.k-textbox{
+
+            @extend %texbox-input;
+           
+        }
+
+        & label{
+            color: $control-caption-color-text-disable !important; 
+          }
+    }
+
+    .k-autocomplete{
+        border: none !important
+    }
+    & input{
+      @extend %texbox-input;
+      padding-right: 10px !important;
+      &.x-login-user-error{
+        
+        border-bottom: 1px solid #DB0000 !important;
+      }
+
+        &:focus{
+            box-shadow:$control-box-shadow-focus !important;
+            border: $control-border-focus !important;
+        }
+
+        &::placeholder{
+
+            color: $control-color-placeholder !important;
+
+        }
+    }
+
+    & label{
+        @extend %texbox-label;
+
+    }
+}
+
+
+
+
+
+

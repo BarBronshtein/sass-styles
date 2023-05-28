@@ -1,0 +1,185 @@
+
+
+@use "../variable/variable" as *;
+// file control //
+
+.xstyle-upload-wrapper {
+    & > div {
+      align-self: center;
+    }
+  
+    &.k-state-disabled {
+      & .x-control-caption-text.s-control-caption-text {
+        color: #a1a3a5 !important;
+      }
+  
+      & .k-button {
+        color: #a1a3a5 !important;
+      }
+    }
+  
+    &.x-readonly {
+      & .k-button {
+        color: #a1a3a5 !important;
+      }
+    }
+    & .k-file-group.k-i-file-config {
+      font-size: 24px;
+      color: #7e7b7b !important;
+      top: 4px;
+      &::before {
+        content: "\e9ad" !important;
+        font-family: "icomoon";
+      }
+    }
+  
+    & .k-file-success .k-progress {
+      background-color: #15b0c5;
+    }
+  
+    & .k-file.k-file-error {
+      & .k-file-group.k-i-file-config {
+        font-size: 24px;
+        color: #7e7b7b !important;
+        top: 4px;
+        &::before {
+          content: "\e9b0";
+          font-family: "icomoon";
+        }
+      }
+    }
+  
+    & .k-file.k-file-success {
+      & .k-file-group.k-i-file-image {
+        font-size: 24px;
+        color: #7e7b7b !important;
+        top: 4px;
+        &::before {
+          content: "\e9af";
+          font-family: "icomoon";
+        }
+      }
+  
+      & .k-file-group.k-i-file-config {
+        font-size: 24px;
+        color: #7e7b7b !important;
+        top: 4px;
+        &::before {
+          content: "\e9ad" !important;
+          font-family: "icomoon";
+        }
+      }
+  
+      & .k-file-group.k-i-file-txt {
+        font-size: 24px;
+        color: #7e7b7b !important;
+        top: 4px;
+        &::before {
+          content: "\e9b6";
+          font-family: "icomoon";
+        }
+      }
+  
+      & .k-file-group.k-i-file-data {
+        font-size: 24px;
+        color: #7e7b7b !important;
+        top: 4px;
+        &::before {
+          content: "\e9ac";
+          font-family: "icomoon";
+        }
+      }
+  
+      & .k-file-group.k-i-file {
+        font-size: 24px;
+        color: #7e7b7b !important;
+        top: 4px;
+        &::before {
+          content: "\e9ae";
+          font-family: "icomoon";
+        }
+      }
+    }
+  
+    & .k-dropzone {
+      & .k-button-solid-base:focus-within {
+        box-shadow: none !important;
+        border: none !important;
+      }
+  
+      & .k-button.k-button-md.k-rounded-md.k-upload-button {
+        border: none !important;
+  
+        & span {
+          margin-right: -68px;
+        }
+        & span::before {
+          font-size: 24px;
+          font-weight: 500;
+          content: "\e967";
+          font-family: "icomoon";
+        }
+      }
+    }
+  
+    & .k-upload-files.k-reset {
+      border: none !important;
+    }
+    & [class^="k-file-validation-message !k-text-success"] {
+      font-family: "Heebo" !important;
+      font-style: normal !important;
+      font-weight: 300 !important;
+      font-size: 12px !important;
+      line-height: 18px;
+      color: #15b0c5 !important;
+    }
+    
+      & [class="k-file-validation-message !k-text-error"] {
+      font-family: "Heebo" !important;
+      font-style: normal !important;
+      font-weight: 300 !important;
+      font-size: 12px !important;
+      line-height: 18px;
+    }
+    & .k-file-name {
+      font-family: "Heebo" !important;
+      font-style: normal !important;
+      font-weight: 300 !important;
+      font-size: 12px !important;
+      line-height: 17px !important;
+      color: #000000 !important;
+    }
+  
+    & .k-file-group.k-icon.k-i-file-pdf {
+      font-size: 24px;
+      font-size: 24px;
+      color: #7e7b7b !important;
+      top: 4px;
+      &::before {
+        content: "\e9b1";
+        font-family: "icomoon";
+      }
+    }
+  
+    & button.k-button.k-icon-button.k-button-md.k-rounded-md {
+      border: none !important;
+  
+      & span.k-i-close {
+        font-size: 24px;
+        color: #000000 !important;
+        &::before {
+          content: "\e908";
+          font-family: "icomoon";
+        }
+      }
+  
+      & span.k-i-retry {
+        font-size: 24px;
+        color: #000000 !important;
+        &::before {
+          content: "\e9ab";
+          font-family: "icomoon";
+        }
+      }
+    }
+  }

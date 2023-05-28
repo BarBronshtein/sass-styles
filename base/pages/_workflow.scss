@@ -30,7 +30,7 @@
 
 .x-panelCtrl {
   header {
-      z-index: 1031 !important;
+      z-index: 10001 !important;
   }
 }
 
@@ -491,7 +491,7 @@ span.mandatory.active+span.k-switch.k-widget .k-switch-container {
   color: $websdk-dynamic-title-color;
 }
 
-@media only screen and(max-width:1024px) {
+@media only screen and (max-width:1024px) {
   .roundedNoneMobile {
       border-radius: 0 !important;
   }
@@ -853,7 +853,7 @@ ul.fieldlist {
 
 .k-grid {
   .k-grid-content {
-      height: initial !important;
+ 
       max-height: $websdk-grid-content-height;
       overflow-y: auto;
       min-height: 5PX !important;

@@ -1,0 +1,28 @@
+
+
+.bg-cube.row{
+    position: absolute;
+    width: 234.5px;
+    height: 219px;
+    left: -79px;
+    top: -98px;
+    opacity: 0.16;
+    border: 6px solid #232873 !important;
+    transform: rotate(163deg);
+    border-radius: 0;
+    z-index: 1;
+}
+
+.bg-cube1.row{
+    background: linear-gradient(359.87deg, rgba(171, 193, 255, 0.26) -261.88%, rgba(82, 111, 249, 0.26) 203.51%, rgba(82, 111, 249, 0.26) 203.51%) !important;
+    opacity: 0.6;
+    transform: rotate(163deg);
+    position: absolute;
+    width: 179.5px;
+    height: 302px;
+    left: -68px;
+    top: -109px;
+    z-index: 1;
+    border-radius: 0;
+    border: none !important;
+}

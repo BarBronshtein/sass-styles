@@ -1,0 +1,33 @@
+
+
+.main-title{
+
+    margin-top: 55px;
+    margin-bottom: 20px;
+  span{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 100%;
+    align-items: center;
+    text-align: center !important;
+    color: #0167B1 !important;
+  }
+}
+
+.secondary-title{
+
+    margin-bottom: 25px;
+    & span.x-dynamic-label-control {
+
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center !important;
+        color: #868686;
+
+    }
+}

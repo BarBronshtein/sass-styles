@@ -1,0 +1,54 @@
+
+.k-button-solid-base:focus{
+    box-shadow: none !important;
+    border: none;
+}
+
+.k-upload-files.k-reset{
+
+    border-top: 1px solid #FF780B !important;
+
+    .k-file-group.k-icon{
+        display: none;
+    }
+.k-file-name-size-wrapper{
+    margin: 0 !important;
+}
+    .k-file-name{
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 100%;
+        text-align: right;
+        color: #FF780B;
+        white-space: break-spaces;
+        margin-bottom: 5px;
+    }
+
+  
+
+        .k-i-x:before {
+            
+            content: "\e904" !important;
+            font-family: "icomoon";
+            font-size: 12px;
+        }
+
+
+        & [class^="k-file-validation-message !k-text-success"]{
+
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 100%;
+            text-align: right;
+            color: #258DB9;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+    
+}

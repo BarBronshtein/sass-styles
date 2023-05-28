@@ -1,0 +1,220 @@
+@use '../variable/variable' as *;
+
+
+.k-animation-container{
+
+  & .k-popup{
+
+    box-shadow: none !important;
+    border: $popup-border ;
+    border-radius: 10px;
+    margin-top: 5px;
+
+    .k-list{
+      border-radius: 10px;
+    }
+    & .k-list-content.k-list-scroller{
+      border-radius: 10px;
+        background: none !important;
+        padding: 12px 20px;
+& ul{
+  background: $popup-bg !important;
+}
+        & li{
+            height: 41px;
+
+            &.k-selected.k-focus{
+              background: $popup-bg-selected !important;
+              border: none;
+              box-shadow: none;
+
+              .k-list-item-text{
+                color: $popup-color-text-selected !important;
+                font-weight: 700;
+              }
+            }
+
+            &:hover{
+              background: $popup-bg-hover;
+            
+              .k-list-item-text{
+                color: $popup-color-text-hover !important;
+                font-weight: 700;
+              }
+            }
+
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                align-items: center;
+                text-align: right;
+                color: $popup-color-text;
+            }
+
+        }
+    }
+  }
+
+
+}
+
+// window //
+
+$window-box-shdow: 0px 0px 10px rgba(123, 9, 139, 0.1), 0px 5px 8px rgba(123, 9, 139, 0.1);
+$window-icon-close-color: #A6A6A6;
+
+.k-window{
+  background: #FFFFFF;
+  box-shadow:$window-box-shdow;
+  border-radius: 10px;
+  border:none;
+  padding: 50px 40px 40px;
+  .k-window-titlebar{
+    border: none;
+    background: none;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    span{
+      color: $window-icon-close-color;
+    }
+  }
+
+  .x-footer{
+    background: none;
+    border: none;
+  }
+ 
+
+  #TafnitCore_SaaSServer_Portal_Default_UI_userDetailes{
+    margin-bottom: 0;
+    header{
+     display: none;
+    }
+    mainbody{
+      margin-top: 0px !important;
+      padding-bottom: 22px;
+    }
+  }
+
+  .ttitle-border {
+    padding: 15px 5px;
+    border-bottom: 1px solid #7B098B; 
+    border-top: 1px solid #7B098B; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center !important;
+      color: #7B098B;
+    }
+  }
+
+  .text-secondary{
+    span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+  }
+
+  .text-spicel{
+    span{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #7B098B;
+        margin-bottom: 10px;
+    }
+  }
+    
+.col-list{
+  padding-bottom: 15px !important;
+}
+  .list{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    height: 25px;
+    span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #000000;
+    }
+
+    label{
+      font-family: "Heebo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #690779;
+      width: max-content;
+      margin-top: 2px;
+
+    }
+  }
+   .col-grid{
+    padding: 0 !important;
+   }
+
+   .col-button{
+    box-shadow: none;
+    border: none;
+    padding: 0;
+   }
+  .xstyle-gridv4-wrapper {
+    padding: 0 !important;
+    .toolbar.x-embeddedToolbar span.k-searchbox{
+      background: #FFFFFF;
+      border: 1px solid #A6A6A6 !important;
+      border-radius: 10px;
+      height: 50px;
+
+      input{
+        text-align: right;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #000000;
+      }
+    }
+
+    .k-grid-header{
+      display: none;
+    }
+
+    td{
+      padding-left:0 !important;
+    }
+
+    tr:nth-child(2){
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #690779;
+    }
+  }
+
+}

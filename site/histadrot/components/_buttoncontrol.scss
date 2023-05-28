@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
+
+  
+  
+ .xstyle-buttoncontrol-wrapper {
+  margin-top: 15px;
+
+    &.k-state-disabled {
+      opacity: 1 !important;
+
+    & button.k-button {
+      background: #F5F5F5 !important;
+      border: none !important;
+      color: #A6A6A6 !important;
+    }
+}
+    & button.x-button {
+      background: #00AEE9;
+      border-radius: 0px;
+      border: none !important;
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      height: 47px !important;
+      margin-top: 5px;
+
+    &:focus {
+      background: #005A8D !important;
+    }
+}
+
+}
+
+
+.xstyle-upload-wrapper{
+
+  .k-button{
+    background: #00AEE9;
+    border-radius: 0px;
+    border: none !important;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 47px !important;
+    margin: auto !important;
+    margin-top: 15px !important;
+  }
+}
+

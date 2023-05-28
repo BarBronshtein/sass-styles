@@ -12,6 +12,15 @@ $main-background-color:#8C4D9C;
 $box-Details-background-color:#1F8FCE;
 
 $font-family: "Assistant", sans-serif;
+
+
+body.checkout-flow-v7.bg2{
+  width: 90%;
+  margin: auto;
+}
+#uber-container{
+  padding: 0 !important;
+}
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment{
 
 & .price{
@@ -46,7 +55,7 @@ $font-family: "Assistant", sans-serif;
 
   // @media only screen and (max-width: 764px){
        
-  //   & .x-iframe.s-iframe{
+  //   & :.s-iframe{
 
     
   //   padding-right: 0% !important;
@@ -141,7 +150,7 @@ $font-family: "Assistant", sans-serif;
     padding-left: 0;
     padding-right: 0;
   }
-//   & .x-iframe.s-iframe {
+//   & :.s-iframe {
 //     padding-right: 0% !important;
 //     height: 105vh !important;
 // // & body.dektop{
@@ -696,18 +705,23 @@ $font-family: "Assistant", sans-serif;
 }
 
 
-  .x-iframe{
+.x-iframe{
   border: none !important;
 
   padding-right: 30% ;
   height: 580px !important;
-  width: 982px !important;
-
   padding-bottom: 57px !important;
+
+ .signup-body{
+    width: 90%;
+    margin: auto;
+  }
   }
 
-
-
+.signup-body{
+  width: 90%;
+  margin: auto;
+}
 }
 
 

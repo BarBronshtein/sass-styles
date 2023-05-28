@@ -1,0 +1,161 @@
+
+#TafnitCore_SaaSServer_Funding_B2C_UI_PersonalZone{
+margin-top: 40px !important;
+}
+.x-panelCtrl > .container#TafnitCore_SaaSServer_Funding_B2C_UI_OfferList,
+.x-panelCtrl > .container#TafnitCore_SaaSServer_Funding_B2C_UI_OfferDetails,
+.x-panelCtrl > .container#TafnitCore_SaaSServer_Funding_B2C_UI_LoanDetails,
+.x-panelCtrl > .container#TafnitCore_SaaSServer_Funding_B2C_UI_LoanList{
+    margin-top: 95px !important;
+}
+
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_onBorading_UI_AccountDetails){
+    .x-panelCtrl > .container#TafnitCore_SaaSServer_Funding_onBorading_UI_AccountDetails{
+        margin-top: 20px !important;
+    }
+}
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2C_UI_PersonalZone),
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2C_UI_OfferList),
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2C_UI_LoanList),
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2C_UI_LoanDetails),
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2C_UI_OfferDetails),
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Login),
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main:has(#TafnitCore_SaaSServer_Funding_onBorading_UI_AccountDetails){
+    .x-footer{
+        display: none !important;
+    }
+}
+
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main{
+
+
+    header{
+        z-index: 1032 !important;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background: #FFFFFF !important;
+        border: none !important;
+        box-shadow: 0px 0px 10px rgba(20, 0, 142, 0.4) !important;
+        .wrapper-header{
+            align-items: center;
+            .part1-header{
+                align-items: center;
+                display: grid;
+                grid-template-columns: auto auto 1fr;
+                gap: 10px;
+
+                span.k-icon{
+                    font-size: 25px;
+                    color: #14008e;
+
+                    &.icon-xtar-message{
+                        font-size: 30px;
+                    }
+
+                }
+
+                .x-xmenu {
+                    border: none;
+                    .k-active.k-state-border-down{
+
+                        i:before{
+                            content: "\f2bd" !important;
+                            font-family: "Font Awesome 5 Pro";
+                        }
+
+                    }
+                    i{
+                        font-size: 25px;
+                        color: #14008e;
+                    }
+                }
+            }
+        }
+
+
+        &.navbar-fixed-top .x-image-wrapper.s-image-wrapper{
+            height: 70px;
+            align-items: center;
+            display: flex;
+            img{
+                width: 120px !important;
+                height: auto;
+                margin-left: 5px;
+            }
+        }
+    }
+
+
+
+    .k-header.header:has(.scandary-header){
+z-index: 1031 !important;
+        height: 62px;
+        left: 0px;
+        top: 70px;
+        background: #111558 !important;
+        box-shadow:  0px 0px 10px rgba(2, 111, 158, 0.2) !important ;
+        padding: 15px 10px;
+
+        .scandary-header{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+         justify-content: center;
+         padding-right: 32px;
+         .back{
+               position: absolute;
+               right: 5px;
+               top: 50%;
+    transform: translateY(-50%);
+            span{
+
+                   font-size: 20px;
+                   color: #FFFFFF;
+
+            }
+         }
+
+         .text{
+            top: 6px;
+            span{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px !important;
+                line-height: 100%;
+                text-align: right;
+                color: #FFFFFF;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+         }
+
+         .price{
+
+            span{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px !important;
+                line-height: 100%;
+                text-align: right;
+                color: #FFFFFF;
+                margin-right: 8px;
+            }
+         }
+
+         .shekel{
+            span{
+               color: #FFFFFF;
+               font-size: 15px;
+               top: 5px;
+               font-weight: 300;
+            }
+         }
+
+
+
+    }
+}
+}

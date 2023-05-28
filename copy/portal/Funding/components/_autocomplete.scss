@@ -1,0 +1,65 @@
+
+
+
+
+@use '../variable/variable' as *;
+
+
+
+.xstyle-autocomplete-wrapper   {
+
+    margin-top: 15px;
+// disable // 
+
+    &.k-state-disabled{
+
+        & input.k-textbox{
+
+            @extend %texbox-input;
+           
+        }
+
+        & label{
+            color: $control-caption-color-text-disable !important; 
+          }
+    }
+
+    .k-autocomplete{
+        border: none !important;
+         border-radius:0px ;
+        &:focus-within{
+            box-shadow:$control-box-shadow-focus !important;
+
+            & input:focus{
+            border: $control-border-focus !important;
+            }
+        }
+    }
+    & input{
+      @extend %texbox-input;
+      padding-right: 10px !important;
+      &.x-login-user-error{
+        
+        border-bottom: $control-border-error !important;
+      }
+
+     
+
+        &::placeholder{
+
+            color: $control-color-placeholder !important;
+
+        }
+    }
+
+    & label{
+        @extend %texbox-label;
+
+    }
+}
+
+
+
+
+
+

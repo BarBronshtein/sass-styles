@@ -1,0 +1,83 @@
+@use "../variable/variable" as *;
+
+.xstyle-daterangev2-wrapper {
+  & input {
+    color: #000000 !important;
+    font-size: 14px !important;
+    &::placeholder {
+      color: #ececec !important;
+    }
+  }
+
+  & .x-control-content-wrapper {
+    & > div > span:nth-child(1) {
+      width: 55%;
+      margin-left: 11px;
+    }
+
+    & > div > span:nth-child(2) {
+      display: flex;
+      width: 55%;
+      border-bottom: 1px solid #d9d9d9;
+
+      & > span:nth-child(1) {
+        padding-right: 16px;
+        margin-left: 12px;
+        margin-top: 11px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px !important;
+        color: #a1a3a5 !important;
+      }
+
+      & span.k-datepicker.k-input.x-datePickerResponsive {
+        border: none !important;
+
+        & input {
+          border-right: 1px solid #d9d9d9 !important;
+
+          &::placeholder {
+            color: #ececec !important;
+          }
+        }
+      }
+    }
+  }
+
+  &:focus-within {
+    border: 1px solid #ddc3e7 !important;
+    -webkit-box-shadow: 0px 0px 10px #f6ecfb !important;
+    box-shadow: 0px 0px 10px #f6ecfb !important;
+  }
+
+  .k-input:focus-within,
+  .k-widget.k-input:focus-within {
+    box-shadow: none !important;
+  }
+  & .col-33 {
+    display: flex;
+    align-items: center;
+  }
+
+  & div:nth-child(1).col-33 {
+    border-bottom: 1px solid map-get($map: $Colors, $key: border-color) !important;
+    height: 38px !important;
+    display: flex;
+    align-items: center;
+    & label {
+      @extend %texbox-lable;
+      padding-right: 17px;
+    }
+  }
+  & div:nth-child(2).col-67 {
+    & .x-date-wrapper.s-date-wrapper {
+      &:nth-child(1) > span {
+        border-right: 1px solid map-get($map: $Colors, $key: border-color) !important;
+      }
+      margin-left: 10px;
+      & > span.k-datepicker {
+        border-bottom: 1px solid map-get($map: $Colors, $key: border-color) !important;
+      }
+    }
+  }
+}

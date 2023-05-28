@@ -1,0 +1,45 @@
+
+
+$background: #334768;
+$main-square: #AE2A30;
+$text-square: white;
+$text-default: #334768;
+$icon-description : #7E7B7B;
+$shadow-big-cube: 0px 0px 15px 15px rgba(0, 0, 0, 0.5);
+$shadow-icon: 0px 0px 8px rgba(174, 42, 48, 0.2);
+$shadow-icon-press: inset 2px 2px 4px rgba(174, 42, 48, 0.2);
+$back-button: #AE2A30; 
+$icon-approve : #AE2A30;
+$title-approve: #AE2A30; 
+
+
+
+
+// bg // 
+#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment {
+    background-color: $background !important;
+    .titlePaymentOption{
+        color: $text-default !important;
+      }
+}
+@media only screen and (min-width: 1165px){
+#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment {
+
+    .titlePaymentOption{
+        color: $text-default !important;
+      }
+    .paymentOption{
+        box-shadow: $shadow-big-cube !important;
+    }
+}
+}
+
+
+
+
+
+// cube //
+
+#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .PaymetnMS{
+    background-color: $main-square !important;
+}

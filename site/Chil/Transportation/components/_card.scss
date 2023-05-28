@@ -1,0 +1,99 @@
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Car_Info,
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Car_Owner,
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Car_Drivers,
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Car_Accessories{
+    margin-bottom: 95px !important;
+}
+.none-padding{
+    padding: 0 !important;
+}
+.warrper-card{
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    & > div{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .col-one,.col-two{
+        height: 84px;
+        background: rgba(255, 255, 255, 0.6);
+        border-bottom: 1px solid #E7E7E7;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 15px;
+        & > div{
+            background: none !important;
+        }
+
+        &.col-tow-border{
+            border-left: 1px solid #E7E7E7;
+        }
+
+        &.col-link{
+            grid-template-columns: auto auto 1fr;
+
+            div:has(a){
+                text-align: end;
+            }
+
+            a{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 100%;
+                color: #FDAA3F; 
+            }
+        }
+
+        & label{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 100%;
+            color: #8E8E8E;
+        }
+
+        & span.s-dynamic-label-control{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            color: #052136;
+        }
+
+        .k-icon{
+            color: #0F6FB7;
+            font-size: 30px;
+        }
+    }
+
+}
+
+
+
+.documents{
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(16, 93, 150, 0.25), 0px 4px 4px rgba(155, 213, 255, 0.25);
+    border-radius: 10px;
+    min-height: 51px;
+    padding: 20px;
+    margin-top: 20px !important;
+    .x-control-content-wrapper{
+        text-align: center !important;
+    }
+    a{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center !important;
+        color: #1C87D7;
+    }
+}

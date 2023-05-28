@@ -1,0 +1,89 @@
+.k-widget.k-window:has(#MessageBoxWindow){
+
+    background: #FFFFFF !important;
+    box-shadow: 0px 10px 10px rgba(1, 103, 177, 0.3) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 5px;
+  & .k-window-titlebar{
+
+    background: none !important;
+    border: none !important;
+    display: block;
+
+
+    & .k-window-title{
+        justify-content: center;
+        margin-top: 35px !important;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        align-items: center;
+        text-align: center;
+        color: #E51925;
+    }
+
+    & .k-window-actions.k-hstack{
+
+        position: absolute;
+        top: 9px;
+        left: 14px;
+        & span{
+        color: #727272 !important;
+        font-size: 22px;
+
+        
+        }
+    }
+  }
+
+
+  #MessageBoxWindow{
+
+    #ctrlSectionMainSection{
+        & #controlCell1Container{
+            display: none;
+        }
+        & #controlCell2Container{
+            margin: auto;
+            margin-top: -15px;
+            flex: 0 0 100%;
+            max-width: 100%;
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px !important;
+                line-height: 120%;
+                align-items: center;
+                text-align: center;
+                color: #0167B1;
+            }
+        }
+    }
+
+
+    #divCobuttonbtn1{
+        overflow: hidden;
+
+        & .col-12{
+            padding: 0 !important;
+            & button{
+                height: 47px;
+                border: none !important;
+                border-radius: 0px;
+                background: #00AEE9;
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+  }
+}

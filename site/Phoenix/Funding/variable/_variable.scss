@@ -1,0 +1,256 @@
+
+
+@import'../../../../base/variables/masterVariable';
+
+
+$mandatory-color: #ff7100 ;
+
+//scroll grid//
+$scrool-bg:#ff7100;
+$scrool-bg-hover:#E53E07;
+
+//grid//
+
+$grid-td-link-color:#ff7100;
+$grid-td-link-color-hover:#ff7100;
+$grid-filter-icon:#FF5A23 ;
+$Grid-color-title-th:#0C0E1F ;
+$Grid-color-text-td:#323C4B ;
+$grid-icon-search-color:#14008E;
+$Grid-checkBox-bg:#14008E;
+$Grid-checkBox-border:#14008E;
+// drower //
+
+$drawer-background-color:#FFFFFF;
+$drawer-box-shdow:0px 0px 10px rgba(35, 40, 115, 0.2);
+$drawer-icon-color:#000000;
+$drawer-color-text:#323C4B;
+$drawer-color-link:#004070;
+$overlay-color: #052136;
+
+// button //
+
+$Button-bg-hover:#E53E07 ;
+$Button-color-text: #FFFFFF;
+$Button-color-border:none;
+$Button-color-border-focus: #FFA182;;
+$Button-color-icon:#FF5A23 ;
+$Button-bg:#FF5A23 ;
+$Button-float-bg:#14008E;
+$Button-float-color: white;
+
+//spicel-button//
+
+$spicel-button-bg:#FFFFFF;
+$spicel-button-color-text:#FF5A23 ;
+$spicel-button-color-border:1px solid #FF5A23 ;
+
+
+
+/*controls*/
+$control-caption-color-text: #323C4B;
+$control-background: #FFFFFF;
+$control-border-input:1px solid  #CED4DA;;
+$control-color-input:#323C4B;
+$control-radius-input:0px;
+$control-caption-color-text-disable: #C7C7C7;
+$control-border-input-disable: 1px solid #E7E7E7;;
+$control-border-focus:1px solid #FFC4B0;
+$control-box-shadow-focus:0px 0px 6px rgba(255, 90, 35, 0.2);
+$control-color-placeholder:#ADB5BD;
+$control-color-icon:#232873;
+$control-border-error:1px solid #E91E63;
+//calnder //
+
+$calendar-box-shadow:0px 0px 10px rgba(35, 40, 115, 0.2);;
+$calendar-bg-header:#FCFCFC;
+$calendar-color-icon-header:#14008E ;
+$calendar-color-text-header:#323C4B;
+$calendar-bg-body:#F5F5F5;
+$calendar-border-bottom-body:1px solid #14008E ;
+$calendar-body-button-color:#232873 ; 
+$calendar-body-butoon-color-text-focus:white;
+$calendar-body-butoon-bg-focus:#0F1134 ;
+$calendar-body-butoon-color-text-hover: white;
+$calendar-body-butoon-border-hover:1px solid #14008E ;
+$calendar-month-color-days-focus:#ffffff;
+$calendar-month-bg-days-focus:#0F1134 ;
+$calendar-month-color-today:#232873 ;
+$calendar-month-border-today: 1px solid #14008E ;
+$calendar-month-color-days-other-month:#8E8E8E;
+$calendar-month-border-other-month-hover:1px solid #8E8E8E;
+$calendar-month-color-other-month-hover:#8E8E8E;
+$calendar-month-color-title:#323C4B ;
+$calendar-month-color-days:#232873 ;
+$calendar-month-color-days-hover:#232873 ;
+$calendar-month-border-days-hover:1px solid #14008E ;;
+$calendar-fotter-color-text:#14008E;
+
+//slider //
+
+$slider-icon-color-after:#FF5A23;
+$slider-icon-color-before:#FF5A23;
+$slider-bg-color:#FF5A23;
+$slifer-color-text-price:#FF5A23;
+$slifer-box-shadow:0px 0px 6px rgba(255, 90, 35, 0.2);;;
+$slifer-filter:drop-shadow(-3px 2px 4px rgba(0, 0, 0, 0.25));;
+
+//checkBox //
+$CheckBox-border:#323C4B;
+$CheckBox-border-checked:#14008E;
+$CheckBox-color-checked: #FFFFFF;
+$CheckBox-caption:#000000;
+$CheckBox--checked-bg: #14008E;
+
+
+// cube-dasboard //
+$Cube-dashboard-colot-text:#4B1754;
+$Cube-dashboard-bg:#FCFCFC;
+$Cube-dashboard-box-shadow:0px 0px 10px rgba(13, 13, 13, 0.1);
+$Cube-dashboard-color-price:#7B098B;
+$Cube-dashboard-color-icon:#4B1754;
+
+//first-panel//
+
+$first-panel-color-title:#7B098B;
+$first-panel-color-icon-button:#7B098B;
+$first-panel-border-icon-button:1px solid #7B098B;;
+$first-panel-bg-icon-button:#FFFFFF;
+
+// row //
+
+$row-bg:#fff;
+$row-box-shadow: 0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15);
+
+
+// popup //
+$popup-border:1px solid #CED4DA;
+$popup-bg:white;
+$popup-color-text:#323C4B;
+$popup-bg-selected:#EEF7FB;
+$popup-color-text-selected:#14008E;
+$popup-bg-hover:#EEF7FB;
+$popup-color-text-hover:#14008E;
+
+
+// cube-main//
+
+$cube-main-box-shadow:0px 0px 10px rgba(35, 40, 115, 0.2);
+$cube-main-title-color:#323C4B;
+$cube-main-sum-color:#14008E;
+$cube-main-sum-icon: #14008E;
+$cube-main-card-border: 1px solid #14008E;
+$cube-main-card-num-color: #14008E;
+$cube-main-card-text-color: #323C4B;
+$cube-main-card-icon: #14008E;
+$cube-main-text-color: #323C4B;
+$cube-main-route-text-color: #14008E;
+$cube-main-price-color:#14008E;
+
+
+// cube-small //
+
+$small-cube-box-shdow:0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+$small-cube-text-color: #14008E;
+$small-cube-icon-color: #323C4B;
+
+
+
+// B2B header //
+
+$B2B-header-border-col: 1px solid #f1c779;
+$B2B-header-icon:#14008E;
+$B2B-header-box-shadow:0px 5px 10px rgba(2, 111, 158, 0.1);
+$B2B-header-text-defult:#000000;
+$B2B-header-link-color:#ff7100 ;
+
+
+
+
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 21px;
+    text-align: right;
+    color: $control-caption-color-text;
+    margin: 0;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 50px;
+    background: $control-background;
+    border: $control-border-input !important;
+    border-radius: $control-radius-input;
+    padding: 10px 20px;
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    color: $control-color-input;
+    text-align: right;
+}
+
+
+// upload //
+$upload-border-color: 1px solid #ff7300;
+$upload-name-file-color:  #ff7300;
+$upload-success-text-color:  #3e2ea3;
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background;
+    border:$control-border-input-disable;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable;
+}
+
+
+// spicel button //
+
+%spicel-button{
+    height: 50px !important;
+    background: $spicel-button-bg;
+    border-radius: 10px;
+    font-family: "Assistant";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: $spicel-button-color-text;
+    border: $spicel-button-color-border;
+    
+}
+
+// button//
+
+%button{
+    background: $Button-bg;
+    border: 1px solid $Button-color-border;
+    border-radius: 10px;
+    align-items: center;
+    height: 50px !important;
+    color: $Button-color-text;
+    font-family: 'Assistant' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}

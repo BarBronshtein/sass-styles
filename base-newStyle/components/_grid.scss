@@ -1,4 +1,20 @@
+
+.gridSearch.searchDesign{
+
+    .k-toolbar.k-toolbar-resizable{
+        background: none;
+        border: none;
+    }
+}
+
+.k-grid .k-grid-header .k-grid-header-wrap th.k-header{ 
+
+     white-space: pre-line !important;
+}
+
 .k-grid {
+
+
     tr {
         td {
             cursor: pointer;
@@ -41,6 +57,9 @@
     }
 
     .k-toolbar{
+        background: none;
+        border: none;
+    
         &.k-grid-toolbar:empty{
             display: none;
         }

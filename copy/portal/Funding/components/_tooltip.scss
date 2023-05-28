@@ -1,0 +1,42 @@
+
+
+.k-animation-container:has(.k-tooltip){
+    background: none !important;
+    .k-tooltip.k-widget.k-popup.k-group.k-reset{
+        box-shadow: 0px 0px 5px rgba(9, 79, 141, 0.25)!important;
+        top: -85px;
+        font-weight: 400 !important;
+        padding: 0;
+    
+        
+        &:before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            bottom: -8px;
+            left: 60%;
+            margin-left: -25px;
+            background: #fff;
+            transform: rotate(45deg);
+            box-shadow: 0px 0px 5px rgba(9, 79, 141, 0.25) !important;
+
+        }  
+    
+
+
+    }
+
+    & .k-tooltip-content{
+        background: #fff !important;
+        position: relative;
+        text-align: center;
+        padding: 6px;
+        border-radius: 10px;
+    
+    }
+
+    & .k-callout.k-callout-n{
+     border: none;
+    }
+}

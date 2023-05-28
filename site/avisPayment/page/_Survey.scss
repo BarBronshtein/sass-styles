@@ -1,9 +1,61 @@
+
+
+
+
+
+
+
+
+
+
 #TafnitCore_SaaSServer_Survey_UI_Survey {
     
+    background: #DB1C33 !important ;
+    & div[uxid=sQuestions]{
+
+        margin-top: -115px !important;
+        padding-top: 100px !important;
+    }
     & .surveyTitle{
 
-        background: #DB1C33!important;
+        &::before{
+        content: "";
+        border-radius: 50%;
+        background: #DB1C33;
+        position: absolute;
+        top: -1px;
+        height: 148px;
+        width: 100%;
+        left: 0px;
+        transform: rotate(180deg);
+        z-index: 20;
     }
+    & .surveyBodyTitle {
+        z-index: 30;
+        top: 19%;
+    }
+    
+            background: #DB1C33!important;
+
+    }
+
+
+    & div[uxid=SurveyMainSec]{
+    border-radius: 50% !important;
+    height: 297px !important;
+    top: -168px !important;
+    width: 100% !important;
+    right: 0;
+    background: #FFFFFF;
+    z-index: 1550;
+    box-shadow: 0px 4px 37px rgb(0 0 0 / 68%) !important;
+
+    & .xstyle-image-wrapper{
+        top: 70px !important;
+        left: 7px;
+    }
+    }
+ 
 
 & .xstyle-popupsignature-wrapper .GraphicalSignaturePlaceHolders::after{
 
@@ -205,11 +257,16 @@
     color: #C11A2E !important;
 }
 
-& .k-i-file-pdf{
+& .k-i-file-pdf,
+& .k-i-file-data,
+& .k-i-file-txt,
+& .k-i-file,
+& .k-i-file-image.k-file-group.k-icon{
     &::before{
         color: #DB1C33!important; 
     }
 }
+
 
 & .k-file-validation-message.k-text-success{
     color: #DB1C33!important; 
@@ -234,5 +291,4 @@
 
     }
 }
-
 }

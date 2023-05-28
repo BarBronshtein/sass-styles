@@ -1,0 +1,171 @@
+@use '../variable/variable' as *;
+
+#TafnitCore_System_UI_App_WebSDK_SearchRoutineResult{
+
+    background: #FBFBFB;
+    box-shadow: 0px 0px 15px rgba(123, 9, 141, 0.15);
+    border-radius: 10px;
+    padding: 0px 30px 30px;
+    overflow: hidden;
+    .k-i-close{ 
+       color: #7E7B7B !important;
+    }
+    .headerNone{
+        .k-auto-scrollable{
+            max-height: 45vh;
+            overflow-y: auto;
+            min-height: 5PX !important;
+        }
+}
+    .k-auto-scrollable{
+        overflow: hidden;
+    }
+
+    & .k-grid-content{
+      
+
+        & .k-grid-norecords-template{
+            border: none;
+            background: #FBFBFB;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+
+ 
+
+
+    & .popup_close_btn.k-window-actions{
+        height: 35px;
+
+        & a{
+            background: none !important;
+            position: absolute;
+
+            .k-icon.k-i-close{
+               right: 0px !important;
+            }
+        }
+    }
+    & .headerNone{
+        overflow: hidden;
+        background: none;
+        box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.1);
+        border-radius: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px !important;
+
+        .row {
+            margin-bottom: 0 !important;
+            box-shadow: none !important;
+        }
+
+        & .k-grid-header{
+            display: none;
+        }
+
+        & .x-section-header-wrapper{
+            & h3.x-section-header.s-section-header{
+                font-family: 'Heebo' !important;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+                color: #7B098B !important;
+                padding: 20px 0;
+            }
+
+        }
+
+        
+        & .x-treeList.s-treeList{
+
+            & .k-grid-content.k-auto-scrollable{
+
+                & tr{
+                  
+                    td:has(span){
+                        white-space: nowrap;
+                        display: grid;
+                        grid-template-columns: auto 11fr;
+                        gap: 15px;
+                        align-items: center;
+                        height: 35px;
+
+                        .k-icon{
+                            top: 0 !important;
+                        }
+                    
+                    }
+
+                    &.k-treelist-group{
+
+                        background: #FCFCFC;
+                    }
+                    & .k-icon.k-i-none{
+                        display: none ;
+                    }
+                }
+
+                  & td {
+                    padding: 0;
+                    font-size: 13px !important;
+                    &:last-child{
+                        color: #1998D5 !important;
+                        text-decoration: none;
+                    }
+                    & .k-icon{
+                        color: #7B098B ;
+                        margin-left: 5px;
+                        &.k-i-expand:before{
+      
+                            content: "\f0da" !important;
+                            font-family: 'Font Awesome 5 Pro';
+                            font-weight: 700;   
+                    }
+                    &.k-i-collapse{
+                        &::before{
+                            content: "\f0d7";
+                            font-family: 'Font Awesome 5 Pro';
+                            font-weight: 700;
+                        }
+                    }
+                    }
+                    &.k-focus{
+                        box-shadow: none;
+                        border: none;
+                    }
+
+                  & div{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 130%;
+                    color: black;
+                    height: 20px;
+                    & span{
+                        color: #7B098B !important;
+                        font-weight: 700;
+                        & span{
+                            background: none !important;
+                        }
+                    }
+                  }
+                  }
+            }
+        }
+    }
+
+
+
+
+
+
+
+}

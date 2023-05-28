@@ -1,0 +1,49 @@
+@use '../variable/variable' as *;
+
+
+
+
+
+
+
+
+
+
+
+  .xstyle-buttoncontrol-wrapper{
+
+    &.btn-special{
+      & button{
+
+       @extend %spicel-button;
+       
+
+      }
+    }
+    & button{
+        @extend %button;
+        margin-bottom: 15px;
+        min-width: 200px;
+        width: 100%;
+        
+      &:hover{
+        background: $Button-bg-hover;
+        opacity: 0.6;
+        color: $Button-color-text;
+        border: 1px solid $Button-color-border;
+      }
+
+      &:focus{
+        border: 1px solid $Button-color-border-focus;
+        opacity: 1;
+      }
+        }
+
+  }
+
+  .xstyle-floatbuttonv2-wrapper{
+    button{
+      background:#323C4B !important ;
+      color: white !important;
+    }
+  }

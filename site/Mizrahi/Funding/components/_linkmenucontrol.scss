@@ -1,0 +1,17 @@
+
+@use '../variable/variable' as *;
+//link-menu-control//
+
+.xstyle-ilink-wrapper{
+          
+         & a{
+    
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 120%;
+          color: #059FCF;
+         }
+        }
+    

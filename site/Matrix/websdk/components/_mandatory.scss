@@ -1,0 +1,31 @@
+
+@use "../variable/variable" as *;
+
+//required-control//
+
+.mandatory.p-floating-container,
+.xstyle-numberrange-wrapper.mandatory,
+.xstyle-timepicker-wrapper.mandatory,
+.mandatory.xstyle-textcontrol-wrapper,
+.xstyle-daterangev2-wrapper.mandatory,
+.xstyle-date-wrapper.mandatory,
+.xstyle-password-wrapper.mandatory,
+.xstyle-timepicker-wrapper.mandatory {
+  :has(.x-control-caption-wrapper) {
+    & label {
+      &:before {
+        content: "*";
+        font-family: "Font Awesome 5 pro" !important;
+        position: absolute;
+        top: 4px;
+        right: 9px;
+        font-size: 7px;
+        color: #f09621;
+      }
+    }
+  }
+
+  & > div:nth-child(2) span {
+    border-bottom: none !important;
+  }
+}

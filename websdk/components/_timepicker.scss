@@ -1,0 +1,186 @@
+@use "../variable/variable" as *;
+.xstyle-timepicker-wrapper .k-timepicker .k-button{
+  height: auto !important;
+  top: 0px;
+}
+.xstyle-timepicker-wrapper {
+  border-bottom: $border-text-fields;
+  height: $height-text-fields !important;
+  border-radius: 0px !important;
+  margin-top: 10px;
+  align-items: center;
+
+    
+  label{
+    @extend %texbox-lable;
+  }
+  .k-timepicker.k-input.x-timepicker {
+    @extend %texbox-input;
+    padding: 0;
+    input{
+      height: 25px;
+    }
+  }   
+
+  button{
+    background: none !important;
+  }
+
+  // foceus //
+  &:focus-within {
+    border: 1px solid #ddc3e7 !important;
+    box-shadow: 0px 0px 10px #f6ecfb !important;
+    outline: none !important;
+  }
+  // focus //
+
+  & input.k-textbox.x-textbox.s-textbox:focus-within,
+  & input.k-textbox.x-form-control:focus-visible,
+  & .k-input:focus-within,
+  & .k-widget.k-input:focus-within {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  // contextmenu //
+
+  &.x-contextmenu {
+    & div:nth-child(1) > div.x-control-caption-wrapper::before {
+      content: "\f0d8" !important;
+      font-family: "Font Awesome 5 PRO";
+      font-weight: 900;
+      font-size: 14px;
+      position: absolute;
+      top: 9px;
+      margin-right: 1px;
+      color: #037295 !important;
+    }
+  }
+
+  // x-readonly //
+
+  &.x-readonly {
+    & div:last-child input {
+      color: black !important;
+      &::placeholder {
+        color: #ececec !important;
+      }
+    }
+    & button span::before {
+      color: #a1a3a5 !important;
+    }
+  }
+
+  // disable //
+
+  &.k-state-disabled {
+    background: #f9f9f9;
+    opacity: 1 !important;
+    & .k-icon::before {
+      color: #a1a3a5 !important;
+    }
+    & label.x-control-caption-text {
+      color: #a1a3a5 !important;
+    }
+    & div:last-child input {
+      color: #a1a3a5 !important;
+      &::placeholder {
+        color: #a1a3a5 !important;
+      }
+    }
+
+    & button span::before {
+      color: #a1a3a5 !important;
+    }
+  }
+
+  & .col-33 {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
+
+  & div:last-child span {
+    border: none !important;
+   
+    border-radius: 0px !important;
+    background: none;
+  }
+}
+
+// window timepicer //
+
+
+.k-timeselector {
+    & .k-time-header {
+      width: 76%;
+      margin: auto;
+      & button {
+        font-family: "Heebo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #7b098b !important;
+        border: none !important;
+        background: none !important;
+        margin-left: -19px;
+      }
+    }
+  }
+
+.k-timeselector {
+  background: white !important;
+  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
+  border-radius: 10px !important;
+
+
+  & .k-time-header {
+   
+    & span.k-title {
+      display: none;
+    }
+  }
+  & span.k-title {
+    height: 2.5em;
+    line-height: 2.5em !important;
+    margin-top: -20px;
+    background: white !important;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #a1a3a5 !important;
+  }
+  & .k-time-container.k-content.k-scrollable {
+  
+     top: 8px !important;
+    & .k-reset li.k-item {
+          height: auto !important;
+      &:hover {
+          color: #7b098b !important;
+      }
+    }
+  }
+
+  & .k-time-list-wrapper {
+         &.k-focus{
+          box-shadow: 0px 0px 10px #f6ecfb !important;
+         }
+  }
+
+
+  & .k-time-footer.k-action-buttons {
+    width: 79%;
+    margin: auto !important;
+    justify-content: space-between;
+    border: none !important;
+  }
+}

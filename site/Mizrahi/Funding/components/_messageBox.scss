@@ -1,0 +1,91 @@
+$messageBox-bg:#FFFFFF;
+$messageBox-box-shaow: 0px 0px 5px rgba(255, 120, 11, 0.5);
+$messageBox-color-icon-close:#7E7B7B;
+$messageBox-color-icon:#02C467;
+$messageBox-color-text:#323C4B;
+$messageBox-bg-button:#FF780B;
+$messageBox-bg-button-focus:#FF780B;
+$messageBox-bg-button-hover:#EA6800;
+// חלון הודעות//
+
+.k-window:has(#MessageBoxWindow) {
+    background: $messageBox-bg;
+    box-shadow: $messageBox-box-shaow;
+    border-radius: 10px;
+    border: none;
+    width: 90% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+  
+    & .k-window-titlebar.k-hstack {
+      background: none !important;
+      border: none;
+.k-button{
+    margin-left: 5px;
+}
+      .k-i-close{
+        &::before{
+            content: "\e904";
+            font-family: 'icomoon';
+            font-size: 20px;
+            color: $messageBox-color-icon-close;
+
+        }
+      }
+
+    }
+
+    #MessageBoxWindow{
+        div#ctrlSectionMainSection{
+            display: block;
+             & >div{
+              margin: auto;
+              text-align: center;
+
+            
+
+              & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px !important;
+                line-height: 100%;
+                color: $messageBox-color-text;
+              }
+             }
+         }
+
+        #divCobuttonbtn1{
+          overflow: hidden;
+        }
+         button{
+            height: 50px;
+            background: $messageBox-bg-button;
+            border-radius: 10px;
+            border: none;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: right;
+            color: white;
+            margin: auto;
+
+            &:focus,
+            &:active,
+            &:focus-within{
+                background: $messageBox-bg-button-focus;
+            }
+
+            &:hover{
+
+                background:$messageBox-bg-button-hover;
+            }
+
+         }
+
+    }
+
+  }

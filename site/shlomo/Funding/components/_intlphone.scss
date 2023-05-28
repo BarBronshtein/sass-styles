@@ -1,0 +1,68 @@
+
+
+@use '../variable/variable' as *;
+.xstyle-intlphonenumber-wrapper{
+    margin-top: 15px;
+
+    & .selected-dial-code{
+        margin-top: 9px;
+        width: 64%;
+        text-align: left;
+        padding-left: 3px !important;
+        border-right: $control-border-input!important;
+    }
+
+    &.k-state-disabled{
+        opacity: 1 !important;
+
+        & .flag-container{
+            display: none;
+        }
+       & input{
+
+        @extend %texbox-input;
+       }
+
+       & label{
+           color: #CCCCCC !important; 
+         }
+   }
+
+
+    & div{
+        border: none !important;
+    }
+
+    & label{
+        @extend %texbox-label;
+    }
+
+    & input{
+      @extend %texbox-input;
+      padding-right: 10px !important;
+      &.x-login-user-error{
+        
+        border-bottom: $control-border-error !important;
+      }
+
+      &:focus{
+        box-shadow:$control-box-shadow-focus !important;
+        border: $control-border-focus !important;
+    }
+    }
+
+    & .selected-flag{
+        background: none !important;
+        font-family: 'Assistant' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 130% !important;
+        color: #000000 !important;
+       & .selected-flag{
+        margin-top: 9px;
+        margin-left: 4px;
+       }
+        
+    }
+}

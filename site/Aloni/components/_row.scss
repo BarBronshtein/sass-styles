@@ -1,0 +1,39 @@
+
+.col{
+    padding: 0;
+}
+
+.border{
+    border: none !important;
+    background: none !important;
+    width: 95%;
+    margin: auto;
+}
+
+
+
+.row-center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+
+.row-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    span{
+        text-align: center;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        text-align: center !important;
+        color: #AE8B49;
+    }
+}

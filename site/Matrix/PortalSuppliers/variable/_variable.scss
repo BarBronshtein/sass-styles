@@ -1,0 +1,212 @@
+
+@import '../../../../base/variables/masterVariable';
+
+// window //
+
+$window-box-shdow: 0px 0px 10px rgba(123, 9, 139, 0.1), 0px 5px 8px rgba(123, 9, 139, 0.1);
+$window-icon-close-color: #A6A6A6;
+// mandtory //
+
+$mandatory-color:#650872;
+
+//link//
+
+$link-color:#059FCF;
+
+//drawer//
+$drawer-background-color:#650872;
+$drawer-icon-color:#fff;
+$drawer-color:#fff;
+$drawer-popUpWindowCls-color:#2e2e2e;
+$drawer-selected-color:#FFB444;
+$drawer-toggle-color: #FFDC83;
+
+// button //
+
+$Button-bg-hover:#FFFFFF;
+$Button-color-text: #7B098B;
+$Button-color-border:#7B098B;
+$Button-color-border-focus:#650872;
+$Button-color-icon:#7B098B;
+$Button-bg:#fff;
+
+//spicel-button//
+
+$spicel-button-bg:#7B098B;
+$spicel-button-color-text:#FFFFFF;
+
+
+
+/*controls*/
+$control-caption-color-text: #310538;
+$control-background: #FFFFFF;
+$control-border-input: 1px solid #A6A6A6;;
+$control-color-input:#000000;
+$control-radius-input:10px;
+$control-caption-color-text-disable: #C7C7C7;
+$control-border-input-disable: 1px solid #E7E7E7;;
+$control-border-focus:1px solid #30C6F5;
+$control-box-shadow-focus:0px 4px 4px rgba(14, 170, 220, 0.2);
+$control-color-placeholder:#C7C7C7;
+$control-color-icon:#7B098B;
+
+//calnder //
+
+$calendar-box-shadow:rgba(123, 9, 139, 0.1) 0px 0px 10px, rgba(123, 9, 139, 0.1) 0px 5px 8px ;
+$calendar-bg-header:#FCFCFC;
+$calendar-color-icon-header:#7B098B;
+$calendar-color-text-header:#000000;
+$calendar-bg-body:#F5F5F5;
+$calendar-border-bottom-body:1px solid #7B098B;
+$calendar-body-button-color:#650872;
+$calendar-body-butoon-color-text-focus:white;
+$calendar-body-butoon-bg-focus:#7B098B;
+$calendar-body-butoon-color-text-hover: #650872;
+$calendar-body-butoon-border-hover:1px solid #690779;
+$calendar-month-color-days-focus:#ffffff;
+$calendar-month-bg-days-focus:#650872;
+$calendar-month-color-today:#650872;
+$calendar-month-border-today: 1px solid #690779;
+$calendar-month-color-days-other-month:#8E8E8E;
+$calendar-month-border-other-month-hover:1px solid #8E8E8E;
+$calendar-month-color-other-month-hover:#8E8E8E;
+$calendar-month-color-title:#650872;
+$calendar-month-color-days:#650872;
+$calendar-month-color-days-hover:#650872;
+$calendar-month-border-days-hover:1px solid #690779;;
+$calendar-fotter-color-text:#7B098B;
+
+//checkBox //
+$CheckBox-border:#000000;
+$CheckBox-border-checked:#7B098B;
+$CheckBox-color-checked: #7B098B;
+$CheckBox-caption:#000000;
+
+
+
+// cube-dasboard //
+$Cube-dashboard-colot-text:#4B1754;
+$Cube-dashboard-bg:#FCFCFC;
+$Cube-dashboard-box-shadow:0px 0px 10px rgba(13, 13, 13, 0.1);
+$Cube-dashboard-color-price:#7B098B;
+$Cube-dashboard-color-icon:#4B1754;
+
+//first-panel//
+
+$first-panel-color-title:#7B098B;
+$first-panel-color-icon-button:#7B098B;
+$first-panel-border-icon-button:1px solid #7B098B;;
+$first-panel-bg-icon-button:#FFFFFF;
+
+// row //
+
+$row-bg:#fff;
+$row-box-shadow:0px 0px 10px rgba(13, 13, 13, 0.1);
+
+
+// popup //
+$popup-border:1px solid #A6A6A6;
+$popup-bg:white;
+$popup-color-text:#727272;
+$popup-bg-selected:#FAF6FC;
+$popup-color-text-selected:#7B098B;
+$popup-bg-hover:#FAF6FC;
+$popup-color-text-hover:#7B098B;
+
+
+
+// radiobutton //
+$radio-button-border-readonly:#a1a3a5;
+$radio-button-border-readonly-check:#a1a3a5;
+$radio-button-readonly-color:#a1a3a5;
+$radio-button-text-label-color:#000000 ;
+$radio-button-border-disable:#a1a3a5;
+$radio-button-border-disable-check:#a1a3a5;
+$radio-button-color-disable:#a1a3a5;
+$radio-button-border-check:1px solid #7B098B;
+$radio-button-bg-check: #FFB444;
+$radio-button-bg: white;
+
+
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: $control-caption-color-text;
+    margin: 0;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 50px;
+    background: $control-background;
+    border: $control-border-input;
+    border-radius: $control-radius-input;
+    padding: 10px 20px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: $control-color-input;
+    text-align: right;
+}
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background;
+    border:$control-border-input-disable;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable;
+}
+
+
+// spicel button //
+
+%spicel-button{
+    height: 50px !important;
+    background: $spicel-button-bg;
+    border-radius: 10px;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: $spicel-button-color-text;
+    width: auto !important;
+    border: none;
+    min-width: 200px;
+}
+
+// button//
+
+%button{
+    background: $Button-bg;
+    border: 1px solid $Button-color-border;
+    border-radius: 10px;
+    align-items: center;
+    height: 50px !important;
+    color: $Button-color-text;
+    font-family: 'Heebo' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}

@@ -1,0 +1,19 @@
+
+@use '../variable/variable' as *;
+//link-menu-control//
+
+$link-color: #059FCF;
+
+.xstyle-ilink-wrapper{
+          
+         & a{
+    
+          font-family: 'Assistant';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 120%;
+          color: $link-color;
+         }
+        }
+    

@@ -1,0 +1,30 @@
+%inputFont{
+    height: 45px;
+    border: 1px solid #9BD5FF;
+    border-radius: 10px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #052136 !important;
+    padding-right: 10px  !important;
+    background: white !important;
+    
+}
+
+
+%labelMain{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 0px;
+    align-items: center;
+    text-align: right;
+    color: #004070;
+}

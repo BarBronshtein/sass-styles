@@ -1,0 +1,129 @@
+
+
+
+@use "../variable/variable" as *;
+
+#tbHeader > span > span {
+  font-weight: normal !important;
+}
+#TafnitCore_System_UI_App_WebSDK_Main.pageContainer > header {
+    top: 99px !important;
+    background: none;
+}
+.x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper {
+    background-color: #fff;
+    box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px !important;
+  
+  .icon-xtar-out::before{
+    content:'\e9ce' ;
+    font-family: "icomoon";
+    font-weight: 100 ;
+  }
+ .k-toolbar.k-toolbar-resizable {
+
+        background: none;
+        border: none;
+        margin-top: 0px !important;
+        margin-bottom: 0;
+        .k-separator{
+          display: none !important;
+        }
+        .header-toolbar{
+            font-size: 30px !important;
+            color: #7d0a8c !important;
+        }
+
+        #webSDKInfo {
+            box-shadow: none !important;
+            border: none !important;
+            background: none !important;
+            top: -9px;
+            span {
+                font-size: 20px !important;
+                color: #7d0a8c !important;
+            }
+        }
+
+        .k-button-group {
+          background: #ffffff;
+          box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
+          border-radius: 10px;
+          margin-left: 20px !important;
+
+          &:hover {
+            background: #FBFBFB !important;
+            box-shadow: 0px 4px 4px rgba(123, 9, 139, 0.1), 0px 0px 3px rgba(123, 9, 139, 0.2) !important;
+            border-radius: 10px;
+        }
+
+        &:focus-within {
+          background: #FBFBFB !important;
+          border: 1px solid #C8C8C8 !important;
+          box-shadow: 0px 4px 4px rgba(123, 9, 139, 0.1), 0px 0px 3px rgba(123, 9, 139, 0.2) !important;
+          border-radius: 10px;
+      }
+      }
+
+
+      .k-overflow-anchor.k-button.k-button-md.k-rounded-md.k-button-flat {
+        border: none !important;
+        width: 50px;
+        height: 50px;
+        background: #ffffff !important;
+        box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
+        border-radius: 10px;
+        top: 4px;
+        margin-left: 13px;
+        color: #7d0a8c !important;
+
+        &:hover {
+          border-radius: 10px;
+          background: rgb(243, 243, 243) !important;
+          box-shadow: rgba(123, 9, 139, 0.1) 0px 4px 4px, rgba(123, 9, 139, 0.2) 0px 0px 3px !important;
+      }
+      &:focus-within {
+        border-radius: 10px;
+        background: rgb(243, 243, 243) !important;
+        border: 1px solid rgb(200, 200, 200) !important;
+        box-shadow: rgba(123, 9, 139, 0.1) 0px 4px 4px, rgba(123, 9, 139, 0.2) 0px 0px 3px !important;
+    }
+        .k-icon.k-i-more-vertical {
+          font-size: 28px !important;
+          transform: rotate(90deg) !important;
+      }
+    }
+
+
+        .k-button {
+            width: 50px;
+            height: 50px;
+            background: #ffffff;
+            border-radius: 10px !important;
+            border: none !important;
+            color: #7d0a8c !important;
+       
+            &:hover {
+              background: #F3F3F3 !important;
+              box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
+              border-radius: 10px;
+          }
+          &:focus{
+            box-shadow: none !important;
+          }
+      
+          & span {
+              width: 28px !important;
+              height: 28px !important;
+              font-size: 28px;
+              opacity: 1 !important;
+            &.k-icon k-i-more-vertical {
+              top: -22px;
+            }
+          }
+        }
+      }
+
+  }

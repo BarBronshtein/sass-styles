@@ -1,0 +1,17 @@
+
+
+$row-base-vanilla-box-shadow:rgba(123, 9, 141, 0.1);
+$row-base-vanilla-border-radius:10px;
+$row-base-vanilla-padding:20px;
+$row-base-vanilla-bg:#FFFFFF;
+ 
+
+.row-base{
+
+    background: $row-base-vanilla-bg;
+    box-shadow: 0px 0px 8px $row-base-vanilla-box-shadow;
+    border-radius: $row-base-vanilla-border-radius;
+    padding: $row-base-vanilla-padding;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,46 @@
+
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination{
+    .tabs.row{
+        margin-bottom: 0px  !important;
+    }
+}
+.tabs.row{
+  margin-bottom: 30px ;
+    & div.col{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        cursor: pointer !important;
+    }
+    height: 50px !important;
+    background: #267931 !important;
+    border-radius: 30px;
+    padding: 5px !important;
+    
+    & .activeTab{
+         & span{
+            
+            background: white !important;
+            color: #267931 !important;
+            filter: drop-shadow(2px 2px 3px rgba(12, 48, 17, 0.5)) !important;
+            
+        }
+    }
+    & span{
+        cursor: pointer !important;
+        height: 40px !important;
+        line-height: 300% !important;
+        font-weight: 700 !important;
+        margin-top: -1px;
+        color: white !important;
+        border-radius: 30px;
+        font-size: 14px !important;
+    }
+
+    .lastOne{
+        & span{
+        border: none !important;
+       
+        }
+    }
+}

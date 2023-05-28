@@ -1,0 +1,182 @@
+
+@use '../variable/variable' as *;
+
+
+
+.row-grid{
+    margin-top: 120px !important;
+    padding: 30px !important;
+
+    .x-button-wrapper {
+        text-align: left !important;
+    }
+}
+
+
+
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_BDICheck),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery){
+    .x-footer{
+        display: none !important;
+    }
+}
+
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect,
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity,
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery,
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer,
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest,
+#TafnitCore_SaaSServer_Funding_B2B_UI_BDICheck{
+    .x-footer{
+        display: none !important;
+    }
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery),
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard){
+    mainbody{
+        padding-bottom: 0 !important;
+      .x-row,.x-col{
+        padding: 0;
+      }
+      
+    }
+}
+
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main{
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard,
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery{
+    mainbody{
+        padding-bottom: 0 !important;
+      .x-row,.x-col{
+        padding: 0;
+      }
+      
+    }
+}
+
+    header:has(.wrapper-header){
+        height: 80px;
+    }
+    header{
+        z-index: 1032 !important;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background: #FFFFFF !important;
+        border: none !important;
+        box-shadow: $B2B-header-box-shadow !important;
+        padding: 0 40px;
+     
+        .wrapper-header{
+            align-items: center;
+            display: grid;
+            grid-template-columns: auto auto 160px 1fr;
+            gap: 10px;;
+            .part1-header{
+          
+              span{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: right;
+                color: $B2B-header-text-defult;
+              }
+            }
+
+            .part2-header{
+                height: 35px;
+                align-items: center;
+                display: flex;
+                border-right:$B2B-header-border-col;
+                border-left: $B2B-header-border-col;
+               span{
+                     color: $B2B-header-icon;
+                     font-size: 22px ;
+                    
+               }
+            }
+
+            .part3-header{
+                margin-top: 10px;
+                .xstyle-dynamiclabelcontrol-wrapper {
+                    gap: 5px;
+                    & .col-4{
+                        flex: 0 0.1;
+                    }
+                    
+                    .x-control-content-wrapper{
+                        margin-top: -4px;
+                    }
+
+                    label{
+                        font-family: 'Assistant';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 130%;
+                        text-align: right;
+                        color: $B2B-header-text-defult;
+                    }
+
+                    span{
+                        font-family: 'Assistant';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 130%;
+                        text-align: right;
+                        color: $B2B-header-text-defult;
+                    }
+                }
+             
+            }
+
+            .part4-header{
+          
+                position: relative;
+                top: -13px;
+
+                a{
+                    font-family: 'Assistant';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: right;
+                    color: $B2B-header-link-color;
+                }
+            }
+
+            
+
+
+        }
+
+
+        &.navbar-fixed-top .x-image-wrapper.s-image-wrapper{
+            height: 70px;
+            align-items: center;
+            display: flex;
+            img{
+                width: 125px !important;
+                height: auto;
+            }
+        }
+    }
+
+
+
+    
+}

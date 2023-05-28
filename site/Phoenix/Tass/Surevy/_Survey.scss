@@ -1,0 +1,327 @@
+$Title-background: #14008E;
+$Title-text: White;
+$Title-secondary: #14008E;
+$Title-secondary-bottom-border: #E5E6F8;
+$icon-color : #111558;
+$Required: #14008E;
+$Focus-border:  #14008E;
+$High-light-caption : #14008E;
+$Radio-button-on-background:  #14008E;
+$Radio-button-on-drop-shadow:  0px 0px 4px #1182B1;
+$Radio-button-on-border: #ffffff;
+$Upload-text: #14008E;
+$Upload-icon: #14008E;
+$Check-box-on-background: #14008E;
+$Check-box-on-drop-shadow: none;
+$Label-star-off-border: #FFC4B0;
+$Label-star-on-background: #FF5A23;
+$Link-text: #14008E;
+$Approve-icon-on: 111558;
+$Button-background: #14008E;
+$Button-press-background: #232873;
+$Card-upload-file-icon-file: #14008E;
+$Card-upload-file-name-file: #495057;
+$Card-upload-file-ok-text: #14008E;
+$Card-upload-file-error-text: #E91E63;
+$Card-upload-file_error-icon-file: #E91E63;
+$Box-shadow-footer: 0px -4px 8px rgba(20, 0, 142, 0.2);
+$Box-shadow-button:inset 4px 4px 10px rgba(90, 31, 105, 0.3);
+$Box-shadow-messagebox: 0px -4px 8px rgba(20, 0, 142, 0.2);
+$Messagebox-icon-color:#10143A;
+$Messagebox-border-color:#10143A;
+$signature-icon-before:#10143A;
+$signature-icon-after:#10143A;
+
+
+
+
+
+
+#TafnitCore_SaaSServer_Survey_UI_Survey {
+
+   & div[uxid=SurveyLogo] img{
+    width: 270px !important; 
+    top: 50% !important;
+    transform: translateY(10px) !important;
+   } 
+    
+    & .surveyTitle{
+
+        background: $Title-background !important;
+    }
+
+& .xstyle-signature-wrapper .GraphicalSignaturePlaceHolders a:before{
+
+    color: $signature-icon-before !important;
+}
+
+& .xstyle-popupsignature-wrapper .GraphicalSignaturePlaceHolders::after{
+   color: $signature-icon-after !important;
+}
+
+
+// footer // 
+
+& .s-footer.x-footer{
+    box-shadow: 0px -4px 8px $Box-shadow-footer !important;
+}
+
+& .x-footer div[uxid=cSubmit] button.x-button.s-button.k-button,
+& .xstyle-buttoncontrol-wrapper button.x-button.k-button.s-button{
+
+    background: $Button-background !important;
+
+    &:focus-within,
+    &:focus{
+            background: $Button-press-background !important;  
+            box-shadow:  0px -4px 8px $Box-shadow-button !important;
+    }
+}
+
+}
+
+// message box //
+
+.k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) {
+
+& .k-widget.k-window.k-rtl:has(#MessageBoxWindow) {
+    border: 1px solid $Messagebox-border-color  !important;
+    box-shadow: 0px -4px 8px $Box-shadow-messagebox !important;
+
+    & .x-icons.x-fa-warning{
+
+        &::before{
+        color: $Messagebox-icon-color !important;
+        }
+    }
+     
+& #MessageBoxWindow{
+   
+
+
+& button.k-button{
+
+    background: $Button-background!important;
+    box-shadow: 0px -4px 8px $Box-shadow-button !important;
+
+    &:focus{
+
+        background: $Button-press-background !important;
+    }
+
+ }
+}
+}
+
+// button succuss canvas //
+
+& .xstyle-canvas-wrapper .x-control-content-wrapper .k-icon.k-i-check.canvasSaveBtn-indicate-saved{
+    background: $Approve-icon-on !important;
+}
+
+// radio button // 
+
+&  .xstyle-radio-wrapper.x-control-wrapper{
+ 
+
+    & input{
+        &:checked{
+            border: 2px solid $Radio-button-on-border !important;
+            box-shadow: 0px 0px 4px $Radio-button-on-drop-shadow !important;
+        }
+
+
+        &::before{
+            color: $Radio-button-on-background !important;
+            width: 10px !important;
+           height: 10px !important;
+        }
+    }
+
+   }
+
+// highlight //
+
+  &  .x-highlight{
+
+    & label{
+        color: $High-light-caption!important;
+    }
+  
+}
+
+// title // 
+
+& .x-freehandhtml-wrapper {
+    center{
+        border-bottom: 1px solid $Title-secondary-bottom-border !important;
+        color: $Title-secondary!important; 
+    }
+}
+
+   // check box //
+
+  & .xstyle-checkbox-wrapper.x-control-wrapper {
+
+    & input{
+     
+
+        &:checked{
+            box-shadow: 0px 0px 4px $Check-box-on-drop-shadow !important;
+        }
+
+        &:checked::before{
+            background: $Check-box-on-background;
+
+        }
+    }
+   }
+
+
+
+
+
+// star control //
+
+& .xstyle-krating-wrapper.x-control-wrapper{
+
+
+
+   & .kendo-rating{
+
+
+
+    &:has(.k-selected){
+        & .k-i-close-circle{
+            color: $Label-star-on-background !important ;
+        }
+    }
+    & .k-rating.k-widget{
+        display: grid;
+        grid-template-columns: 85% 15%;
+      
+        & .k-rating-container{
+           
+            
+
+            & .k-icon{
+                color:  $Label-star-off-border;
+        
+            }
+ 
+            & .k-icon.k-i-star{
+            
+                color:  $Label-star-on-background !important;
+              
+            }
+        }
+    }
+
+   }
+
+}
+
+// focus color //
+
+& .xstyle-textareacontrol-wrapper textarea{
+
+    &:focus-visible{
+
+        outline: 1px solid $Focus-border!important;
+    }
+}
+&  .xstyle-date-wrapper span.k-datepicker.k-input,
+& .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist,
+& .xstyle-textcontrol-wrapper input,
+& .xstyle-autocomplete-wrapper input,
+& .xstyle-geoaddress-wrapper input,
+& .xstyle-googleaddress-wrapper input,
+& .xstyle-intlphonenumber-wrapper input{
+    &:focus,
+    &:focus-within,
+    &:active,
+    &:focus-visible{
+        border: 1px solid $Focus-border!important; 
+        box-shadow: none !important;
+    }
+}
+
+
+// all control lbael + text //
+.xstyle-googleaddress-wrapper .x-barcodeBtnContainer a{
+    color: $icon-color !important;
+
+}
+.xstyle-geoaddress-wrapper,
+.xstyle-geoaddress-wrapper,
+.xstyle-idropdownlist-wrapper,
+.xstyle-date-wrapper,
+.xstyle-textcontrol-wrapper{
+
+
+
+    & .x-control-wrapper .k-icon, 
+    & .x-control-content-wrapper .k-icon {
+
+        color: $icon-color !important;
+    
+        &::before{
+            
+        color: $icon-color !important;
+        }
+    }
+}
+
+
+// linke //
+
+& .xstyle-ilink-wrapper a{
+
+    color: $Link-text !important;
+}
+
+//uplod control //
+
+& .k-i-file-pdf,
+& .k-i-file-data,
+& .k-i-file-txt,
+& .k-i-file,
+& .k-i-file-image.k-file-group.k-icon{
+    &::before{
+        color: $Card-upload-file-icon-file !important; 
+    }
+}
+
+& .k-file-validation-message.k-text-success{
+    color: $Card-upload-file-icon-file !important; 
+}
+
+& .xstyle-upload-wrapper .k-upload-button span{
+
+    color: $Upload-text !important;
+}
+
+& .k-upload-button.k-focus{
+    box-shadow: none !important;
+    border: none;
+}
+
+& .xstyle-upload-wrapper .k-upload-button span::after{
+    color: $Upload-icon !important;
+}
+
+
+// mandatory //
+
+& .mandatory{
+    & label.x-control-caption-text{
+        margin-right: 12px !important;
+        &::before{
+            content: "*";
+            color: $Required !important;
+        }
+
+    }
+}
+
+}
