@@ -8,9 +8,13 @@
   }
   
   .k-drawer-expanded > .k-rtl.k-drawer {
-    width: 345px;
-    max-width: 409px;
+
+    max-width: 350px;
     z-index: 10005 !important;
+  }
+
+  .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] .drawer-item-control-wrapper{
+    width: 80%;
   }
   
   .d-flex.justify-content-between.align-items-center.text-Right.k-drawer-item.drawerSearch
@@ -358,4 +362,10 @@
               }
           }
       }
+  }
+
+
+  .k-drawer-container .k-drawer .k-drawer-wrapper .x-dynamic-label-control{
+    white-space: break-spaces;
+    text-indent: 0;
   }

@@ -50,6 +50,9 @@
 
        .k-icon{
         font-size: 30px;
+        &:before{
+          color: #10A831 !important;
+        }
        }
 
       }

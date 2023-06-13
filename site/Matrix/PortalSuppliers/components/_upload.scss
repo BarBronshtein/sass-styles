@@ -9,6 +9,10 @@
     }
 .xstyle-upload-wrapper{
 
+
+.k-dropzone{
+     margin-bottom:5px;
+}
 .k-focus{
     box-shadow: none !important;
 }
@@ -70,6 +74,7 @@
                 content: "\e904";
                 font-family: 'icomoon';
                 font-weight: bolder;
+                font-size: 12px;
                 color: #AAAAAA !important;
             }
         }
@@ -126,8 +131,8 @@
            background: #7B098B;
            border-radius: 10px;
            color: white !important;
-           height: 50px;
-           width: 200px;
+           height: 50px !important;
+           width: 200px !important;
         & span{
             
             & span.k-icon{
@@ -142,3 +147,43 @@
 }
 }
 
+.x-self-container:has(.text-upload){
+    position: absolute;
+    top: 45px;
+
+span.x-dynamic-label-control{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 100%;
+    color: #650872;
+    margin-top: 11px;
+ }
+}
+
+.k-treeview-leaf{
+
+    &.k-hover{
+        background: none !important;
+    }
+
+    .k-sprite.fa-file{
+        &:before{
+            font-family: 'icomoon';
+            color: #7B098B;
+            font-size: 16px;
+            content: "\e930";
+            font-weight: 100;
+        }
+    }
+
+    .k-treeview-leaf-text{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #000000; 
+    }
+}

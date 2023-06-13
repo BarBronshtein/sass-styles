@@ -1,17 +1,98 @@
 
 
-$row-base-vanilla-box-shadow:rgba(123, 9, 141, 0.1);
-$row-base-vanilla-border-radius:10px;
-$row-base-vanilla-padding:20px;
-$row-base-vanilla-bg:#FFFFFF;
- 
 
-.row-base{
 
-    background: $row-base-vanilla-bg;
-    box-shadow: 0px 0px 8px $row-base-vanilla-box-shadow;
-    border-radius: $row-base-vanilla-border-radius;
-    padding: $row-base-vanilla-padding;
+
+#TafnitCore_System_UI_App_DesignTest_row,
+#TafnitCore_System_UI_App_DesignTest_title,
+#TafnitCore_System_UI_App_DesignTest_control{
+    background: #e9ebed;
+
+}
+
+mainbody{
+
+    // row-main //
+
+.row-main{
+    border: none !important;
+    background: $row-main-vanilla-bg;
+    box-shadow: $row-main-vanilla-box-shadow;
+    border-radius: $row-main-vanilla-border-radius;
+    padding: $row-main-vanilla-padding;
+    margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
+    width: 95%;
+    height: auto !important;
+    min-width: 350px;
+
+
 }
+
+// row-radius //
+
+.x-row.row-radius{
+
+    border-radius: $row-radius-vanilla-border-radius;
+   
+}
+
+
+// row-hidden //
+
+.x-row.row-hidden{
+    border: none !important;
+    border-radius: $row-hidden-vanilla-border-radius;
+    box-shadow: $row-hidden-vanilla-box-shadow;
+    background: $row-hidden-vanilla-bg;
+    width: 100%;
+& >.col{
+    padding: 0;
+}
+   
+}
+
+// row-border //
+
+.x-row.row-border{
+  
+    border:$row-border-vanilla-border !important;
+
+}
+
+// row-bg-color //
+
+.x-row.row-bg-color{
+    background: $row-bg-color-vanilla-bg;
+    box-shadow: $row-bg-color-vanilla-box-shadow;
+}
+
+
+// row-bg-color //
+
+.x-row.row-flex{
+  & > .col-flex{
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    max-width: 95%;
+    margin: auto;
+  }
+}
+
+
+.x-row.row-flex-scroll{
+
+    & > .col-flex-scroll{
+        overflow-y: hidden;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        gap: 15px;
+        max-width: 95%;
+        margin: auto;
+    }
+  }
+}
+

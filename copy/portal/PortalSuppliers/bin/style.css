@@ -519,11 +519,11 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected {
-  background: #efe7f4 !important;
+  background: none !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected td {
-  background: #efe7f4 !important;
+  background: none !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content td {

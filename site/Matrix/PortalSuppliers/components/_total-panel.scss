@@ -2,7 +2,7 @@
 
 .total-panel{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
 
    .border-bottom{
     border-bottom: 1px solid #8E8E8E !important;
@@ -13,26 +13,28 @@
     label{
         font-family: 'Heebo';
         font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 120%;
-        text-align: right;
-        color: #8E8E8E;
+        font-weight: 500 !important;
+        font-size: 20px !important;
+        line-height: 120% !important;
+        text-align: right !important;
+        color: #8E8E8E !important;
     }
     
-    & span{
+    & span.s-dynamic-label-control.x-label{
         font-family: 'Heebo';
         font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 500 !important;
+        font-size: 20px !important;
         line-height: 120%;
-        color: #000000;
+        color: #000000 !important;
         text-align: left !important;
     }
     
     }
     
     .totalCol{
+        padding-top: 10px;
+        border-top: 1px solid #8E8E8E;
 
         .labelTitle.xstyle-textcontrol-wrapper{
 

@@ -1,0 +1,41 @@
+
+
+.list{
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+
+    & > .x-cell{
+        max-width: 100%;
+    }
+
+
+    label{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #000000;
+    }
+
+    span{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: #967A45; 
+    }
+}
+
+.secandary-title{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    color: #AE8B49;
+    text-align: center;
+}

@@ -23,17 +23,23 @@ $drawer-toggle-color: #FFDC83;
 
 // button //
 
-$Button-bg-hover:#FFFFFF;
-$Button-color-text: #7B098B;
+$Button-bg-hover:#9749A2;
+$Button-color-text: #FFFFFF;
 $Button-color-border:#7B098B;
-$Button-color-border-focus:#650872;
-$Button-color-icon:#7B098B;
-$Button-bg:#fff;
+$Button-color-bg-focus:#650872;
+$Button-color-icon:#FFFFFF;
+$Button-bg:#7B098B;
 
 //spicel-button//
 
-$spicel-button-bg:#7B098B;
-$spicel-button-color-text:#FFFFFF;
+$spicel-button-bg:#FFFFFF;
+$spicel-button-color-text:#7B098B;
+$spicel-button-color-border:#7B098B;
+$spicel-button-color-border-hover:#9749A2;
+$spicel-button-color-text-hover:#9749A2;
+$spicel-button-color-text-focus:#650872;
+$spicel-button-color-border-focus:#650872;
+$spicel-button-color-icon:#7B098B;
 
 
 
@@ -101,7 +107,7 @@ $first-panel-bg-icon-button:#FFFFFF;
 // row //
 
 $row-bg:#fff;
-$row-box-shadow:0px 0px 10px rgba(13, 13, 13, 0.1);
+$row-box-shadow: 0px 0px 10px rgba(103, 103, 103, 0.1);;
 
 
 // popup //
@@ -156,7 +162,7 @@ $radio-button-bg: white;
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px !important;
     color: $control-color-input;
     text-align: right;
 }
@@ -191,15 +197,15 @@ $radio-button-bg: white;
     text-align: right;
     color: $spicel-button-color-text;
     width: auto !important;
-    border: none;
     min-width: 200px;
+    border: 1px solid $spicel-button-color-border;
 }
 
 // button//
 
 %button{
     background: $Button-bg;
-    border: 1px solid $Button-color-border;
+    border: none;
     border-radius: 10px;
     align-items: center;
     height: 50px !important;
@@ -209,4 +215,5 @@ $radio-button-bg: white;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    min-width: 200px;
 }

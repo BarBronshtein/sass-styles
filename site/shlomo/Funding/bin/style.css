@@ -89,12 +89,12 @@
   font-size: 16px;
   line-height: 24px;
   text-align: right;
-  color: #FF5A23;
-  border: 1px solid #FF5A23;
+  color: #10A831;
+  border: 1px solid #10A831;
 }
 
 .xstyle-buttoncontrol-wrapper button {
-  background: #FF5A23;
+  background: #10A831;
   border: 1px solid none;
   border-radius: 10px;
   align-items: center;
@@ -132,7 +132,7 @@
   border-bottom: 1px solid #DB0000 !important;
 }
 .xstyle-textcontrol-wrapper input:focus {
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(255, 125, 25, 0.2) !important;
   border: 1px solid #FFC4B0 !important;
 }
 .xstyle-textcontrol-wrapper input::-moz-placeholder {
@@ -171,7 +171,7 @@
   top: 0px;
   right: 0px;
   font-size: 9px;
-  color: #ff7100;
+  color: #FF7D19;
 }
 .mandatory.p-floating-container input,
 .xstyle-numberrange-wrapper.mandatory input,
@@ -199,7 +199,7 @@
   gap: 10px;
   min-height: 102px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+  box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
   border-radius: 10px;
   padding-top: 24px;
   margin-bottom: 20px;
@@ -241,7 +241,7 @@
   padding: 0;
 }
 .row-hidden.stepper2 .col-blue {
-  background: #FF5A23;
+  background: #FF7D19;
   padding: 0px 30px;
   align-items: center;
   display: flex;
@@ -277,7 +277,7 @@
 
 mainbody > .row.row-main {
   background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(35, 40, 115, 0.2);
+  box-shadow: 0px 0px 10px rgba(76, 125, 50, 0.2);
   border-radius: 10px;
   padding: 20px 10px;
   width: 100%;
@@ -311,7 +311,9 @@ mainbody > .row.row-main .col-pdf {
 }
 mainbody > .row.row-main .col-pdf span.k-icon {
   font-size: 26px;
-  color: #FF5A23;
+}
+mainbody > .row.row-main .col-pdf span.k-icon:before {
+  color: #10A831;
 }
 mainbody > .row.row-main .col-pdf span.x-dynamic-label-control {
   font-family: "Assistant";
@@ -320,7 +322,7 @@ mainbody > .row.row-main .col-pdf span.x-dynamic-label-control {
   font-size: 16px;
   line-height: 21px;
   text-align: right;
-  color: #FF5A23;
+  color: #10A831;
 }
 mainbody > .row.row-main .row-title .k-icon-wrapper {
   text-align: center !important;
@@ -371,7 +373,7 @@ mainbody > .row.wrapper-uplode {
 }
 mainbody > .row.wrapper-uplode .body-upload {
   background: #FFFFFF;
-  box-shadow: 0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+  box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
   border-radius: 10px;
   width: 100%;
   margin: auto;
@@ -405,6 +407,12 @@ mainbody > .row.wrapper-uplode .body-upload .k-button span .k-icon {
   font-family: "Font Awesome 6 Pro";
   font-weight: 300;
 }
+mainbody > .row.wrapper-uplode .body-upload .k-button span .k-icon::after {
+  color: #FF7D19;
+}
+mainbody > .row.wrapper-uplode .body-upload .k-button span .k-icon:before {
+  color: rgb(50, 60, 75);
+}
 
 #TafnitCore_SaaSServer_Funding_onBorading_UI_CreateNewOfferRequest mainbody > .row.row-main {
   width: 90%;
@@ -423,7 +431,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   margin-top: 15px;
 }
 .xstyle-idropdownlist-wrapper:has(.x-login-user-error-msg) span.x-dropdown-comp.s-dropdown-comp {
-  border-bottom: 1px solid #E91E63 !important;
+  border-bottom: 1px solid #DB0000 !important;
 }
 .xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp {
   background: #F7F7F7 !important;
@@ -436,7 +444,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus-within {
   border: 1px solid #FFC4B0 !important;
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2);
+  box-shadow: 0px 0px 6px rgba(255, 125, 25, 0.2);
 }
 .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp .k-input-inner {
   padding: 0;
@@ -451,7 +459,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   content: "\f0d7";
   font-size: 22px;
   font-family: "Font Awesome 5 Pro";
-  color: #232873;
+  color: #FF7D19;
   font-weight: 700;
 }
 
@@ -507,10 +515,10 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   padding-right: 10px !important;
 }
 .xstyle-intlphonenumber-wrapper input.x-login-user-error {
-  border-bottom: 1px solid #E91E63 !important;
+  border-bottom: 1px solid #DB0000 !important;
 }
 .xstyle-intlphonenumber-wrapper input:focus {
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(255, 125, 25, 0.2) !important;
   border: 1px solid #FFC4B0 !important;
 }
 .xstyle-intlphonenumber-wrapper .selected-flag {
@@ -528,12 +536,12 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 
 .xstyle-stepper-wrapper {
-  background: #111558;
+  background: #28411B;
   height: 38px;
   border-radius: 0px;
 }
 .xstyle-stepper-wrapper .k-step-indicator {
-  color: #111558 !important;
+  color: #28411B !important;
 }
 .xstyle-stepper-wrapper .k-step-last {
   align-items: center;
@@ -584,6 +592,8 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 .xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal .k-step-link .k-step-indicator .k-step-indicator-icon {
   background: none;
+}
+.xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal .k-step-link .k-step-indicator .k-step-indicator-icon:before {
   color: #FFFFFF !important;
   font-weight: 500 !important;
   font-size: 12px;
@@ -619,7 +629,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border-radius: 0px;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(255, 125, 25, 0.2) !important;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within input:focus {
   border: 1px solid #FFC4B0 !important;
@@ -628,7 +638,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   content: "\f0d7";
   font-family: "Font Awesome 5 PRO";
   position: absolute;
-  color: #232873;
+  color: #FF7D19;
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
@@ -639,7 +649,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   padding-right: 10px !important;
 }
 .xstyle-autocomplete-wrapper input.x-login-user-error {
-  border-bottom: 1px solid #E91E63 !important;
+  border-bottom: 1px solid #DB0000 !important;
 }
 .xstyle-autocomplete-wrapper input::-moz-placeholder {
   color: #ADB5BD !important;
@@ -656,18 +666,18 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 .xstyle-date-wrapper:has(.x-login-user-error-msg) .s-datePickerResponsive.x-datePicker-mobile,
 .xstyle-date-wrapper:has(.x-login-user-error-msg) span.k-datepicker {
-  border-bottom: 1px solid #E91E63 !important;
+  border-bottom: 1px solid #DB0000 !important;
 }
 .xstyle-date-wrapper.k-state-disabled {
   opacity: 1 !important;
 }
 .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile:focus {
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(255, 125, 25, 0.2) !important;
   border: 1px solid #FFC4B0 !important;
 }
 .xstyle-date-wrapper span.k-datepicker:focus-within {
   border: 1px solid #FFC4B0 !important;
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2);
+  box-shadow: 0px 0px 6px rgba(255, 125, 25, 0.2);
 }
 .xstyle-date-wrapper input {
   padding: 0;
@@ -697,7 +707,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   font-size: 25px;
   /* top: 5px; */
   left: -24px;
-  color: #232873;
+  color: #FF7D19;
 }
 
 .k-animation-container .k-popup:has(.k-calendar-table) {
@@ -847,8 +857,8 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   margin-left: 7px;
 }
 .xstyle-checkbox-wrapper .x-checkbox:checked {
-  border-color: #14008E;
-  background: #14008E;
+  border-color: #BF5C0F;
+  background: #FF7D19;
 }
 .xstyle-checkbox-wrapper .x-checkbox:checked:before {
   color: #FFFFFF;
@@ -895,6 +905,9 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 .xstyle-buttoncontrol-wrapper.btn-special button .k-icon {
   font-size: 30px;
 }
+.xstyle-buttoncontrol-wrapper.btn-special button .k-icon:before {
+  color: #10A831 !important;
+}
 .xstyle-buttoncontrol-wrapper button {
   margin-bottom: 15px;
   padding: 0 30px;
@@ -902,12 +915,12 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border: none;
 }
 .xstyle-buttoncontrol-wrapper button:hover {
-  background: #E53E07;
+  background: #4C7D32;
   color: #FFFFFF;
   border: 1px solid none;
 }
 .xstyle-buttoncontrol-wrapper button:focus {
-  border: 1px solid #FFA182;
+  border: 1px solid #88DB9A;
   filter: drop-shadow(0px 0px 6px rgba(255, 120, 11, 0.2));
   opacity: 1;
 }
@@ -1054,14 +1067,14 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   box-shadow: none;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus .k-list-item-text {
-  color: #14008E !important;
+  color: #FF7D19 !important;
   font-weight: 700;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li:hover {
   background: #EEF7FB;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li:hover .k-list-item-text {
-  color: #14008E !important;
+  color: #FF7D19 !important;
   font-weight: 700;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li span {
@@ -1095,7 +1108,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   box-shadow: none;
 }
 .k-grid th i::before, .k-grid th .k-icon::before, .k-grid td i::before, .k-grid td .k-icon::before {
-  color: #FF5A23 !important;
+  color: #FF7D19 !important;
   font-weight: 300;
 }
 @media only screen and (min-width: 700px) {
@@ -1179,11 +1192,11 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   color: #323C4B !important;
 }
 .k-grid .k-grid-content tr.k-selected {
-  background: #efe7f4 !important;
+  background: none !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected td {
-  background: #efe7f4 !important;
+  background: none !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content td {
@@ -1394,7 +1407,7 @@ mainbody mainbody {
   background: #f0f0f0;
 }
 .k-grid-content.k-auto-scrollable::-webkit-scrollbar-thumb, .k-window-content::-webkit-scrollbar-thumb {
-  background: #ff7100;
+  background: #FF7D19;
   border-radius: 10px;
 }
 .k-grid-content.k-auto-scrollable::-webkit-scrollbar-thumb:hover, .k-window-content::-webkit-scrollbar-thumb:hover {
@@ -1453,11 +1466,11 @@ mainbody mainbody {
   font-size: 13px;
   line-height: 130%;
   text-align: right;
-  color: #ff7100;
+  color: #FF7D19;
   text-decoration: none;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td a:hover, .k-window-content > table > tbody > tr > td a:hover {
-  color: #ff7100 !important;
+  color: #FF7D19 !important;
   font-weight: 500;
   text-decoration: underline !important;
 }
@@ -1541,7 +1554,7 @@ mainbody mainbody {
 .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button {
   width: 45% !important;
   height: 30px;
-  background: #FF5A23 !important;
+  background: #10A831 !important;
   border-radius: 10px !important;
   color: #FFFFFF !important;
 }
@@ -1561,7 +1574,7 @@ mainbody mainbody {
 }
 
 .k-upload-files.k-reset {
-  border-top: 1px solid #ff7300 !important;
+  border-top: 1px solid #10A831 !important;
 }
 .k-upload-files.k-reset .k-file-group.k-icon {
   display: none;
@@ -1576,7 +1589,7 @@ mainbody mainbody {
   font-size: 16px;
   line-height: 100%;
   text-align: right;
-  color: #ff7300;
+  color: #10A831;
   white-space: break-spaces;
   margin-bottom: 5px;
 }
@@ -1592,7 +1605,7 @@ mainbody mainbody {
   font-size: 14px;
   line-height: 100%;
   text-align: right;
-  color: #3e2ea3;
+  color: #4C7D32;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1707,13 +1720,13 @@ mainbody mainbody {
 }
 .xstyle-islider-wrapper.car-icon .k-slider-track span.k-draghandle::before {
   content: "\e9ee";
-  color: #FF5A23 !important;
+  color: #FF7D19 !important;
   font-family: "icomoon" !important;
   font-size: 30px;
 }
 .xstyle-islider-wrapper.car-icon .k-slider-track span.k-draghandle::after {
   content: "\e9ef";
-  color: #FF5A23 !important;
+  color: #FF7D19 !important;
   font-family: "icomoon" !important;
   font-size: 30px;
   top: 5px;
@@ -1753,7 +1766,7 @@ mainbody mainbody {
 }
 .xstyle-islider-wrapper .k-slider-track .k-slider-selection {
   height: 14px !important;
-  background: #FF5A23;
+  background: #FF7D19;
   border-radius: 40px;
   margin-top: -7px;
 }
@@ -1761,7 +1774,7 @@ mainbody mainbody {
   width: 50px;
   height: 50px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2);
+  box-shadow: 0px 0px 6px rgba(16, 168, 49, 0.2);
   border-radius: 40px;
   border: none !important;
   filter: drop-shadow(-3px 2px 4px rgba(0, 0, 0, 0.25));
@@ -1776,7 +1789,7 @@ mainbody mainbody {
   margin: 0 auto;
   left: 0;
   right: 0;
-  color: #FF5A23 !important;
+  color: #FF7D19 !important;
 }
 
 .k-slider-tooltip {
@@ -1808,7 +1821,7 @@ mainbody mainbody {
   font-weight: 700 !important;
   font-size: 32px;
   line-height: 30px;
-  color: #FF5A23 !important;
+  color: #FF7D19 !important;
   text-align: left !important;
   padding-left: 33px;
 }
@@ -2110,7 +2123,7 @@ mainbody mainbody {
   font-size: 16px;
   line-height: 21px;
   text-align: right;
-  color: #FF780B;
+  color: #10a831;
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Login .xstyle-buttoncontrol-wrapper button {
   width: 100% !important;
@@ -2120,7 +2133,7 @@ mainbody mainbody {
 .wrapper-cube {
   min-height: 315px;
   background: #FFFFFF !important;
-  box-shadow: 0px 0px 10px rgba(35, 40, 115, 0.2) !important;
+  box-shadow: 0px 0px 10px rgba(76, 125, 50, 0.2) !important;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -2152,13 +2165,15 @@ mainbody mainbody {
   font-size: 90px !important;
   line-height: 100%;
   text-align: right;
-  color: #14008E;
+  color: #10A831;
 }
 .wrapper-cube .sum-cube span.k-icon {
   font-weight: 400;
   font-size: 30px;
   top: 50px;
-  color: #14008E;
+}
+.wrapper-cube .sum-cube span.k-icon:before {
+  color: #10A831;
 }
 .wrapper-cube .card-cube1 {
   display: grid;
@@ -2166,25 +2181,25 @@ mainbody mainbody {
   gap: 10px;
   height: 52px;
   background: #FFFFFF;
-  border: 1px solid #14008E;
+  border: 1px solid #10A831;
   border-radius: 10px;
   padding: 10px 30px;
   margin-top: 25px;
   align-items: center;
 }
 .wrapper-cube .card-cube1:hover {
-  background: #14008E !important;
+  background: #10A831 !important;
 }
 .wrapper-cube .card-cube1:hover span {
   color: #FFFFFF !important;
 }
 .wrapper-cube .card-cube1:focus-within, .wrapper-cube .card-cube1:focus, .wrapper-cube .card-cube1:active {
-  border: 1px solid #BDDFFF !important;
-  box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.4) !important;
+  border: 1px solid #BDF2C9 !important;
+  box-shadow: 0px 0px 10px rgba(20, 0, 142, 0.4) !important;
   background: #FFFFFF !important;
 }
 .wrapper-cube .card-cube1:focus-within .num span, .wrapper-cube .card-cube1:focus .num span, .wrapper-cube .card-cube1:active .num span {
-  color: #14008E !important;
+  color: #10A831 !important;
 }
 .wrapper-cube .card-cube1:focus-within span, .wrapper-cube .card-cube1:focus span, .wrapper-cube .card-cube1:active span {
   color: #323C4B !important;
@@ -2196,7 +2211,7 @@ mainbody mainbody {
   font-size: 32px;
   line-height: 100%;
   text-align: right;
-  color: #14008E;
+  color: #10A831;
 }
 .wrapper-cube .card-cube1 span {
   font-family: "Assistant";
@@ -2213,27 +2228,30 @@ mainbody mainbody {
   gap: 0px;
   height: 52px;
   background: #FFFFFF;
-  border: 1px solid #14008E;
+  border: 1px solid #10A831;
   border-radius: 10px;
   padding: 10px 30px;
   margin-top: 25px;
   align-items: center;
 }
 .wrapper-cube .card-cube2:hover {
-  background: #14008E !important;
+  background: #10A831 !important;
 }
 .wrapper-cube .card-cube2:hover span {
   color: #FFFFFF !important;
 }
 .wrapper-cube .card-cube2:focus-within, .wrapper-cube .card-cube2:focus, .wrapper-cube .card-cube2:active {
-  border: 1px solid #BDDFFF !important;
-  box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.4) !important;
+  border: 1px solid #BDF2C9 !important;
+  box-shadow: 0px 0px 10px rgba(20, 0, 142, 0.4) !important;
   background: #FFFFFF !important;
 }
 .wrapper-cube .card-cube2:focus-within .num span, .wrapper-cube .card-cube2:focus .num span, .wrapper-cube .card-cube2:active .num span {
-  color: #14008E !important;
+  color: #10A831 !important;
 }
 .wrapper-cube .card-cube2:focus-within span, .wrapper-cube .card-cube2:focus span, .wrapper-cube .card-cube2:active span {
+  color: #323C4B !important;
+}
+.wrapper-cube .card-cube2:focus-within span:before, .wrapper-cube .card-cube2:focus span:before, .wrapper-cube .card-cube2:active span:before {
   color: #323C4B !important;
 }
 .wrapper-cube .card-cube2 .num span {
@@ -2243,15 +2261,17 @@ mainbody mainbody {
   font-size: 32px;
   line-height: 100%;
   text-align: right;
-  color: #14008E;
+  color: #10A831;
 }
 .wrapper-cube .card-cube2 span.k-icon {
   font-weight: 400;
   font-size: 18px;
   top: 3px;
-  color: #14008E;
   margin-left: 10px;
   font-family: "Font Awesome 6 Pro" !important;
+}
+.wrapper-cube .card-cube2 span.k-icon:before {
+  color: #10A831;
 }
 .wrapper-cube .card-cube2 span {
   font-family: "Assistant";
@@ -2294,7 +2314,7 @@ mainbody mainbody {
   grid-template-columns: 1fr auto;
   background: #FFFFFF !important;
   border: none !important;
-  box-shadow: 0px 0px 10px rgba(20, 0, 142, 0.4) !important;
+  box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15) !important;
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main header .wrapper-header {
   align-items: center;
@@ -2307,7 +2327,9 @@ mainbody mainbody {
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main header .wrapper-header .part1-header span.k-icon {
   font-size: 25px;
-  color: #14008e;
+}
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main header .wrapper-header .part1-header span.k-icon:before {
+  color: #4C7D32;
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main header .wrapper-header .part1-header span.k-icon.icon-xtar-message {
   font-size: 30px;
@@ -2321,7 +2343,9 @@ mainbody mainbody {
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main header .wrapper-header .part1-header .x-xmenu i {
   font-size: 25px;
-  color: #14008e;
+}
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main header .wrapper-header .part1-header .x-xmenu i:before {
+  color: #4C7D32;
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main header.navbar-fixed-top .x-image-wrapper.s-image-wrapper {
   height: 70px;
@@ -2338,7 +2362,7 @@ mainbody mainbody {
   height: 62px;
   left: 0px;
   top: 70px;
-  background: #111558 !important;
+  background: #006805 !important;
   box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2) !important;
   padding: 15px 10px;
 }
@@ -2357,6 +2381,8 @@ mainbody mainbody {
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main .k-header.header:has(.scandary-header) .scandary-header .back span {
   font-size: 20px;
+}
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main .k-header.header:has(.scandary-header) .scandary-header .back span:before {
   color: #FFFFFF;
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main .k-header.header:has(.scandary-header) .scandary-header .text {
@@ -2385,10 +2411,12 @@ mainbody mainbody {
   margin-right: 8px;
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main .k-header.header:has(.scandary-header) .scandary-header .shekel span {
-  color: #FFFFFF;
   font-size: 15px;
   top: 5px;
   font-weight: 300;
+}
+#TafnitCore_SaaSServer_Funding_B2C_UI_Main .k-header.header:has(.scandary-header) .scandary-header .shekel span:before {
+  color: #FFFFFF;
 }
 
 .wrapper-cube .icon-cube .k-icon-wrapper {
@@ -2419,14 +2447,16 @@ mainbody mainbody {
   font-size: 48px;
   line-height: 100%;
   text-align: center;
-  color: #14008E;
+  color: #10A831;
   margin-bottom: 10px;
 }
 .wrapper-cube .price-cube span.k-icon {
-  color: #14008E;
   font-size: 15px;
   top: 22px;
   font-weight: 400;
+}
+.wrapper-cube .price-cube span.k-icon:before {
+  color: #10A831;
 }
 .wrapper-cube .route-cube .text-cube span {
   font-family: "Assistant";
@@ -2445,7 +2475,9 @@ mainbody mainbody {
   font-size: 24px;
   line-height: 110%;
   text-align: center !important;
-  color: #14008E;
+  color: #10A831;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 .wrapper-cube .text-cube span {
   font-family: "Assistant";
@@ -2599,7 +2631,7 @@ mainbody mainbody {
   grid-template-columns: 1fr auto;
   background: #FFFFFF !important;
   border: none !important;
-  box-shadow: 0px 5px 10px rgba(2, 111, 158, 0.1) !important;
+  box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15) !important;
   padding: 0 40px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header {
@@ -2610,7 +2642,7 @@ mainbody mainbody {
   max-height: 60px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part1-header {
-  border-left: 1px solid #f1c779;
+  border-left: 1px solid #4C7D32;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part1-header span {
   font-family: "Assistant";
@@ -2661,7 +2693,7 @@ mainbody mainbody {
   font-size: 14px;
   line-height: 18px;
   text-align: right;
-  color: #ff7100;
+  color: #10A831;
   margin-bottom: 0px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header.navbar-fixed-top .x-image-wrapper.s-image-wrapper {
@@ -2707,7 +2739,7 @@ mainbody mainbody {
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube {
   min-height: 120px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+  box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
   border-radius: 10px;
   max-width: 300px;
   display: flex;
@@ -2750,7 +2782,7 @@ mainbody mainbody {
   font-size: 24px;
   line-height: 100%;
   text-align: center;
-  color: #14008E;
+  color: #FF7D19;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube span.k-icon,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube span.k-icon {
@@ -2771,7 +2803,7 @@ mainbody mainbody {
   gap: 10px;
   min-height: 52px;
   background: #FFFFFF;
-  border: 1px solid #14008E;
+  border: 1px solid #10A831;
   border-radius: 10px;
   padding: 10px 30px !important;
   margin-top: 25px;
@@ -2798,7 +2830,7 @@ mainbody mainbody {
   line-height: 30px;
   text-align: center !important;
   margin-bottom: 15px;
-  color: #14008E !important;
+  color: #10A831 !important;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-hidden > .col, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-hidden > .col, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-hidden > .col {
   padding: 0 !important;
@@ -2833,7 +2865,7 @@ mainbody mainbody {
   line-height: 30px;
   text-align: center !important;
   margin-bottom: 15px;
-  color: #14008E !important;
+  color: #10A831 !important;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main {
   width: 75% !important;
@@ -2847,7 +2879,7 @@ mainbody mainbody {
   left: 0;
   right: 0;
   bottom: -50px;
-  box-shadow: 0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+  box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float .title span {
   font-family: "Assistant";
@@ -2873,12 +2905,14 @@ mainbody mainbody {
   font-size: 40px;
   line-height: 100%;
   text-align: center !important;
-  color: #14008E;
+  color: #10A831;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float .sum .k-icon {
   font-size: 22px;
-  color: #14008E;
   top: 14px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float .sum .k-icon:before {
+  color: #10A831;
 }
 
 .row-type {
@@ -2895,7 +2929,7 @@ mainbody mainbody {
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
-  color: #14008E;
+  color: #10A831;
   height: auto;
 }
 .row-type .col-type {
@@ -2906,6 +2940,10 @@ mainbody mainbody {
 }
 .row-type .col-type .xstyle-checkbox-wrapper {
   margin-top: 20px;
+}
+
+.k-icon:before {
+  color: #FF7D19;
 }
 
 .k-widget.k-window {
@@ -3040,7 +3078,7 @@ mainbody mainbody {
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .xstyle-gridv4-wrapper .k-toolbar-resizable .k-searchbox:focus, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .xstyle-gridv4-wrapper .k-toolbar-resizable .k-searchbox:focus-within {
   border: 1px solid #FFC4B0;
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2);
+  box-shadow: 0px 0px 6px rgba(255, 125, 25, 0.2);
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .btn-lot {
   display: flex;
@@ -3101,7 +3139,7 @@ mainbody mainbody {
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
-  color: #14008E;
+  color: #10A831;
   height: auto;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode {
@@ -3118,7 +3156,7 @@ mainbody mainbody {
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload {
   background: #FFFFFF;
-  box-shadow: 0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+  box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
   border-radius: 10px;
   width: 100%;
   margin: auto;
@@ -3148,13 +3186,19 @@ mainbody mainbody {
   font-size: 24px;
   line-height: 100%;
   text-align: center;
-  color: #14008E;
+  color: #FF7D19;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button span .k-icon, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .k-button span .k-icon, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .k-button span .k-icon {
   font-size: 50px;
   color: black;
   font-family: "Font Awesome 6 Pro";
   font-weight: 300;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button span .k-icon::after, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .k-button span .k-icon::after, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .k-button span .k-icon::after {
+  color: #FF7D19;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button span .k-icon:before, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .k-button span .k-icon:before, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .k-button span .k-icon:before {
+  color: rgb(50, 60, 75);
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .col-phone, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .col-phone, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .col-phone {
   display: grid;
@@ -3505,14 +3549,14 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
   font-size: 32px;
   line-height: 100%;
   text-align: center !important;
-  color: #14008E;
+  color: #FF7D19;
 }
 .k-widget.k-window .row-title-popup .k-icon-wrapper {
   text-align: center !important;
 }
 .k-widget.k-window .row-title-popup .k-icon {
   text-align: center;
-  color: #ff7300;
+  color: #FF7D19;
   font-size: 60px;
 }
 
@@ -3802,7 +3846,7 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
   font-size: 16px;
   line-height: 21px;
   text-align: right;
-  color: #ff7300;
+  color: #10a831;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Login button {
   width: 100% !important;

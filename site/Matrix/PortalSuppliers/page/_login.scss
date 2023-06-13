@@ -1,4 +1,5 @@
 
+
 #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .k-textbox,
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .k-textbox,
 #TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .k-textbox,
@@ -8,6 +9,7 @@
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .k-textbox,
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .k-textbox {
   border-radius: 0px !important;
+  padding-left: 10px;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -106,14 +108,17 @@
 
 @media screen and (min-width: 1050px) {
   #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody [xid="controlcLogin1"],
+  #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody [xid="controlcPassword1"],
   #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody [xid="controlcLogin1"],
   #TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody [xid="controlcLogin1"],
+  #TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody [xid="controlcPassword1"],
   #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody [xid="controlcLogin1"],
   #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody [xid="controlcLogin1"],
   #TafnitCore_ToDo_UI_Login mainbody [xid="controlcLogin1"],
   #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody [xid="controlcLogin1"],
+  #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody [xid="controlcPassword1"],
   #TafnitCore_SaaSServer_Funding_UI_Login mainbody [xid="controlcLogin1"] {
-    padding-bottom: 80px !important;
+    padding-bottom: 25px !important;
     padding-top: 80px !important;
   }
 }
@@ -139,7 +144,8 @@
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-button-wrapper .k-button {
   height: 56px;
   line-height: 56px;
-  width: 318px;
+  width: 100%;
+  max-width: none;
 }
 
 @media screen and (max-width: 1050px) {
@@ -165,10 +171,9 @@
 #TafnitCore_ToDo_UI_Login mainbody > .row,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody > .row,
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody > .row {
-  background-color: #fff;
-  border-radius: 50px !important;
-  -webkit-box-shadow: 0 10px 20px 0 rgba(135, 51, 175, 0.1) !important;
-          box-shadow: 0 10px 20px 0 rgba(135, 51, 175, 0.1) !important;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(103, 103, 103, 0.1) !important;
+  border-radius: 10px;
 }
 
 @media screen and (min-height: 800px) {
@@ -245,23 +250,7 @@
   border: 0;
 }
 
-#TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-text-control-container .x-textbox, #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .k-filter-menu-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .k-filter-menu-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .k-filter-menu-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody .k-filter-menu-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .k-filter-menu-container .x-textbox,
-#TafnitCore_ToDo_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_ToDo_UI_Login mainbody .k-filter-menu-container .x-textbox,
-#TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .k-filter-menu-container .x-textbox,
-#TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_Funding_UI_Login mainbody .k-filter-menu-container .x-textbox {
-  border-bottom: 1.5px solid #464247 !important;
-}
+
 
 #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-textbox,
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .x-textbox,
@@ -272,7 +261,6 @@
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .x-textbox,
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-textbox {
   background: transparent !important;
-  border: 0 !important;
 }
 
 #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .xstyle-checkbox-wrapper,
@@ -349,9 +337,19 @@
 #TafnitCore_ToDo_UI_Login mainbody .loginContent,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .loginContent,
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .loginContent {
-  width: 322px;
+  width: 400px;
   padding: 0;
   margin: auto;
+
+  span{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000000;
+    
+  }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -379,8 +377,14 @@
 }
 
 .loginTitle {
-    font-size: 55px;
-    color: #474248;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+  
   }
   
   @media screen and (max-width: 1050px) {
@@ -390,10 +394,12 @@
   }
   
   .loginTitle2 {
-    font-size: 31px;
-    font-weight: bold;
-    color: #474248;
-    letter-spacing: 1.35px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
   }
   
   @media screen and (max-width: 1050px) {

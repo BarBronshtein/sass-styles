@@ -31,10 +31,29 @@ $calendar-fotter-color-text:#7B098B;
   border-bottom: $border-text-fields;
   height: $height-text-fields !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
 
-    
+  .x-link_Comp{
+    color: #1998D5 ;
+    font-size: 13px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    display: grid;
+    align-items: center;
+    height: auto !important;
+    padding-right: 15px;
+    line-height: 0.9 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+  
+    &:hover{
+      font-weight: 700 !important;
+      text-decoration: none;
+    }
+  }
   label{
     @extend %texbox-lable;
   }

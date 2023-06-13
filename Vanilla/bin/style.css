@@ -1,8 +1,591 @@
-.row-base {
-  background: #FFFFFF;
-  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.1);
+@charset "UTF-8";
+/*controls*/
+.xstyle-autocomplete-wrapper label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label {
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: 400;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  display: grid;
+  align-items: center;
+  height: auto;
+  line-height: 0.9;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.xstyle-autocomplete-wrapper input, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-textcontrol-wrapper input.k-textbox.x-textbox {
+  border: 1px solid #7E7B7B;
+  background: white;
+  color: #000000;
   border-radius: 10px;
-  padding: 20px;
+  height: 50px !important;
+  padding-right: 10px;
+  text-align: right;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#TafnitCore_System_UI_App_DesignTest_row,
+#TafnitCore_System_UI_App_DesignTest_title,
+#TafnitCore_System_UI_App_DesignTest_control {
+  background: #e9ebed;
+}
+
+mainbody .row-main {
+  border: none !important;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(187, 216, 229, 0.2), 0px 1px 3px rgba(187, 216, 229, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+  margin: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+  width: 95%;
+  height: auto !important;
+  min-width: 350px;
+}
+mainbody .x-row.row-radius {
+  border-radius: 40px;
+}
+mainbody .x-row.row-hidden {
+  border: none !important;
+  border-radius: 0px;
+  box-shadow: none;
+  background: none;
+  width: 100%;
+}
+mainbody .x-row.row-hidden > .col {
+  padding: 0;
+}
+mainbody .x-row.row-border {
+  border: 1px solid #A1A3A5 !important;
+}
+mainbody .x-row.row-bg-color {
+  background: #FBFBFB;
+  box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9;
+}
+mainbody .x-row.row-flex > .col-flex {
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  max-width: 95%;
+  margin: auto;
+}
+mainbody .x-row.row-flex-scroll > .col-flex-scroll {
+  overflow-y: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  gap: 15px;
+  max-width: 95%;
+  margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.xstyle-textcontrol-wrapper {
+  margin-top: 20px;
+}
+.xstyle-textcontrol-wrapper input.k-textbox.x-textbox:focus-within {
+  border: 1px solid #BBD8E5;
+  box-shadow: 0px 4px 4px rgba(166, 203, 221, 0.2);
+}
+.xstyle-textcontrol-wrapper.k-state-disabled {
+  opacity: 1;
+}
+.xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox {
+  border: 1px solid #ECECEC;
+  color: #A1A3A5;
+}
+.xstyle-textcontrol-wrapper.k-state-disabled label {
+  color: #C8C8C8;
+}
+
+.xstyle-dynamiclabelcontrol-wrapper.title .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  text-align: center !important;
+  margin-bottom: 15px;
+  color: #000;
+}
+.xstyle-dynamiclabelcontrol-wrapper.title-meduim .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center !important;
+  margin-bottom: 15px;
+  color: #000;
+}
+.xstyle-dynamiclabelcontrol-wrapper.title-small .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center !important;
+  margin-bottom: 15px;
+  color: #000;
+}
+.xstyle-dynamiclabelcontrol-wrapper.title-secandray .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #82838a;
+}
+.xstyle-dynamiclabelcontrol-wrapper.title-secandray-small .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.xstyle-dynamiclabelcontrol-wrapper.title-secandray-maduim .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.xstyle-dynamiclabelcontrol-wrapper.row-title {
+  margin-top: 15px;
+}
+.xstyle-dynamiclabelcontrol-wrapper.row-title .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #756add;
+  height: auto;
+}
+
+.xstyle-kicon-wrapper.icon-title {
+  margin-top: 20px;
+}
+.xstyle-kicon-wrapper.icon-title .x-kicon {
+  text-align: center !important;
+}
+.xstyle-kicon-wrapper.icon-title .x-kicon span {
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.xstyle-dynamiclabelcontrol-wrapper.text-defult .s-dynamic-label-control.x-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: right;
+  color: #000000;
+  padding-right: 10px;
+}
+
+.mandatory.p-floating-container :has(.x-control-caption-wrapper) label,
+.xstyle-numberrange-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.mandatory.xstyle-textcontrol-wrapper :has(.x-control-caption-wrapper) label,
+.xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.xstyle-intlphonenumber-wrapper :has(.x-control-caption-wrapper) label,
+.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.xstyle-idropdownlist-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label {
+  padding-right: 10px;
+}
+.mandatory.p-floating-container :has(.x-control-caption-wrapper) label:before,
+.xstyle-numberrange-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.mandatory.xstyle-textcontrol-wrapper :has(.x-control-caption-wrapper) label:before,
+.xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-intlphonenumber-wrapper :has(.x-control-caption-wrapper) label:before,
+.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-idropdownlist-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label:before {
+  content: "*";
+  font-family: "Font Awesome 5 pro" !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 9px;
+  color: #BBD8E5;
+}
+.mandatory.p-floating-container input,
+.xstyle-numberrange-wrapper.mandatory input,
+.xstyle-timepicker-wrapper.mandatory input,
+.mandatory.xstyle-textcontrol-wrapper input,
+.xstyle-daterangev2-wrapper.mandatory input,
+.xstyle-date-wrapper.mandatory input,
+.xstyle-password-wrapper.mandatory input,
+.xstyle-intlphonenumber-wrapper input,
+.xstyle-timepicker-wrapper.mandatory input,
+.xstyle-idropdownlist-wrapper.mandatory input,
+.xstyle-autocomplete-wrapper.mandatory input {
+  background: none !important;
+}
+
+.xstyle-date-wrapper {
+  margin-top: 15px;
+}
+.xstyle-date-wrapper.k-state-disabled {
+  opacity: 1;
+}
+.xstyle-date-wrapper.k-state-disabled label {
+  color: #C8C8C8;
+}
+.xstyle-date-wrapper.k-state-disabled button span:before {
+  color: #C8C8C8;
+}
+.xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile:focus {
+  box-shadow: 0px 4px 4px rgba(166, 203, 221, 0.2);
+  border: 1px solid #BBD8E5;
+}
+.xstyle-date-wrapper span.k-datepicker:focus-within {
+  border: 1px solid #BBD8E5;
+  box-shadow: 0px 4px 4px rgba(166, 203, 221, 0.2);
+}
+.xstyle-date-wrapper input {
+  padding: 0;
+}
+.xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper input {
+  width: 100%;
+  height: 50px;
+  align-self: center;
+}
+.xstyle-date-wrapper span.k-datepicker::-moz-placeholder, .xstyle-date-wrapper input::-moz-placeholder {
+  color: #C8C8C8;
+}
+.xstyle-date-wrapper span.k-datepicker::placeholder, .xstyle-date-wrapper input::placeholder {
+  color: #C8C8C8;
+}
+.xstyle-date-wrapper button {
+  left: 6px;
+  margin-left: 5px;
+  background: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.xstyle-date-wrapper button:hover {
+  background: none;
+}
+.xstyle-date-wrapper button span {
+  left: 16px;
+}
+.xstyle-date-wrapper button span::before {
+  content: "\e973";
+  font-family: "icomoon";
+  font-size: 25px;
+  left: -24px;
+  color: #94B6C6;
+}
+
+.k-animation-container .k-popup:has(.k-calendar-table) {
+  background: #F5F5F5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(35, 40, 115, 0.2);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-footer a {
+  color: #14008E;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar {
+  background: none;
+  border-radius: 10px;
+  align-items: center;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack {
+  align-items: center;
+  height: 50px;
+  background: #FCFCFC;
+  border: none;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-prev span {
+  color: #14008E !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-fast span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #323C4B;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-next span {
+  color: #14008E !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview {
+  background: #F5F5F5;
+  border-bottom: 1px solid #14008E;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td {
+  padding: 10px 0px;
+  height: 36px !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td:hover a,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td:hover a {
+  color: white;
+  background: none;
+  border-radius: 100px;
+  background: #14008E !important;
+  font-weight: 700;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td.k-focus a,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td.k-focus a {
+  color: white !important;
+  font-weight: 700;
+  box-shadow: none;
+  height: 36px !important;
+  background: #0F1134;
+  border-radius: 100px;
+  box-shadow: none;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td a,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td a {
+  height: 36px !important;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232873;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview {
+  border-bottom: 1px solid #14008E;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview th {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323C4B;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232873;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-today a {
+  border: 1px solid #14008E;
+  color: #232873;
+  border-radius: 50%;
+  box-shadow: none;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-other-month {
+  color: #8E8E8E !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-other-month:hover a {
+  border: 1px solid #8E8E8E;
+  color: #8E8E8E;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-weekend {
+  color: #C7C7C7;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-weekend:hover a {
+  border: 1px solid #8E8E8E;
+  color: #8E8E8E;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-focus a {
+  background: #0F1134;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: none !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td:hover a {
+  color: #232873;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #14008E;
+  font-weight: 700;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-footer a {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #14008E;
+}
+
+.xstyle-idropdownlist-wrapper {
+  margin-top: 15px;
+}
+.xstyle-idropdownlist-wrapper:has(.x-login-user-error-msg) span.x-dropdown-comp.s-dropdown-comp {
+  border-bottom: 1px solid #E91E63;
+}
+.xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp {
+  background: #F7F7F7;
+}
+.xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp span.k-icon::before, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp span.k-icon::before {
+  color: #C7C7C7;
+}
+.xstyle-idropdownlist-wrapper.k-state-disabled label, .xstyle-idropdownlist-wrapper.x-readonly label {
+  color: #C7C7C7;
+}
+.xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus-within {
+  border: 1px solid #BBD8E5;
+  box-shadow: 0px 4px 4px rgba(166, 203, 221, 0.2);
+}
+.xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp .k-input-inner {
+  padding: 0;
+}
+.xstyle-idropdownlist-wrapper .k-input-button {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.xstyle-idropdownlist-wrapper .k-input-button:hover {
+  background: none;
+}
+.xstyle-idropdownlist-wrapper .k-input-button span.k-icon::before {
+  content: "\f0d7";
+  font-size: 24px;
+  font-family: "Font Awesome 5 Pro";
+  color: #94B6C6;
+  font-weight: 700;
+}
+
+.k-list-scroller {
+  scrollbar-face-color: #232873;
+  scrollbar-track-color: #f3e9f8;
+  scrollbar-arrow-color: #232873;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.k-list-scroller::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+.k-list-scroller::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+.k-list-scroller::-webkit-scrollbar-thumb {
+  background: #232873;
+  border-radius: 10px;
+}
+.k-list-scroller::-webkit-scrollbar-thumb:hover {
+  background: #232873;
+}
+
+.k-animation-container .k-list-optionlabel {
+  display: none !important;
+}
+.k-animation-container .k-popup {
+  box-shadow: none !important;
+  border: 1px solid #CED4DA;
+  border-radius: 0px;
+  margin-top: 5px;
+}
+.k-animation-container .k-popup ד .k-list {
+  border-radius: 0px;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller {
+  border-radius: 0px;
+  background: none !important;
+  padding: 12px 20px;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller ul {
+  background: white !important;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li {
+  height: 41px;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus {
+  background: #EEF7FB !important;
+  border: none;
+  box-shadow: none;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus .k-list-item-text {
+  color: #14008E !important;
+  font-weight: 700;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li:hover {
+  background: #EEF7FB;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li:hover .k-list-item-text {
+  color: #14008E !important;
+  font-weight: 700;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: right;
+  color: #323C4B;
+}
+
+.xstyle-autocomplete-wrapper {
+  margin-top: 15px;
+}
+.xstyle-autocomplete-wrapper.k-state-disabled label {
+  color: #C7C7C7 !important;
+}
+.xstyle-autocomplete-wrapper .k-autocomplete {
+  border: none !important;
+  border-radius: 0px;
+}
+.xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
+  box-shadow: 0px 4px 4px rgba(166, 203, 221, 0.2) !important;
+}
+.xstyle-autocomplete-wrapper .k-autocomplete:focus-within input:focus {
+  border: 1px solid #BBD8E5 !important;
+}
+.xstyle-autocomplete-wrapper .k-autocomplete::before {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 PRO";
+  position: absolute;
+  color: #94B6C6;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-weight: 700;
+  z-index: 5;
+}
+.xstyle-autocomplete-wrapper input {
+  padding-right: 10px !important;
+}
+.xstyle-autocomplete-wrapper input.x-login-user-error {
+  border-bottom: 1px solid #E91E63 !important;
+}
+.xstyle-autocomplete-wrapper input::-moz-placeholder {
+  color: #C8C8C8 !important;
+}
+.xstyle-autocomplete-wrapper input::placeholder {
+  color: #C8C8C8 !important;
+}
+body {
+  font-family: "Hebbo" !important;
 }/*# sourceMappingURL=style.css.map */

@@ -15,9 +15,14 @@
       content: "\e921";
       color: #7B098B;      
       font-family: 'icomoon';
-      font-size: 24px;
+      font-size: 20px;
       &:hover{
         font-weight: 700;
+      }
+    }
+    &.k-disabled{
+      & .k-icon::before{
+        color: #a1a3a5;
       }
     }
   }
@@ -28,9 +33,14 @@
       content: "\e91c";
       color: #7B098B;    
       font-family: 'icomoon';
-      font-size: 24px;
+      font-size: 20px;
       &:hover{
         font-weight: 700;
+      }
+    }
+    &.k-disabled{
+      & .k-icon::before{
+        color: #a1a3a5;
       }
     }
   }
@@ -83,6 +93,7 @@
             .k-item {
                 background: $tabstrip-tab-background-color;
                 border-color: $tabstrip-tab-active-border-color;
+                border: none !important;
 
                 &.k-state-active {
                     background: $tabstrip-tab-active-background-color;

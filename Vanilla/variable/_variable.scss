@@ -1,0 +1,145 @@
+// row //
+
+$row-main-vanilla-box-shadow:0px 4px 8px rgba(187, 216, 229, 0.2), 0px 1px 3px rgba(187, 216, 229, 0.5) !default;
+$row-main-vanilla-border-radius:10px !default;
+$row-main-vanilla-padding:30px !default;
+$row-main-vanilla-bg:#FFFFFF !default;
+
+$row-radius-vanilla-border-radius:40px !default;
+
+$row-border-vanilla-border:1px solid #A1A3A5 !default;
+
+$row-bg-color-vanilla-bg:#FBFBFB !default;
+$row-bg-color-vanilla-box-shadow:0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9 !default;
+
+$row-hidden-vanilla-border-radius:0px !default;
+$row-hidden-vanilla-box-shadow:none !default;
+$row-hidden-vanilla-bg:none !default;
+
+
+/*controls*/
+$control-caption-color-text: #4B4B4B !default;
+$control-background: #FFFFFF !default;
+$control-border-input:1px solid #7E7B7B !default;
+$control-color-input:#000000 !default;
+$control-radius-input:10px !default;
+$control-caption-color-text-disable: #C7C7C7 !default;
+$control-border-input-disable: 1px solid #E7E7E7 !default; 
+$control-border-focus:1px solid #BBD8E5 !default;
+$control-box-shadow-focus:0px 4px 4px rgba(166, 203, 221, 0.2) !default;
+$control-color-placeholder:#C8C8C8 !default;
+$control-color-icon:#94B6C6 !default;
+$control-border-error:1px solid #E91E63 !default;
+//calnder //
+
+$calendar-box-shadow:0px 0px 10px rgba(35, 40, 115, 0.2) !default; 
+$calendar-bg-header:#FCFCFC !default;
+$calendar-color-icon-header:#14008E  !default;
+$calendar-color-text-header:#323C4B !default;
+$calendar-bg-body:#F5F5F5 !default;
+$calendar-border-bottom-body:1px solid #14008E  !default;
+$calendar-body-button-color:#232873  !default; 
+$calendar-body-butoon-color-text-focus:white !default;
+$calendar-body-butoon-bg-focus:#0F1134  !default;
+$calendar-body-butoon-color-text-hover: white !default;
+$calendar-body-butoon-border-hover:1px solid #14008E  !default;
+$calendar-month-color-days-focus:#ffffff !default;
+$calendar-month-bg-days-focus:#0F1134  !default;
+$calendar-month-color-today:#232873  !default;
+$calendar-month-border-today: 1px solid #14008E  !default;
+$calendar-month-color-days-other-month:#8E8E8E !default;
+$calendar-month-border-other-month-hover:1px solid #8E8E8E !default;
+$calendar-month-color-other-month-hover:#8E8E8E !default;
+$calendar-month-color-title:#323C4B  !default;
+$calendar-month-color-days:#232873  !default;
+$calendar-month-color-days-hover:#232873  !default;
+$calendar-month-border-days-hover:1px solid #14008E  !default; 
+$calendar-fotter-color-text:#14008E !default;
+
+// popup //
+$popup-border:1px solid #CED4DA !default;
+$popup-bg:white !default;
+$popup-color-text:#323C4B !default;
+$popup-bg-selected:#EEF7FB !default;
+$popup-color-text-selected:#14008E !default;
+$popup-bg-hover:#EEF7FB !default;
+$popup-color-text-hover:#14008E !default;
+
+
+//title//
+$title-font-weight:400;
+$title-font-size:32px;
+$title-font-color:#000;
+$title-font-margin-bottom:15px;
+
+$title-secandray-small-font-weight:600;
+$title-secandray-small-font-size:20px;
+$title-secandray-small-font-color:#000;
+$title-secandray-small-font-margin-bottom:15px;
+
+$title-secandray-maduim-font-weight:600;
+$title-secandray-maduim-font-size:24px;
+$title-secandray-maduim-font-color:#000;
+$title-secandray-maduim-font-margin-bottom:15px;
+
+
+$title-secandray-font-weight:600;
+$title-secandray-font-size:30px;
+$title-secandray-font-color:#82838a;
+$title-secandray-font-margin-bottom:15px;
+
+$title-small-font-weight:400;
+$title-small-font-size:22px;
+$title-small-font-color:#000;
+$title-small-font-margin-bottom:15px;
+
+$title-meduim-font-weight:400;
+$title-meduim-font-size:28px;
+$title-meduim-font-color:#000;
+$title-meduim-font-margin-bottom:15px;
+
+$row-title-font-weight:400;
+$row-title-font-size:24px;
+$row-title-font-color:#756add;
+
+
+
+$icon-title-font-size:60px;
+$icon-title-font-margin-bottom:15px;
+$icon-title-font-margin-top:10px;
+//label//
+
+%texbox-lable{
+
+   
+    color: #4B4B4B  ;
+    font-size: 14px  ;
+    font-weight: 400 ;
+    border-top-right-radius: 0px  ;
+    border-bottom-right-radius: 0px  ;
+    display: grid ;
+    align-items: center ;
+    height: auto  ;
+    line-height: 0.9  ;
+    display: -webkit-box ;
+    -webkit-line-clamp: 2 ;
+    line-clamp: 1 ;
+    -webkit-box-orient: vertical ;
+}
+
+//input//
+
+%texbox-input{
+
+    border: 1px solid #7E7B7B;
+    background: white ;
+    color: #000000 ;
+    border-radius: 10px ;
+    height: 50px !important ;
+    padding-right: 10px ;
+    text-align: right  ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 16px ;
+
+}

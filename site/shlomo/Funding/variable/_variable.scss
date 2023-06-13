@@ -3,17 +3,17 @@
 @import'../../../../base/variables/masterVariable';
 
 
-$mandatory-color: #ff7100 ;
+$mandatory-color: #FF7D19 ;
 
 //scroll grid//
-$scrool-bg:#ff7100;
+$scrool-bg:#FF7D19;
 $scrool-bg-hover:#E53E07;
 
 //grid//
 
-$grid-td-link-color:#ff7100;
-$grid-td-link-color-hover:#ff7100;
-$grid-filter-icon:#FF5A23 ;
+$grid-td-link-color:#FF7D19;
+$grid-td-link-color-hover:#FF7D19;
+$grid-filter-icon:#FF7D19 ;
 $Grid-color-title-th:#0C0E1F ;
 $Grid-color-text-td:#323C4B ;
 $grid-icon-search-color:#14008E;
@@ -30,22 +30,20 @@ $overlay-color: #052136;
 
 // button //
 
-$Button-bg-hover:#E53E07 ;
+$Button-bg-hover:#4C7D32 ;
 $Button-color-text: #FFFFFF;
 $Button-color-border:none;
-$Button-color-border-focus: #FFA182;;
-$Button-color-icon:#FF5A23 ;
-$Button-bg:#FF5A23 ;
+$Button-color-border-focus: #88DB9A;
+$Button-color-icon:#10A831 ;
+$Button-bg:#10A831 ;
 $Button-float-bg:#14008E;
 $Button-float-color: white;
 
 //spicel-button//
 
 $spicel-button-bg:#FFFFFF;
-$spicel-button-color-text:#FF5A23 ;
-$spicel-button-color-border:1px solid #FF5A23 ;
-
-
+$spicel-button-color-text:#10A831 ;
+$spicel-button-color-border:1px solid #10A831 ;
 
 /*controls*/
 $control-caption-color-text: #323C4B;
@@ -56,10 +54,10 @@ $control-radius-input:0px;
 $control-caption-color-text-disable: #C7C7C7;
 $control-border-input-disable: 1px solid #E7E7E7;;
 $control-border-focus:1px solid #FFC4B0;
-$control-box-shadow-focus:0px 0px 6px rgba(255, 90, 35, 0.2);
+$control-box-shadow-focus: 0px 0px 6px rgba(255, 125, 25, 0.2);
 $control-color-placeholder:#ADB5BD;
-$control-color-icon:#232873;
-$control-border-error:1px solid #E91E63;
+$control-color-icon:#FF7D19;
+$control-border-error:1px solid #DB0000;
 //calnder //
 
 $calendar-box-shadow:0px 0px 10px rgba(35, 40, 115, 0.2);;
@@ -88,19 +86,19 @@ $calendar-fotter-color-text:#14008E;
 
 //slider //
 
-$slider-icon-color-after:#FF5A23;
-$slider-icon-color-before:#FF5A23;
-$slider-bg-color:#FF5A23;
-$slifer-color-text-price:#FF5A23;
-$slifer-box-shadow:0px 0px 6px rgba(255, 90, 35, 0.2);;;
+$slider-icon-color-after:#FF7D19;
+$slider-icon-color-before:#FF7D19;
+$slider-bg-color:#FF7D19;
+$slifer-color-text-price:#FF7D19;
+$slifer-box-shadow: 0px 0px 6px rgba(16, 168, 49, 0.2);
 $slifer-filter:drop-shadow(-3px 2px 4px rgba(0, 0, 0, 0.25));;
 
 //checkBox //
 $CheckBox-border:#323C4B;
-$CheckBox-border-checked:#14008E;
+$CheckBox-border-checked:#BF5C0F;
 $CheckBox-color-checked: #FFFFFF;
 $CheckBox-caption:#000000;
-$CheckBox--checked-bg: #14008E;
+$CheckBox--checked-bg: #FF7D19;
 
 
 // cube-dasboard //
@@ -128,43 +126,47 @@ $popup-border:1px solid #CED4DA;
 $popup-bg:white;
 $popup-color-text:#323C4B;
 $popup-bg-selected:#EEF7FB;
-$popup-color-text-selected:#14008E;
+$popup-color-text-selected:#FF7D19;
 $popup-bg-hover:#EEF7FB;
-$popup-color-text-hover:#14008E;
+$popup-color-text-hover:#FF7D19;
 
 
 // cube-main//
 
-$cube-main-box-shadow:0px 0px 10px rgba(35, 40, 115, 0.2);
+$cube-main-box-shadow:0px 0px 10px rgba(76, 125, 50, 0.2);;
 $cube-main-title-color:#323C4B;
-$cube-main-sum-color:#14008E;
-$cube-main-sum-icon: #14008E;
-$cube-main-card-border: 1px solid #14008E;
-$cube-main-card-num-color: #14008E;
+$cube-main-sum-color:#10A831;
+$cube-main-sum-icon: #10A831;
+$cube-main-card-border: 1px solid #10A831;
+$cube-main-card-num-color: #10A831;
 $cube-main-card-text-color: #323C4B;
-$cube-main-card-icon: #14008E;
+$cube-main-card-icon: #10A831;
 $cube-main-text-color: #323C4B;
-$cube-main-route-text-color: #14008E;
-$cube-main-price-color:#14008E;
+$cube-main-route-text-color: #10A831;
+$cube-main-price-color:#10A831;
 
 
 // cube-small //
 
-$small-cube-box-shdow:0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
-$small-cube-text-color: #14008E;
+$small-cube-box-shdow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);;
+$small-cube-text-color: #FF7D19;
 $small-cube-icon-color: #323C4B;
 
 
 
 // B2B header //
 
-$B2B-header-border-col: 1px solid #f1c779;
-$B2B-header-icon:#14008E;
-$B2B-header-box-shadow:0px 5px 10px rgba(2, 111, 158, 0.1);
+$B2B-header-border-col: 1px solid #4C7D32;
+$B2B-header-icon:#4C7D32;
+$B2B-header-box-shadow:0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
 $B2B-header-text-defult:#000000;
-$B2B-header-link-color:#ff7100 ;
+$B2B-header-link-color:#10A831 ;
 
 
+// upload //
+$upload-border-color: 1px solid #10A831;
+$upload-name-file-color:  #10A831;
+$upload-success-text-color:  #4C7D32;
 
 
 
@@ -201,10 +203,7 @@ $B2B-header-link-color:#ff7100 ;
 }
 
 
-// upload //
-$upload-border-color: 1px solid #ff7300;
-$upload-name-file-color:  #ff7300;
-$upload-success-text-color:  #3e2ea3;
+
 
 
 // disable // 
