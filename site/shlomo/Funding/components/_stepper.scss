@@ -1,10 +1,10 @@
 .xstyle-stepper-wrapper {
-    background: #111558;
+    background: #28411B;
     height: 38px;
 
     border-radius: 0px;
 .k-step-indicator{
-    color:#111558  !important;
+    color:#28411B  !important;
 }
 
 .k-step-last{
@@ -69,9 +69,11 @@
 
     .k-step-indicator-icon{
         background: none;
+        &:before{
         color: #FFFFFF !important;
         font-weight: 500 !important;
         font-size: 12px;
+        }
     }
 
 }

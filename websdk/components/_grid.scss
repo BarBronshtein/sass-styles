@@ -740,7 +740,7 @@ border-radius: 10px;
          
             content: "\e925" !important;
                left: -8px;
-            font-size: 22px !important;
+            font-size: 12px !important;
             color: #7B098B !important;
             margin-top: 6px;
             display: inline-block;
@@ -1261,6 +1261,9 @@ border-radius: 10px;
 .x-autocomplete-header-template {
   background: none !important;
   border-bottom: 1px solid #F5F5F5 !important; 
+  display: grid;
+  grid-template-columns: 32.3% 31.3% 31.3%;
+  padding-right: 17px;
   & span{
     font-family: 'Heebo';
     font-style: normal !important;
@@ -1376,7 +1379,7 @@ border-radius: 10px;
         font-family: 'Heebo';
         font-style: normal;
         font-weight: 500 !important;
-        font-size: 30px;
+        font-size: 18px;
         line-height: 30px;
         color: #7B098B;
       }

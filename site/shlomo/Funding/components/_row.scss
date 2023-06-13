@@ -13,7 +13,7 @@
         gap: 10px;
         min-height: 102px;
         background: #FFFFFF;
-        box-shadow:  0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+        box-shadow:  0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
         border-radius: 10px;
         padding-top: 24px;
         margin-bottom: 20px;
@@ -59,7 +59,7 @@
         }
 
         .col-blue{
-            background: #FF5A23 ;
+            background: #FF7D19 ;
             padding: 0px 30px;
             align-items: center;
             display: flex;
@@ -109,7 +109,7 @@ mainbody {
  
     &.row-main{
         background: #FFFFFF;
-        box-shadow: 0px 0px 10px rgba(35, 40, 115, 0.2);
+        box-shadow: 0px 0px 10px rgba(76, 125, 50, 0.2);
         border-radius: 10px;
         padding: 20px 10px;
         width: 100%;
@@ -144,8 +144,9 @@ mainbody {
             align-items: center;
             span.k-icon{
                 font-size: 26px;
-                color: #FF5A23;
-            
+                &:before{
+                color: #10A831;
+                }
             }
 
             span.x-dynamic-label-control{
@@ -155,7 +156,7 @@ mainbody {
                 font-size: 16px;
                 line-height: 21px;
                 text-align: right;
-                color: #FF5A23;
+                color: #10A831;
                 
             }
         }
@@ -221,7 +222,7 @@ mainbody {
 
         .body-upload{
             background: #FFFFFF;
-            box-shadow: 0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+            box-shadow: 0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
             border-radius: 10px;
             width: 100%;
             margin: auto;
@@ -255,6 +256,15 @@ mainbody {
                        color: black;
                        font-family: 'Font Awesome 6 Pro';
                        font-weight: 300;
+
+                       &::after{
+                        color: #FF7D19;
+                       }
+
+                       &:before{
+                        
+                        color: rgb(50, 60, 75);
+                       }
                     }
                 }
             }

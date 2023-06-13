@@ -73,7 +73,7 @@
     margin-left: 12px;
     background: none !important;
     & span{
-            left: 16px;
+            left: 14px;
         &::before{
             content: "\e973" !important;
             font-family: "icomoon";
@@ -100,6 +100,10 @@
         background: none;
         border-radius: 10px;
         align-items: center;
+    }
+
+    .k-hover a{
+        border-radius: 100px;
     }
 
     // header calnder //
@@ -164,7 +168,8 @@
                         a {
                             color:$calendar-body-butoon-color-text-hover ;
                             background: none;
-                            border-radius:50%;
+                            border-radius:100px !important;
+                            height: 36px !important;
                             border: $calendar-body-butoon-border-hover;
                             font-weight: 700;
                         }

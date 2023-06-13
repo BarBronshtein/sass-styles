@@ -86,7 +86,7 @@
   border-bottom: 1px solid #D9D9D9;
   height: 30px !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
 }
 .xstyle-autocomplete-wrapper:focus-within {
@@ -354,7 +354,7 @@ tr.k-master-row > td > input {
   align-items: center;
   border-bottom: 1px solid #d9d9d9 !important;
   height: 30px;
-  margin-bottom: 5px;
+  margin-top: 5px;
   border-radius: 0px !important;
   min-height: 30px;
 }
@@ -416,8 +416,27 @@ tr.k-master-row > td > input {
   border-bottom: 1px solid #D9D9D9;
   height: 30px !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
+}
+.xstyle-date-wrapper .x-link_Comp {
+  color: #1998D5;
+  font-size: 13px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  display: grid;
+  align-items: center;
+  height: auto !important;
+  padding-right: 15px;
+  line-height: 0.9 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.xstyle-date-wrapper .x-link_Comp:hover {
+  font-weight: 700 !important;
+  text-decoration: none;
 }
 .xstyle-date-wrapper .k-datepicker.k-input.x-datePickerResponsive {
   padding-right: 0;
@@ -638,7 +657,7 @@ tr.k-master-row > td > input {
 
 .xstyle-daterangev2-wrapper {
   border-radius: 0 !important;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .xstyle-daterangev2-wrapper input {
   color: #000000 !important;
@@ -743,9 +762,12 @@ tr.k-master-row > td > input {
 }
 
 .k-drawer-expanded > .k-rtl.k-drawer {
-  width: 345px;
-  max-width: 409px;
+  max-width: 350px;
   z-index: 10005 !important;
+}
+
+.k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] .drawer-item-control-wrapper {
+  width: 80%;
 }
 
 .d-flex.justify-content-between.align-items-center.text-Right.k-drawer-item.drawerSearch > span.k-icon.icon-xtab-small-search.DrawerItem-icon {
@@ -1004,11 +1026,16 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   font-weight: bold !important;
 }
 
+.k-drawer-container .k-drawer .k-drawer-wrapper .x-dynamic-label-control {
+  white-space: break-spaces;
+  text-indent: 0;
+}
+
 .xstyle-idropdownlist-wrapper {
   border-bottom: 1px solid #D9D9D9;
   height: 30px !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
 }
 .xstyle-idropdownlist-wrapper:focus-within {
@@ -1238,7 +1265,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected td {
-  background: #efe7f4 !important;
+  background: none !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content td {
@@ -1707,7 +1734,7 @@ mainbody mainbody {
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td > a > i {
   content: "\e925" !important;
   left: -8px;
-  font-size: 22px !important;
+  font-size: 12px !important;
   color: #7B098B !important;
   margin-top: 6px;
   display: inline-block;
@@ -2174,6 +2201,9 @@ mainbody mainbody {
 .x-autocomplete-header-template {
   background: none !important;
   border-bottom: 1px solid #F5F5F5 !important;
+  display: grid;
+  grid-template-columns: 32.3% 31.3% 31.3%;
+  padding-right: 17px;
 }
 .x-autocomplete-header-template span {
   font-family: "Heebo";
@@ -2261,7 +2291,7 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500 !important;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 30px;
   color: #7B098B;
 }
@@ -2702,7 +2732,7 @@ div[uxid=portalUser],
   border-bottom: 1px solid #D9D9D9;
   height: 30px !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
   align-items: center;
 }
@@ -2793,6 +2823,10 @@ div[uxid=portalUser],
 .xstyle-lookup-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
+.xstyle-lookuptafnit-wrapper.x-readonly .x-open-lookupP button span::before,
+.xstyle-lookup-wrapper.x-readonly .x-open-lookupP button span::before {
+  color: #9038ba !important;
+}
 .xstyle-lookuptafnit-wrapper.x-readonly button span::before,
 .xstyle-lookup-wrapper.x-readonly button span::before {
   color: #a1a3a5 !important;
@@ -2875,8 +2909,11 @@ div[uxid=portalUser],
   border-right: 1px solid #d9d9d9 !important;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
+  padding-right: 10px;
   color: #000000 !important;
   font-size: 13px;
+  min-height: 25px !important;
+  max-height: 25px;
 }
 
 .xstyle-lookuptafnit-wrapper.k-state-disabled,
@@ -2889,6 +2926,10 @@ div[uxid=portalUser],
   background: none !important;
 }
 
+.xstyle-lookuptafnit-wrapper.x-readonly .x-open-lookup span.s-x-cs-btn,
+.xstyle-lookup-wrapper.x-readonly .x-open-lookup span.s-x-cs-btn {
+  color: #9038ba !important;
+}
 .xstyle-lookuptafnit-wrapper.x-readonly span.s-x-cs-btn,
 .xstyle-lookup-wrapper.x-readonly span.s-x-cs-btn {
   color: #A1A3A5 !important;
@@ -2943,7 +2984,7 @@ div[uxid=portalUser],
   content: "*";
   font-family: "Font Awesome 5 pro" !important;
   position: absolute;
-  top: -5px;
+  top: -4px;
   right: 9px;
   font-size: 7px;
   color: #f09621;
@@ -2964,7 +3005,7 @@ div[uxid=portalUser],
   content: "*";
   font-family: "Font Awesome 5 pro" !important;
   position: absolute;
-  top: 0px;
+  top: 1px;
   right: 11px;
   font-size: 7px;
   color: #f09621;
@@ -2974,7 +3015,7 @@ div[uxid=portalUser],
   content: "*";
   font-family: "Font Awesome 5 pro" !important;
   position: absolute;
-  top: 3px;
+  top: 1px;
   right: 9px;
   font-size: 7px;
   color: #f09621;
@@ -3915,7 +3956,7 @@ div[uxid=portalUser],
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   height: 34px;
-  margin-top: 10px;
+  margin-top: 5spx;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
 }
@@ -4064,7 +4105,7 @@ div[uxid=portalUser],
   border-bottom: 1px solid #D9D9D9;
   height: 30px !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
 }
 .xstyle-password-wrapper:focus-within {
@@ -4296,7 +4337,7 @@ div[uxid=portalUser],
 }
 
 .xstyle-radio-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .xstyle-radio-wrapper .k-radio {
   height: 14px;
@@ -4588,10 +4629,13 @@ mainbody .col.flex-lg-row .x-self-container {
   content: "\e921";
   color: #7B098B;
   font-family: "icomoon";
-  font-size: 24px;
+  font-size: 20px;
 }
 .xstyle-tab-wrapper .k-tabstrip-prev .k-icon::before:hover {
   font-weight: 700;
+}
+.xstyle-tab-wrapper .k-tabstrip-prev.k-disabled .k-icon::before {
+  color: #a1a3a5;
 }
 .xstyle-tab-wrapper .k-tabstrip-next {
   border: none !important;
@@ -4601,10 +4645,13 @@ mainbody .col.flex-lg-row .x-self-container {
   content: "\e91c";
   color: #7B098B;
   font-family: "icomoon";
-  font-size: 24px;
+  font-size: 20px;
 }
 .xstyle-tab-wrapper .k-tabstrip-next .k-icon::before:hover {
   font-weight: 700;
+}
+.xstyle-tab-wrapper .k-tabstrip-next.k-disabled .k-icon::before {
+  color: #a1a3a5;
 }
 .xstyle-tab-wrapper .k-tabstrip:focus {
   box-shadow: none;
@@ -4646,6 +4693,7 @@ mainbody .col.flex-lg-row .x-self-container {
 .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item {
   background: #fff;
   border-color: #fff;
+  border: none !important;
 }
 .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item.k-state-active {
   background: #fff;
@@ -4728,7 +4776,7 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #D9D9D9;
   height: 30px !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
   background: white;
 }
@@ -4776,7 +4824,7 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #D9D9D9;
   height: 30px !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
 }
 .xstyle-timepicker-wrapper .k-timepicker.k-input.x-timepicker {
@@ -4924,6 +4972,13 @@ input::-webkit-inner-spin-button {
   border-radius: 10px;
   padding: 10px;
   padding-left: 30px !important;
+}
+.x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper .header-toolbar {
+  margin: 0px 5px;
+  max-width: 750px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper .icon-xtar-out::before {
   content: "\e9ce";
@@ -5262,6 +5317,10 @@ input::-webkit-inner-spin-button {
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.1);
   border-radius: 10px;
   padding: 30px !important;
+}
+
+.k-window .k-window-content header {
+  position: sticky !important;
 }
 
 .DashboardPage .statusColumn {
@@ -8941,7 +9000,6 @@ mainbody > .row {
   border-radius: 0;
   background: #ffffff;
   color: #000 !important;
-  text-indent: 27px;
 }
 
 .xLookupSplit {
@@ -9690,7 +9748,7 @@ li:has > a.active {
 #TafnitCore_System_UI_App_WebSDK_Main .xstyle-numberrange-wrapper input {
   padding-right: 10px !important;
   padding: 0;
-  width: 40%;
+  max-width: 200px;
   flex: 0 0 70%;
   font-size: 13px;
 }
@@ -9889,7 +9947,12 @@ li:has > a.active {
 }
 
 #TafnitCore_System_UI_App_WebSDK_Main.pageContainer.x-pagePopup > .header {
-  top: 0 !important;
+  top: -31px !important;
+  height: 100px;
+  align-items: end;
+  display: grid;
+  background: #ffffff;
+  padding-bottom: 10px;
 }
 
 #TafnitCore_System_UI_App_WebSDK_Main.pageContainer > header {
@@ -10422,4 +10485,8 @@ input {
 .k-content:has(#TafnitCore_xAgreements_UI_ApprovePayment) .k-widget.k-window .k-window-content {
   overflow: auto !important;
   padding: 0px 15px 10px;
+}
+
+.goUpArrowColumn {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

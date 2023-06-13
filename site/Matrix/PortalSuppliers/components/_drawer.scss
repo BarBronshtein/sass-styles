@@ -118,7 +118,7 @@
       *:not(.popUpWindowCls *):not(input.k-textbox):not(.DrawerItem-icon) {
       padding-right: 0 ;
       justify-content: space-between;
-  $drawer-toggle-color: #FFDC83;
+ 
       &.k-panelbar-toggle{
       color: $drawer-toggle-color;
       }
@@ -143,7 +143,8 @@
       }
   
       > span {
-        font-size: 20px ;
+        font-size: 25px;
+        right: -2px;
         padding: 10px 30px ;
         padding-left: 0 ;
       }
@@ -223,4 +224,8 @@
 
   .k-drawer-overlay.k-drawer-right .k-drawer {
     background:  $drawer-background-color ;
+    border-radius: 10px;
+    height: 98%;
+    top: 10px;
+    right: 10px;
   }

@@ -11,7 +11,7 @@
 .xstyle-date-wrapper.mandatory,
 .xstyle-password-wrapper.mandatory,
 .xstyle-timepicker-wrapper.mandatory,
-.xstyle-autocomplete-wrapper   {
+.xstyle-autocomplete-wrapper.mandatory {
   :has(.x-control-caption-wrapper) {
     & label {
       padding-right: 10px;
@@ -31,9 +31,7 @@
     background: none !important;
   }
 
-  & > div:nth-child(2) span {
-    border-bottom: none !important;
-  }
+
 }
 
 

@@ -591,7 +591,7 @@ mainbody > .row {
   border-radius: 0;
   background: map-get($map: $Colors, $key: button-important-text);
   color: #000 !important;
-  text-indent: 27px;
+
 }
 
 .xLookupSplit {
@@ -1536,7 +1536,7 @@ li:has > a.active {
   .xstyle-numberrange-wrapper input {
     padding-right: 10px !important;
     padding: 0;
-    width: 40%;
+    max-width: 200px;
     flex: 0 0 70%;
     font-size: 13px;
   }
@@ -1782,7 +1782,12 @@ li:has > a.active {
   }
 }
 #TafnitCore_System_UI_App_WebSDK_Main.pageContainer.x-pagePopup > .header {
-  top: 0 !important;
+  top: -31px !important;
+  height: 100px;
+  align-items: end;
+  display: grid;
+  background: #ffffff;
+  padding-bottom: 10px;
 }
 
 #TafnitCore_System_UI_App_WebSDK_Main.pageContainer > header {
@@ -2400,4 +2405,9 @@ input {
   }
 }
 
+}
+
+
+.goUpArrowColumn{
+  display: none;
 }

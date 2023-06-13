@@ -1,8 +1,36 @@
 
+#TafnitCore_xHistadrut_UI_TaskPreview{
+  
+   .part-2{
+     .text{
+        height: 24px;
+        label{
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            color: #727272; 
+        }
+
+        .x-control-caption-wrapper{
+            display: grid;
+            align-items: center;
+        }
+
+        span{
+            font-weight: 500 !important;
+        }
+     }
+     .title{
+        margin-bottom: 15px;
+     }
+   }
 
 
+}
 
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls{
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls,#TafnitCore_xHistadrut_UI_TaskPreview,#TafnitCore_xHistadrut_UI_WorkPlaceList{
 
     //radio button // 
 
@@ -47,7 +75,7 @@
         }
         .part-2{
             margin-top: 5px;
-
+          
             .title{
 
                 span{
@@ -57,6 +85,7 @@
                     font-size: 18px;
                     line-height: 100%;
                     color: #0167B1;
+                    overflow: hidden;
                 }
             }
 
@@ -68,6 +97,7 @@
                     font-size: 16px;
                     line-height: 100%;
                     color: #727272;
+                    overflow: hidden;
                 }
             }
 
@@ -85,6 +115,24 @@
                 &.open{
                     .fa-circle{
                         color: #77AB1A;
+                        margin-left: 10px;
+                        font-size: 14px;
+                    }
+                }
+
+                
+                &.new{
+                    .fa-circle{
+                        color: #00AEE9;
+                        margin-left: 10px;
+                        font-size: 14px;
+                    }
+                }
+
+
+                &.active{
+                    .fa-circle{
+                        color: #0167B1;
                         margin-left: 10px;
                         font-size: 14px;
                     }

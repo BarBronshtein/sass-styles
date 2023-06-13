@@ -2,7 +2,7 @@ $messageBox-bg:#FFFFFF;
 $messageBox-box-shaow:0px 0px 10px rgba(123, 9, 139, 0.1), 0px 5px 8px rgba(123, 9, 139, 0.1);
 $messageBox-color-icon-close:#A6A6A6;
 $messageBox-color-icon:#7B098B;
-$messageBox-color-text:#7B098B;
+$messageBox-color-text:#000000;
 $messageBox-bg-button:#7B098B;
 $messageBox-bg-button-focus:#690779;
 $messageBox-bg-button-hover:#690779;
@@ -13,18 +13,18 @@ $messageBox-bg-button-hover:#690779;
     box-shadow: $messageBox-box-shaow;
     border-radius: 10px;
     border: none;
-  
+    max-height: 95%;
     & .k-window-titlebar.k-hstack {
       background: none !important;
       border: none;
 .k-button{
-    margin-left: 5px;
+    margin-left: -15px;
 }
       .k-i-close{
         &::before{
             content: "\e904";
             font-family: 'icomoon';
-            font-size: 20px;
+            font-size: 14px;
             color: $messageBox-color-icon-close;
 
         }

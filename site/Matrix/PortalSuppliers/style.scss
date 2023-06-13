@@ -18,9 +18,18 @@
 @use './components/payment-cube';
 @use './components/total-panel';
 @use './components/upload';
-@use './components/login';
 @use './components/timeControl';
 @use './components/intlphone';
+@use './components/textarea';
+
+
+
+@use './page/WizardInput';
+@use './page/login';
+@use './page/AddInvoiceNoOrder';
+@use './page/WizardInvoices';
+@use './page/DisplayInputInvoiceNoOrder.scss';
+@use './page/OrdersWaitingEdit';
 
 
 
@@ -36,6 +45,27 @@ body,html{
     font-family: 'Heebo';
     background: #F8F8F8 !important;
 }
-.border.row{
+.border{
     border: none !important;
+}
+
+.container.pageContainer.xtafnit_pageContainer {
+    margin: 65px auto;
+    width: 99.4%;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+}
+
+.dir-ltr{
+    text-align: end !important;
+}
+
+#TafnitCore_SaaSServer_Portal_Default_UI_Disclaimer{
+    mainbody {
+        margin-top: 0px !important;
+    }
+}
+
+.k-disabled, .k-state-disabled {
+    opacity: 1; 
 }

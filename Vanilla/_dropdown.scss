@@ -1,0 +1,116 @@
+
+
+
+.xstyle-idropdownlist-wrapper{
+margin-top: 15px;
+&:has(.x-login-user-error-msg){
+  & span.x-dropdown-comp.s-dropdown-comp {
+  border-bottom: $control-border-error ;
+  }
+ }
+  // readonly + disabled //
+
+  &.k-state-disabled,
+  &.x-readonly{
+     & span.x-dropdown-comp.s-dropdown-comp{
+
+      background: #F7F7F7 ;
+         & span.k-icon{
+          &::before{
+            color: $control-caption-color-text-disable ; 
+          }
+         }
+     }
+
+     & label{
+      color: $control-caption-color-text-disable ; 
+       }
+ }
+
+ 
+
+
+
+  & span.x-dropdown-comp.s-dropdown-comp {
+   
+       @extend %texbox-input;
+
+      
+
+  &:focus,
+  &:focus-within{
+    border: $control-border-focus ;
+    box-shadow: $control-box-shadow-focus;
+  }
+
+  & .k-input-inner{
+    padding: 0
+  }
+
+  }
+
+  & label{
+
+    @extend %texbox-lable;
+  }
+
+ 
+  & .k-input-button{
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+      &:hover{
+        background: none;
+      }
+    & span.k-icon{
+      &::before{
+        
+        content: "\f0d7";
+        font-size: 24px;
+        font-family: "Font Awesome 5 Pro";
+        color: $control-color-icon;
+        font-weight: 700;
+      }
+
+  }
+  
+  }
+
+
+}
+
+
+.k-list-scroller{
+scrollbar-face-color: #232873;
+scrollbar-track-color: #f3e9f8;
+scrollbar-arrow-color: #232873;
+
+/* width */
+/* Track */
+/* Handle */
+/* Handle on hover */
+
+&::-webkit-scrollbar {
+  width: 10px ;
+  border-radius: 10px;
+  position: absolute;
+}
+
+
+&::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+&::-webkit-scrollbar-thumb {
+  background:#232873  ;
+  border-radius: 10px;
+  
+
+  &:hover {
+    background: #232873;
+    
+  }
+  }
+
+}

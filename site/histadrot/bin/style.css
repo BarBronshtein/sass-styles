@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
-.xstyle-intlphonenumber-wrapper input {
+.xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox, .xstyle-intlphonenumber-wrapper input {
   height: 45px;
   border: 1px solid #DEDEDE !important;
   border-radius: 10px;
@@ -20,7 +20,7 @@
   padding-right: 10px;
 }
 
-.xstyle-intlphonenumber-wrapper label {
+.xstyle-textwithbuttonsimple-wrapper label, .xstyle-intlphonenumber-wrapper label {
   align-items: center;
   text-align: right;
   font-family: "Arial";
@@ -329,7 +329,7 @@
 }
 
 .main-title {
-  margin-top: 55px;
+  margin-top: 70px;
   margin-bottom: 20px;
 }
 .main-title span {
@@ -1132,7 +1132,7 @@
 }
 
 .xstyle-date-wrapper {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .xstyle-date-wrapper span.k-datepicker {
   border: none;
@@ -1459,18 +1459,6 @@ mainbody .row-title span.s-dynamic-label-control {
   line-height: 100%;
   color: #727272;
 }
-mainbody .row-title .col-status .x-kicon-caption {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 100%;
-  color: #000000;
-  margin-right: 10px;
-}
-mainbody .row-title .col-status .k-icon {
-  color: #77AB1A;
-}
 mainbody .row-main:has(.col-back) {
   margin-top: 135px;
 }
@@ -1518,6 +1506,7 @@ mainbody .row-main {
   box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9;
   border-radius: 20px;
   padding: 10px 10px;
+  margin-bottom: 20PX;
 }
 mainbody .row-main > .col {
   padding: 15px !important;
@@ -1576,6 +1565,47 @@ mainbody .row-main .col-list .list span {
   margin-top: 0 !important;
   line-height: 100%;
   color: #000000 !important;
+}
+
+.col-status .x-kicon-caption {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  color: #000000;
+  margin-right: 10px;
+}
+.col-status .k-icon {
+  color: #77AB1A;
+}
+.col-status .xstyle-kicon-wrapper.open .fa-circle {
+  color: #77AB1A;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.col-status .xstyle-kicon-wrapper.closed .fa-circle {
+  color: #E51925;
+  margin-left: 10px;
+}
+.col-status .xstyle-kicon-wrapper.canceld .fa-circle {
+  color: #AAAAAA;
+  margin-left: 10px;
+}
+.col-status .xstyle-kicon-wrapper .x-kicon-caption {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.back-title {
+  position: absolute;
+  bottom: 22px;
+  color: #0167B1;
+  z-index: 20;
 }
 
 .xstyle-floatbuttonv2-wrapper button {
@@ -1713,20 +1743,129 @@ mainbody .row-main .col-list .list span {
   color: #052436;
 }
 
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .radio-border {
+.xstyle-textwithbuttonsimple-wrapper {
+  margin-bottom: 20px;
+}
+.xstyle-textwithbuttonsimple-wrapper.k-state-disabled label {
+  color: #CCCCCC !important;
+}
+.xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox {
+  border-radius: 0 !important;
+}
+.xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox:focus {
+  border: 1px solid #F37A1F !important;
+}
+.xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox::-moz-placeholder {
+  color: #BBBBBB !important;
+}
+.xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox::placeholder {
+  color: #BBBBBB !important;
+}
+.xstyle-textwithbuttonsimple-wrapper.k-state-disabled {
+  opacity: 1 !important;
+}
+.xstyle-textwithbuttonsimple-wrapper.k-state-disabled label {
+  color: #AAAAAA !important;
+}
+.xstyle-textwithbuttonsimple-wrapper.k-state-disabled input {
+  border: 1px solid #EEEEEE !important;
+  background: none !important;
+}
+.xstyle-textwithbuttonsimple-wrapper .x-barcodeBtnContainer {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00AEE9 !important;
+  border-radius: 0;
+  left: 4px !important;
+  font-size: 16px;
+}
+.xstyle-textwithbuttonsimple-wrapper .x-barcodeBtnContainer a:before {
+  color: white;
+  font-size: 16px;
+  content: "\e92a";
+  font-family: "icomoon";
+}
+
+.xstyle-daterange-wrapper {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.xstyle-daterange-wrapper .s-control-content-wrapper {
+  margin-top: 12px;
+}
+.xstyle-daterange-wrapper .s-control-caption-text {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #00AEE9;
+  margin-bottom: 5px;
+}
+.xstyle-daterange-wrapper .k-dateinput {
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  height: 45px;
+}
+.xstyle-daterange-wrapper .k-dateinput input {
+  text-align: right;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.xstyle-daterange-wrapper .k-floating-label-container > .k-label {
+  right: -15px;
+  top: 10px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  color: #00AEE9;
+}
+
+#TafnitCore_xHistadrut_UI_TaskPreview .part-2 .text {
+  height: 24px;
+}
+#TafnitCore_xHistadrut_UI_TaskPreview .part-2 .text label {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #727272;
+}
+#TafnitCore_xHistadrut_UI_TaskPreview .part-2 .text .x-control-caption-wrapper {
+  display: grid;
+  align-items: center;
+}
+#TafnitCore_xHistadrut_UI_TaskPreview .part-2 .text span {
+  font-weight: 500 !important;
+}
+#TafnitCore_xHistadrut_UI_TaskPreview .part-2 .title {
+  margin-bottom: 15px;
+}
+
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .radio-border, #TafnitCore_xHistadrut_UI_TaskPreview .radio-border, #TafnitCore_xHistadrut_UI_WorkPlaceList .radio-border {
   flex: 0 0 95%;
   margin: auto;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .radio-border .x-radio-wrapper {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .radio-border .x-radio-wrapper, #TafnitCore_xHistadrut_UI_TaskPreview .radio-border .x-radio-wrapper, #TafnitCore_xHistadrut_UI_WorkPlaceList .radio-border .x-radio-wrapper {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 0px;
   justify-content: space-between;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .radio-border .x-radio-wrapper .x-RBComp {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .radio-border .x-radio-wrapper .x-RBComp, #TafnitCore_xHistadrut_UI_TaskPreview .radio-border .x-radio-wrapper .x-RBComp, #TafnitCore_xHistadrut_UI_WorkPlaceList .radio-border .x-radio-wrapper .x-RBComp {
   padding: 0 0 0 10px !important;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card {
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9;
   border-radius: 20px;
@@ -1736,11 +1875,11 @@ mainbody .row-main .col-list .list span {
   margin-top: 15px;
   padding: 20px 0;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-1 {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-1, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-1, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-1 {
   display: grid;
   grid-template-columns: 1fr auto;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-1 span {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-1 span, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-1 span, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-1 span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -1748,26 +1887,28 @@ mainbody .row-main .col-list .list span {
   line-height: 100%;
   color: #727272;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-2 {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-2, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-2, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-2 {
   margin-top: 5px;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-2 .title span {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-2 .title span, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-2 .title span, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-2 .title span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
   color: #0167B1;
+  overflow: hidden;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-2 .text span {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-2 .text span, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-2 .text span, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-2 .text span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   color: #727272;
+  overflow: hidden;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-top: 20px;
@@ -1775,20 +1916,30 @@ mainbody .row-main .col-list .list span {
   align-items: center;
   border-top: 1px solid #DEDEDE;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle {
   color: #77AB1A;
   margin-left: 10px;
   font-size: 14px;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).closed .fa-circle {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).new .fa-circle, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).new .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).new .fa-circle {
+  color: #00AEE9;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).active .fa-circle, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).active .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).active .fa-circle {
+  color: #0167B1;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).closed .fa-circle, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).closed .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).closed .fa-circle {
   color: #E51925;
   margin-left: 10px;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).canceld .fa-circle {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).canceld .fa-circle, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).canceld .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).canceld .fa-circle {
   color: #AAAAAA;
   margin-left: 10px;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption) .x-kicon-caption {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption) .x-kicon-caption, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption) .x-kicon-caption, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption) .x-kicon-caption {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -1796,7 +1947,7 @@ mainbody .row-main .col-list .list span {
   line-height: 100%;
   color: #000000;
 }
-#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .fa-chevrons-left {
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-3 .fa-chevrons-left, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-3 .fa-chevrons-left, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-3 .fa-chevrons-left {
   color: #0167B1;
 }
 
@@ -1950,7 +2101,6 @@ mainbody .row-main .col-list .list span {
 .row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallActivity) .customer-card .part-2,
 .row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallFiles) .customer-card .part-2 {
   margin-top: 5px;
-  padding: 0 !important;
 }
 .row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallActivity) .customer-card .part-2 .title span,
 .row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallFiles) .customer-card .part-2 .title span {
@@ -1967,7 +2117,7 @@ mainbody .row-main .col-list .list span {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-top: 10px;
-  padding: 10px 0 0;
+  padding: 15px 10px 0px 10px;
   align-items: center;
   border-top: 1px solid #DEDEDE;
 }
@@ -2005,6 +2155,54 @@ mainbody .row-main .col-list .list span {
   color: #000000;
 }
 
+#TafnitCore_xHistadrut_UI_ServiceCallAddNew .customer-card .part-1 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#TafnitCore_xHistadrut_UI_ServiceCallAddNew .customer-card .part-1 .x-kicon.col-icon {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+}
+#TafnitCore_xHistadrut_UI_ServiceCallAddNew .customer-card .part-1 .x-kicon.col-icon .x-kicon-caption {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #0167B1;
+}
+#TafnitCore_xHistadrut_UI_ServiceCallAddNew .customer-card .part-1 .x-kicon.col-icon .k-icon {
+  color: #0167B1;
+  font-size: 14px;
+}
+
+#TafnitCore_xHistadrut_UI_WorkPlace .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle {
+  color: #77AB1A;
+  margin-left: 10px;
+  font-size: 14px;
+}
+#TafnitCore_xHistadrut_UI_WorkPlace .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).closed .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).closed .fa-circle {
+  color: #E51925;
+  margin-left: 10px;
+}
+#TafnitCore_xHistadrut_UI_WorkPlace .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).canceld .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).canceld .fa-circle {
+  color: #AAAAAA;
+  margin-left: 10px;
+}
+#TafnitCore_xHistadrut_UI_WorkPlace .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption) .x-kicon-caption, #TafnitCore_xHistadrut_UI_WorkPlaceList .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption) .x-kicon-caption {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+}
+
+#TafnitCore_xHistadrut_UI_WorkPlaceSearch header {
+  display: none;
+}
+
 #TafnitCore_xHistadrut_UI_AccountResultList .customer-card {
   width: 100% !important;
 }
@@ -2028,6 +2226,7 @@ mainbody .row-main .col-list .list span {
 }
 #TafnitCore_xHistadrut_UI_AccountList .customer-card .part-2, #TafnitCore_xHistadrut_UI_ServiceCallAddNew .customer-card .part-2 {
   margin-top: 5px;
+  padding: 0;
 }
 #TafnitCore_xHistadrut_UI_AccountList .customer-card .part-2 .title span, #TafnitCore_xHistadrut_UI_ServiceCallAddNew .customer-card .part-2 .title span {
   font-family: "Heebo";
@@ -2049,7 +2248,7 @@ mainbody .row-main .col-list .list span {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-top: 20px;
-  padding: 15px 0 0;
+  padding: 15px 10px 0px 10px;
   align-items: center;
   border-top: 1px solid #DEDEDE;
 }
@@ -2354,6 +2553,93 @@ mainbody .row-main .col-list .list span {
   margin-top: 20px;
 }
 
+#TafnitCore_xHistadrut_UI_TaskList .col-tab {
+  padding: 0 15px !important;
+}
+#TafnitCore_xHistadrut_UI_TaskList .col-tab .xstyle-dynamiclabelcontrol-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  align-items: baseline;
+}
+#TafnitCore_xHistadrut_UI_TaskList .col-tab .xstyle-dynamiclabelcontrol-wrapper .x-cell {
+  max-width: 100%;
+}
+#TafnitCore_xHistadrut_UI_TaskList .col-tab .xstyle-dynamiclabelcontrol-wrapper label, #TafnitCore_xHistadrut_UI_TaskList .col-tab .xstyle-dynamiclabelcontrol-wrapper span {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #052436;
+  display: contents;
+}
+#TafnitCore_xHistadrut_UI_TaskList .col-tab .xstyle-dynamiclabelcontrol-wrapper.linke span {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #00AEE9;
+  display: block;
+}
+#TafnitCore_xHistadrut_UI_TaskList .xstyle-floatbuttonv2-wrapper button {
+  background: #E51925 !important;
+}
+
+#TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer {
+  background: #FCFCFC;
+  box-shadow: 0px -4px 4px rgba(0, 122, 191, 0.1);
+  border-radius: 0px;
+  padding: 10px 20px;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer > .row {
+  align-items: center;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer .activeTabf {
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 75px;
+  margin: auto;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer .xstyle-kicon-wrapper .k-icon {
+  color: #0167B1;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer .xstyle-kicon-wrapper .x-kicon-caption {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 100%;
+  color: #0167B1;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails .row-title .text {
+  height: 24px;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails .row-title .text label {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #727272;
+  margin-top: 3px;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails .row-title .text .x-control-caption-wrapper {
+  display: grid;
+  align-items: center;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails .row-title .text span {
+  font-weight: 500 !important;
+}
+#TafnitCore_xHistadrut_UI_TaskDetails .row-title .main-title {
+  margin-bottom: 15px !important;
+}
+
 .border {
   border: none !important;
 }
@@ -2393,7 +2679,7 @@ body, #watermark, header {
 }
 
 .container.pageContainer.xtafnit_pageContainer {
-  margin-bottom: 30px !important;
+  margin-bottom: 10px !important;
 }
 
 .k-i-close::before {

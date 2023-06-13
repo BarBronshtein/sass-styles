@@ -65,9 +65,7 @@
       }
 
      // defult //
-$radio-button-border-check:1px solid #7B098B;
-$radio-button-bg-check: #FFB444;
-$radio-button-bg-check: #FFB444;
+
       .k-radio {
         &:checked {
           
@@ -80,7 +78,7 @@ $radio-button-bg-check: #FFB444;
       
         border: 1px solid #727272;
         color: #727272;
-        background-color:white;
+        background-color:$radio-button-bg;
         border-radius: 50%;
       
     

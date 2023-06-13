@@ -3,7 +3,7 @@
 
 .payment-cube-row1 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     gap: 15px;
     margin-bottom: 15px;
     
@@ -42,11 +42,7 @@
                 border-radius: 10px;
                 align-items: center;
                 & .k-icon{
-                    &:before{
-                        color: $first-panel-color-icon-button;
-                        font-size: 22px;
-                        font-weight: 400;
-                    }
+                    font-size: 32px;
                 }
                 .x-kicon-caption{
                     display: none;
@@ -58,9 +54,7 @@
                  .x-button-wrapper {
                     float: left;
                  }
-                & button{
-                   @extend %spicel-button;
-                }
+             
             }
         }
     }

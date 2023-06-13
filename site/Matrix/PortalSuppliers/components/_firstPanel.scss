@@ -44,12 +44,28 @@
                 border: $first-panel-border-icon-button;
                 border-radius: 10px;
                 align-items: center;
-                & .k-icon{
-                    &:before{
-                        color: $first-panel-color-icon-button;
-                        font-size: 22px;
-                        font-weight: 400;
+                
+                &:hover{
+                    background: $Button-bg-hover;
+                    color: white !important;
+                    span::before{
+                      color:  white !important;
                     }
+                    span::after{
+                        color:  white !important;
+                      }
+                  }
+            
+                  &:focus:before{
+                    background: $Button-color-bg-focus;
+                    color: white !important;
+                    opacity: 1;
+                    span{
+                      color:  white !important;
+                    }
+                  }
+                & .k-icon{
+                   font-size: 32px;
                 }
                 .x-kicon-caption{
                     display: none;
@@ -57,12 +73,7 @@
             }
 
 
-            .xstyle-buttoncontrol-wrapper{
-
-                & button{
-                   @extend %spicel-button;
-                }
-            }
+      
         }
     }
 }

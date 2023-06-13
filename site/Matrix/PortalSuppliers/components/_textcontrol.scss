@@ -26,6 +26,7 @@
     & input{
       @extend %texbox-input;
       padding-right: 10px !important;
+      padding: 0;
 
         &:focus{
             box-shadow:$control-box-shadow-focus !important;

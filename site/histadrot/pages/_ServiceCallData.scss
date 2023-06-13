@@ -190,7 +190,6 @@
         }
         .part-2{
             margin-top: 5px;
-            padding: 0 !important;
             .title{
 
                 span{
@@ -211,7 +210,7 @@
             display: grid;
             grid-template-columns: 1fr auto;
             margin-top: 10px;
-            padding: 10px 0 0;
+            padding: 15px 10px 0px 10px;
             align-items: center;
             border-top: 1px solid #DEDEDE;
 
@@ -262,4 +261,87 @@
             color: #000000;
         }
     }
+}
+
+#TafnitCore_xHistadrut_UI_ServiceCallAddNew{
+    .customer-card{
+        .part-1{
+         
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+
+
+            .x-kicon.col-icon{
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 5px;
+                
+                .x-kicon-caption{
+
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                    color: #0167B1;
+
+                }
+
+                .k-icon{
+                    color: #0167B1;
+                    font-size: 14px;
+                }
+               
+            }
+        }
+    }
+}
+
+#TafnitCore_xHistadrut_UI_WorkPlace,#TafnitCore_xHistadrut_UI_WorkPlaceList{
+    .part-3{
+   
+
+        .xstyle-kicon-wrapper:has(.x-kicon-caption){
+
+            &.open{
+                .fa-circle{
+                    color: #77AB1A;
+                    margin-left: 10px;
+                    font-size: 14px;
+                }
+            }
+
+            &.closed{
+                .fa-circle{
+                    color: #E51925;
+                    margin-left: 10px;
+                }
+            }
+
+            &.canceld{
+                .fa-circle{
+                    color: #AAAAAA;
+                    margin-left: 10px;
+                }
+            }
+
+            .x-kicon-caption{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                color: #000000;
+            }
+        }
+    }
+
+
+}
+
+
+#TafnitCore_xHistadrut_UI_WorkPlaceSearch{
+   header{
+    display: none;
+   }
 }

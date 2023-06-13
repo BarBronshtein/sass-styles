@@ -48,6 +48,10 @@
     opacity: 0;
   }
 }
+.xstyle-barcodetextcontrol-wrapper input.k-textbox.x-textbox {
+  padding-right: 40px;
+}
+
 .barcodeIcon {
   left: 30%;
 }
@@ -94,7 +98,6 @@
 }
 
 .k-rtl .x-text-with-button-wrapper .x-barcodeBtnContainer {
-  left: 1px !important;
   right: auto !important;
   border-right: 0;
   border-bottom-right-radius: 0;
@@ -1967,7 +1970,7 @@ label.btn {
   transition: 0.2s all;
 }
 .x-listview-container .x-listview-control .x-listview-item.checker-1 {
-  border: 4px solid #63769c;
+  border: none;
 }
 .x-listview-container .x-listview-control .x-listview-item .marker-0 {
   display: none;
@@ -2012,16 +2015,18 @@ label.btn {
   position: absolute;
   font-size: 17px;
   color: #003f59;
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: -1px;
   z-index: 9;
+  border: 3px solid white;
+  background: #f3d30b;
+  padding: 9px;
+  border-radius: 50%;
 }
-.x-listview-container .x-listview-control .x-listview-item .selectedTriangle {
-  width: 0;
-  height: 0;
-  border-top: 30px solid #ccc;
-  border-left: 30px solid transparent;
-  position: absolute;
+.x-listview-container .x-listview-control .x-listview-item .fa-check::before {
+  content: "\f0f3";
+  font-size: 20px;
+  color: white;
 }
 .x-listview-container .x-listview-control .x-listview-item .removeTriangle {
   width: 0;

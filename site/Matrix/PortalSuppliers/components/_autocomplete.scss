@@ -8,6 +8,10 @@
 
 .xstyle-autocomplete-wrapper   {
 
+
+    .k-input:focus-within, .k-widget.k-input:focus-within{
+        box-shadow: none
+    }
 // disable // 
 
     &.k-state-disabled{
@@ -24,17 +28,18 @@
     }
 
     .k-autocomplete{
-        border: none !important;
+      
         &:focus{
             box-shadow: none;
             border: none        
         } 
     }
-    & input{
+    & .k-autocomplete{
       @extend %texbox-input;
       padding-right: 10px !important;
+      padding: 0;
 
-        &:focus{
+        &:focus-within{
             box-shadow:$control-box-shadow-focus !important;
             border: $control-border-focus !important;
         }
@@ -43,6 +48,12 @@
 
             color: $control-color-placeholder !important;
 
+        }
+
+        input{
+            border: none;
+            height: 50px !important;
+            font-size: 16px;
         }
     }
 

@@ -1,0 +1,102 @@
+
+
+.xstyle-dynamiclabelcontrol-wrapper{
+  
+    &.title{
+        .s-dynamic-label-control.x-label{
+        font-style: normal;
+        font-weight: $title-font-weight;
+        font-size:$title-font-size;
+        line-height: 30px;
+        text-align: center !important;
+        margin-bottom: $title-font-margin-bottom;
+        color: $title-font-color;
+        }
+    }
+    &.title-meduim{
+        .s-dynamic-label-control.x-label{
+        font-style: normal;
+        font-weight: $title-meduim-font-weight;
+        font-size:$title-meduim-font-size;
+        line-height: 30px;
+        text-align: center !important;
+        margin-bottom: $title-meduim-font-margin-bottom;
+        color: $title-meduim-font-color;
+        }
+    }
+    &.title-small{
+        .s-dynamic-label-control.x-label{
+        font-style: normal;
+        font-weight: $title-small-font-weight;
+        font-size:$title-small-font-size;
+        line-height: 30px;
+        text-align: center !important;
+        margin-bottom: $title-small-font-margin-bottom;
+        color: $title-small-font-color;
+        }
+    }
+    &.title-secandray{
+        .s-dynamic-label-control.x-label{
+        font-style: normal;
+        font-weight: $title-secandray-font-weight;
+        font-size:$title-secandray-font-size;
+        line-height: 30px;
+        margin-bottom: $title-secandray-font-margin-bottom;
+        color: $title-secandray-font-color;
+        }
+    }
+    &.title-secandray-small{
+        .s-dynamic-label-control.x-label{
+        font-style: normal;
+        font-weight: $title-secandray-small-font-weight;
+        font-size:$title-secandray-small-font-size;
+        line-height: 30px;
+        margin-bottom: $title-secandray-small-font-margin-bottom;
+        color: $title-secandray-small-font-color;
+        }
+    }
+    &.title-secandray-maduim{
+        .s-dynamic-label-control.x-label{
+        font-style: normal;
+        font-weight: $title-secandray-maduim-font-weight;
+        font-size:$title-secandray-maduim-font-size;
+        line-height: 30px;
+        margin-bottom: $title-secandray-maduim-font-margin-bottom;
+        color: $title-secandray-maduim-font-color;
+        }
+    }
+
+
+    &.row-title{
+        margin-top: 15px;
+        .s-dynamic-label-control.x-label{
+        font-style: normal;
+        font-weight: $row-title-font-weight;
+        font-size: $row-title-font-size;
+        line-height: 30px;
+        color: $row-title-font-color;
+        height: auto; 
+    }
+    }
+
+}
+
+
+
+
+
+
+
+
+.xstyle-kicon-wrapper.icon-title{
+    margin-top: 20px;
+    .x-kicon{
+        text-align: center !important;
+
+        span{
+            font-size:$icon-title-font-size;
+            margin-top: $icon-title-font-margin-top;
+            margin-bottom: $icon-title-font-margin-bottom;
+        }
+    }
+}

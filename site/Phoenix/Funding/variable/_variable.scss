@@ -45,8 +45,6 @@ $spicel-button-bg:#FFFFFF;
 $spicel-button-color-text:#FF5A23 ;
 $spicel-button-color-border:1px solid #FF5A23 ;
 
-
-
 /*controls*/
 $control-caption-color-text: #323C4B;
 $control-background: #FFFFFF;
@@ -165,6 +163,10 @@ $B2B-header-text-defult:#000000;
 $B2B-header-link-color:#ff7100 ;
 
 
+// upload //
+$upload-border-color: 1px solid #ff7300;
+$upload-name-file-color:  #ff7300;
+$upload-success-text-color:  #3e2ea3;
 
 
 
@@ -201,10 +203,7 @@ $B2B-header-link-color:#ff7100 ;
 }
 
 
-// upload //
-$upload-border-color: 1px solid #ff7300;
-$upload-name-file-color:  #ff7300;
-$upload-success-text-color:  #3e2ea3;
+
 
 
 // disable // 

@@ -23,23 +23,22 @@
 
       &:hover{
         background: $Button-bg-hover;
-        opacity: 0.6;
-        color: $Button-color-text;
-        border: 1px solid $Button-color-border;
+
+        & span:before,& span:after{
+          color: $Button-color-icon !important;
+        }
       }
 
       &:focus{
-        border: 1px solid $Button-color-border-focus;
+        background: $Button-color-bg-focus;
         opacity: 1;
       }
       & span{
         color: $Button-color-icon !important;
-        &::before{
+        font-size: 30px;
+        right: -2px;
 
-            font-size: 28px;
-            right: -6px;
-            
-        }
+
     }
 
    
@@ -64,24 +63,50 @@
         & button{
             width: 50px !important;
             min-width: auto;
+
         }
     }
   }
 
   .xstyle-buttoncontrol-wrapper{
-    & button{
-        @extend %spicel-button;
-        
+
+    &.spicelBTN{
+
+      & button{
+      @extend %spicel-button;
+
+
       &:hover{
         background: $Button-bg-hover;
-        opacity: 0.6;
+        color: white !important;
+        span::before{
+          color:  white !important;
+        }
+      }
+
+      &:focus:before{
+        background: $Button-color-bg-focus;
+        color: white !important;
+        opacity: 1;
+        span{
+          color:  white !important;
+        }
+      }
+      }
+     }
+    & button{
+        @extend %button;
+        max-width: 200px;
+      &:hover{
+        background: $Button-bg-hover;
         color: $Button-color-text;
-        border: 1px solid $Button-color-border;
+       
       }
 
       &:focus{
-        border: 1px solid $Button-color-border-focus;
+        background: $Button-color-bg-focus;
         opacity: 1;
+     
       }
         }
 

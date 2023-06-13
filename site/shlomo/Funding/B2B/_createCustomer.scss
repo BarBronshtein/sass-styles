@@ -10,7 +10,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 30px;
-        color: #14008E;
+        color: #10A831;
         height: auto;
 
     }
@@ -32,7 +32,7 @@
 
         .body-upload{
             background: #FFFFFF;
-            box-shadow:0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+            box-shadow:0px 0px 2px rgba(76, 125, 50, 0.1), 0px 8px 8px rgba(76, 125, 50, 0.15);
             border-radius: 10px;
             width: 100%;
             margin: auto;
@@ -62,7 +62,7 @@
                     font-size: 24px;
                     line-height: 100%;
                     text-align: center;
-                    color: #14008E;
+                    color: #FF7D19;
                   
 
                     .k-icon{
@@ -71,6 +71,15 @@
                        color: black;
                        font-family: 'Font Awesome 6 Pro';
                        font-weight: 300;
+                       
+                       &::after{
+                        color: #FF7D19;
+                       }
+
+                       &:before{
+                        
+                        color: rgb(50, 60, 75);
+                       }
                     }
                 }
             }

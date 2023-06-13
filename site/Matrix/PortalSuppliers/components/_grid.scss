@@ -6,7 +6,7 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 120%;
     color: #7B098B;
     height: auto;
@@ -104,8 +104,15 @@
         
 
         th {
+       
             &.k-header {
-                color: $grid-header-text-color;
+              font-family: "Heebo";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 130%;
+              text-align: right;
+              color: #7B098B;
                 padding-right: 10px !important;
             }
 
@@ -607,7 +614,7 @@
     width: auto;
     justify-content: center;
     margin: auto;
-
+    margin-bottom: 15px;
    
     & >.k-pager-nav:hover{
       border: none !important;
@@ -736,6 +743,11 @@
       border-radius: 10px !important;
       background: none !important;
 
+      &:focus{
+        box-shadow: none;
+        border: none;
+      }
+
     
       & .k-button-text{
         display: none;
@@ -777,6 +789,19 @@
           overflow: hidden;
           text-overflow: ellipsis;
           padding-right: 10px;
+
+          &.text-spicel{
+            color: #7B098B !important;
+          }
+
+          a{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #059FCF;
+          }
           & .icon-xtab-xls{
             font-size: 22px;
             color: #7B098B;
@@ -1190,11 +1215,11 @@
 
 .xstyle-gridv4-wrapper{
 
-  border-bottom: 1px solid #7B098B;
+  border-bottom: 1px solid #DEDEDE;
   border-radius: 0px;
   padding: 16px;
   padding-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 & .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group{
   box-shadow: none !important;
   border-radius: 0 !important;

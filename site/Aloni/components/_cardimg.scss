@@ -1,0 +1,58 @@
+
+
+.card-img{
+    img{
+        width: 100%;
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+    }
+
+
+    .card-title{
+
+        margin: 0;
+        background: #DEDEDE;
+        padding: 16px;
+        border-radius: 0;
+        margin-top: -1px;
+
+        span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 130%;
+            text-align: center !important;
+            color: #000000;
+        }
+    }
+}
+
+.card-detail{
+   
+    .title-card{
+        span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #AE8B49;
+            margin-top: 10px;
+        }
+    }
+
+    span{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #000000;
+    }
+
+    .xstyle-buttoncontrol-wrapper button{
+        width: 100% !important;
+        margin-top: 10px;
+    }
+}

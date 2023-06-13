@@ -146,22 +146,7 @@ mainbody {
         color: #727272;
     }
 
-    .col-status{
-        .x-kicon-caption{
-            font-family: 'Heebo';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 100%;
-            color: #000000;
-            margin-right: 10px;
-        }
-
-        .k-icon{
-            color:#77AB1A;
-            
-        }
-    }
+ 
 
 }
 
@@ -222,6 +207,7 @@ mainbody {
     box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9;
     border-radius: 20px;
     padding: 10px 10px;
+    margin-bottom: 20PX;
     & > .col{
         padding: 15px !important;
     }
@@ -292,4 +278,66 @@ mainbody {
     }
 }
 
+}
+
+
+.col-status{
+    .x-kicon-caption{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 100%;
+        color: #000000;
+        margin-right: 10px;
+    }
+
+    .k-icon{
+        color:#77AB1A;
+    
+    }
+
+    .xstyle-kicon-wrapper{
+
+        &.open{
+            .fa-circle{
+                color: #77AB1A;
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+
+        &.closed{
+            .fa-circle{
+                color: #E51925;
+                margin-left: 10px;
+            }
+        }
+
+        &.canceld{
+            .fa-circle{
+                color: #AAAAAA;
+                margin-left: 10px;
+            }
+        }
+
+        .x-kicon-caption{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            color: #000000;
+        }
+    }
+
+
+
+}
+
+.back-title{
+    position: absolute;
+    bottom: 22px;
+    color: #0167B1;
+    z-index: 20;
 }

@@ -5,7 +5,7 @@
   border-bottom: $border-text-fields;
   height: $height-text-fields !important;
   border-radius: 0px !important;
-  margin-top: 10px;
+  margin-top: 5px;
   align-items: center;
 
   .x-link_Comp{
@@ -102,6 +102,12 @@
         color: #ececec !important;
       }
     }
+
+    .x-open-lookupP{
+      & button span::before {
+        color:#9038ba !important
+      }
+    }
     & button span::before {
       color: #a1a3a5 !important;
     }
@@ -180,9 +186,11 @@
       border-right: 1px solid map-get($map: $Colors, $key: border-color) !important ;
       border-top-right-radius: 0px !important;
       border-bottom-right-radius: 0px !important;
-
+      padding-right: 10px;
       color: #000000 !important;
       font-size: 13px;
+      min-height: 25px !important;
+      max-height: 25px;
     }
   }
 }
@@ -204,6 +212,12 @@
 
 .xstyle-lookuptafnit-wrapper.x-readonly,
 .xstyle-lookup-wrapper.x-readonly{
+
+  .x-open-lookup{
+     span.s-x-cs-btn{
+      color:#9038ba !important
+    }
+  }
 
     & span.s-x-cs-btn{
         color:#A1A3A5!important ;

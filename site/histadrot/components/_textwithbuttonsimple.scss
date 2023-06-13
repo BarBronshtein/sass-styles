@@ -1,0 +1,61 @@
+@use '../varible/varible' as *;
+
+.xstyle-textwithbuttonsimple-wrapper{
+    margin-bottom: 20px;
+    & label {
+        @extend %labelMain;
+    
+    }
+      
+    &.k-state-disabled label {
+            color: #CCCCCC !important;
+        }
+    & input.k-textbox.x-textbox {
+        @extend %inputFont;
+        border-radius: 0 !important;
+       &:focus {
+          border: 1px solid #F37A1F !important;
+        }
+       &::placeholder {
+            color: #BBBBBB !important;
+        }
+    }
+
+
+    &.k-state-disabled {
+
+       opacity: 1 !important;
+        & label{
+
+            color: #AAAAAA !important;
+
+        }
+
+        & input{
+            border: 1px solid #EEEEEE !important;
+            background: none !important;
+        }
+    }
+
+
+    .x-barcodeBtnContainer{
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #00AEE9 !important;
+        border-radius: 0;
+        left: 4px !important;
+        font-size: 16px;
+
+        a:before{
+            color: white;
+            font-size: 16px;
+            content: "\e92a";
+            font-family: 'icomoon';
+        }
+    }
+
+
+}

@@ -1,0 +1,113 @@
+#TafnitCore_xHistadrut_UI_TaskList{
+    .col-tab {
+        padding: 0 15px !important;
+        .xstyle-dynamiclabelcontrol-wrapper{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 5px;
+            align-items: baseline;
+            .x-cell{
+                max-width: 100%;
+            }
+
+   
+
+            label,span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                color: #052436; 
+                display: contents;
+            }
+
+            &.linke{
+                span{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    text-decoration-line: underline;
+                    color: #00AEE9;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .xstyle-floatbuttonv2-wrapper button{
+        background: #E51925 !important;
+    }
+}
+
+
+
+#TafnitCore_xHistadrut_UI_TaskDetails{
+
+    mainbody > .x-footer{
+
+        background: #FCFCFC;
+        box-shadow: 0px -4px 4px rgba(0, 122, 191, 0.1);
+        border-radius: 0px;
+        padding: 10px 20px;
+
+        & > .row{
+            align-items: center;
+        }
+
+        .activeTabf{
+            background: #F5F5F5;
+            border-radius: 20px;
+            padding: 10px 10px;
+            width: 75px;
+            margin: auto;
+        }
+
+        .xstyle-kicon-wrapper{
+            .k-icon{
+                color: #0167B1;
+                font-size: 30px;
+                margin-bottom: 5px;
+            }
+            .x-kicon-caption{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 100%;
+                color: #0167B1;
+
+            }
+        }
+    }
+
+    .row-title{
+        .text{
+            height: 24px;
+            label{
+                font-family: "Heebo";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                color: #727272; 
+                margin-top: 3px;
+            }
+
+            .x-control-caption-wrapper{
+                display: grid;
+                align-items: center;
+            }
+
+            span{
+                font-weight: 500 !important;
+            }
+        }
+
+        .main-title{
+            margin-bottom: 15px !important;
+        }
+    }
+}

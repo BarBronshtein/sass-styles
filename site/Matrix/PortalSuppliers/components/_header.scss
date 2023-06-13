@@ -5,11 +5,15 @@ header.navbar-fixed-top.header-suppliers {
   grid-template-columns: 80%20%;
   height: 121px;
   background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(103, 103, 103, 0.1);
   border-radius: 10px;
-  width: 96% !important;
+  width: 95% !important;
   margin: auto;
+  top: 10px;
   border: none !important;
-
+.xstyle-dynamiclabelcontrol-wrapper     {
+  height: 25px;
+}
   & div{
     max-height: 121px;
   }
@@ -58,6 +62,7 @@ header.navbar-fixed-top.header-suppliers {
       font-size: 12px;
       line-height: 120%;
       color: #A6A6A6;
+      margin-top: 10px;
     }
   }
 }
@@ -92,7 +97,7 @@ header.navbar-fixed-top.header-suppliers {
       margin-left: 5px;
       font-family: 'Heebo';
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 14px;
       line-height: 25px;
       text-align: right;

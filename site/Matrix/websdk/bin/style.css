@@ -367,11 +367,11 @@
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected {
-  background: #efe7f4 !important;
+  background: none !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected td {
-  background: #efe7f4 !important;
+  background: none !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content td {
@@ -9213,18 +9213,6 @@ div[uxid=portalUser],
 }
 #TafnitCore_System_UI_App_WebSDK_SearchRoutineResult .headerNone .x-treeList.s-treeList .k-grid-content.k-auto-scrollable td:has(span) div span span {
   background: none !important;
-}
-
-.xstyle-tab-wrapper .k-tabstrip-item.k-item span {
-  opacity: 1 !important;
-  color: #7b098b !important;
-}
-.xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item.k-active {
-  border: none !important;
-}
-.xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item.k-active span.k-link {
-  border-bottom: 1px solid #7b098b !important;
-  font-weight: 700;
 }
 
 .xstyle-textareacontrol-wrapper.mandatory:has(.x-control-caption-wrapper) label:before {
