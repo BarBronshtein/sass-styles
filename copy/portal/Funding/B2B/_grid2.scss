@@ -1,8 +1,13 @@
-@use '../variable/variable' as * ;
 
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main{
+.xstyle-gridv4-wrapper     {
+    min-height: 200px;
+ }
+}
 #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect{
 
 .xstyle-gridv4-wrapper     {
+    min-height: 200px;
  .k-grid-header{
     display: none;
  }
@@ -21,6 +26,7 @@
             background: #FFFFFF;
             border: 1px solid #CED4DA !important;
             min-width: 260px;
+            border-radius:10px; 
             span{
               color: $grid-icon-search-color;
 
@@ -33,9 +39,15 @@
                 font-size: 16px;
                 line-height: 21px;
                 text-align: right;
-                color: #ADB5BD; 
+                color: #323C4B; 
             }
 
+
+            &:focus,&:focus-within{
+                border: 1px solid #FAC9E0;
+                         box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2);
+
+            }
         }
     }
 }
@@ -44,5 +56,6 @@
     display: flex;
     gap: 15px;
     justify-content: end;
+    padding: 0;
 }
 }

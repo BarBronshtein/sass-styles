@@ -1,5 +1,5 @@
 
-@use '../variable/variable' as *;
+
 
 
 
@@ -20,6 +20,10 @@
 margin-top: 15px;
     &.k-state-disabled{
         opacity: 1 !important;
+
+        .x-datePickerResponsive.s-datePickerResponsive{
+              background: #F7F7F7 !important;
+        } 
        & input.k-textbox{
 
            @extend %texbox-input-disable;
@@ -112,6 +116,9 @@ margin-top: 15px;
     background: #F5F5F5;
     border-radius: 10px;
     box-shadow: $calendar-box-shadow !important;
+    .k-footer a{
+        color:#DA3382 !important ;
+    }
     .k-calendar{
         background: none;
         border-radius: 10px;
@@ -180,8 +187,8 @@ margin-top: 15px;
                         a {
                             color:$calendar-body-butoon-color-text-hover ;
                             background: none;
-                            border-radius:50%;
-                            border: $calendar-body-butoon-border-hover;
+                            border-radius:100px;
+                            background: #BB2E71 !important;
                             font-weight: 700;
                         }
                     }

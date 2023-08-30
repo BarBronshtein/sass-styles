@@ -1,6 +1,6 @@
 
 
-@use '../variable/variable' as *;
+
 .xstyle-intlphonenumber-wrapper{
     margin-top: 15px;
 
@@ -24,7 +24,7 @@
        }
 
        & label{
-           color: #CCCCCC !important; 
+           color: $control-caption-color-text-disable !important; 
          }
    }
 

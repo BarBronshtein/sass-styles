@@ -1,0 +1,502 @@
+
+@media (max-width: 1280px) {
+
+    //calnder//
+
+.k-animation-container .k-popup:has(.k-calendar-table){
+
+
+    // header calnder //
+
+    .k-header.k-hstack{
+
+           .k-nav-fast{
+
+            span{
+
+                font-size: 12px; 
+
+            }
+           }
+
+
+    }
+
+
+    // body calnder //
+
+  
+
+    .k-calendar-view.k-calendar-yearview,
+    .k-calendar-view.k-calendar-decadeview{
+
+        table{
+            tbody{
+              tr{
+    
+                td.k-calendar-td{
+            
+                    a{
+            
+                        font-size: 12px;
+                       
+                    }
+                }
+              }
+            }
+        }
+    }
+
+
+
+
+    // month calnder //
+
+       .k-calendar-view.k-calendar-monthview{
+             th{
+
+                font-size: 12px;
+             }
+
+             td{
+
+                font-size: 12px;
+    
+             
+             }
+
+       }
+
+    // footer calnder //
+    .k-footer{
+
+        a{
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+
+}
+
+.transportationDetailes .xstyle-dynamiclabelcontrol-wrapper .x-control-content-wrapper span,
+.transportationDetailes .xstyle-dynamiclabelcontrol-wrapper .x-control-content-wrapper span,
+.transportationDetailes .x-control-caption-wrapper label,
+.orderMain .orderBody .x-control-caption-wrapper label,
+.orderMain .orderBody .x-control-content-wrapper span{
+    font-size: 12px !important;
+    line-height: 115% !important;
+}
+
+.orderNumber .xstyle-textcontrol-wrapper label{
+    font-size: 12px !important;
+    margin-top: -2px;
+}
+
+.orderNumber .xstyle-textcontrol-wrapper span{
+    font-size: 12px !important;
+}
+
+.x-dynamic-label-control.s-dynamic-label-control{
+    font-size: 14px;
+   }
+   .orderNumber .xstyle-textcontrol-wrapper input.k-textbox{
+    font-size: 12px !important;
+   }
+   
+}
+
+.transportationDetailes .xstyle-textcontrol-wrapper input.x-textbox, 
+.transportationDetailes .xstyle-textcontrol-wrapper input.x-date, .transportationDetailes .xstyle-date-wrapper input.x-textbox, 
+.transportationDetailes .xstyle-date-wrapper input.x-date, .transportationDetailes .xstyle-timepicker-wrapper input.x-textbox,
+ .transportationDetailes .xstyle-timepicker-wrapper input.x-date, 
+.transportationDetailes .xstyle-intlphonenumber-wrapper input.x-textbox,
+ .transportationDetailes .xstyle-intlphonenumber-wrapper input.x-date{
+    margin-top: 2px;
+ }
+
+    //header//
+
+    header.navbar-fixed-top.header-suppliers{
+
+        height: 90px;
+
+        .mobileView .helloText span{
+            font-size: 14px;
+        }
+        
+        .mobileView .LastLoginDetails span{
+            font-size: 12px;
+        }
+
+        .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4 label,.details .left span{
+
+            font-size: 13px;
+            line-height: 30px !important;
+        }
+        .details .left a{
+            font-size: 12px;
+        }
+
+        .details .left{
+            .xstyle-dynamiclabelcontrol-wrapper{
+                height: 20px;
+            }
+        }
+        
+    }
+
+    //button//
+
+    .gridHeaderButton button, .xstyle-buttoncontrol-wrapper button{
+
+        height: 40px !important;
+        font-size: 14px;
+    }
+
+    .k-window:has(.k-edit-form-container) button,.k-window:has(.k-edit-form-container) button.k-button-solid.k-button-solid-primary, .gridHeaderButton button, .xstyle-buttoncontrol-wrapper button{
+        height: 40px !important;
+        font-size: 14px !important;
+    }
+
+    .gridHeaderButton .spicelBTN button, .xstyle-buttoncontrol-wrapper.spicelBTN button{
+        height: 40px !important;
+        font-size: 14px;
+    }
+
+
+    .greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper{
+        width: 40px;
+        height: 40px;
+
+        .k-icon{
+            font-size: 25px;
+        }
+    }
+
+
+    .gridHeaderButton .icon-btn button{
+        width: 40px !important;
+    }
+
+
+    .gridHeaderButton button span {
+        font-size: 25px;
+        right: -4px;
+    }
+
+    .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button,
+    #TafnitCore_SaaSServer_Portal_Default_UI_WizardInput .col:has(.xstyle-upload-wrapper) .k-upload-button.k-button{
+        height: 40px !important;
+
+        & >span{
+            font-family: 'Heebo';
+            font-size: 14px;
+        }
+    }
+
+    //textfaild//
+
+    .xstyle-textareacontrol-wrapper textarea, 
+    .xstyle-intlphonenumber-wrapper.k-state-disabled input, 
+    .xstyle-intlphonenumber-wrapper input, 
+    .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, 
+    .xstyle-timepicker-wrapper input, 
+    .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, 
+    .xstyle-autocomplete-wrapper .k-autocomplete, 
+    .k-window:has(.k-edit-form-container) .k-input.k-textbox, 
+    .k-window:has(.k-edit-form-container) .k-numerictextbox, 
+    .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, 
+    .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, 
+    .k-filter-menu > .k-filter-menu-container > .k-datepicker, 
+    .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, 
+    .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, 
+    .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, 
+    .xstyle-date-wrapper span.k-datepicker, 
+    .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox, 
+    .xstyle-textcontrol-wrapper input{
+        height: 40px;
+        font-size: 13px !important;
+    }
+
+    .xstyle-textareacontrol-wrapper label, 
+    .xstyle-intlphonenumber-wrapper label, 
+    .xstyle-timepicker-wrapper label, 
+    .xstyle-autocomplete-wrapper label, 
+    .k-window:has(.k-edit-form-container) .k-form-field label, 
+    .xstyle-idropdownlist-wrapper label, 
+    .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label{
+        font-size: 12px;
+    }
+
+    .xstyle-autocomplete-wrapper .k-autocomplete input{
+        height: 40px !important;
+        font-size: 12px;
+    }
+
+    .xstyle-date-wrapper button span::before{
+        left: -30px;
+    }
+
+
+    .xstyle-idropdownlist-wrapper .k-input-button{
+        top: 6px;
+    }
+
+
+    .k-button.k-input-button{
+        top: 7px;
+    }
+
+   //Drawer//
+
+   .k-drawer-overlay.k-drawer-right .k-drawer{
+    width: 40px;
+   }
+
+   .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] > span {
+    font-size: 20px;
+    right: -7px;
+   }
+
+   .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item]{
+    padding: 0;
+   }
+
+   .k-drawer .k-panelbar .k-item .k-panelbar-item-text{
+    font-size: 14px;
+   }
+
+
+
+   .k-drawer-container .k-drawer .k-drawer-wrapper .x-dynamic-label-control{
+    font-family: 'Heebo';
+   }
+
+
+   //title//
+
+   .greyPanel .x-section-header-wrapper .x-section-header{
+    font-size: 18px;
+   }
+
+   .portalGrid h4{
+    font-size: 14px;
+   }
+
+
+   //checkbox//
+
+   .xstyle-checkbox-wrapper label{
+    font-size: 13px;
+   }
+
+   //link//
+
+   .xstyle-ilink-wrapper{
+          
+    & a{
+     font-size: 13px;
+    }
+
+   }
+
+.xstyle-kicon-wrapper.back .x-kicon-caption{
+    font-size: 13px;
+}
+
+   //main cube in dashboard//
+
+.cube.cubeFix .x-dynamic-label-control{
+    font-size: 12px;
+}
+
+.cube.cubeFix .shekel-wrapper .x-dynamic-label-control{
+    font-size: 28px;
+}
+
+
+//popup//
+
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div span{
+    font-size: 14px !important;
+}
+
+.k-window .ttitle-border span{
+    font-size: 18px;
+}
+.k-window .ttitle-border{
+    padding: 2px 5px !important;
+}
+//upload//
+
+.xstyle-upload-wrapper .k-upload-async .k-file-name{
+    font-size: 12px !important;
+}
+
+
+////
+.total-panel .labelTitle label,
+.total-panel .labelTitle span.s-dynamic-label-control.x-label,
+.total-panel .totalCol .labelTitle.xstyle-textcontrol-wrapper label,
+.total-panel .totalCol .labelTitle.xstyle-textcontrol-wrapper input{
+    font-size: 14px !important;
+}
+
+//grid//
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button > .k-i-close.k-button-icon:before,
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button > .k-i-edit.k-button-icon:before{
+    font-size: 20px !important;
+}
+
+.k-grid-footer td:has(div){
+    font-size: 12px !important;
+}
+
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button{
+    height: 40px !important;
+}
+.k-grid .k-grid-header th.k-header{
+    font-size: 12px;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td{
+    height: 40px;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td .icon-xtab-xls{
+    font-size: 20px;
+}
+
+
+
+
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow button{
+    height: 40px;
+    font-size: 14px;
+}
+
+.k-grid .k-grid-header {
+    padding: 4px 0px;
+}
+
+.k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > span{
+    font-size: 12px;
+}
+
+.k-i-filter{
+    height: 40px;
+}
+
+.order-hedr .x-kicon span{
+    font-size: 13px !important;
+}
+
+
+
+.orderNumber .xstyle-textcontrol-wrapper{
+    height: 40px;
+}
+
+
+.loginTitle2 .x-dynamic-label-control.s-dynamic-label-control{
+    font-size: 24px;
+}
+.loginTitle .x-dynamic-label-control.s-dynamic-label-control{
+    font-size: 64px;
+}
+
+
+#TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-button-wrapper .k-button, 
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .x-button-wrapper .k-button, 
+#TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .x-button-wrapper .k-button, 
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody .x-button-wrapper .k-button, 
+#TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .x-button-wrapper .k-button, 
+#TafnitCore_ToDo_UI_Login mainbody .x-button-wrapper .k-button, 
+#TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .x-button-wrapper .k-button, 
+#TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-button-wrapper .k-buttonP{
+
+    line-height: 42px !important;
+}
+
+#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice{
+
+
+    .labelTitle{
+
+
+
+        label{
+    
+            font-size: 14px !important;
+ 
+        }
+
+        span{
+            font-size: 14px !important;
+        }
+    }
+
+    .list{
+ 
+
+
+        label{
+
+            font-size: 14px !important;
+        }
+
+        span{
+            font-size: 14px !important;
+        }
+
+    }
+
+}
+
+
+
+#TafnitCore_SaaSServer_Portal_Default_UI_userDetailes{
+
+    .list{
+
+        span{
+          font-size: 12px !important;
+          line-height: 30px !important;
+        }
+    
+        label{
+          font-size: 12px !important;
+          line-height: 130% !important;
+        }
+      }
+
+      .ttitle-border {
+        padding: 3px 5px !important;
+    
+        span{
+          font-size: 18px !important;
+        }
+      }
+    
+      .text-secondary{
+        span{
+          font-size: 12px !important;
+          line-height: 130% !important;
+  
+        }
+      }
+
+      .text-spicel{
+        label{
+            font-size: 12px !important;
+            line-height: 30px !important;
+     
+        }
+      }
+        
+
+}
+
+

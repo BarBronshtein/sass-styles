@@ -1,77 +1,7 @@
 
 
-@import'../../../../../base/variables/masterVariable';
-// PALETTE 
-$Colors: (
-"bg-main-screen": #F8F8F8,
-"bg-qube": #ffffff,
-"button-bg": #ffffff,
-"button-icons": #7d0a8c,
-"button-important-bg": #7d0a8c,
-"button-important-icon": #ffffff,
-"button-important-text": #ffffff,
-"button-text-defualt": #000000,
-"contacts-menu": #037194,
-"drawer": #650872,
-"drawer-icon-openclose": #ddc3e6,
-"drawer-icons": #ffffff,                
-"drawer-line": #690679,
-"grid-bg-filtered": #f5f5f5,
-"grid-button-filter-button-second": #d9d9d9,
-"grid-icon-filer-on": #FF780B,
-"grid-icon-filter-off": #7e7a7a,
-"grid-icons": #FF780B,
-"grid-line": #ffffff,
-"grid-page-number": #ddc3e6,
-"grid-popup-filter-bg": #f5f5f5,
-"grid-popup-filter-bg-button-off": #ffffff,
-"grid-popup-filter-bg-subjec": #d9d9d9,
-"grid-popup-filter-bg-value ": #ffffff,
-"grid-popup-filter-button": #FF780B,
-"grid-popup-filter-button-text": #ffffff,
-"grid-popup-filter-stroke": #d9d9d9,
-"grid-popup-filter-title": #FF780B,
-"grid-stroke-under-line": #f5f5f5,
-"grid-text-defualt": #000000,
-"grid-text-title": #7e7a7a,
-"grid-title-filtered": #7e7a7a,
-"main-color": #7d0a8c,
-"page-number-current": #7d0a8c,
-"popup-bg": #7d0a8c,
-"popup-bg-press": #690679,
-"popup-bg-primary-base": #fafafa,
-"popup-icon": #ffffff,
-"popup-icons": #7d0a8c,
-"popup-stroke": #f5f5f5,
-"popup-text": #ffffff,
-"popup-text-defualt": #000000,
-"radio-button-off": #000000,
-"radio-button-on": #7d0a8c,
-"requier": #ff7a00,
-"taxt-notification": #15b0c5,
-"text": #7e7a7a,
-"text-defualt": #000000,
-"text-disable": #d9d9d9,
-"border-color": #d9d9d9,
-"text-link": #7d0a8c,
-"user-screen-button": #f5f5f5,
-"user-screen-button-primary-base": #ffffff,
-"user-screen-color-icon": #7d0a8c,
-"warning": #ee0909,
-"border-color-defualt": black,
-"checkbox-color": #7B098B,
-"login-screen-boxshadow": rgba(123, 9, 141, 8%),
-"login-screen-border" : #7d0a8c,
-"dashboardpage-boxshadow-color": rgb(0 45 65 / 8%),
-"grid-scoller-background": #FF780B,
-"overview-screen-color": #7B098B,
-);
 
 
-// COMPONENTS 
-$componentsVariables: (
-
-);
 
 
 
@@ -80,27 +10,55 @@ $mandatory-color: #DA3382;
 
 
 //grid//
+$grid-header-text-color:#868387;
+$grid-header-background:#F8F9FA ;
+$grid-tr-background-hover:#F8F9FA  ;
+$grid-tr-background-k-alt:#FCFCFC  ;
+$grid-header-serach-float:right;
+$grid-header-serach-border:1px solid #ccc;
+$grid-header-serach-border-radius:1px solid #ccc;
+$grid-header-title-background: none;
+$grid-header-toolbar-border-color:#fff;
+$grid-header-filter-active-background:#ccc;
+$grid-header-filter-active-color:#fff;
+$grid-border-td: 1px solid #F5F5F5;
 $grid-filter-icon:#DA3382;
+$grid-color-link-td:#DA3382;
+$grid-scrollbar-color:#da3382;
+$grid-scrollbar-color-hover:#bb2e71;
 $Grid-color-title-th:#323C4B ;
 $Grid-color-text-td:#323C4B ;
 $grid-icon-search-color:#007FC1;
 $Grid-checkBox-bg:#007FC1;
 $Grid-checkBox-border:#007FC1;
+$grid-content-padding:10px 0px;
 // drower //
 
 $drawer-background-color:#FFFFFF;
 $drawer-box-shdow:0px 0px 10px rgba(2, 111, 158, 0.2);
+$drawer-k-drawer-item-box-shdow:0px 1px 1px rgba(0, 0, 0, 0.1);
+$drawer-k-drawer-item-color:#004B93;
 $drawer-icon-color:#004070;
 $drawer-color-text:#323C4B;
 $drawer-color-link:#004070;
 $overlay-color: #052136;
 
+//footer//
+
+$Footer-bg:#ffff;
+$Footer-box-shadow:0px -1px 10px rgba(50, 60, 75, 0.2);
+$Footer-button-bg: #FF780B  ;
+
 // button //
 
 $Button-bg-hover:#BB2E71;
+$Button-bg-disabled:#FFFFFF;
+$Button-border-disabled:#ADB5BD;
+$Button-color-disabled:#ADB5BD;
 $Button-color-text: #FFFFFF;
 $Button-color-border:none;
 $Button-color-border-focus: #FAC9E0;;
+$Button-color-filter-focus:drop-shadow(0px 0px 6px rgba(255, 120, 11, 0.2));
 $Button-color-icon:#DA3382;
 $Button-bg:#DA3382;
 $Button-float-bg:#007FC1;
@@ -112,7 +70,26 @@ $spicel-button-bg:#FFFFFF;
 $spicel-button-color-text:#DA3382;
 $spicel-button-color-border:1px solid #DA3382;
 
+//messagebox//
 
+$messageBox-bg:#FFFFFF;
+$messageBox-box-shaow:  0px 0px 6px rgba(218, 51, 130, 0.2);
+$messageBox-color-icon-close:#7E7B7B;
+$messageBox-color-icon:#02C467;
+$messageBox-color-text:#323C4B;
+$messageBox-bg-button:#DA3382;
+$messageBox-bg-button-focus:#DA3382;
+$messageBox-bg-button-hover:#BB2E71;
+
+//tooltip//
+
+$tooltip-box-shadow:0px 0px 5px rgba(9, 79, 141, 0.25) ;
+
+
+//upload//
+$upload-border-file:1px solid #DA3382;
+$upload-color-name-file: #DA3382;
+$upload-color-text-success: #4194E4;
 
 /*controls*/
 $control-caption-color-text: #323C4B;
@@ -223,8 +200,20 @@ $B2B-header-text-defult:#000000;
 $B2B-header-link-color:#DA3382;
 
 
+//total-panel//
+
+$total-panel-border-bottom:1px solid #8E8E8E;
+$total-panel-label-color: #8E8E8E;
+$total-panel-span-color: #000000;
+$total-panel-totalCol-label-color: #4E4E4E;
+$total-panel-totalCol-input-color: #7B098B;
+$total-panel-total-body-row2-color: #650872;
+
+//steper//
 
 
+$steper-bg:#323C4B;
+$steper-color-text:#323C4B;
 
 //label//
 

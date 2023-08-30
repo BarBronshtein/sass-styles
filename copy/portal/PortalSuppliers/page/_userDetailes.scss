@@ -1,0 +1,83 @@
+
+
+#TafnitCore_SaaSServer_Portal_Default_UI_userDetailes{
+
+    .list{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        height: 25px;
+        span{
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: #000000;
+        }
+    
+        label{
+          font-family: "Heebo";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: $window-text-special-color;
+          width: max-content;
+          margin-top: 5px;
+    
+        }
+      }
+
+      .ttitle-border {
+        padding: 7px 5px !important;
+        border-bottom: $window-title-border; 
+        border-top: $window-title-border; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    
+        span{
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 120%;
+          text-align: center !important;
+          color: $window-title-color;
+        }
+      }
+    
+      .text-secondary{
+        span{
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: #000000;
+          margin-bottom: 20px;
+        }
+      }
+
+      .text-spicel{
+        label{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: $window-text-special-color;
+            margin-bottom: 10px;
+        }
+      }
+        
+    .col-list{
+      padding-bottom: 15px !important;
+      
+    }
+
+}
+
+#TafnitCore_SaaSServer_Portal_Default_UI_userDetailes .k-grid-header{
+  display: none;
+}

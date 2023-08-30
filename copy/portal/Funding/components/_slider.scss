@@ -1,7 +1,42 @@
+.col-slider {
 
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    align-items: center;
+}
 
  .xstyle-islider-wrapper{
     margin-top: 15px;
+    align-items: center;
+
+
+    label{
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: right;
+        color: #323C4B;
+    }
+    &.car-icon{
+        .k-slider-track span.k-draghandle::before{
+
+            content: "\e9ee";
+            color: rgb(15, 111, 183) !important;
+            font-family: 'icomoon' !important;
+            font-size: 30px;
+        }
+        .k-slider-track span.k-draghandle::after{
+
+            content: "\e9ef";
+            color: rgb(57, 170, 253) !important;
+            font-family: 'icomoon' !important;
+            font-size: 30px;
+            top: 5px;
+            position: relative;
+        }
+    }
 
     .x-islider-wrapper{
         margin-top: 15px;
@@ -106,5 +141,22 @@
             border: none !important;
             background: none !important;
         }
+    }
+}
+
+
+.xstyle-dynamiclabelcontrol-wrapper.slider-sum{
+  
+
+    span{
+        overflow: initial;
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 700 !important;
+        font-size: 32px;
+        line-height: 30px;
+        color: #007FC1 !important;
+        text-align: left !important;
+        padding-left: 33px;
     }
 }

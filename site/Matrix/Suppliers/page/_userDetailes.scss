@@ -1,0 +1,101 @@
+
+
+#TafnitCore_SaaSServer_Portal_Default_UI_userDetailes{
+ .toolbar.x-embeddedToolbar span.k-searchbox{
+      background: #FFFFFF;
+      border: 1px solid #A6A6A6 !important;
+      border-radius: 10px;
+      height: 40px;
+
+      input{
+        text-align: right;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        color: #000000;
+        &::placeholder{
+          font-family: 'Heebo';
+        }
+      }
+    }
+    .list{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        height: 25px;
+        span{
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: #000000;
+        }
+    
+        label{
+          font-family: "Heebo";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: #690779;
+          width: max-content;
+          margin-top: 5px;
+    
+        }
+      }
+
+      .ttitle-border {
+        padding: 7px 5px !important;
+        border-bottom: 1px solid #7B098B; 
+        border-top: 1px solid #7B098B; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    
+        span{
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 120%;
+          text-align: center !important;
+          color: #7B098B;
+        }
+      }
+    
+      .text-secondary{
+        span{
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: #000000;
+          margin-bottom: 20px;
+        }
+      }
+
+      .text-spicel{
+        label{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #7B098B;
+            margin-bottom: 10px;
+        }
+      }
+        
+    .col-list{
+      padding-bottom: 15px !important;
+      
+    }
+
+}
+
+#TafnitCore_SaaSServer_Portal_Default_UI_userDetailes .k-grid-header{
+  display: none;
+}

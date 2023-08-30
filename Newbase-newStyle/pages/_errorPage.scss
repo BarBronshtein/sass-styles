@@ -1,0 +1,100 @@
+
+
+
+
+#TafnitCore_System_UI_App_ErrorPage{
+
+   
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1600;
+
+    & .logoErro {
+        background: none ;
+        border: none ;
+        box-shadow: none;
+        margin-bottom: 0 ;
+        padding-bottom: 0 ;
+        & .xstyle-image-wrapper {
+            width: 50%;
+            float: left ;
+            margin-left: -25px;
+        }
+    }
+
+    & .row{
+        background: none ;
+        border: none ;
+        box-shadow: none;
+    }
+
+    & .k-icon{
+        font-size: 45px;
+        color: #8C4D9C ;
+
+
+    }
+
+    & .titleErro{
+
+        padding: 0 ;
+        max-width: none ;
+          
+        & .xstyle-dynamiclabelcontrol-wrapper {
+
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 700 ;
+                font-size: 24px ;
+                line-height: 50px ;
+                text-align: right ;
+                color: #000000 ; 
+            }
+        }
+    }
+
+    & .lineErro {
+        border-top: 1px solid #8C4D9C ;
+        margin-bottom: 10px ;
+    }
+
+    & .messageErro{
+        font-family: 'Heebo' ;
+        font-style: normal ;
+        color: #000000 ;
+        font-weight: 400 ;
+        font-size: 24px ;
+        line-height: 35px ;
+        text-align: right ;
+        max-width: 90% ;
+        flex: 0 0 90%;
+        padding: 0 ;
+    }
+}
+
+@media only screen and (max-width: 1000px)   {
+    #TafnitCore_System_UI_App_ErrorPage{
+        top: 0% ;
+        transform: none ;
+
+        & .logoErro.border{
+           margin-bottom: 90px ;
+        }
+
+        & .titleErro .xstyle-dynamiclabelcontrol-wrapper span.x-dynamic-label-control{
+            font-size: 14px ;  
+        }
+
+        & .messageErro{
+            & span.x-dynamic-label-control{
+                font-size: 14px ;
+            }
+        }
+    }
+}

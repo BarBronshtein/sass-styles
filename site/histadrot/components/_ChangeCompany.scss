@@ -1,5 +1,6 @@
 
 
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser),
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany){
     background: #FFFFFF !important;
     box-shadow: 0px 10px 10px rgba(1, 103, 177, 0.3) !important;
@@ -51,7 +52,7 @@
         }
     }
   }
-    & #TafnitCore_System_UI_App_Tools_ChangeCompany{
+    & #TafnitCore_System_UI_App_Tools_ChangeCompany,#TafnitCore_System_UI_App_Tools_ChangeUser{
 
         & .k-hidden{
 

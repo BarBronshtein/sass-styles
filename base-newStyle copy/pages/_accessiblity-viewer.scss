@@ -1,0 +1,494 @@
+
+//row//
+$accessblity-viewer--row-main-border:1px solid #D9D9D9;
+$accessblity-viewer--tile-color:#0082AB; 
+$accessblity-viewer--bg-main:#F9F9F9; 
+
+//control//
+$accessblity-viewer--control-label-color:#4B4B4B;
+$accessblity-viewer--control-border:1px solid #C8C8C8;
+$accessblity-viewer--control-border-focus:1px solid #059FCF;
+$accessblity-viewer--control-box-shdow-focus:0px 4px 4px 0px rgba(166, 203, 221, 0.20);
+$accessblity-viewer--control-color-input:#000000;
+$accessblity-viewer--control-label-color-disabled:#CCCCCC;
+$accessblity-viewer--control-icon-color: #0082AB;
+$accessblity-viewer--control-placeholder-color:#BBBBBB;
+
+//checkbox//
+$accessblity-viewer-CheckBox-border:  #000000;
+$accessblity-viewer-CheckBox-border-checked: #059FCF;
+$accessblity-viewer-CheckBox-color-checked:#059FCF;
+$accessblity-viewer-CheckBox-caption:#000000;
+
+#TafnitCore_System_UI_App_Tools_Accessibility_Viewer{
+
+         margin-top: 0 !important;
+         padding: 0;
+    .bg-img {
+      top: 0;
+      z-index: 1;
+    }
+   //freehandhtml//
+
+   .xstyle-freehandhtml-wrapper{
+
+    .x-control-caption-wrapper{
+        label{
+            color:  #000;
+            text-align: right;
+            font-family: 'Heebo';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .x-freehandhtml-wrapper{
+
+        
+
+        .flex.space-around{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 20px;
+            div{
+                display: grid;
+                border-bottom: 1px solid #ECECEC;
+                height: 64px;
+                padding: 0px 10px 15px 10px;
+                grid-auto-rows: 25px;
+                margin-bottom: 30px;
+
+                span{
+                    color: #000;
+                    text-align: center;
+                    font-family: Heebo;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; 
+                    &.label{
+                        color:  #0082AB;
+                        text-align: center;
+                        font-family: Heebo;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                    }
+                }
+            }
+
+        }
+    }
+   }
+
+
+  .x-freehandhtml-wrapper{
+    color:  #000;
+    text-align: right;
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  // link //
+
+  .link_Comp {
+    color: #0EAADC;
+    text-align: right;
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+
+    //layout//
+
+   mainbody{
+
+    .row-main{
+        border-radius: 10px;
+        border: $accessblity-viewer--row-main-border;
+        padding: 30px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 80%;
+
+      &.full-width{
+        width: 100%;
+      }
+      
+        & > .x-cell,.col{
+            padding: 0;
+        }
+    }
+
+    .row-hidden{
+        padding: 0;
+        border: none !important;
+        width: 80%;
+        margin: auto;
+        & > .x-cell,.col{
+            padding: 0;
+        } 
+
+        &.full-width{
+          width: 100%;
+        }
+    }
+   }
+
+   .main-title{
+    margin-top: 30px;
+    span{
+        font-family: 'Heebo';
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 64px;
+        color: $accessblity-viewer--tile-color;
+    }
+   }
+
+
+   //class //
+
+   a{
+    color: #0EAADC;
+    text-align: right;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  
+   }
+
+   .text-center span{
+    text-align: center !important;
+   }
+   .text-SCA{
+    span{
+    color: #000;
+    text-align: right;
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+  }
+
+  .list-details{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    height: 25px;
+
+    .k-icon{
+      color:#0082AB;
+    }
+
+    .xstyle-dynamiclabelcontrol-wrapper{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 5px;
+      & >.x-cell{
+        max-width: 100%;
+      }
+  
+  
+      span{
+        color: #5E6164;
+        font-family: 'Heebo';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+  
+      label{
+        color: #000;
+        font-family: 'Heebo';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+   .list{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    height: 25px;
+
+    & >.x-cell{
+      max-width: 100%;
+    }
+
+
+    span{
+      color: #000;
+      text-align: right;
+      font-family: 'Heebo';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    label{
+      color: #000;
+      text-align: right;
+      font-family: 'Heebo';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+}
+ .title-col-SCA{
+    label{
+        color:  #000;
+        font-family: 'Heebo';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 15px;
+    }
+ }
+
+ .button-flex{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    padding-left: 15px !important;
+ }
+
+ .flex-col{
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+
+    & .col{
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+ }
+ .title-SCA,.title-details{
+    margin-top: 20px;
+    span{
+        color:  #000;
+        font-family: 'Heebo';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+ }
+ .postion-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px !important;
+ }
+   .grid-3col{
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        align-items: center;
+        gap: 15px;
+   }
+
+   .grid-2col{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 40px;
+
+}
+
+.padding-checkbox{
+    padding: 10px 20px !important;
+}
+
+   .bg-main{
+    background: $accessblity-viewer--bg-main;
+   }
+
+   .title-col{
+    height: 40px;
+    label,span{
+    color:  #000;
+    text-align: right;
+    font-family: 'Heebo';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    }
+
+
+   }
+
+   .grid-3col-auto{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 5px;
+   }
+
+   .grid-4col{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    margin-top: 20px;
+   }
+
+   .text-default{
+    span{
+        color: #000;
+        text-align: right;
+        font-family: 'Heebo';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+   }
+
+   
+
+
+}
+
+//mobile//
+
+@media (max-width: 1200px) {
+
+  #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .xstyle-freehandhtml-wrapper .x-freehandhtml-wrapper .flex.space-around div{
+    padding: 0px 10px 40px 10px;
+    grid-auto-rows: 40px;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+}
+  @media (max-width: 850px) {
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .bg-img{
+      position: sticky;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer mainbody .row-main{
+      width: 95%;
+      padding: 30px;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .main-title span{
+      font-size: 32px;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer mainbody .row-hidden{
+      width: 95%;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .title-col label, #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .title-col span{
+      font-size: 18px;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .x-freehandhtml-wrapper{
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 140%;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .list{
+      height: 30px;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer a,
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .link_Comp{
+      font-size: 16px;
+      text-decoration: none !important;
+      margin-bottom: 10px;
+      &:focus,&:active{
+        font-weight: 700;
+      }
+    }
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .xstyle-freehandhtml-wrapper .x-freehandhtml-wrapper .flex.space-around div{
+      padding: 15px 10px 25px 10px;
+      grid-auto-rows: 24px;
+      margin-bottom: auto;
+      height: auto;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .xstyle-freehandhtml-wrapper .x-freehandhtml-wrapper .flex.space-around div span.label,
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .xstyle-freehandhtml-wrapper .x-freehandhtml-wrapper .flex.space-around div span,
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .text-default span{
+      text-align: right;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 140%;
+     
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .xstyle-freehandhtml-wrapper .x-freehandhtml-wrapper .flex.space-around{
+      display: block;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .xstyle-freehandhtml-wrapper .x-control-caption-wrapper label{
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .grid-2col{
+      display: block;
+
+      & .full-width{
+        margin-bottom: 0px;
+      }
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .list-details .xstyle-dynamiclabelcontrol-wrapper label{
+      font-size: 14px;
+    }
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .list-details .xstyle-dynamiclabelcontrol-wrapper span{
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .title-SCA span, #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .title-details span{
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .title-SCA, #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .title-details{
+
+      margin-top: 5px;
+      margin-bottom: 7px;
+    }
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .text-SCA span{
+      font-weight: 300;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .list label{
+      font-weight: 300;
+    }
+
+    #TafnitCore_System_UI_App_Tools_Accessibility_Viewer .list-details .xstyle-dynamiclabelcontrol-wrapper .x-control-content-wrapper{
+      margin-top: -2px;
+    }
+  }
+

@@ -1,0 +1,69 @@
+
+.xstyle-barcodetextcontrol-wrapper{
+    input.k-textbox.x-textbox{
+        padding-right: 40px;
+    }
+}
+
+
+
+.barcodeIcon {
+    left: 30%;
+
+    &.fas.fa-barcode {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        left: 0;
+    }
+}
+
+.x-text-with-button-wrapper {
+    .x-fild_block {
+        position: relative;
+        display: block;
+
+        >span {
+            border: 0;
+
+            input[dir="ltr"] {
+                text-indent: 2.5em;
+            }
+        }
+    }
+
+    .x-barcodeBtnContainer {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1px;
+        width: 40px;
+        height: 94%;
+        right: 0px;
+        left: auto;
+        border-right: 1px solid #a3d0e4;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+
+        .k-icon {
+            // left: 10px;
+
+            &.k-i-preview {
+                left: 10px;
+            }
+        }
+    }
+}
+
+.x-barcodeBtnContainer {
+    .k-icon {
+        &.k-i-preview {
+            left: 10px;
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

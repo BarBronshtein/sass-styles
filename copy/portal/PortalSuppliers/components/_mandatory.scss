@@ -1,5 +1,4 @@
 
-@use "../variable/variable" as *;
 
 //required-control//
 
@@ -11,7 +10,7 @@
 .xstyle-date-wrapper.mandatory,
 .xstyle-password-wrapper.mandatory,
 .xstyle-timepicker-wrapper.mandatory,
-.xstyle-autocomplete-wrapper   {
+.xstyle-autocomplete-wrapper.mandatory {
   :has(.x-control-caption-wrapper) {
     & label {
       padding-right: 10px;
@@ -22,7 +21,7 @@
         top: -5px;
         right: 3px;
         font-size: 8px;
-        color: #650872;
+        color: $mandatory-color;
       }
     }
   }
@@ -31,7 +30,7 @@
     background: none !important;
   }
 
-  & > div:nth-child(2) span {
-    border-bottom: none !important;
-  }
+
 }
+
+

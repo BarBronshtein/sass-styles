@@ -1,4 +1,11 @@
 
+
+
+
+
+.xstyle-upload-wrapper {
+    min-width: 300px;
+}
 .k-button-solid-base:focus{
     box-shadow: none !important;
     border: none;
@@ -6,7 +13,7 @@
 
 .k-upload-files.k-reset{
 
-    border-top: 1px solid #FF780B !important;
+    border-top: $upload-border-file !important;
 
     .k-file-group.k-icon{
         display: none;
@@ -18,10 +25,10 @@
         font-family: 'Assistant';
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 100%;
         text-align: right;
-        color: #FF780B;
+        color: $upload-color-name-file;
         white-space: break-spaces;
         margin-bottom: 5px;
     }
@@ -41,10 +48,10 @@
             font-family: 'Assistant';
             font-style: normal;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 100%;
             text-align: right;
-            color: #258DB9;
+            color: $upload-color-text-success;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;

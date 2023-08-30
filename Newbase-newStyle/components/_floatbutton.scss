@@ -1,0 +1,56 @@
+
+
+.xstyle-floatbuttonv2-wrapper{
+
+
+    &.k-state-disabled{
+        opacity: 1;
+    
+    .x-floatbutton {
+        border: 1px solid #ECECEC;
+        background: #FBFBFB ;
+        color: #C8C8C8;
+        opacity: 1;
+
+        span{
+            color: #C8C8C8;
+        }
+    }
+}
+    &.btn-small{
+        button{
+            height: 46px;
+        }
+    }
+    &.btn-medium{
+        button{
+            height: 60px;
+        }
+    }
+    button{
+    background:  #8EBBCF ;
+     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+     padding: 25px;
+     border-radius: 0;
+     height: 80px;
+    
+
+     & .k-icon{
+        color: white;
+     }
+
+     & .k-fab-text{
+        font-family: 'Heebo';
+        color: white;
+     }
+
+
+     &:hover{
+        background: #ACCEDD ;
+     }
+
+     &:focus{
+        background: #759BAC ;
+     }
+    }
+}

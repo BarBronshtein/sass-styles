@@ -1,19 +1,26 @@
-@use '../variable/variable' as *;
 
 
 
 
+.header-grid{
+  .gridHeaderButton{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+    padding: 0px;
+  }
+}
 
 // button bordr //
 .gridHeaderButton{
     display:grid;
     grid-template-columns: 1fr auto;
     gap: 15px;
-
+    padding: 0px;
     & .spicelBTN{
 
         & button{
-        @extend %spicel-button;
+        @extend %special-button;
         }
     }
 
@@ -22,24 +29,27 @@
         @extend %button;
 
       &:hover{
-        background: $Button-bg-hover;
-        opacity: 0.6;
-        color: $Button-color-text;
-        border: 1px solid $Button-color-border;
+        background: $button-bg-hover;
+        color: $button-color-text-hover;
+        border: 1px solid $button-color-border;
+
+        & span:before,& span:after{
+          color: $button-color-icon !important;
+        }
       }
 
       &:focus{
-        border: 1px solid $Button-color-border-focus;
+        background: $button-color-bg-focus;
+        box-shadow:$button-box-shadow-focus;
+
         opacity: 1;
       }
       & span{
-        color: $Button-color-icon !important;
-        &::before{
+        color: $button-color-icon !important;
+        font-size: 30px;
+        right: -2px;
 
-            font-size: 28px;
-            right: -6px;
-            
-        }
+
     }
 
    
@@ -64,24 +74,58 @@
         & button{
             width: 50px !important;
             min-width: auto;
+
         }
     }
   }
 
   .xstyle-buttoncontrol-wrapper{
-    & button{
-        @extend %spicel-button;
-        
+
+    &.spicelBTN{
+
+      & button{
+      @extend %special-button;
+
+
       &:hover{
-        background: $Button-bg-hover;
-        opacity: 0.6;
-        color: $Button-color-text;
-        border: 1px solid $Button-color-border;
+        background: $special-button-bg-hover;
+        color: $special-button-color-text-hover !important;
+        border:1px solid $special-button-color-border;
+        span::before{
+          color: $special-button-color-text-hover !important;
+        }
       }
 
       &:focus{
-        border: 1px solid $Button-color-border-focus;
+        background: $special-button-bg-focus;
+        color: $special-button-color-text-focus !important;
         opacity: 1;
+        span::before,span::after{
+          color: $special-button-color-text-focus !important;
+        }
+      }
+      }
+     }
+    & button{
+        @extend %button;
+        max-width: 200px;
+      &:hover{
+        background: $button-bg-hover;
+        color: $button-color-text-hover !important;
+        border:1px solid $button-color-border;
+        span::before{
+          color: $button-color-text-hover !important;
+        }
+      }
+
+      &:focus{
+        background: $button-color-bg-focus;
+        color: $button-color-text-focus !important;
+        box-shadow: $button-box-shadow-focus;
+        opacity: 1;
+        span:before{
+          color:  $button-color-text-focus !important;
+        }
       }
         }
 

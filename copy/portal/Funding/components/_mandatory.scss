@@ -1,5 +1,5 @@
 
-@use "../variable/variable" as *;
+
 
 //required-control//
        
@@ -11,10 +11,10 @@
 .xstyle-daterangev2-wrapper.mandatory,
 .xstyle-date-wrapper.mandatory,
 .xstyle-password-wrapper.mandatory,
-.xstyle-intlphonenumber-wrapper,
+.xstyle-intlphonenumber-wrapper.mandatory,
 .xstyle-timepicker-wrapper.mandatory,
 .xstyle-idropdownlist-wrapper.mandatory,
-.xstyle-autocomplete-wrapper   {
+.xstyle-autocomplete-wrapper.mandatory   {
   :has(.x-control-caption-wrapper) {
     & label {
       padding-right: 10px;

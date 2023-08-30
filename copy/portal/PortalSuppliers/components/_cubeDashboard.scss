@@ -1,16 +1,16 @@
 
-@use '../variable/variable' as *;;
+;
 
 
 
 .cube.cubeFix{
-    padding: 40px 20px 40px 40px;
+    padding: 40px 20px 40px 40px !important;
     height: 148px;
-    background: $Cube-dashboard-bg;
-    box-shadow: $Cube-dashboard-box-shadow;
-    margin-left: 20px;
+    background: $cube-dashboard-bg;
+    box-shadow: $cube-dashboard-box-shadow;
+    margin-left: 10px;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
 
     .x-dynamic-label-control{
         font-family: 'Heebo';
@@ -18,7 +18,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
-        color: $Cube-dashboard-colot-text;
+        color: $cube-dashboard-color-text;
     }
 
     .shekel-wrapper{
@@ -39,11 +39,11 @@
             font-weight: 700;
             font-size: 32px;
             line-height: 130%;
-            color: $Cube-dashboard-color-price;
+            color: $cube-dashboard-color-price;
         }
 
         .k-icon {
-          color: $Cube-dashboard-color-icon;
+          color: $cube-dashboard-color-icon;
         }
     }
 

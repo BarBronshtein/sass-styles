@@ -46,3 +46,31 @@
 
 
 }
+
+
+.k-window{
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(1, 103, 177, 0.3) !important;
+  border-radius: 8px;
+  width: 90% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  border: none !important;
+
+  .k-window-titlebar{
+    
+    background: none;
+    border: none;
+
+    span{
+      color: #727272;
+    }
+
+    .k-window-actions {
+      z-index: 50;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@use '../variable/variable' as *;
+
 
 
 
@@ -11,6 +11,8 @@
 
 
     th,td{
+
+
       & input.k-checkbox{
         border-color: $Grid-checkBox-border;
         border-radius: 50%;
@@ -35,6 +37,10 @@
         &::before{
         color: $grid-filter-icon !important ;
         font-weight: 300;
+        }
+
+        &.fa-circle::before{
+          color: #000000 !important;
         }
       }
     }
@@ -70,9 +76,10 @@
     }
 
     .k-grid-header {
-        background: none;
+        background: $grid-header-background;
         border: none;
         padding: $grid-content-padding;
+
 
         .k-grid-filter {
             &.k-state-active {
@@ -84,10 +91,18 @@
 
         tr {
 
+          &.k-alt{
+            background:$grid-tr-background-k-alt !important;
+          }
+
             &:hover,
             &:hover td {
                 background-image: none !important;
-                background-color: transparent !important;
+                background: $grid-tr-background-hover !important;
+
+                td{
+                  background: $grid-tr-background-hover !important;
+                }
             }
         }
         
@@ -114,7 +129,7 @@
 
                 span {
                     &:before {
-                        color: $grid-header-filter-color;
+                        color: $grid-filter-icon;
                     }
                 }
             }
@@ -129,63 +144,10 @@
         height: auto;
         overflow: auto;
 
-        tr {
-            transition: 0.6s all;
+       
 
-            &.k-grid-edit-row {
-                .k-numerictextbox {
-                    .k-numeric-wrap {
-                        border-color: $grid-edited-numeric-border-color;
 
-                        .k-link {
-                            background-color: $grid-edited-numeric-arrow-background-color;
-                            color: $grid-edited-numeric-arrow-color;
-                            transition: 0.2s all;
 
-                            &:hover {
-                                opacity: 0.7;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &:hover,
-            &:hover td {
-                background-image: none;
-                background-color: #EEF7FB  !important;
-                color: $Grid-color-text-td !important;
-            }
-
-            &.k-selected {
-                background: $grid-content-line-background-selected !important;
-                color: $grid-content-line-color-selected !important;
-
-                td {
-                    background: $grid-content-line-background-selected !important;
-                    color: $grid-content-line-color-selected !important;
-                }
-            }
-        }
-
-        td {
-            border: $grid-content-border;
-            border-left: $grid-content-border-left;
-            font-size: 14px;
-            padding: $grid-content-padding;
-
-            .col-template-val {
-                margin: 0;
-            }
-        }
-
-        .k-alt {
-            background: #FCFCFC !important;
-
-            @media only screen and (max-width:768px) {
-                background: #FCFCFC !important;
-            }
-        }
     }
 
 }
@@ -195,161 +157,6 @@
 .k-separator{
   border: none !important;
 }
-.grid-container {
-    margin: auto;
-    width: 99%;
-    margin-top: 28px;
-    margin-bottom: 40px;
-    justify-content: space-between;
-  }
-  
-  .grid-bt {
-    border: none;
-    background: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-  
-    &:hover {
-      border: none;
-    }
-  th
-    &:focus {
-      outline: 0px dotted;
-    }
-  }
-  
-  .grid-icon {
-    font-size: 30px;
-    color: map-get($map: $Colors , $key: grid-icons);
-  }
-  
-  .grid-border-bt {
-    margin-left: 20px;
-    background: map-get($map: $Colors , $key: grid-popup-filter-bg-button-off);
-    width: 50px;
-    height: 50px;
-    box-shadow: map-get($map: $Colors , $key: login-screen-boxshadow);
-    border-radius: 10px;
-  }
-  
-  .grid-groupButton {
-    width: auto;
-    margin-left: 0 !important;
-  
-    > button {
-      &:first-child {
-        padding-right: 15px !important;
-      }
-  
-      &:last-child {
-        padding-left: 15px !important;
-      }
-  
-      margin-top: 13px;
-    }
-  }
-  
-  .grid-import-bt {
-    width: 50px;
-    height: 50px;
-    background: map-get($map: $Colors , $key: grid-popup-filter-button);
-    box-shadow: 0px 0px 8px map-get($map: $Colors , $key: login-screen-boxshadow);
-    border-radius: 10px;
-  
-    > span {
-      color: map-get($map: $Colors , $key: grid-popup-filter-button-text);
-    }
-  }
-  
-  .grid-enable-bt {
-    opacity: 0.2;
-  }
-  
-  .grid-groupButton > button {
-    margin-top: 13px;
-  }
-  
-  .grid-import-bt {
-    width: 50px;
-    height: 50px;
-    background: map-get($map: $Colors , $key: grid-popup-filter-button);
-    box-shadow: 0px 0px 8px map-get($map: $Colors , $key: login-screen-boxshadw);
-    border-radius: 10px;
-  
-    > span {
-      color: map-get($map: $Colors , $key:grid-popup-filter-button-text );
-    }
-  }
-  
-  .grid-enable-bt {
-    opacity: 0.2;
-  }
-  
-  .grid-container-filter {
-    display: flex;
-    margin-bottom: 50px;
-  }
-  
-  .grid-filter-card {
-    font-size: 12px;
-    height: 30px;
-    background: map-get($map: $Colors , $key: grid-bg-filtered);
-    margin-right: 12px;
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-  }
-  
-  .grid-filter-icon {
-    margin-top: 9px;
-    color: rgb(0, 0, 0);
-  }
-  
-  .girid-label {
-    margin-top: 7px;
-    font-family: map-get($map: $typographyVariables, $key: -font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    margin-left: 15px;
-  }
-  
-  .grid-filter-title {
-    color: #7E7B7B;
-  }
-  
-  mainbody mainbody {
-      margin: 0px !important;
-     
-  }
-  
-
-  .k-pager-info.k-label{
-    color: map-get($map: $Colors, $key: text-defualt ) !important;
-  }
-  
-  .roundedNoneMobile{
-    padding: 0 !important;
-    margin: 0 !important;
-    border-radius: 10PX !important ;
-
-  }
-  
-  
-
-
-  #TafnitCore_WorkFlow_UI_MyTasks{
-    padding: 0 !important;
-  }
-
-
-
-    .k-pager-wrap.k-grid-pager.k-floatwrap{
-      display: none !important;
-    }
 
   
 
@@ -389,12 +196,16 @@
   
 
   }
-  
-  .k-grid-content.k-auto-scrollable{
 
-    scrollbar-face-color: #8733af;
+  .k-window-content{
+    margin-top: 20px;
+  }
+  
+  .k-grid-content.k-auto-scrollable,.k-window-content{
+
+    scrollbar-face-color: #bb2e71;
     scrollbar-track-color: #f3e9f8;
-    scrollbar-arrow-color: #8733af;
+    scrollbar-arrow-color: #bb2e71;
   
     /* width */
     /* Track */
@@ -414,12 +225,12 @@
     }
   
     &::-webkit-scrollbar-thumb {
-      background:#FF780B;
+      background:$grid-scrollbar-color;
       border-radius: 10px;
       
   
       &:hover {
-        background: #FF780B;
+        background:$grid-scrollbar-color-hover ;
         
       }
       }
@@ -427,33 +238,31 @@
   
     & >table>tbody>tr{
      
-    &:hover{
-      width: 1650px !important;
-      background: #FAF6FC !important;
-       }
+      &.k-alt{
+        background:$grid-tr-background-k-alt !important;
+      }
+
+        &:hover,
+        &:hover td {
+            background-image: none !important;
+            background: $grid-tr-background-hover !important;
+
+            td{
+              background: $grid-tr-background-hover !important;
+            }
+        }
     }
   
   
   
   
-    & >table>tbody>tr>td>button>span:before{
   
-      content: "\e91c" !important;
-      font-family: 'icomoon' !important;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      font-size: 28px !important;
-      color: #7B098B !important;
-    }
   
     & >table>tbody>tr>td>button{
       align-items: center;
       padding: 12px;
       padding-top: 17px;
-      width: 56.26px;
+  
       height: 50px;
       border: none !important;
       border-radius: 10px !important;
@@ -479,13 +288,33 @@
           text-align: right !important;
           color: $Grid-color-text-td !important ;
           border: none;
-          border-bottom: 1px solid #F5F5F5;
+          border-bottom:$grid-border-td;
           height: 50px ;
           padding-left: 19px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
           padding-right: 10px;
+
+          a{
+     
+
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 130%;
+            text-align: right;
+            color: $grid-color-link-td;
+            text-decoration: none;
+    
+            
+      &:hover {
+        color: $grid-color-link-td !important;
+        font-weight: 500;
+        text-decoration: underline !important;
+      }
+        }
          
         }
   
@@ -495,95 +324,6 @@
 
 
 
-
-     .k-grid-header{
-      border: none !important;
-      background: #F8F9FA !important;
-      margin-top: 15px;
-      padding: 10px 0px;
-     }
-
-     .k-grid-content.k-auto-scrollable{
-      border-right: none !important;
-      border-bottom: none !important;
-  
-
-     }
-
-
-
-
-
-
-
-     
-  .k-filter-menu {
-    background: map-get($map: $Colors, $key: grid-bg-filtered);
-    box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
-    border-radius: 10px;
-    border: none;
-    height: auto;
-    width: auto;
-    padding: 20px !important;
-  
-    > .k-filter-menu-container {
-  
-      padding-right: 5px;
-  
-      > {
-        .k-filter-help-text {
-          width: 114%;
-          background:none;
-          color: #007FC1;
-          margin-top: -7px;
-          margin-right: 0px;
-          height: 28px;
-          text-align:right;
-          border-top-right-radius: 10px;
-          border-top-left-radius: 10px;
-          padding-top: 12px;
-          font-family: map-get($map: $typographyVariables, $key: -font-family);
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 18px;
-        }
-  
-        .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
-            margin: auto;
-            margin-bottom: 15px;
-            margin-top: 10px;
-            box-sizing: border-box;
-            height: 35px;
-            right: 0;
-            opacity: 0.2;
-            border-bottom: 0.5px solid #d9d9d9 !important;
-            opacity: 1 !important;
-            font-family: 'Assistant';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            color: #000000;
-            background: none !important;
-            width: 100%;
-  
-          > button > span {
-            color: map-get($map: $Colors, $key: popup-text-defualt) !important;
-            font-size: 23px !important;
-            margin-left: 29px !important;
-          }
-        }
-  
-        .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid {
-         
-          height: 40px;
-          left: 0px;
-          background: map-get($map: $Colors, $key: bg-qube);
-          border: 0.5px solid map-get($map: $Colors, $key: border-color);
-          border-radius: 10px;
-        }
-  
         .k-action-buttons {
           display: flex;
           flex-direction: row !important;
@@ -603,7 +343,6 @@
             }
           }
         }
-      }
-    }
-  }
+   
+  
   

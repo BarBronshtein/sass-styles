@@ -1417,22 +1417,10 @@ mainbody mainbody {
   width: 1650px !important;
   background: #F8F9FA !important;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button > span:before, .k-window-content > table > tbody > tr > td > button > span:before {
-  content: "\e91c" !important;
-  font-family: "icomoon" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 28px !important;
-  color: #7B098B !important;
-}
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td > button, .k-window-content > table > tbody > tr > td > button {
   align-items: center;
   padding: 12px;
   padding-top: 17px;
-  width: 56.26px;
   height: 50px;
   border: none !important;
   border-radius: 10px !important;
@@ -2353,7 +2341,7 @@ mainbody mainbody {
   display: flex;
 }
 #TafnitCore_SaaSServer_Funding_B2C_UI_Main header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
-  width: 120px !important;
+  width: 85px !important;
   height: auto;
   margin-left: 5px;
 }

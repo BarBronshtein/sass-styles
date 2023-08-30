@@ -1,0 +1,75 @@
+
+
+
+
+
+
+@import './variable/variable';
+
+
+@import './components/button';
+@import './components/collapse';
+@import './components/header';
+@import './components/row';
+@import './components/textcontrol';
+@import './components/treeview-item';
+@import './components/dropdown';
+@import './components/popup';
+@import './components/toggleswitch';
+
+
+
+.bg-warning{
+    background: #29b0d975 !important;
+}
+
+.ux-studio-bottom-border{
+    border-bottom: 2px solid #074b5f !important;
+}
+.ux-studio-top-border{
+    border-top: 2px solid #074b5f !important;
+}
+.border{
+    border: none !important;
+}
+
+header{
+    border: none !important;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio{
+    width: 98%;
+
+
+.xstyle-itreeview-wrapper{
+    direction: ltr !important;
+    max-height: 450px;
+
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background:#ffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background:#29AFD9;
+        border-radius:10px;
+    }
+
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: darken(#29AFD9, 5);
+    }
+}
+
+   
+
+
+
+
+   
+
+}

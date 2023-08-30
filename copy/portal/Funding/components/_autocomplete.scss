@@ -2,7 +2,7 @@
 
 
 
-@use '../variable/variable' as *;
+
 
 
 
@@ -34,10 +34,23 @@
             border: $control-border-focus !important;
             }
         }
+        &::before{
+            content: "\f0d7";
+            font-family: "Font Awesome 5 PRO";
+            position: absolute;
+            color:$control-color-icon ;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 25px;
+            font-weight: 700;
+          }
     }
     & input{
       @extend %texbox-input;
       padding-right: 10px !important;
+
+  
       &.x-login-user-error{
         
         border-bottom: $control-border-error !important;

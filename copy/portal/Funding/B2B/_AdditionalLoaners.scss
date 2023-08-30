@@ -2,10 +2,32 @@
 
 #TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners{
 
-    margin-top: 50px !important;
+    margin-top: 60px !important;
+    .col-AddLoaner{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 30px;
 
+        .k-icon.icon-xtar-portal-refrash-lovim{
+            top: 2px;
+            font-size: 47px;
+
+            &:hover{
+                &::before{
+
+                    content: "\ea32";
+                }
+                &::after{
+
+                    content: "\ea33";
+                }
+            }
+        }
+    }
      .card-offer{
-        padding: 60px !important;
+    
 
         .wrapper-card-offer{
             min-height: auto;

@@ -1,0 +1,20 @@
+.xstyle-itreeview-wrapper {
+    .k-sprite {
+        font-size: 16px;
+    }
+}
+
+#TafnitCore_Archive_UI_SearchByKeywords {
+    ul.k-group.k-treeview-group li.k-item {
+
+        input{ 
+            display:block;
+        }
+        .k-treeview-toggle + .k-checkbox-wrapper input { 
+            display:none;
+        }
+        div + ul.k-group .k-treeview-toggle + .k-checkbox-wrapper input {
+            display:block;
+        }
+    }
+}

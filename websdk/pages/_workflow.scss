@@ -127,11 +127,88 @@ th .k-checkbox::before{
 
 }
 
+#TafnitCore_WorkFlow_UI_TaskHistory{
+    .xstyle-gridv4-wrapper {
+        margin-top: 100px !important;
+    }
+    
+    .row-tab{
+        display: grid !important;
+        grid-template-columns: auto auto auto auto 1fr;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+
+        .xstyle-dynamiclabelcontrol-wrapper{
+            span{
+                color: #000;
+                text-align: right;
+                font-family: 'Heebo';
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;  
+            }
+            
+            &.TabActive{
+                span{
+                    border-radius: 30px;
+                    padding: 10px 30px;
+                    color: #FFFFFF;
+                    background: var(--primary-500, #7B098B);  
+                }
+            }
+        }
+
+    }
+}
+#TafnitCore_xAgreements_UI_Ageements.container.pageContainer.xtafnit_pageContainer,#TafnitCore_WorkFlow_UI_TaskHistory.container.pageContainer.xtafnit_pageContainer{
+    width: 98% !important;
+    margin-top: 10px !important;
+    padding: 0;
+    .x-button-wrapper{
+        text-align: center;
+
+        button{
+            height: 37px !important;
+        }
+    }
+}
+#TafnitCore_xAgreements_UI_InvoiceDetailes{
+    .xstyle-gridv4-wrapper{
+        overflow: auto;
+
+        .x-grid-control {
+            width: 1300px;
+        }
+
+        &::-webkit-scrollbar {
+            border-radius: 10px;
+            position: absolute;
+            width: 10px;
+          }
+      
+          &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: #f0f0f0;
+          }
+      
+          &::-webkit-scrollbar-thumb {
+            background: map-get($map: $Colors, $key: main-color);
+            border-radius: 10px;
+      
+            &:hover {
+              background: map-get($map: $Colors, $key: main-color);
+            }
+          }
+    }
+}
 
 // toolbar workflow //
 
 #TafnitCore_xAgreements_UI_ApprovePayment,
-#TafnitCore_xAgreements_UI_InvoiceDetailes{
+#TafnitCore_xAgreements_UI_InvoiceDetailes,
+#TafnitCore_xAgreements_UI_CreateAgreement{
 
 //  .k-header.header.x-header.s-header {
 //         position: sticky !important;
@@ -141,6 +218,47 @@ th .k-checkbox::before{
         border: none !important;
     }
 
+
+    .rPayment {
+        height: 180px;
+        padding: 10px 20px;
+    }
+
+    .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper label, 
+    .rPayment .cubeMain-1 .xstyle-date-wrapper label, 
+    .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper label, 
+    .rPayment .cubeMain-2 .xstyle-date-wrapper label{
+        font-size: 14px !important;
+    }
+
+    .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper .k-textbox.x-textbox, 
+    .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper input.x-datePickerResponsive, 
+    .rPayment .cubeMain-1 .xstyle-date-wrapper .k-textbox.x-textbox, 
+    .rPayment .cubeMain-1 .xstyle-date-wrapper input.x-datePickerResponsive, 
+    .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper .k-textbox.x-textbox, 
+    .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper input.x-datePickerResponsive, 
+    .rPayment .cubeMain-2 .xstyle-date-wrapper .k-textbox.x-textbox, 
+    .rPayment .cubeMain-2 .xstyle-date-wrapper input.x-datePickerResponsive{
+        font-size: 14px !important;
+    }
+
+    .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper, 
+    .rPayment .cubeMain-1 .xstyle-date-wrapper, 
+    .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper, 
+    .rPayment .cubeMain-2 .xstyle-date-wrapper{
+        margin-top: 10px;
+        align-items: baseline;
+    }
+
+
+    .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper{
+        box-shadow: none !important;
+         padding: 0 !important;
+         border-radius: 0 !important;
+         margin-bottom: 15px;
+
+    }
+
     mainbody> .row{
         padding-top: 20px;
     }
@@ -148,10 +266,10 @@ th .k-checkbox::before{
  .k-toolbar.k-toolbar-resizable {
         margin-top: 0px !important;
         display: grid;
-        grid-template-columns: 1fr 300px;
+        grid-template-columns: 1fr auto;
         gap: 15px;
         width: 100%;
-        padding: 0;
+    
 
         &::before{
             content: none !important;
@@ -262,7 +380,9 @@ th .k-checkbox::before{
 #TafnitCore_xAgreements_UI_InvoiceDetailes,
 #TafnitCore_xAgreements_UI_ApprovePayment,
 #TafnitCore_Salary_UI_SubmitRequest{
-
+    .k-datepicker.k-input.x-datePickerResponsive.s-datePickerResponsive.x-datePicker-pc.s-datePicker-pc.k-input-solid.k-input-md.k-rounded-md{
+        border: none !important;
+    }
    
     .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper{
         box-shadow: none !important;

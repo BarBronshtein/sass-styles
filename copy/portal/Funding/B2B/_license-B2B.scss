@@ -1,4 +1,4 @@
-@use '../variable/variable' as *;
+
 body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main){
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense){
 
@@ -33,12 +33,21 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main){
     }
 
 
+    .license-part2 label,.license-part1 label,.license-part3 label{
+        font-size: 12.40462px;
+    }
 
+    .license-part1 span,
+    .license-part2 span,
+    .license-part3 span{
+        font-size: 13.8092px;
+    }
 
     .wrapper-parts{
         display: grid;
         grid-template-columns: auto auto auto;
-        margin-top: 97px;
+        margin-top: 82px;
+        padding-left: 5px !important;
     }
 
 }

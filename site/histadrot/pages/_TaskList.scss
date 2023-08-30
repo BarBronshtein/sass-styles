@@ -16,7 +16,7 @@
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 100%;
                 color: #052436; 
                 display: contents;
@@ -27,7 +27,7 @@
                     font-family: 'Heebo';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 15px;
+                    font-size: 14px;
                     line-height: 22px;
                     text-decoration-line: underline;
                     color: #00AEE9;
@@ -58,11 +58,10 @@
         }
 
         .activeTabf{
-            background: #F5F5F5;
-            border-radius: 20px;
-            padding: 10px 10px;
-            width: 75px;
-            margin: auto;
+            .x-kicon-caption{
+                background: #0167B1;
+                color: white !important;
+            }
         }
 
         .xstyle-kicon-wrapper{
@@ -78,7 +77,7 @@
                 font-size: 13px;
                 line-height: 100%;
                 color: #0167B1;
-
+                padding: 4px 15px;
             }
         }
     }

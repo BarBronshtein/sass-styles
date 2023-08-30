@@ -9,6 +9,11 @@
     mainbody .row-title{
         margin-bottom: 5px !important
     }
+    mainbody .row-title .main-title span {
+        text-underline-offset: 5px;
+        text-decoration: underline !important;
+    }
+
 
     .xstyle-radio-wrapper .x-RBComp{
         padding:  0 0 0 15px;
@@ -92,11 +97,10 @@
         }
 
         .activeTabf{
-            background: #F5F5F5;
-            border-radius: 20px;
-            padding: 10px 10px;
-            width: 75px;
-            margin: auto;
+            .x-kicon-caption{
+                background: #0167B1;
+                color: white !important;
+            }
         }
 
         .xstyle-kicon-wrapper{
@@ -112,10 +116,19 @@
                 font-size: 13px;
                 line-height: 100%;
                 color: #0167B1;
+                padding: 4px 15px;
+
 
             }
         }
     }
+}
+
+
+#TafnitCore_xHistadrut_UI_ServiceCallActivity .customer-card .part-3 .fa-chevrons-left{
+    color: #0167B1 !important;
+    font-family: 'Font Awesome 6 Pro' !important;
+ 
 }
 
 #TafnitCore_xHistadrut_UI_ServiceCallActivity,
@@ -171,8 +184,8 @@
         border-radius: 20px;
         width: 98%;
         margin: auto;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         padding: 20px;
         .part-1{
             display: grid;
@@ -214,7 +227,7 @@
             align-items: center;
             border-top: 1px solid #DEDEDE;
 
-           span{
+           span,label{
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 400;
@@ -296,7 +309,11 @@
         }
     }
 }
-
+#TafnitCore_xHistadrut_UI_WorkPlaceList{
+    header{
+        display: none;
+    }
+}
 #TafnitCore_xHistadrut_UI_WorkPlace,#TafnitCore_xHistadrut_UI_WorkPlaceList{
     .part-3{
    

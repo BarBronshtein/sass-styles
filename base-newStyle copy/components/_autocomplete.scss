@@ -1,0 +1,116 @@
+.k-ltr {
+    >.k-autocomplete {
+        >.k-input {
+            text-align: left;
+            padding-left: 8px;
+        }
+
+        >.k-i-close {
+            right: 0 !important;
+            left: initial !important;
+        }
+
+        &.k-textbox {
+            input{
+                text-align: left !important;
+            }
+        }
+
+        input:not(:placeholder-shown) + label{
+            z-index: 10;
+            margin-top: 5px;
+        }
+    }
+}
+
+.k-autocomplete {
+    
+    &.k-textbox {
+        background: white;
+
+        .k-clear-value{
+            position: absolute;
+            left: -20px;
+        }
+
+        .k-icon{
+            opacity: 0;
+            position: fixed;
+        }
+
+        &:hover{
+            .k-icon{
+                opacity: 1;
+            }
+        }
+    
+    }
+}
+
+/*template - hedear*/
+
+.x-autocomplete-header-template {
+    font-size: 1.2em;
+    border-width: 0 0 1px 0;
+    text-transform: uppercase;
+
+    >.x-autocomplete-template-caption {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: small;
+        display: inline-block;
+        padding: 10px 0;
+
+        &:first-child {
+            padding-right: 5px;
+        }
+    }
+}
+
+.x-autocomplete-template-content {
+    word-break: break-word;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 0px 7px 0px;
+
+    >h3 {
+        font-size: 1em;
+        font-weight: normal;
+        margin: 0 0 1px 0;
+        padding: 0;
+    }
+}
+
+/*fix autocomplete clear*/
+input.k-input[dir="ltr"] {
+    +.k-clear-value {
+        right: 0px;
+        left: initial;
+    }
+
+}
+
+.k-list-container, .k-list-content{
+    border-color: #a3d0e4;
+    background-color: #daecf4;
+
+    span.k-list-item-text{
+        width: 100%;
+
+    }
+}
+
+// .xstyle-autocomplete-wrapper{
+//     .x-login-user-error,
+//     &.x-login-user-error-msg {
+//         .k-autocomplete{
+//             border-color: #f00 !important;
+//         }   
+//     }
+
+//     .x-login-user-error-msg {
+//         color: #f00;
+//         font-size: 14px;
+//     }
+// }

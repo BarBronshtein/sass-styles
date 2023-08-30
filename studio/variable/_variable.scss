@@ -1,0 +1,213 @@
+
+
+$button-color-text: #ffffff ;
+$button-color-icon: #ffffff ;
+$button-color-icon-hover: #ffffff ;
+$button-color-text-hover: #ffffff ;
+$button-color-text-focus: #ffffff ;
+$button-bg: #159BC5 ;
+$button-bg-hover: #29AFD9 ;
+$button-color-bg-focus: #159BC5 ;
+$button-disable-border: #e7e7e7 ;
+$button-disable-text: #c7c7c7 ;
+$button-disable-bg: #f8f8f8 ;
+$button-color-border: none ;
+$button-bg-press: #077294 ;
+$button-border-color-focus:none ;
+
+$checkbox-border: #000000 ;
+$checkbox-caption: #000000 ;
+$checkbox-color-checked: #366934 ;
+$checkbox-border-checked: #366934 ;
+$check-box-focus-border: none ;
+$check-box-disable-border: #a6a6a6 ;
+$check-box-disable-checked: #a6a6a6 ;
+
+$control-background: #ffffff ;
+$control-color-input: #000000 ;
+$control-color-icon: #159BC5 ;
+$control-border-input: #D9D9D9 ;
+$control-color-placeholder: #c7c7c7 ;
+$control-caption-color-text-disable: #C8C8C8 ;
+$control-border-input-disable: #C8C8C8 ;
+$control-caption-color-text: #077294 ;
+$controls-error-massage: #ed2f2f ;
+$control-border-focus: #B7DFEC ;
+
+$scroll-bg: #366934 ;
+$scroll-bg-hover: #267931 ;
+
+$header-bg: #ffffff ;
+$header-border: #000000 ;
+$header-hellotext-color: #000000 ;
+$header-usernamedetails-color: #000000 ;
+$header-details-span-color: #000000 ;
+$header-details-label-color: #366934 ;
+$header-lastlogindetails-color: #a6a6a6 ;
+$header-link-color: #78AAB4 ;
+
+
+
+
+$radio-button-text-label-color: #000000 ;
+$radio-button-bg: #ffffff ;
+$radio-button-bg-check: #366934 ;
+$radio-button-border-check: #366934 ;
+$radio-button-border-readonly: #a6a6a6 ;
+$radio-button-border-readonly-check: #a6a6a6 ;
+$radio-button-readonly-color: #a6a6a6 ;
+$radio-button-border-disable: #a6a6a6 ;
+$radio-button-border-disable-check: #a6a6a6 ;
+$radio-button-color-disable: #a6a6a6 ;
+$radio-button-border-default: #000000 ;
+$radio-button-required-check: #FF780B ;
+$radio-button-required-border: #FF780B ;
+$radio-button-hover-check: #267931 ;
+$radio-button-hover-border: #267931 ;
+$radio-button-focus-check: #6adbff ;
+$radio-button-focus-border: #6adbff ;
+
+$row-bg: #ffffff ;
+$row-color-title: #366934;
+
+$special-button-bg-focus: #9FA717 ;
+$special-button-bg: #B1BA1D ;
+$speical-button-press: #9FA717 ;
+$speical-button-color-border-focus: #9FA717 ;
+$special-button-color-border: #B1BA1D ;
+$special-button-color-icon: #ffffff ;
+$special-button-color-text-hover: #ffffff ;
+$special-button-bg-hover: #9FA717 ;
+$special-button-color-text: #ffffff ;
+$special-button-color-text-focus: #ffffff ;
+$speical-button-color-border-hover: #64cb72 ;
+
+$icon-after: #ffffff ;
+$icon-before: #ffffff ;
+
+$window-icon-close-color: #a6a6a6 ; 
+$window-title-border: #366934 ;
+$window-title-color: #366934 ;
+$window-text-secondary-color: #000000 ;
+$window-text-special-color: #366934 ;
+
+$popup-title-color: #000000 ;
+$popup-border: #a6a6a6 ;
+$popup-k-filter-menu-border: #e7e7e7 ;
+$popup-k-filter-menu-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) ;
+
+$list-view-bg-line-default: #ffffff ;
+$list-view-icon-color-default: #29AFD9 ;
+$list-view-text-default: #000000 ;
+$list-view-border-bottom: #e7e7e7 ;
+$list-view-hover-line: #f5f5f5 ;
+$list-view-selected-line: #29AFD9 ;
+$list-view-selected-line-icon: #ffffff ;
+$list-view-selected-line-text: #ffffff ;
+$list-view-focus-border: #29AFD9 ;
+$list-view-disable-bg: #f8f8f8 ;
+$list-view-disable-text: #c7c7c7 ;
+$list-view-disable-icon: #c7c7c7 ;
+$list-view-arrow: #000000 ;
+$link-link-text-defaul:#78AAB4;
+
+
+$button-box-shadow-focus: 0px 4px 8px 0px rgba(142, 187, 207, 0.50);
+$row-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) ;
+$check-box-focus-box-shadow: 0px 1px 3px 0px rgba(106, 219, 255, 0.30), 0px 4px 8px 0px rgba(106, 219, 255, 0.10 ) ;
+$header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) ;
+$window-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) ;
+$messagebox-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) ;
+$control-box-shadow-focus:  0px 4px 8px 0px rgba(142, 187, 207, 0.50);
+$cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) ;
+$radio-button-box-shadow-focus: 0px 1px 3px 0px rgba(48, 198, 245, 0.30), 0px 4px 8px 0px rgba(48, 198, 245, 0.10 ) ;
+$list-container-shadow: 0px 0px 5px 5px rgba(57, 181, 74, 0.10), 0px 2px 4px 0px rgba(57, 181, 74, 0.03), 0px 4px 5px 0px rgba(57, 181, 74, 0.04 ) ;
+
+$drawer-box-shdow:0px 0px 10px 0px rgba(54, 105, 52, 0.10), 0px 6px 4px 0px rgba(54, 105, 52, 0.30);
+$drawer-bg:#FCFCFC;
+$drawer-color-border: #F5F5F5;
+$drawer-color-icon:#5E955C;
+$drawer-color-text:#000000;
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 40px ;
+    background: $control-background ;
+    border: 1px solid $control-border-input ;
+    border-radius: 0px ;
+    padding: 10px 20px ;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 14px !important ;
+    color: $control-color-input ;
+    text-align: right ;
+}
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background ;
+    border:1px solid $control-border-input-disable ;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable ;
+}
+
+
+// special button //
+
+%special-button{
+    height: 40px !important ;
+    background: $special-button-bg ;
+    border-radius: 00px ;
+    font-family: "Heebo" ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $special-button-color-text ;
+    width: auto !important ;
+    min-width: 200px ;
+    border: 1px solid $special-button-color-border ;
+}
+
+// button//
+
+%button{
+    background: $button-bg ;
+    border: none ;
+    border-radius: 0px ;
+    align-items: center ;
+    height: 40px !important ;
+    color: $button-color-text ;
+    font-family: 'Heebo' !important ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 14px ;
+    line-height: 24px ;
+    min-width: 200px ;
+}

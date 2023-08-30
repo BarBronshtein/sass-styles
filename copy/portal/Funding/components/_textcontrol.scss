@@ -1,16 +1,27 @@
 
-@use '../variable/variable' as *;
+
 
 
 .xstyle-textcontrol-wrapper {
     margin-top: 15px;
 // disable // 
 
-    &.k-state-disabled{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+
+    &.k-state-disabled{ 
+
+      opacity: 1;
 
         & input.k-textbox{
 
-            @extend %texbox-input;
+          background: #F7F7F7 !important;
            
         }
 

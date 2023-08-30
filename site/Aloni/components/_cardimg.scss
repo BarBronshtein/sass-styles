@@ -1,6 +1,27 @@
 
 
 .card-img{
+
+    &:focus-within,&:active,&:focus{
+        border: 1px solid  #AE8B49 ;
+        border-radius: 10px;
+        box-shadow: 0px 6px 6px 0px rgba(174, 139, 73, 0.20);
+    }
+
+    &:has(.active){
+        .card-title span{
+
+            &::before{
+                content: "\e9c0";
+                font-family: "icomoon";
+                font-size: 20px;
+                position: relative;
+                top: 4px;
+                left: 5px;
+                color: #967A45;
+            }
+        }
+    }
     img{
         width: 100%;
         border-top-left-radius: 10px !important;
@@ -12,7 +33,7 @@
 
         margin: 0;
         background: #DEDEDE;
-        padding: 16px;
+        padding: 10px;
         border-radius: 0;
         margin-top: -1px;
 
@@ -20,7 +41,7 @@
             font-family: 'Heebo';
             font-style: normal;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 130%;
             text-align: center !important;
             color: #000000;

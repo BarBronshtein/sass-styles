@@ -1,0 +1,149 @@
+@use '../variables/masterVariable' as *;
+
+@media screen and (min-width: 768px) {
+    #TafnitCore_System_UI_App_Login {
+        .x-section-wrraper {
+            margin: auto ;
+            min-height: 679px ;
+            height: 679px ;
+
+            .x-section-content-wrapper {
+                height: 100% ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    #TafnitCore_System_UI_App_Login .x-section-wrraper {
+        width: 80% ;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #TafnitCore_System_UI_App_Login .x-section-wrraper {
+        width: 90% ;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #TafnitCore_System_UI_App_Login {
+        .x-section-wrraper {
+            width: 70% ;
+        }
+
+        .x-section-content-wrapper>.col:first-child {
+            display: block ;
+        }
+    }
+}
+
+
+#TafnitCore_System_UI_App_Login {
+    padding: 0 ;
+
+    mainbody {
+        padding: 0 ;
+
+        >.row {
+            height: 100vh;
+           
+        }
+    }
+
+    input.k-textbox {
+        border: 0;
+        background: #e4e4e4;
+        border-radius: 0;
+
+        &::placeholder {
+            color: #707070;
+        }
+    }
+
+    [xid="controlloginDetailsLeft"] {
+        >div {
+            &:first-child {
+                flex-grow: 0.7;
+                display: flex;
+                align-items: center;
+            }
+
+            &:last-child {
+                flex-grow: 1;
+                display: flex;
+                align-items: flex-start;
+                padding-top: 20px;
+            }
+        }
+
+    }
+
+    [xid="controlcSocialBtnLogin"]>div {
+        flex: 0 0 49%;
+    }
+
+    [xid="controlscrollviewColumn"] {
+        background: #e4e4e4;
+    }
+
+    .k-button {
+        background: white;
+        border-color: #dadada;
+        color: #003f59;
+        font-size: 14px;
+
+        .k-icon {
+            font-size: 22px;
+        }
+    }
+
+    [xid="controlbtnLoginPage"] {
+        background: #005a99;
+        color: white;
+    }
+
+    .fa-google {
+        background:
+            linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0 25%/48% 40%,
+            linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%,
+
+            linear-gradient(-40deg, transparent 53%, #ea4335 54%),
+            linear-gradient(45deg, transparent 46%, #4285f4 48%),
+            #34a853;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+
+        &.k-icon:before {
+            position: initial ;
+        }
+    }
+    .xstyle-checkbox-wrapper  {
+        .col-4{
+            order: 0;
+            flex: 0 0 95%;
+            max-width: 250px;
+            padding-right: 5px;
+        }
+      
+        .col-8 {
+            order: -1;
+            flex: 0 0 5%;
+        }
+    }
+}
+
+.k-ie{
+    #TafnitCore_System_UI_App_WebSDK_Login{
+        .d-flex.justify-content-between{
+            flex-basis:25px
+        }
+    }
+}

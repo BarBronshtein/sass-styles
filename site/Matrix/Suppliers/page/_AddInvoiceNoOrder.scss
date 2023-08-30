@@ -1,0 +1,53 @@
+
+
+
+.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder),
+.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark){
+    header,.k-window-title{
+        display: none;
+    }
+
+    .k-window-titlebar {
+        justify-content: end;
+    }
+
+
+
+    height: auto !important;
+}
+#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder,
+#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark{
+
+
+
+    margin: 0;
+
+    mainbody {
+        margin-top: 0px !important;
+    }
+  .s-section-header-wrapper{
+    background: none;
+    border: none;
+    h3{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #7B098B;
+    }
+  }
+
+ .btn-flex{
+   display: grid;
+   grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: end;
+    margin-top: 30px;
+ }
+  
+ .xstyle-textcontrol-wrapper{
+    margin-top: 15px;
+ }
+
+}

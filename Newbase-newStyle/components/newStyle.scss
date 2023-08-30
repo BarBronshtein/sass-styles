@@ -1,0 +1,206 @@
+
+@forward '../components/animation';
+@forward '../components/barcode';
+@forward '../components/breadcrumb';
+@forward '../components/button';
+@forward '../components/calendar';
+@forward '../components/canvas';
+@forward '../components/carDamage';
+@forward '../components/cell';
+@forward '../components/chat';
+@forward '../components/checkbox';
+@forward '../components/compass';
+@forward '../components/creditGuard';
+@forward '../components/currentLocation';
+@forward '../components/date-picker';
+@forward '../components/diagram';
+@forward '../components/drawer';
+@forward '../components/drop-down';
+@forward '../components/dropDownTree';
+@forward '../components/fileViewer';
+@forward '../components/footer';
+@forward '../components/generalClass';
+@forward '../components/grid';
+@forward '../components/groupBox';
+@forward '../components/header';
+@forward '../components/imap';
+@forward '../components/infoBubble';
+@forward '../components/intelPhone';
+@forward '../components/iSlider';
+@forward '../components/layout';
+@forward '../components/listview';
+@forward '../components/loanSlider';
+@forward '../components/lookup';
+@forward '../components/mediaQuery';
+@forward '../components/menu';
+@forward '../components/messageBox';
+@forward '../components/multiCheckboxDropdown';
+@forward '../components/multichoice';
+@forward '../components/multiselect';
+@forward '../components/pFloating';
+@forward '../components/popupSignature';
+@forward '../components/popupwincls';
+@forward '../components/progressBar';
+@forward '../components/radio-button';
+@forward '../components/rangeNumber';
+@forward '../components/rating';
+@forward '../components/scrollviewKendo';
+@forward '../components/section';
+@forward '../components/spinner';
+@forward '../components/switch';
+@forward '../components/textbox';
+@forward '../components/timelineRTL';
+@forward '../components/timepicker';
+@forward '../components/treeview';
+@forward '../components/upload';
+@forward '../components/video';
+@forward '../components/videoStream';
+@forward '../components/virtual-keyboard';
+@forward '../components/window';
+@forward '../components/autocomplete';
+@forward '../components/threeoptionsSwitch';
+@forward '../components/linke';
+@forward '../components/linklist';
+@forward '../components/password';
+@forward '../components/row';
+@forward '../components/textwithbuttonsimple';
+@forward '../components/vkeyboard';
+@forward '../components/floatbutton';
+@forward '../components/mandatory';
+@forward '../components/textarea';
+
+
+
+@forward '../pages/login';
+@forward '../pages/payment';
+@forward '../pages/Survey';
+@forward '../pages/receipt';
+@forward '../pages/errorPage';
+@forward '../pages/FillAndSignV2Page';
+@forward '../pages/meeting';
+@forward '../pages/Transportation';
+
+
+
+
+
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),
+html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
+  max-width: 420px ;
+  margin: auto ;
+
+  .x-footer {
+    max-width: 420px ;
+    margin: auto ;
+  }
+
+  #watermark{
+    right: 0 ;
+  }
+}
+.x-login-user-error-msg{
+  color: red ;
+}
+.x-login-user-error{
+    border-bottom: 1px solid red ;
+  }
+
+a.k-icon{
+
+  height: 100%;
+}
+
+   .k-i-marker-pin-target{
+    width: 100%;
+  }
+
+  .xstyle-textcontrol-wrapper,
+  .p-floating-container,
+  .xstyle-date-wrapper,
+  .xstyle-password-wrapper, 
+  .xstyle-timepicker-wrapper,
+  .xstyle-lookuptafnit-wrapper,
+  .xstyle-idropdownlist-wrapper,
+  .xstyle-autocomplete-wrapper,
+  .xstyle-timepicker-wrapper{
+    & input{
+      text-align: right ;
+    }
+  }
+
+  .xstyle-googleaddress-wrapper{
+
+    & > div:nth-child(2){
+      color: aquamarines;
+
+      & .x-control-content-wrapper.s-control-content-wrapper{
+    
+
+        & .x-barcodeBtnContainer{
+          width: 35px;
+          padding: 5px;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 3px;
+          top: 3px;
+          border-radius: 1px;
+        }
+      }
+    }
+  }
+
+
+
+  
+
+  body.k-content{
+    padding-right: 0px ;
+  }
+
+ .k-content:has(.k-drawer-container.k-drawer-mini){
+
+
+  #uber-container{
+
+    padding-right: 50px ;
+  }
+ }
+
+ .redText{
+
+  & span.x-dynamic-label-control {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #EE0909;
+  }
+ }
+
+
+ .x-ltr{
+  direction: ltr;
+ }
+
+ .x-rtl{
+  direction: rtl;
+ }
+
+
+ .xstyle-textcontrol-wrapper {
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+}
+
+.x-map {
+  min-height: 350px;
+}
