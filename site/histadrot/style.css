@@ -356,34 +356,6 @@
   color: #868686;
 }
 
-.text:has(.x-control-caption-wrapper) {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px;
-  height: 20px;
-}
-.text:has(.x-control-caption-wrapper) > .x-cell {
-  max-width: 100%;
-}
-.text:has(.x-control-caption-wrapper) label {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #727272;
-  margin-top: 3px;
-}
-.text:has(.x-control-caption-wrapper) span.s-dynamic-label-control {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  color: #727272;
-  margin-top: 3px;
-}
-
 .text-line {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -432,29 +404,6 @@
   align-items: center;
   text-align: right;
   color: #727272 !important;
-}
-
-.k-window {
-  background: #FFFFFF;
-  box-shadow: 0px 10px 10px rgba(1, 103, 177, 0.3) !important;
-  border-radius: 8px;
-  width: 90% !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: auto;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  border: none !important;
-}
-.k-window .k-window-titlebar {
-  background: none;
-  border: none;
-}
-.k-window .k-window-titlebar span {
-  color: #727272;
-}
-.k-window .k-window-titlebar .k-window-actions {
-  z-index: 50;
 }
 
 .k-listview-content {
@@ -683,7 +632,6 @@
   color: #4E4E4E;
 }
 
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser),
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) {
   background: #FFFFFF !important;
   box-shadow: 0px 10px 10px rgba(1, 103, 177, 0.3) !important;
@@ -698,17 +646,14 @@
   left: 0 !important;
   right: 0;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) .k-window-content,
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) .k-window-content {
   margin-top: 30px !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) .k-window-titlebar,
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) .k-window-titlebar {
   background: none !important;
   border: none !important;
   display: block;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) .k-window-titlebar .k-window-title,
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) .k-window-titlebar .k-window-title {
   justify-content: center;
   margin-top: 35px !important;
@@ -721,40 +666,28 @@
   text-align: center;
   color: #E51925;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) .k-window-titlebar .k-window-actions.k-hstack,
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) .k-window-titlebar .k-window-actions.k-hstack {
   position: absolute;
   top: 9px;
   left: 14px;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) .k-window-titlebar .k-window-actions.k-hstack span,
 .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) .k-window-titlebar .k-window-actions.k-hstack span {
   color: #727272 !important;
   font-size: 22px;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany {
   height: 170px !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .k-hidden, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .k-hidden,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .k-hidden,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .k-hidden {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .k-hidden {
   display: block !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .k-overflow-anchor, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .k-overflow-anchor,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .k-overflow-anchor,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .k-overflow-anchor {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .k-overflow-anchor {
   display: none !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .x-section-wrraper, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .x-section-wrraper,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .x-section-wrraper,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .x-section-wrraper {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .x-section-wrraper {
   border: none !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader), .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser div:has(.kendoToolbarHeader),
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader),
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser div:has(.kendoToolbarHeader) {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader) {
   position: absolute;
   bottom: 0;
   margin: 0 auto !important;
@@ -762,18 +695,14 @@
   right: 0;
   height: auto !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader) .kendoToolbarHeader, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser div:has(.kendoToolbarHeader) .kendoToolbarHeader,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader) .kendoToolbarHeader,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser div:has(.kendoToolbarHeader) .kendoToolbarHeader {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader) .kendoToolbarHeader {
   display: grid;
   grid-template-columns: 0px 1fr 1fr;
   background: none;
   border: none;
   gap: 10px;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader) .kendoToolbarHeader button, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser div:has(.kendoToolbarHeader) .kendoToolbarHeader button,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader) .kendoToolbarHeader button,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser div:has(.kendoToolbarHeader) .kendoToolbarHeader button {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany div:has(.kendoToolbarHeader) .kendoToolbarHeader button {
   background: #00AEE9;
   border-radius: 0px;
   border: none !important;
@@ -788,15 +717,11 @@
   display: flex;
   align-items: center;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper {
   display: block;
   direction: rtl;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper label, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper label,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper label,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper label {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper label {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -806,23 +731,17 @@
   text-align: right !important;
   color: #00AEE9;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp), .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp),
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp),
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) {
   max-width: 100%;
   flex: 0 0 100%;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp {
   height: 45px !important;
   border: 1px solid #DEDEDE;
   border-radius: 0px;
   background: none;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-value-text, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-value-text,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-value-text,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-value-text {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-value-text {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -832,14 +751,10 @@
   text-align: right;
   color: #052136 !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp:focus, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp:focus,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp:focus,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp:focus {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp:focus {
   border: 1px solid #F57920 !important;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -848,14 +763,10 @@
   background: #00AEE9 !important;
   padding: 19px;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon {
   padding: 9px;
 }
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon::before, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeUser) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon::before,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon::before,
-.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeUser .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon::before {
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_ChangeCompany) #TafnitCore_System_UI_App_Tools_ChangeCompany .xstyle-idropdownlist-wrapper div:has(.x-dropdown-comp) .x-dropdown-comp .k-input-button .k-icon::before {
   content: "\f0dc";
   font-family: "Font Awesome 5 pro" !important;
   color: white;
@@ -1220,13 +1131,8 @@
   color: #0167B1;
 }
 
-.k-i-calendar:before {
-  content: "\e973";
-  font-family: "icomoon";
-}
-
 .xstyle-date-wrapper {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .xstyle-date-wrapper span.k-datepicker {
   border: none;
@@ -1367,10 +1273,6 @@ textarea {
   color: #727272;
 }
 
-.xstyle-radio-wrapper .x-RBComp {
-  padding: 0px 0px 0px 10px;
-}
-
 .xstyle-radio-wrapper label {
   font-family: "Heebo";
   font-style: normal;
@@ -1458,7 +1360,7 @@ mainbody .col-linke .linke span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400 !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
   margin-top: 0 !important;
   line-height: 100%;
   color: #00AEE9 !important;
@@ -1609,9 +1511,6 @@ mainbody .row-main {
 mainbody .row-main > .col {
   padding: 15px !important;
 }
-mainbody .row-main > .col.noPadding {
-  padding: 0 !important;
-}
 mainbody .row-main .col-checkBox {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1677,19 +1576,13 @@ mainbody .row-main .col-list .list span {
   color: #000000;
   margin-right: 10px;
 }
+.col-status .k-icon {
+  color: #77AB1A;
+}
 .col-status .xstyle-kicon-wrapper.open .fa-circle {
   color: #77AB1A;
   margin-left: 10px;
   font-size: 14px;
-}
-.col-status .xstyle-kicon-wrapper.new {
-  color: #00AEE9;
-  margin-left: 10px;
-  font-size: 14px;
-}
-.col-status .xstyle-kicon-wrapper.active {
-  color: #0167B1;
-  margin-left: 10px;
 }
 .col-status .xstyle-kicon-wrapper.closed .fa-circle {
   color: #E51925;
@@ -1713,10 +1606,6 @@ mainbody .row-main .col-list .list span {
   bottom: 22px;
   color: #0167B1;
   z-index: 20;
-}
-
-.noPadding {
-  padding: 0 !important;
 }
 
 .xstyle-floatbuttonv2-wrapper button {
@@ -1901,7 +1790,7 @@ mainbody .row-main .col-list .list span {
 }
 
 .xstyle-daterange-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 0 15px;
 }
 .xstyle-daterange-wrapper .s-control-content-wrapper {
@@ -1982,8 +1871,8 @@ mainbody .row-main .col-list .list span {
   border-radius: 20px;
   width: 95%;
   margin: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 20px 0;
 }
 #TafnitCore_xHistadrut_UI_CustomerServiceCalls .customer-card .part-1, #TafnitCore_xHistadrut_UI_TaskPreview .customer-card .part-1, #TafnitCore_xHistadrut_UI_WorkPlaceList .customer-card .part-1 {
@@ -2068,10 +1957,6 @@ mainbody .row-main .col-list .list span {
 #TafnitCore_xHistadrut_UI_ServiceCallDetailes mainbody .row-title {
   margin-bottom: 5px !important;
 }
-#TafnitCore_xHistadrut_UI_ServiceCallDetailes mainbody .row-title .main-title span {
-  text-underline-offset: 5px;
-  text-decoration: underline !important;
-}
 #TafnitCore_xHistadrut_UI_ServiceCallDetailes .xstyle-radio-wrapper .x-RBComp {
   padding: 0 0 0 15px;
 }
@@ -2127,9 +2012,12 @@ mainbody .row-main .col-list .list span {
 #TafnitCore_xHistadrut_UI_ServiceCallDetailes .x-footer > .row {
   align-items: center;
 }
-#TafnitCore_xHistadrut_UI_ServiceCallDetailes .x-footer .activeTabf .x-kicon-caption {
-  background: #0167B1;
-  color: white !important;
+#TafnitCore_xHistadrut_UI_ServiceCallDetailes .x-footer .activeTabf {
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 75px;
+  margin: auto;
 }
 #TafnitCore_xHistadrut_UI_ServiceCallDetailes .x-footer .xstyle-kicon-wrapper .k-icon {
   color: #0167B1;
@@ -2143,12 +2031,6 @@ mainbody .row-main .col-list .list span {
   font-size: 13px;
   line-height: 100%;
   color: #0167B1;
-  padding: 4px 15px;
-}
-
-#TafnitCore_xHistadrut_UI_ServiceCallActivity .customer-card .part-3 .fa-chevrons-left {
-  color: #0167B1 !important;
-  font-family: "Font Awesome 6 Pro" !important;
 }
 
 #TafnitCore_xHistadrut_UI_ServiceCallActivity .headerNone > .row > .col,
@@ -2197,8 +2079,8 @@ mainbody .row-main .col-list .list span {
   border-radius: 20px;
   width: 98%;
   margin: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 20px;
 }
 .row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallActivity) .customer-card .part-1,
@@ -2239,9 +2121,8 @@ mainbody .row-main .col-list .list span {
   align-items: center;
   border-top: 1px solid #DEDEDE;
 }
-.row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallActivity) .customer-card .part-3 span, .row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallActivity) .customer-card .part-3 label,
-.row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallFiles) .customer-card .part-3 span,
-.row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallFiles) .customer-card .part-3 label {
+.row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallActivity) .customer-card .part-3 span,
+.row-main:has(#TafnitCore_xHistadrut_UI_ServiceCallFiles) .customer-card .part-3 span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -2296,10 +2177,6 @@ mainbody .row-main .col-list .list span {
   font-size: 14px;
 }
 
-#TafnitCore_xHistadrut_UI_WorkPlaceList header {
-  display: none;
-}
-
 #TafnitCore_xHistadrut_UI_WorkPlace .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle, #TafnitCore_xHistadrut_UI_WorkPlaceList .part-3 .xstyle-kicon-wrapper:has(.x-kicon-caption).open .fa-circle {
   color: #77AB1A;
   margin-left: 10px;
@@ -2343,8 +2220,8 @@ mainbody .row-main .col-list .list span {
   border-radius: 20px;
   width: 95%;
   margin: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 20px;
 }
 #TafnitCore_xHistadrut_UI_AccountList .customer-card .part-2, #TafnitCore_xHistadrut_UI_ServiceCallAddNew .customer-card .part-2 {
@@ -2409,9 +2286,12 @@ mainbody .row-main .col-list .list span {
 #TafnitCore_xHistadrut_UI_AccountPanel .x-footer > .row {
   align-items: center;
 }
-#TafnitCore_xHistadrut_UI_AccountPanel .x-footer .activeTabf .x-kicon-caption {
-  background: #0167B1;
-  color: white !important;
+#TafnitCore_xHistadrut_UI_AccountPanel .x-footer .activeTabf {
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 75px;
+  margin: auto;
 }
 #TafnitCore_xHistadrut_UI_AccountPanel .x-footer .xstyle-kicon-wrapper .k-icon {
   color: #0167B1;
@@ -2425,7 +2305,6 @@ mainbody .row-main .col-list .list span {
   font-size: 13px;
   line-height: 100%;
   color: #0167B1;
-  padding: 4px 15px;
 }
 #TafnitCore_xHistadrut_UI_AccountPanel .xstyle-floatbuttonv2-wrapper button {
   bottom: 100px !important;
@@ -2580,17 +2459,14 @@ mainbody .row-main .col-list .list span {
   display: none;
 }
 
-#TafnitCore_xHistadrut_UI_Visits .fa-chevron-double-left {
-  float: left;
-}
 #TafnitCore_xHistadrut_UI_Visits .customer-card {
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9;
   border-radius: 20px;
   width: 95%;
   margin: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 20px;
 }
 #TafnitCore_xHistadrut_UI_Visits .customer-card .part-1 {
@@ -2673,29 +2549,8 @@ mainbody .row-main .col-list .list span {
   line-height: 100%;
   color: #727272;
 }
-#TafnitCore_xHistadrut_UI_VisitInfo mainbody .row-title > .part-1 + .col.border-bottom {
-  padding-top: 0 !important;
-}
 #TafnitCore_xHistadrut_UI_VisitInfo .row-main {
   margin-top: 20px;
-}
-#TafnitCore_xHistadrut_UI_VisitInfo .xstyle-textareacontrol-wrapper {
-  margin-top: 3px;
-}
-#TafnitCore_xHistadrut_UI_VisitInfo .xstyle-textareacontrol-wrapper label {
-  width: -moz-max-content;
-  width: max-content;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #727272;
-  margin-top: 4px;
-}
-
-#TafnitCore_xHistadrut_UI_VisitNew mainbody .row-title, #TafnitCore_xHistadrut_UI_Missions mainbody .row-title {
-  margin-top: 0 !important;
 }
 
 #TafnitCore_xHistadrut_UI_TaskList .col-tab {
@@ -2714,7 +2569,7 @@ mainbody .row-main .col-list .list span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 100%;
   color: #052436;
   display: contents;
@@ -2723,7 +2578,7 @@ mainbody .row-main .col-list .list span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 22px;
   text-decoration-line: underline;
   color: #00AEE9;
@@ -2742,9 +2597,12 @@ mainbody .row-main .col-list .list span {
 #TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer > .row {
   align-items: center;
 }
-#TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer .activeTabf .x-kicon-caption {
-  background: #0167B1;
-  color: white !important;
+#TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer .activeTabf {
+  background: #F5F5F5;
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 75px;
+  margin: auto;
 }
 #TafnitCore_xHistadrut_UI_TaskDetails mainbody > .x-footer .xstyle-kicon-wrapper .k-icon {
   color: #0167B1;
@@ -2758,7 +2616,6 @@ mainbody .row-main .col-list .list span {
   font-size: 13px;
   line-height: 100%;
   color: #0167B1;
-  padding: 4px 15px;
 }
 #TafnitCore_xHistadrut_UI_TaskDetails .row-title .text {
   height: 24px;
@@ -2822,7 +2679,7 @@ body, #watermark, header {
 }
 
 .container.pageContainer.xtafnit_pageContainer {
-  margin-bottom: 35px !important;
+  margin-bottom: 10px !important;
 }
 
 .k-i-close::before {
@@ -2838,22 +2695,4 @@ body, #watermark, header {
   margin-top: -6px;
   color: white;
   font-size: 24px !important;
-}
-
-.x-footer:has(.watermark) {
-  background: white !important;
-  border: none !important;
-}
-
-.x-footer:has(.watermark) .watermark span {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  color: #000000;
-}
-
-#TafnitCore_xHistadrut_UI_LegalDisclaimer .navbar-fixed-top {
-  height: 0px;
 }/*# sourceMappingURL=style.css.map */

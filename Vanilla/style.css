@@ -69,13 +69,11 @@ mainbody .x-row.row-bg-color {
   box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9;
 }
 mainbody .x-row.row-flex > .col-flex {
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 15px;
-}
-mainbody .x-row.row-flex > .col-flex > .x-self-container {
-  flex-grow: 1;
-  flex-basis: 0;
+  max-width: 95%;
+  margin: auto;
 }
 mainbody .x-row.row-flex-scroll > .col-flex-scroll {
   overflow-y: hidden;

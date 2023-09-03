@@ -1,70 +1,49 @@
 @charset "UTF-8";
-/*controls*/
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
-.xstyle-date-wrapper label, .xstyle-autocomplete-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-idropdownlist-wrapper label, .xstyle-textcontrol-wrapper label {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px !important;
-  line-height: 21px;
-  text-align: right;
-  color: #323C4B;
-  margin: 0;
-}
-
-.xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-autocomplete-wrapper input, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper input {
-  height: 50px;
-  background: #FFFFFF;
-  border: 1px solid #CED4DA !important;
-  border-radius: 0px;
-  padding: 10px 20px;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px !important;
-  color: #323c4b;
-  text-align: right;
-}
-
-.xstyle-date-wrapper.k-state-disabled input.k-textbox {
-  background: #FFFFFF;
-  border: 1px solid #E7E7E7;
-}
-
-.xstyle-date-wrapper.k-state-disabled button span:before, .xstyle-date-wrapper.k-state-disabled label {
-  color: #C7C7C7;
-}
-
-.xstyle-buttoncontrol-wrapper.btn-special button {
-  height: 50px !important;
-  background: #FFFFFF;
-  border-radius: 10px;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: right;
-  color: #DA3382;
-  border: 1px solid #DA3382;
-}
-
-.xstyle-buttoncontrol-wrapper button {
-  background: #DA3382;
-  border: 1px solid none;
-  border-radius: 10px;
-  align-items: center;
-  height: 50px !important;
-  color: #FFFFFF;
-  font-family: "Assistant" !important;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
+/*header*/
+/*footer*/
+/*row*/
+/*window*/
+/*drawer*/
+/*k-animator*/
+/*k-filter*/
+/*button*/
+/*autocomplete*/
+/*calendar*/
+/*date-picker*/
+/*checkbox*/
+/*textbox*/
+/*virutal-keyboard*/
+/*drop-down*/
+/*grid*/
+/*time picker*/
+/*float-button*/
+/*textarea*/
+/*upload*/
+/*multiselect*/
+/*tabstrip*/
+/*slider*/
+/*rating*/
+/*radio*/
+/*freehand*/
+/*portal*/
+/*link*/
+/*stepper*/
+/*menu*/
+/*workflow*/
+/*timeline*/
+/*tooltip*/
+/*header mobile */
+/*consumer-product*/
+/*lookup*/
+/*websdk*/
+/*required*/
+/*funding*/
+/*phone*/
+/*spinner*/
+/*Dashboard*/
 /*controls*/
 .xstyle-date-wrapper label, .xstyle-autocomplete-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-idropdownlist-wrapper label, .xstyle-textcontrol-wrapper label {
   font-family: "Assistant";
@@ -77,7 +56,7 @@
   margin: 0;
 }
 
-.xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-autocomplete-wrapper input, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper input {
+.xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-date-wrapper span.k-datepicker, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-intlphonenumber-wrapper input, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper input {
   height: 50px;
   background: #FFFFFF;
   border: 1px solid #CED4DA !important;
@@ -96,7 +75,7 @@
   border: 1px solid #E7E7E7;
 }
 
-.xstyle-date-wrapper.k-state-disabled button span:before, .xstyle-date-wrapper.k-state-disabled label {
+.xstyle-date-wrapper.k-state-disabled label, .xstyle-date-wrapper.k-state-disabled button span:before {
   color: #C7C7C7;
 }
 
@@ -169,10 +148,10 @@
 .xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label,
 .xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label,
 .xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-intlphonenumber-wrapper.mandatory :has(.x-control-caption-wrapper) label,
+.xstyle-intlphonenumber-wrapper :has(.x-control-caption-wrapper) label,
 .xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label,
 .xstyle-idropdownlist-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label {
+.xstyle-autocomplete-wrapper :has(.x-control-caption-wrapper) label {
   padding-right: 10px;
 }
 .mandatory.p-floating-container :has(.x-control-caption-wrapper) label:before,
@@ -182,10 +161,10 @@
 .xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-intlphonenumber-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-intlphonenumber-wrapper :has(.x-control-caption-wrapper) label:before,
 .xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-idropdownlist-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label:before {
+.xstyle-autocomplete-wrapper :has(.x-control-caption-wrapper) label:before {
   content: "*";
   font-family: "Font Awesome 5 pro" !important;
   position: absolute;
@@ -201,10 +180,10 @@
 .xstyle-daterangev2-wrapper.mandatory input,
 .xstyle-date-wrapper.mandatory input,
 .xstyle-password-wrapper.mandatory input,
-.xstyle-intlphonenumber-wrapper.mandatory input,
+.xstyle-intlphonenumber-wrapper input,
 .xstyle-timepicker-wrapper.mandatory input,
 .xstyle-idropdownlist-wrapper.mandatory input,
-.xstyle-autocomplete-wrapper.mandatory input {
+.xstyle-autocomplete-wrapper input {
   background: none !important;
 }
 
@@ -506,7 +485,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   display: none;
 }
 .xstyle-intlphonenumber-wrapper.k-state-disabled label {
-  color: #C7C7C7 !important;
+  color: #CCCCCC !important;
 }
 .xstyle-intlphonenumber-wrapper div {
   border: none !important;
@@ -667,9 +646,6 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 .xstyle-date-wrapper.k-state-disabled {
   opacity: 1 !important;
-}
-.xstyle-date-wrapper.k-state-disabled .x-datePickerResponsive.s-datePickerResponsive {
-  background: #F7F7F7 !important;
 }
 .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile:focus {
   box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2) !important;
@@ -895,7 +871,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 .xstyle-buttoncontrol-wrapper.k-state-disabled button {
   background: #FFFFFF;
-  border: #ADB5BD;
+  border: 1px solid #ADB5BD;
   color: #ADB5BD;
 }
 .xstyle-buttoncontrol-wrapper.btn-special button {
@@ -1107,16 +1083,13 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   color: #DA3382 !important;
   font-weight: 300;
 }
-.k-grid th i.fa-circle::before, .k-grid th .k-icon.fa-circle::before, .k-grid td i.fa-circle::before, .k-grid td .k-icon.fa-circle::before {
-  color: #000000 !important;
-}
 @media only screen and (min-width: 700px) {
   .k-grid table {
     width: 100% !important;
   }
 }
 .k-grid .k-toolbar {
-  background: #F8F9FA;
+  background: transparent;
 }
 .k-grid .k-toolbar.k-grid-toolbar {
   border-color: #fff !important;
@@ -1134,22 +1107,16 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border-radius: 1px solid #ccc !important;
 }
 .k-grid .k-grid-header {
-  background: #F8F9FA;
+  background: none;
   border: none;
   padding: 10px 0px;
 }
 .k-grid .k-grid-header .k-grid-filter.k-state-active {
   background: #ccc;
 }
-.k-grid .k-grid-header tr.k-alt {
-  background: #FCFCFC !important;
-}
 .k-grid .k-grid-header tr:hover, .k-grid .k-grid-header tr:hover td {
   background-image: none !important;
-  background: #F8F9FA !important;
-}
-.k-grid .k-grid-header tr:hover td, .k-grid .k-grid-header tr:hover td td {
-  background: #F8F9FA !important;
+  background: none !important;
 }
 .k-grid .k-grid-header th {
   background: none;
@@ -1168,7 +1135,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   color: #868387 !important;
 }
 .k-grid .k-grid-header th a span:before {
-  color: #DA3382;
+  color: #02b5fd;
 }
 .k-grid .k-grid-header thead {
   background: none;
@@ -1177,9 +1144,194 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   height: auto;
   overflow: auto;
 }
+.k-grid .k-grid-content tr {
+  transition: 0.6s all;
+}
+.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap {
+  border-color: #000;
+}
+.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link {
+  background-color: #9e30bf;
+  color: #fff;
+  transition: 0.2s all;
+}
+.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link:hover {
+  opacity: 0.7;
+}
+.k-grid .k-grid-content tr:hover, .k-grid .k-grid-content tr:hover td {
+  background-image: none;
+  background-color: #F8F9FA !important;
+  color: #323C4B !important;
+}
+.k-grid .k-grid-content tr.k-selected {
+  background: none !important;
+  color: #000 !important;
+}
+.k-grid .k-grid-content tr.k-selected td {
+  background: none !important;
+  color: #000 !important;
+}
+.k-grid .k-grid-content td {
+  border: none;
+  border-left: none;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+.k-grid .k-grid-content td .col-template-val {
+  margin: 0;
+}
+.k-grid .k-grid-content .k-alt {
+  background: #FCFCFC !important;
+}
+@media only screen and (max-width: 768px) {
+  .k-grid .k-grid-content .k-alt {
+    background: #FCFCFC !important;
+  }
+}
 
 .k-separator {
   border: none !important;
+}
+
+.grid-container {
+  margin: auto;
+  width: 99%;
+  margin-top: 28px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.grid-bt {
+  border: none;
+  background: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+.grid-bt:hover {
+  border: none;
+}
+th .grid-bt:focus {
+  outline: 0px dotted;
+}
+
+.grid-icon {
+  font-size: 30px;
+  color: #FF780B;
+}
+
+.grid-border-bt {
+  margin-left: 20px;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(123, 9, 141, 0.08);
+  border-radius: 10px;
+}
+
+.grid-groupButton {
+  width: auto;
+  margin-left: 0 !important;
+}
+.grid-groupButton > button {
+  margin-top: 13px;
+}
+.grid-groupButton > button:first-child {
+  padding-right: 15px !important;
+}
+.grid-groupButton > button:last-child {
+  padding-left: 15px !important;
+}
+
+.grid-import-bt {
+  width: 50px;
+  height: 50px;
+  background: #FF780B;
+  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
+  border-radius: 10px;
+}
+.grid-import-bt > span {
+  color: #ffffff;
+}
+
+.grid-enable-bt {
+  opacity: 0.2;
+}
+
+.grid-groupButton > button {
+  margin-top: 13px;
+}
+
+.grid-import-bt {
+  width: 50px;
+  height: 50px;
+  background: #FF780B;
+  box-shadow: 0px 0px 8px;
+  border-radius: 10px;
+}
+.grid-import-bt > span {
+  color: #ffffff;
+}
+
+.grid-enable-bt {
+  opacity: 0.2;
+}
+
+.grid-container-filter {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.grid-filter-card {
+  font-size: 12px;
+  height: 30px;
+  background: #f5f5f5;
+  margin-right: 12px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.grid-filter-icon {
+  margin-top: 9px;
+  color: rgb(0, 0, 0);
+}
+
+.girid-label {
+  margin-top: 7px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 15px;
+}
+
+.grid-filter-title {
+  color: #7E7B7B;
+}
+
+mainbody mainbody {
+  margin: 0px !important;
+}
+
+.k-pager-info.k-label {
+  color: #000000 !important;
+}
+
+.roundedNoneMobile {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 10PX !important;
+}
+
+#TafnitCore_WorkFlow_UI_MyTasks {
+  padding: 0 !important;
+}
+
+.k-pager-wrap.k-grid-pager.k-floatwrap {
+  display: none !important;
 }
 
 @media only screen and (max-width: 850px) and (min-width: 700px) {
@@ -1233,20 +1385,26 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 .k-grid-content.k-auto-scrollable::-webkit-scrollbar-thumb:hover, .k-window-content::-webkit-scrollbar-thumb:hover {
   background: #bb2e71;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr.k-alt, .k-window-content > table > tbody > tr.k-alt {
-  background: #FCFCFC !important;
-}
-.k-grid-content.k-auto-scrollable > table > tbody > tr:hover, .k-grid-content.k-auto-scrollable > table > tbody > tr:hover td, .k-window-content > table > tbody > tr:hover, .k-window-content > table > tbody > tr:hover td {
-  background-image: none !important;
+.k-grid-content.k-auto-scrollable > table > tbody > tr:hover, .k-window-content > table > tbody > tr:hover {
+  width: 1650px !important;
   background: #F8F9FA !important;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr:hover td, .k-grid-content.k-auto-scrollable > table > tbody > tr:hover td td, .k-window-content > table > tbody > tr:hover td, .k-window-content > table > tbody > tr:hover td td {
-  background: #F8F9FA !important;
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button > span:before, .k-window-content > table > tbody > tr > td > button > span:before {
+  content: "\e91c" !important;
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 28px !important;
+  color: #7B098B !important;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td > button, .k-window-content > table > tbody > tr > td > button {
   align-items: center;
   padding: 12px;
   padding-top: 17px;
+  width: 56.26px;
   height: 50px;
   border: none !important;
   border-radius: 10px !important;
@@ -1273,6 +1431,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   padding-right: 10px;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td a, .k-window-content > table > tbody > tr > td a {
+  text-decoration: underline;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -1288,18 +1447,90 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   text-decoration: underline !important;
 }
 
-.k-action-buttons {
+.k-grid-header {
+  border: none !important;
+  background: #F8F9FA !important;
+  margin-top: 15px;
+  padding: 10px 0px;
+}
+
+.k-grid-content.k-auto-scrollable {
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.k-filter-menu {
+  background: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
+  border-radius: 10px;
+  border: none;
+  height: auto;
+  width: auto;
+  padding: 20px !important;
+}
+.k-filter-menu > .k-filter-menu-container {
+  padding-right: 5px;
+}
+.k-filter-menu > .k-filter-menu-container > .k-filter-help-text {
+  width: 114%;
+  background: none;
+  color: #007FC1;
+  margin-top: -7px;
+  margin-right: 0px;
+  height: 28px;
+  text-align: right;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-top: 12px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  height: 35px;
+  right: 0;
+  opacity: 0.2;
+  border-bottom: 0.5px solid #d9d9d9 !important;
+  opacity: 1 !important;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background: none !important;
+  width: 100%;
+}
+.k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md > button > span {
+  color: #000000 !important;
+  font-size: 23px !important;
+  margin-left: 29px !important;
+}
+.k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid {
+  height: 40px;
+  left: 0px;
+  background: #ffffff;
+  border: 0.5px solid #d9d9d9;
+  border-radius: 10px;
+}
+.k-filter-menu > .k-filter-menu-container > .k-action-buttons {
   display: flex;
   flex-direction: row !important;
 }
-.k-action-buttons > button {
+.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button {
   width: 45% !important;
   height: 30px;
   background: #DA3382 !important;
   border-radius: 10px !important;
   color: #FFFFFF !important;
 }
-.k-action-buttons > button.k-button-solid-base {
+.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base {
   background: #FFFFFF !important;
   border: 1px solid #DA3382 !important;
   color: #DA3382 !important;
@@ -2493,7 +2724,6 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-cube,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-cube {
   margin-top: 106px !important;
-  display: block;
   max-width: 330px;
   margin: 0;
   margin-right: 40px;
@@ -3156,29 +3386,6 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
   margin-top: 60px !important;
 }
 
-.Disabled {
-  opacity: 0.4;
-}
-
-.message-j5 .k-icon-wrapper.x-kicon.col-icon {
-  text-align: center !important;
-}
-.message-j5 .k-icon-wrapper.x-kicon.col-icon span {
-  font-size: 50px;
-}
-
-mainbody > .row.row-main .message-j5 .x-dynamic-label-control.s-dynamic-label-control {
-  text-align: center !important;
-  color: #323C4B;
-  text-align: center;
-  font-size: 20px;
-  font-family: Assistant;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-  margin-top: 10px;
-}
-
 #TafnitCore_SaaSServer_Funding_B2B_UI_Simulation {
   margin-top: 60px !important;
 }
@@ -3564,7 +3771,7 @@ mainbody > .row.row-main .message-j5 .x-dynamic-label-control.s-dynamic-label-co
 body, html {
   font-family: "Assistant";
   background: white !important;
-  height: auto;
+  height: auto !important;
 }
 
 .border.row {
@@ -3617,8 +3824,4 @@ body, html {
 .k-overlay {
   background: #323C4B !important;
   opacity: 0.5 !important;
-}
-
-.templatex-wrapper {
-  gap: 20px;
 }/*# sourceMappingURL=style.css.map */

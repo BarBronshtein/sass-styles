@@ -56,7 +56,7 @@
   margin: 0;
 }
 
-.xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-date-wrapper span.k-datepicker, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-intlphonenumber-wrapper .intl-tel-input, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper input {
+.xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-date-wrapper span.k-datepicker, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-intlphonenumber-wrapper input, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper input {
   height: 50px;
   background: #FFFFFF;
   border: 1px solid #CED4DA !important;
@@ -503,18 +503,15 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 .xstyle-intlphonenumber-wrapper div {
   border: none !important;
 }
-.xstyle-intlphonenumber-wrapper .intl-tel-input:focus, .xstyle-intlphonenumber-wrapper .intl-tel-input:focus-within {
-  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2) !important;
-  border: 1px solid #FFC4B0 !important;
+.xstyle-intlphonenumber-wrapper input {
+  padding-right: 10px !important;
 }
-.xstyle-intlphonenumber-wrapper .intl-tel-input.x-login-user-error {
+.xstyle-intlphonenumber-wrapper input.x-login-user-error {
   border-bottom: 1px solid #E91E63 !important;
 }
-.xstyle-intlphonenumber-wrapper input {
-  border: none;
-  padding-right: 10px !important;
-  outline: none !important;
-  text-align: center !important;
+.xstyle-intlphonenumber-wrapper input:focus {
+  box-shadow: 0px 0px 6px rgba(255, 90, 35, 0.2) !important;
+  border: 1px solid #FFC4B0 !important;
 }
 .xstyle-intlphonenumber-wrapper .selected-flag {
   background: none !important;
@@ -1407,10 +1404,22 @@ mainbody mainbody {
   width: 1650px !important;
   background: #F8F9FA !important;
 }
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button > span:before, .k-window-content > table > tbody > tr > td > button > span:before {
+  content: "\e91c" !important;
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 28px !important;
+  color: #7B098B !important;
+}
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td > button, .k-window-content > table > tbody > tr > td > button {
   align-items: center;
   padding: 12px;
   padding-top: 17px;
+  width: 56.26px;
   height: 50px;
   border: none !important;
   border-radius: 10px !important;
@@ -3146,7 +3155,6 @@ mainbody mainbody {
   color: black;
   font-family: "Font Awesome 6 Pro";
   font-weight: 300;
-  width: auto;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .col-phone, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .col-phone, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .col-phone {
   display: grid;
