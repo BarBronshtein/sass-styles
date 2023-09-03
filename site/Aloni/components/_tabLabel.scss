@@ -53,16 +53,15 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: flex-start;
-    gap: 15px;
+    gap: 5px;
     margin-top: 40px;
-    margin-bottom: 40px;
     padding: 0 40px;
     align-items: center;
  .templatex-wrapper{
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: flex-start;
-    gap: 15px;
+    gap: 5px;
     margin-bottom: 40px;
     align-items: center;
  }
@@ -83,7 +82,7 @@
     .name-tabs{
         display: grid;
         grid-template-columns: auto 1fr;
-        gap: 15px;
+        gap: 5px;
 
         .activeTab span{
             font-weight: 700;

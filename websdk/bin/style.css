@@ -1219,7 +1219,10 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .k-grid .k-grid-header {
   background: none;
   border: none;
-  padding: 10px 0px;
+  padding: 10px 0px !important;
+}
+.k-grid .k-grid-header .k-grid-header-wrap {
+  border: none;
 }
 .k-grid .k-grid-header .k-grid-filter.k-state-active {
   background: #ccc;
@@ -1239,7 +1242,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   color: #7B098B;
   font-weight: 500;
   font-size: 13px;
-  padding-right: 0 !important;
   border-bottom: 2px solid #D9D9D9 !important;
 }
 .k-grid .k-grid-header th a {
@@ -1758,7 +1760,6 @@ mainbody mainbody {
   font-weight: 400;
   font-size: 13px;
   line-height: 130%;
-  text-align: right !important;
   color: #000000;
   border: none;
   border-bottom: 1px solid #F5F5F5;
@@ -1804,10 +1805,6 @@ mainbody mainbody {
 }
 .k-grid-header-wrap.k-auto-scrollable th .k-column-title {
   white-space: nowrap;
-}
-.k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > a {
-  width: 34px;
-  margin-right: -10px !important;
 }
 .k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > span {
   font-family: "Heebo";
@@ -1945,15 +1942,6 @@ mainbody mainbody {
 }
 .k-pager-sizes.k-label span .k-input-button:hover {
   background: none !important;
-}
-
-.k-grid-filter-menu.k-grid-filter {
-  position: relative !important;
-  align-items: normal !important;
-}
-
-.k-grid .k-cell-inner > .k-link {
-  flex: none !important;
 }
 
 .k-rtl .k-grid-header .k-filterable .k-link {
@@ -2135,7 +2123,6 @@ mainbody mainbody {
 .k-i-filter {
   width: 50px;
   height: 38px;
-  margin-top: -3px !important;
 }
 
 .k-i-filter::before {
@@ -2149,10 +2136,6 @@ mainbody mainbody {
   font-size: 23px !important;
   color: #7E7B7B !important;
   text-indent: 0 !important;
-}
-
-.k-grid-filter-menu.k-grid-filter {
-  width: 32px;
 }
 
 .k-grid-header {
@@ -7593,6 +7576,9 @@ th .k-checkbox::before {
   gap: 40px;
   margin-top: 20px;
 }
+#TafnitCore_WorkFlow_UI_TaskHistory .row-tab .xstyle-dynamiclabelcontrol-wrapper {
+  cursor: pointer;
+}
 #TafnitCore_WorkFlow_UI_TaskHistory .row-tab .xstyle-dynamiclabelcontrol-wrapper span {
   color: #000;
   text-align: right;
@@ -10496,10 +10482,6 @@ mainbody > .row {
 
 #TafnitCore_System_UI_App_Tools_BusinessTierTracker .k-grid-pager a span.k-icon {
   transform: rotate(180deg);
-}
-
-.k-window {
-  direction: rtl !important;
 }
 
 .k-content:has(#TafnitCore_xAgreements_UI_InvoiceDetailes) .k-window-titlebar.k-hstack,

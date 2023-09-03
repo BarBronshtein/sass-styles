@@ -23,6 +23,7 @@
 
        .k-icon{
         font-size: 30px;
+        margin: auto !important
        }
 
       }
@@ -43,7 +44,7 @@
       }
 
       &:focus{
-        border: 1px solid $Button-color-border-focus;
+        border: 1px solid $button-border-color-focus;
         filter: $Button-boxshadow-focus;
         opacity: 1;
       }

@@ -2,7 +2,12 @@
 
     display: grid;
     grid-template-columns: 1fr 20%;
-    align-items: center;
+    align-items: self-end;
+    gap: 15px;
+
+    button{
+        margin-bottom: 0;
+    }
 }
 
  .xstyle-islider-wrapper{

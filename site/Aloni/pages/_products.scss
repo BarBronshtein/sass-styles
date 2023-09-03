@@ -5,8 +5,12 @@
 #TafnitCore_Sales_V2_UI_Product{
 
 .row-cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    &:has(.templatex-wrapper){
+        display: block;
+    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
     gap:20px;
     margin-top: 40px;
     padding: 0 40px;

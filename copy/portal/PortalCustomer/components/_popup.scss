@@ -27,7 +27,7 @@
   background: $list-view-bg-line-default ;
 }
         & li{
-          height: 30px;
+          height: 40px;
           padding: 0;
 
             &.k-selected.k-focus{
@@ -432,7 +432,7 @@
             margin-bottom: 10px;
             &:focus,
             &:focus-within{
-              border: $control-border-focus ;
+              border:1px solid $control-border-focus ;
               box-shadow: $control-box-shadow-focus;
             }
             & .k-button{
@@ -464,7 +464,7 @@
             margin-bottom: 10px;
             &:focus,
             &:focus-within{
-              border: $control-border-focus ;
+              border:11px solid $control-border-focus ;
               box-shadow: $control-box-shadow-focus;
             }
             & .k-input-button{

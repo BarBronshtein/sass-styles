@@ -20,7 +20,15 @@
         }
     }
 
+.col:has(div[uxid="gOpenLeasingOrders"]){
+    height: -webkit-fill-available;
 
+    div[uxid="lGoToOpenLeasingOrder"]{
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+    }
+}
     .x-marquee.s-marquee{
         font-size: 14px;
         font-family: 'Heebo';

@@ -422,6 +422,9 @@ mainbody > .row.boxShadow-0.border-0 > div {
 .k-drawer {
   border: 0;
 }
+.k-drawer .k-drawer-wrapper {
+  margin-top: 5px;
+}
 .k-drawer .k-drawer-items .k-drawer-item {
   background-image: none;
 }
@@ -2740,7 +2743,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   margin-bottom: 10px;
 }
 .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus, .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus-within {
-  border: #34f6b1 !important;
+  border: 1px solid #34f6b1 !important;
   box-shadow: 0px 1px 3px 0px rgba(52, 246, 177, 0.3), 0px 4px 8px 0px rgba(52, 246, 177, 0.3);
 }
 .k-filter-menu > .k-filter-menu-container > .k-numerictextbox .k-button {
@@ -2975,7 +2978,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 }
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
   box-shadow: 0px 1px 3px 0px rgba(52, 246, 177, 0.3), 0px 4px 8px 0px rgba(52, 246, 177, 0.3) !important;
-  border: #34f6b1 !important;
+  border: 1px solid #34f6b1 !important;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete::-moz-placeholder {
   color: #c7c7c7 !important;

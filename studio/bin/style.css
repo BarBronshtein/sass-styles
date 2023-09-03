@@ -23,7 +23,7 @@
   text-align: right;
 }
 
-.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) button.k-button-solid-primary, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN button, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton .spicellBTN button {
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) button.k-button-solid-primary {
   height: 40px !important;
   background: #B1BA1D;
   border-radius: 0px;
@@ -39,7 +39,7 @@
   border: 1px solid #B1BA1D;
 }
 
-.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) button, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper button, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton button {
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) button {
   background: #159BC5;
   border: none;
   border-radius: 0px;
@@ -52,105 +52,6 @@
   font-size: 14px;
   line-height: 24px;
   min-width: 200px;
-}
-
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-grid .gridHeaderButton {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 15px;
-  padding: 0px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 15px;
-  padding: 0px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton .x-button-wrapper:focus, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton .x-button-wrapper:focus-within {
-  border: 1px solid none;
-  padding: 2px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton button {
-  float: inherit !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton button:hover {
-  background: #29AFD9;
-  color: #ffffff;
-  border: 1px solid none;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton button:hover span:before, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton button:hover span:after {
-  color: #ffffff !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton button:focus {
-  background: #159BC5;
-  color: #ffffff !important;
-  box-shadow: 0px 4px 8px 0px rgba(142, 187, 207, 0.5);
-  opacity: 1;
-  border: 1px solid none;
-  padding: 4px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton button span {
-  color: #ffffff !important;
-  font-size: 30px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton .icon-btn-text button {
-  width: 110px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton .icon-btn-text button span:before {
-  right: -15px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .gridHeaderButton .icon-btn button {
-  width: 50px !important;
-  height: 50px !important;
-  min-width: auto;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN .x-button-wrapper:focus, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN .x-button-wrapper:focus-within {
-  border: 1px solid #9FA717;
-  padding: 2px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN button:hover {
-  background: #9FA717;
-  color: #ffffff !important;
-  border: none !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN button:hover span::before {
-  color: #ffffff !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN button:focus {
-  background: #9FA717;
-  color: #ffffff !important;
-  opacity: 1;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN button:focus span:before, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper.spicelBTN button:focus span::after {
-  color: #ffffff !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper .x-button-wrapper:focus, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper .x-button-wrapper:focus-within {
-  border: 1px solid none;
-  padding: 2px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper button {
-  max-width: 200px;
-  align-items: center;
-  display: flex !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper button:hover {
-  background: #29AFD9;
-  color: #ffffff !important;
-  border: 1px solid #29AFD9;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper button:hover span::before {
-  color: #ffffff !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper button:focus {
-  background: #159BC5;
-  color: #ffffff !important;
-  box-shadow: 0px 4px 8px 0px rgba(142, 187, 207, 0.5);
-  opacity: 1;
-  border: 1px solid none;
-  padding: 4px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-buttoncontrol-wrapper button:focus span:before {
-  color: #ffffff !important;
 }
 
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioComponent] {
@@ -272,13 +173,16 @@
   margin-top: 0px !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .ux-studio-border.border-studio.xtaf-row-main, #TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .ux-studio-border .xstudioRow.border-studio {
-  border-radius: 20px;
   border: 1px dashed black !important;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .ux-studio-border.border-studio.xtaf-row-main:hover, #TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .ux-studio-border .xstudioRow.border-studio:hover {
   box-shadow: 0px 0px 6px 0px rgba(21, 155, 197, 0.8);
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .ux-studio-border .xstudioCol.border-studio {
-  border-radius: 0px;
   border: 1px dashed black !important;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .ux-studio-border .xstudioCol.border-studio:hover {
+  box-shadow: 0px 0px 6px 0px rgba(21, 155, 197, 0.8);
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .xtaf-row-main, #TafnitCore_System_UI_App_Tools_Studio_UXStudio mainbody .xstudioRow {
   background: #FFF;

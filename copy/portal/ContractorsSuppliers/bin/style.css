@@ -2092,7 +2092,7 @@ mainbody mainbody {
   margin-bottom: 10px;
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus-within {
-  border: #366934;
+  border: 1px solid #366934;
   box-shadow: 0px 1px 3px 0px rgba(57, 181, 74, 0.3), 0px 4px 8px 0px rgba(57, 181, 74, 0.1);
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox .k-button {
@@ -2257,12 +2257,12 @@ mainbody mainbody {
   margin: 0 auto;
 }
 
-#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer {
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer, #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Accounts .x-footer {
   background: #FFF;
   box-shadow: 0px 0px 10px 0px rgba(54, 105, 52, 0.1);
   height: 60px;
 }
-#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer > .row {
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer > .row, #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Accounts .x-footer > .row {
   height: 60px;
   display: grid;
   grid-template-columns: auto auto;
@@ -2616,6 +2616,9 @@ mainbody mainbody {
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-grid .k-grid-content tr {
   border: none;
   box-shadow: none;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-button {
+  margin-bottom: 20px;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-grid-content.k-auto-scrollable > table > tbody > tr > td {
   text-align: right !important;

@@ -4,11 +4,7 @@
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleFleet,#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory{
 .header-grid{
   .gridHeaderButton{
-    display:grid;
-    grid-template-columns: 1fr auto;
-    gap: 15px;
-    padding: 0px;
-    border-top: 1px solid #8E8E8E;
+
     margin-top: 40px;
 
   }
@@ -97,6 +93,23 @@
   }
 
   .xstyle-buttoncontrol-wrapper{
+
+    &.k-state-disabled{
+      & button{
+        background: $button-disable-bg;
+        color:  $button-disable-text;
+        border: 1px solid $button-disable-border; 
+      }
+
+      
+    &.spicelBTN{
+
+      & button{
+        border: 1px solid $button-disable-border;
+        color:  $button-disable-text; 
+    }
+  }
+}
 
     &.spicelBTN{
 

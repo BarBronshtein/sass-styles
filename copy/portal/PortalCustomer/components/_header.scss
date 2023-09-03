@@ -1,6 +1,11 @@
 
 
-
+.header-customer {
+  img{
+      width: 100% !important;
+      height: 45px !important;
+    }
+}
 // header main //
 header.navbar-fixed-top.header-customer {
   display: grid;

@@ -112,7 +112,7 @@
 }
 #TafnitCore_Sales_V2_UI_ItemConfiguration .col-detailView .row-flex-2 .col-flex:has(.k-icon) .xstyle-buttoncontrol-wrapper button {
   padding: 0 10px;
-  width: auto !important;
+  width: 50px !important;
 }
 #TafnitCore_Sales_V2_UI_ItemConfiguration .col-detailView .row-flex-2 .col-flex .xstyle-buttoncontrol-wrapper .btn-special button {
   width: 100% !important;
@@ -170,6 +170,9 @@
   margin-top: 40px;
   padding: 0 40px;
 }
+#TafnitCore_Sales_V2_UI_Product .row-cards:has(.templatex-wrapper) {
+  display: block;
+}
 
 /*controls*/
 .xstyle-idropdownlist-wrapper label, .xstyle-password-wrapper label, .xstyle-textcontrol-wrapper label {
@@ -226,7 +229,7 @@
   border: 1px solid #AE8B49;
 }
 
-.k-window:has(#MessageBoxWindow) button, .xstyle-buttoncontrol-wrapper button {
+.xstyle-buttoncontrol-wrapper button {
   background: #AE8B49;
   border: 1px solid none;
   border-radius: 8px;
@@ -513,6 +516,16 @@
   gap: 15px;
 }
 
+.xtaf-linke-header {
+  display: flex;
+  justify-content: end;
+}
+.xtaf-linke-header .k-icon {
+  color: #625337;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
 .xstyle-password-wrapper {
   margin-top: 15px;
 }
@@ -560,6 +573,7 @@
 }
 .xstyle-buttoncontrol-wrapper.btn-special button .k-icon {
   font-size: 30px;
+  margin: auto !important;
 }
 .xstyle-buttoncontrol-wrapper button {
   margin-bottom: 15px;
@@ -693,9 +707,8 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: flex-start;
-  gap: 15px;
+  gap: 5px;
   margin-top: 40px;
-  margin-bottom: 40px;
   padding: 0 40px;
   align-items: center;
 }
@@ -703,7 +716,7 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-content: flex-start;
-  gap: 15px;
+  gap: 5px;
   margin-bottom: 40px;
   align-items: center;
 }
@@ -721,7 +734,7 @@
 .project-tabs .name-tabs {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 15px;
+  gap: 5px;
 }
 .project-tabs .name-tabs .activeTab span {
   font-weight: 700;
@@ -754,10 +767,9 @@
   height: auto !important;
 }
 .xstyle-xmenu-wrapper .k-animation-container .k-menu-group {
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 0px 6px 0px rgba(174, 139, 73, 0.1), 0px 8px 5px 0px rgba(174, 139, 73, 0.1);
   border: none;
-  box-shadow: none !important;
-  border-radius: 30px;
+  border-radius: 8px;
   background: white;
   padding: 0px 0;
   width: 100%;
@@ -765,13 +777,14 @@
 .xstyle-xmenu-wrapper .k-animation-container .k-menu-group .xstyle-dynamiclabelcontrol-wrapper {
   padding: 15px 0;
   border-bottom: 1px solid #E7E7E7;
+  border-radius: 0px;
 }
 .xstyle-xmenu-wrapper .k-animation-container .k-menu-group .xstyle-dynamiclabelcontrol-wrapper span {
   padding-right: 15px;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 130%;
   color: #000000;
 }
@@ -1049,17 +1062,17 @@
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item span {
   font-family: "Heebo";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 130%;
-  color: #625337;
+  color: #927338;
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item.k-active {
-  border-bottom: 1px solid #625337;
+  border-bottom: 1px solid #927338;
   background: none;
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item.k-active span {
-  font-weight: 500;
+  font-weight: 700;
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-content {
   background: none;
@@ -1300,59 +1313,100 @@
   color: #000;
 }
 
-.k-window:has(#MessageBoxWindow) #divCobuttonbtn1 {
-  overflow: hidden;
-}
-.k-window:has(#MessageBoxWindow) button {
-  margin-bottom: 15px;
-  padding: 0 30px;
-  min-width: 200px;
-  width: auto !important;
+.k-window:has(#MessageBoxWindow) {
+  background: #ffffff;
+  box-shadow: 0px 5px 8px 0px rgba(174, 139, 73, 0.1);
+  border-radius: 10px;
   border: none;
-  margin: auto;
+  max-height: 95%;
 }
-.k-window:has(#MessageBoxWindow) button:hover {
-  background: #927338;
-  color: #FFFFFF;
-  border: 1px solid none;
+.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
+  background: none !important;
+  border: none;
 }
-.k-window:has(#MessageBoxWindow) button:focus {
-  border: 1px solid #FFFFFF;
-  filter: drop-shadow(0px 0px 6px #AE8B49);
-  opacity: 1;
+.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack .k-button {
+  margin-left: 0px;
 }
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection {
+.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack .k-i-close::before {
+  content: "\e904";
+  font-family: "icomoon";
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection {
   display: block;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div {
+  margin: auto;
   text-align: center;
 }
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection > div {
-  max-width: 100%;
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div i::before {
+  content: "\e9cb";
+  font-family: "icomoon";
+  color: #AE8B49;
 }
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection #controlMessageText {
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div span {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 120%;
+  font-size: 14px !important;
+  line-height: 100%;
   color: #000000;
 }
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection i {
-  border-radius: 0 !important;
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow .x-icons {
+  border-radius: 0;
 }
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection .x-fa-warning:before {
-  content: "\e9cb";
-  color: #db0000;
-  font-family: "icomoon";
-  font-size: 60px;
-}
-.k-window:has(#MessageBoxWindow) .row {
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1 {
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
 }
-
-.k-i-close::before {
-  content: "\e904";
-  font-family: "icomoon";
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1:focus, .k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1:focus-within, .k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1:active {
+  border: 1px solid #FFFFFF;
+  padding: 2px;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow button {
+  min-width: 200px !important;
+  height: 50px;
+  background: #AE8B49;
+  border-radius: 8px;
+  border: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: white;
+  margin: auto;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow button:focus, .k-window:has(#MessageBoxWindow) #MessageBoxWindow button:active, .k-window:has(#MessageBoxWindow) #MessageBoxWindow button:focus-within {
+  background: #AE8B49;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow button:hover {
+  background: #927338;
+}
+
+.xstyle-checkbox-wrapper .x-checkbox {
+  border-color: #000000;
+  border-radius: 2px !important;
+}
+.xstyle-checkbox-wrapper .x-checkbox:checked {
+  border-color: #AE8B49;
+}
+.xstyle-checkbox-wrapper .x-checkbox:checked:before {
+  color: #AE8B49;
+}
+.xstyle-checkbox-wrapper .x-checkbox:focus {
+  box-shadow: none;
+}
+.xstyle-checkbox-wrapper label {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: right;
   color: #000000;
 }
 

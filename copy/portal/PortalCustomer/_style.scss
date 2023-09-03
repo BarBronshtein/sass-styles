@@ -53,6 +53,10 @@ body,html{
     font-family: 'Heebo';
     background: #F8F8F8 !important;
 }
+
+.x-login-user-error {
+    border: 1px solid red !important;
+}
 .border{
     border: none !important;
 }
@@ -92,7 +96,7 @@ body,html{
     color:$icon-after;
 }
 
-.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2{
+.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2,.icon-tracker{
 
     &:before{
         color:$drawer-icon-color-after;

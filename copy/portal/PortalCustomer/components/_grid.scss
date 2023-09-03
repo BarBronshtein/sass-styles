@@ -25,7 +25,18 @@
 }
 
 // grid header //
+.k-tabstrip-content{
+  .header-grid{
+    display: block;
 
+    .gridHeaderButton{
+      padding-bottom: 10px;
+      border-top: 1px solid #dedede;
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+  }
+}
 .header-grid{
   
   display: grid;
@@ -1035,7 +1046,7 @@
   & >span>span{
   font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
   font-style: normal !important;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 13px !important;
   line-height: 30px;
   color:$grid-pager-nav-color !important;
@@ -1073,6 +1084,7 @@
   
 
      .k-rtl .k-grid-header .k-filterable .k-link{
+      padding: 0;
       padding-left: 10px !important;
      }
 

@@ -11,7 +11,7 @@
         padding: 0;
     }
 }
-
+.greyPanel{
 .payment-cube-row2{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -21,6 +21,20 @@
     & > div {
         padding: 0;
     }
+
+        .gridHeaderButton{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 15px;
+            padding: 0px;
+
+            button{
+                margin-bottom: 0;
+            }
+
+        }
+    }
+     
 }
 
 .greyPanel{
@@ -43,6 +57,7 @@
                 align-items: center;
                 &:hover{
                     background: $button-bg-hover;
+                    border: 1px solid $special-button-color-border-hover;
                     color: white !important;
                     span::before{
                       color:  white !important;
