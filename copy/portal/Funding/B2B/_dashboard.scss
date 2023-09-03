@@ -1,10 +1,10 @@
 
 
-@use '../variable/variable' as *;
 
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard{
-    
+    padding: 0;
+    margin-top: -15px !important; 
 .xstyle-image-wrapper{
     background: none;
     box-shadow: none;
@@ -19,10 +19,10 @@
     background: none;
     box-shadow: none;
     position: absolute;
-    top:360px;
     justify-content: center;
     gap: 30px;
     z-index: 2;
+    margin-top: -55px;
 
 
 
@@ -38,6 +38,30 @@
         gap: 15px;
         padding: 0px 30px !important;
 
+        &:hover{
+            background: #F8F9FA;
+        }
+
+        &.col-disabled{
+
+            &:hover{
+                background: #FFFFFF;
+            }
+            .k-state-disabled{
+                opacity: 1;
+            }
+         
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            .x-dynamic-label-control{
+                color: #CED4DA;
+            }
+            span.k-icon:before,
+            span.k-icon::after{
+                color: #CED4DA;
+            }
+            
+        }
+
         .x-dynamic-label-control {
             font-family: 'Assistant';
             font-style: normal;
@@ -50,13 +74,14 @@
 
         span.k-icon{
             color: $small-cube-icon-color;
-            font-size: 30px;
+            font-size: 55px;
         }
     }
 }
 
 .wrapper-cube{
     margin-top: 106px !important;
+    display: block;
     max-width: 330px;
     margin: 0;
     margin-right: 40px;

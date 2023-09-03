@@ -1,7 +1,14 @@
 
 
+
+.k-i-calendar {
+  &:before{
+    content: "\e973";
+    font-family: 'icomoon';
+  }
+}
 .xstyle-date-wrapper{
-  margin-bottom: 20px;
+  margin-top: 20px;
 // input parent-mobile samsong // 
   & .s-datePickerResponsive.x-datePicker-mobile{
 

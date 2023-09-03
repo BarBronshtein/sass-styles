@@ -1,0 +1,15 @@
+@use '../variables/masterVariable' as *;
+
+.x-creditguard-wrapper {
+    text-align: center;
+
+    .x-creditguard-iframe {
+        width: 100%;
+        height: 800px;
+        border-width: 0px;
+    }
+
+    .x-creditguard-url {
+        text-align: center;
+    }
+}

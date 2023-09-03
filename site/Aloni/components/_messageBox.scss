@@ -1,0 +1,73 @@
+
+@use '../variable/variable' as *;
+.k-window:has(#MessageBoxWindow){
+
+   #divCobuttonbtn1{
+    overflow: hidden;
+   }
+
+   button{
+    @extend %button;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    min-width: 200px;
+    width: auto !important;
+    border: none;
+    margin: auto;
+  &:hover{
+    background: $Button-bg-hover;
+
+    color: $Button-color-text;
+    border: 1px solid $Button-color-border;
+  }
+
+  &:focus{
+    border: 1px solid $Button-color-border-focus;
+    filter: $Button-boxshadow-focus;
+    opacity: 1;
+  }
+   }
+
+   #ctrlSectionMainSection{
+    display: block;
+    text-align: center;
+    & >div{
+        max-width: 100%;
+    }
+
+    #controlMessageText{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #000000;
+    }
+
+    i{
+        border-radius: 0 !important;
+    }
+
+    .x-fa-warning{
+        &:before{
+            content: "\e9cb";
+            color: #db0000;
+            font-family: 'icomoon';
+            font-size: 60px;
+        }
+
+    }
+   }
+
+   .row{
+    margin: auto;
+   }
+}
+
+.k-i-close::before{
+
+    content: "\e904";
+    font-family: 'icomoon';
+    font-size: 16px;
+    color: #000000;
+}

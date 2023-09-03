@@ -1,11 +1,4 @@
-$messageBox-bg:#FFFFFF;
-$messageBox-box-shaow: 0px 0px 6px rgba(255, 120, 11, 0.2);;
-$messageBox-color-icon-close:#7E7B7B;
-$messageBox-color-icon:#02C467;
-$messageBox-color-text:#323C4B;
-$messageBox-bg-button:#DA3382;
-$messageBox-bg-button-focus:#DA3382;
-$messageBox-bg-button-hover:#DA3382;
+
 // חלון הודעות//
 
 .k-window:has(#MessageBoxWindow) {
@@ -17,6 +10,23 @@ $messageBox-bg-button-hover:#DA3382;
     left: 0 !important;
     right: 0 !important;
     margin: 0 auto;
+
+    .x-fa-warning{
+      font-size: 65px;
+      font-weight: 400 !important;
+      &:before{
+        content: "\ea34";
+        color: #4194e4;
+        font-family: 'icomoon';
+      }
+
+      &::after{
+        content: "\ea35";
+        color: #323c4b;
+        font-family: 'icomoon';
+        margin-left: -1em;
+      }
+    }
   
     & .k-window-titlebar.k-hstack {
       background: none !important;
@@ -86,6 +96,30 @@ $messageBox-bg-button-hover:#DA3382;
 
          }
 
+
+         .x-fa-info::before{
+
+          color: #DA3382;
+         }
+
+    }
+
+
+    .fa-times-circle{
+      font-size: 75px;
+      font-weight: 400;
+      &::before{
+        content: "\ea3c";
+        color: #db0000;
+        font-family: 'icomoon';
+      }
+
+      &::after{
+        font-family: 'icomoon';
+        content: "\ea3d";
+        color: #323c4b;
+        margin-left: -1em;
+      }
     }
 
   }

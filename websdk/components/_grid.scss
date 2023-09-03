@@ -1,5 +1,7 @@
 @use '../variable/variable' as *;
-
+.k-ghost-splitbar-horizontal, .k-ghost-splitbar-vertical, .k-marquee-color, .k-panel>.k-selected, .k-panel>.k-state-selected, .k-scheduler .k-today.k-selected, .k-scheduler .k-today.k-state-selected, .k-selected, .k-state-selected, .k-state-selected:link, .k-state-selected:visited{
+  background: #FAF6FC !important;
+}
 .k-grid {
     border: none;
     outline: 0;
@@ -410,7 +412,7 @@
     border: none;
     margin-top: 16px !important;
     margin-bottom: 16px;
-   
+    padding: 25px 0px;
    
     & a.k-disabled {
      & span.k-icon {
@@ -740,11 +742,13 @@ border-radius: 10px;
          
             content: "\e925" !important;
                left: -8px;
-            font-size: 12px !important;
+            font-size: 18px !important;
             color: #7B098B !important;
             margin-top: 6px;
             display: inline-block;
-          
+            &.fa-star{
+              font-size: 14px !important;
+            }
   
       
         }
@@ -894,8 +898,11 @@ border-radius: 10px;
     -webkit-box-shadow: 0px 0px 12px rgb(123 9 141 / 12%) !important;
     box-shadow: 0px 0px 12px rgb(123 9 141 / 12%) !important;
     border-radius: 10px;
-    top: 4px;
     margin-left: 13px;
+    color: #7d0a8c !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     &:focus-within{
       background: #F3F3F3 !important;
       border: 1px solid #C8C8C8 !important;

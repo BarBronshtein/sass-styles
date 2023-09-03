@@ -1,5 +1,4 @@
 
-@use '../variable/variable' as *;
 
 
 .row-special{
@@ -25,10 +24,40 @@
     padding: 0 !important;
 
     &.stepper2{
-      background: white !important;
-      position: fixed;
-      top: 80px;
-      z-index: 10
+        background: white !important;
+        position: fixed;
+        top: 45px;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        width: 73.5%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin-top: 0px;
+        height: 67px;
+        align-items: flex-end;
+
+        & > .col{
+          padding: 0;
+        }
+
+        .col-blue{
+            background: #4194E4;
+            padding: 0px 30px;
+            align-items: center;
+            display: flex;
+            height: 38px;
+            
+            span{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 110%;
+                color: #FFFFFF;
+            }
+        }
     }
 }
 
@@ -71,6 +100,16 @@ mainbody {
         margin: auto;
         margin-bottom: 15px;
 
+       .x-cell-header{
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #323C4B;
+        height: auto;
+    }
+        
         .col-checkbox{
             display: grid;
             grid-template-columns: auto 1fr;

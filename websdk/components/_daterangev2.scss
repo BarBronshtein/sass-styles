@@ -1,6 +1,6 @@
 @use "../variable/variable" as *;
 
-.xstyle-daterangev2-wrapper {
+.xstyle-daterangev2-wrapper,.xstyle-daterange-wrapper {
 border-radius: 0 !important;
   margin-top: 5px;
   & input {

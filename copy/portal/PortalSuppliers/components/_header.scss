@@ -1,15 +1,24 @@
 
+
+
+
+
 // header main //
 header.navbar-fixed-top.header-suppliers {
   display: grid;
   grid-template-columns: 80%20%;
   height: 121px;
-  background: #FFFFFF;
+  background: $header-bg;
+  box-shadow: $header-box-shadow;
   border-radius: 10px;
-  width: 96% !important;
+  width: 99% !important;
   margin: auto;
+  top: 0px;
   border: none !important;
-
+  position: sticky;
+.xstyle-dynamiclabelcontrol-wrapper     {
+  height: 25px;
+}
   & div{
     max-height: 121px;
   }
@@ -22,7 +31,7 @@ header.navbar-fixed-top.header-suppliers {
   grid-template-columns: 40% 60%;
   gap: 10px;
   & div.border-left{
-      border-left:1px solid #000000 ;
+      border-left:$header-border;
   }
   & > div{
     align-self: center;
@@ -35,7 +44,7 @@ header.navbar-fixed-top.header-suppliers {
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
-    color: black;
+    color: $header-hellotext-color;
     }
   }
 
@@ -46,7 +55,7 @@ header.navbar-fixed-top.header-suppliers {
       font-weight: 300;
       font-size: 32px;
       line-height: 30px;
-      color: black;
+      color: $header-usernamedetails-color;
     }
   }
 
@@ -57,7 +66,8 @@ header.navbar-fixed-top.header-suppliers {
       font-weight: 400;
       font-size: 12px;
       line-height: 120%;
-      color: #A6A6A6;
+      color: $header-lastlogindetails-color;
+      margin-top: 10px;
     }
   }
 }
@@ -71,10 +81,10 @@ header.navbar-fixed-top.header-suppliers {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 120%;
     text-align: right;
-    color: #059FCF;
+    color: $header-link-color;
   }
   & span{
     font-family: 'Heebo';
@@ -82,7 +92,7 @@ header.navbar-fixed-top.header-suppliers {
     font-weight: 400;
     font-size: 14px;
     text-align: right;
-    color: #000000;
+    color: $header-details-span-color;
   }
   .xstyle-dynamiclabelcontrol-wrapper > .col-4, 
   .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33{
@@ -92,11 +102,11 @@ header.navbar-fixed-top.header-suppliers {
       margin-left: 5px;
       font-family: 'Heebo';
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 14px;
       line-height: 25px;
       text-align: right;
-      color: #690779;
+      color: $header-details-label-color;
     }
  } 
 }

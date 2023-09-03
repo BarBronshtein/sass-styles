@@ -19,7 +19,7 @@ mainbody {
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 400 !important;
-                font-size: 16px !important;
+                font-size: 14px !important;
                 margin-top: 0 !important;
                 line-height: 100%;
                 color: #00AEE9 !important;
@@ -210,6 +210,10 @@ mainbody {
     margin-bottom: 20PX;
     & > .col{
         padding: 15px !important;
+
+        &.noPadding{
+            padding: 0 !important;
+        }
     }
     .col-checkBox{
         display: grid;
@@ -292,11 +296,7 @@ mainbody {
         margin-right: 10px;
     }
 
-    .k-icon{
-        color:#77AB1A;
-    
-    }
-
+ 
     .xstyle-kicon-wrapper{
 
         &.open{
@@ -305,6 +305,17 @@ mainbody {
                 margin-left: 10px;
                 font-size: 14px;
             }
+        }
+
+        &.new{
+            color: #00AEE9;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        &.active{
+            color: #0167B1;
+            margin-left: 10px;
         }
 
         &.closed{
@@ -340,4 +351,8 @@ mainbody {
     bottom: 22px;
     color: #0167B1;
     z-index: 20;
+}
+
+.noPadding{
+    padding: 0 !important;
 }

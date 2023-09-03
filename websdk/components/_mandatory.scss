@@ -11,6 +11,7 @@
 .xstyle-date-wrapper.mandatory,
 .xstyle-checkbox-wrapper:has(.x-control-caption-wrapper).mandatory,
 .xstyle-password-wrapper.mandatory,
+.xstyle-radio-wrapper.mandatory,
 .xstyle-timepicker-wrapper.mandatory {
   :has(.x-control-caption-wrapper) {
     & label {

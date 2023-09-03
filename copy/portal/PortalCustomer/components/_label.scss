@@ -1,0 +1,41 @@
+.row-list .list{
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap:4px;
+    align-items: center;
+    &::after{
+    width: 7px;
+    height: 7px;
+    background: $lable-list-bg ;
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -16px;
+    }
+    label{
+        width:max-content;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        color: $lable-list-caption-color;
+        min-height: 2em;
+
+    }
+
+    span{
+        font-size: 14px !important;
+        font-weight: 400;
+        font-family: 'Heebo';
+        line-height: 24px ;
+        margin-top: -4px;
+        color: $lable-list-value-color !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+

@@ -1,0 +1,59 @@
+.xstyle-datetimepicker-wrapper {
+
+    .k-datetimepicker {
+        width: 100%;
+    }
+
+    input {
+        &.k-input {
+            padding-top: 5.5px;
+            padding-bottom: 5.5px;
+        }
+    }
+}
+
+.xstyle-daterange-wrapper input.k-textbox {
+    input {
+        &.k-input {
+            padding-top: 4.5px;
+            padding-bottom: 4.5px;
+        }
+    }
+}
+
+.xstyle-timepicker-wrapper {
+    
+    &.p-floating-container{
+        .k-timepicker {
+            background: #fafafa !important;
+            border: 0px;
+            border-bottom: 1px solid;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+
+            .k-picker-wrap {
+                border: none !important;
+            }
+        }
+    }
+
+    .k-timepicker {
+        width: 100%;
+
+        input {
+            height: 36px;
+        }
+        .k-button{
+            height: 35px;
+        }
+    }
+    input[type="time"]{
+        height: 36px;
+    }
+}
+
+/*timerange unknow*/
+
+.x-notification {
+    display: none;
+}

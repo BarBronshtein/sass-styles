@@ -1,0 +1,14 @@
+@use '../variables/masterVariable' as *;
+
+
+.xstyle-radio-wrapper {
+    .x-RBComp {
+        display: inline-block;
+        clear: both;
+        padding: 0px 0px 0px 30px;
+    }
+
+    .x-radio-spacer {
+        margin-bottom: 5px;
+    }
+}

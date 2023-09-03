@@ -1,0 +1,20 @@
+
+.k-switch {
+    text-align: left ;
+}
+
+.k-edge{
+    .k-switch-on .k-switch-thumb-wrap, 
+    .k-ie .k-switch-on .k-switch-thumb-wrap{
+        margin-left: auto ;
+    }
+} 
+
+.k-rtl {
+    .k-switch .k-switch-label-off, 
+    [dir=rtl].k-switch .k-switch-label-off{
+        right: auto ;
+    }
+}
+
+

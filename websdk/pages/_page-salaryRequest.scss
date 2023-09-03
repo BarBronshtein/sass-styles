@@ -38,6 +38,7 @@ opacity: 1 !important;
   }
 
   .cancel-button{
+    margin-right: -10px;
     & .x-button-wrapper .k-button.x-button.s-button{
       background: #FFFFFF !important;
       border: 1px solid #915FA5 !important;
@@ -60,7 +61,20 @@ opacity: 1 !important;
   padding-bottom: 35px !important;
  
 }
+.k-rtl.k-window:has(#TafnitCore_Salary_UI_RequestHistory){
+
+  & .k-window-titlebar{
+    position:relative;
+    z-index: 1600;
+    left: -35px;
+    top: 10px;
+    height: 15px !important;
+  }
+}
 .k-rtl.k-window-content:has(#TafnitCore_Salary_UI_RequestHistory){
+
+
+
 
 & .xstyle-gridv4-wrapper{
   & .k-grid-content.k-auto-scrollable{
@@ -71,6 +85,8 @@ opacity: 1 !important;
 
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory){
+
+
   & .k-widget.k-window.k-rtl.k-display-inline-flex{
 
         height: auto !important;
@@ -85,18 +101,26 @@ opacity: 1 !important;
         & #TafnitCore_Salary_UI_RequestHistory{
 
           & header{
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 0px;
+            padding-left: 0px;
+            background: none;
+     
 
+            .xstyle-itoolbar-wrapper{
+              background: none;
+              box-shadow: none;
+              padding: 0 !important;
+            } 
 
             & #tbbTitle{
-              height: 90px !important;
+              height: 80px !important;
               -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
               box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
               border-radius: 10px !important;
               width: 100%;
               margin-left: 0px;
               background-color: #FFFFFF !important;
+              margin-bottom: 10px;
 
               & span{
                 color: #7B098B !important;
@@ -116,7 +140,7 @@ opacity: 1 !important;
             }
 
             .k-button-group {
-              height: 90px !important;
+              height: 80px !important;
               background: #FFFFFF !important;
               -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
               box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
@@ -125,7 +149,7 @@ opacity: 1 !important;
               padding-left: 10px !important;
               margin-left: 0px !important;
               margin-right: 0px !important;
-
+              margin-bottom: 10px;
               & button.k-button {
                 -webkit-box-shadow: 0px 4px 4px rgb(123 9 141 / 20%), 0px 0px 8px rgb(123 9 141 / 20%) !important;
                 box-shadow: 0px 4px 4px rgb(123 9 141 / 20%), 0px 0px 8px rgb(123 9 141 / 20%) !important;
@@ -149,8 +173,8 @@ opacity: 1 !important;
 
           }
           & mainbody{
-            padding-right: 20px;
-            padding-left: 20px;
+            padding-right: 5px;
+            padding-left: 5px;
 
        
         
@@ -289,6 +313,16 @@ opacity: 1 !important;
       transform: translateY(-50%);
       display: grid;
     grid-template-columns: 57% auto auto;
+
+    .xstyle-textcontrol-wrapper{
+    
+     margin-top: 0;
+    input.k-textbox.x-textbox{
+
+      border-right: none !important;
+    }
+  }
+
 }
 
 & .secndary-title{
@@ -323,7 +357,7 @@ opacity: 1 !important;
       font-weight: 700 ;
       font-size: 16px !important;
       line-height: 130%;
-      color: #7B098B;
+      color: #7B098B !important;
     }
   }
 }
@@ -347,6 +381,11 @@ opacity: 1 !important;
     padding-right: 0px;
     margin-right: 0px;
     padding-left: 0;
+    height: 10px;
+
+    .x-login-user-error-msg{
+      font-size: 12px !important;
+    }
 
     & .xstyle-textcontrol-wrapper{
      height: 37px;
@@ -358,7 +397,7 @@ opacity: 1 !important;
     }
      &:focus-within{
       border: 1px solid #ddc3e7 !important;
-      box-shadow: 0px 0px 10px #f6ecfb !important;
+      box-shadow: drop-shadow(0px 4px 4px rgba(123, 9, 141, 0.1)) drop-shadow(0px 0px 3px rgba(123, 9, 141, 0.2)) !important;
       outline: none !important;
      }
     }
@@ -386,9 +425,9 @@ opacity: 1 !important;
 
 
   & .k-window-titlebar{
-    position:absolute;
     z-index: 1600;
-    left: 6px;
+    top: 10px;
+    height: 15px !important;
   }
 
   & .k-window-content{
@@ -401,7 +440,7 @@ opacity: 1 !important;
 }
 
 #TafnitCore_Salary_UI_SubmitRequest .k-grid-content.k-auto-scrollable > table > tbody > tr td{
-  height: 50px !important;
+  height: 40px !important;
 }
 
 #TafnitCore_Salary_UI_SubmitRequest span.k-button-group#btnSplt2{
@@ -424,7 +463,7 @@ opacity: 1 !important;
     
            & th{
              color: #7B098B !important;
-             font-size: 14px !important;
+             font-size: 13px !important;
              font-weight: 500 !important;
 
              &:nth-child(1){
@@ -445,7 +484,7 @@ opacity: 1 !important;
           }
           & th{
             color: #7B098B !important;
-            font-size: 14px !important;
+            font-size: 13px !important;
             font-weight: 500 !important;
             &:nth-child(1){
               color: #7B098B !important;
@@ -459,7 +498,7 @@ opacity: 1 !important;
 
 
   & #rEmployee{
-    height: 90px !important;
+    height: 80px !important;
     -webkit-box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
     box-shadow: 0px 6px 6px rgb(123 9 141 / 10%) !important;
     border-radius: 10px !important;
@@ -471,6 +510,10 @@ opacity: 1 !important;
 & .k-spacer{
   display: none;
 }
+
+.xstyle-itoolbar-wrapper     {
+  margin-bottom: 10px;
+}
 & .k-toolbar.k-toolbar-resizable{
 
   margin-top: 0px !important;
@@ -479,6 +522,7 @@ opacity: 1 !important;
   gap: 15px;
   width: 100%;
   padding: 0;
+  padding-bottom: 5px;
     &::before{
       display: none !important;
     }
@@ -535,7 +579,7 @@ opacity: 1 !important;
 }
 & span.k-button-group{
 
-height: 90px !important;
+height: 80px !important;
 background: #F5F5F5 !important;
 box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
 border-radius: 10px !important;
@@ -567,6 +611,16 @@ margin-right: 0px !important;
   & .grid-salary{
     padding-top: 0px !important;
     margin: 0 !important;
+     .first-table.mb-2{
+      align-items: center;
+     }
+       .xstyle-radio-wrapper{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 10px;
+       }
+
    }
 
 
@@ -619,15 +673,18 @@ margin-right: 0px !important;
   padding: 15px;
   margin-top: 15px;
   & .requestNotes-body{
-    height: 53px !important;
+    height: 40px !important;
 
-
+      border-bottom: 1px solid #F5F5F5;
   }
   & .col-33{
     max-width: 19%;
     background: #fbfbfb;
     & label{
       color: #000;
+      height: 35px !important;
+      align-items: center;
+      display: grid;
     }
 
   }
@@ -680,7 +737,7 @@ margin-right: 0px !important;
         font-family: map-get($map: $typographyVariables, $key: -font-family);
         font-style: normal;
         font-weight: 400;
-        font-size: 14px !important;
+        font-size: 13px !important;
         line-height: 130%;
         color: map-get($map: $Colors, $key: text-defualt ) ;
         padding-right: 10px;
@@ -692,7 +749,7 @@ margin-right: 0px !important;
         font-family: map-get($map: $typographyVariables, $key: -font-family);
         font-style: normal;
         font-weight: 400;
-        font-size: 14px !important;
+        font-size: 13px !important;
         line-height: 130%;
         color: map-get($map: $Colors, $key: text-defualt );
         padding-right: 10px;
@@ -885,28 +942,22 @@ margin-left: 20px ;
 .salary-changeSummary{
 
   & .BackToBack{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    gap: 15px;
-    background: none !important;
-    box-shadow: none;
-    border: none !important;
-    padding: 0;
-    padding-left: 15px;
-    margin: auto;
+     display: grid;
+
     & .BackToBack-textBox{
       margin: 0;
-      height: 53px !important;
+      height: 40px !important;
       border-bottom: 1px solid #F5F5F5 !important;
 
       &:focus-within{
         border-bottom: 1px solid #ddc3e7 !important;
       }
       & .col-33{
-        max-width: 55%;
-        flex: 0 0 55%;
         background: #fbfbfb !important;
         height: 100%;
+        text-align: right;
+        align-items: center;
+        display: grid;
         & label{
           color: #000;
         }
@@ -921,13 +972,7 @@ margin-left: 20px ;
       }
     }
     & >div{
-      background: #ffffff;
-      box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
-      border-radius: 10px;
-      margin-bottom: 15px;
-      padding: 20px;
-      align-self: center;
-      height: 85px;
+
       & >div{
         top: 50%;
         transform: translateY(-50%);
@@ -957,8 +1002,6 @@ margin-left: 20px ;
       }
     }
     & .x-cell.s-cell{
-       text-align: center ;
-       align-self: center;
 
       ul.fieldlist{
         top: 0px;
@@ -968,7 +1011,7 @@ margin-left: 20px ;
   }
 
   & td i {
-    font-size:  15px !important;
+    font-size:  18px !important;
 
   }
   & td {
@@ -1125,9 +1168,10 @@ color: #7B098B !important;
 
 
 & mainbody{
-  margin-top: 35px !important;
+  margin-top: 0px !important;
   padding-bottom: -8px !important;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+  padding: 0 !important;
   background: white !important;
 }
     & .xstyle-idropdownlist-wrapper{
@@ -1151,8 +1195,9 @@ color: #7B098B !important;
   }
 
 
-  height: 95% !important;
-  width: 96%;
+  height: 100% !important;
+  width: 100%;
+  margin-top: 0 !important;
    & .x-cell-header.s-cell-header{
     font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
     font-style: normal;
@@ -1206,6 +1251,10 @@ color: #7B098B !important;
     }
     }
     & .xstyle-date-wrapper{
+
+      .x-datePickerResponsive{
+        border-right: none !important;
+      }
       & input{
         text-indent: 10px !important;
         border-right: none !important;
@@ -1240,6 +1289,7 @@ color: #7B098B !important;
       & input{
         border-right: none ;
         color: black !important;
+        border: none !important;
         &::placeholder{
           color: #d9d9d9 !important;
         }
@@ -1251,7 +1301,7 @@ color: #7B098B !important;
     margin-top: 0px !important;
     margin-bottom: 30px !important;
     & .k-grid-header{
-      border-bottom: 1px solid #F5F5F5 !important;
+    
       & th{
         color:  #7B098B !important;
         font-weight: 400;
@@ -1272,7 +1322,7 @@ color: #7B098B !important;
       width: 100% !important;
     }
     & .k-grid-header{
-      border-bottom: 1px solid #F5F5F5 !important;
+      
       & th{
         color:  #7B098B !important;
         font-weight: 400 !important;
@@ -1331,8 +1381,11 @@ font-size: 14px !important;
     #TafnitCore_xAgreements_UI_SalaryRequestRaise,
     #TafnitCore_Salary_UI_RequestRaise{
        
+      .col{
+        padding-right: 0;
+      }
       .price {
-        padding-right: 0px;
+        padding-right: 5px;
       }
       & .bAddSalaray{
         padding: 0  !important;
@@ -1349,10 +1402,11 @@ font-size: 14px !important;
         }
       }
       & mainbody{
-        margin-top: 35px !important;
+        margin-top: 0px !important;
         padding-bottom: -8px !important;
         background: white !important;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
+        padding: 0 !important;
 
       }
       & .xstyle-date-wrapper{
@@ -1380,9 +1434,9 @@ font-size: 14px !important;
           }
          }
        }
-      height: 95% !important;
-      width: 96%;
-
+       height: 100% !important;
+       width: 100%;
+       margin-top: 0 !important;
 
 
 
@@ -1408,6 +1462,7 @@ font-size: 14px !important;
       box-shadow: 0px 0px 8px rgb(123 9 141 / 8%) !important;
       border-radius: 10px;
       padding: 20px 40px;
+      margin-bottom: 0px !important;
 
      
     }
@@ -1416,9 +1471,7 @@ font-size: 14px !important;
       margin-bottom: 80px !important;
       margin-top: 24px;
     }
-    & .k-grid-header{
-      border-bottom: 1px solid #F5F5F5 !important;
-    }
+   
       & .headerNone{
        
         box-shadow:none !important;
@@ -1439,7 +1492,7 @@ font-size: 14px !important;
 
         & button{
           width: 140px !important;
-          height: 37px !important;
+          height: 30px !important;
           background: #7B098B ;
           border-radius: 10px !important;
           color: #FFFFFF ;
@@ -1462,6 +1515,8 @@ font-size: 14px !important;
               background: map-get($map: $Colors, $key: bg-qube ) !important;
               position: relative;
               z-index: 50;
+              border-right: 0 !important;
+              border-bottom: 1px solid #d9d9d9 !important;
               &::placeholder{
                 color: #ececec !important;
               }
@@ -1510,14 +1565,14 @@ font-size: 14px !important;
       }
       & .k-grid-header{
   
-        border-bottom: 1px solid #F5F5F5;
+       
   
          & div>table>thead>tr>th{
   
           font-family: map-get($map: $typographyVariables, $key: -font-family);
           font-style: normal;
           font-weight: 400;
-          font-size: 14px !important;
+          font-size: 13px !important;
           line-height: 130%;
           text-align: right;
           color: #7B098B !important;
@@ -1648,7 +1703,7 @@ font-size: 14px !important;
       & div[uxid="lFromDate"]{
 
         & span{
-          margin-top: 30px;
+          margin-top: 25px;
     margin-right: 18px;
     color: map-get($map: $Colors, $key: text-defualt ) !important;
     font-size: 16px !important;
@@ -1720,6 +1775,10 @@ font-size: 14px !important;
       }
 
       & .xstyle-date-wrapper  {
+          .x-datePickerResponsive{
+            border-right: none !important
+          }
+
         & input{
           border-right: none !important;
           text-indent: 11px !important;
@@ -1742,11 +1801,11 @@ font-size: 14px !important;
 
     .popUpWindowCls:has(#TafnitCore_Salary_UI_FutureValues){
 
-      width: 60% !important;
+      width: 73% !important;
       background: #FBFBFB !important;
       position: absolute;
       top: 56px !important;
-      right: -62% !important;
+      right: -76% !important;
       margin: 0 !important;
       & #TafnitCore_Salary_UI_FutureValues{
         padding: 0 !important;
@@ -1834,6 +1893,34 @@ font-size: 14px !important;
   .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection){
     height: auto !important;
 
+
+    .k-searchbox {
+      border: none !important;
+      text-indent: 3% !important;
+      border-radius: 20px !important;
+      border: 0;
+      box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.1);
+      border-radius: 20px;
+      width: 100.5%;
+      height: 40px;
+      max-height: 35px !important;
+      background: white !important;
+
+      input{
+        border: none !important;
+        background: none !important;
+        color: #000000 !important;
+        padding-right: 10px;
+        font-family: "Heebo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+
+        &::placeholder{
+          color: #000000 !important;
+        }
+      }
+    }
     .k-window-titlebar.k-hstack{
 
       height: 35px !important;

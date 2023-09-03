@@ -1,261 +1,253 @@
 
 
-@import '../../../../base/variables/masterVariable';
-// PALETTE 
-$Colors: (
-"bg-main-screen": #F8F8F8,
-"bg-qube": #ffffff,
-"button-bg": #ffffff,
-"button-icons": #7d0a8c,
-"button-important-bg": #7d0a8c,
-"button-important-icon": #ffffff,
-"button-important-text": #ffffff,
-"button-text-defualt": #000000,
-"contacts-menu": #037194,
-"drawer": #650872,
-"drawer-icon-openclose": #ddc3e6,
-"drawer-icons": #ffffff,                
-"drawer-line": #690679,
-"grid-bg-filtered": #f5f5f5,
-"grid-button-filter-button-second": #d9d9d9,
-"grid-icon-filer-on": #FF780B,
-"grid-icon-filter-off": #7e7a7a,
-"grid-icons": #FF780B,
-"grid-line": #ffffff,
-"grid-page-number": #ddc3e6,
-"grid-popup-filter-bg": #f5f5f5,
-"grid-popup-filter-bg-button-off": #ffffff,
-"grid-popup-filter-bg-subjec": #d9d9d9,
-"grid-popup-filter-bg-value ": #ffffff,
-"grid-popup-filter-button": #FF780B,
-"grid-popup-filter-button-text": #ffffff,
-"grid-popup-filter-stroke": #d9d9d9,
-"grid-popup-filter-title": #FF780B,
-"grid-stroke-under-line": #f5f5f5,
-"grid-text-defualt": #000000,
-"grid-text-title": #7e7a7a,
-"grid-title-filtered": #7e7a7a,
-"main-color": #7d0a8c,
-"page-number-current": #7d0a8c,
-"popup-bg": #7d0a8c,
-"popup-bg-press": #690679,
-"popup-bg-primary-base": #fafafa,
-"popup-icon": #ffffff,
-"popup-icons": #7d0a8c,
-"popup-stroke": #f5f5f5,
-"popup-text": #ffffff,
-"popup-text-defualt": #000000,
-"radio-button-off": #000000,
-"radio-button-on": #7d0a8c,
-"requier": #ff7a00,
-"taxt-notification": #15b0c5,
-"text": #7e7a7a,
-"text-defualt": #000000,
-"text-disable": #d9d9d9,
-"border-color": #d9d9d9,
-"text-link": #7d0a8c,
-"user-screen-button": #f5f5f5,
-"user-screen-button-primary-base": #ffffff,
-"user-screen-color-icon": #7d0a8c,
-"warning": #ee0909,
-"border-color-defualt": black,
-"checkbox-color": #7B098B,
-"login-screen-boxshadow": rgba(123, 9, 141, 8%),
-"login-screen-border" : #7d0a8c,
-"dashboardpage-boxshadow-color": rgb(0 45 65 / 8%),
-"grid-scoller-background": #FF780B,
-"overview-screen-color": #7B098B,
-);
-
-
-// COMPONENTS 
-$componentsVariables: (
-
-);
 
 
 
-$mandatory-color: #DA3382;
+
+
+$mandatory-color: #DA3382 !default;
 
 
 
 //grid//
-$grid-filter-icon:#DA3382;
-$Grid-color-title-th:#323C4B ;
-$Grid-color-text-td:#323C4B ;
-$grid-icon-search-color:#007FC1;
-$Grid-checkBox-bg:#007FC1;
-$Grid-checkBox-border:#007FC1;
+$grid-header-text-color:#868387 !default;
+$grid-header-background:#F8F9FA  !default;
+$grid-tr-background-hover:#F8F9FA   !default;
+$grid-tr-background-k-alt:#FCFCFC   !default;
+$grid-header-serach-float:right !default;
+$grid-header-serach-border:1px solid #ccc !default;
+$grid-header-serach-border-radius:1px solid #ccc !default;
+$grid-header-title-background: none !default;
+$grid-header-toolbar-border-color:#fff !default;
+$grid-header-filter-active-background:#ccc !default;
+$grid-header-filter-active-color:#fff !default;
+$grid-border-td: 1px solid #F5F5F5 !default;
+$grid-filter-icon:#DA3382 !default;
+$grid-color-link-td:#DA3382 !default;
+$grid-scrollbar-color:#da3382 !default;
+$grid-scrollbar-color-hover:#bb2e71 !default;
+$Grid-color-title-th:#323C4B  !default;
+$Grid-color-text-td:#323C4B  !default;
+$grid-icon-search-color:#007FC1 !default;
+$Grid-checkBox-bg:#007FC1 !default;
+$Grid-checkBox-border:#007FC1 !default;
+$grid-content-padding:10px 0px !default;
 // drower //
 
-$drawer-background-color:#FFFFFF;
-$drawer-box-shdow:0px 0px 10px rgba(2, 111, 158, 0.2);
-$drawer-icon-color:#004070;
-$drawer-color-text:#323C4B;
-$drawer-color-link:#004070;
-$overlay-color: #052136;
+$drawer-background-color:#FFFFFF !default;
+$drawer-box-shdow:0px 0px 10px rgba(2, 111, 158, 0.2) !default;
+$drawer-k-drawer-item-box-shdow:0px 1px 1px rgba(0, 0, 0, 0.1) !default;
+$drawer-k-drawer-item-color:#004B93 !default;
+$drawer-icon-color:#004070 !default;
+$drawer-color-text:#323C4B !default;
+$drawer-color-link:#004070 !default;
+$overlay-color: #052136 !default;
+
+//footer//
+
+$Footer-bg:#ffff !default;
+$Footer-box-shadow:0px -1px 10px rgba(50, 60, 75, 0.2) !default;
+$Footer-button-bg: #FF780B   !default;
 
 // button //
 
-$Button-bg-hover:#DA3382;
-$Button-color-text: #FFFFFF;
-$Button-color-border:none;
-$Button-color-border-focus: #FAC9E0;;
-$Button-color-icon:#DA3382;
-$Button-bg:#DA3382;
-$Button-float-bg:#007FC1;
-$Button-float-color: white;
+$Button-bg-hover:#BB2E71 !default;
+$Button-bg-disabled:#FFFFFF !default;
+$Button-border-disabled:#ADB5BD !default;
+$Button-color-disabled:#ADB5BD !default;
+$Button-color-text: #FFFFFF !default;
+$Button-color-border:none !default;
+$Button-color-border-focus: #FAC9E0 !default; 
+$Button-color-filter-focus:drop-shadow(0px 0px 6px rgba(255, 120, 11, 0.2)) !default;
+$Button-color-icon:#DA3382 !default;
+$Button-bg:#DA3382 !default;
+$Button-float-bg:#007FC1 !default;
+$Button-float-color: white !default;
 
 //spicel-button//
 
-$spicel-button-bg:#FFFFFF;
-$spicel-button-color-text:#DA3382;
-$spicel-button-color-border:1px solid #DA3382;
+$spicel-button-bg:#FFFFFF !default;
+$spicel-button-color-text:#DA3382 !default;
+$spicel-button-color-border:1px solid #DA3382 !default;
+
+//messagebox//
+
+$messageBox-bg:#FFFFFF !default;
+$messageBox-box-shaow:  0px 0px 6px rgba(218, 51, 130, 0.2) !default;
+$messageBox-color-icon-close:#7E7B7B !default;
+$messageBox-color-icon:#02C467 !default;
+$messageBox-color-text:#323C4B !default;
+$messageBox-bg-button:#DA3382 !default;
+$messageBox-bg-button-focus:#DA3382 !default;
+$messageBox-bg-button-hover:#BB2E71 !default;
 
 
+
+//tooltip//
+
+$tooltip-box-shadow:0px 0px 5px rgba(9, 79, 141, 0.25)  !default;
+
+// linke//
+$link-color: #059FCF;
+//upload//
+$upload-border-file:1px solid #DA3382 !default;
+$upload-color-name-file: #DA3382 !default;
+$upload-color-text-success: #4194E4 !default;
 
 /*controls*/
-$control-caption-color-text: #323C4B;
-$control-background: #FFFFFF;
-$control-border-input:1px solid #CED4DA;
-$control-color-input:#323c4b;
-$control-radius-input:0px;
-$control-caption-color-text-disable: #C7C7C7;
-$control-border-input-disable: 1px solid #E7E7E7;;
-$control-border-focus:1px solid #FAC9E0;
-$control-box-shadow-focus: 0px 0px 6px rgba(255, 120, 11, 0.2);
-$control-color-placeholder:#C7C7C7;
-$control-color-icon:#007FC1;
-$control-border-error:1px solid #DB0000;
+$control-caption-color-text: #323C4B !default;
+$control-background: #FFFFFF !default;
+$control-border-input:1px solid #CED4DA !default;
+$control-color-input:#323c4b !default;
+$control-radius-input:0px !default;
+$control-caption-color-text-disable: #C7C7C7 !default;
+$control-border-input-disable: 1px solid #E7E7E7 !default; 
+$control-border-focus:1px solid #FAC9E0 !default;
+$control-box-shadow-focus: 0px 0px 6px rgba(218, 51, 130, 0.2) !default;
+$control-color-placeholder:#C7C7C7 !default;
+$control-color-icon:#007FC1 !default;
+$control-border-error:1px solid #DB0000 !default;
 //calnder //
 
-$calendar-box-shadow:0px 0px 6px rgba(255, 120, 11, 0.2);
-$calendar-bg-header:#FCFCFC;
-$calendar-color-icon-header:#007FC1;
-$calendar-color-text-header:#000000;
-$calendar-bg-body:#F5F5F5;
-$calendar-border-bottom-body:1px solid #007FC1;
-$calendar-body-button-color:#DA3382;
-$calendar-body-butoon-color-text-focus:white;
-$calendar-body-butoon-bg-focus:#007FC1;
-$calendar-body-butoon-color-text-hover: #007FC1;
-$calendar-body-butoon-border-hover:1px solid #007FC1;
-$calendar-month-color-days-focus:#ffffff;
-$calendar-month-bg-days-focus:#DA3382;
-$calendar-month-color-today:#DA3382;
-$calendar-month-border-today: 1px solid #DA3382;
-$calendar-month-color-days-other-month:#8E8E8E;
-$calendar-month-border-other-month-hover:1px solid #8E8E8E;
-$calendar-month-color-other-month-hover:#8E8E8E;
-$calendar-month-color-title:#DA3382;
-$calendar-month-color-days:#DA3382;
-$calendar-month-color-days-hover:#DA3382;
-$calendar-month-border-days-hover:1px solid #DA3382;;
-$calendar-fotter-color-text:#007FC1;
+$calendar-box-shadow:0px 0px 6px rgba(255, 120, 11, 0.2) !default;
+$calendar-bg-header:#FCFCFC !default;
+$calendar-color-icon-header:#DA3382 !default;
+$calendar-color-text-header:#000000 !default;
+$calendar-bg-body:#F5F5F5 !default;
+$calendar-border-bottom-body:1px solid #DA3382 !default;
+$calendar-body-button-color:#BB2E71 !default; 
+$calendar-body-butoon-color-text-focus:white !default;
+$calendar-body-butoon-bg-focus:#A11F5D !default;
+$calendar-body-butoon-color-text-hover: white !default;
+$calendar-body-butoon-border-hover:1px solid #DA3382 !default;
+$calendar-month-color-days-focus:#ffffff !default;
+$calendar-month-bg-days-focus:#DA3382 !default;
+$calendar-month-color-today:#DA3382 !default;
+$calendar-month-border-today: 1px solid #DA3382 !default;
+$calendar-month-color-days-other-month:#8E8E8E !default;
+$calendar-month-border-other-month-hover:1px solid #8E8E8E !default;
+$calendar-month-color-other-month-hover:#8E8E8E !default;
+$calendar-month-color-title:#DA3382 !default;
+$calendar-month-color-days:#DA3382 !default;
+$calendar-month-color-days-hover:#DA3382 !default;
+$calendar-month-border-days-hover:1px solid #DA3382 !default; 
+$calendar-fotter-color-text:#007FC1 !default;
 
 //checkBox //
-$CheckBox-border:#323C4B;
-$CheckBox-border-checked:#007FC1;
-$CheckBox-color-checked: #FFFFFF;
-$CheckBox-caption:#000000;
-$CheckBox--checked-bg: #007FC1;
+$CheckBox-border:#323C4B !default;
+$CheckBox-border-checked:#007FC1 !default;
+$CheckBox-color-checked: #FFFFFF !default;
+$CheckBox-caption:#000000 !default;
+$CheckBox--checked-bg: #007FC1 !default;
 
 
 // cube-dasboard //
-$Cube-dashboard-colot-text:#4B1754;
-$Cube-dashboard-bg:#FCFCFC;
-$Cube-dashboard-box-shadow:0px 0px 10px rgba(13, 13, 13, 0.1);
-$Cube-dashboard-color-price:#7B098B;
-$Cube-dashboard-color-icon:#4B1754;
+$Cube-dashboard-colot-text:#4B1754 !default;
+$Cube-dashboard-bg:#FCFCFC !default;
+$Cube-dashboard-box-shadow:0px 0px 10px rgba(13, 13, 13, 0.1) !default;
+$Cube-dashboard-color-price:#7B098B !default;
+$Cube-dashboard-color-icon:#4B1754 !default;
 
 //first-panel//
 
-$first-panel-color-title:#7B098B;
-$first-panel-color-icon-button:#7B098B;
-$first-panel-border-icon-button:1px solid #7B098B;;
-$first-panel-bg-icon-button:#FFFFFF;
+$first-panel-color-title:#7B098B !default;
+$first-panel-color-icon-button:#7B098B !default;
+$first-panel-border-icon-button:1px solid #7B098B !default; 
+$first-panel-bg-icon-button:#FFFFFF !default;
 
 // row //
 
-$row-bg:#fff;
-$row-box-shadow: 0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15);
+$row-bg:#fff !default;
+$row-box-shadow: 0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15) !default;
 
 
 // popup //
-$popup-border:1px solid #CED4DA;
-$popup-bg:white;
-$popup-color-text:#323C4B;
-$popup-bg-selected:#EEF7FB;
-$popup-color-text-selected:#026F9E;
-$popup-bg-hover:#EEF7FB;
-$popup-color-text-hover:#026F9E;
+$popup-border:1px solid #CED4DA !default;
+$popup-bg:white !default;
+$popup-color-text:#323C4B !default;
+$popup-bg-selected:#EEF7FB !default;
+$popup-color-text-selected:#026F9E !default;
+$popup-bg-hover:#EEF7FB !default;
+$popup-color-text-hover:#026F9E !default;
 
 
 // cube-main//
 
-$cube-main-box-shadow:0px 0px 10px rgba(2, 111, 158, 0.2);
-$cube-main-title-color:#323C4B;
-$cube-main-sum-color:#026F9E;
-$cube-main-sum-icon: #026F9E;
-$cube-main-card-border: 1px solid #007FC1;
-$cube-main-card-num-color: #026F9E;
-$cube-main-card-text-color: #323C4B;
-$cube-main-card-icon: #026F9E;
-$cube-main-text-color: #323C4B;
-$cube-main-route-text-color: #026F9E;
-$cube-main-price-color:#026F9E;
+$cube-main-box-shadow:0px 0px 10px rgba(2, 111, 158, 0.2) !default;
+$cube-main-title-color:#323C4B !default;
+$cube-main-sum-color:#026F9E !default;
+$cube-main-sum-icon: #026F9E !default;
+$cube-main-card-border: 1px solid #007FC1 !default;
+$cube-main-card-num-color: #026F9E !default;
+$cube-main-card-text-color: #323C4B !default;
+$cube-main-card-icon: #026F9E !default;
+$cube-main-text-color: #323C4B !default;
+$cube-main-route-text-color: #026F9E !default;
+$cube-main-price-color:#026F9E !default;
 
 
 // cube-small //
 
-$small-cube-box-shdow:0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15);
-$small-cube-text-color: #007FC1;
-$small-cube-icon-color: #323C4B;
+$small-cube-box-shdow:0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15) !default;
+$small-cube-text-color: #007FC1 !default;
+$small-cube-icon-color: #323C4B !default;
 
 
 
 // B2B header //
 
-$B2B-header-border-col: 1px solid #007FC1;
-$B2B-header-icon:#007FC1;
-$B2B-header-box-shadow:0px 5px 10px rgba(2, 111, 158, 0.1);;
-$B2B-header-text-defult:#000000;
-$B2B-header-link-color:#DA3382;
+$B2B-header-border-col: 1px solid #79b6f1 !default;
+$B2B-header-icon:#007FC1 !default;
+$B2B-header-box-shadow:0px 5px 10px rgba(2, 111, 158, 0.1) !default; ;
+$B2B-header-text-defult:#000000 !default;
+$B2B-header-link-color:#DA3382 !default;
 
 
+//total-panel//
+
+$total-panel-border-bottom:1px solid #8E8E8E !default;
+$total-panel-label-color: #8E8E8E !default;
+$total-panel-span-color: #000000 !default;
+$total-panel-totalCol-label-color: #4E4E4E !default;
+$total-panel-totalCol-input-color: #7B098B !default;
+$total-panel-total-body-row2-color: #650872 !default;
+
+//steper//
 
 
+$steper-bg:#323C4B !default;
+$steper-color-text:#323C4B !default;
 
 //label//
 
 %texbox-label{
 
    
-    font-family: 'Assistant';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px !important;
-    line-height: 21px;
-    text-align: right;
-    color: $control-caption-color-text;
-    margin: 0;
+    font-family: 'Assistant' ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 14px !important ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
 }
 
 //input//
 
 %texbox-input{
 
-    height: 50px;
-    background: $control-background;
+    height: 50px ;
+    background: $control-background ;
     border: $control-border-input !important;
     border-radius: $control-radius-input;
-    padding: 10px 20px;
-    font-family: 'Assistant';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px !important;
-    color: $control-color-input;
-    text-align: right;
+    padding: 10px 20px ;
+    font-family: 'Assistant' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 16px !important ;
+    color: $control-color-input ;
+    text-align: right ;
 }
 
 
@@ -263,46 +255,46 @@ $B2B-header-link-color:#DA3382;
 
 %texbox-input-disable{
 
-    background: $control-background;
-    border:$control-border-input-disable;
+    background: $control-background ;
+    border:$control-border-input-disable ;
 }
 
 // disable-caption // 
 
 %texbox-label-disable{
-    color: $control-caption-color-text-disable;
+    color: $control-caption-color-text-disable ;
 }
 
 
 // spicel button //
 
 %spicel-button{
-    height: 50px !important;
-    background: $spicel-button-bg;
-    border-radius: 10px;
-    font-family: "Assistant";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: right;
-    color: $spicel-button-color-text;
-    border: $spicel-button-color-border;
+    height: 50px !important ;
+    background: $spicel-button-bg ;
+    border-radius: 10px ;
+    font-family: "Assistant" ;
+    font-style: normal ;
+    font-weight: 600 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $spicel-button-color-text ;
+    border: $spicel-button-color-border ;
     
 }
 
 // button//
 
 %button{
-    background: $Button-bg;
-    border: 1px solid $Button-color-border;
-    border-radius: 10px;
-    align-items: center;
-    height: 50px !important;
-    color: $Button-color-text;
-    font-family: 'Assistant' !important;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    background: $Button-bg ;
+    border: 1px solid $Button-color-border ;
+    border-radius: 10px ;
+    align-items: center ;
+    height: 50px !important ;
+    color: $Button-color-text ;
+    font-family: 'Assistant' !important ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
 }

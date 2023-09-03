@@ -235,7 +235,7 @@ $calendar-fotter-color-text:#7B098B;
               td.k-calendar-td{
                   padding: 10px 0px;
                   height: 36px !important;
-
+                  width: auto;
                   &:hover{
                       a {
                           color:$calendar-body-butoon-color-text-hover ;
@@ -243,6 +243,7 @@ $calendar-fotter-color-text:#7B098B;
                           border-radius:100px;
                           background: #650872 !important;
                           font-weight: 700;
+                          width: auto;
                       }
                   }
                   &.k-focus{
@@ -256,6 +257,7 @@ $calendar-fotter-color-text:#7B098B;
                           background: $calendar-body-butoon-bg-focus;
                           border-radius: 100px;
                           box-shadow: none;
+                          width: auto;
                       }
 
                   }
@@ -268,6 +270,7 @@ $calendar-fotter-color-text:#7B098B;
                       font-size: 16px;
                       line-height: 24px;
                       color: $calendar-body-button-color;
+                      width: auto;
                      
                   }
               }

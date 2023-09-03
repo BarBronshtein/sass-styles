@@ -1,0 +1,26 @@
+
+@import './variable/variable';
+@import '../../../../copy/portal/PortalCustomer/style.scss';
+
+
+
+
+
+
+.icon-export-excel:before {
+    content: "\ea5e";
+    color:#4BBEF9;
+}
+
+.icon-export-excel:after {
+    content: "\ea5f";
+    color: #0082C5;
+}
+
+
+.icon-clear::after{
+    color: #0082C5;
+}
+.icon-clear::before{
+    color: #4BBEF9;
+}

@@ -1,8 +1,21 @@
 
 
 
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer{
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer,#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner,#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity{
     margin-top: 60px  !important;
+
+    mainbody > .row.row-main .x-cell-header{
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        color: #007fc1;
+        height: auto;
+
+    }
+
+
 
     .wrapper-uplode{
         margin-top: -20px;
@@ -26,6 +39,7 @@
             margin-bottom: 15px;
             margin-top: 0;
             display: flex;
+            max-width: 400px;
       .x-self-container{
         margin: auto;
       }
@@ -34,7 +48,7 @@
                 padding: 10px;
                 background: none;
                 border: none; 
-                justify-content: right;
+                justify-content: center;
 
                 &.k-focus{
                     box-shadow: none !important;
@@ -45,19 +59,15 @@
                     font-family: 'Assistant';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 18px;
+                    font-size: 24px;
                     line-height: 100%;
                     text-align: center;
-                    color: #026F9E;
-                    margin: 10px;
-                    display: grid !important;
-                    grid-template-columns: auto 1fr;
-                    align-items: center;
-                    gap: 15px;
+                    color: #007FC1;
+                  
 
                     .k-icon{
 
-                       font-size: 30px;
+                       font-size: 50px;
                        color: black;
                        font-family: 'Font Awesome 6 Pro';
                        font-weight: 300;
@@ -81,6 +91,6 @@
     }
 
     .two-col{
-        margin-top: 22px;
+        margin-top: 40px;
     }
 }

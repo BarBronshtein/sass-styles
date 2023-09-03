@@ -1,4 +1,4 @@
-@use '../variable/variable' as *;
+
 
 
 .portalGrid{
@@ -6,12 +6,18 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 120%;
-    color: #7B098B;
+    color: $grid-title-heder-h4-color;
     height: auto;
   }
 
+}
+
+
+
+.k-pager-wrap .k-link:focus{
+  box-shadow: none;
 }
 
 // grid header //
@@ -26,17 +32,26 @@
 .k-grid {
     border: none;
     outline: 0;
+    button{
+      background: none !important;
+      color: $grid-button-color !important;
+     }
+  
+.k-dropdown.k-picker.k-dropdown-list{
+  background: none;
+  border: none;
+}
 
 
     th,td{
       & input.k-checkbox{
-        border-color: #000000;
+        border-color: $grid-checkbox-border;
       
 
         &:checked{
-            border-color: #7B098B;
+            border-color: $grid-checkbox-checked-border;
             &:before{
-            color: #7B098B;
+            color: $grid-checkbox-checked-color;
             }
         }
     
@@ -104,8 +119,15 @@
         
 
         th {
+       
             &.k-header {
-                color: $grid-header-text-color;
+              font-family: "Heebo";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 130%;
+              text-align: right;
+              color: $grid-header-text-color;
                 padding-right: 10px !important;
             }
 
@@ -204,11 +226,7 @@
              }
         }
 
-        .k-link {
-            &.k-selected {
-                background: $grid-pager-nav-background;
-            }
-        }
+   
 
         // .k-pager-numbers {
         .k-link {
@@ -607,7 +625,7 @@
     width: auto;
     justify-content: center;
     margin: auto;
-
+    margin-bottom: 15px;
    
     & >.k-pager-nav:hover{
       border: none !important;
@@ -638,11 +656,11 @@
         border: none !important;
         font-family: 'Assistant';
         font-style: normal;
-        font-weight: 700 !important;
+        font-weight: 400 !important;
         font-size: 13px;
         line-height: 26px;
         text-align: center;
-        color: #7B098B !important;
+        color: $grid-pagenumber-color-selected !important;
          
        }
        & >li > a:hover{
@@ -681,12 +699,12 @@
     }
   
     &::-webkit-scrollbar-thumb {
-      background: map-get($map: $Colors , $key: main-color );
+      background:$scroll-bg;
       border-radius: 10px;
       
   
       &:hover {
-        background:  map-get($map: $Colors , $key: main-color );
+        background: $scroll-bg;
         
       }
       }
@@ -700,12 +718,9 @@
        }
     }
   
+    & >table>tbody>tr>td>button>.k-i-edit.k-button-icon:before{
   
-  
-  
-    & >table>tbody>tr>td>button>span:before{
-  
-      content: "\e91c" !important;
+      content: "\e987" !important;
       font-family: 'icomoon' !important;
       font-style: normal;
       font-weight: normal;
@@ -713,21 +728,41 @@
       text-transform: none;
       line-height: 1;
       font-size: 28px !important;
-      color: #7B098B !important;
+      color:  $grid-color-icon !important;
+    }
+  
+    
+    & >table>tbody>tr>td>button>.k-i-close.k-button-icon:before{
+  
+      content: "\e970" !important;
+      font-family: 'icomoon' !important;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      font-size: 28px !important;
+      color:  $grid-color-icon !important;
     }
   
     & >table>tbody>tr>td>button{
       align-items: center;
       padding: 12px;
       padding-top: 17px;
-      width: 56.26px;
       height: 50px;
       border: none !important;
       border-radius: 10px !important;
       background: none !important;
 
-    
+      &:focus{
+        box-shadow: none;
+        border: none;
+      }
 
+    
+      & .k-button-text{
+        display: none;
+      }
        &:hover{
         background:none !important ;
        }
@@ -756,7 +791,7 @@
           font-size: 14px;
           line-height: 130%;
           text-align: right !important;
-          color: map-get($map: $Colors, $key: text-defualt ) ;
+          color: $grid-text;
           border: none;
           border-bottom: 1px solid #F5F5F5;
           height: 50px ;
@@ -765,12 +800,25 @@
           overflow: hidden;
           text-overflow: ellipsis;
           padding-right: 10px;
+
+          &.text-spicel{
+            color: #7B098B !important;
+          }
+
+          a{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 100%;
+            color:$link-color;
+          }
           & .icon-xtab-xls{
             font-size: 22px;
-            color: #7B098B;
+            color: $grid-color-icon;
           }
           & .x-grid-file{
-            color: #7B098B;
+            color: $grid-color-icon;
             font-size: 20px;
           }
           &:hover{
@@ -844,7 +892,7 @@
       font-size: 14px;
       line-height: 130%;
       text-align: right;
-      color: #7B098B;
+      color: $grid-header-text-color;
   
      
     }
@@ -872,7 +920,7 @@
       text-transform: none;
       line-height: 1;
       font-size: 16px !important;
-      color: #7B098B !important;
+      color: $grid-header-filter-color !important;
       text-indent: 0 !important;
       top: 50%;
       transform: translateY(-50%);
@@ -942,6 +990,7 @@
   
   .k-pager-info.k-label{
       font-size: 13px !important;
+      font-weight: 300;
   }
   .k-pager-sizes.k-label{
     position: absolute;
@@ -949,7 +998,7 @@
     font-family: map-get($map: $typographyVariables, $key: -font-family);
     font-style: normal;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 30px;
     text-align: right;
     color: map-get($map: $Colors, $key: text-defualt );
@@ -1142,8 +1191,8 @@
 
      .k-grid-header{
       border: none !important;
-      border-top: 1px solid #CDA3DD !important;
-      border-bottom:1px solid #CDA3DD !important ;
+      border-top: 1px solid $grid-header-border !important;
+      border-bottom: 1px solid $grid-header-border !important ;
       margin-top: 15px;
       margin-bottom: 15px;
      }
@@ -1171,18 +1220,17 @@
        & span.k-i-search::before{
         content: "\e92a" !important;
         font-family: "icomoon" !important;
-        color: #7B098B !important;
+        color: $grid-color-icon !important;
         font-size: 22px !important;
        }
      }
 
 .xstyle-gridv4-wrapper{
 
-  border-bottom: 1px solid #7B098B;
+  border-bottom: 1px solid #DEDEDE;
   border-radius: 0px;
-  padding: 16px;
   padding-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 & .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group{
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -1295,4 +1343,8 @@
    
     }
   }
+
+
  }
+
+

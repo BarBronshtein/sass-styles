@@ -1,0 +1,14 @@
+
+@use '../variables/masterVariable' as *;
+
+.x-islider-wrapper {
+    .k-slider-vertical {
+        &:first-of-type {
+            margin: 0px 40px;
+        }
+    }
+
+    .x-islider-caption {
+        text-align: center;
+    }
+}

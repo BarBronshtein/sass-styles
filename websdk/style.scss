@@ -51,7 +51,7 @@ body {
 }
 
 .k-button {
-  border: 1px solid map-get($map: $Colors, $key: button-important-bg) !important;
+  border: none !important;
   color: map-get($map: $Colors, $key: button-important-bg) !important;
 }
 .dashRightCol {
@@ -1991,10 +1991,16 @@ mainbody > .row {
   width: 150px !important;
 
   & .menuRows {
-    height: 45px;
+    height: 34px;
 
     & .xMenuHover {
-      padding-top: 0.7rem !important;
+      padding: 0 !important;
+      align-items: center;
+      display: grid;
+
+      span{
+        font-size: 13px;
+      }
     }
     &:hover {
       background: #7b098b !important;

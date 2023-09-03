@@ -13,7 +13,7 @@
     }
 
     .wrapper-login{
-        max-width: 750px !important;
+        max-width: 520px !important;
         margin: auto !important;
     }
 
@@ -63,11 +63,15 @@
         a{
             font-family: 'Assistant';
             font-style: normal;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 16px;
             line-height: 21px;
             text-align: right;
-            color: #FF780B;
+            color: #DA3382;
         }
+    }
+
+    button{
+        width: 100% !important;
     }
 }

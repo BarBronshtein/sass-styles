@@ -85,7 +85,7 @@ body,#watermark,header{
 }
 
 .container.pageContainer.xtafnit_pageContainer{
-    margin-bottom: 10px !important;
+    margin-bottom: 35px !important;
 }
 
 .k-i-close::before{
@@ -102,4 +102,24 @@ body,#watermark,header{
   margin-top: -6px;
   color: white;
   font-size: 24px !important;
+}
+
+.x-footer:has(.watermark){
+  background: white !important;
+  border: none !important;
+}
+
+.x-footer:has(.watermark) .watermark span{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+}
+
+#TafnitCore_xHistadrut_UI_LegalDisclaimer{
+  .navbar-fixed-top {
+    height: 0px;
+}
 }

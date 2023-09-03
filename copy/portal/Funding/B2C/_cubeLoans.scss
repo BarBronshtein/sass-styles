@@ -1,5 +1,5 @@
 
-@use '../variable/variable' as *;
+
 
 .wrapper-cube{
 
@@ -57,7 +57,7 @@
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 110%;
-                text-align: center;
+                text-align: center !important;
                 color: $cube-main-text-color;
             }
         }
@@ -81,9 +81,9 @@
         font-family: 'Assistant';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 110%;
-        text-align: center;
+        text-align: center !important;
         color: $cube-main-text-color; 
     }
 }

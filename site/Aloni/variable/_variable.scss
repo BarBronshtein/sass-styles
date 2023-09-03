@@ -51,22 +51,22 @@ $spicel-button-color-border:1px solid #AE8B49 ;
 
 // control spicel //
 
-$control-spicel-border: 1px solid #000000 ;
+$control-spicel-border: 1px solid #C7C7C7 ;
 $control-spicel-color-text: #4E4E4E;
-$control-spicel-radius-input:0px;
+$control-spicel-radius-input:8px;
 
 /*controls*/
 $control-caption-color-text: #4E4E4E;
 $control-background: #FFFFFF;
-$control-border-input: 1px solid #000000;
+$control-border-input: 1px solid #C7C7C7;
 $control-color-input:#323C4B;
-$control-radius-input:0px;
+$control-radius-input:8px;
 $control-caption-color-text-disable: #C7C7C7;
 $control-border-input-disable: 1px solid #E7E7E7;;
 $control-border-focus:1px solid #AE8B49;;
 $control-box-shadow-focus:none;
 $control-color-placeholder:#ADB5BD;
-$control-color-icon:#232873;
+$control-color-icon:#AE8B49;
 $control-border-error:1px solid #E91E63;
 //calnder //
 
@@ -123,13 +123,13 @@ $row-box-shadow: 0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 15
 
 
 // popup //
-$popup-border:1px solid #CED4DA;
+$popup-border:1px solid #7E7B7B;
 $popup-bg:white;
-$popup-color-text:#323C4B;
-$popup-bg-selected:#EEF7FB;
-$popup-color-text-selected:#14008E;
-$popup-bg-hover:#EEF7FB;
-$popup-color-text-hover:#14008E;
+$popup-color-text:#000;
+$popup-bg-selected:#FAF6F0;
+$popup-color-text-selected:#967A45;
+$popup-bg-hover:#FAF6F0;
+$popup-color-text-hover:#967A45;
 
 
 // cube-main//
@@ -172,14 +172,15 @@ $B2B-header-link-color:#ff7100 ;
 %texbox-label{
 
    
-    font-family: 'Assistant';
+    font-family: 'Heebo';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px !important;
     line-height: 21px;
     text-align: right;
     color: $control-caption-color-text;
     margin: 0;
+    height: 18px;
 }
 
 //input//
@@ -189,7 +190,7 @@ $B2B-header-link-color:#ff7100 ;
     height: 50px;
     background: $control-background;
     border: $control-border-input !important;
-    border-radius: $control-radius-input;
+    border-radius: $control-radius-input;;
     padding: 10px 20px;
     font-family: 'Heebo';
     font-style: normal;
@@ -239,7 +240,7 @@ $B2B-header-link-color:#ff7100 ;
     border-radius: 8px;
     font-family: "Heebo";
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: right;

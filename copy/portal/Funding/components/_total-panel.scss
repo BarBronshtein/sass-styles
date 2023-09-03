@@ -1,11 +1,12 @@
 
 
+
 .total-panel{
     display: grid;
     grid-template-columns: auto auto auto;
 
    .border-bottom{
-    border-bottom: 1px solid #8E8E8E !important;
+    border-bottom: $total-panel-border-bottom !important;
     margin-bottom: 15px;
    }
 
@@ -17,7 +18,7 @@
         font-size: 20px;
         line-height: 120%;
         text-align: right;
-        color: #8E8E8E;
+        color: $total-panel-label-color;
     }
     
     & span{
@@ -26,7 +27,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
-        color: #000000;
+        color: $total-panel-span-color;
         text-align: left !important;
     }
     
@@ -43,7 +44,7 @@
             font-size: 20px !important;
             line-height: 120%;
             text-align: right;
-            color: #4E4E4E;
+            color: $total-panel-totalCol-label-color;
            }
 
            input{
@@ -53,7 +54,7 @@
             font-size: 20px !important;
             line-height: 120%;
             text-align:left !important;
-            color: #7B098B;
+            color: $total-panel-totalCol-input-color;
             height: auto !important;
             border: none;
             padding-right: 10px;
@@ -71,7 +72,7 @@
             font-weight: 500;
             font-size: 14px !important;
             line-height: 100%;
-            color: #650872;
+            color: $total-panel-total-body-row2-color;
         }
     }
 }

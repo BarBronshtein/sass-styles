@@ -1,0 +1,92 @@
+
+
+@import './variable/variable';
+
+@import './components/row';
+
+@import './components/button';
+@import './components/checkBox';
+@import './components/textcontrol';
+@import './components/header';
+@import './components/BootstrapClass';
+@import './components/grid';
+@import './components/popup';
+@import './components/collapse';
+@import './components/footer';
+@import './components/drawer';
+@import './components/link';
+@import './components/messageBox';
+
+
+
+@import './page/login';
+@import './page/userDetailes';
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
+
+#uber-container{
+    padding: 0 !important;
+}
+body,html{
+    font-family: 'Heebo';
+    background: #F8F8F8 !important;
+}
+.border{
+    border: none !important;
+}
+
+.container.pageContainer.xtafnit_pageContainer {
+    margin-top: 0px !important;
+    padding: 0;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+    top: -141px;
+
+    &#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login{
+        top: 0;
+    }
+
+    &#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities,&#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Accounts{
+        width: 95%;
+    }
+
+    &#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Main{
+        width: 100%;
+        margin: 65px auto;
+        margin-bottom: 0px;
+        position: relative;
+        top: 0;
+        div[uxid="iLogo"]{
+            width: 180px !important;
+        }
+     img{
+        width: 100%;
+     }
+    }
+}
+
+
+.icon-export-excel:before {
+    content: "\ea5e";
+    color:$icon-before ;
+}
+
+.icon-export-excel:after {
+    content: "\ea5f";
+    color:$icon-after;
+}
+

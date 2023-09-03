@@ -1,5 +1,5 @@
 
-@use '../variable/variable' as *;
+
 
 
 .xstyle-date-wrapper{
@@ -36,7 +36,7 @@
         @extend %texbox-input;
 
         &:focus-within{
-            border: $control-border-focus;
+            border: 1px solid $control-border-focus;
             box-shadow: $control-box-shadow-focus;
         }
     }
@@ -73,7 +73,7 @@
     margin-left: 12px;
     background: none !important;
     & span{
-            left: 16px;
+            left: 14px;
         &::before{
             content: "\e973" !important;
             font-family: "icomoon";
@@ -100,6 +100,10 @@
         background: none;
         border-radius: 10px;
         align-items: center;
+    }
+
+    .k-hover a{
+        border-radius: 100px;
     }
 
     // header calnder //
@@ -162,10 +166,11 @@
 
                     &:hover{
                         a {
-                            color:$calendar-body-butoon-color-text-hover ;
+                            color:$calendar-body-button-color-text-hover ;
                             background: none;
-                            border-radius:50%;
-                            border: $calendar-body-butoon-border-hover;
+                            border-radius:100px !important;
+                            height: 36px !important;
+                            border: $calendar-body-button-border-hover;
                             font-weight: 700;
                         }
                     }
@@ -173,11 +178,11 @@
                      
 
                         a{
-                            color:$calendar-body-butoon-color-text-focus !important;
+                            color:$calendar-body-button-color-text-focus !important;
                             font-weight: 700;
                             box-shadow: none;
                             height: 36px !important;
-                            background: $calendar-body-butoon-bg-focus;
+                            background: $calendar-body-button-bg-focus;
                             border-radius: 100px;
                             box-shadow: none;
                         }

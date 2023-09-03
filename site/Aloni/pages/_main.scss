@@ -4,6 +4,22 @@
 margin: 0;
 padding: 0 30px;
 
+.x-row:has(.user){
+  margin-top: 30px;
+  padding: 0 40px;
 
+}
+.x-row:has(.user){
+    padding: 0 0px;
+  }
+
+  .tabs-filter{
+    padding: 0;
+  }
+
+  img{
+    width: 100px;
+    margin-bottom: 10px;
+  }
    
 }

@@ -1,0 +1,209 @@
+@use '../variables/masterVariable' as *;
+
+
+.p-floating-container {
+    position: relative;
+
+    textarea {
+        &:not(:placeholder-shown)+label {
+            transform: scale(0.7);
+            opacity: 1;
+            visibility: visible;
+            font-size: 16px;
+            color: #003f59;
+            top: -9px;
+            margin: 0;
+            position: absolute;
+            display: flex;
+            transition: 0.3s all;
+        }
+    }
+
+    &.dir-ltr {
+        label {
+            left: 0 ;
+            right: unset ;
+            transform-origin: left ;
+        }
+    }
+
+    .k-dropdown {
+        &.notselected {
+            label {
+                transform: scale(1);
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+
+    &.xstyle-idropdownlist-wrapper {
+        
+        .k-picker{
+            background: #fafafa ;
+            border: 0px ;
+            border-bottom: 1px solid ;
+            border-radius: 0;
+        }
+        label {
+            position: unset;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    label,
+    ul[role="presentation"]+input+label {
+        left: 8px;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 'all 200ms';
+    }
+
+    input {
+
+        &:not(:placeholder-shown),
+        &:not(:-ms-input-placeholder) {
+            +label {
+                transform: scale(0.7);
+                opacity: 1;
+                visibility: visible;
+                font-size: 16px;
+                color: #003f59;
+                right: 0;
+                top: -9px;
+                margin: 0;
+                position: absolute;
+                transform-origin: right;
+                display: flex;
+                transition: 0.3s all;
+            }
+        }
+    }
+
+    ul[role="listbox"] {
+        +input {
+            display: none;
+
+            +label {
+                transform: scale(0.7);
+                opacity: 1;
+                visibility: visible;
+                font-size: 16px;
+                color: #003f59;
+                right: 0;
+                top: -9px;
+                margin: 0;
+                position: absolute;
+                transform-origin: right;
+                display: flex;
+                transition: 0.3s all;
+            }
+        }
+    }
+}
+
+.k-rtl {
+    .p-floating-container {
+        input:not(:placeholder-shown)+label {
+            transform: scale(0.7);
+            opacity: 1;
+            visibility: visible;
+            font-size: 16px;
+            color: #003f59;
+            right: 0;
+            top: -9px;
+            margin: 0;
+            position: absolute;
+            transform-origin: right;
+            // display: -ms-flexbox;
+            display: flex;
+            // -webkit-transition: 0.3s all;
+            transition: 0.3s all;
+            margin-top: 4px;
+            z-index: 10;
+        }
+
+        .k-input-inner{
+            padding-top:10px;
+        }
+    }
+}
+
+.p-floating-container {
+
+    &.xstyle-lookup-wrapper,
+    &.xstyle-lookuptafnit-wrapper {
+
+        input:not(:placeholder-shown)+label {
+            right: 14px ;
+            width: 400px;
+            height: 1px;
+            top: -5px ;
+        }
+    }
+}
+
+
+
+.k-ltr {
+    .p-floating-container input:not(:placeholder-shown)+label {
+        transform: scale(0.7);
+        opacity: 1;
+        visibility: visible;
+        font-size: 16px;
+        color: #003f59;
+        left: 0;
+        top: -9px;
+        margin: 0;
+        position: absolute;
+        transform-origin: left;
+        // display: -ms-flexbox;
+        display: flex;
+        // -webkit-transition: 0.3s all;
+        transition: 0.3s all;
+    }
+
+    .p-floating-container {
+
+        &.xstyle-lookup-wrapper,
+        &.xstyle-lookuptafnit-wrapper {
+
+            input:not(:placeholder-shown)+label {
+                right: initial ;
+                left: 15px ;
+            }
+        }
+    }
+}
+
+
+.k-rtl {
+    .p-floating-container {
+        textarea {
+            &:not(:placeholder-shown)+label {
+                right: 0;
+                transform-origin: right;
+
+            }
+        }
+    }
+}
+
+.k-ltr {
+    .p-floating-container {
+        textarea {
+            &:not(:placeholder-shown)+label {
+                left: 0;
+                transform-origin: left;
+
+            }
+        }
+    }
+}
+
+.k-floating-label-container{
+    padding-top: 0.5em;
+}

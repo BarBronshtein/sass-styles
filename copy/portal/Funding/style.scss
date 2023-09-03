@@ -1,55 +1,62 @@
+@import './variable/variable';
 
-@use './components/textcontrol';
-@use './components/mandatory';
-@use './components/row';
-@use './components/header';
-@use './components/dropdown';
-@use './components/intlphone';
-@use './components/stepper';
-@use './components/autocomplete';
-@use './components/datecontrol';
-@use './components/checkBox';
-@use './components/button';
-@use './components/fotter';
-@use './components/messageBox';
-@use './components/popup';
-@use './components/grid';
-@use './components/upload';
-@use './components/drawer';
-@use './components/slider';
-@use './components/tooltip';
+@import './components/textcontrol';
+@import './components/mandatory';
+@import './components/row';
+@import './components/header';
+@import './components/dropdown';
+@import './components/intlphone';
+@import './components/stepper';
+@import './components/autocomplete';
+@import './components/datecontrol';
+@import './components/checkBox';
+@import './components/button';
+@import './components/fotter';
+@import './components/messageBox';
+@import './components/popup';
+@import './components/grid';
+@import './components/upload';
+@import './components/drawer';
+@import './components/slider';
+@import './components/tooltip';
 
-@use './pages/license';
-@use './pages/ID';
-
-
-@use './B2C/login';
-@use './B2C/cubemain';
-@use './B2C/headeer';
-@use './B2C/cubeLoans';
-@use './B2C/xmenucontrol';
-@use './B2C/offerdetails';
+@import './pages/license';
+@import './pages/ID';
 
 
-@use './B2B/header2';
-@use './B2B/dashboard';
-@use './B2B/row2';
-@use './B2B/lotselect';
-@use './B2B/grid2';
-@use './B2B/BDICheck';
-@use './B2B/LoanSecurity';
-@use './B2B/createCustomer';
-@use './B2B/LoanRequest';
-@use './B2B/AdditionalLoaners';
-@use './B2B/ID-B2B';
-@use './B2B/license-B2B';
-
-@use './B2B/login2';
-@use '././Tass/FillAndSignV2Page/FillAndSignV2Page';
+@import './B2C/login';
+@import './B2C/cubemain';
+@import './B2C/headeer';
+@import './B2C/cubeLoans';
+@import './B2C/xmenucontrol';
+@import './B2C/offerdetails';
 
 
+@import './B2B/header2';
+@import './B2B/dashboard';
+@import './B2B/row2';
+@import './B2B/lotselect';
+@import './B2B/grid2';
+@import './B2B/BDICheck';
+@import './B2B/LoanSecurity';
+@import './B2B/createCustomer';
+@import './B2B/LoanRequest';
+@import './B2B/AdditionalLoaners';
+@import './B2B/ID-B2B';
+@import './B2B/license-B2B';
+@import './B2B/shortLoan';
+@import './B2B/Extendedcreditreport';
+@import './B2B/j5';
+@import './B2B/Simulation';
+@import './B2B/Survey';
+@import './B2B/popup-B2B';
+@import './B2B/AddLoaner';
+@import './B2B/mobile';
 
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Heebo:wght@300;400;500;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import './B2B/login2';
+
+
+
 
 
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
@@ -62,6 +69,7 @@
 body,html{
     font-family: 'Assistant';
     background: #ffff !important;
+    height: auto ;
 }
 .border.row{
     border: none !important;
@@ -118,3 +126,6 @@ body,html{
     opacity: 0.5 !important;
 }
 
+.templatex-wrapper{
+    gap: 20px;
+  }

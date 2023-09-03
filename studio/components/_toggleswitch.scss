@@ -2,8 +2,14 @@
 
    .xtaf-switch-studio {
 
+<<<<<<< HEAD
     .x-col{
       
+=======
+    position: absolute;
+    top: -32px;
+    .x-col{
+>>>>>>> gal-edit
         display: grid;
         grid-template-columns: auto 1fr;
         gap: 5px;

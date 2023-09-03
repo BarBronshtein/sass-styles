@@ -1,4 +1,4 @@
-@use '../variable/variable' as *;
+
 
 
 .xstyle-idropdownlist-wrapper{
@@ -14,16 +14,20 @@ margin-top: 15px;
   &.x-readonly{
      & span.x-dropdown-comp.s-dropdown-comp{
 
-
+      background: #F7F7F7 !important;
          & span.k-icon{
           &::before{
+            color: $control-caption-color-text-disable !important; 
           }
          }
      }
 
      & label{
+      color: $control-caption-color-text-disable !important; 
        }
  }
+
+ 
 
 
 
@@ -73,3 +77,38 @@ margin-top: 15px;
 
 }
 
+
+.k-list-scroller{
+scrollbar-face-color: #bb2e71;
+scrollbar-track-color: #f3e9f8;
+scrollbar-arrow-color: #bb2e71;
+
+/* width */
+/* Track */
+/* Handle */
+/* Handle on hover */
+
+&::-webkit-scrollbar {
+  width: 10px !important;
+  border-radius: 10px;
+  position: absolute;
+}
+
+
+&::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+&::-webkit-scrollbar-thumb {
+  background:#da3382  ;
+  border-radius: 10px;
+  
+
+  &:hover {
+    background: #bb2e71;
+    
+  }
+  }
+
+}

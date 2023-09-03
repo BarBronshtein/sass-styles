@@ -1,0 +1,78 @@
+
+
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer{
+  position: relative;
+  .k-grid .k-grid-content tr{
+    border: none;
+    box-shadow: none;
+  }
+  .k-grid-content.k-auto-scrollable > table > tbody > tr > td{
+    text-align: right !important;
+  }
+u{
+  text-decoration: none;
+}
+  .k-grid table{
+    border-spacing: 0px;
+  }
+  .x-button-wrapper{
+    width: fit-content;
+    margin: auto;
+  }
+  .list{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      height: 25px;
+      span{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #000000;
+      }
+  
+      label{
+        font-family: "Heebo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $window-text-special-color;
+        width: max-content;
+        margin-top: 5px;
+  
+      }
+    }
+
+    .ttitle-border {
+      padding: 7px 5px !important;
+      border-bottom:1px solid $window-title-border; 
+      border-top:1px solid $window-title-border; 
+      margin-top: 15px;
+      margin-bottom: 15px;
+  
+      span{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center !important;
+        color: $window-title-color;
+      }
+    }
+  
+  
+      
+  .col-list{
+    padding-bottom: 15px !important;
+    
+  }
+
+}
+
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect .k-grid-header{
+display: none;
+}

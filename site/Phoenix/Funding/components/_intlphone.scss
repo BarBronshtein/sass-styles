@@ -36,19 +36,25 @@
     & label{
         @extend %texbox-label;
     }
+    
+    & .intl-tel-input{
+        @extend %texbox-input;
 
-    & input{
-      @extend %texbox-input;
-      padding-right: 10px !important;
-      &.x-login-user-error{
+        &:focus,&:focus-within{
+            box-shadow:$control-box-shadow-focus !important;
+            border: $control-border-focus !important;
+        }
+
+        &.x-login-user-error{
         
-        border-bottom: $control-border-error !important;
-      }
-
-      &:focus{
-        box-shadow:$control-box-shadow-focus !important;
-        border: $control-border-focus !important;
+            border-bottom: $control-border-error !important;
+          }
     }
+    & input{
+      border:none;
+      padding-right: 10px !important;
+      outline: none !important;
+      text-align: center !important;
     }
 
     & .selected-flag{

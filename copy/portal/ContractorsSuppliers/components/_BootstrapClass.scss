@@ -1,0 +1,17 @@
+
+.xtaf-grid-col2{
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+
+    .xstyle-dynamiclabelcontrol-wrapper{
+        display: grid !important;
+        grid-template-columns: auto 1fr;
+        gap: 0px;
+        .x-cell{
+            max-width: 100%;
+        }
+    }
+
+
+}

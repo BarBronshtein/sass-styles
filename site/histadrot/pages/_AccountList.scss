@@ -20,8 +20,8 @@
         border-radius: 20px;
         width: 95%;
         margin: auto;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         padding: 20px;
 
         .part-2{
@@ -116,15 +116,12 @@
         & > .row{
             align-items: center;
         }
-
         .activeTabf{
-            background: #F5F5F5;
-            border-radius: 20px;
-            padding: 10px 10px;
-            width: 75px;
-            margin: auto;
+            .x-kicon-caption{
+                background: #0167B1;
+                color: white !important;
+            }
         }
-
         .xstyle-kicon-wrapper{
             .k-icon{
                 color: #0167B1;
@@ -138,7 +135,7 @@
                 font-size: 13px;
                 line-height: 100%;
                 color: #0167B1;
-
+                padding: 4px 15px;
             }
         }
     }
