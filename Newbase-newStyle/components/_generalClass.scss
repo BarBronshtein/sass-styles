@@ -48,7 +48,7 @@
 .xstyle-gridv4-wrapper {
     &.border-bottom-0 {
         .k-grid-content td {
-            border-bottom: none !important;
+            border-bottom: none ;
         }
 
     }
@@ -57,7 +57,7 @@
 
         .k-grid-filter,
         .k-header-column-menu {
-            float: right !important;
+            float: right ;
             margin-left: 0px;
         }
     }
@@ -103,13 +103,13 @@
 /*for UXStudio*/
 .border-studio {
     &.uxElementfocus {
-        border: 5px solid rgb(255, 239, 165) !important;
+        border: 5px solid rgb(255, 239, 165) ;
         transition: 0.2s all;
     }
 }
 
 .uxElementfocus {
-    border: 5px solid rgb(255, 239, 165) !important;
+    border: 5px solid rgb(255, 239, 165) ;
     transition: 0.2s all;
 }
 
@@ -231,7 +231,7 @@
 
 .plOverflowFix {
     .k-menu-link {
-        padding-left: 0 !important;
+        padding-left: 0 ;
     }
 }
 
@@ -254,16 +254,16 @@
            
 
             th:not([data-title=' ']) {
-                border-left: 1px solid #ccc !important;
+                border-left: 1px solid #ccc ;
             }
         }
 
         .k-grid-content {
-            border-right: 1px solid #ccc !important;
-            border-bottom: 1px solid #ccc !important;
+            border-right: 1px solid #ccc ;
+            border-bottom: 1px solid #ccc ;
 
             td {
-                border-left: 1px solid #ccc !important;
+                border-left: 1px solid #ccc ;
             }
         }
     }
@@ -273,15 +273,15 @@
 
 
     .k-grid-content {
-        border-right: 1px solid #ccc !important;
-        border-bottom: 1px solid #ccc !important;
+        border-right: 1px solid #ccc ;
+        border-bottom: 1px solid #ccc ;
     }
 }
 
 .contentGridRowsAndCols {
     .k-grid {
         .k-grid-header {
-            border-bottom: 1px solid #ccc !important;
+            border-bottom: 1px solid #ccc ;
         }
 
     
@@ -291,15 +291,15 @@
 /*recipete service*/
 
 .rececipt-border-dashed {
-    border: 1px dashed #999191 !important;
+    border: 1px dashed #999191 ;
 }
 
 .rececipt-icon-color {
-    color: black !important;
+    color: black ;
 }
 
 .rececipt-foldPage {
-    background: #eee !important;
+    background: #eee ;
 }
 
 .rececipt-foldPage:before {
@@ -318,9 +318,9 @@
 }
 
 .rececipt-gradient {
-    background: linear-gradient(360deg, #d1d1d1, transparent) !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
+    background: linear-gradient(360deg, #d1d1d1, transparent) ;
+    box-shadow: none ;
+    border-radius: 0 ;
 }
 
 .image-border-raduis {
@@ -335,15 +335,15 @@
 
 .x-control-wrapper{
     .d-none{
-        display: none !important;
+        display: none ;
     }
 }
 
 // .infoGap {
 //     @media screen and (max-width:800px){
-//         flex: 0 0 10%!important;
+//         flex: 0 0 10%;
 //         +div {
-//             flex: 0 0 90%!important;
+//             flex: 0 0 90%;
 //         }
 //     }
 //     flex: 0 0 2%;
@@ -359,7 +359,7 @@
 #TafnitCore_SaaSServer_TafnitCloud_UI_DashBorad{
     .h-300{
         .k-grid-content{
-            max-height: 300px!important;
+            max-height: 300px;
         }
     }
 }
