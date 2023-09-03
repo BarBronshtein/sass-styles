@@ -1,0 +1,56 @@
+@use '../variables/masterVariable' as *;
+
+.k-menu {
+  background: $menu-background;
+  border: $menu-border;
+
+  li.k-item {
+      border: $menu-button-border !important;
+      border-radius: $menu-border-radius !important;
+      float: $menu-dot-side !important;
+
+      &.k-state-focused {
+          box-shadow: none !important;
+      }
+
+      .k-group {
+          border: $menu-popup-border;
+          background: $menu-popup-background;
+          border-radius: $menu-popup-border-radius;
+          padding: $menu-popup-padding;
+          box-shadow: $menu-box-shadow !important;
+      }
+
+      i.k-icon {
+          color: $menu-color !important;
+          font-size: $menu-dot-size;
+      }
+  }
+
+  .xMenuItemColor {
+
+      &:last-child {
+          border-bottom: 0;
+
+          border-bottom: $menu-item-border;
+          border-radius: 0;
+      }
+
+      span {
+          color: $menu-label-color !important;
+
+          &:hover {
+              transition: 0.2s all;
+              font-weight: $menu-label-hover !important;
+          }
+      }
+  }
+
+  .xMenuHover {
+      &:hover {
+          transition: 0.2s all;
+          background: $menu-hover-background;
+      }
+  }
+}
+

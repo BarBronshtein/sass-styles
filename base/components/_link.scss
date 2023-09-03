@@ -1,0 +1,10 @@
+@use '../variables/masterVariable' as *;
+
+
+.xstyle-ilink-wrapper{
+    .x-link_Comp{
+     
+        text-decoration: $link-text-underling;
+    }
+}
+

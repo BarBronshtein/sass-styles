@@ -1,0 +1,63 @@
+@use '../variables/masterVariable' as *;
+
+.k-calendar {
+    .k-header ,.k-calendar-header > a{
+        background: $calendar-header-background;
+        color: $calendar-header-color;
+
+        .k-link {
+            &.k-state-hover {
+                background: $calendar-header-background;
+                color: $calendar-header-color;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .k-calendar-view {
+        background: $calendar-view-background;
+
+        th {
+            background-color: $calendar-view-weekend-background;
+            color: $calendar-view-weekend-color;
+        }
+
+        td {
+            &:not(.k-other-month) {
+                color: $calendar-dates-color;
+            }
+
+            &.k-state-hover {
+                .k-link {
+                    background-color: $calendar-view-date-hover-background;
+                    color: $calendar-view-date-hover-color;
+                    background-image: none !important;
+                }
+            }
+
+            &.k-state-focused {
+                .k-link {
+                    background: $calendar-view-today-background;
+                    color: $calendar-view-today-color;
+                    box-shadow: $calendar-view-today-box-shadow;
+                }
+
+                &.k-state-hover {
+                    @extend .k-link;
+                }
+            }
+        }
+    }
+
+    .k-footer {
+        .k-nav-today {
+            background-color: $calendar-footer-background;
+            color: $calendar-footer-color;
+
+            &:hover {
+                color: $calendar-footer-hover-color;
+            }
+        }
+    }
+}
+

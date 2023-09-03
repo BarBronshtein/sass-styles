@@ -1,0 +1,38 @@
+@use '../variables/masterVariable' as *;
+
+
+.k-stepper {
+    background-color: $stepper-background;
+
+    .k-step-indicator {
+        border-color: $stepper-icon-border-color !important;
+        background-color: $stepper-icon-background !important;
+
+        .k-step-indicator-icon {
+            color: $stepper-icon-color !important;
+        }
+    }
+
+    .k-step-current {
+        .k-step-indicator {
+            border-color: $stepper-fisrt-icon-border-color !important;
+            background-color: $stepper-fisrt-icon-background !important;
+
+            .k-step-indicator-icon {
+                color: $stepper-fisrt-icon-color !important;
+            }
+        }
+    }
+
+    .k-progressbar {
+        border-color: $stepper-line-border-color !important;
+    }
+}
+
+.k-tooltip.k-slider-tooltip {
+    background: $stepper-tooltip-background !important;
+    border-color: $stepper-tooltip-border-color !important;
+    color: $stepper-tooltip-color !important;
+}
+
+

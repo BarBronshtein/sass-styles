@@ -47,7 +47,7 @@
 /*spinner*/
 /*Dashboard*/
 .xstyle-timepicker-wrapper label, .xstyle-textcontrol-wrapper label, .xstyle-password-wrapper div:nth-child(1) label, .xstyle-numberrange-wrapper.x-readonly div:nth-child(2) label, .xstyle-numberrange-wrapper div:nth-child(1).col-33 label, .xstyle-lookuptafnit-wrapper div:nth-child(1) label,
-.xstyle-lookup-wrapper div:nth-child(1) label, .xstyle-idropdownlist-wrapper div:nth-child(1) label, .xstyle-daterangev2-wrapper div:nth-child(1).col-33 label, .xstyle-date-wrapper label, label, .xstyle-autocomplete-wrapper div:nth-child(1) label {
+.xstyle-lookup-wrapper div:nth-child(1) label, .xstyle-idropdownlist-wrapper div:nth-child(1) label, .xstyle-daterangev2-wrapper div:nth-child(1).col-33 label, .xstyle-daterange-wrapper div:nth-child(1).col-33 label, .xstyle-date-wrapper label, label, .xstyle-autocomplete-wrapper div:nth-child(1) label {
   color: #5E6164;
   font-size: 13px !important;
   border-top-right-radius: 0px !important;
@@ -563,6 +563,7 @@ tr.k-master-row > td > input {
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td {
   padding: 10px 0px;
   height: 36px !important;
+  width: auto;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td:hover a,
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td:hover a {
@@ -571,6 +572,7 @@ tr.k-master-row > td > input {
   border-radius: 100px;
   background: #650872 !important;
   font-weight: 700;
+  width: auto;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td.k-focus a,
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td.k-focus a {
@@ -581,6 +583,7 @@ tr.k-master-row > td > input {
   background: #4B1754;
   border-radius: 100px;
   box-shadow: none;
+  width: auto;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td a,
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td a {
@@ -591,6 +594,7 @@ tr.k-master-row > td > input {
   font-size: 16px;
   line-height: 24px;
   color: #7B098B;
+  width: auto;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview {
   border-bottom: 1px solid #7B098B;
@@ -655,21 +659,21 @@ tr.k-master-row > td > input {
   color: #7B098B;
 }
 
-.xstyle-daterangev2-wrapper {
+.xstyle-daterangev2-wrapper, .xstyle-daterange-wrapper {
   border-radius: 0 !important;
   margin-top: 5px;
 }
-.xstyle-daterangev2-wrapper input {
+.xstyle-daterangev2-wrapper input, .xstyle-daterange-wrapper input {
   color: #000000 !important;
   font-size: 13px !important;
 }
-.xstyle-daterangev2-wrapper input::-moz-placeholder {
+.xstyle-daterangev2-wrapper input::-moz-placeholder, .xstyle-daterange-wrapper input::-moz-placeholder {
   color: #ececec !important;
 }
-.xstyle-daterangev2-wrapper input::placeholder {
+.xstyle-daterangev2-wrapper input::placeholder, .xstyle-daterange-wrapper input::placeholder {
   color: #ececec !important;
 }
-.xstyle-daterangev2-wrapper.x-contextmenu div:nth-child(1) > div.x-control-caption-wrapper::before {
+.xstyle-daterangev2-wrapper.x-contextmenu div:nth-child(1) > div.x-control-caption-wrapper::before, .xstyle-daterange-wrapper.x-contextmenu div:nth-child(1) > div.x-control-caption-wrapper::before {
   content: "\f0d8" !important;
   font-family: "Font Awesome 5 PRO";
   font-weight: 900;
@@ -680,16 +684,16 @@ tr.k-master-row > td > input {
   margin-right: 1px;
   color: #037295 !important;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(1) {
+.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(1), .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(1) {
   width: 55%;
   margin-left: 11px;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) {
+.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2), .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) {
   display: flex;
   width: 55%;
   border-bottom: 1px solid #d9d9d9;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) > span:nth-child(1) {
+.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) > span:nth-child(1), .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) > span:nth-child(1) {
   padding-right: 16px;
   margin-left: 12px;
   margin-top: 11px;
@@ -698,46 +702,47 @@ tr.k-master-row > td > input {
   line-height: 13px !important;
   color: #a1a3a5 !important;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive {
+.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive, .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive {
   border: none !important;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input {
+.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input, .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input {
   border-right: 1px solid #d9d9d9 !important;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::-moz-placeholder {
+.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::-moz-placeholder, .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::-moz-placeholder {
   color: #ececec !important;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::placeholder {
+.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::placeholder, .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::placeholder {
   color: #ececec !important;
 }
-.xstyle-daterangev2-wrapper:focus-within {
+.xstyle-daterangev2-wrapper:focus-within, .xstyle-daterange-wrapper:focus-within {
   border: 1px solid #ddc3e7 !important;
   box-shadow: 0px 0px 10px #f6ecfb !important;
 }
 .xstyle-daterangev2-wrapper .k-input:focus-within,
-.xstyle-daterangev2-wrapper .k-widget.k-input:focus-within {
+.xstyle-daterangev2-wrapper .k-widget.k-input:focus-within, .xstyle-daterange-wrapper .k-input:focus-within,
+.xstyle-daterange-wrapper .k-widget.k-input:focus-within {
   box-shadow: none !important;
 }
-.xstyle-daterangev2-wrapper .col-33 {
+.xstyle-daterangev2-wrapper .col-33, .xstyle-daterange-wrapper .col-33 {
   display: flex;
   align-items: center;
 }
-.xstyle-daterangev2-wrapper div:nth-child(1).col-33 {
+.xstyle-daterangev2-wrapper div:nth-child(1).col-33, .xstyle-daterange-wrapper div:nth-child(1).col-33 {
   border-bottom: 1px solid #d9d9d9 !important;
   height: 30px !important;
   display: flex;
   align-items: center;
 }
-.xstyle-daterangev2-wrapper div:nth-child(1).col-33 label {
+.xstyle-daterangev2-wrapper div:nth-child(1).col-33 label, .xstyle-daterange-wrapper div:nth-child(1).col-33 label {
   padding-right: 15px;
 }
-.xstyle-daterangev2-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper {
+.xstyle-daterangev2-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper, .xstyle-daterange-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper {
   margin-left: -1px;
 }
-.xstyle-daterangev2-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper:nth-child(1) > span {
+.xstyle-daterangev2-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper:nth-child(1) > span, .xstyle-daterange-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper:nth-child(1) > span {
   border-right: 1px solid #d9d9d9 !important;
 }
-.xstyle-daterangev2-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper > span.k-datepicker {
+.xstyle-daterangev2-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper > span.k-datepicker, .xstyle-daterange-wrapper div:nth-child(2).col-67 .x-date-wrapper.s-date-wrapper > span.k-datepicker {
   border-bottom: 1px solid #d9d9d9 !important;
 }
 
@@ -1180,6 +1185,10 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   font-size: 13px !important;
 }
 
+.k-ghost-splitbar-horizontal, .k-ghost-splitbar-vertical, .k-marquee-color, .k-panel > .k-selected, .k-panel > .k-state-selected, .k-scheduler .k-today.k-selected, .k-scheduler .k-today.k-state-selected, .k-selected, .k-state-selected, .k-state-selected:link, .k-state-selected:visited {
+  background: #FAF6FC !important;
+}
+
 .k-grid {
   border: none;
   outline: 0;
@@ -1485,6 +1494,7 @@ mainbody mainbody {
   border: none;
   margin-top: 16px !important;
   margin-bottom: 16px;
+  padding: 25px 0px;
 }
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable > :nth-child(2).k-button:hover {
   background: #690779 !important;
@@ -1734,10 +1744,13 @@ mainbody mainbody {
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td > a > i {
   content: "\e925" !important;
   left: -8px;
-  font-size: 12px !important;
+  font-size: 18px !important;
   color: #7B098B !important;
   margin-top: 6px;
   display: inline-block;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > a > i.fa-star {
+  font-size: 14px !important;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td {
   font-family: "Heebo";
@@ -1836,8 +1849,11 @@ mainbody mainbody {
   background: #ffffff !important;
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
-  top: 4px;
   margin-left: 13px;
+  color: #7d0a8c !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .k-toolbar.k-toolbar-resizable > .k-overflow-anchor.k-button.k-button-md.k-rounded-md.k-button-flat:focus-within {
   background: #F3F3F3 !important;
@@ -2952,6 +2968,8 @@ div[uxid=portalUser],
   border-radius: 0;
   background: #fafafa;
   color: #000 !important;
+  font-size: 13px;
+  padding-right: 10px;
 }
 .xstyle-lookup-wrapper .x-lookup .x-selection-lookup .x-open-lookup .x-selection-lookup-button,
 .xstyle-lookuptafnit-wrapper .x-lookup .x-selection-lookup .x-open-lookup .x-selection-lookup-button {
@@ -2980,6 +2998,7 @@ div[uxid=portalUser],
 .xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-checkbox-wrapper:has(.x-control-caption-wrapper).mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
+.xstyle-radio-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label:before {
   content: "*";
   font-family: "Font Awesome 5 pro" !important;
@@ -2997,6 +3016,7 @@ div[uxid=portalUser],
 .xstyle-date-wrapper.mandatory > div:nth-child(2) span,
 .xstyle-checkbox-wrapper:has(.x-control-caption-wrapper).mandatory > div:nth-child(2) span,
 .xstyle-password-wrapper.mandatory > div:nth-child(2) span,
+.xstyle-radio-wrapper.mandatory > div:nth-child(2) span,
 .xstyle-timepicker-wrapper.mandatory > div:nth-child(2) span {
   border-bottom: none !important;
 }
@@ -4975,7 +4995,7 @@ input::-webkit-inner-spin-button {
 }
 .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper .header-toolbar {
   margin: 0px 5px;
-  max-width: 750px;
+  max-width: 95%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5032,7 +5052,9 @@ input::-webkit-inner-spin-button {
   background: #ffffff !important;
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
-  top: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   margin-left: 13px;
   color: #7d0a8c !important;
 }
@@ -5104,6 +5126,8 @@ input::-webkit-inner-spin-button {
   text-align: center;
   padding: 6px;
   border-radius: 10px;
+  font-size: 12px;
+  color: black;
 }
 .k-animation-container:has(.k-tooltip) .k-callout.k-callout-n {
   border: none;
@@ -5862,8 +5886,21 @@ input::-webkit-inner-spin-button {
   line-height: 130%;
   color: #7E7B7B !important;
 }
+#TafnitCore_WorkFlow_UI_OverView .k-menu-link:has(.k-icon.k-i-more-vertical) {
+  padding-left: 30px !important;
+  margin-bottom: 30px;
+}
 #TafnitCore_WorkFlow_UI_OverView .k-icon.k-i-more-vertical {
-  top: -10px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--white-button-background, #FFF);
+  box-shadow: 0px 0px 8px 0px rgba(123, 9, 141, 0.1);
+  height: 50px;
+}
+#TafnitCore_WorkFlow_UI_OverView .k-icon.k-i-more-vertical::before {
+  top: 1px;
+  color: #7B098B;
 }
 
 #TafnitCore_System_UI_App_WebSDK_DevPage input {
@@ -5903,6 +5940,11 @@ input::-webkit-inner-spin-button {
   color: #000 !important;
   opacity: 1 !important;
 }
+.k-widget.k-window:has(#TafnitCore_Salary_UI_RequestRaise) .cancel-button,
+.k-window.k-widget:has(#TafnitCore_Salary_UI_RequestBonus) .cancel-button,
+.k-window.k-widget:has(#TafnitCore_Salary_UI_RequestPromotion) .cancel-button {
+  margin-right: -10px;
+}
 .k-widget.k-window:has(#TafnitCore_Salary_UI_RequestRaise) .cancel-button .x-button-wrapper .k-button.x-button.s-button,
 .k-window.k-widget:has(#TafnitCore_Salary_UI_RequestBonus) .cancel-button .x-button-wrapper .k-button.x-button.s-button,
 .k-window.k-widget:has(#TafnitCore_Salary_UI_RequestPromotion) .cancel-button .x-button-wrapper .k-button.x-button.s-button {
@@ -5923,6 +5965,14 @@ input::-webkit-inner-spin-button {
   padding-bottom: 35px !important;
 }
 
+.k-rtl.k-window:has(#TafnitCore_Salary_UI_RequestHistory) .k-window-titlebar {
+  position: relative;
+  z-index: 1600;
+  left: -35px;
+  top: 10px;
+  height: 15px !important;
+}
+
 .k-rtl.k-window-content:has(#TafnitCore_Salary_UI_RequestHistory) .xstyle-gridv4-wrapper .k-grid-content.k-auto-scrollable {
   max-height: none !important;
 }
@@ -5936,16 +5986,23 @@ input::-webkit-inner-spin-button {
   margin-left: -10px;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background: none;
+}
+.k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header .xstyle-itoolbar-wrapper {
+  background: none;
+  box-shadow: none;
+  padding: 0 !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header #tbbTitle {
-  height: 90px !important;
+  height: 80px !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   width: 100%;
   margin-left: 0px;
   background-color: #FFFFFF !important;
+  margin-bottom: 10px;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header #tbbTitle span {
   color: #7B098B !important;
@@ -5961,7 +6018,7 @@ input::-webkit-inner-spin-button {
   display: none !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header .k-button-group {
-  height: 90px !important;
+  height: 80px !important;
   background: #FFFFFF !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
@@ -5969,6 +6026,7 @@ input::-webkit-inner-spin-button {
   padding-left: 10px !important;
   margin-left: 0px !important;
   margin-right: 0px !important;
+  margin-bottom: 10px;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header .k-button-group button.k-button {
   box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
@@ -5985,8 +6043,8 @@ input::-webkit-inner-spin-button {
   content: none !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory mainbody {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .k-content:has(#TafnitCore_Salary_UI_RequestBonus) .k-widget.k-window.k-rtl.k-display-inline-flex,
@@ -6089,6 +6147,12 @@ input::-webkit-inner-spin-button {
   display: grid;
   grid-template-columns: 57% auto auto;
 }
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .main-OPT .xstyle-textcontrol-wrapper {
+  margin-top: 0;
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .main-OPT .xstyle-textcontrol-wrapper input.k-textbox.x-textbox {
+  border-right: none !important;
+}
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .secndary-title {
   align-self: center;
 }
@@ -6114,7 +6178,7 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   font-size: 16px !important;
   line-height: 130%;
-  color: #7B098B;
+  color: #7B098B !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .kIncome .k-icon-wrapper {
   text-align: left !important;
@@ -6128,6 +6192,10 @@ input::-webkit-inner-spin-button {
   padding-right: 0px;
   margin-right: 0px;
   padding-left: 0;
+  height: 10px;
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .checkBox-Income .x-login-user-error-msg {
+  font-size: 12px !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .checkBox-Income .xstyle-textcontrol-wrapper {
   height: 37px;
@@ -6138,7 +6206,7 @@ input::-webkit-inner-spin-button {
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .checkBox-Income .xstyle-textcontrol-wrapper:focus-within {
   border: 1px solid #ddc3e7 !important;
-  box-shadow: 0px 0px 10px #f6ecfb !important;
+  box-shadow: drop-shadow(0px 4px 4px rgba(123, 9, 141, 0.1)) drop-shadow(0px 0px 3px rgba(123, 9, 141, 0.2)) !important;
   outline: none !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .checkBox-Income .x-self-container {
@@ -6159,9 +6227,9 @@ input::-webkit-inner-spin-button {
   top: 8px !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-widget.k-window .k-window-titlebar {
-  position: absolute;
   z-index: 1600;
-  left: 6px;
+  top: 10px;
+  height: 15px !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-widget.k-window .k-window-content {
   overflow: auto;
@@ -6170,7 +6238,7 @@ input::-webkit-inner-spin-button {
 }
 
 #TafnitCore_Salary_UI_SubmitRequest .k-grid-content.k-auto-scrollable > table > tbody > tr td {
-  height: 50px !important;
+  height: 40px !important;
 }
 
 #TafnitCore_Salary_UI_SubmitRequest span.k-button-group#btnSplt2 {
@@ -6183,7 +6251,7 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_Salary_UI_SubmitRequest .xstyle-gridv4-wrapper thead th {
   color: #7B098B !important;
-  font-size: 14px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
 }
 #TafnitCore_Salary_UI_SubmitRequest .xstyle-gridv4-wrapper thead th:nth-child(1) {
@@ -6196,7 +6264,7 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_Salary_UI_SubmitRequest .page-salary-first-table .xstyle-gridv4-wrapper thead th {
   color: #7B098B !important;
-  font-size: 14px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
 }
 #TafnitCore_Salary_UI_SubmitRequest .page-salary-first-table .xstyle-gridv4-wrapper thead th:nth-child(1) {
@@ -6205,7 +6273,7 @@ input::-webkit-inner-spin-button {
   font-weight: bold !important;
 }
 #TafnitCore_Salary_UI_SubmitRequest #rEmployee {
-  height: 90px !important;
+  height: 80px !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   width: 100%;
@@ -6215,6 +6283,9 @@ input::-webkit-inner-spin-button {
 #TafnitCore_Salary_UI_SubmitRequest .k-spacer {
   display: none;
 }
+#TafnitCore_Salary_UI_SubmitRequest .xstyle-itoolbar-wrapper {
+  margin-bottom: 10px;
+}
 #TafnitCore_Salary_UI_SubmitRequest .k-toolbar.k-toolbar-resizable {
   margin-top: 0px !important;
   display: grid;
@@ -6222,6 +6293,7 @@ input::-webkit-inner-spin-button {
   gap: 15px;
   width: 100%;
   padding: 0;
+  padding-bottom: 5px;
 }
 #TafnitCore_Salary_UI_SubmitRequest .k-toolbar.k-toolbar-resizable::before {
   display: none !important;
@@ -6266,7 +6338,7 @@ input::-webkit-inner-spin-button {
   margin-right: 20px !important;
 }
 #TafnitCore_Salary_UI_SubmitRequest span.k-button-group {
-  height: 90px !important;
+  height: 80px !important;
   background: #F5F5F5 !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
@@ -6291,6 +6363,17 @@ input::-webkit-inner-spin-button {
 #TafnitCore_Salary_UI_SubmitRequest .grid-salary {
   padding-top: 0px !important;
   margin: 0 !important;
+}
+#TafnitCore_xAgreements_UI_SubmitSalaryRequest .grid-salary .first-table.mb-2,
+#TafnitCore_Salary_UI_SubmitRequest .grid-salary .first-table.mb-2 {
+  align-items: center;
+}
+#TafnitCore_xAgreements_UI_SubmitSalaryRequest .grid-salary .xstyle-radio-wrapper,
+#TafnitCore_Salary_UI_SubmitRequest .grid-salary .xstyle-radio-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest div[uxid=bSave] button.k-button,
 #TafnitCore_Salary_UI_SubmitRequest div[uxid=bSave] button.k-button {
@@ -6337,7 +6420,8 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .page-salary-first-table .requestNotes-main .requestNotes-body,
 #TafnitCore_Salary_UI_SubmitRequest .page-salary-first-table .requestNotes-main .requestNotes-body {
-  height: 53px !important;
+  height: 40px !important;
+  border-bottom: 1px solid #F5F5F5;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .page-salary-first-table .requestNotes-main .col-33,
 #TafnitCore_Salary_UI_SubmitRequest .page-salary-first-table .requestNotes-main .col-33 {
@@ -6347,6 +6431,9 @@ input::-webkit-inner-spin-button {
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .page-salary-first-table .requestNotes-main .col-33 label,
 #TafnitCore_Salary_UI_SubmitRequest .page-salary-first-table .requestNotes-main .col-33 label {
   color: #000;
+  height: 35px !important;
+  align-items: center;
+  display: grid;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .page-salary-first-table .requestNotes-main .col-67,
 #TafnitCore_Salary_UI_SubmitRequest .page-salary-first-table .requestNotes-main .col-67 {
@@ -6392,7 +6479,7 @@ input::-webkit-inner-spin-button {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px !important;
+  font-size: 13px !important;
   line-height: 130%;
   color: #000000;
   padding-right: 10px;
@@ -6403,7 +6490,7 @@ input::-webkit-inner-spin-button {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px !important;
+  font-size: 13px !important;
   line-height: 130%;
   color: #000000;
   padding-right: 10px;
@@ -6557,19 +6644,11 @@ input::-webkit-inner-spin-button {
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack {
   display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 15px;
-  background: none !important;
-  box-shadow: none;
-  border: none !important;
-  padding: 0;
-  padding-left: 15px;
-  margin: auto;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack .BackToBack-textBox,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack .BackToBack-textBox {
   margin: 0;
-  height: 53px !important;
+  height: 40px !important;
   border-bottom: 1px solid #F5F5F5 !important;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack .BackToBack-textBox:focus-within,
@@ -6578,10 +6657,11 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack .BackToBack-textBox .col-33,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack .BackToBack-textBox .col-33 {
-  max-width: 55%;
-  flex: 0 0 55%;
   background: #fbfbfb !important;
   height: 100%;
+  text-align: right;
+  align-items: center;
+  display: grid;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack .BackToBack-textBox .col-33 label,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack .BackToBack-textBox .col-33 label {
@@ -6595,16 +6675,6 @@ input::-webkit-inner-spin-button {
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack .BackToBack-textBox .col-67 input,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack .BackToBack-textBox .col-67 input {
   border-right: none !important;
-}
-#TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack > div,
-#TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack > div {
-  background: #ffffff;
-  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
-  border-radius: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-  align-self: center;
-  height: 85px;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack > div > div,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack > div > div {
@@ -6630,18 +6700,13 @@ input::-webkit-inner-spin-button {
   opacity: 1;
   filter: none;
 }
-#TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack .x-cell.s-cell,
-#TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack .x-cell.s-cell {
-  text-align: center;
-  align-self: center;
-}
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary .BackToBack .x-cell.s-cell ul.fieldlist,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary .BackToBack .x-cell.s-cell ul.fieldlist {
   top: 0px;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary td i,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary td i {
-  font-size: 15px !important;
+  font-size: 18px !important;
 }
 #TafnitCore_xAgreements_UI_SubmitSalaryRequest .salary-changeSummary td input,
 #TafnitCore_Salary_UI_SubmitRequest .salary-changeSummary td input {
@@ -6736,8 +6801,9 @@ input::-webkit-inner-spin-button {
 
 #TafnitCore_xAgreements_UI_SalaryRequestBonus, #TafnitCore_Salary_UI_RequestBonus,
 #TafnitCore_Salary_UI_RequestPromotion {
-  height: 95% !important;
-  width: 96%;
+  height: 100% !important;
+  width: 100%;
+  margin-top: 0 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus .firstTitle h3.x-section-header.s-section-header, #TafnitCore_Salary_UI_RequestBonus .firstTitle h3.x-section-header.s-section-header,
 #TafnitCore_Salary_UI_RequestPromotion .firstTitle h3.x-section-header.s-section-header {
@@ -6749,9 +6815,10 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus mainbody, #TafnitCore_Salary_UI_RequestBonus mainbody,
 #TafnitCore_Salary_UI_RequestPromotion mainbody {
-  margin-top: 35px !important;
+  margin-top: 0px !important;
   padding-bottom: -8px !important;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+  padding: 0 !important;
   background: white !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus .xstyle-idropdownlist-wrapper label, #TafnitCore_Salary_UI_RequestBonus .xstyle-idropdownlist-wrapper label,
@@ -6826,6 +6893,11 @@ input::-webkit-inner-spin-button {
   color: #000 !important;
   padding-right: 0 !important;
 }
+#TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput .xstyle-date-wrapper .x-datePickerResponsive, #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput1 .xstyle-date-wrapper .x-datePickerResponsive, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput .xstyle-date-wrapper .x-datePickerResponsive, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput1 .xstyle-date-wrapper .x-datePickerResponsive,
+#TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput .xstyle-date-wrapper .x-datePickerResponsive,
+#TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput1 .xstyle-date-wrapper .x-datePickerResponsive {
+  border-right: none !important;
+}
 #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput .xstyle-date-wrapper input, #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput1 .xstyle-date-wrapper input, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput .xstyle-date-wrapper input, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput1 .xstyle-date-wrapper input,
 #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput .xstyle-date-wrapper input,
 #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput1 .xstyle-date-wrapper input {
@@ -6864,6 +6936,7 @@ input::-webkit-inner-spin-button {
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=newValue] .xstyle-textcontrol-wrapper input {
   border-right: none;
   color: black !important;
+  border: none !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestPromotion div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder {
   color: #d9d9d9 !important;
@@ -6876,10 +6949,6 @@ input::-webkit-inner-spin-button {
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=gAsked] {
   margin-top: 0px !important;
   margin-bottom: 30px !important;
-}
-#TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=gAsked] .k-grid-header, #TafnitCore_Salary_UI_RequestBonus div[uxid=gAsked] .k-grid-header,
-#TafnitCore_Salary_UI_RequestPromotion div[uxid=gAsked] .k-grid-header {
-  border-bottom: 1px solid #F5F5F5 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=gAsked] .k-grid-header th, #TafnitCore_Salary_UI_RequestBonus div[uxid=gAsked] .k-grid-header th,
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=gAsked] .k-grid-header th {
@@ -6900,10 +6969,6 @@ input::-webkit-inner-spin-button {
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=rFuture] div {
   padding-right: 0 !important;
   width: 100% !important;
-}
-#TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=rFuture] .k-grid-header, #TafnitCore_Salary_UI_RequestBonus div[uxid=rFuture] .k-grid-header,
-#TafnitCore_Salary_UI_RequestPromotion div[uxid=rFuture] .k-grid-header {
-  border-bottom: 1px solid #F5F5F5 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=rFuture] .k-grid-header th, #TafnitCore_Salary_UI_RequestBonus div[uxid=rFuture] .k-grid-header th,
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=rFuture] .k-grid-header th {
@@ -6941,12 +7006,17 @@ input::-webkit-inner-spin-button {
 
 #TafnitCore_xAgreements_UI_SalaryRequestRaise,
 #TafnitCore_Salary_UI_RequestRaise {
-  height: 95% !important;
-  width: 96%;
+  height: 100% !important;
+  width: 100%;
+  margin-top: 0 !important;
+}
+#TafnitCore_xAgreements_UI_SalaryRequestRaise .col,
+#TafnitCore_Salary_UI_RequestRaise .col {
+  padding-right: 0;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise .price,
 #TafnitCore_Salary_UI_RequestRaise .price {
-  padding-right: 0px;
+  padding-right: 5px;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise .bAddSalaray,
 #TafnitCore_Salary_UI_RequestRaise .bAddSalaray {
@@ -6966,10 +7036,11 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise mainbody,
 #TafnitCore_Salary_UI_RequestRaise mainbody {
-  margin-top: 35px !important;
+  margin-top: 0px !important;
   padding-bottom: -8px !important;
   background: white !important;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+  padding: 0 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise .xstyle-date-wrapper,
 #TafnitCore_Salary_UI_RequestRaise .xstyle-date-wrapper {
@@ -7018,15 +7089,12 @@ input::-webkit-inner-spin-button {
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px;
   padding: 20px 40px;
+  margin-bottom: 0px !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise .futureGrid,
 #TafnitCore_Salary_UI_RequestRaise .futureGrid {
   margin-bottom: 80px !important;
   margin-top: 24px;
-}
-#TafnitCore_xAgreements_UI_SalaryRequestRaise .k-grid-header,
-#TafnitCore_Salary_UI_RequestRaise .k-grid-header {
-  border-bottom: 1px solid #F5F5F5 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise .headerNone,
 #TafnitCore_Salary_UI_RequestRaise .headerNone {
@@ -7046,7 +7114,7 @@ input::-webkit-inner-spin-button {
 #TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=bConfirm] button,
 #TafnitCore_Salary_UI_RequestRaise div[uxid=bConfirm] button {
   width: 140px !important;
-  height: 37px !important;
+  height: 30px !important;
   background: #7B098B;
   border-radius: 10px !important;
   color: #FFFFFF;
@@ -7062,6 +7130,8 @@ input::-webkit-inner-spin-button {
   background: #ffffff !important;
   position: relative;
   z-index: 50;
+  border-right: 0 !important;
+  border-bottom: 1px solid #d9d9d9 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=newValue] input::-moz-placeholder, #TafnitCore_Salary_UI_RequestRaise div[uxid=newValue] input::-moz-placeholder {
   color: #ececec !important;
@@ -7112,16 +7182,12 @@ input::-webkit-inner-spin-button {
 #TafnitCore_Salary_UI_RequestRaise .x-grid-control.s-grid-control.k-grid.k-widget.k-grid-display-block .k-grid-content {
   height: inherit;
 }
-#TafnitCore_xAgreements_UI_SalaryRequestRaise .x-grid-control.s-grid-control.k-grid.k-widget.k-grid-display-block .k-grid-header,
-#TafnitCore_Salary_UI_RequestRaise .x-grid-control.s-grid-control.k-grid.k-widget.k-grid-display-block .k-grid-header {
-  border-bottom: 1px solid #F5F5F5;
-}
 #TafnitCore_xAgreements_UI_SalaryRequestRaise .x-grid-control.s-grid-control.k-grid.k-widget.k-grid-display-block .k-grid-header div > table > thead > tr > th,
 #TafnitCore_Salary_UI_RequestRaise .x-grid-control.s-grid-control.k-grid.k-widget.k-grid-display-block .k-grid-header div > table > thead > tr > th {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px !important;
+  font-size: 13px !important;
   line-height: 130%;
   text-align: right;
   color: #7B098B !important;
@@ -7208,7 +7274,7 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=lFromDate] span,
 #TafnitCore_Salary_UI_RequestRaise div[uxid=lFromDate] span {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-right: 18px;
   color: #000000 !important;
   font-size: 16px !important;
@@ -7265,6 +7331,10 @@ input::-webkit-inner-spin-button {
   line-height: 130% !important;
   color: black !important;
 }
+#TafnitCore_xAgreements_UI_SalaryRequestPromotion .xstyle-date-wrapper .x-datePickerResponsive,
+#TafnitCore_Salary_UI_RequestPromotion .xstyle-date-wrapper .x-datePickerResponsive {
+  border-right: none !important;
+}
 #TafnitCore_xAgreements_UI_SalaryRequestPromotion .xstyle-date-wrapper input,
 #TafnitCore_Salary_UI_RequestPromotion .xstyle-date-wrapper input {
   border-right: none !important;
@@ -7281,11 +7351,11 @@ input::-webkit-inner-spin-button {
 }
 
 .popUpWindowCls:has(#TafnitCore_Salary_UI_FutureValues) {
-  width: 60% !important;
+  width: 73% !important;
   background: #FBFBFB !important;
   position: absolute;
   top: 56px !important;
-  right: -62% !important;
+  right: -76% !important;
   margin: 0 !important;
 }
 .popUpWindowCls:has(#TafnitCore_Salary_UI_FutureValues) #TafnitCore_Salary_UI_FutureValues {
@@ -7341,6 +7411,34 @@ input::-webkit-inner-spin-button {
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) {
   height: auto !important;
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) .k-searchbox {
+  border: none !important;
+  text-indent: 3% !important;
+  border-radius: 20px !important;
+  border: 0;
+  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.1);
+  border-radius: 20px;
+  width: 100.5%;
+  height: 40px;
+  max-height: 35px !important;
+  background: white !important;
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) .k-searchbox input {
+  border: none !important;
+  background: none !important;
+  color: #000000 !important;
+  padding-right: 10px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) .k-searchbox input::-moz-placeholder {
+  color: #000000 !important;
+}
+.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) .k-searchbox input::placeholder {
+  color: #000000 !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) .k-window-titlebar.k-hstack {
   height: 35px !important;
@@ -7485,33 +7583,168 @@ th .k-checkbox::before {
   display: none;
 }
 
-#TafnitCore_xAgreements_UI_ApprovePayment .xstyle-gridv4-wrapper,
+#TafnitCore_WorkFlow_UI_TaskHistory .xstyle-gridv4-wrapper {
+  margin-top: 100px !important;
+}
+#TafnitCore_WorkFlow_UI_TaskHistory .row-tab {
+  display: grid !important;
+  grid-template-columns: auto auto auto auto 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+#TafnitCore_WorkFlow_UI_TaskHistory .row-tab .xstyle-dynamiclabelcontrol-wrapper span {
+  color: #000;
+  text-align: right;
+  font-family: "Heebo";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+#TafnitCore_WorkFlow_UI_TaskHistory .row-tab .xstyle-dynamiclabelcontrol-wrapper.TabActive span {
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #FFFFFF;
+  background: var(--primary-500, #7B098B);
+}
+
+#TafnitCore_xAgreements_UI_Ageements.container.pageContainer.xtafnit_pageContainer, #TafnitCore_WorkFlow_UI_TaskHistory.container.pageContainer.xtafnit_pageContainer {
+  width: 98% !important;
+  margin-top: 10px !important;
+  padding: 0;
+}
+#TafnitCore_xAgreements_UI_Ageements.container.pageContainer.xtafnit_pageContainer .x-button-wrapper, #TafnitCore_WorkFlow_UI_TaskHistory.container.pageContainer.xtafnit_pageContainer .x-button-wrapper {
+  text-align: center;
+}
+#TafnitCore_xAgreements_UI_Ageements.container.pageContainer.xtafnit_pageContainer .x-button-wrapper button, #TafnitCore_WorkFlow_UI_TaskHistory.container.pageContainer.xtafnit_pageContainer .x-button-wrapper button {
+  height: 37px !important;
+}
+
 #TafnitCore_xAgreements_UI_InvoiceDetailes .xstyle-gridv4-wrapper {
+  overflow: auto;
+}
+#TafnitCore_xAgreements_UI_InvoiceDetailes .xstyle-gridv4-wrapper .x-grid-control {
+  width: 1300px;
+}
+#TafnitCore_xAgreements_UI_InvoiceDetailes .xstyle-gridv4-wrapper::-webkit-scrollbar {
+  border-radius: 10px;
+  position: absolute;
+  width: 10px;
+}
+#TafnitCore_xAgreements_UI_InvoiceDetailes .xstyle-gridv4-wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+#TafnitCore_xAgreements_UI_InvoiceDetailes .xstyle-gridv4-wrapper::-webkit-scrollbar-thumb {
+  background: #7d0a8c;
+  border-radius: 10px;
+}
+#TafnitCore_xAgreements_UI_InvoiceDetailes .xstyle-gridv4-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #7d0a8c;
+}
+
+#TafnitCore_xAgreements_UI_ApprovePayment .xstyle-gridv4-wrapper,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .xstyle-gridv4-wrapper,
+#TafnitCore_xAgreements_UI_CreateAgreement .xstyle-gridv4-wrapper {
   border: none !important;
 }
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment {
+  height: 180px;
+  padding: 10px 20px;
+}
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper label,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-date-wrapper label,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper label,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-date-wrapper label,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper label,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-date-wrapper label,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper label,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-date-wrapper label,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper label,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-date-wrapper label,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper label,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-date-wrapper label {
+  font-size: 14px !important;
+}
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-date-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-date-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-date-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-date-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-date-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-date-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-date-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-date-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-date-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-date-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper input.x-datePickerResponsive,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-date-wrapper .k-textbox.x-textbox,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-date-wrapper input.x-datePickerResponsive {
+  font-size: 14px !important;
+}
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-1 .xstyle-date-wrapper,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper,
+#TafnitCore_xAgreements_UI_ApprovePayment .rPayment .cubeMain-2 .xstyle-date-wrapper,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-1 .xstyle-date-wrapper,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .rPayment .cubeMain-2 .xstyle-date-wrapper,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-textcontrol-wrapper,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-1 .xstyle-date-wrapper,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-textcontrol-wrapper,
+#TafnitCore_xAgreements_UI_CreateAgreement .rPayment .cubeMain-2 .xstyle-date-wrapper {
+  margin-top: 10px;
+  align-items: baseline;
+}
+#TafnitCore_xAgreements_UI_ApprovePayment .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper,
+#TafnitCore_xAgreements_UI_InvoiceDetailes .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper,
+#TafnitCore_xAgreements_UI_CreateAgreement .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper {
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  margin-bottom: 15px;
+}
 #TafnitCore_xAgreements_UI_ApprovePayment mainbody > .row,
-#TafnitCore_xAgreements_UI_InvoiceDetailes mainbody > .row {
+#TafnitCore_xAgreements_UI_InvoiceDetailes mainbody > .row,
+#TafnitCore_xAgreements_UI_CreateAgreement mainbody > .row {
   padding-top: 20px;
 }
 #TafnitCore_xAgreements_UI_ApprovePayment .k-toolbar.k-toolbar-resizable,
-#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable {
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable,
+#TafnitCore_xAgreements_UI_CreateAgreement .k-toolbar.k-toolbar-resizable {
   margin-top: 0px !important;
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr auto;
   gap: 15px;
   width: 100%;
-  padding: 0;
 }
 #TafnitCore_xAgreements_UI_ApprovePayment .k-toolbar.k-toolbar-resizable::before,
-#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable::before {
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable::before,
+#TafnitCore_xAgreements_UI_CreateAgreement .k-toolbar.k-toolbar-resizable::before {
   content: none !important;
 }
 #TafnitCore_xAgreements_UI_ApprovePayment .k-toolbar.k-toolbar-resizable .k-spacer,
-#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable .k-spacer {
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable .k-spacer,
+#TafnitCore_xAgreements_UI_CreateAgreement .k-toolbar.k-toolbar-resizable .k-spacer {
   display: none;
 }
 #TafnitCore_xAgreements_UI_ApprovePayment .k-toolbar.k-toolbar-resizable #pageTitle,
-#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable #pageTitle {
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable #pageTitle,
+#TafnitCore_xAgreements_UI_CreateAgreement .k-toolbar.k-toolbar-resizable #pageTitle {
   height: 90px !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
@@ -7520,7 +7753,8 @@ th .k-checkbox::before {
   background-color: #FFFFFF !important;
 }
 #TafnitCore_xAgreements_UI_ApprovePayment .k-toolbar.k-toolbar-resizable #pageTitle span,
-#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable #pageTitle span {
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable #pageTitle span,
+#TafnitCore_xAgreements_UI_CreateAgreement .k-toolbar.k-toolbar-resizable #pageTitle span {
   color: #7B098B !important;
   font-weight: 400 !important;
   font-size: 30px !important;
@@ -7531,7 +7765,8 @@ th .k-checkbox::before {
   margin-right: 20px !important;
 }
 #TafnitCore_xAgreements_UI_ApprovePayment .k-toolbar.k-toolbar-resizable span.k-button-group,
-#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable span.k-button-group {
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable span.k-button-group,
+#TafnitCore_xAgreements_UI_CreateAgreement .k-toolbar.k-toolbar-resizable span.k-button-group {
   height: 90px !important;
   background: #F5F5F5 !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
@@ -7542,7 +7777,8 @@ th .k-checkbox::before {
   margin-right: 0px !important;
 }
 #TafnitCore_xAgreements_UI_ApprovePayment .k-toolbar.k-toolbar-resizable span.k-button-group button.k-button,
-#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable span.k-button-group button.k-button {
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-toolbar.k-toolbar-resizable span.k-button-group button.k-button,
+#TafnitCore_xAgreements_UI_CreateAgreement .k-toolbar.k-toolbar-resizable span.k-button-group button.k-button {
   width: 50px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
@@ -7603,6 +7839,11 @@ th .k-checkbox::before {
     color: #7B098B !important;
     margin-top: 11px !important;
   }
+}
+#TafnitCore_xAgreements_UI_InvoiceDetailes .k-datepicker.k-input.x-datePickerResponsive.s-datePickerResponsive.x-datePicker-pc.s-datePicker-pc.k-input-solid.k-input-md.k-rounded-md,
+#TafnitCore_xAgreements_UI_ApprovePayment .k-datepicker.k-input.x-datePickerResponsive.s-datePickerResponsive.x-datePicker-pc.s-datePicker-pc.k-input-solid.k-input-md.k-rounded-md,
+#TafnitCore_Salary_UI_SubmitRequest .k-datepicker.k-input.x-datePickerResponsive.s-datePickerResponsive.x-datePicker-pc.s-datePicker-pc.k-input-solid.k-input-md.k-rounded-md {
+  border: none !important;
 }
 #TafnitCore_xAgreements_UI_InvoiceDetailes .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper,
 #TafnitCore_xAgreements_UI_ApprovePayment .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper,
@@ -8547,7 +8788,7 @@ body {
 }
 
 .k-button {
-  border: 1px solid #7d0a8c !important;
+  border: none !important;
   color: #7d0a8c !important;
 }
 
@@ -10127,11 +10368,16 @@ mainbody > .row {
   width: 150px !important;
 }
 .k-group.k-menu-group.k-menu-group-md.k-popup .menuRows {
-  height: 45px;
+  height: 34px;
   padding: 0 !important;
 }
 .k-group.k-menu-group.k-menu-group-md.k-popup .menuRows .xMenuHover {
-  padding-top: 0.7rem !important;
+  padding: 0 !important;
+  align-items: center;
+  display: grid;
+}
+.k-group.k-menu-group.k-menu-group-md.k-popup .menuRows .xMenuHover span {
+  font-size: 13px;
 }
 .k-group.k-menu-group.k-menu-group-md.k-popup .menuRows:hover {
   background: #7b098b !important;

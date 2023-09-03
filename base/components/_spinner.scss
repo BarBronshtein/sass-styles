@@ -1,0 +1,14 @@
+/*folding cube spinner*/
+@use '../variables/masterVariable' as *;
+
+.triple-spinner {
+    border-top: $spinner-triple-color-1;
+
+    &::before {
+        border-top-color: $spinner-triple-color-2;
+    }
+
+    &::after {
+        border-top-color: $spinner-triple-color-3;
+    }
+}

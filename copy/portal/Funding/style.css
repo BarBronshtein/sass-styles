@@ -1,51 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Heebo:wght@300;400;500;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+/*controls*/
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
-/*header*/
-/*footer*/
-/*row*/
-/*window*/
-/*drawer*/
-/*k-animator*/
-/*k-filter*/
-/*button*/
-/*autocomplete*/
-/*calendar*/
-/*date-picker*/
-/*checkbox*/
-/*textbox*/
-/*virutal-keyboard*/
-/*drop-down*/
-/*grid*/
-/*time picker*/
-/*float-button*/
-/*textarea*/
-/*upload*/
-/*multiselect*/
-/*tabstrip*/
-/*slider*/
-/*rating*/
-/*radio*/
-/*freehand*/
-/*portal*/
-/*link*/
-/*stepper*/
-/*menu*/
-/*workflow*/
-/*timeline*/
-/*tooltip*/
-/*header mobile */
-/*consumer-product*/
-/*lookup*/
-/*websdk*/
-/*required*/
-/*funding*/
-/*phone*/
-/*spinner*/
-/*Dashboard*/
-/*controls*/
 .xstyle-date-wrapper label, .xstyle-autocomplete-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-idropdownlist-wrapper label, .xstyle-textcontrol-wrapper label {
   font-family: "Assistant";
   font-style: normal;
@@ -57,7 +14,7 @@
   margin: 0;
 }
 
-.xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-date-wrapper span.k-datepicker, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-intlphonenumber-wrapper input, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox, .xstyle-textcontrol-wrapper input {
+.xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-autocomplete-wrapper input, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper input {
   height: 50px;
   background: #FFFFFF;
   border: 1px solid #CED4DA !important;
@@ -76,7 +33,7 @@
   border: 1px solid #E7E7E7;
 }
 
-.xstyle-date-wrapper.k-state-disabled label, .xstyle-date-wrapper.k-state-disabled button span:before {
+.xstyle-date-wrapper.k-state-disabled button span:before, .xstyle-date-wrapper.k-state-disabled label {
   color: #C7C7C7;
 }
 
@@ -110,6 +67,18 @@
 
 .xstyle-textcontrol-wrapper {
   margin-top: 15px;
+  /* Firefox */
+}
+.xstyle-textcontrol-wrapper input::-webkit-outer-spin-button,
+.xstyle-textcontrol-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.xstyle-textcontrol-wrapper.k-state-disabled {
+  opacity: 1;
+}
+.xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox {
+  background: #F7F7F7 !important;
 }
 .xstyle-textcontrol-wrapper.k-state-disabled label {
   color: #C7C7C7 !important;
@@ -121,7 +90,7 @@
   border-bottom: 1px solid #DB0000 !important;
 }
 .xstyle-textcontrol-wrapper input:focus {
-  box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2) !important;
   border: 1px solid #FAC9E0 !important;
 }
 .xstyle-textcontrol-wrapper input::-moz-placeholder {
@@ -137,10 +106,10 @@
 .xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label,
 .xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label,
 .xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-intlphonenumber-wrapper :has(.x-control-caption-wrapper) label,
+.xstyle-intlphonenumber-wrapper.mandatory :has(.x-control-caption-wrapper) label,
 .xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label,
 .xstyle-idropdownlist-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-autocomplete-wrapper :has(.x-control-caption-wrapper) label {
+.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label {
   padding-right: 10px;
 }
 .mandatory.p-floating-container :has(.x-control-caption-wrapper) label:before,
@@ -150,10 +119,10 @@
 .xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-intlphonenumber-wrapper :has(.x-control-caption-wrapper) label:before,
+.xstyle-intlphonenumber-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
 .xstyle-idropdownlist-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-autocomplete-wrapper :has(.x-control-caption-wrapper) label:before {
+.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label:before {
   content: "*";
   font-family: "Font Awesome 5 pro" !important;
   position: absolute;
@@ -169,10 +138,10 @@
 .xstyle-daterangev2-wrapper.mandatory input,
 .xstyle-date-wrapper.mandatory input,
 .xstyle-password-wrapper.mandatory input,
-.xstyle-intlphonenumber-wrapper input,
+.xstyle-intlphonenumber-wrapper.mandatory input,
 .xstyle-timepicker-wrapper.mandatory input,
 .xstyle-idropdownlist-wrapper.mandatory input,
-.xstyle-autocomplete-wrapper input {
+.xstyle-autocomplete-wrapper.mandatory input {
   background: none !important;
 }
 
@@ -201,8 +170,35 @@
 .row-hidden.stepper2 {
   background: white !important;
   position: fixed;
-  top: 80px;
+  top: 45px;
   z-index: 10;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 73.5%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-top: 0px;
+  height: 67px;
+  align-items: flex-end;
+}
+.row-hidden.stepper2 > .col {
+  padding: 0;
+}
+.row-hidden.stepper2 .col-blue {
+  background: #4194E4;
+  padding: 0px 30px;
+  align-items: center;
+  display: flex;
+  height: 38px;
+}
+.row-hidden.stepper2 .col-blue span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  color: #FFFFFF;
 }
 
 .row-title .k-icon-wrapper {
@@ -232,6 +228,15 @@ mainbody > .row.row-main {
   width: 100%;
   margin: auto;
   margin-bottom: 15px;
+}
+mainbody > .row.row-main .x-cell-header {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323C4B;
+  height: auto;
 }
 mainbody > .row.row-main .col-checkbox {
   display: grid;
@@ -365,9 +370,18 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 .xstyle-idropdownlist-wrapper:has(.x-login-user-error-msg) span.x-dropdown-comp.s-dropdown-comp {
   border-bottom: 1px solid #DB0000 !important;
 }
+.xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp {
+  background: #F7F7F7 !important;
+}
+.xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp span.k-icon::before, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp span.k-icon::before {
+  color: #C7C7C7 !important;
+}
+.xstyle-idropdownlist-wrapper.k-state-disabled label, .xstyle-idropdownlist-wrapper.x-readonly label {
+  color: #C7C7C7 !important;
+}
 .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus-within {
   border: 1px solid #FAC9E0 !important;
-  box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2);
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2);
 }
 .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp .k-input-inner {
   padding: 0;
@@ -384,6 +398,32 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   font-family: "Font Awesome 5 Pro";
   color: #007FC1;
   font-weight: 700;
+}
+
+.k-list-scroller {
+  scrollbar-face-color: #bb2e71;
+  scrollbar-track-color: #f3e9f8;
+  scrollbar-arrow-color: #bb2e71;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.k-list-scroller::-webkit-scrollbar {
+  width: 10px !important;
+  border-radius: 10px;
+  position: absolute;
+}
+.k-list-scroller::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+.k-list-scroller::-webkit-scrollbar-thumb {
+  background: #da3382;
+  border-radius: 10px;
+}
+.k-list-scroller::-webkit-scrollbar-thumb:hover {
+  background: #bb2e71;
 }
 
 .xstyle-intlphonenumber-wrapper {
@@ -403,7 +443,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   display: none;
 }
 .xstyle-intlphonenumber-wrapper.k-state-disabled label {
-  color: #CCCCCC !important;
+  color: #C7C7C7 !important;
 }
 .xstyle-intlphonenumber-wrapper div {
   border: none !important;
@@ -415,7 +455,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border-bottom: 1px solid #DB0000 !important;
 }
 .xstyle-intlphonenumber-wrapper input:focus {
-  box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2) !important;
   border: 1px solid #FAC9E0 !important;
 }
 .xstyle-intlphonenumber-wrapper .selected-flag {
@@ -440,6 +480,17 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 .xstyle-stepper-wrapper .k-step-indicator {
   color: #323C4B !important;
 }
+.xstyle-stepper-wrapper .k-step-last {
+  align-items: center;
+  display: flex;
+}
+.xstyle-stepper-wrapper .k-step-last .k-step-indicator {
+  display: none !important;
+}
+.xstyle-stepper-wrapper .k-step {
+  max-width: -moz-max-content !important;
+  max-width: max-content !important;
+}
 .xstyle-stepper-wrapper .x-control-content-wrapper {
   top: 50%;
   position: relative;
@@ -451,7 +502,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 .xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal {
   width: -moz-fit-content;
   width: fit-content;
-  gap: 25px;
+  gap: 15px;
   margin: auto;
 }
 .xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal .k-step-current.k-step-focus .k-step-text {
@@ -466,6 +517,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 .xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal .k-step-link {
   flex-direction: row-reverse;
+  gap: 7px;
 }
 .xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal .k-step-link .k-step-indicator {
   background: none;
@@ -479,6 +531,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   background: none;
   color: #FFFFFF !important;
   font-weight: 500 !important;
+  font-size: 12px;
 }
 .xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal .k-step-link .k-step-label {
   display: block !important;
@@ -510,10 +563,21 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border-radius: 0px;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
-  box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2) !important;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within input:focus {
   border: 1px solid #FAC9E0 !important;
+}
+.xstyle-autocomplete-wrapper .k-autocomplete::before {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 PRO";
+  position: absolute;
+  color: #007FC1;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-weight: 700;
 }
 .xstyle-autocomplete-wrapper input {
   padding-right: 10px !important;
@@ -541,13 +605,16 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 .xstyle-date-wrapper.k-state-disabled {
   opacity: 1 !important;
 }
+.xstyle-date-wrapper.k-state-disabled .x-datePickerResponsive.s-datePickerResponsive {
+  background: #F7F7F7 !important;
+}
 .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile:focus {
-  box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2) !important;
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2) !important;
   border: 1px solid #FAC9E0 !important;
 }
 .xstyle-date-wrapper span.k-datepicker:focus-within {
   border: 1px solid #FAC9E0 !important;
-  box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2);
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2);
 }
 .xstyle-date-wrapper input {
   padding: 0;
@@ -585,6 +652,9 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border-radius: 10px;
   box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2) !important;
 }
+.k-animation-container .k-popup:has(.k-calendar-table) .k-footer a {
+  color: #DA3382 !important;
+}
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar {
   background: none;
   border-radius: 10px;
@@ -597,7 +667,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border: none !important;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-prev span {
-  color: #007FC1 !important;
+  color: #DA3382 !important;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-fast span {
   font-family: "Assistant";
@@ -612,12 +682,12 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   color: #000000;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-next span {
-  color: #007FC1 !important;
+  color: #DA3382 !important;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview,
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview {
   background: #F5F5F5;
-  border-bottom: 1px solid #007FC1;
+  border-bottom: 1px solid #DA3382;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td,
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td {
@@ -626,10 +696,10 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td:hover a,
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td:hover a {
-  color: #007FC1;
+  color: white;
   background: none;
-  border-radius: 50%;
-  border: 1px solid #007FC1;
+  border-radius: 100px;
+  background: #BB2E71 !important;
   font-weight: 700;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td.k-focus a,
@@ -638,7 +708,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   font-weight: 700;
   box-shadow: none;
   height: 36px !important;
-  background: #007FC1;
+  background: #A11F5D;
   border-radius: 100px;
   box-shadow: none;
 }
@@ -650,10 +720,10 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #DA3382;
+  color: #BB2E71;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview {
-  border-bottom: 1px solid #007FC1;
+  border-bottom: 1px solid #DA3382;
 }
 .k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview th {
   font-family: "Assistant";
@@ -737,20 +807,49 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 100%;
   text-align: right;
   color: #000000;
 }
 
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Simulation) .button-next .x-button-wrapper {
+  margin-top: 40px;
+}
+
+.xstyle-buttoncontrol-wrapper.button-next .x-button-wrapper {
+  width: 75%;
+  margin: auto;
+  text-align: end;
+}
+.xstyle-buttoncontrol-wrapper.button-next .x-button-wrapper button {
+  width: auto !important;
+  min-width: auto !important;
+  padding: 0 30px;
+}
+.xstyle-buttoncontrol-wrapper.k-state-disabled {
+  opacity: 1;
+}
+.xstyle-buttoncontrol-wrapper.k-state-disabled button {
+  background: #FFFFFF;
+  border: #ADB5BD;
+  color: #ADB5BD;
+}
+.xstyle-buttoncontrol-wrapper.btn-special button {
+  padding: 0 30px;
+  width: auto !important;
+}
+.xstyle-buttoncontrol-wrapper.btn-special button .k-icon {
+  font-size: 30px;
+}
 .xstyle-buttoncontrol-wrapper button {
   margin-bottom: 15px;
-  min-width: 200px;
-  width: 100%;
+  padding: 0 30px;
+  width: auto !important;
+  border: none;
 }
 .xstyle-buttoncontrol-wrapper button:hover {
-  background: #DA3382;
-  opacity: 0.6;
+  background: #BB2E71;
   color: #FFFFFF;
   border: 1px solid none;
 }
@@ -779,13 +878,28 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
 
 .k-window:has(#MessageBoxWindow) {
   background: #FFFFFF;
-  box-shadow: 0px 0px 6px rgba(255, 120, 11, 0.2);
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2);
   border-radius: 10px;
   border: none;
   max-width: 90% !important;
   left: 0 !important;
   right: 0 !important;
   margin: 0 auto;
+}
+.k-window:has(#MessageBoxWindow) .x-fa-warning {
+  font-size: 65px;
+  font-weight: 400 !important;
+}
+.k-window:has(#MessageBoxWindow) .x-fa-warning:before {
+  content: "\ea34";
+  color: #4194e4;
+  font-family: "icomoon";
+}
+.k-window:has(#MessageBoxWindow) .x-fa-warning::after {
+  content: "\ea35";
+  color: #323c4b;
+  font-family: "icomoon";
+  margin-left: -1em;
 }
 .k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
   background: none !important;
@@ -836,7 +950,25 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   background: #DA3382;
 }
 .k-window:has(#MessageBoxWindow) #MessageBoxWindow button:hover {
-  background: #DA3382;
+  background: #BB2E71;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow .x-fa-info::before {
+  color: #DA3382;
+}
+.k-window:has(#MessageBoxWindow) .fa-times-circle {
+  font-size: 75px;
+  font-weight: 400;
+}
+.k-window:has(#MessageBoxWindow) .fa-times-circle::before {
+  content: "\ea3c";
+  color: #db0000;
+  font-family: "icomoon";
+}
+.k-window:has(#MessageBoxWindow) .fa-times-circle::after {
+  font-family: "icomoon";
+  content: "\ea3d";
+  color: #323c4b;
+  margin-left: -1em;
 }
 
 .k-animation-container .k-list-optionlabel {
@@ -912,13 +1044,16 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   color: #DA3382 !important;
   font-weight: 300;
 }
+.k-grid th i.fa-circle::before, .k-grid th .k-icon.fa-circle::before, .k-grid td i.fa-circle::before, .k-grid td .k-icon.fa-circle::before {
+  color: #000000 !important;
+}
 @media only screen and (min-width: 700px) {
   .k-grid table {
     width: 100% !important;
   }
 }
 .k-grid .k-toolbar {
-  background: transparent;
+  background: #F8F9FA;
 }
 .k-grid .k-toolbar.k-grid-toolbar {
   border-color: #fff !important;
@@ -936,16 +1071,22 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   border-radius: 1px solid #ccc !important;
 }
 .k-grid .k-grid-header {
-  background: none;
+  background: #F8F9FA;
   border: none;
   padding: 10px 0px;
 }
 .k-grid .k-grid-header .k-grid-filter.k-state-active {
   background: #ccc;
 }
+.k-grid .k-grid-header tr.k-alt {
+  background: #FCFCFC !important;
+}
 .k-grid .k-grid-header tr:hover, .k-grid .k-grid-header tr:hover td {
   background-image: none !important;
-  background-color: transparent !important;
+  background: #F8F9FA !important;
+}
+.k-grid .k-grid-header tr:hover td, .k-grid .k-grid-header tr:hover td td {
+  background: #F8F9FA !important;
 }
 .k-grid .k-grid-header th {
   background: none;
@@ -964,7 +1105,7 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   color: #868387 !important;
 }
 .k-grid .k-grid-header th a span:before {
-  color: #02b5fd;
+  color: #DA3382;
 }
 .k-grid .k-grid-header thead {
   background: none;
@@ -973,194 +1114,9 @@ header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
   height: auto;
   overflow: auto;
 }
-.k-grid .k-grid-content tr {
-  transition: 0.6s all;
-}
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap {
-  border-color: #000;
-}
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link {
-  background-color: #9e30bf;
-  color: #fff;
-  transition: 0.2s all;
-}
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link:hover {
-  opacity: 0.7;
-}
-.k-grid .k-grid-content tr:hover, .k-grid .k-grid-content tr:hover td {
-  background-image: none;
-  background-color: #EEF7FB !important;
-  color: #323C4B !important;
-}
-.k-grid .k-grid-content tr.k-selected {
-  background: none !important;
-  color: #000 !important;
-}
-.k-grid .k-grid-content tr.k-selected td {
-  background: none !important;
-  color: #000 !important;
-}
-.k-grid .k-grid-content td {
-  border: none;
-  border-left: none;
-  font-size: 14px;
-  padding: 10px 0px;
-}
-.k-grid .k-grid-content td .col-template-val {
-  margin: 0;
-}
-.k-grid .k-grid-content .k-alt {
-  background: #FCFCFC !important;
-}
-@media only screen and (max-width: 768px) {
-  .k-grid .k-grid-content .k-alt {
-    background: #FCFCFC !important;
-  }
-}
 
 .k-separator {
   border: none !important;
-}
-
-.grid-container {
-  margin: auto;
-  width: 99%;
-  margin-top: 28px;
-  margin-bottom: 40px;
-  justify-content: space-between;
-}
-
-.grid-bt {
-  border: none;
-  background: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-}
-.grid-bt:hover {
-  border: none;
-}
-th .grid-bt:focus {
-  outline: 0px dotted;
-}
-
-.grid-icon {
-  font-size: 30px;
-  color: #FF780B;
-}
-
-.grid-border-bt {
-  margin-left: 20px;
-  background: #ffffff;
-  width: 50px;
-  height: 50px;
-  box-shadow: rgba(123, 9, 141, 0.08);
-  border-radius: 10px;
-}
-
-.grid-groupButton {
-  width: auto;
-  margin-left: 0 !important;
-}
-.grid-groupButton > button {
-  margin-top: 13px;
-}
-.grid-groupButton > button:first-child {
-  padding-right: 15px !important;
-}
-.grid-groupButton > button:last-child {
-  padding-left: 15px !important;
-}
-
-.grid-import-bt {
-  width: 50px;
-  height: 50px;
-  background: #FF780B;
-  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
-  border-radius: 10px;
-}
-.grid-import-bt > span {
-  color: #ffffff;
-}
-
-.grid-enable-bt {
-  opacity: 0.2;
-}
-
-.grid-groupButton > button {
-  margin-top: 13px;
-}
-
-.grid-import-bt {
-  width: 50px;
-  height: 50px;
-  background: #FF780B;
-  box-shadow: 0px 0px 8px;
-  border-radius: 10px;
-}
-.grid-import-bt > span {
-  color: #ffffff;
-}
-
-.grid-enable-bt {
-  opacity: 0.2;
-}
-
-.grid-container-filter {
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.grid-filter-card {
-  font-size: 12px;
-  height: 30px;
-  background: #f5f5f5;
-  margin-right: 12px;
-  text-align: right;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
-.grid-filter-icon {
-  margin-top: 9px;
-  color: rgb(0, 0, 0);
-}
-
-.girid-label {
-  margin-top: 7px;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  margin-left: 15px;
-}
-
-.grid-filter-title {
-  color: #7E7B7B;
-}
-
-mainbody mainbody {
-  margin: 0px !important;
-}
-
-.k-pager-info.k-label {
-  color: #000000 !important;
-}
-
-.roundedNoneMobile {
-  padding: 0 !important;
-  margin: 0 !important;
-  border-radius: 10PX !important;
-}
-
-#TafnitCore_WorkFlow_UI_MyTasks {
-  padding: 0 !important;
-}
-
-.k-pager-wrap.k-grid-pager.k-floatwrap {
-  display: none !important;
 }
 
 @media only screen and (max-width: 850px) and (min-width: 700px) {
@@ -1185,60 +1141,58 @@ mainbody mainbody {
   right: 0;
 }
 
-.k-grid-content.k-auto-scrollable {
-  scrollbar-face-color: #8733af;
+.k-window-content {
+  margin-top: 20px;
+}
+
+.k-grid-content.k-auto-scrollable, .k-window-content {
+  scrollbar-face-color: #bb2e71;
   scrollbar-track-color: #f3e9f8;
-  scrollbar-arrow-color: #8733af;
+  scrollbar-arrow-color: #bb2e71;
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
-.k-grid-content.k-auto-scrollable::-webkit-scrollbar {
+.k-grid-content.k-auto-scrollable::-webkit-scrollbar, .k-window-content::-webkit-scrollbar {
   width: 10px !important;
   border-radius: 10px;
   position: absolute;
 }
-.k-grid-content.k-auto-scrollable::-webkit-scrollbar-track {
+.k-grid-content.k-auto-scrollable::-webkit-scrollbar-track, .k-window-content::-webkit-scrollbar-track {
   border-radius: 10px;
   background: #f0f0f0;
 }
-.k-grid-content.k-auto-scrollable::-webkit-scrollbar-thumb {
-  background: #FF780B;
+.k-grid-content.k-auto-scrollable::-webkit-scrollbar-thumb, .k-window-content::-webkit-scrollbar-thumb {
+  background: #da3382;
   border-radius: 10px;
 }
-.k-grid-content.k-auto-scrollable::-webkit-scrollbar-thumb:hover {
-  background: #FF780B;
+.k-grid-content.k-auto-scrollable::-webkit-scrollbar-thumb:hover, .k-window-content::-webkit-scrollbar-thumb:hover {
+  background: #bb2e71;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr:hover {
-  width: 1650px !important;
-  background: #FAF6FC !important;
+.k-grid-content.k-auto-scrollable > table > tbody > tr.k-alt, .k-window-content > table > tbody > tr.k-alt {
+  background: #FCFCFC !important;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button > span:before {
-  content: "\e91c" !important;
-  font-family: "icomoon" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 28px !important;
-  color: #7B098B !important;
+.k-grid-content.k-auto-scrollable > table > tbody > tr:hover, .k-grid-content.k-auto-scrollable > table > tbody > tr:hover td, .k-window-content > table > tbody > tr:hover, .k-window-content > table > tbody > tr:hover td {
+  background-image: none !important;
+  background: #F8F9FA !important;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button {
+.k-grid-content.k-auto-scrollable > table > tbody > tr:hover td, .k-grid-content.k-auto-scrollable > table > tbody > tr:hover td td, .k-window-content > table > tbody > tr:hover td, .k-window-content > table > tbody > tr:hover td td {
+  background: #F8F9FA !important;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button, .k-window-content > table > tbody > tr > td > button {
   align-items: center;
   padding: 12px;
   padding-top: 17px;
-  width: 56.26px;
   height: 50px;
   border: none !important;
   border-radius: 10px !important;
   background: none !important;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button:hover {
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td > button:hover, .k-window-content > table > tbody > tr > td > button:hover {
   background: none !important;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr > td {
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td, .k-window-content > table > tbody > tr > td {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 400;
@@ -1255,94 +1209,41 @@ mainbody mainbody {
   text-overflow: ellipsis;
   padding-right: 10px;
 }
-
-.k-grid-header {
-  border: none !important;
-  background: #F8F9FA !important;
-  margin-top: 15px;
-  padding: 10px 0px;
-}
-
-.k-grid-content.k-auto-scrollable {
-  border-right: none !important;
-  border-bottom: none !important;
-}
-
-.k-filter-menu {
-  background: #f5f5f5;
-  box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
-  border-radius: 10px;
-  border: none;
-  height: auto;
-  width: auto;
-  padding: 20px !important;
-}
-.k-filter-menu > .k-filter-menu-container {
-  padding-right: 5px;
-}
-.k-filter-menu > .k-filter-menu-container > .k-filter-help-text {
-  width: 114%;
-  background: none;
-  color: #007FC1;
-  margin-top: -7px;
-  margin-right: 0px;
-  height: 28px;
-  text-align: right;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  padding-top: 12px;
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td a, .k-window-content > table > tbody > tr > td a {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 130%;
+  text-align: right;
+  color: #DA3382;
+  text-decoration: none;
 }
-.k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
-  margin: auto;
-  margin-bottom: 15px;
-  margin-top: 10px;
-  box-sizing: border-box;
-  height: 35px;
-  right: 0;
-  opacity: 0.2;
-  border-bottom: 0.5px solid #d9d9d9 !important;
-  opacity: 1 !important;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background: none !important;
-  width: 100%;
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td a:hover, .k-window-content > table > tbody > tr > td a:hover {
+  color: #DA3382 !important;
+  font-weight: 500;
+  text-decoration: underline !important;
 }
-.k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md > button > span {
-  color: #000000 !important;
-  font-size: 23px !important;
-  margin-left: 29px !important;
-}
-.k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid {
-  height: 40px;
-  left: 0px;
-  background: #ffffff;
-  border: 0.5px solid #d9d9d9;
-  border-radius: 10px;
-}
-.k-filter-menu > .k-filter-menu-container > .k-action-buttons {
+
+.k-action-buttons {
   display: flex;
   flex-direction: row !important;
 }
-.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button {
+.k-action-buttons > button {
   width: 45% !important;
   height: 30px;
   background: #DA3382 !important;
   border-radius: 10px !important;
   color: #FFFFFF !important;
 }
-.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base {
+.k-action-buttons > button.k-button-solid-base {
   background: #FFFFFF !important;
   border: 1px solid #DA3382 !important;
   color: #DA3382 !important;
+}
+
+.xstyle-upload-wrapper {
+  min-width: 300px;
 }
 
 .k-button-solid-base:focus {
@@ -1351,7 +1252,7 @@ mainbody mainbody {
 }
 
 .k-upload-files.k-reset {
-  border-top: 1px solid #FF780B !important;
+  border-top: 1px solid #DA3382 !important;
 }
 .k-upload-files.k-reset .k-file-group.k-icon {
   display: none;
@@ -1363,10 +1264,10 @@ mainbody mainbody {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 100%;
   text-align: right;
-  color: #FF780B;
+  color: #DA3382;
   white-space: break-spaces;
   margin-bottom: 5px;
 }
@@ -1379,20 +1280,22 @@ mainbody mainbody {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 100%;
   text-align: right;
-  color: #258DB9;
+  color: #4194E4;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .k-overlay {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .k-overlay,
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-overlay {
   background: #052136 !important;
   opacity: 0.2 !important;
 }
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer,
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer {
   height: auto !important;
   overflow: hidden;
   background: #FFFFFF;
@@ -1402,27 +1305,32 @@ mainbody mainbody {
   top: 78px;
   right: 8px;
 }
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item:has(.x-dynamic-label-control) {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item:has(.x-dynamic-label-control),
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item:has(.x-dynamic-label-control) {
   border-bottom: none;
 }
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item:has(.k-icon) {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item:has(.k-icon),
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item:has(.k-icon) {
   height: 60px;
   padding: 0 15px;
 }
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item span.DrawerItem-icon {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item span.DrawerItem-icon,
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item span.DrawerItem-icon {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   color: #004070;
   font-size: 30px;
 }
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item .drawer-item-control-wrapper {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item .drawer-item-control-wrapper,
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item .drawer-item-control-wrapper {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   color: #004070;
 }
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item .drawer-item-control-wrapper span {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item .drawer-item-control-wrapper span,
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item .drawer-item-control-wrapper span {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 600;
@@ -1434,7 +1342,8 @@ mainbody mainbody {
   top: 50%;
   transform: translateY(-50%);
 }
-.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item a {
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2C_UI_Main) .x-drawer .k-drawer-item a,
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item a {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 700;
@@ -1446,8 +1355,60 @@ mainbody mainbody {
   color: #004070;
 }
 
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer {
+  top: 88px;
+  border-radius: 10פס;
+  right: 36px;
+  border: none;
+}
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item span.DrawerItem-icon {
+  display: none;
+}
+.k-content:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .x-drawer .k-drawer-item .drawer-item-control-wrapper span.x-dynamic-label-control {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: right;
+  color: #004B93;
+}
+
+.col-slider {
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  align-items: center;
+}
+
 .xstyle-islider-wrapper {
   margin-top: 15px;
+  align-items: center;
+}
+.xstyle-islider-wrapper label {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  color: #323C4B;
+}
+.xstyle-islider-wrapper.car-icon .k-slider-track span.k-draghandle::before {
+  content: "\e9ee";
+  color: rgb(15, 111, 183) !important;
+  font-family: "icomoon" !important;
+  font-size: 30px;
+}
+.xstyle-islider-wrapper.car-icon .k-slider-track span.k-draghandle::after {
+  content: "\e9ef";
+  color: rgb(57, 170, 253) !important;
+  font-family: "icomoon" !important;
+  font-size: 30px;
+  top: 5px;
+  position: relative;
 }
 .xstyle-islider-wrapper .x-islider-wrapper {
   margin-top: 15px;
@@ -1532,14 +1493,27 @@ mainbody mainbody {
   background: none !important;
 }
 
+.xstyle-dynamiclabelcontrol-wrapper.slider-sum span {
+  overflow: initial;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 32px;
+  line-height: 30px;
+  color: #007FC1 !important;
+  text-align: left !important;
+  padding-left: 33px;
+}
+
 .k-animation-container:has(.k-tooltip) {
   background: none !important;
 }
 .k-animation-container:has(.k-tooltip) .k-tooltip.k-widget.k-popup.k-group.k-reset {
-  box-shadow: 0px 0px 5px rgba(9, 79, 141, 0.25) !important;
   top: -85px;
   font-weight: 400 !important;
   padding: 0;
+  background: none;
+  border: none;
 }
 .k-animation-container:has(.k-tooltip) .k-tooltip.k-widget.k-popup.k-group.k-reset:before {
   content: "";
@@ -1559,6 +1533,12 @@ mainbody mainbody {
   text-align: center;
   padding: 6px;
   border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(9, 79, 141, 0.25) !important;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  font-family: "Assistant";
 }
 .k-animation-container:has(.k-tooltip) .k-callout.k-callout-n {
   border: none;
@@ -1573,7 +1553,6 @@ mainbody mainbody {
   left: 0 !important;
   right: 0 !important;
   margin: 0 auto !important;
-  top: 3% !important;
   height: auto !important;
   max-height: 90%;
 }
@@ -1680,7 +1659,6 @@ mainbody mainbody {
   left: 0 !important;
   right: 0 !important;
   margin: 0 auto !important;
-  top: 3% !important;
   height: auto !important;
   max-height: 90%;
 }
@@ -1856,7 +1834,7 @@ mainbody mainbody {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 400;
-  font-size: 64px !important;
+  font-size: 90px !important;
   line-height: 100%;
   text-align: right;
   color: #026F9E;
@@ -2134,7 +2112,7 @@ mainbody mainbody {
   font-weight: 400;
   font-size: 12px;
   line-height: 110%;
-  text-align: center;
+  text-align: center !important;
   color: #323C4B;
 }
 .wrapper-cube .route-cube span {
@@ -2150,9 +2128,9 @@ mainbody mainbody {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 110%;
-  text-align: center;
+  text-align: center !important;
   color: #323C4B;
 }
 
@@ -2206,12 +2184,12 @@ mainbody mainbody {
   gap: 4px;
 }
 .list::after {
-  width: 11px;
-  height: 11px;
-  background: #FF780B;
+  width: 7px;
+  height: 7px;
+  background: #DA3382;
   content: "";
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: -16px;
 }
 .list label {
@@ -2220,20 +2198,16 @@ mainbody mainbody {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   text-align: right;
   color: #323C4B;
 }
 .list span {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 16px !important;
   line-height: 24px;
-  text-align: right;
   margin-top: -4px;
-  color: #323C4B;
+  color: #323C4B !important;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2287,7 +2261,7 @@ mainbody mainbody {
   padding: 0;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header:has(.wrapper-header) {
-  height: 80px;
+  height: 60px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header {
   z-index: 1032 !important;
@@ -2303,6 +2277,10 @@ mainbody mainbody {
   display: grid;
   grid-template-columns: auto auto 160px 1fr;
   gap: 10px;
+  max-height: 60px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part1-header {
+  border-left: 1px solid #79b6f1;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part1-header span {
   font-family: "Assistant";
@@ -2312,17 +2290,6 @@ mainbody mainbody {
   line-height: 30px;
   text-align: right;
   color: #000000;
-}
-#TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part2-header {
-  height: 35px;
-  align-items: center;
-  display: flex;
-  border-right: 1px solid #007FC1;
-  border-left: 1px solid #007FC1;
-}
-#TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part2-header span {
-  color: #007FC1;
-  font-size: 22px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part3-header {
   margin-top: 10px;
@@ -2356,7 +2323,6 @@ mainbody mainbody {
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part4-header {
   position: relative;
-  top: -13px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part4-header a {
   font-family: "Assistant";
@@ -2366,17 +2332,27 @@ mainbody mainbody {
   line-height: 18px;
   text-align: right;
   color: #DA3382;
+  margin-bottom: 0px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header.navbar-fixed-top .x-image-wrapper.s-image-wrapper {
-  height: 70px;
+  height: 60px;
   align-items: center;
   display: flex;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
-  width: 125px !important;
+  width: 145px !important;
   height: auto;
 }
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main .icon-menu2::before {
+  font-size: 30px;
+  color: #79B6F1;
+}
 
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard {
+  padding: 0;
+  margin-top: -15px !important;
+}
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .xstyle-image-wrapper,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .xstyle-image-wrapper {
   background: none;
@@ -2392,10 +2368,10 @@ mainbody mainbody {
   background: none;
   box-shadow: none;
   position: absolute;
-  top: 360px;
   justify-content: center;
   gap: 30px;
   z-index: 2;
+  margin-top: -55px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube {
@@ -2410,6 +2386,32 @@ mainbody mainbody {
   gap: 15px;
   padding: 0px 30px !important;
 }
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube:hover,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube:hover {
+  background: #F8F9FA;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube.col-disabled,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube.col-disabled {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube.col-disabled:hover,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube.col-disabled:hover {
+  background: #FFFFFF;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube.col-disabled .k-state-disabled,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube.col-disabled .k-state-disabled {
+  opacity: 1;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube.col-disabled .x-dynamic-label-control,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube.col-disabled .x-dynamic-label-control {
+  color: #CED4DA;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube.col-disabled span.k-icon:before,
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube.col-disabled span.k-icon::after,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube.col-disabled span.k-icon:before,
+#TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube.col-disabled span.k-icon::after {
+  color: #CED4DA;
+}
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube .x-dynamic-label-control,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube .x-dynamic-label-control {
   font-family: "Assistant";
@@ -2423,11 +2425,12 @@ mainbody mainbody {
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube span.k-icon,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube span.k-icon {
   color: #323C4B;
-  font-size: 30px;
+  font-size: 55px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-cube,
 #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-cube {
   margin-top: 106px !important;
+  display: block;
   max-width: 330px;
   margin: 0;
   margin-right: 40px;
@@ -2446,11 +2449,50 @@ mainbody mainbody {
   align-items: center;
 }
 
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-title, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-title, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-title {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-title .k-icon-wrapper, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-title .k-icon-wrapper, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-title .k-icon-wrapper {
+  text-align: center !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-title span.k-icon, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-title span.k-icon, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-title span.k-icon {
+  font-size: 60px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-title span.x-dynamic-label-control, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-title span.x-dynamic-label-control, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-title span.x-dynamic-label-control {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 32px !important;
+  line-height: 30px;
+  text-align: center !important;
+  margin-bottom: 15px;
+  color: #007FC1 !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-hidden .x-col, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-hidden .x-col, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-hidden .x-col {
+  padding: 0 !important;
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main {
+  padding: 0;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main .x-iframe {
+  border: 1px solid #ADB5BD;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main .k-button.k-input-button {
+  z-index: 3 !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main .row-title {
+  padding: 20px;
+  margin-bottom: 15px;
+}
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main .row-title .k-icon-wrapper {
   text-align: center !important;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main .row-title span.k-icon {
-  font-size: 30px;
+  font-size: 60px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -2465,7 +2507,76 @@ mainbody mainbody {
   color: #007FC1 !important;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main {
-  width: 95% !important;
+  width: 75% !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-padding {
+  padding-bottom: 110px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float {
+  position: absolute;
+  max-width: 450px;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  box-shadow: 0px 8px 6px rgba(2, 111, 158, 0.25), 0px 0px 10px rgba(2, 111, 158, 0.2);
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float .title span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center !important;
+  color: #323C4B;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float .sum {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  width: auto;
+  flex: 0 0.1;
+  margin: auto;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float .sum .x-dynamic-label-control {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center !important;
+  color: #007FC1;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float .sum .k-icon {
+  font-size: 22px;
+  color: #007FC1;
+  top: 14px;
+}
+
+.row-type {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.row-type .x-cell-header {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #007fc1;
+  height: auto;
+}
+.row-type .col-type {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+.row-type .col-type .xstyle-checkbox-wrapper {
+  margin-top: 20px;
 }
 
 .k-widget.k-window {
@@ -2473,13 +2584,47 @@ mainbody mainbody {
   box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
   border-radius: 10px;
   height: auto !important;
+  border: none;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 .k-widget.k-window .k-window-titlebar {
   background: none !important;
   border: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.k-widget.k-window .k-window-titlebar .k-button {
+  color: white !important;
+}
+.k-widget.k-window .k-window-titlebar .k-button:active, .k-widget.k-window .k-window-titlebar .k-button:focus {
+  background: none !important;
+  border: none !important;
+}
+.k-widget.k-window .k-window-titlebar .k-button:active::before, .k-widget.k-window .k-window-titlebar .k-button:focus::before {
+  opacity: 1 !important;
+}
+.k-widget.k-window .k-window-titlebar .k-button span {
+  color: #7E7B7B !important;
 }
 .k-widget.k-window #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect header {
   display: none !important;
+}
+.k-widget.k-window #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .k-i-search {
+  font-size: 20px;
+  right: 7px;
+  font-weight: 600;
+}
+.k-widget.k-window #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .k-i-search:before {
+  content: "\ea3a";
+  color: #323c4b;
+  font-family: "icomoon";
+}
+.k-widget.k-window #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .k-i-search:after {
+  content: "\ea3b";
+  color: #da3382;
+  font-family: "icomoon";
 }
 .k-widget.k-window #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .title-lot span {
   font-family: "Assistant";
@@ -2527,6 +2672,13 @@ mainbody mainbody {
   color: #323C4B;
 }
 
+#TafnitCore_SaaSServer_Funding_B2B_UI_Main .xstyle-gridv4-wrapper {
+  min-height: 200px;
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .xstyle-gridv4-wrapper {
+  min-height: 200px;
+}
 #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .xstyle-gridv4-wrapper .k-grid-header {
   display: none;
 }
@@ -2543,6 +2695,7 @@ mainbody mainbody {
   background: #FFFFFF;
   border: 1px solid #CED4DA !important;
   min-width: 260px;
+  border-radius: 10px;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .xstyle-gridv4-wrapper .k-toolbar-resizable .k-searchbox span {
   color: #007FC1;
@@ -2554,12 +2707,17 @@ mainbody mainbody {
   font-size: 16px;
   line-height: 21px;
   text-align: right;
-  color: #ADB5BD;
+  color: #323C4B;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .xstyle-gridv4-wrapper .k-toolbar-resizable .k-searchbox:focus, #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .xstyle-gridv4-wrapper .k-toolbar-resizable .k-searchbox:focus-within {
+  border: 1px solid #FAC9E0;
+  box-shadow: 0px 0px 6px rgba(218, 51, 130, 0.2);
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .btn-lot {
   display: flex;
   gap: 15px;
   justify-content: end;
+  padding: 0;
 }
 
 #TafnitCore_SaaSServer_Funding_B2B_UI_BDICheck {
@@ -2569,6 +2727,9 @@ mainbody mainbody {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 15px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_BDICheck .x-iframe {
+  border: 1px solid #ADB5BD;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_BDICheck .text-bdi {
   margin-bottom: 25px;
@@ -2587,13 +2748,34 @@ mainbody mainbody {
 }
 
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity {
-  margin-top: 50px !important;
+  margin-top: 90px !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode {
+  grid-template-columns: auto !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload {
+  max-width: 400px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .col-list {
+  margin-top: 30px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .col-list .list {
+  line-height: 0;
 }
 
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity {
   margin-top: 60px !important;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer mainbody > .row.row-main .x-cell-header, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner mainbody > .row.row-main .x-cell-header, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity mainbody > .row.row-main .x-cell-header {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #007fc1;
+  height: auto;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode {
   margin-top: -20px;
   background: none;
   box-shadow: none;
@@ -2605,7 +2787,7 @@ mainbody mainbody {
   grid-template-columns: auto auto;
   gap: 20px;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload {
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
   border-radius: 10px;
@@ -2614,64 +2796,103 @@ mainbody mainbody {
   margin-bottom: 15px;
   margin-top: 0;
   display: flex;
+  max-width: 400px;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .x-self-container {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .x-self-container, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .x-self-container, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .x-self-container {
   margin: auto;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .k-button, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .k-button {
   margin: auto;
   padding: 10px;
   background: none;
   border: none;
-  justify-content: right;
+  justify-content: center;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button.k-focus {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button.k-focus, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .k-button.k-focus, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .k-button.k-focus {
   box-shadow: none !important;
   border: none !important;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button span {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button span, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .k-button span, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .k-button span {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 100%;
   text-align: center;
-  color: #026F9E;
-  margin: 10px;
-  display: grid !important;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 15px;
+  color: #007FC1;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button span .k-icon {
-  font-size: 30px;
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .wrapper-uplode .body-upload .k-button span .k-icon, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .wrapper-uplode .body-upload .k-button span .k-icon, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .wrapper-uplode .body-upload .k-button span .k-icon {
+  font-size: 50px;
   color: black;
   font-family: "Font Awesome 6 Pro";
   font-weight: 300;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .col-phone {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .col-phone, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .col-phone, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .col-phone {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .col-phone button {
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .col-phone button, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .col-phone button, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .col-phone button {
   margin-top: 55px;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .two-col {
-  margin-top: 22px;
+#TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer .two-col, #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .two-col, #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity .two-col {
+  margin-top: 40px;
 }
 
 #TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest {
-  margin-top: 70px !important;
+  margin-top: 60px !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest .col-checkBox {
+  align-items: end;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest .col-checkBox .xstyle-checkbox-wrapper {
+  align-items: end !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float {
+  bottom: -105px !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float .col-float {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px;
+  padding-top: 15px;
+  border-bottom: 1px solid #79B6F1;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float .col-float .col-border {
+  border-left: 1px solid #79B6F1 !important;
+  border-radius: 0 !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float .col-list {
+  padding-right: 65px !important;
+  padding-top: 15px !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float .col-list .row-hidden {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
 }
 
 #TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners {
-  margin-top: 50px !important;
+  margin-top: 60px !important;
 }
-#TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners .card-offer {
-  padding: 60px !important;
+#TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners .col-AddLoaner {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners .col-AddLoaner .k-icon.icon-xtar-portal-refrash-lovim {
+  top: 2px;
+  font-size: 47px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners .col-AddLoaner .k-icon.icon-xtar-portal-refrash-lovim:hover::before {
+  content: "\ea32";
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners .col-AddLoaner .k-icon.icon-xtar-portal-refrash-lovim:hover::after {
+  content: "\ea33";
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners .card-offer .wrapper-card-offer {
   min-height: auto;
@@ -2755,7 +2976,7 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
 body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 label {
   font-style: normal;
   font-weight: 400;
-  font-size: 11.40462px;
+  font-size: 12.40462px;
   line-height: 100%;
   color: #757575;
 }
@@ -2763,7 +2984,7 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
 body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 span {
   font-style: normal;
   font-weight: 600;
-  font-size: 10.8092px;
+  font-size: 14.8092px;
   line-height: 100%;
   color: #323C4B;
   height: 20px;
@@ -2808,10 +3029,19 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
   left: 23px;
   top: 108px;
 }
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 label, body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 label, body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 label {
+  font-size: 12.40462px;
+}
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 span,
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 span,
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 span {
+  font-size: 13.8092px;
+}
 body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .wrapper-parts {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-top: 97px;
+  margin-top: 82px;
+  padding-left: 5px !important;
 }
 body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .btn-license {
   justify-content: center;
@@ -2821,6 +3051,391 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
   border: 1px solid none !important;
 }
 
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .col-12:has(.row-hidden) {
+  padding: 0;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .col-checkBox {
+  align-items: end;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .col-checkBox .xstyle-checkbox-wrapper {
+  align-items: end !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .xstyle-buttoncontrol-wrapper {
+  width: 75%;
+  margin: auto;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .xstyle-buttoncontrol-wrapper .x-button-wrapper {
+  text-align: left !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .xstyle-buttoncontrol-wrapper .x-button-wrapper button {
+  width: auto !important;
+  min-width: 150px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .col-button {
+  display: flex;
+  align-items: end;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .col-button .xstyle-buttoncontrol-wrapper {
+  width: 100% !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .col-button button {
+  margin-bottom: 0 !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_ShortLoan .col-list {
+  margin-top: 20px;
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport {
+  margin-top: 60px !important;
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_J5 {
+  margin-top: 60px !important;
+}
+
+.Disabled {
+  opacity: 0.4;
+}
+
+.message-j5 .k-icon-wrapper.x-kicon.col-icon {
+  text-align: center !important;
+}
+.message-j5 .k-icon-wrapper.x-kicon.col-icon span {
+  font-size: 50px;
+}
+
+mainbody > .row.row-main .message-j5 .x-dynamic-label-control.s-dynamic-label-control {
+  text-align: center !important;
+  color: #323C4B;
+  text-align: center;
+  font-size: 20px;
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-top: 10px;
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Simulation {
+  margin-top: 60px !important;
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport {
+  margin-top: 60px !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer {
+  width: 75%;
+  margin: auto;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(2, 111, 158, 0.2);
+  border-radius: 10px;
+  padding: 40px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer.col-3, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer.col-3 {
+  max-width: 23.5% !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer .title span, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer .title span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: #323C4B;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer .type-customer span, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer .type-customer span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #323C4B;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer .phone, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer .phone {
+  margin-top: 10px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer .phone span, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer .phone span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  color: #323C4B;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer .buttons, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer .buttons {
+  margin-top: 15px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer .buttons button, #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer .buttons button {
+  width: 100% !important;
+}
+
+.k-widget.k-window {
+  height: auto !important;
+  border: none;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  max-width: 80%;
+  left: 0 !important;
+  right: 0;
+  margin: 0 auto;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  padding: 20px;
+  max-height: 95%;
+}
+.k-widget.k-window .navbar-fixed-top.k-header {
+  display: none;
+}
+.k-widget.k-window .row-title-popup .x-dynamic-label-control {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center !important;
+  color: #007FC1;
+}
+.k-widget.k-window .row-title-popup .k-icon-wrapper {
+  text-align: center !important;
+}
+.k-widget.k-window .row-title-popup .k-icon {
+  text-align: center;
+  color: #DA3382;
+  font-size: 60px;
+}
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner {
+  margin-top: 0 !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-type {
+  width: 98% !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner mainbody > .row.row-main {
+  width: 98% !important;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .col-buttons {
+  justify-content: end;
+  max-width: 102%;
+  gap: 10px;
+  display: grid;
+  padding: 0;
+  grid-template-columns: auto auto;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .col-buttons button {
+  width: auto !important;
+  min-width: auto;
+  padding: 0 30px;
+}
+#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-type .col-type {
+  padding: 20px 30px !important;
+}
+
+@media only screen and (max-width: 1600px) {
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Simulation,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_CreateCustomer,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_BDICheck,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_AdditionalLoaners,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Survey,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_J5,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSecurity,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest {
+    margin-top: 40px !important;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer .col-customer,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer .col-customer {
+    padding: 20px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Survey .row-customer,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Extendedcreditreport .row-customer {
+    width: 95%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float {
+    max-width: 700px !important;
+    padding: 5px 10px;
+    bottom: -80px !important;
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-padding {
+    padding-bottom: 63px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float .col-list {
+    padding-right: 0px !important;
+    padding-top: 15px !important;
+    align-items: center;
+    display: grid;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float .col-list .row-hidden {
+    display: block;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest mainbody > .row-main.row-float .col-float {
+    border: none;
+  }
+  .border-mobile .xstyle-dynamiclabelcontrol-wrapper.slider-sum span {
+    height: 62px;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    border-left: 1px solid #79B6F1 !important;
+  }
+  .border.row.col-border-mobile {
+    border-left: 1px solid #79B6F1 !important;
+    border-radius: 0 !important;
+  }
+  .border-mobile {
+    margin-top: 15px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Simulation) .button-next .x-button-wrapper {
+    margin-top: 0;
+  }
+  .xstyle-buttoncontrol-wrapper.button-next .x-button-wrapper {
+    width: 93%;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main header:has(.wrapper-header) {
+    height: 50px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main header.navbar-fixed-top .x-image-wrapper.s-image-wrapper {
+    height: 50px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main header.navbar-fixed-top .x-image-wrapper.s-image-wrapper img {
+    width: 130px !important;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main header .wrapper-header .part1-header span {
+    font-size: 20px;
+  }
+  .row-grid {
+    margin-top: 70px !important;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main {
+    width: 95% !important;
+  }
+  .row-type {
+    width: 95%;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Main mainbody > .row.row-main.row-float {
+    bottom: -65px !important;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-title span.k-icon,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-title span.k-icon,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-title span.k-icon {
+    font-size: 45px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-title span.x-dynamic-label-control,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-title span.x-dynamic-label-control,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-title span.x-dynamic-label-control {
+    font-size: 25px !important;
+    margin-bottom: 0px;
+  }
+  .row-hidden.stepper2 {
+    width: 91.5%;
+    height: 45px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner .row-title,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .row-title,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanTimeLine .row-title {
+    padding: 0 !important;
+  }
+  .xstyle-stepper-wrapper {
+    height: 30px;
+  }
+  .xstyle-stepper-wrapper .k-step-list.k-step-list-horizontal .k-step-link .k-step-text {
+    font-size: 13px;
+  }
+  .row-hidden.stepper2 .col-blue {
+    height: 30px;
+  }
+  .row-hidden.stepper2 .col-blue span {
+    font-size: 16px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .xstyle-image-wrapper img,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .xstyle-image-wrapper img {
+    height: 163px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube {
+    margin-top: -50px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube {
+    max-width: 255px;
+    min-height: 90px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-small-cube .col-small-cube .x-dynamic-label-control,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-small-cube .col-small-cube .x-dynamic-label-control {
+    font-size: 20px;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-cube,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-cube {
+    margin-top: 65px !important;
+    margin-bottom: 20px !important;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_LoanSummery .wrapper-cube .sum-cube .x-dynamic-label-control,
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Dashboard .wrapper-cube .sum-cube .x-dynamic-label-control {
+    font-size: 70px !important;
+  }
+  .k-widget.k-window {
+    width: 60% !important;
+  }
+  .k-window-content {
+    overflow: auto !important;
+  }
+  .k-widget.k-window #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect .text-lot {
+    margin-top: 2px;
+    margin-bottom: -2px;
+  }
+  .k-widget.k-window:has(#TafnitCore_SaaSServer_Funding_B2B_UI_AddLoaner) {
+    width: 100% !important;
+    max-width: 95%;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Simulation .main-bdi {
+    flex: 0 0 53%;
+    max-width: 53%;
+  }
+  .col-slider {
+    grid-template-columns: 1fr 28%;
+    align-items: center;
+    flex: 0 0 48%;
+    margin-left: 20px;
+  }
+  .col-slider .xstyle-islider-wrapper {
+    margin-top: 28px;
+    gap: 20px;
+  }
+  .col-slider .xstyle-islider-wrapper label {
+    font-size: 14px;
+    margin-top: -17px;
+  }
+  .col-slider .xstyle-islider-wrapper .col-4 {
+    flex: 0 0 37.3333%;
+    max-width: 37.3333%;
+  }
+  .col-slider .xstyle-islider-wrapper .col-8 {
+    flex: 0 0 55.666667%;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Login .logo-img .x-image-wrapper {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Login .logo-img .x-image-wrapper img {
+    width: 216px !important;
+    height: auto !important;
+  }
+  #TafnitCore_SaaSServer_Funding_B2B_UI_Login img {
+    height: 163px;
+    width: 100%;
+  }
+}
 #TafnitCore_SaaSServer_Funding_B2B_UI_Login {
   margin-top: 0 !important;
   background: #fff !important;
@@ -2833,7 +3448,7 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
   padding: 0 !important;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Login .wrapper-login {
-  max-width: 750px !important;
+  max-width: 520px !important;
   margin: auto !important;
 }
 #TafnitCore_SaaSServer_Funding_B2B_UI_Login .logo-img .x-image-wrapper {
@@ -2873,120 +3488,20 @@ body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#Taf
 #TafnitCore_SaaSServer_Funding_B2B_UI_Login .xstyle-ilink-wrapper a {
   font-family: "Assistant";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   text-align: right;
-  color: #FF780B;
+  color: #DA3382;
 }
-
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .k-header.x-section-header-wrapper {
-  border-bottom: 1px solid #FFBC93 !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .k-header.x-section-header-wrapper .x-section-header.s-section-header {
-  color: #FF780B !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .x-footer div button.x-button.s-button {
-  background-color: #FF780B !important;
-  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-buttoncontrol-wrapper button.x-button.s-button {
-  background-color: #FF780B !important;
-  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-buttoncontrol-wrapper button.x-button.s-button:focus-within, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-buttoncontrol-wrapper button.x-button.s-button:focus {
-  background: #aaaaaa !important;
-  box-shadow: 0px -2px 6px rgba(255, 120, 11, 0.2) !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .x-Icons .x-icon span {
-  color: #FF780B;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .icon-title {
-  color: #FF780B;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-radio-wrapper.x-control-wrapper input:checked {
-  box-shadow: 0px -2px 6px rgba(255, 120, 11, 0.2) !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-radio-wrapper.x-control-wrapper input::before {
-  color: #026F9E !important;
-  width: 10px !important;
-  height: 10px !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper input:checked {
-  box-shadow: 0px -2px 6px rgba(255, 120, 11, 0.2) !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper input:checked::before {
-  background-color: white !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-kicon-wrapper .k-icon.fa-camera-retro, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-kicon-wrapper .k-icon.fas.fa-play, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-kicon-wrapper .k-icon.fas.fa-stop {
-  background: #1B6C8E;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .s-footer.x-footer {
-  box-shadow: 0px -2px 6px rgba(255, 120, 11, 0.2) !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-signature-wrapper .GraphicalSignaturePlaceHolders .fas.fa-file-upload::before,
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-signature-wrapper .GraphicalSignaturePlaceHoldersSign .fas.fa-file-upload::before,
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-signature-wrapper .GraphicalSignaturePlaceHolders a::before {
-  color: #FF780B !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-textareacontrol-wrapper textarea:focus-visible {
-  outline: 1px solid #ff780b !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist:focus, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist:focus-within, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist:active, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist:focus-visible, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-textcontrol-wrapper input:focus, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-textcontrol-wrapper input:focus-within, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-textcontrol-wrapper input:active, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-textcontrol-wrapper input:focus-visible, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-autocomplete-wrapper input:focus, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-autocomplete-wrapper input:focus-within, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-autocomplete-wrapper input:active, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-autocomplete-wrapper input:focus-visible, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-geoaddress-wrapper input:focus, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-geoaddress-wrapper input:focus-within, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-geoaddress-wrapper input:active, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-geoaddress-wrapper input:focus-visible, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-googleaddress-wrapper input:focus, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-googleaddress-wrapper input:focus-within, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-googleaddress-wrapper input:active, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-googleaddress-wrapper input:focus-visible, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-intlphonenumber-wrapper input:focus, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-intlphonenumber-wrapper input:focus-within, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-intlphonenumber-wrapper input:active, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-intlphonenumber-wrapper input:focus-visible {
-  border: 1px solid #ff780b !important;
-  box-shadow: none !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success .k-i-file-pdf::before, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success .k-i-file-data::before, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success .k-i-file-txt::before, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success .k-i-file::before, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success .k-i-file-image.k-file-group.k-icon::before {
-  color: #FF780B !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file.k-file-success [class^="k-file-validation-message !k-text-success"] {
-  color: #FF780B !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-file-invalid [class="k-file-validation-message !k-text-error"] {
-  color: #DB1C33;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-upload-button span {
-  color: #334768 !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .k-upload-button.k-focus {
-  box-shadow: none !important;
-  border: none;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-upload-wrapper .k-upload-button span::after {
-  color: #334768 !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePicker-pc:focus-within {
-  box-shadow: none;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePicker-pc input:active, #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper .x-datePicker-pc input:focus {
-  border: 1px solid #ff780b !important;
-  box-shadow: none !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper button {
-  background: none;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-date-wrapper button span.k-icon.k-i-calendar {
-  color: #FF780B;
-}
-
-.k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .k-widget.k-window.k-rtl:has(#MessageBoxWindow) {
-  border: 1px solid #FF780B !important;
-  box-shadow: 0px -2px 6px rgba(255, 120, 11, 0.2) !important;
-}
-.k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .k-widget.k-window.k-rtl:has(#MessageBoxWindow) .x-icons.x-fa-warning::before {
-  color: #FF780B !important;
-}
-.k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .k-widget.k-window.k-rtl:has(#MessageBoxWindow) #MessageBoxWindow button.k-button {
-  background: #FF780B !important;
-  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
-}
-.k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .k-widget.k-window.k-rtl:has(#MessageBoxWindow) #MessageBoxWindow button.k-button:focus {
-  background: #aaaaaa !important;
+#TafnitCore_SaaSServer_Funding_B2B_UI_Login button {
+  width: 100% !important;
 }
 
 body, html {
   font-family: "Assistant";
   background: white !important;
+  height: auto;
 }
 
 .border.row {
@@ -3039,4 +3554,8 @@ body, html {
 .k-overlay {
   background: #323C4B !important;
   opacity: 0.5 !important;
+}
+
+.templatex-wrapper {
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */

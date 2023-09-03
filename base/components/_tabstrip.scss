@@ -1,0 +1,37 @@
+@use '../variables/masterVariable' as *;
+
+.xstyle-tab-wrapper {
+    .k-tabstrip {
+        background: $tabstrip-wrapper-background;
+        border-color: $tabstrip-wrapper-border-color;
+        margin-top: 30px;
+
+        .k-content {
+            border-color: $tabstrip-content-border-color;
+            padding-right:0!important;
+            padding-left:0!important;
+        }
+
+        .k-tabstrip-items {
+            .k-item {
+                background: $tabstrip-tab-background-color;
+                border-color: $tabstrip-tab-active-border-color;
+
+                &.k-state-active {
+                    background: $tabstrip-tab-active-background-color;
+                }
+
+                .k-link {
+                    color: map-get($map: $Colors, $key: main-color );
+                }
+            }
+        }
+
+        .k-tabstrip-next,
+        .k-tabstrip-prev {
+            color: $tabstrip-arrow-color !important;
+            background: $tabstrip-arrow-background !important;
+            top: $tabstrip-arrow-top-position !important;
+        }
+    }
+}

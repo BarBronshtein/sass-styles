@@ -1,0 +1,107 @@
+@use '../variables/masterVariable' as *;
+
+
+// .k-rtl{
+//     .k-animation-container {
+//         text-align: right;
+//     }
+// }
+
+.k-animation-container {
+    .k-list-container {
+        .k-list-optionlabel {
+            &.k-selected {
+                background: $animator-container-selected-background-color !important;
+                color: $animator-container-selected-color !important;
+            }
+
+            &.k-state-focused {
+                background: $animator-container-selected-background-color !important;
+                color: $animator-container-selected-color !important;
+            }
+
+            &.k-state-hover {
+                background: $animator-container-selected-background-color !important;
+                color: $animator-container-selected-color !important;
+            }
+        }
+
+        background: $animator-container-border-color;
+        border: 0px solid !important;
+
+        .x-autocomplete-header-template {
+            color: $animator-autocomplete-header-template-color;
+            background: $animator-autocomplete-header-template-background;
+        }
+    }
+
+    li {
+        background: $animator-container-background-color!important;
+
+        a {
+            color: $animator-container-color;
+            border: 0 !important;
+
+            &:hover {
+                background: $animator-container-selected-background-color!important;
+                color: $animator-container-selected-color!important;
+                border: 0 !important;
+            }
+        }
+    }
+
+    .k-list {
+        background: $animator-container-background-color;
+        color: $animator-container-color;
+
+        .k-item {
+            &:hover {
+                box-shadow: none !important;
+                background: $animator-container-selected-background-color!important;
+                color: $animator-container-selected-color!important;
+            }
+
+            &.k-state-focused {
+                box-shadow: none !important;
+                background: darken($color: $animator-container-selected-background-color, $amount: $animator-container-focused-amount)!important;
+                color: $animator-container-selected-color!important;
+            }
+        }
+
+        .k-selected {
+            &.k-focused {
+                box-shadow: none !important;
+                background: $animator-container-selected-background-color!important;
+            }
+        }
+    }
+
+    .k-nodata {
+        background: $animator-container-background-color;
+        color: $animator-container-color;
+    }
+
+    .k-list-scroller {
+        &::-webkit-scrollbar {
+            width: $animator-scroller-width;
+            background: $animator-scroller-webkit-background;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: $animator-scroller-box-shadow;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $animator-scroller-thumb-background;
+            border: $animator-scroller-thumb-border;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: $animator-scroller-background-hover;
+        }
+    }
+}
+
+
+
+

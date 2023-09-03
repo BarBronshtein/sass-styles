@@ -1,0 +1,33 @@
+@use '../variables/masterVariable' as *;
+
+
+.k-filter-menu {
+    // direction: rtl;
+
+    .k-action-buttons {
+        flex-direction: column;
+        display: flex;
+
+        >button {
+            width: 100% !important;
+            margin: 5px 0 !important;
+        }
+    }
+
+    .k-numerictextbox {
+        .k-numeric-wrap {
+            border-color: $k-filter-edited-numeric-border-color;
+
+            .k-link {
+                background-color: $k-filter-edited-numeric-arrow-background-color;
+                color: $k-filter-edited-numeric-arrow-color;
+                transition: 0.2s all;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+

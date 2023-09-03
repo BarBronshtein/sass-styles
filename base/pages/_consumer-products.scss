@@ -1,0 +1,547 @@
+@use '../variables/masterVariable' as *;
+
+body {
+    background: $consumer-body-background-color !important;
+    background-attachment: fixed !important;
+
+    mainbody {
+        height: 100%;
+    }
+}
+
+
+span.mandatory.active+div .x-form-control,
+span.mandatory.active+div .x-password,
+span.mandatory.active+input,
+span.mandatory.active+span>span.k-dropdown-wrap,
+span.mandatory.active+div>span.k-autocomplete>input,
+span.mandatory.active+label.switch>input.switch-input+span.switch-label,
+span.mandatory.active+textarea.k-textbox,
+span.mandatory.active+span.k-datepicker>span.k-picker-wrap>input,
+span.mandatory.active~label.k-checkbox-label:before,
+span.mandatory.active+span.k-switch.k-widget .k-switch-container {
+    background: $consumer-mandatory-background !important;
+}
+
+.xstyle-dynamiclabelcontrol-wrapper {
+    .x-dynamic-label-control {
+        color: $consumer-dynamic-label-color !important;
+    }
+}
+
+#headerLogoCompany {
+    margin-left: 10%;
+}
+
+.opacity-6 {
+    opacity: 0.6;
+}
+
+.gridHeight{
+    .k-grid-content{
+        height: $consumer-grid-content-height;
+    }
+}
+
+.k-grid{
+    .k-grid-header{
+        background:$consumer-grid-header-background!important;
+    }
+    .k-grid-content{
+        background:$consumer-grid-content-background!important;
+    }
+    .k-grid-pager{
+        background:$consumer-grid-pager-background!important;
+    }
+}
+
+.active {
+    background: $consumer-active-background;
+
+    .x-dynamic-label-control {
+        color: $consumer-active-color !important;
+    }
+
+    &.w-120 {
+        width: 120px;
+        border-radius: 0;
+        border-top-right-radius: 0.85em;
+    }
+
+    &.w-150 {
+        width: 150px;
+        border-radius: 0;
+        border-top-right-radius: 0.85em;
+    }
+
+    &.time {
+        background: $consumer-active-background-time !important;
+        width: 120px;
+        border-radius: 20px;
+
+        &.fixCenter {
+            .x-dynamic-label-control {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        &.selected {
+            background: $consumer-active-background-selected !important;
+        }
+    }
+}
+
+.anotherDaySelected {
+    background: $consumer-calendar-today-color;
+    border-radius: 50%;
+    width: 25px;
+
+    .x-dynamic-label-control {
+        color: $consumer-calendar-today-selected-color !important;
+        text-align: center;
+    }
+}
+
+.k-drawer {
+    .k-drawer-items {
+        drawer-item-container {
+            &:first-child {
+                padding-right: 60px;
+            }
+
+            padding: 0px 20px;
+
+            [xid="controlkiClose"] {
+                order: 2;
+                color: $consumer-kicon-color !important;
+                font-weight: 500;
+            }
+
+            [xid="controldiHeader"] {
+                text-align: center;
+                padding-right: 45px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1281px) {
+    .k-window {
+        header.k-header {
+            background: $consumer-window-header-mobile !important;
+        }
+    }
+
+}
+
+
+.activeBorderBottom {
+    font-weight: bold;
+    border-bottom: 2px solid $consumer-active-border-bottom-color;
+    border-radius: 0;
+}
+
+.x-active {
+    border-top: 3px solid $consumer-active-border-bottom-color;
+    border-radius: 0;
+}
+
+.placeholderColor {
+    input {
+        &.x-datePickerResponsive {
+            &::placeholder {
+                color: $consumer-placeholder-color !important;
+                opacity: 0.5;
+            }
+
+        }
+
+        &.k-textbox {
+            &::placeholder {
+                color: $consumer-placeholder-color !important;
+                opacity: 0.5;
+            }
+        }
+    }
+    span{
+        &.k-input{
+            color: $consumer-placeholder-color !important;
+            opacity: 0.5;
+        }
+    }
+    label{
+        color: $consumer-placeholder-color !important;
+    }
+}
+
+.gradientColor {
+    .k-button {
+        background: $consumer-button-gradient-background-color !important;
+    }
+}
+
+.xstyle-password-wrapper {
+    .x-control-content-wrapper {
+        >.k-textbox {
+            background: transparent !important;
+        }
+    }
+}
+
+.blueColor {
+    .k-icon {
+        color: $consumer-close-btn-color !important;
+    }
+}
+
+.x-kicon-caption {
+    border-bottom: $consumer-kicon-border-bottom;
+    color: $consumer-kicon-caption-color !important;
+}
+
+.kIconColor {
+    &.ml-icon-5 {
+        margin-left: 5px;
+    }
+
+    .k-icon {
+        color: $consumer-kicon-color !important;
+        font-weight: 500;
+    }
+}
+
+.whiteSpace {
+    white-space: nowrap;
+}
+
+.k-scrollview-next,
+.k-scrollview-prev {
+    display: none !important;
+}
+
+#kiNotification {
+    left: 40px !important;
+    background: initial !important;
+}
+
+#kiUser2 {
+    left: 60px !important;
+    background: initial !important;
+}
+
+.k-separator {
+    position: absolute;
+    // top: 12px;
+    height: 18px !important;
+    color: #ccc;
+}
+
+#kiDrawer {
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+#separator1 {
+    left: 80px;
+}
+
+#separator2 {
+    right: 55px;
+}
+
+.fs-12 {
+
+    .fa-chevron-down,
+    .fa-chevron-up {
+        font-size: 12px;
+    }
+}
+
+.k-toolbar {
+    .k-badge {
+        position: absolute;
+        left: 102px;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+    }
+}
+
+.marginRightCheckbox{
+    label.x-control-caption-text{
+        margin-right: 10px;
+    }
+}
+
+.k-menu {
+    .k-link {
+        &.k-state-active {
+            background-color: transparent !important;
+        }
+    }
+}
+
+.consumerGrey {
+
+    .k-input,
+    .x-dynamic-label-control {
+        color: $consumer-grey-color !important;
+    }
+}
+
+.iconMarginLeft {
+    .k-icon {
+        margin-left: 7px;
+    }
+}
+
+.cubeTop {
+    box-shadow: $consumer-cube-top-boxshadow;
+    background: $consumer-cube-top-background;
+}
+
+.scrollText {
+    color: $consumer-scrollview-text-color;
+    position: absolute;
+    top: 20px;
+    width: 90% !important;
+    display: block !important;
+    text-align: right;
+}
+
+.scrollviewRound {
+    .k-scrollview {
+        border: 0 !important;
+        border-radius: 0.65em;
+    }
+}
+
+.k-scrollview {
+    .k-scrollview-nav {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .k-link {
+        margin: 0px 2px !important;
+        width: 7px !important;
+        height: 7px !important;
+        background: $consumer-scrollview-dot-color !important;
+        opacity: 0.3 !important;
+
+        &.k-primary {
+            background: $consumer-scrollview-dot-color-active !important;
+            opacity: 1 !important;
+        }
+    }
+}
+
+.circleLightBlue {
+    width: 50px;
+    margin: auto;
+
+    &.big {
+        &:before {
+            width: 40px;
+            height: 40px;
+            right: -8px;
+        }
+    }
+
+    &:before {
+        background: $consumer-circleLightBlue-color;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        right: 8px;
+        content: "";
+    }
+}
+
+.fw-300 {
+    .k-icon {
+        font-weight: 300 !important;
+    }
+}
+
+.font-weight-bold {
+    .k-button {
+        font-weight: bold;
+    }
+}
+
+.font-bold-label {
+    label {
+        font-weight: bold;
+    }
+}
+
+.productBackgroundBig {
+    background: $consumer-products-background;
+}
+
+.productBackground {
+    box-shadow: $consumer-cube-top-boxshadow;
+    padding: 0;
+    flex: 0 0 43%;
+
+    >.x-self-container {
+        background: $consumer-products-background;
+    }
+}
+
+.consumerLinkColor {
+    &.line-height-8 {
+        line-height: 0.8;
+    }
+
+    .x-control-caption-text {
+        opacity: 0.5;
+    }
+
+    .x-link_Comp {
+        color: $consumer-link-see-all-color !important;
+    }
+}
+
+.productCube {
+    .cubeDetails {
+        background: $consumer-cube-background-color;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .x-image-wrapper {
+        img {
+            border-top-left-radius: 0.25em;
+            border-top-right-radius: 0.25em;
+        }
+    }
+}
+
+.k-drawer {
+    max-width: 100% !important;
+    border-radius: 0 !important;
+}
+
+.arrowColor {
+    .k-dropdown {
+        .k-icon {
+            &.k-i-arrow-60-down {
+                color: $consumer-dropdown-arrow-color !important;
+            }
+        }
+    }
+}
+
+.multiChoiceDesign {
+    .x-multichoice-wrapper {
+        .x-multichoice-ul {
+            padding: 0 !important;
+            margin: 0 !important;
+
+            li {
+                flex: 0 0 50%;
+
+                .x-multichoice-row {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                label {
+                    color: $consumer-grey-color;
+                    font-size: 13px;
+                    background: $consumer-multichoice-background;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+
+                    &::before {
+                        display: none !important;
+                    }
+                }
+
+                &.multichoice-row-selected {
+                    label {
+                        font-weight: bold;
+                        background: $consumer-multichoice-background-selected !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.xstyle-calendar-wrapper {
+    .k-calendar {
+        border: 0 !important;
+        width: 100% !important;
+
+        .k-other-month {
+            opacity: 0.4;
+            color: $consumer-calendar-other-month-color !important;
+        }
+
+        >.k-header {
+            border: 0 !important;
+
+            .k-nav-prev,
+            .k-nav-next {
+                >span {
+                    font-size: 20px;
+                    color: $consumer-calendar-header-arrow-color !important;
+                }
+            }
+        }
+
+        .k-calendar-view {
+            width: 100% !important;
+
+            tbody {
+                font-size: 14px;
+            }
+
+            th {
+                border: 0 !important;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            td {
+                &.k-selected {
+                    .k-link {
+                        border-radius: 50% !important;
+                        background-color: $consumer-calendar-selectday-background-color !important;
+                        box-shadow: none !important;
+                    }
+                }
+
+                &.k-state-hover {
+                    >.k-link {
+                        border-radius: 50% !important;
+                    }
+                }
+            }
+
+            .k-today {
+                &.k-selected {
+                    .k-link {
+                        color: $consumer-calendar-today-selected-color !important;
+                    }
+                }
+
+                .k-link {
+                    border-radius: 50% !important;
+                    background-color: $consumer-calendar-today-background-color !important;
+                    color: $consumer-calendar-today-color !important;
+                    box-shadow: none !important;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
