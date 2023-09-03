@@ -1,9 +1,0 @@
-/*rating - not kendo*/
-@use '../variables/masterVariable' as *;
-
-.xstyle-rating-wrapper {
-    .filled-stars {
-        color: $rating-star-background-color!important;
-    }
-}
-
