@@ -1,64 +1,64 @@
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio{
+// #TafnitCore_System_UI_App_Tools_Studio_UXStudio{
 
-.xstyle-textcontrol-wrapper {
-    margin-top: 15px;
-// disable // 
+// .xstyle-textcontrol-wrapper {
+//     margin-top: 15px;
+// // disable // 
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+//   margin: 0;
+// }
 
-/* Firefox */
+// /* Firefox */
 
 
-    &.k-state-disabled{ 
+//     &.k-state-disabled{ 
 
-      opacity: 1;
+//       opacity: 1;
 
-        & input.k-textbox{
+//         & input.k-textbox{
 
-          background: #F7F7F7 ;
+//           background: #F7F7F7 ;
            
-        }
+//         }
 
-        & label{
-            color: $control-caption-color-text-disable ; 
-          }
-    }
+//         & label{
+//             color: $control-caption-color-text-disable ; 
+//           }
+//     }
 
 
-    & input{
-      @extend %texbox-input;
-      padding-right: 10px ;
+//     & input{
+//       @extend %texbox-input;
+//       padding-right: 10px ;
      
-      &.x-login-user-error{
+//       &.x-login-user-error{
         
-        border-bottom: 1px solid #DB0000 ;
-      }
+//         border-bottom: 1px solid #DB0000 ;
+//       }
 
-        &:focus{
-            box-shadow:$control-box-shadow-focus ;
-            border: $control-border-focus ;
-            outline: none !important;
-        }
+//         &:focus{
+//             box-shadow:$control-box-shadow-focus ;
+//             border: $control-border-focus ;
+//             outline: none !important;
+//         }
 
-        &::placeholder{
+//         &::placeholder{
 
-            color: $control-color-placeholder ;
+//             color: $control-color-placeholder ;
 
-        }
-    }
+//         }
+//     }
 
-    & label{
-        @extend %texbox-label;
+//     & label{
+//         @extend %texbox-label;
 
-    }
-}
+//     }
+// }
 
-.x-textbox.s-textbox{
-  width: 100%;
-}
+// .x-textbox.s-textbox{
+//   width: 100%;
+// }
 
-}
+// }
