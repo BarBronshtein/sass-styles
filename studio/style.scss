@@ -23,6 +23,10 @@
         justify-content: right;
     }
 
+    .header-studio{
+        padding-inline: 30px;
+    }
+
 
     span[xid=controlltoggleBorderSwitch] {
         color: var(--switch-switch-on-text, #077294);
@@ -171,15 +175,17 @@
         }
     }
 
-    .ux-studio-disabled-container .x-section-header-wrapper {
+    .ux-studio-disabled-container {
+        & .row:not([uxid="xstudioOtherTabPage"]):not([uxid="xstudioAdvancedTabPage"]) .x-section-header-wrapper {
 
-        .row,
-        .col {
-            background-color: $properties-list-proprties-list-bg-disable !important;
-            pointer-events: none !important;
+            .row,
+            .col {
+                background-color: $properties-list-proprties-list-bg-disable !important;
+                pointer-events: none !important;
 
-            &>* {
-                color: $properties-list-proprties-list-text-disable !important;
+                &>* {
+                    color: $properties-list-proprties-list-text-disable !important;
+                }
             }
         }
     }

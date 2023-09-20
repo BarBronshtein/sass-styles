@@ -8191,6 +8191,9 @@ body.bodyPayment .logoImg {
   align-items: center;
   justify-content: right;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio {
+  padding-inline: 30px;
+}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio span[xid=controlltoggleBorderSwitch] {
   color: var(--switch-switch-on-text, #077294);
   text-align: right;
@@ -8305,13 +8308,13 @@ body.bodyPayment .logoImg {
   font-weight: 500;
   line-height: 120%;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .row,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .col {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .row,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .col {
   background-color: #FBFBFB !important;
   pointer-events: none !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .row > *,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .col > * {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .row > *,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .col > * {
   color: #C8C8C8 !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio,
