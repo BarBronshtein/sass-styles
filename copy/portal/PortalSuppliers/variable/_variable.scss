@@ -14,6 +14,7 @@ $button-disable-text: #c7c7c7 !default;
 $button-disable-border: #e7e7e7 !default; 
 $button-disable-bg: #f8f8f8 !default; 
 $button-color-text: #ffffff !default; 
+
 $calendar-body-button-color-text-hover: #00539f !default; 
 $calendar-body-button-border-hover: #00539f !default; 
 $calendar-month-color-days-hover: #00539f !default; 
@@ -36,6 +37,17 @@ $calendar-bg-header: #fcfcfc !default;
 $calendar-color-text-header: #000000 !default; 
 $calendar-month-color-days-focus: #ffffff !default; 
 $calendar-body-button-color-text-focus: #ffffff !default; 
+$calendar-body-butoon-color-text-hover: #00539f !default;
+$calendar-body-butoon-border-hover: #00539f !default;
+
+
+
+
+
+
+
+
+
 $checkbox-color-checked: #0176e1 !default; 
 $checkbox-border-checked: #0176e1 !default; 
 $check-box-focus-border: #34f6b1 !default; 
@@ -59,10 +71,10 @@ $cube-dashboard-color-text: #00488a !default;
 $cube-dashboard-color-price: #0176e1 !default; 
 $cube-dashboard-bg: #fcfcfc !default; 
 $drawer-background-color: #000000 !default; 
-$drawer-icon-color: #ffffff !default; 
+$drawer-icon-color-before: #ffffff !default; 
 $drawer-color: #ffffff !default; 
 $drawer-toggle-color: #95ccff !default; 
-$drawer-icon-after-color: #65b5ff !default; 
+$drawer-icon-color-after: #65b5ff !default; 
 $drawer-selected-color: #65b5ff !default; 
 $first-panel-color-title: #0176e1 !default; 
 $first-panel-color-icon-button: #65b5ff !default; 
@@ -173,7 +185,7 @@ $upload-color-text: #000000 !default;
 $upload-color-icon: #000000 !default; 
 $upload-color-success: #65b5ff !default; 
 $upload-color-file-name: #000000 !default; 
-
+$specail-label-text-color: #0176E1 !default;
 
 $header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10) !default;
  

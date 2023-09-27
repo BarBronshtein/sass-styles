@@ -34,7 +34,7 @@
         font-size: 14px;
         line-height: 100%;
         text-align: center !important;
-        color: #625337;
+        color:$link-color;
         text-decoration: underline;
     }
 }
@@ -48,7 +48,8 @@
         font-size: 16px;
         line-height: 130%;
         text-align: right;
-        color: #000000;
+        color:$user-title-color ;
     }
 
 }
+

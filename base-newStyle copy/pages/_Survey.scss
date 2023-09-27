@@ -41,9 +41,24 @@
 
 #TafnitCore_SaaSServer_Survey_UI_Survey{
 
-  .x-self-container:has(.xstyle-signature-wrapper){
-    zoom: 0.5;
-  }
+ 
+
+    .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a{
+
+        position: relative;
+        color: #0675B4;
+
+        &:focus,&:focus-within{
+            font-weight: 600;
+        }
+
+        &:after{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color:#055C8D;
+        }
+    }
 
     // error message // 
 
@@ -278,6 +293,12 @@ div[uxid="SurveyMainSec"]{
             border: none !important;
         }
 
+        
+        .k-button-solid-base:focus{
+            box-shadow: none;
+            border: none;
+        }
+        
 
         & .k-file-invalid{
             height: 80px !important;
@@ -668,16 +689,22 @@ div[uxid="SurveyMainSec"]{
 
    }
 
+
+
    // signature // 
    .xstyle-signature-wrapper{
     margin-bottom: 25px !important;
+
+
     & label{
         @extend %labelMain;
     }
 
      & span.signatureColorPicker{
 
-        border-radius: 0px !important;
+        border-radius: 0px !important; 
+   
+
      }
 
 
@@ -859,6 +886,8 @@ div[uxid="SurveyMainSec"]{
 
     & .x-barcodeBtnContainer{
         background: none !important;
+        position: absolute;
+        left: 4px;
         & a{
             color:#0675B4 !important;
             font-weight: 100 !important;
@@ -951,7 +980,7 @@ margin-bottom: 25px !important;
         & button.x-button.s-button {
             height: 46px !important; 
             background: #8C4D9C !important;
-            box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+            box-shadow: none !important;
             border-radius: 40px !important;
             border: none !important;
             width: 95%;
@@ -1042,12 +1071,11 @@ margin-bottom: 25px !important;
         left: 0 !important;
         right: 0 !important;
         margin: 0 auto;
-        padding-bottom: 35px !important;
         background: #FFFFFF !important;
         border: 1px solid #8C4D9C !important;
         box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
-        border-radius: 20px !important;
-      
+        border-radius: 10px !important;
+        width: 90% !important;
         & .k-window-titlebar.k-hstack{
          background: none !important;
          flex-direction: row-reverse;
@@ -1178,7 +1206,7 @@ margin-bottom: 25px !important;
         }
         & .k-popup.k-group.k-reset.k-rtl{
     
-            padding: 30px 20px;
+            padding: 20px 10px;
             margin: 0px auto;
             left: 0px;
             width: auto !important;
@@ -1297,6 +1325,10 @@ margin-bottom: 25px !important;
 
     .xstyle-switch-wrapper{
 
+        .k-switch{
+            width: 4em;
+        }
+
         label{
             font-family: 'Assistant';
             font-style: normal;
@@ -1355,7 +1387,7 @@ margin-bottom: 25px !important;
             .k-switch-thumb {
                 width: 28px;
                 height: 28px;
-                background: #8C4D9C;
+                background: #8C4D9C !important;
                 border: 1px solid #F5F5F5;
                 box-shadow: 0px 0px 4px rgba(113, 7, 139, 0.5);
                 width: 28px;

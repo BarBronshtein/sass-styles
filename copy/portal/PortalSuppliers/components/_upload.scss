@@ -40,7 +40,7 @@
         border-top: 1px solid $upload-border-border-top !important;
         border-bottom: none !important;
         & .k-file-name{
-            font-weight: 400 !important;
+            font-weight: 500 !important;
             font-size: 14px !important;
             color: $upload-color-file-name !important;
             font-family: 'Heebo';
@@ -133,7 +133,7 @@
         }
 
         & .k-file-name{
-            font-weight: 400 !important;
+            font-weight: 500 !important;
             font-size: 14px !important;
             color: black !important;
             font-family: 'Heebo';
@@ -162,9 +162,10 @@
            margin-bottom: 15px;
            background: $button-bg;
            border-radius: 10px;
-           color:$button-color-text !important;
+           color:$button-color-text ;
            height: 50px !important;
            width: 200px !important;
+           font-weight: 500;
         & span{
             
             & span.k-icon{
@@ -177,8 +178,8 @@
         }
 
         &:hover{
-            background: $button-bg-hover !important;
-            color: $button-color-text-hover !important;
+            background: $button-bg-hover ;
+            color: $button-color-text-hover ;
             border:1px solid $button-color-border;
 
             & span{
@@ -196,9 +197,9 @@
         }
 
         &:focus,&:focus-within{
-            background: $button-color-bg-focus;
+            background: $button-color-bg-focus !important;
             color: $button-color-text-focus !important;
-            box-shadow: $button-box-shadow-focus;
+            box-shadow: $button-box-shadow-focus !important;
             opacity: 1;
             & span{
             

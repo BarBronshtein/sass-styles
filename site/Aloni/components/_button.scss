@@ -1,4 +1,3 @@
-@use '../variable/variable' as *;
 
 
 
@@ -17,7 +16,7 @@
     &.btn-special{
       & button{
 
-       @extend %spicel-button;
+       @extend %special-button;
        padding: 0 30px;
        width: auto !important;
 

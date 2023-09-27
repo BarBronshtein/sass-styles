@@ -1,38 +1,38 @@
-$Title-colo: #10A831;
-$Title-border: 1px solid #BDF2C9;;
-$Text-defult: #000000;
+$title-colo: #10A831;
+$title-border: 1px solid #BDF2C9;;
+$text-defult: #000000;
 
 $icon-color-main: #4C7D32;
 $icon-colot-text-main: #4C7D32;
 $icon-play-stop-camera-bg: #4C7D32;
 $icon-color-defult:#4C7D32;
 
-$Upload-coor-text-file: #7E7B7B;
-$Upload-coor-text-success: #10A831;
+$upload-coor-text-file: #7E7B7B;
+$upload-coor-text-success: #10A831;
 $upload-file-error-text: #DB0000;
 $upload-file_error-icon-file: #DB0000;
-$Upload-title: #10A831;
+$upload-title: #10A831;
 
-$Button-background: #10A831;
-$Button-press-background: #3F934D;
+$button-background: #10A831;
+$button-press-background: #3F934D;
 $button-Box-shadow:inset 4px 4px 10px rgba(90, 31, 105, 0.3);
 
-$Radio-button-on-background: #10A831 ;
-$Radio-button-on-drop-shadow: 0px 0px 4px #4C7D32;
-$Radio-button-label-text: #000000; 
+$radio-button-on-background: #10A831 ;
+$radio-button-on-drop-shadow: 0px 0px 4px #4C7D32;
+$radio-button-label-text: #000000; 
 
-$Check-box-on-background: #10A831;
-$Check-box-on-drop-shadow:  0px 0px 4px #4C7D32;
-$Check-box-label-text: #000000;
+$check-box-on-background: #10A831;
+$check-box-on-drop-shadow:  0px 0px 4px #4C7D32;
+$check-box-label-text: #000000;
 
 $icon-color : #4C7D32;
-$Required: #4C7D32;
-$Focus-border:  #88DB9A;
-$High-light-caption : #88DB9A;
+$required: #4C7D32;
+$focus-border:  #88DB9A;
+$high-light-caption : #88DB9A;
 
-$Approve-icon-on: #4C7D32;
+$approve-icon-on: #4C7D32;
 
-$Box-shadow-footer:0px -4px 8px rgba(76, 125, 50, 0.2);
+$box-shadow-footer:0px -4px 8px rgba(76, 125, 50, 0.2);
 
 $messagebox-Box-shadow:0px -4px 8px rgba(76, 125, 50, 0.2);
 $messagebox-icon-color:#4C7D32;
@@ -42,239 +42,3 @@ $signature-icon-before:#4C7D32;
 $signature-icon-after:#4C7D32;
 
 
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page{
-
-    // title //
-
-    .k-header.x-section-header-wrapper{
-        border-bottom: $Title-border !important;
-      .x-section-header.s-section-header{
-        color: $Title-colo !important;
-      }   
-    }
-
-    // button // 
-
-     .x-footer div button.x-button.s-button{
-        background-color: $Button-background !important;
-        box-shadow: $button-Box-shadow !important;
-     }
-
-    .xstyle-buttoncontrol-wrapper{
-        button.x-button.s-button{
-            background-color: $Button-background !important;
-            box-shadow: $button-Box-shadow !important;
-            &:focus-within,
-            &:focus{
-                    background: $Button-press-background !important;  
-                    box-shadow:  $Radio-button-on-drop-shadow !important;
-            }
-        }
-    }
-
-
-    // icon+text main // 
-    .x-Icons .x-icon span{
-
-        color: $icon-color-main;
-
-    }
-    
-    .icon-title{
-        color: $icon-colot-text-main;
-    }
-
-// radio button // 
-
-&  .xstyle-radio-wrapper.x-control-wrapper{
- 
-
-    & input{
-        &:checked{
-    
-            box-shadow: $Radio-button-on-drop-shadow !important;
-        }
-
-
-        &::before{
-            color: $Radio-button-on-background !important;
-            width: 10px !important;
-           height: 10px !important;
-        }
-    }
-
-   }
-
-
-// check box //
-
-  & .xstyle-checkbox-wrapper.x-control-wrapper {
-
-    & input{
-     
-
-        &:checked{
-            box-shadow: $Check-box-on-drop-shadow !important;
-        }
-
-        &:checked::before{
-            background-color: $Check-box-on-background !important;
-
-        }
-    }
-   }
-
-
-   // icon stop + play + camera //
-
-   .xstyle-kicon-wrapper {
-   
-   .k-icon{
-    &.fa-camera-retro,
-    &.fas.fa-play,
-    &.fas.fa-stop{
-
-       background: $icon-play-stop-camera-bg;
-
-   }
-  }
- }
-// footer // 
-
-& .s-footer.x-footer{
-    box-shadow:  $Box-shadow-footer !important;
-}
-
-// signature //
-
-.xstyle-signature-wrapper .GraphicalSignaturePlaceHolders .fas.fa-file-upload::before,
-.xstyle-signature-wrapper .GraphicalSignaturePlaceHoldersSign .fas.fa-file-upload::before,
-.xstyle-signature-wrapper .GraphicalSignaturePlaceHolders a::before{
-   color: $icon-color-defult !important;
-}
-
-// focus color //
-
-& .xstyle-textareacontrol-wrapper textarea{
-
-    &:focus-visible{
-
-        outline: 1px solid $Focus-border!important;
-    }
-}
-
-& .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist,
-& .xstyle-textcontrol-wrapper input,
-& .xstyle-autocomplete-wrapper input,
-& .xstyle-geoaddress-wrapper input,
-& .xstyle-googleaddress-wrapper input,
-& .xstyle-intlphonenumber-wrapper input{
-    &:focus,
-    &:focus-within,
-    &:active,
-    &:focus-visible{
-        border: 1px solid $Focus-border!important; 
-        box-shadow: none !important;
-    }
-}
-
-//uplod control //
-.xstyle-upload-wrapper .k-file.k-file-success{
-& .k-i-file-pdf,
-& .k-i-file-data,
-& .k-i-file-txt,
-& .k-i-file,
-& .k-i-file-image.k-file-group.k-icon{
-    &::before{
-        color: $icon-color-defult !important; 
-    }
-}
-}
-& .xstyle-upload-wrapper .k-file.k-file-success [class^="k-file-validation-message !k-text-success"]{
-    color: $Upload-coor-text-success !important; 
-}
-
-& .xstyle-upload-wrapper .k-file-invalid [class="k-file-validation-message !k-text-error"]{
-    color: $upload-file_error-icon-file;
-}
-
-& .xstyle-upload-wrapper .k-upload-button span{
-
-    color: $Upload-title !important;
-}
-
-& .k-upload-button.k-focus{
-    box-shadow: none !important;
-    border: none;
-}
-
-& .xstyle-upload-wrapper .k-upload-button span::after{
-    color: $Upload-title !important;
-}
-
-// date // 
-
-.xstyle-date-wrapper{
-.x-datePicker-pc{
-
-    &:focus-within{
-        box-shadow: none;
-    }
-    & input{
- 
-    &:active,
-    &:focus{
-        border: 1px solid $Focus-border!important; 
-        box-shadow: none !important;
-    }
-}
-
-}
-    button{
-        background: none;
-
-        & span.k-icon.k-i-calendar {
-            color: $icon-color-defult;
-        }
-    }
-}
-
-
- 
-}
-
-
-
-// message box //
-
-.k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
-
-    & .k-widget.k-window.k-rtl:has(#MessageBoxWindow) {
-        border: 1px solid $messagebox-border-color  !important;
-        box-shadow:$messagebox-Box-shadow !important;
-    
-        & .x-icons.x-fa-warning{
-    
-            &::before{
-            color: $messagebox-icon-color !important;
-            }
-        }
-         
-    & #MessageBoxWindow{
-       
-    
-    
-    & button.k-button{
-    
-        background: $Button-background!important;
-        box-shadow: $button-Box-shadow !important;
-    
-        &:focus{
-    
-            background: $Button-press-background !important;
-        }
-    
-     }
-    }
-    }
-}

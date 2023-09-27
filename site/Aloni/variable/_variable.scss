@@ -1,38 +1,5 @@
 
 
-// PALETTE 
-
-
-
-// COMPONENTS 
-$componentsVariables: (
-
-);
-
-
-
-$mandatory-color: #ff7100 ;
-
-
-
-//grid//
-$grid-filter-icon:#FF5A23 ;
-$Grid-color-title-th:#0C0E1F ;
-$Grid-color-text-td:#323C4B ;
-$grid-icon-search-color:#14008E;
-$Grid-checkBox-bg:#14008E;
-$Grid-checkBox-border:#14008E;
-// drower //
-
-$drawer-background-color:#FFFFFF;
-$drawer-box-shdow:0px 0px 10px rgba(35, 40, 115, 0.2);
-$drawer-icon-color:#000000;
-$drawer-color-text:#323C4B;
-$drawer-color-link:#004070;
-$overlay-color: #052136;
-
-// button //
-
 $Button-bg-hover:#927338 ;
 $Button-color-text: #FFFFFF;
 $Button-color-border:none;
@@ -42,20 +9,12 @@ $Button-color-icon:#AE8B49 ;
 $Button-bg:#AE8B49 ;
 $Button-float-bg:#14008E;
 $Button-float-color: white;
-
-//spicel-button//
-
-$spicel-button-bg:#FFFFFF;
-$spicel-button-color-text:#AE8B49 ;
-$spicel-button-color-border:1px solid #AE8B49 ;
-
-// control spicel //
-
-$control-spicel-border: 1px solid #C7C7C7 ;
-$control-spicel-color-text: #4E4E4E;
-$control-spicel-radius-input:8px;
-
-/*controls*/
+$special-button-bg:#FFFFFF;
+$special-button-color-text:#AE8B49 ;
+$special-button-color-border:1px solid #AE8B49 ;
+$control-special-border: 1px solid #C7C7C7 ;
+$control-special-color-text: #4E4E4E;
+$control-special-radius-input:8px;
 $control-caption-color-text: #4E4E4E;
 $control-background: #FFFFFF;
 $control-border-input: 1px solid #C7C7C7;
@@ -68,33 +27,6 @@ $control-box-shadow-focus:none;
 $control-color-placeholder:#ADB5BD;
 $control-color-icon:#AE8B49;
 $control-border-error:1px solid #E91E63;
-//calnder //
-
-$calendar-box-shadow:0px 0px 6px rgba(255, 120, 11, 0.2);
-$calendar-bg-header:#FCFCFC;
-$calendar-color-icon-header:#ff7100 ;
-$calendar-color-text-header:#000000;
-$calendar-bg-body:#F5F5F5;
-$calendar-border-bottom-body:1px solid #ff7100 ;
-$calendar-body-button-color:#df6403 ; 
-$calendar-body-butoon-color-text-focus:white;
-$calendar-body-butoon-bg-focus:#df6403 ;
-$calendar-body-butoon-color-text-hover: white;
-$calendar-body-butoon-border-hover:1px solid #ff7100 ;
-$calendar-month-color-days-focus:#ffffff;
-$calendar-month-bg-days-focus:#ff7100 ;
-$calendar-month-color-today:#ff7100 ;
-$calendar-month-border-today: 1px solid #ff7100 ;
-$calendar-month-color-days-other-month:#8E8E8E;
-$calendar-month-border-other-month-hover:1px solid #8E8E8E;
-$calendar-month-color-other-month-hover:#8E8E8E;
-$calendar-month-color-title:#ff7100 ;
-$calendar-month-color-days:#ff7100 ;
-$calendar-month-color-days-hover:#ff7100 ;
-$calendar-month-border-days-hover:1px solid #ff7100 ;;
-$calendar-fotter-color-text:#14008E;
-
-//checkBox //
 $checkbox-border: #000000 ;
 $checkbox-caption: #000000 ;
 $checkbox-color-checked: #AE8B49 ;
@@ -103,67 +35,20 @@ $check-box-focus-border: none ;
 $check-box-disable-border: #a6a6a6 ;
 $check-box-disable-checked: #a6a6a6 ;
 $check-box-focus-box-shadow: 0px 1px 1px 0px rgba(174, 139, 73, 0.30), 0px 2px 2px 0px rgba(174, 139, 73, 0.20); ;
-// cube-dasboard //
-$Cube-dashboard-colot-text:#4B1754;
-$Cube-dashboard-bg:#FCFCFC;
-$Cube-dashboard-box-shadow:0px 0px 10px rgba(13, 13, 13, 0.1);
-$Cube-dashboard-color-price:#7B098B;
-$Cube-dashboard-color-icon:#4B1754;
-
-//first-panel//
-
-$first-panel-color-title:#7B098B;
-$first-panel-color-icon-button:#7B098B;
-$first-panel-border-icon-button:1px solid #7B098B;;
-$first-panel-bg-icon-button:#FFFFFF;
-
-// row //
-
+$link-color: #625337;
+$label-list-caption-color:#000000;
+$label-list-value-color:#967A45;
+$secandary-title-color:#AE8B49;
 $row-bg:#fff;
 $row-box-shadow: 0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15);
-
-
-// popup //
-$popup-border:1px solid #7E7B7B;
+$popup-border: #7E7B7B;
 $popup-bg:white;
 $popup-color-text:#000;
 $popup-bg-selected:#FAF6F0;
 $popup-color-text-selected:#967A45;
 $popup-bg-hover:#FAF6F0;
 $popup-color-text-hover:#967A45;
-
-
-// cube-main//
-
-$cube-main-box-shadow:0px 0px 10px rgba(35, 40, 115, 0.2);
-$cube-main-title-color:#323C4B;
-$cube-main-sum-color:#14008E;
-$cube-main-sum-icon: #14008E;
-$cube-main-card-border: 1px solid #14008E;
-$cube-main-card-num-color: #14008E;
-$cube-main-card-text-color: #323C4B;
-$cube-main-card-icon: #14008E;
-$cube-main-text-color: #323C4B;
-$cube-main-route-text-color: #14008E;
-$cube-main-price-color:#14008E;
-
-
-// cube-small //
-
-$small-cube-box-shdow:0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
-$small-cube-text-color: #14008E;
-$small-cube-icon-color: #323C4B;
-
-
-
-// B2B header //
-
-$B2B-header-border-col: 1px solid #f1c779;
-$B2B-header-icon:#14008E;
-$B2B-header-box-shadow:0px 5px 10px rgba(2, 111, 158, 0.1);
-$B2B-header-text-defult:#000000;
-$B2B-header-link-color:#ff7100 ;
-
+$popup-box-shadow:0px 0px 6px 0px rgba(166, 166, 166, 0.10), 0px 8px 5px 0px rgba(166, 166, 166, 0.10);
 $messagebox-bg: #ffffff ;
 $messagebox-bg-button: #AE8B49 ;
 $messagebox-color-text: #000000 ;
@@ -172,8 +57,56 @@ $messagebox-color-icon-close: #a6a6a6 ;
 $messagebox-bg-button-focus: #AE8B49 ;
 $messagebox-bg-button-hover: #927338 ;
 $messagebox-box-shadow:0px 5px 8px 0px rgba(174, 139, 73, 0.10);
-
-
+$tab-script-border-bottom:#927338;
+$tab-script-color-text:#927338;
+$bread-crumb-color-default:#000000;
+$bread-crumb-color-active:#AE8B49;
+$barcode-border-color:#A6A6A6;
+$barcode-box-shdow:4px 4px 4px rgba(197, 162, 96, 0.2);
+$user-title-color:#000000;
+$tab-script-border-bottom:#927338;
+$tab-script-color-text:#927338;
+$link-color: #625337;
+$scrollview-selected-image-box-shadow:drop-shadow(0px 0px 6px #AE8B49);
+$row-title-color: #AE8B49;
+$icon-color:#625337;
+$progressbar-bg:#FAF6F0;
+$progressbar-bg-selected:#AE8B49;
+$progressbar-color-text:#FFFFFF;
+$grid-title-color:#AE8B49;
+$grid-title-border-bottom:#AE8B49;
+$grid-td-color:#000000;
+$grid-td-border:#C7C7C7;
+$grid-button-border:#AE8B49;
+$grid-button-color-text:#AE8B49;
+$grid-tr-bg-hover:#E7E7E7;
+$grid-checkbox-border:#000000;
+$grid-checkbox-border-checked:#AE8B49;
+$grid-checkbox-icon-checked:#AE8B49;
+$grid-checkbox-box-shadow-checked: 0px 1px 3px 0px rgba(174, 139, 73, 0.50), 0px 4px 8px 0px rgba(174, 139, 73, 0.20);
+$floatbutton-bg:#16B2D5;
+$floatbutton-box-shadow: 0px 0px 10px rgba(102, 191, 255, 0.4), 0px 6px 4px rgba(102, 191, 255, 0.6);
+$floatbutton-text-color:white;
+$card-image-border-focus:#AE8B49;
+$card-image-box-shadow-focus:0px 6px 6px 0px rgba(174, 139, 73, 0.20);
+$card-image-icon-active-color:#967A45;
+$card-image-bg-title:#DEDEDE;
+$card-image-title-color:#000000;
+$card-details-title-color:#AE8B49;
+$card-details-text-color:#000000;
+$list-view-bg-line-default: #ffffff !default;
+$list-view-icon-color-default: #b8a96f !default;
+$list-view-text-default: #000000 !default;
+$list-view-border-bottom: #e7e7e7 !default;
+$list-view-hover-line: #f5f5f5 !default;
+$list-view-selected-line: #b8a96f !default;
+$list-view-selected-line-icon: #ffffff !default;
+$list-view-selected-line-text: #ffffff !default;
+$list-view-focus-border: #b8a96f !default;
+$list-view-disable-bg: #f8f8f8 !default;
+$list-view-disable-text: #c7c7c7 !default;
+$list-view-disable-icon: #c7c7c7 !default;
+$list-container-shadow: 0px 0px 5px 5px rgba(184, 169, 111, 0.20), 0px 2px 4px 0px rgba(184, 169, 111, 0.03), 0px 4px 5px 0px rgba(184, 169, 111, 0.04);
 //label//
 
 %texbox-label{
@@ -208,19 +141,19 @@ $messagebox-box-shadow:0px 5px 8px 0px rgba(174, 139, 73, 0.10);
 }
 
 
-%texbox-input-spicel{
+%texbox-input-special{
 
 
     height: 50px;
     background: $control-background;
-    border: $control-spicel-border!important;
-    border-radius: $control-spicel-radius-input;
+    border: $control-special-border!important;
+    border-radius: $control-special-radius-input;
     padding: 15px 30px;
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
     font-size: 16px !important;
-    color: $control-spicel-color-text;
+    color: $control-special-color-text;
     text-align: right;
 
 }
@@ -239,11 +172,11 @@ $messagebox-box-shadow:0px 5px 8px 0px rgba(174, 139, 73, 0.10);
 }
 
 
-// spicel button //
+// special button //
 
-%spicel-button{
+%special-button{
     height: 50px !important;
-    background: $spicel-button-bg;
+    background: $special-button-bg;
     border-radius: 8px;
     font-family: "Heebo";
     font-style: normal;
@@ -251,8 +184,8 @@ $messagebox-box-shadow:0px 5px 8px 0px rgba(174, 139, 73, 0.10);
     font-size: 16px;
     line-height: 24px;
     text-align: right;
-    color: $spicel-button-color-text;
-    border: $spicel-button-color-border;
+    color: $special-button-color-text;
+    border: $special-button-color-border;
     
 }
 

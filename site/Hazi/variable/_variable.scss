@@ -1,0 +1,219 @@
+
+
+// PALETTE 
+
+
+
+// COMPONENTS 
+$componentsVariables: (
+
+);
+
+
+
+$mandatory-color: #ff7100 ;
+
+
+// drower //
+
+$drawer-background-color:#FFFFFF;
+$drawer-box-shdow:0px 0px 10px rgba(35, 40, 115, 0.2);
+$drawer-icon-color:#000000;
+$drawer-color-text:#323C4B;
+$drawer-color-link:#004070;
+$overlay-color: #052136;
+
+
+// row //
+
+$row-bg:#fff;
+$row-box-shadow: 0px 0px 2px rgba(2, 111, 158, 0.1), 0px 8px 8px rgba(2, 111, 158, 0.15);
+
+// popup //
+$popup-border:1px solid #7E7B7B;
+$popup-bg:white;
+$popup-color-text:#000;
+$popup-bg-selected:#FAF6F0;
+$popup-color-text-selected:#967A45;
+$popup-bg-hover:#FAF6F0;
+$popup-color-text-hover:#967A45;
+
+
+
+// B2B header //
+
+
+$messagebox-bg: #ffffff ;
+$messagebox-bg-button: #AE8B49 ;
+$messagebox-color-text: #000000 ;
+$messagebox-color-icon: #AE8B49 ;
+$messagebox-color-icon-close: #a6a6a6 ;
+$messagebox-bg-button-focus: #AE8B49 ;
+$messagebox-bg-button-hover: #927338 ;
+$messagebox-box-shadow:0px 5px 8px 0px rgba(174, 139, 73, 0.10);
+
+//scroll-bar//
+
+$scroll-bar-bg:#AE8B49;
+$scroll-bar-bg-hover:#AE8B49;
+
+
+//barcode//
+
+$barcode-border:#A6A6A6;
+$barcode-box-shadow:4px 4px 4px rgba(197, 162, 96, 0.2);
+
+// button //
+
+$button-bg-hover:#927338 ;
+$button-color-text: #FFFFFF;
+$button-color-border:none;
+$button-border-color-focus:  #FFFFFF;
+$button-boxshadow-focus:  drop-shadow(0px 0px 6px #AE8B49);
+$button-color-icon:#AE8B49 ;
+$button-bg:#AE8B49 ;
+$button-float-bg:#14008E;
+$button-float-color: white;
+
+//spicel-button//
+
+$spicel-button-bg:#FFFFFF;
+$spicel-button-color-text:#AE8B49 ;
+$spicel-button-color-border:1px solid #AE8B49 ;
+
+// control spicel //
+
+$control-spicel-border: 1px solid #C7C7C7 ;
+$control-spicel-color-text: #4E4E4E;
+$control-spicel-radius-input:8px;
+
+/*controls*/
+$control-caption-color-text: #4E4E4E;
+$control-background: #FFFFFF;
+$control-border-input: 1px solid #C7C7C7;
+$control-color-input:#323C4B;
+$control-radius-input:8px;
+$control-caption-color-text-disable: #C7C7C7;
+$control-border-input-disable: 1px solid #E7E7E7;;
+$control-border-focus:1px solid #AE8B49;;
+$control-box-shadow-focus:none;
+$control-color-placeholder:#ADB5BD;
+$control-color-icon:#AE8B49;
+$control-border-error:1px solid #E91E63;
+
+//checkBox //
+$checkbox-border: #000000 ;
+$checkbox-caption: #000000 ;
+$checkbox-color-checked: #AE8B49 ;
+$checkbox-border-checked: #AE8B49 ;
+$check-box-focus-border: none ;
+$check-box-disable-border: #a6a6a6 ;
+$check-box-disable-checked: #a6a6a6 ;
+$check-box-focus-box-shadow: 0px 1px 1px 0px rgba(174, 139, 73, 0.30), 0px 2px 2px 0px rgba(174, 139, 73, 0.20); ;
+
+
+
+
+$floatbutton-box-shadow:0px 0px 10px rgba(102, 191, 255, 0.4), 0px 6px 4px rgba(102, 191, 255, 0.6);
+$floatbutton-text-color:white;
+$floatbutton-bg:#16B2D5;
+//label//
+
+
+
+
+%texbox-label{
+
+   
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 21px;
+    text-align: right;
+    color: $control-caption-color-text;
+    margin: 0;
+    height: 18px;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 50px;
+    background: $control-background;
+    border: $control-border-input !important;
+    border-radius: $control-radius-input;;
+    padding: 10px 20px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    color: $control-color-input;
+    text-align: right;
+}
+
+
+%texbox-input-spicel{
+
+
+    height: 50px;
+    background: $control-background;
+    border: $control-spicel-border!important;
+    border-radius: $control-spicel-radius-input;
+    padding: 15px 30px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    color: $control-spicel-color-text;
+    text-align: right;
+
+}
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background;
+    border:$control-border-input-disable;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable;
+}
+
+
+// spicel button //
+
+%spicel-button{
+    height: 50px !important;
+    background: $spicel-button-bg;
+    border-radius: 8px;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: $spicel-button-color-text;
+    border: $spicel-button-color-border;
+    
+}
+
+// button//
+
+%button{
+    background: $button-bg;
+    border: 1px solid $button-color-border;
+    border-radius: 8px;
+    align-items: center;
+    height: 50px !important;
+    color: $button-color-text;
+    font-family: 'Heebo' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}

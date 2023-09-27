@@ -10,7 +10,7 @@
     box-shadow: $list-container-shadow !important;
     border: $list-view-border-bottom ;
     border-radius: 10px;
-    margin-top: 5px;
+
 
     .k-list{
       border-radius: 10px;
@@ -396,7 +396,7 @@
             margin-bottom: 10px;
             &:focus,
             &:focus-within{
-              border: $control-border-focus !important;
+              border:1px solid $control-border-focus !important;
               box-shadow: $control-box-shadow-focus;
             }
             & .k-input-button{
@@ -506,11 +506,11 @@
         .k-action-buttons {
           display: flex;
           flex-direction: row !important;
-        
+          height: 67px;
   
           > button {
             width: 45% !important;
-            height: 50px;
+            height: 40px;
             background: $button-bg!important;
             border-radius: 10px !important;
             border:none;
@@ -548,11 +548,11 @@
                   }
                 }
           
-                &:focus{
+                &.k-button:focus{
                   background: $special-button-bg-focus !important;
-                  box-shadow: none !important;
+                  box-shadow: $button-box-shadow-focus !important;
                   color: $special-button-color-text-focus!important;
-                  border:1px solid $special-button-color-border-hover;
+                  border:1px solid $special-button-color-border-focus;
                   opacity: 1;
                   span{
                     color:  $special-button-color-text-focus !important;

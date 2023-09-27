@@ -37,6 +37,14 @@
                 content: "\e9cb";
                 font-family: 'icomoon';
                 color: $messagebox-color-icon;
+                font-weight: 500;
+              }
+
+              & i.x-fa-success::before{
+                content: "\e98a";
+                font-family: 'icomoon';
+                color: $messagebox-color-icon;
+                font-weight: 500;
               }
 
               & span{

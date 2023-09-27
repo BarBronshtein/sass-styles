@@ -1,5 +1,6 @@
+@import '../Tass/ErrorMessage/ErrorMessage';
+@import '../Tass/FillAndSignV2Page/FillAndSignV2Page';
+@import '../Tass/Surevy/Survey';
+@import '../Tass/payment/payment';
 
-@use '../Tass/ErrorMessage/ErrorMessage';
-@use '../Tass/FillAndSignV2Page/FillAndSignV2Page';
-@use '../Tass/Surevy/Survey';
-@use '../Tass/payment/payment';
+@import '../../../copy/Tass/style.scss';

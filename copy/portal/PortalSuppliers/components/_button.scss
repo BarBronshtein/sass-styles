@@ -97,8 +97,10 @@
       }
 
       &:focus{
-        background: $special-button-bg-focus;
-        color: $special-button-color-text-focus !important;
+        background: $special-button-bg-focus !important;
+        box-shadow: $button-box-shadow-focus !important;
+        color: $special-button-color-text-focus!important;
+        border:1px solid $special-button-color-border-focus;
         opacity: 1;
         span::before,span::after{
           color: $special-button-color-text-focus !important;

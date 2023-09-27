@@ -1,45 +1,4 @@
-$Title-colo: #45B4E3;
-$Title-border: 1px solid #94DEFD;;
-$Text-defult: #000000;
 
-$icon-color-main: #45B4E3;
-$icon-colot-text-main: #45B4E3;
-$icon-play-stop-camera-bg: #10143A;
-$icon-color-defult:#45B4E3;
-
-$Upload-coor-text-file: #7E7B7B;
-$Upload-coor-text-success: #1182B1;
-$upload-file-error-text: #DB1C33;
-$upload-file_error-icon-file: #DB1C33;
-$Upload-title: #45B4E3;
-
-$Button-background: #45B4E3;
-$Button-press-background: #aaaaaa;
-$button-Box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3);
-
-$Radio-button-on-background: #45B4E3 ;
-$Radio-button-on-drop-shadow: 0px 0px 4px #1182B1; 
-$Radio-button-label-text: #000000; 
-
-$Check-box-on-background: #ffff;
-$Check-box-on-drop-shadow:  0px 0px 4px #1182B1;
-$Check-box-label-text: #000000;
-
-$icon-color : #45B4E3;
-$Required: #45B4E3;
-$Focus-border:  #45B4E3;
-$High-light-caption : #45B4E3;
-
-$Approve-icon-on: #45B4E3;
-
-$Box-shadow-footer:0px -4px 8px rgba(17, 130, 177, 0.2);
-
-$messagebox-Box-shadow:0px -4px 8px rgba(17, 130, 177, 0.2);
-$messagebox-icon-color:#10143A;
-$messagebox-border-color:#10143A;
-
-$signature-icon-before:#10143A;
-$signature-icon-after:#10143A;
 
 
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page{
@@ -47,27 +6,52 @@ $signature-icon-after:#10143A;
     // title //
 
     .k-header.x-section-header-wrapper{
-        border-bottom: $Title-border !important;
+        border-bottom: $title-border !important;
       .x-section-header.s-section-header{
-        color: $Title-colo !important;
+        color: $title-colo !important;
+        border-bottom: 1px solid $title-border !important;
       }   
     }
 
     // button // 
 
      .x-footer div button.x-button.s-button{
-        background-color: $Button-background !important;
+        background-color: $button-background !important;
         box-shadow: $button-Box-shadow !important;
      }
 
     .xstyle-buttoncontrol-wrapper{
+
+        &.xtaf-secondary-button{
+
+            button.x-button.s-button{
+                background-color: $button-secondary-bg !important ;
+                color: $button-secondary-color !important;
+                box-shadow: none !important;
+                border:1px solid $button-secondary-border !important;
+                &:hover{
+                   background: $button-secondary-bg-hover !important;
+                   color:$button-secondary-color-hover !important; 
+                }
+                &.k-button:focus-within,
+                &.k-button:focus{
+                        background: $button-secondary-bg !important;  
+                        box-shadow:  $button-secondary-focus-box-shadow !important;
+                        color:  $button-secondary-focus-color !important;
+                        border: 1px solid $button-secondary-focus-border !important;
+                }
+            }
+        }
         button.x-button.s-button{
-            background-color: $Button-background !important;
+            background-color: $button-background ;
             box-shadow: $button-Box-shadow !important;
-            &:focus-within,
-            &:focus{
-                    background: $Button-press-background !important;  
-                    box-shadow:  $Radio-button-on-drop-shadow !important;
+            &:hover{
+               background: $button-background-hover !important ; 
+            }
+            &.k-button:focus-within,
+            &.k-button:focus{
+                    background: $button-press-background !important;  
+                    box-shadow:  $button-focus-Box-shadow !important;
             }
         }
     }
@@ -92,12 +76,12 @@ $signature-icon-after:#10143A;
     & input{
         &:checked{
     
-            box-shadow: $Radio-button-on-drop-shadow !important;
+            box-shadow: $radio-button-on-drop-shadow !important;
         }
 
 
         &::before{
-            color: $Radio-button-on-background !important;
+            color: $radio-button-on-background !important;
             width: 10px !important;
            height: 10px !important;
         }
@@ -114,11 +98,11 @@ $signature-icon-after:#10143A;
      
 
         &:checked{
-            box-shadow: $Check-box-on-drop-shadow !important;
+            box-shadow: $check-box-on-drop-shadow !important;
         }
 
         &:checked::before{
-            background-color: $Check-box-on-background !important;
+            background-color: $check-box-on-background !important;
 
         }
     }
@@ -159,7 +143,7 @@ $signature-icon-after:#10143A;
 
     &:focus-visible{
 
-        outline: 1px solid $Focus-border!important;
+        outline: 1px solid $focus-border!important;
     }
 }
 
@@ -173,7 +157,7 @@ $signature-icon-after:#10143A;
     &:focus-within,
     &:active,
     &:focus-visible{
-        border: 1px solid $Focus-border!important; 
+        border: 1px solid $focus-border!important; 
         box-shadow: none !important;
     }
 }
@@ -191,7 +175,7 @@ $signature-icon-after:#10143A;
 }
 }
 & .xstyle-upload-wrapper .k-file.k-file-success [class^="k-file-validation-message !k-text-success"]{
-    color: $Upload-coor-text-success !important; 
+    color: $upload-coor-text-success !important; 
 }
 
 & .xstyle-upload-wrapper .k-file-invalid [class="k-file-validation-message !k-text-error"]{
@@ -200,7 +184,7 @@ $signature-icon-after:#10143A;
 
 & .xstyle-upload-wrapper .k-upload-button span{
 
-    color: $Upload-title !important;
+    color: $upload-title !important;
 }
 
 & .k-upload-button.k-focus{
@@ -209,7 +193,7 @@ $signature-icon-after:#10143A;
 }
 
 & .xstyle-upload-wrapper .k-upload-button span::after{
-    color: $Upload-title !important;
+    color: $upload-title !important;
 }
 
 // date // 
@@ -224,7 +208,7 @@ $signature-icon-after:#10143A;
  
     &:active,
     &:focus{
-        border: 1px solid $Focus-border!important; 
+        border: 1px solid $focus-border!important; 
         box-shadow: none !important;
     }
 }
@@ -253,10 +237,11 @@ $signature-icon-after:#10143A;
         border: 1px solid $messagebox-border-color  !important;
         box-shadow:$messagebox-Box-shadow !important;
     
-        & .x-icons.x-fa-warning{
+        & .x-icons{
     
             &::before{
             color: $messagebox-icon-color !important;
+            font-weight: 500;
             }
         }
          
@@ -266,12 +251,12 @@ $signature-icon-after:#10143A;
     
     & button.k-button{
     
-        background: $Button-background!important;
+        background: $button-background!important;
         box-shadow: $button-Box-shadow !important;
     
         &:focus{
     
-            background: $Button-press-background !important;
+            background: $button-press-background !important;
         }
     
      }

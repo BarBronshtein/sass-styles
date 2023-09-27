@@ -36,7 +36,7 @@
   // mandatory //
   &.mandatory,
   &.requireDesign {
-    &:has(.x-control-caption-wrapper) {
+   .x-control-caption-wrapper {
       & label {
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -80,7 +80,7 @@
   // contextmenu //
 
   &.x-contextmenu {
-    & div:nth-child(1) > div.x-control-caption-wrapper::before {
+    &  div.x-control-caption-wrapper::before {
       content: "\f0d8" !important;
       font-family: "Font Awesome 5 PRO";
       font-weight: 900;

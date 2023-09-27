@@ -14,7 +14,7 @@
 
 .payment-cube-row2{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto !important;
     gap: 15px;
     margin-bottom: 15px;
 

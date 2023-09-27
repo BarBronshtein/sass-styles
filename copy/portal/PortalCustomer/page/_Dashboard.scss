@@ -19,14 +19,16 @@
             margin-bottom: 15px; 
         }
     }
-
+.x-row:has(div[uxid="gOpenLeasingOrders"]){
+    height: 100%;
+}
 .col:has(div[uxid="gOpenLeasingOrders"]){
     height: -webkit-fill-available;
-
+    min-height: 140px;
     div[uxid="lGoToOpenLeasingOrder"]{
         position: absolute;
-        left: 0;
-        bottom: 2px;
+        left: 0px;
+        bottom: 30px;
     }
 }
     .x-marquee.s-marquee{
@@ -40,9 +42,5 @@
         height: 100%;
     }
 
-    div[uxid="lGoToMessage"]{
-        position: absolute;
-        left: 0;
-        bottom: 2px;
-    }
+
 }

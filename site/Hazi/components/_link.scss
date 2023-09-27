@@ -1,0 +1,20 @@
+
+@use '../variable/variable' as *;
+//link-menu-control//
+
+$link-color: #625337;
+
+.xstyle-ilink-wrapper{
+          
+         & a{
+    
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: $link-color;
+            text-decoration-line: underline;
+         }
+        }
+    

@@ -220,3 +220,23 @@ margin: 0;
   color: black;
     pointer-events: all;
 }
+
+
+.x-control-wrapper{
+
+  flex-wrap: nowrap;
+  width: auto;
+  & > * {
+    flex-grow:1;
+  }
+
+  & .x-control-caption-wrapper{
+    flex:0 0 33%;
+    position:relative;    
+   }
+
+  & .x-control-content-wrapper{
+    position:relative;
+    width:100%;
+  }
+}

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 @import './variable/variable';
 
 
@@ -15,61 +9,479 @@
 @import './components/treeview-item';
 @import './components/dropdown';
 @import './components/popup';
-@import './components/toggleswitch';
+// @import './components/toggleswitch';
 
 
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio {
 
-.bg-warning{
-    background: #29b0d975 !important;
-}
-
-.ux-studio-bottom-border{
-    border-bottom: 2px solid #074b5f !important;
-}
-.ux-studio-top-border{
-    border-top: 2px solid #074b5f !important;
-}
-.border{
-    border: none !important;
-}
-
-header{
-    border: none !important;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio{
-    width: 98%;
-
-
-.xstyle-itreeview-wrapper{
-    direction: ltr !important;
-    max-height: 450px;
-
-
-    &::-webkit-scrollbar-track {
-        border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar {
-        width: 10px;
-        background:#ffff;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background:#29AFD9;
-        border-radius:10px;
+    .xtaf-switch-studio .col {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        gap: 20px;
+        align-items: center;
+        justify-content: right;
     }
 
 
-    &::-webkit-scrollbar-thumb:hover {
-        background: darken(#29AFD9, 5);
+    span[xid=controlltoggleBorderSwitch] {
+        color: var(--switch-switch-on-text, #077294);
+        text-align: right;
+        font-family: Heebo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 15.6px */
+    }
+
+    .k-switch {
+        font-size: 8px;
+        height: 20px;
+    }
+
+    .k-switch-track {
+        height: 20px;
+        border: none;
+        background-color: #F5F5F5;
+    }
+
+    .k-switch-thumb {
+        border: none;
+    }
+
+    .k-switch-on {
+        .k-switch-thumb {
+            color: #159BC5;
+        }
+    }
+
+    .k-switch-off {
+        .k-switch-thumb {
+            color: #F5F5F5;
+        }
+    }
+
+
+    .k-switch-label-on {
+        display: none;
+    }
+
+    .k-switch-label-off {
+        display: none;
     }
 }
 
-   
+
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio {
+    width: 100%;
+    height: clamp(400px, 100vh, 100vh);
+    display: flex;
+    flex-direction: column;
+
+    .x-control-caption-wrapper {
+        display: flex;
+    }
+
+    button,
+    a {
+        cursor: pointer !important;
+    }
+
+    .container {
+        padding: 0 !important;
+    }
+
+    &>mainbody {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .container.pageContainer.xtafnit_pageContainer {
+        margin: 0;
+    }
+
+
+    .col {
+        padding: 0;
+    }
+
+    .border {
+        border: none !important;
+    }
+
+    div[uxid=colControlType] {
+        & * {
+            color: white;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:$title-component-title-component-bg-default;
+        padding: 10px 20px;
+        flex-direction: row;
+    }
+
+    .ux-studio-border {
+
+        .row {
+            margin-block: 15px;
+        }
+
+        .row,
+        .col {
+            padding-inline: 15px;
+            padding-block: 20px;
+            border: 1px dotted $component-component-border-dash !important;
+            border-collapse: collapse;
+        }
+
+        .x-control-wrapper {
+            margin-block: 20px;
+            padding: 0;
+            border: 1px dotted $component-component-border-dash !important;
+
+            &.ux-studio-bottom-border {
+                border-bottom: 2px solid #074b5f !important;
+            }
+
+            &.ux-studio-top-border {
+                border-top: 2px solid #074b5f !important;
+            }
+        }
+
+        .row::before,
+        .col::before,
+        .x-control-wrapper::before {
+            content: attr(data-controlType);
+            position: absolute;
+            top: -15px;
+            left: 0;
+            background-color: $studio-primary-400;
+            padding-inline: 5px;
+            color: $vanilla-other-white;
+            font-family: Heebo;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+        }
+    }
+
+    .ux-studio-disabled-container .x-section-header-wrapper {
+
+        .row,
+        .col {
+            background-color: $properties-list-proprties-list-bg-disable !important;
+            pointer-events: none !important;
+
+            &>* {
+                color: $properties-list-proprties-list-text-disable !important;
+            }
+        }
+    }
+
+    &,
+    header,
+    div[uxid=xstudioMainRow] {
+        border-radius: 0;
+        padding: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    input[xid=controlcomboSearch] {
+        border: 1px solid $text-field-text-field-input-default-border;
+        background: $color-other-white;
+        text-align: left;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    div[uxid=xstudioMainRow] {
+        height: 100%;
+        max-height: 96vh;
+        background-color: white;
+        display: grid;
+        grid-template-columns: minmax(100px, 300px) 1fr minmax(100px, 300px);
+        justify-content: center;
+        padding-block: 20px !important;
+
+        &>div:nth-of-type(1) {
+            max-height: 88vh !important;
+        }
+
+        &>div:nth-of-type(4) {
+            max-height: 80vh !important;
+        }
+
+        &>div:nth-of-type(1),
+        &>div:nth-of-type(4) {
+            @extend .ux-studio-specific-styling;
+        }
+
+        .x-treeview,
+        div[uxid=xstudioComponent] {
+            direction: ltr;
+        }
+
+        &>.col {
+            padding-inline: 10px;
+        }
+    }
+
+    div[uxid=xstudioMainpanelCol] {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        & mainbody {
+            height: 100%;
+            overflow: auto;
+            background-color: white;
+            padding: 20px;
+            max-height: 84vh;
+            direction: ltr;
+        }
+    }
+
+    div[uxid=xstudioMainpanel].x-self-container {
+        background-color: rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    div[uxid=xstudioMainpanel] {
+        width: 100%;
+        height: 100%;
+        flex: 1 1 auto;
+
+        &>div,
+        &>div>div,
+        &>div>div>div,
+        &>div>div>div>div,
+        &>div>div>div>div>div {
+            height: 100% !important;
+            max-height: 84vh;
+        }
+    }
+
+    .xstyle-itreeview-wrapper {
+        direction: ltr !important;
+        max-height: 82vh;
+
+
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            background: #ffff;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #29AFD9;
+            border-radius: 10px;
+        }
+
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: darken(#29AFD9, 5);
+        }
+
+        .bg-warning {
+            background: #29b0d975 !important;
+        }
+    }
+
+    .ux-studio-specific-styling {
+        .xstyle-textwithbuttonsimple-wrapper {
+            span.x-textbox {
+                padding: 0;
+                border: none;
+            }
+
+            input.x-textbox,
+            .x-text-control-container {
+                width: 100%;
+            }
+
+            padding: 0%;
+        }
+
+        .x-textbox {
+            border-radius: 0;
+            border: 1px solid var(--text-field-text-field-input-default-border, #D9D9D9);
+            display: flex;
+            height: 35px;
+            padding: 10px;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+        }
+
+        .x-control-caption-text {
+            color: var(--text-field-text-field-caption, #077294);
+            text-align: left;
+
+            /* desktop/label/default */
+            font-family: Heebo;
+            font-size: 0.9rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            /* 16.8px */
+        }
+
+        .filled button {
+
+            padding: 10px 20px !important;
+            border-radius: 10px !important;
+            background: var(--btn-btn-primary-bg-default, #159BC5) !important;
+            color: var(--btn-btn-primary-text-default, #FFF) !important;
+            text-align: center !important;
+            font-family: Heebo !important;
+            font-size: 0.9rem !important;
+            font-style: normal !important;
+            font-weight: 500 !important;
+            line-height: 120% !important;
+        }
+
+        .outlined button {
+
+            padding: 5px !important;
+            color: var(--btn-btn-primary-bg-default, #159BC5) !important;
+            text-align: center !important;
+            border: none !important;
+            background-color: transparent !important;
+            font-family: Heebo !important;
+            font-size: 0.9rem !important;
+            font-style: normal !important;
+            font-weight: 500 !important;
+            line-height: 120% !important;
+        }
+
+        .outlined button:hover {
+            text-decoration: underline !important;
+        }
+
+        .k-header {
+            direction: rtl;
+        }
+
+        .collapse>div {
+            display: flex;
+            cursor: default;
+            flex-direction: column;
+            gap: 15px;
+            padding-block: 15px;
+        }
+
+        .xstyle-checkbox-wrapper {
+            text-align: left;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            direction: ltr;
+
+            li {
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+
+
+    /// --------------- DISABLING HARMFUL STYLES --------------- ///
+
+    .x-row {
+        border-radius: 0;
+    }
+
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
+        padding: 0;
+    }
 
 
 
 
-   
 
 }

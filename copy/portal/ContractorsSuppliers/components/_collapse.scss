@@ -21,7 +21,7 @@
 
     }
   h3{
-    background: #FCFCFC;
+    background: #f8f8f8;
     color: #204C1F;
     height: 35px;
     padding-right: 10px;
@@ -48,6 +48,12 @@
         display: grid;
         right: 0;
         margin: 0 auto;
+        transform: rotate(180deg);
+        &.collapsed{
+          transform: rotate(0deg);
+        }
+
+      
     }
 
 }

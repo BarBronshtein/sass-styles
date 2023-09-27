@@ -2,6 +2,7 @@
 
 
 
+
 .xstyle-tab-wrapper{
     padding-top: 20px;
 
@@ -29,11 +30,11 @@
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 130%;
-                    color: #927338;  
+                    color: $tab-script-color-text;  
                 }
 
                 &.k-active{
-                    border-bottom: 1px solid #927338;
+                    border-bottom: 1px solid $tab-script-border-bottom;
                     background: none;
 
                     span{

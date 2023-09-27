@@ -1,7 +1,7 @@
 
 
 
-@use '../variable/variable' as *;
+
 
 
 .xstyle-textcontrol-wrapper {
@@ -54,12 +54,12 @@ input::-webkit-inner-spin-button {
     }
 
 
-    // spicel input //
+    // special input //
 
-   &.spicel-input{
+   &.special-input{
 
      & input{
-        @extend %texbox-input-spicel;
+        @extend %texbox-input-special;
      }
    }
 

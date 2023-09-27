@@ -1,7 +1,28 @@
 
 
 
-@use '../variable/variable' as *;
+
+
+
+.k-checkbox{
+
+        border-color: $checkbox-border;
+        border-radius: 1px !important;
+    
+        &:checked{
+            border-color: $checkbox-border-checked;
+            &:before{
+            color: $checkbox-color-checked;
+            }
+        }
+    
+        &:focus{
+            box-shadow: none;
+        }
+
+
+
+}
 .xstyle-checkbox-wrapper{
 
 

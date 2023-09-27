@@ -21,8 +21,8 @@
             font-weight: 700;
             font-size: 14px;
             line-height: 130%;
-            color: #AE8B49;
-            border-bottom: 2px solid #AE8B49;
+            color: $grid-title-color;
+            border-bottom: 2px solid $grid-title-border-bottom ;
             padding: 15px 8px;
         }
     }
@@ -39,15 +39,15 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 130%;
-            color: #000000;
+            color: $grid-td-color;
             padding: 15px 8px;
-            border-bottom: 1px solid #C7C7C7;
+            border-bottom: 1px solid $grid-td-border;
 
             button{
                 width: 62px;
                 background: none;
-                color: #AE8B49;
-                border: 1px solid #AE8B49;
+                color: $grid-button-color-text;
+                border: 1px solid $grid-button-border;
                 border-radius: 20px;
                 font-family: 'Heebo';
                 font-style: normal;
@@ -71,11 +71,11 @@
 .k-grid td.k-state-selected:hover, 
 .k-grid tr.k-selected:hover, 
 .k-grid tr.k-state-selected:hover{
-    background-color: #E7E7E7;
+    background-color: $grid-tr-bg-hover;
 
 }
 .k-grid tr:hover td {
-    background-color: #E7E7E7 !important;
+    background-color: $grid-tr-bg-hover!important;
 }
 .k-grid tr:hover{
     background: none;
@@ -84,18 +84,18 @@
 
 .x-gridchkbxcontrolgrdOptions382975.k-checkbox{
 
-    border: 1px solid black;
+    border: 1px solid $grid-checkbox-border;
 
     &:checked{
 
-        border: 1px solid #AE8B49;
+        border: 1px solid $grid-checkbox-border-checked ;
 
         &::before{
-            color: #AE8B49;
+            color: $grid-checkbox-icon-checked;
         }
     }
 
     &:focus,&:focus-within{
-        box-shadow: 0px 1px 3px 0px rgba(174, 139, 73, 0.50), 0px 4px 8px 0px rgba(174, 139, 73, 0.20);
+        box-shadow:$grid-checkbox-box-shadow-checked;
     }
 }

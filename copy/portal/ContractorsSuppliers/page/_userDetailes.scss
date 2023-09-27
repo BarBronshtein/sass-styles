@@ -6,9 +6,23 @@
     border: none;
     box-shadow: none;
   }
+  .xstyle-gridv4-wrapper{
+    border: none;
+  }
+  .headerNone{
+    padding-bottom: 10px !important;
+  }
+  .k-grid td input.k-checkbox{
+    border-radius: 50%;
 
-  .k-button{
-    margin-bottom: 20px;
+    &:checked:before{
+      content: "";
+      background: $radio-button-bg-check;
+      border-radius: 50%;
+    }
+  }
+  .k-grid-content.k-auto-scrollable {
+    max-height: 300px;
   }
   .k-grid-content.k-auto-scrollable > table > tbody > tr > td{
     text-align: right !important;
@@ -22,6 +36,7 @@ u{
   .x-button-wrapper{
     width: fit-content;
     margin: auto;
+    margin-bottom: 20px;
   }
   .list{
       display: grid;

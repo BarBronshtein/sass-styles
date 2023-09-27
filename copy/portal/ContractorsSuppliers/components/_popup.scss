@@ -229,6 +229,12 @@
       border-radius: 0px;
       height: 40px;
 
+      &:focus,&:focus-within{
+
+        border: 1px solid $control-border-focus !important;
+        box-shadow: $control-box-shadow-focus;
+      }
+
       input{
         text-align: right;
         font-family: 'Heebo';

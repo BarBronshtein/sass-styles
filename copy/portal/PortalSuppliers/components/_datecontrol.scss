@@ -91,6 +91,8 @@
 
 // clander //
 
+// clander //
+
 .k-animation-container .k-popup:has(.k-calendar-table){
 
     background: #F5F5F5;
@@ -128,7 +130,7 @@
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 12px;
                 line-height: 20px;
                 display: flex;
                 align-items: center;
@@ -194,7 +196,7 @@
                         font-family: 'Heebo';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 16px;
+                        font-size: 12px;
                         line-height: 24px;
                         color: $calendar-body-button-color;
                        
@@ -216,7 +218,7 @@
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 12px;
                 line-height: 24px;
                 color: $calendar-month-color-title;
              }
@@ -226,7 +228,7 @@
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 12px;
                 line-height: 24px;
                 color: $calendar-month-color-days;
                 
@@ -305,7 +307,7 @@
             font-family: 'Heebo';
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 20px;
             color: $calendar-fotter-color-text; 
         }

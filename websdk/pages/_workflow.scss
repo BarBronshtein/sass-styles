@@ -138,7 +138,8 @@ th .k-checkbox::before{
         align-items: center;
         gap: 40px;
         margin-top: 20px;
-
+      
+        
         .xstyle-dynamiclabelcontrol-wrapper{
             cursor: pointer;
             span{
@@ -149,6 +150,8 @@ th .k-checkbox::before{
                 font-style: normal;
                 font-weight: 400;
                 line-height: 130%;  
+                border-radius: 30px;
+                padding: 10px 30px;
             }
             
             &.TabActive{
@@ -419,7 +422,7 @@ th .k-checkbox::before{
         background-color: #FFFFFF !important;
     }
     
-     & .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable > :nth-child(2) > span{
+     & .x-control-content-wrapper > .k-toolbar.k-toolbar-resizable > :nth-child(2) > span{
            color:#7B098B !important;
            font-weight: 400 !important;
             font-size: 30px !important;
@@ -726,3 +729,35 @@ th .k-checkbox::before{
       }
 }
 
+.k-animation-container{
+    &:has(.menuRows){
+      left: 59px !important;
+
+    }
+}
+
+mainbody .empty-message{
+
+    .x-image-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.s-self-container{ 
+.title-message{
+    span.x-dynamic-label-control{
+        font-weight: 700;
+    }
+}
+    span.x-dynamic-label-control{
+        color: #7B098B;
+        text-align: center !important;
+        font-family: 'Heebo';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 10px;
+        }
+}
+}

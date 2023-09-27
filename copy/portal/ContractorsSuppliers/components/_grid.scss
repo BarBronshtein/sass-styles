@@ -1,5 +1,29 @@
+.k-grid .k-grid-content tr:has(.title-grid){
 
-.icon-up{
+  background:#e7e7e7;
+
+  &:hover{
+    background:#e7e7e7 !important;
+  }
+}
+
+.k-grid-content.k-auto-scrollable > table > tbody > tr:has(.title-grid) > td{
+  height: 25px;
+  background: #e7e7e7 !important;
+  &:has(.title-grid){
+     text-align: right !important;
+    span{
+      color:  #4E4E4E;
+      text-align: right;
+      font-family: Heebo;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%; 
+    }
+  }
+}
+.icon-up-1{
   width: 20px;
   height: 20px;
   padding: 5px;
@@ -12,20 +36,20 @@
   margin-right: -7px;
 }
 
-.icon-close-popup{
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  border: 1px solid#F5F5F5;
-  background: #F5F5F5;
-  font-size: 22px;
-}
-.icon-money{
+.icon-error-message1,.icon-special{
   width: 20px;
   height: 20px;
   padding: 5px;
   border: 1px solid#AEDEE3;
   background: #AEDEE3;
+  font-size: 22px;
+}
+.icon-sign-document{
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid#F5F5F5;
+  background: #F5F5F5;
   font-size: 22px;
 }
 .k-grid table{
@@ -40,6 +64,10 @@
   .k-grid-header{
     border: none !important;
   }
+
+  .k-grid-content.k-auto-scrollable > table > tbody > tr > td:last-child {
+    direction: ltr;
+}
 thead{
 
   & tr{
@@ -73,7 +101,7 @@ thead{
       font-family: Heebo;
       font-size: 12px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
      }
     }
   }
@@ -884,7 +912,7 @@ thead{
           font-family: map-get($map: $typographyVariables, $key: -font-family) ;
           font-style: normal;
           font-weight: 400;
-          font-size: 14px;
+          font-size: 12px;
           line-height: 130%;
           text-align: right !important;
           color: $grid-text ;
@@ -897,6 +925,11 @@ thead{
           text-overflow: ellipsis;
           padding-right: 10px;
           text-align: center !important;
+
+          &:has(.xtf-btn){
+            float: left;
+            padding: 5px;
+          }
 
           .k-input-spinner{
             button{
@@ -918,7 +951,7 @@ thead{
            width: fit-content;
          &:focus,&:focus-within,&:active{
             border: 1px solid $speical-button-color-border-focus;
-            padding: 2px;
+            padding: 1px;
          }
          a{
 

@@ -24,7 +24,7 @@
 
             .signatureColorPicker {
                 border-radius: 50%;
-                background-color: red;
+                background-color: red !important;
                 width: 18px;
                 height: 18px;
                 margin-left: 10px;
@@ -33,15 +33,15 @@
                 cursor: pointer;
 
                 &.black {
-                    background-color: black;
+                    background-color: black !important;
                 }
 
                 &.blue {
-                    background-color: blue;
+                    background-color: blue !important;
                 }
 
                 &.red {
-                    background-color: red;
+                    background-color: red !important;
                 }
             }
         }
