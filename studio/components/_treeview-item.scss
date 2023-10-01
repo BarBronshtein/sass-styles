@@ -1,85 +1,117 @@
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio{
-.k-focus,.k-selected{
-    box-shadow: none;
-    border: none;
-    background: none;
-}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio {
 
-.k-treeview-lines{
+    .k-focus,
+    .k-selected {
+        box-shadow: none;
+        border: none;
+        background: none;
+    }
 
-    .k-treeview-item {
-        padding-right: 16px;
-        .k-treeview-top,.k-treeview-mid,.k-treeview-bot{
+    .k-treeview-lines {
 
-            border-bottom: 1px solid#D9D9D9;
-            background:  #29AFD9;
-            height: 40px;
-            padding: 10px 10px 10px 15px;
-            justify-content: left;
-            align-items: center;
-            max-width: 100%;
-            flex-direction: row-reverse;
-            position: relative;
-
-            &:hover{
-                background: #D9D9D9 !important;
-            }
-            .k-treeview-toggle{
-                position: absolute;
-                right: 30px;
-            
-            }
-            .k-sprite{
-                display: none;
-            }
-
-            .k-treeview-leaf{
-
-                &:hover{
-                    background: none;
-                }
-                color: #FFF !important;
-            }
-            .k-i-expand:before,
-            .k-i-collapse:before{
-                content: "\e965";
-                font-family: 'icomoon';
-                color: #FFF;
-                font-size: 13px;
-            }
-            
-        }
-
-        
-    .k-treeview-group{
-  
         .k-treeview-item {
-             .k-treeview-top,.k-treeview-mid,.k-treeview-bot{
-                 background: none;
 
-                 .k-sprite{
-                    display: block;
-                    margin-right: 5px;
-                    margin-left: 0;
-                    height: 25px;
-                    width: 20px;
-                    &:before{
-                        content: "\e991";
-                        font-family: "icomoon";
-                        color: #159BC5;
-                        font-size: 20px;
-                        font-weight: 400;
+            padding: 0px;
+
+            .k-treeview-top,
+            .k-treeview-mid,
+            .k-treeview-bot {
+                border-bottom: 1px solid#d3bcbc;
+                background: #29AFD9;
+                height: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 100%;
+                position: relative;
+
+                &:hover {
+                    background: #D9D9D9 !important;
+                }
+
+                .k-treeview-toggle {
+                    margin-right: 0px;
+                    width: 100%;
+                    height: 40px;
+                    z-index: 10000000;
+                    position:absolute;
+
+                    span{
+                        width: 100%;
+                        height: 100%;
+                    cursor:pointer !important;
                     }
                 }
 
-                .k-treeview-leaf{
-                    color: #000 !important;
-                }
-        }
-    }
-    }
-    }
+                .k-treeview-leaf {
 
-}
+                    &:hover {
+                        background: none;
+                    }
+                    
+                    & , & > *{
+                        cursor:pointer !important;
+                    }
+
+                    width:100%;
+                    gap: 5px;
+                    color: #FFF !important;
+                }
+
+                .k-i-expand:before,.k-i-collapse:before {
+                    content: "\e965";
+                    padding-inline:10px;
+                    font-family: 'icomoon';
+                    color: #FFF;
+                    font-size: 13px;
+                    margin-left:0;
+                }
+                
+                .k-i-expand:before {
+                    content: "\e965";
+                }
+                
+                .k-i-collapse:before {
+                    content: "\e965";
+                }
+                
+            }
+
+
+            .k-treeview-group {
+
+                .k-treeview-item {
+
+                    .k-treeview-top,
+                    .k-treeview-mid,
+                    .k-treeview-bot {
+                        background: none;
+
+                        .k-sprite {
+                            display: block;
+                            margin-right: 5px;
+                            margin-left: 0;
+                            height: 25px;
+                            width: 20px;
+
+                            &:before {
+                                content: "\e991";
+                                font-family: "icomoon";
+                                color: #159BC5;
+                                font-size: 20px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .k-treeview-leaf {
+                            color: #000 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
 }
