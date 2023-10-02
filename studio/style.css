@@ -1068,7 +1068,7 @@
   height: 100%;
   flex: 1 1 auto;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div > div > div {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div > div {
   height: 100% !important;
   max-height: 84vh;
 }
