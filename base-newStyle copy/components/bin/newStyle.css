@@ -141,6 +141,48 @@
   font-family: "Open_Sans";
   src: url("./fontgoogle/Open_Sans/static/OpenSans_SemiCondensed-SemiBoldItalic.ttf") format("truetype");
 }
+/*header*/
+/*footer*/
+/*row*/
+/*window*/
+/*drawer*/
+/*k-animator*/
+/*k-filter*/
+/*button*/
+/*autocomplete*/
+/*calendar*/
+/*date-picker*/
+/*checkbox*/
+/*textbox*/
+/*virutal-keyboard*/
+/*drop-down*/
+/*grid*/
+/*time picker*/
+/*float-button*/
+/*textarea*/
+/*upload*/
+/*multiselect*/
+/*tabstrip*/
+/*slider*/
+/*rating*/
+/*radio*/
+/*freehand*/
+/*portal*/
+/*link*/
+/*stepper*/
+/*menu*/
+/*workflow*/
+/*timeline*/
+/*tooltip*/
+/*header mobile */
+/*consumer-product*/
+/*lookup*/
+/*websdk*/
+/*required*/
+/*funding*/
+/*phone*/
+/*spinner*/
+/*Dashboard*/
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -1431,6 +1473,34 @@
 /* unknow */
 .x-oldGrid-control {
   display: inline-block;
+}
+
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid .k-grid-header th.k-header.xtaf-hidden {
+  border: none !important;
+  background: white !important;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid-content.k-auto-scrollable > table > tbody > tr > td {
+  border: 1px solid #a3d0e4;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid-content.k-auto-scrollable > table > tbody > tr > td.xtaf-hidden {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid table {
+  border-collapse: collapse;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid-header {
+  border: none !important;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid-header th {
+  border: 1px solid #a3d0e4;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-alt {
+  background: none;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-alt td {
+  background: #e6f2f8;
 }
 
 .x-groupbox-wrapper > div {
@@ -3689,6 +3759,7 @@ label.btn {
   font-size: 1.2em;
   border-width: 0 0 1px 0;
   text-transform: uppercase;
+  display: flex;
 }
 .x-autocomplete-header-template > .x-autocomplete-template-caption {
   overflow: hidden;
@@ -3696,6 +3767,8 @@ label.btn {
   font-size: small;
   display: inline-block;
   padding: 10px 0;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .x-autocomplete-header-template > .x-autocomplete-template-caption:first-child {
   padding-right: 5px;
@@ -3878,6 +3951,117 @@ a:not([href]):hover {
 .simpleXML span.simpleXML-expander-collapsed {
   background-image: url("../images/simpleXML-images.png");
   background-position-x: -12px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar {
+  display: flex;
+  gap: 5px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > * {
+  flex: 1;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper canvas, .signature-wrapper canvas:active {
+  cursor: url(images/UnitTest/pen-black.png) 5 140, auto;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > .x-cell {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker .k-value-icon {
+  border: none;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-dropdownlist {
+  max-width: 200px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker .k-input-inner {
+  max-width: 22px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-color-preview-mask {
+  border-radius: 50%;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar span {
+  align-items: center;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-wrapper {
+  position: relative;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .x-signaturev2 {
+  width: 100%;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-upload .k-upload-button {
+  min-width: 30px;
+  max-width: 30px;
+  width: 30px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .k-signature-action.k-signature-clear.k-button.k-icon-button {
+  display: none !important;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.stroke-color-input) button {
+  width: 100%;
+  left: -33px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.background-color-input) button {
+  width: 100%;
+  left: -40px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.stroke-color-input) {
+  flex-basis: 110px;
+  position: relative;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.stroke-width-input) {
+  flex-basis: 90px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.background-color-input) {
+  flex-basis: 123px;
+  position: relative;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker:has(.stroke-color-input) {
+  max-width: 110px;
+  width: 110px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker:has(.background-color-input) {
+  max-width: 123px;
+  width: 123px;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .x-button-wrapper:has(.signature-clear-btn) {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-clear-btn {
+  width: 100%;
+  height: 30px !important;
+}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-clear-btn::after {
+  content: "\e9e5";
 }
 
 #TafnitCore_System_UI_App_Tools_Accessibility_EditEnvVars {
@@ -4544,6 +4728,10 @@ body.checkout-flow-v7.bg2 {
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment {
 
 }
+#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .x-control-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
+}
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .price {
   padding-right: 0 !important;
   padding-top: 5px;
@@ -5185,6 +5373,10 @@ body.checkout-flow-v7.bg2 {
 
 #TafnitCore_SaaSServer_Survey_UI_Survey {
   padding: 0 !important;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .x-control-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a {
   position: relative;
@@ -6415,6 +6607,10 @@ body.checkout-flow-v7.bg2 {
   margin: 0 auto;
   z-index: 1600;
 }
+#TafnitCore_System_UI_App_ErrorPage .x-control-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
+}
 #TafnitCore_System_UI_App_ErrorPage .logoErro {
   background: none;
   border: none !important;
@@ -6517,6 +6713,10 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   margin-bottom: o !important;
   height: 100%;
   min-height: 100%;
+}
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .x-control-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .x-self-container:has(.xstyle-videorecording-wrapper) {
   width: 100% !important;
@@ -7690,68 +7890,116 @@ body.bodyPayment .logoImg {
   text-decoration-line: underline;
 }
 
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-focus, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-selected {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-focus,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-selected {
   box-shadow: none;
   border: none;
   background: none;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item {
-  padding-right: 16px;
+  padding: 0px;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot {
-  border-bottom: 1px solid #D9D9D9;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot {
+  border-bottom: 1px solid #d3bcbc;
   background: #29AFD9;
   height: 40px;
-  padding: 10px 10px 10px 15px;
-  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  flex-direction: row-reverse;
   position: relative;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top:hover, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid:hover, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot:hover {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top:hover,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid:hover,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot:hover {
   background: #D9D9D9 !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-toggle, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-toggle, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-toggle {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-toggle,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-toggle,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-toggle {
+  margin-right: 0px;
+  width: 100%;
+  height: 40px;
+  z-index: 10000000;
   position: absolute;
-  right: 30px;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-sprite, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-sprite, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-sprite {
-  display: none;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-toggle span,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-toggle span,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-toggle span {
+  width: 100%;
+  height: 100%;
+  cursor: pointer !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-leaf, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-leaf, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-leaf {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-leaf,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-leaf,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-leaf {
+  width: 100%;
+  gap: 5px;
   color: #FFF !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-leaf:hover, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-leaf:hover, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-leaf:hover {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-leaf:hover,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-leaf:hover,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-leaf:hover {
   background: none;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-i-expand:before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-i-collapse:before, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-i-expand:before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-i-collapse:before, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-i-expand:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-leaf, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-leaf > *,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-leaf,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-treeview-leaf > *,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-leaf,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-treeview-leaf > * {
+  cursor: pointer !important;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-i-expand:before, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-i-collapse:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-i-expand:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-i-collapse:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-i-expand:before,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-i-collapse:before {
   content: "\e965";
+  padding-inline: 10px;
   font-family: "icomoon";
   color: #FFF;
   font-size: 13px;
+  margin-left: 0;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-i-expand:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-i-expand:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-i-expand:before {
+  content: "\e965";
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-i-collapse:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid .k-i-collapse:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot .k-i-collapse:before {
+  content: "\e965";
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot {
   background: none;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-sprite, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-sprite, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot .k-sprite {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-sprite,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-sprite,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot .k-sprite {
   display: block;
   margin-right: 5px;
   margin-left: 0;
   height: 25px;
   width: 20px;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-sprite:before, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-sprite:before, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot .k-sprite:before {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-sprite:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-sprite:before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot .k-sprite:before {
   content: "\e991";
   font-family: "icomoon";
   color: #159BC5;
   font-size: 20px;
   font-weight: 400;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-treeview-leaf, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-treeview-leaf, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot .k-treeview-leaf {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-treeview-leaf,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-treeview-leaf,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-bot .k-treeview-leaf {
   color: #000 !important;
 }
 
@@ -8242,6 +8490,9 @@ body.bodyPayment .logoImg {
   align-items: center;
   justify-content: right;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio {
+  padding-inline: 30px;
+}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio span[xid=controlltoggleBorderSwitch] {
   color: var(--switch-switch-on-text, #077294);
   text-align: right;
@@ -8298,12 +8549,10 @@ body.bodyPayment .logoImg {
   flex-direction: column;
   height: 100%;
   overflow: auto;
+  position: relative;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .container.pageContainer.xtafnit_pageContainer {
   margin: 0;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col {
-  padding: 0;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .border {
   border: none !important;
@@ -8319,12 +8568,32 @@ body.bodyPayment .logoImg {
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=colControlType] * {
   color: white;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row {
-  margin-block: 15px;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div {
+  height: 100%;
+  overflow: scroll;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer {
+  position: relative;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-row {
+  border-radius: 0;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col {
-  padding-inline: 15px;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
+  margin-block: 15px;
+  padding: 15px;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
+  position: relative;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
   padding-block: 20px;
   border: 1px dotted #C8C8C8 !important;
   border-collapse: collapse;
@@ -8340,6 +8609,9 @@ body.bodyPayment .logoImg {
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper.ux-studio-top-border {
   border-top: 2px solid #074b5f !important;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody::before,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row::before,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col::before,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper::before {
@@ -8356,13 +8628,13 @@ body.bodyPayment .logoImg {
   font-weight: 500;
   line-height: 120%;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .row,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .col {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .row,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .col {
   background-color: #FBFBFB !important;
   pointer-events: none !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .row > *,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .x-section-header-wrapper .col > * {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .row > *,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-disabled-container .row:not([uxid=xstudioOtherTabPage]):not([uxid=xstudioAdvancedTabPage]) .x-section-header-wrapper .col > * {
   color: #C8C8C8 !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio,
@@ -8411,7 +8683,6 @@ body.bodyPayment .logoImg {
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] mainbody {
   height: 100%;
-  overflow: auto;
   background-color: white;
   padding: 20px;
   max-height: 84vh;
@@ -8433,6 +8704,13 @@ body.bodyPayment .logoImg {
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div > div > div {
   height: 100% !important;
   max-height: 84vh;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] footer {
+  margin-block: 15px !important;
+  padding: 15px;
+  min-height: 20px;
+  width: 100%;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper {
   direction: ltr !important;
@@ -8536,81 +8814,6 @@ body.bodyPayment .logoImg {
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .xstyle-checkbox-wrapper li, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .xstyle-checkbox-wrapper li, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .xstyle-checkbox-wrapper li {
   display: flex;
   gap: 10px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .x-row {
-  border-radius: 0;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-1,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-10,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-11,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-12,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-2,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-3,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-4,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-5,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-6,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-7,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-8,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-9,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-auto,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-1,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-10,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-11,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-12,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-2,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-3,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-4,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-5,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-6,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-7,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-8,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-9,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-lg-auto,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-1,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-10,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-11,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-12,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-2,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-3,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-4,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-5,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-6,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-7,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-8,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-9,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-md-auto,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-1,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-10,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-11,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-12,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-2,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-3,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-4,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-5,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-6,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-7,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-8,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-9,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-sm-auto,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-1,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-10,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-11,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-12,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-2,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-3,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-4,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-5,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-6,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-7,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-8,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-9,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .col-xl-auto {
-  padding: 0;
 }
 
 html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),
@@ -8734,4 +8937,97 @@ body.k-content {
 .x-control-wrapper .x-control-content-wrapper {
   position: relative;
   width: 100%;
+}
+
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation {
+  padding: 0px 0px;
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation #watermark {
+  background: var(--background-light-grey, #F9F9F9);
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation .xstyle-ilink-wrapper .x-control-content-wrapper {
+  text-align: center;
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation a {
+  color: var(--system-colors-med-gray, #6B6E77);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  text-decoration-line: underline;
+  margin-top: 30px;
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation div[uxid=rLogo] {
+  border: none !important;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  height: 68px;
+  padding: 14px 9px 14px 16px;
+  background: var(--bright-blue, #14008E);
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation .xstyle-image-wrapper {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation .xtaf-row-main {
+  padding: 0;
+  border: none !important;
+  background: none;
+  box-shadow: none;
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation .xtaf-row-main .xtaf-title span {
+  color: var(--primary-colors-prime-blue, var(--prime-blue-white-1000, #232873));
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Heebo;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 33px;
+  margin-top: 59px;
+  margin-bottom: 10px;
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation .xtaf-row-main .xtaf-text span {
+  color: #6B6E77;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation .xtaf-row-main input {
+  --otp-digits: 6;
+  --otp-ls: 43px;
+  --otp-gap: 1;
+  --_otp-bgsz: calc(var(--otp-ls) + 1ch);
+  --_otp-digit: 0;
+  all: initial;
+  background: linear-gradient(90deg, var(--otp-bg, #eee) calc(var(--otp-gap) * var(--otp-ls)), transparent 0), linear-gradient(90deg, var(--otp-bg, #EEE) calc(var(--otp-gap) * var(--otp-ls)), transparent 0);
+  background-position: calc(var(--_otp-digit) * var(--_otp-bgsz)) 0, 0 0;
+  background-repeat: no-repeat, repeat-x;
+  background-size: var(--_otp-bgsz) 100%;
+  caret-color: var(--otp-cc, #222);
+  caret-shape: block;
+  -webkit-clip-path: inset(0% calc(var(--otp-ls) / 2) 0% 0%);
+          clip-path: inset(0% calc(var(--otp-ls) / 2) 0% 0%);
+  font-family: ui-monospace, monospace;
+  font-size: var(--otp-fz, 1.5em);
+  inline-size: calc(var(--otp-digits) * var(--_otp-bgsz));
+  letter-spacing: var(--otp-ls);
+  padding-block: var(--otp-pb, 10px);
+  padding-inline-start: calc((var(--otp-ls) - 1ch) / 2 * var(--otp-gap));
+  /* margin: auto; */
+  position: relative;
+  margin-inline-start: calc((var(--otp-ls) + 4ch) / 2 * var(--otp-gap));
+  margin-top: 44px;
 }/*# sourceMappingURL=newStyle.css.map */

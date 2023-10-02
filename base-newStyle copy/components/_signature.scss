@@ -1,0 +1,28 @@
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper { width:fit-content;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar { display:flex; gap:5px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar >* { flex:1;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper canvas,.signature-wrapper canvas:active { cursor:url(images/UnitTest/pen-black.png)  5 140, auto;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > .x-cell{ width:fit-content}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker .k-value-icon {border:none;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-dropdownlist{max-width:200px}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker .k-input-inner {max-width:22px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-color-preview-mask {border-radius:50%}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar span {align-items:center}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-wrapper {position:relative;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .x-signaturev2  {width:100%}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-upload .k-upload-button {min-width:30px;max-width:30px;width:30px}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .k-signature-action.k-signature-clear.k-button.k-icon-button{display:none !important}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.stroke-color-input) button { width:100%;left: -33px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.background-color-input) button { width:100%;left: -40px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.stroke-color-input) { flex-basis:110px;position:relative;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.stroke-width-input) { flex-basis:90px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > :has(.background-color-input) { flex-basis:123px;position:relative;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker:has(.stroke-color-input){max-width:110px;width:110px}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker:has(.background-color-input){max-width:123px;width:123px}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .x-button-wrapper:has(.signature-clear-btn){position:absolute;bottom:0px;left:0px;z-index:10;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-clear-btn{width:100%;height:30px !important;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-clear-btn::after{content:'\e9e5'}
+

@@ -13,6 +13,12 @@
     .titlePaymentOption{
         color: $text-default !important;
       }
+
+
+      .x-control-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+      }
 }
 @media only screen and (min-width: 1165px){
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment {

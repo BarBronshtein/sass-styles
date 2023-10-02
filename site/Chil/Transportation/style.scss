@@ -28,7 +28,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap');
 
-div[uxid="MainPanel"]{
+div[uxid="MainPanelRow"]{
   margin-top: 100px;
 }
  .userName-title{
@@ -138,7 +138,7 @@ body:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR){
 
 
 
-  div[uxid=MainPanel] {
+  div[uxid=MainPanelRow] {
     margin-top: 76px;
 }
 
@@ -188,13 +188,13 @@ body:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR){
 }
 
 
-div[uxid=MainPanel]:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage){
+div[uxid=MainPanelRow]:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage){
   margin-top: 70px;
 }
 
 .card-btn{
   position: absolute;
-  top: 60%;
+  top: 50%;
 }
 
 .pageContainer  {

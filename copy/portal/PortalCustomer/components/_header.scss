@@ -99,8 +99,8 @@ div[uxid="iLogo"]{
     text-align: right;
     color: $header-details-span-color;
   }
-  .xstyle-dynamiclabelcontrol-wrapper > .col-4, 
-  .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33{
+  .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper, 
+  .details .left .xstyle-dynamiclabelcontrol-wrapper .x-control-caption-wrapper{
 
     flex: 0 0 0.1%;
     & label{

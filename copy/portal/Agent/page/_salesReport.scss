@@ -1,0 +1,31 @@
+.xtaf-SalesReport-page{
+
+    display: grid;
+    grid-template-columns: 45% 1fr 1fr 1fr;
+    gap: 30px;
+
+.fixDate{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.xtaf-SalesReport-border{
+    border-right: 1px solid #DEDEDE;
+    padding-right: 50px ;
+}
+h4.x-cell-header{
+    color: #AE2A30;
+    text-align: right;
+    padding: 0;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+}
+
+.last-col{
+    grid-column: 1 / span 4;
+}
+}

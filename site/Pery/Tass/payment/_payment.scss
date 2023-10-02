@@ -13,31 +13,6 @@ $title-approve: #45B4E3;
 
 
 
-// bg // 
-#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment {
-    background-color: $background !important;
-    .titlePaymentOption{
-        color: $text-default !important;
-      }
-}
-@media only screen and (min-width: 1165px){
-#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment {
-
-    .titlePaymentOption{
-        color: $text-default !important;
-      }
-    .paymentOption{
-        box-shadow: $shadow-big-cube !important;
-    }
-}
-}
 
 
 
-
-
-// cube //
-
-#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .PaymetnMS{
-    background-color: $main-square !important;
-}

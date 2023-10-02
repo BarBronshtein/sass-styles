@@ -30,7 +30,7 @@
             padding: 0;
         }
 
-        .x-self-container {
+        .x-control-wrapper {
             top: 50%;
             transform: translateY(-50%);
             position: relative;
@@ -44,6 +44,7 @@
             font-size: 32px;
             line-height: 130%;
             color: $cube-dashboard-color-price;
+            direction: ltr;
         }
 
         .k-icon {

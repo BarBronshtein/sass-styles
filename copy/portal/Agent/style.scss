@@ -3,6 +3,7 @@
 @import './variable/variable';
 
 @import './components/header';
+@import './components/multiselect';
 @import './components/row';
 @import './components/cubeDashboard';
 @import './components/drawer';
@@ -36,6 +37,8 @@
 @import './page/VehicleHistory.scss';
 @import './page/userDetailes';
 @import './page/Dashboard';
+@import './page/Obligo';
+@import './page/salesReport';
 
 
 
@@ -85,8 +88,10 @@ body,html{
 }
 
 
-
-.icon-export-excel:before {
+.icon-xtar-print:before{
+    color:$icon-before ;
+}
+.icon-export-excel:before{
     content: "\ea5e";
     color:$icon-after ;
 }
@@ -149,4 +154,10 @@ body,html{
     border-top: 1px solid #C7C7C7;
     border-bottom: 1px solid #C7C7C7;
     padding: 25px 0 !important;
+}
+
+#TafnitCore_SaaSServer_Portal_Agents_UI_InventorySearch{
+.greyPanel:has(.first-panel) .first-panel{
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }

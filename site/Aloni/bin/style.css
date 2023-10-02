@@ -163,9 +163,12 @@
 #TafnitCore_Sales_V2_UI_ItemConfiguration img {
   width: 100%;
 }
+#TafnitCore_Sales_V2_UI_ItemConfiguration .dataAndScrollview .x-image-wrapper {
+  padding-top: 15px;
+}
 #TafnitCore_Sales_V2_UI_ItemConfiguration .dataAndScrollview img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 #TafnitCore_Sales_V2_UI_ItemConfiguration .col-detailView {
   padding: 0 0px 0 40px;
@@ -479,7 +482,7 @@
   flex-wrap: nowrap;
   overflow-y: hidden;
   margin-top: 0px;
-  gap: 20px;
+  gap: 12px;
 }
 .row-scroll .col-scroll > .x-self-container {
   align-items: center;
@@ -502,7 +505,7 @@
 }
 
 .selected-image img {
-  filter: drop-shadow(0px 0px 6px #AE8B49);
+  box-shadow: 0px 0px 3px 0px rgba(174, 139, 73, 0.5);
   border: 1px solid #FFFFFF;
 }
 

@@ -217,6 +217,10 @@ body {
   font-size: 24 !important;
 }
 
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .x-control-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
+}
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .k-header.x-section-header-wrapper {
   border-bottom: 1px solid #94DEFD !important;
 }
@@ -346,6 +350,10 @@ body {
   color: #1182B1;
 }
 
+#TafnitCore_SaaSServer_Survey_UI_Survey .x-control-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
+}
 #TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=SurveyLogo] img {
   width: 270px !important;
   top: 50% !important;
@@ -516,6 +524,10 @@ body {
 }
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .titlePaymentOption {
   color: #10143A !important;
+}
+#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment .x-control-wrapper {
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1165px) {

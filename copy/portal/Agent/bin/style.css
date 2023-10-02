@@ -43,18 +43,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
-.xstyle-textareacontrol-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-autocomplete-wrapper label, .k-window:has(.k-edit-form-container) .k-form-field label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label {
+.xstyle-textareacontrol-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-autocomplete-wrapper label, .k-window:has(.k-edit-form-container) .k-form-field label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label, .xstyle-multiselect-wrapper label {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   text-align: right;
   color: #4e4e4e;
   margin: 0;
 }
 
-.xstyle-textareacontrol-wrapper textarea, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper .k-autocomplete, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-window:has(.k-edit-form-container) .k-input.k-textbox, .k-window:has(.k-edit-form-container) .k-numerictextbox, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-textcontrol-wrapper input, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox {
+.xstyle-textareacontrol-wrapper textarea, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper .k-autocomplete, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-window:has(.k-edit-form-container) .k-input.k-textbox, .k-window:has(.k-edit-form-container) .k-numerictextbox, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-textcontrol-wrapper input, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox, .xstyle-multiselect-wrapper .k-multiselect, .xstyle-multiselect-wrapper.k-state-disabled input {
   height: 50px;
   background: #ffffff;
   border: 1px solid #a6a6a6;
@@ -190,12 +190,12 @@ header.navbar-fixed-top.header-customer .details .left span {
   text-align: right;
   color: #000000;
 }
-header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4,
-header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33 {
+header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper,
+header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .x-control-caption-wrapper {
   flex: 0 0 0.1%;
 }
-header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4 label,
-header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33 label {
+header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper label,
+header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .x-control-caption-wrapper label {
   margin-left: 5px;
   font-family: "Heebo";
   font-style: normal;
@@ -213,6 +213,37 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
   transform: translateY(-50%);
 }
 
+.xstyle-multiselect-wrapper {
+  margin-top: 15px;
+}
+.xstyle-multiselect-wrapper .k-input:focus-within, .xstyle-multiselect-wrapper .k-widget.k-input:focus-within {
+  box-shadow: none;
+}
+.xstyle-multiselect-wrapper.k-state-disabled label {
+  color: #c7c7c7 !important;
+}
+.xstyle-multiselect-wrapper .k-multiselect:focus {
+  box-shadow: none;
+  border: none;
+}
+.xstyle-multiselect-wrapper .k-multiselect {
+  padding-right: 10px !important;
+  padding: 0;
+}
+.xstyle-multiselect-wrapper .k-multiselect:focus-within {
+  box-shadow: 0px 1px 3px 0px rgba(53, 113, 188, 0.3), 0px 4px 8px 0px rgba(53, 113, 188, 0.1) !important;
+  border: 1px solid #000000 !important;
+}
+.xstyle-multiselect-wrapper .k-multiselect::-moz-placeholder {
+  color: #c7c7c7 !important;
+}
+.xstyle-multiselect-wrapper .k-multiselect::placeholder {
+  color: #c7c7c7 !important;
+}
+.xstyle-multiselect-wrapper .k-multiselect input {
+  border: none;
+  font-size: 16px;
+}
 mainbody {
   margin-top: 0px !important;
 }
@@ -237,6 +268,7 @@ mainbody > .row.row-hidden {
   border-radius: 0;
   padding: 0;
   margin-bottom: 0;
+  background: none;
 }
 mainbody > .row.row-hidden .col, mainbody > .row.row-hidden .col-12 {
   padding: 0;
@@ -308,7 +340,7 @@ mainbody > .row.boxShadow-0.border-0 > div {
 .cube.cubeFix .shekel-wrapper > .col {
   padding: 0;
 }
-.cube.cubeFix .shekel-wrapper .x-self-container {
+.cube.cubeFix .shekel-wrapper .x-control-wrapper {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
@@ -320,6 +352,7 @@ mainbody > .row.boxShadow-0.border-0 > div {
   font-size: 32px;
   line-height: 130%;
   color: #3571bc;
+  direction: ltr;
 }
 .cube.cubeFix .shekel-wrapper .k-icon {
   color: #334768;
@@ -601,7 +634,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   line-height: 130%;
   text-align: right;
   color: #ae2a30;
-  padding-right: 10px !important;
+  padding-right: 0px !important;
 }
 .k-grid .k-grid-header th a {
   color: #ae2a30 !important;
@@ -648,6 +681,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   border-left: none;
   font-size: 14px;
   padding: 10px 0px;
+  padding: 0;
 }
 .k-grid .k-grid-content td .col-template-val {
   margin: 0;
@@ -1327,7 +1361,6 @@ mainbody mainbody {
 }
 
 .k-rtl .k-grid-header .k-filterable .k-link {
-  padding: 0;
   padding-left: 10px !important;
 }
 
@@ -1661,6 +1694,23 @@ mainbody mainbody {
   text-decoration: underline;
 }
 
+.x-section-header-wrapper {
+  background: no-repeat;
+  margin-bottom: 10px;
+}
+.x-section-header-wrapper .col {
+  padding-right: 0;
+}
+.x-section-header-wrapper .x-section-header {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: right;
+  color: #ae2a30;
+}
+
 .greyPanel {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1688,6 +1738,49 @@ mainbody mainbody {
 
 .greyPanel:has(.first-panel) {
   display: block;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div {
+  align-self: center;
+  top: 15px;
+  position: relative;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper {
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ae2a30;
+  border-radius: 10px;
+  align-items: center;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper:hover {
+  background: #334768;
+  border: 1px solid #334768;
+  color: white !important;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::before {
+  color: white !important;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::after {
+  color: white !important;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before {
+  background: #741d21;
+  color: white !important;
+  opacity: 1;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before span {
+  color: white !important;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
+  font-size: 32px;
+}
+.greyPanel:has(.first-panel) .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
+  display: none;
 }
 .greyPanel:has(.first-panel) .x-section-header-wrapper {
   background: no-repeat;
@@ -1723,37 +1816,84 @@ mainbody mainbody {
   top: 15px;
   position: relative;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper {
   background: #ffffff;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #ae2a30;
   border-radius: 10px;
   align-items: center;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover {
   background: #334768;
   border: 1px solid #334768;
   color: white !important;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::before {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::before {
   color: white !important;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::after {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::after {
   color: white !important;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before {
   background: #741d21;
   color: white !important;
   opacity: 1;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before span {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before span {
   color: white !important;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 32px;
 }
-.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .x-kicon-caption {
+.greyPanel:has(.first-panel) .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
+  display: none;
+}
+
+.first-panel .col {
+  padding: 0;
+}
+.first-panel .gridHeaderButton {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+}
+.first-panel .gridHeaderButton > div {
+  align-self: center;
+  top: 15px;
+  position: relative;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper {
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ae2a30;
+  border-radius: 10px;
+  align-items: center;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover {
+  background: #334768;
+  border: 1px solid #334768;
+  color: white !important;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::before {
+  color: white !important;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::after {
+  color: white !important;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before {
+  background: #741d21;
+  color: white !important;
+  opacity: 1;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before span {
+  color: white !important;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
+  font-size: 32px;
+}
+.first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
   display: none;
 }
 
@@ -3050,7 +3190,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   top: 15px;
   position: relative;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   background: #ffffff;
   width: 50px;
   height: 50px;
@@ -3058,29 +3198,29 @@ div[uxid=tbID], div[uxid=tbPassword] {
   border-radius: 10px;
   align-items: center;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:hover {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:hover {
   background: #334768;
   border: 1px solid #334768;
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::before {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::before {
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::after {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::after {
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before {
   background: #741d21;
   color: white !important;
   opacity: 1;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before span {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before span {
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 32px;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .x-kicon-caption {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
   display: none;
 }
 .greyPanel .gridHeaderButton > div .xstyle-buttoncontrol-wrapper .x-button-wrapper {
@@ -3624,7 +3764,7 @@ header.navbar-fixed-top.header-customer .mobileView .helloText span {
 header.navbar-fixed-top.header-customer .mobileView .LastLoginDetails span {
   font-size: 12px;
 }
-header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4 label, header.navbar-fixed-top.header-customer .details .left span {
+header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper label, header.navbar-fixed-top.header-customer .details .left span {
   font-size: 13px;
   line-height: 30px !important;
 }
@@ -3635,7 +3775,6 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 .gridHeaderButton button, .xstyle-buttoncontrol-wrapper button {
   height: 40px !important;
   font-size: 14px;
-  margin-bottom: 5px;
 }
 
 .k-window:has(.k-edit-form-container) button, .k-window:has(.k-edit-form-container) button.k-button-solid.k-button-solid-primary, .gridHeaderButton button, .xstyle-buttoncontrol-wrapper button {
@@ -3648,11 +3787,11 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   font-size: 14px;
 }
 
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   width: 40px;
   height: 40px;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 25px;
 }
 
@@ -3692,7 +3831,8 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile,
 .xstyle-date-wrapper span.k-datepicker,
 .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox,
-.xstyle-textcontrol-wrapper input {
+.xstyle-textcontrol-wrapper input,
+.xstyle-multiselect-wrapper .k-multiselect {
   height: 40px !important;
   font-size: 13px !important;
 }
@@ -4127,7 +4267,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   margin-bottom: 15px;
 }
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login div[uxid=cPassword1] {
-  margin-bottom: 40px !important;
+  margin-bottom: 0px !important;
 }
 
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody div[uxid=bLogin] .x-button-wrapper .k-button {
@@ -4361,6 +4501,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   text-align: left;
 }
 
+#TafnitCore_SaaSServer_Portal_Agents_UI_ClientSelect .xstyle-buttoncontrol-wrapper.spicelBTN button {
+  min-width: 200px;
+}
 #TafnitCore_SaaSServer_Portal_Agents_UI_ClientSelect .list {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -4465,6 +4608,97 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   height: 100%;
 }
 
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .container.pageContainer.xtafnit_pageContainer#TafnitCore_SaaSServer_Portal_Agents_UI_DefferedPayments, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .container.pageContainer.xtafnit_pageContainer#TafnitCore_SaaSServer_Portal_Agents_UI_Aging, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .container.pageContainer.xtafnit_pageContainer#TafnitCore_SaaSServer_Portal_Agents_UI_CustomerOrders {
+  width: 100%;
+  margin-top: 0 !important;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-page {
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-page > .col {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.1);
+  border-radius: 10px;
+  padding: 30px 30px;
+  margin-bottom: 15px;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data {
+  gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper.xtaf-ObligoLablel-Title, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper.xtaf-ObligoLablel-Title {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 5px 0px;
+  border-radius: 0;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper.xtaf-ObligoLablel-Title label, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper.xtaf-ObligoLablel-Title span, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper.xtaf-ObligoLablel-Title a, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper.xtaf-ObligoLablel-Title label, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper.xtaf-ObligoLablel-Title span, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper.xtaf-ObligoLablel-Title a {
+  color: #000000;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper.xtaf-ObligoLablel-Title .x-control-caption-wrapper, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper.xtaf-ObligoLablel-Title .x-control-caption-wrapper {
+  display: grid;
+  align-items: center;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper label, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper span, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper label, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper span {
+  color: #8E8E8E;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-dynamiclabelcontrol-wrapper a, #TafnitCore_SaaSServer_Portal_Agents_UI_ObligoData .xtaf-Obligo-data .xstyle-ilink-wrapper a {
+  color: #04C;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.xtaf-SalesReport-page {
+  display: grid;
+  grid-template-columns: 45% 1fr 1fr 1fr;
+  gap: 30px;
+}
+.xtaf-SalesReport-page .fixDate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.xtaf-SalesReport-page .xtaf-SalesReport-border {
+  border-right: 1px solid #DEDEDE;
+  padding-right: 50px;
+}
+.xtaf-SalesReport-page h4.x-cell-header {
+  color: #AE2A30;
+  text-align: right;
+  padding: 0;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.xtaf-SalesReport-page .last-col {
+  grid-column: 1/span 4;
+}
+
 body, html {
   font-family: "Heebo";
   background: #F8F8F8 !important;
@@ -4497,6 +4731,10 @@ body, html {
 
 .k-disabled, .k-state-disabled {
   opacity: 1;
+}
+
+.icon-xtar-print:before {
+  color: #ae2a30;
 }
 
 .icon-export-excel:before {
@@ -4551,4 +4789,8 @@ body, html {
   border-top: 1px solid #C7C7C7;
   border-bottom: 1px solid #C7C7C7;
   padding: 25px 0 !important;
+}
+
+#TafnitCore_SaaSServer_Portal_Agents_UI_InventorySearch .greyPanel:has(.first-panel) .first-panel {
+  grid-template-columns: 1fr 1fr 1fr;
 }/*# sourceMappingURL=style.css.map */

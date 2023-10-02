@@ -295,12 +295,12 @@ header.navbar-fixed-top.header-customer .details .left span {
   text-align: right;
   color: #000000;
 }
-header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4,
-header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33 {
+header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper,
+header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .x-control-caption-wrapper {
   flex: 0 0 0.1%;
 }
-header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4 label,
-header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33 label {
+header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper label,
+header.navbar-fixed-top.header-customer .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .x-control-caption-wrapper label {
   margin-left: 5px;
   font-family: "Heebo";
   font-style: normal;
@@ -413,7 +413,7 @@ mainbody > .row.boxShadow-0.border-0 > div {
 .cube.cubeFix .shekel-wrapper > .col {
   padding: 0;
 }
-.cube.cubeFix .shekel-wrapper .x-self-container {
+.cube.cubeFix .shekel-wrapper .x-control-wrapper {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
@@ -1799,38 +1799,39 @@ mainbody mainbody {
   align-self: center;
   top: 15px;
   position: relative;
+  margin-left: 0 !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper {
   background: #ffffff;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #282830;
   border-radius: 10px;
   align-items: center;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover {
   background: #8e8e8e;
   border: 1px solid #8e8e8e;
   color: white !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::before {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::before {
   color: white !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::after {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::after {
   color: white !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before {
   background: #ff0000;
   color: white !important;
   opacity: 1;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before span {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before span {
   color: white !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 32px;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .x-kicon-caption {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
   display: none;
 }
 
@@ -2491,7 +2492,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.1), 0px 2px 4px 0px rgba(255, 0, 0, 0.03), 0px 4px 5px 0px rgba(255, 0, 0, 0.04);
   border: #e7e7e7;
   border-radius: 10px;
-  margin-top: 5px;
 }
 .k-animation-container .k-popup .k-list {
   border-radius: 10px;
@@ -2906,7 +2906,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base:hover {
   background: #8e8e8e;
   color: #ffffff;
-  border: 1px solid #64cb72;
+  border: 1px solid #8e8e8e;
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base:hover span::before {
   color: #ffffff;
@@ -2915,7 +2915,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   background: #ff0000;
   box-shadow: none;
   color: #ffffff;
-  border: 1px solid #64cb72;
+  border: 1px solid #8e8e8e;
   opacity: 1;
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base:focus span {
@@ -3123,41 +3123,42 @@ div[uxid=tbID], div[uxid=tbPassword] {
   align-self: center;
   top: 15px;
   position: relative;
+  margin-left: 0 !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   background: #ffffff;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #282830;
   border-radius: 10px;
   align-items: center;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:hover {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:hover {
   background: #8e8e8e;
   border: 1px solid #8e8e8e;
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::before {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::before {
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::after {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::after {
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before {
   background: #ff0000;
   color: white !important;
   opacity: 1;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper:focus:before span {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper:focus:before span {
   color: white !important;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 32px;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .x-kicon-caption {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
   display: none;
 }
-.greyPanel .gridHeaderButton > div .xstyle-buttoncontrol-wrapper .x-button-wrapper {
+.greyPanel .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper {
   float: left;
 }
 
@@ -3688,7 +3689,7 @@ header.navbar-fixed-top.header-customer .mobileView .helloText span {
 header.navbar-fixed-top.header-customer .mobileView .LastLoginDetails span {
   font-size: 12px;
 }
-header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4 label, header.navbar-fixed-top.header-customer .details .left span {
+header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper label, header.navbar-fixed-top.header-customer .details .left span {
   font-size: 13px;
   line-height: 30px !important;
 }
@@ -3699,7 +3700,6 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 .gridHeaderButton button, .xstyle-buttoncontrol-wrapper button {
   height: 40px !important;
   font-size: 14px;
-  margin-bottom: 5px;
 }
 
 .k-window:has(.k-edit-form-container) button, .k-window:has(.k-edit-form-container) button.k-button-solid.k-button-solid-primary, .gridHeaderButton button, .xstyle-buttoncontrol-wrapper button {
@@ -3712,11 +3712,11 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   font-size: 14px;
 }
 
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   width: 40px;
   height: 40px;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 25px;
 }
 
@@ -4400,7 +4400,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .greyPanel .gridHeaderButton > div .xstyle-buttoncontrol-wrapper .x-button-wrapper {
   float: right;
 }
-#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .greyPanel .header-grid .gridHeaderButton > div .xstyle-buttoncontrol-wrapper .x-button-wrapper {
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .greyPanel .header-grid .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper {
   float: left;
   margin-bottom: 15px;
 }
@@ -4410,7 +4410,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .header-grid {
   display: block;
 }
-#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .greyPanel .x-tab-control .gridHeaderButton > div .xstyle-buttoncontrol-wrapper .x-button-wrapper {
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .greyPanel .x-tab-control .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper {
   float: left;
 }
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .greyPanel .x-tab-control .first-panel .gridHeaderButton {
@@ -4615,4 +4615,15 @@ body, html {
   border-top: 1px solid #C7C7C7;
   border-bottom: 1px solid #C7C7C7;
   padding: 25px 0 !important;
+}
+
+.k-content #uber-container {
+  padding-right: 50px !important;
+}
+
+#TafnitCore_System_UI_App_Tools_BusinessTierTracker .xstyle-gridv4-wrapper .k-pager-sizes.k-label .k-dropdownlist .k-input-inner .k-input-value-text {
+  text-align: right;
+}
+#TafnitCore_System_UI_App_Tools_BusinessTierTracker .xstyle-textareacontrol-wrapper .k-textarea {
+  min-height: 150px;
 }/*# sourceMappingURL=style.css.map */

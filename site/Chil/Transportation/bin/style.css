@@ -182,7 +182,7 @@
 #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage .xstyle-buttoncontrol-wrapper.btn-action .x-button-wrapper {
   text-align: center;
 }
-#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage .xstyle-buttoncontrol-wrapper.btn-action .x-control-content-wrapper.s-control-content-wrapper button.x-button {
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage .xstyle-buttoncontrol-wrapper.btn-action.x-control-wrapper.s-control-wrapper button.x-button {
   height: 80px !important;
   background: #FCFCFC !important;
   box-shadow: 0px 0px 10px rgba(57, 170, 253, 0.2), 0px 8px 10px rgba(0, 65, 102, 0.15);
@@ -195,7 +195,7 @@
   margin-top: 30px;
   width: 90%;
 }
-#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage .xstyle-buttoncontrol-wrapper.btn-action .x-control-content-wrapper.s-control-content-wrapper button.x-button span.k-icon {
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage .xstyle-buttoncontrol-wrapper.btn-action.x-control-wrapper.s-control-wrapper button.x-button span.k-icon {
   font-size: 40px;
 }
 
@@ -1942,7 +1942,7 @@ mainbody > .row.cube-info .col-tow-border {
   margin-bottom: 15px !important;
 }
 
-div[uxid=MainPanel] {
+div[uxid=MainPanelRow] {
   margin-top: 100px;
 }
 
@@ -2031,8 +2031,8 @@ body:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR) {
   height: 100%;
   background: #bababa !important;
 }
-html:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR) div[uxid=MainPanel],
-body:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR) div[uxid=MainPanel] {
+html:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR) div[uxid=MainPanelRow],
+body:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR) div[uxid=MainPanelRow] {
   margin-top: 76px;
 }
 html:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR) #watermark,
@@ -2073,13 +2073,13 @@ body:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR) #watermark {
   padding: 0;
 }
 
-div[uxid=MainPanel]:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage) {
+div[uxid=MainPanelRow]:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage) {
   margin-top: 70px;
 }
 
 .card-btn {
   position: absolute;
-  top: 60%;
+  top: 50%;
 }
 
 .pageContainer {

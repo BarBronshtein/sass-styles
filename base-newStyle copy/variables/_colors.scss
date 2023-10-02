@@ -1,3 +1,131 @@
+
+
+
+$grid-header-text-color:#868387 !default;
+$grid-header-filter-color:#02b5fd!default;
+$grid-header-background:transparent!default;
+$grid-header-serach-float:right !default;
+$grid-header-serach-border:1px solid #ccc !default;
+$grid-header-serach-border-radius:1px solid #ccc !default;
+$grid-header-title-background: none !default;
+$grid-header-toolbar-border-color:#fff !default;
+$grid-header-filter-active-background:#ccc !default;
+$grid-header-filter-active-color:#fff !default;
+$grid-content-height: 45vh !default;
+$grid-content-line-background-hover:#efe7f4 !default;
+$grid-content-line-background-hover-amount:0 !default;
+$grid-content-line-color-hover:#000 !default;
+$grid-content-line-background-selected:none !default;
+$grid-content-line-color-selected:#000 !default;
+$grid-content-border:none !default;
+$grid-content-border-left:none !default;
+$grid-content-odd-background:none!default;
+$grid-content-odd-background-mobile:#fdf9ff !default;
+$grid-pager-background:none!default;
+$grid-pager-border:none!default;
+$grid-pager-nav-background: linear-gradient(to top, #5e1780 -46%, #7f2ba7 163%, #9e30bf 163%) !default;
+$grid-pager-nav-border:#9e30bf !default;
+$grid-pager-nav-background-hover:#9e30bf !default;
+$grid-pager-nav-color-hover:#ebebeb !default;
+$grid-scoller-radius:10px !default;
+$grid-scoller-background:#7d0a8c !default;
+$grid-scoller-width:10px !default;
+$grid-scoller-height:10px !default;
+$grid-scoller-webkit-background:#7d0a8c !default;
+$grid-edited-numeric-border-color:#000 !default;
+$grid-edited-numeric-arrow-background-color:#9e30bf !default;
+$grid-edited-numeric-arrow-color:#fff !default;
+$grid-footer-background-color:#fff !default;
+$grid-footer-border-color:#eee !default;
+$grid-content-padding:10px 0px !default;
+$grid-pager-nav-color:#9e30bf !default;
+$scroll-bg: #366934 ;
+$scroll-bg-hover: #267931 ;
+$grid-title-heder-h4-color: #5E955C ;
+$link-color:#78AAB4 ;
+$special-button-bg-focus: #9FA717 ;
+$special-button-bg: #B1BA1D ;
+$speical-button-press: #9FA717 ;
+$speical-button-color-border-focus: #9FA717 ;
+$special-button-color-border: #B1BA1D ;
+$special-button-color-icon: #ffffff ;
+$special-button-color-text-hover: #ffffff ;
+$special-button-bg-hover: #9FA717 ;
+$special-button-color-text: #ffffff ;
+$special-button-color-text-focus: #ffffff ;
+$speical-button-color-border-hover: #64cb72 ;
+$button-box-shadow-focus: 0px 1px 3px 0px rgba(57, 181, 74, 0.30), 0px 4px 8px 0px rgba(57, 181, 74, 0.10 ) ;
+$button-color-text: #ffffff ;
+$button-color-icon: #ffffff ;
+$button-color-icon-hover: #ffffff ;
+$button-color-text-hover: #ffffff ;
+$button-color-text-focus: #ffffff ;
+$button-bg: #366934 ;
+$button-bg-hover: #82BD80 ;
+$button-color-bg-focus: #366934 ;
+$button-disable-border: #e7e7e7 ;
+$button-disable-text: #c7c7c7 ;
+$button-disable-bg: #f8f8f8 ;
+$button-color-border: #366934 ;
+$button-bg-press: #267931 ;
+$button-border-color-focus:#366934 ;
+$grid-button-color: #366934 ;
+$grid-checkbox-border: #000000 ;
+$grid-checkbox-checked-border: #366934 ;
+$grid-checkbox-checked-color: #366934 ;
+$grid-color-icon: #366934 ;
+$grid-header-text-color: #267931 ;
+$grid-header-filter-color: #366934 ;
+$grid-header-serach-border: #c7c7c7 ;
+$grid-header-serach-border-radius: #c7c7c7 ;
+$grid-header-border: #C7C7C7 ;
+$grid-pagenumber-color-selected: #366934 ;
+$grid-pager-nav-color: #366934 ;
+$grid-text: #000000 ;
+$grid-border-bottom: #e7e7e7 ;
+$grid-tr-bg-hover: #F8F8F8 ;
+$grid-page-number-color: #39B54A ;
+
+
+
+
+
+
+// special button //
+
+%special-button{
+    height: 40px !important ;
+    background: $special-button-bg ;
+    border-radius: 00px ;
+    font-family: "Heebo" ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $special-button-color-text ;
+    width: auto !important ;
+    min-width: 200px ;
+    border: 1px solid $special-button-color-border ;
+}
+
+// button//
+
+%button{
+    background: $button-bg ;
+    border: none ;
+    border-radius: 0px ;
+    align-items: center ;
+    height: 40px !important ;
+    color: $button-color-text ;
+    font-family: 'Heebo' !important ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 24px ;
+    min-width: 200px ;
+}
+
 //Company//
 
 

@@ -143,7 +143,7 @@
               line-height: 130%;
               text-align: right;
               color: $grid-header-text-color;
-                padding-right: 10px !important;
+                padding-right: 0px !important;
             }
 
             background: none;
@@ -213,7 +213,7 @@
             border-left: $grid-content-border-left;
             font-size: 14px;
             padding: $grid-content-padding;
-
+            padding: 0;
             .col-template-val {
                 margin: 0;
             }
@@ -1084,7 +1084,7 @@
   
 
      .k-rtl .k-grid-header .k-filterable .k-link{
-      padding: 0;
+
       padding-left: 10px !important;
      }
 

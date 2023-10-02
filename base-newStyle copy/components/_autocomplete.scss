@@ -53,6 +53,7 @@
     font-size: 1.2em;
     border-width: 0 0 1px 0;
     text-transform: uppercase;
+    display: flex;
 
     >.x-autocomplete-template-caption {
         overflow: hidden;
@@ -60,7 +61,8 @@
         font-size: small;
         display: inline-block;
         padding: 10px 0;
-
+        flex-grow: 1;
+        flex-basis: 0;
         &:first-child {
             padding-right: 5px;
         }

@@ -1,0 +1,56 @@
+ 
+    .xstyle-multiselect-wrapper   {
+
+      margin-top: 15px;
+        .k-input:focus-within, .k-widget.k-input:focus-within{
+            box-shadow: none
+        }
+    // disable // 
+    
+        &.k-state-disabled{
+    
+            & input{
+    
+                @extend %texbox-input;
+               
+            }
+    
+            & label{
+                color: $control-caption-color-text-disable !important; 
+              }
+        }
+    
+        .k-multiselect {
+          
+            &:focus{
+                box-shadow: none;
+                border: none        
+            } 
+        }
+        & .k-multiselect {
+          @extend %texbox-input;
+          padding-right: 10px !important;
+          padding: 0;
+    
+            &:focus-within{
+                box-shadow:$control-box-shadow-focus !important;
+                border: 1px solid $control-border-focus !important;
+            }
+    
+            &::placeholder{
+    
+                color: $control-color-placeholder !important;
+    
+            }
+    
+            input{
+                border: none;
+                font-size: 16px;
+            }
+        }
+    
+        & label{
+            @extend %texbox-label;
+    
+        }
+    }

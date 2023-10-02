@@ -3,7 +3,10 @@
 
 
 #TafnitCore_System_UI_App_ErrorPage{
-
+    .x-control-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+      }
    
     width: 40%;
     position: absolute;

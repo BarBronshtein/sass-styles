@@ -33,7 +33,10 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
 }
 
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page{
-
+    .x-control-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+      }
     margin-bottom: o !important;
     height: 100%;
     min-height: 100%;
