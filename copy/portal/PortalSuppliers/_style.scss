@@ -92,3 +92,34 @@ body,html{
 }
 
 
+.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2,.icon-tracker{
+
+    &:before{
+        color:$drawer-icon-color-after;
+    }
+
+    &:after{
+        color:$drawer-icon-color-before;
+    }
+
+}
+
+.icon-car:after,.icon-customers::after {
+    color: $drawer-icon-color-after;
+}
+
+.icon-car:before,.icon-customers::before{
+    color:$drawer-icon-color-before;
+}
+
+
+.icon-home-2,.icon-log-out{
+    &:after{
+        color:$drawer-icon-color-after;
+    }
+
+    &::before{
+        color:$drawer-icon-color-before;
+    }
+}
+

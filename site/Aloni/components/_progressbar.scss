@@ -3,12 +3,12 @@
 .xstyle-progressbar-wrapper{
    
     .x-progressbar{
-        background: #FAF6F0;
+        background: $progressbar-bg;
         border:none;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         .k-selected{
-            background: #AE8B49;
+            background:$progressbar-bg-selected ;
             right: 0 !important;
             border: none;
             border-radius: 0 !important;
@@ -22,7 +22,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 130%;
-            color: #FFFFFF;
+            color: $progressbar-color-text;
             z-index: 5;
     position: absolute;
     top: 5px;

@@ -11,30 +11,3 @@ $color-title:#334768;
 $color-text:#000000;
 
 
-.bg-blue{
-    background: $bg-header;
-}
-
-.card-body{
-    box-shadow: $box-shadow-main-cybe;
-
-    .note{
-        background: $bg-small-cube;
-    }
-
-    .text-title{
-        color: $color-text-main-cube;
-    }
-}
-
-.icon-bell-light{
-    color: $color-icon-bell;
-}
-
-.text-title{
-    color: $color-text-main-cube !important;
-}
-
-.text{
-    color: $color-text;
-}

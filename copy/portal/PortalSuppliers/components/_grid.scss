@@ -113,7 +113,7 @@
             &:hover,
             &:hover td {
                 background-image: none !important;
-                background-color: transparent !important;
+                background: none !important;
             }
         }
         
@@ -178,16 +178,16 @@
             &:hover,
             &:hover td {
                 background-image: none;
-                background-color: lighten($grid-content-line-background-hover, $grid-content-line-background-hover-amount) !important;
+                background-color: $grid-tr-bg-hover!important;
                 color: $grid-content-line-color-hover !important;
             }
 
             &.k-selected {
-                background: $grid-content-line-background-selected !important;
+                background: $grid-tr-bg-hover!important;
                 color: $grid-content-line-color-selected !important;
 
                 td {
-                    background: $grid-content-line-background-selected !important;
+                    background: $grid-tr-bg-hover !important;
                     color: $grid-content-line-color-selected !important;
                 }
             }
@@ -233,7 +233,7 @@
             &:hover {
                 background-image: none !important;
                 background-color: $grid-pager-nav-background-hover !important;
-                color: $grid-pager-nav-color-hover !important;
+                color: $grid-page-number-color !important;
             }
         }
 
@@ -649,7 +649,7 @@
       font-size: 13px !important;
       line-height: 26px;
       text-align: center;
-      color: #DDC3E7 !important;
+      color:  $grid-page-number-color  !important;
   
        & >li>.k-selected{
         background: none !important;
@@ -714,7 +714,7 @@
      
     &:hover{
       width: 1650px !important;
-      background: #FAF6FC !important;
+      background: $grid-tr-bg-hover !important;
        }
     }
   
@@ -1017,10 +1017,10 @@
   & >span>span{
   font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
   font-style: normal !important;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 13px !important;
   line-height: 30px;
-  color: map-get($map: $Colors, $key: main-color) !important;
+  color:$grid-pager-nav-color !important;
   left: -5px;
   top: 1px;
   
@@ -1034,7 +1034,7 @@
     & span:before{
       content: "\f078";
       font-family: "Font Awesome 5 Pro";
-      color: #7B098B !important;
+      color: $grid-pager-nav-color !important;
       font-size: 13px;
       /* margin: 0 !important; */
       right: 5px;
@@ -1311,7 +1311,7 @@
 }
 
 .k-pager-numbers-wrap .k-dropdown-list{
-  color: #7B098B ;
+  color: $grid-pager-nav-color ;
  }
 
  .k-grid-footer{
@@ -1320,7 +1320,7 @@
 
   & tr{
     &:hover{
-      background: none !important;
+      background: $grid-tr-bg-hover !important;
       & td{
       background: none !important;
       }

@@ -1,7 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&family=Heebo:wght@300;400;500;700&family=Inter:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+.xstyle-idropdownlist-wrapper label, .xstyle-password-wrapper label, .xstyle-textcontrol-wrapper label {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 21px;
+  text-align: right;
+  color: #4E4E4E;
+  margin: 0;
+  height: 18px;
+}
+
+.xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-password-wrapper input, .xstyle-textcontrol-wrapper input {
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7 !important;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  color: #323C4B;
+  text-align: right;
+}
+
+.xstyle-password-wrapper.special-input input, .xstyle-textcontrol-wrapper.special-input input {
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7 !important;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  color: #4E4E4E;
+  text-align: right;
+}
+
+.xstyle-buttoncontrol-wrapper.btn-special button {
+  height: 50px !important;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #AE8B49;
+  border: 1px solid #AE8B49;
+}
+
+.xstyle-buttoncontrol-wrapper button {
+  background: #AE8B49;
+  border: 1px solid none;
+  border-radius: 8px;
+  align-items: center;
+  height: 50px !important;
+  color: #FFFFFF;
+  font-family: "Heebo" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 #TafnitCore_Sales_V2_UI_Login {
   margin: 0;
   padding: 0;
+}
+#TafnitCore_Sales_V2_UI_Login .xstyle-checkbox-wrapper {
+  margin-top: 20px;
 }
 #TafnitCore_Sales_V2_UI_Login mainbody {
   margin-top: 0 !important;
@@ -23,7 +94,7 @@
 }
 #TafnitCore_Sales_V2_UI_Login .xstyle-buttoncontrol-wrapper button {
   width: 100% !important;
-  margin-top: 35px;
+  margin-top: 10px;
   margin-bottom: 35px;
 }
 #TafnitCore_Sales_V2_UI_Login .x-footer {
@@ -112,7 +183,7 @@
 }
 #TafnitCore_Sales_V2_UI_ItemConfiguration .col-detailView .row-flex-2 .col-flex:has(.k-icon) .xstyle-buttoncontrol-wrapper button {
   padding: 0 10px;
-  width: auto !important;
+  width: 50px !important;
 }
 #TafnitCore_Sales_V2_UI_ItemConfiguration .col-detailView .row-flex-2 .col-flex .xstyle-buttoncontrol-wrapper .btn-special button {
   width: 100% !important;
@@ -170,74 +241,8 @@
   margin-top: 40px;
   padding: 0 40px;
 }
-
-/*controls*/
-.xstyle-idropdownlist-wrapper label, .xstyle-password-wrapper label, .xstyle-textcontrol-wrapper label {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px !important;
-  line-height: 21px;
-  text-align: right;
-  color: #4E4E4E;
-  margin: 0;
-  height: 18px;
-}
-
-.xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-password-wrapper input, .xstyle-textcontrol-wrapper input {
-  height: 50px;
-  background: #FFFFFF;
-  border: 1px solid #C7C7C7 !important;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px !important;
-  color: #323C4B;
-  text-align: right;
-}
-
-.xstyle-password-wrapper.spicel-input input, .xstyle-textcontrol-wrapper.spicel-input input {
-  height: 50px;
-  background: #FFFFFF;
-  border: 1px solid #C7C7C7 !important;
-  border-radius: 8px;
-  padding: 15px 30px;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px !important;
-  color: #4E4E4E;
-  text-align: right;
-}
-
-.xstyle-buttoncontrol-wrapper.btn-special button {
-  height: 50px !important;
-  background: #FFFFFF;
-  border-radius: 8px;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: right;
-  color: #AE8B49;
-  border: 1px solid #AE8B49;
-}
-
-.k-window:has(#MessageBoxWindow) button, .xstyle-buttoncontrol-wrapper button {
-  background: #AE8B49;
-  border: 1px solid none;
-  border-radius: 8px;
-  align-items: center;
-  height: 50px !important;
-  color: #FFFFFF;
-  font-family: "Heebo" !important;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+#TafnitCore_Sales_V2_UI_Product .row-cards:has(.templatex-wrapper) {
+  display: block;
 }
 
 .xstyle-textcontrol-wrapper {
@@ -430,7 +435,7 @@
   flex-wrap: wrap;
   gap: 15px;
 }
-.x-row.row-flex-2 > .col-flex > .x-self-container {
+.x-row.row-flex-2 > .col-flex > .x-control-wrapper {
   flex-grow: 1;
   flex-basis: 0;
 }
@@ -513,6 +518,16 @@
   gap: 15px;
 }
 
+.xtaf-linke-header {
+  display: flex;
+  justify-content: end;
+}
+.xtaf-linke-header .k-icon {
+  color: #625337;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
 .xstyle-password-wrapper {
   margin-top: 15px;
 }
@@ -560,6 +575,7 @@
 }
 .xstyle-buttoncontrol-wrapper.btn-special button .k-icon {
   font-size: 30px;
+  margin: auto !important;
 }
 .xstyle-buttoncontrol-wrapper button {
   margin-bottom: 15px;
@@ -665,7 +681,7 @@
 }
 .tabs-filter .tabs .activeTab {
   padding-bottom: 0px;
-  border-bottom: 1px solid #625337;
+  border-bottom: 1px solid #927338;
   border-radius: 0;
 }
 .tabs-filter .tabs .activeTab span {
@@ -677,7 +693,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
-  color: #625337;
+  color: #927338;
 }
 .tabs-filter .filter {
   display: grid;
@@ -693,9 +709,8 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: flex-start;
-  gap: 15px;
+  gap: 5px;
   margin-top: 40px;
-  margin-bottom: 40px;
   padding: 0 40px;
   align-items: center;
 }
@@ -703,7 +718,7 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-content: flex-start;
-  gap: 15px;
+  gap: 5px;
   margin-bottom: 40px;
   align-items: center;
 }
@@ -721,7 +736,7 @@
 .project-tabs .name-tabs {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 15px;
+  gap: 5px;
 }
 .project-tabs .name-tabs .activeTab span {
   font-weight: 700;
@@ -754,24 +769,22 @@
   height: auto !important;
 }
 .xstyle-xmenu-wrapper .k-animation-container .k-menu-group {
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 0px 6px 0px rgba(174, 139, 73, 0.1), 0px 8px 5px 0px rgba(174, 139, 73, 0.1) !important;
   border: none;
-  box-shadow: none !important;
-  border-radius: 30px;
+  border-radius: 8px;
   background: white;
-  padding: 0px 0;
-  width: 100%;
+  padding: 0px 0px;
 }
 .xstyle-xmenu-wrapper .k-animation-container .k-menu-group .xstyle-dynamiclabelcontrol-wrapper {
-  padding: 15px 0;
+  padding: 15px 25px;
   border-bottom: 1px solid #E7E7E7;
+  border-radius: 0px;
 }
 .xstyle-xmenu-wrapper .k-animation-container .k-menu-group .xstyle-dynamiclabelcontrol-wrapper span {
-  padding-right: 15px;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 130%;
   color: #000000;
 }
@@ -1014,7 +1027,7 @@
 }
 
 .x-gridchkbxcontrolgrdOptions382975.k-checkbox {
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 .x-gridchkbxcontrolgrdOptions382975.k-checkbox:checked {
   border: 1px solid #AE8B49;
@@ -1049,17 +1062,17 @@
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item span {
   font-family: "Heebo";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 130%;
-  color: #625337;
+  color: #927338;
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item.k-active {
-  border-bottom: 1px solid #625337;
+  border-bottom: 1px solid #927338;
   background: none;
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item.k-active span {
-  font-weight: 500;
+  font-weight: 700;
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-content {
   background: none;
@@ -1116,7 +1129,7 @@
 .k-window {
   border-radius: 10px;
   background: var(--white-card-background, #FFF);
-  box-shadow: 0px 0px 6px 0px rgba(166, 166, 166, 0.1), 0px 8px 5px 0px rgba(166, 166, 166, 0.1);
+  box-shadow: 0px 0px 6px 0px rgba(166, 166, 166, 0.1), 0px 8px 5px 0px rgba(166, 166, 166, 0.1) !important;
   width: 80% !important;
   left: 0 !important;
   right: 0 !important;
@@ -1124,7 +1137,7 @@
   top: 50% !important;
   transform: translateY(-50%) !important;
   border: none;
-  padding: 40px;
+  padding: 20px;
   height: -moz-fit-content !important;
   height: fit-content !important;
   max-height: 90%;
@@ -1162,6 +1175,7 @@
   box-shadow: none;
   background: no-repeat;
   border: none;
+  overflow: hidden;
 }
 .popUpWindowCls #TafnitCore_Sales_V2_UI_ScrollView .xTAF-scrollview .carousel-indicators li {
   width: 10px;
@@ -1188,23 +1202,119 @@
   display: none;
 }
 
-.xstyle-idropdownlist-wrapper {
-  margin-top: 15px;
+.k-window:has(#MessageBoxWindow) {
+  background: #ffffff;
+  box-shadow: 0px 5px 8px 0px rgba(174, 139, 73, 0.1);
+  border-radius: 10px;
+  border: none;
+  max-height: 95%;
 }
-.xstyle-idropdownlist-wrapper:has(.x-login-user-error-msg) span.x-dropdown-comp.s-dropdown-comp {
-  border-bottom: 1px solid #E91E63 !important;
+.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
+  background: none !important;
+  border: none;
 }
-.xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp {
-  background: #F7F7F7 !important;
+.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack .k-button {
+  margin-left: 0px;
 }
-.xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp span.k-icon::before, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp span.k-icon::before {
-  color: #C7C7C7 !important;
+.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack .k-i-close::before {
+  content: "\e904";
+  font-family: "icomoon";
+  font-size: 14px;
+  color: #a6a6a6;
 }
-.xstyle-idropdownlist-wrapper.k-state-disabled label, .xstyle-idropdownlist-wrapper.x-readonly label {
-  color: #C7C7C7 !important;
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection {
+  display: block;
 }
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div {
+  margin: auto;
+  text-align: center;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div i::before {
+  content: "\e9cb";
+  font-family: "icomoon";
+  color: #AE8B49;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div span {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 100%;
+  color: #000000;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow .x-icons {
+  border-radius: 0;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1:focus, .k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1:focus-within, .k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1:active {
+  border: 1px solid #FFFFFF;
+  padding: 2px;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow button {
+  min-width: 200px !important;
+  height: 50px;
+  background: #AE8B49;
+  border-radius: 8px;
+  border: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: white;
+  margin: auto;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow button:focus, .k-window:has(#MessageBoxWindow) #MessageBoxWindow button:active, .k-window:has(#MessageBoxWindow) #MessageBoxWindow button:focus-within {
+  background: #AE8B49;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow button:hover {
+  background: #927338;
+}
+
+.k-checkbox {
+  border-color: #000000;
+  border-radius: 1px !important;
+}
+.k-checkbox:checked {
+  border-color: #AE8B49;
+}
+.k-checkbox:checked:before {
+  color: #AE8B49;
+}
+.k-checkbox:focus {
+  box-shadow: none;
+}
+
+.xstyle-checkbox-wrapper .x-checkbox {
+  border-color: #000000;
+  border-radius: 2px !important;
+}
+.xstyle-checkbox-wrapper .x-checkbox:checked {
+  border-color: #AE8B49;
+}
+.xstyle-checkbox-wrapper .x-checkbox:checked:before {
+  color: #AE8B49;
+}
+.xstyle-checkbox-wrapper .x-checkbox:focus {
+  box-shadow: none;
+}
+.xstyle-checkbox-wrapper label {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: right;
+  color: #000000;
+}
+
 .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus-within {
-  border: 1px solid #AE8B49 !important;
+  border: 1px solid 1px solid #AE8B49;
   box-shadow: none;
 }
 .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp .k-input-inner {
@@ -1224,69 +1334,47 @@
   font-weight: 700;
 }
 
-.k-list-scroller {
-  scrollbar-face-color: #AE8B49;
-  scrollbar-track-color: #f3e9f8;
-  scrollbar-arrow-color: #AE8B49;
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-.k-list-scroller::-webkit-scrollbar {
-  width: 10px !important;
-  border-radius: 10px;
-  position: absolute;
-}
-.k-list-scroller::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: #f0f0f0;
-}
-.k-list-scroller::-webkit-scrollbar-thumb {
-  background: #AE8B49;
-  border-radius: 10px;
-}
-.k-list-scroller::-webkit-scrollbar-thumb:hover {
-  background: #AE8B49;
+.k-rtl .k-window-titlebar .k-window-actions {
+  right: auto;
+  left: -15px;
+  position: relative;
 }
 
-.k-animation-container .k-list-optionlabel {
-  display: none !important;
-}
 .k-animation-container .k-popup {
-  box-shadow: none !important;
-  border: 1px solid #7E7B7B;
+  box-shadow: 0px 0px 5px 5px rgba(184, 169, 111, 0.2), 0px 2px 4px 0px rgba(184, 169, 111, 0.03), 0px 4px 5px 0px rgba(184, 169, 111, 0.04);
+  border: #e7e7e7;
   border-radius: 10px;
   margin-top: 5px;
 }
 .k-animation-container .k-popup .k-list {
-  border-radius: 0px;
+  border-radius: 10px;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller {
-  border-radius: 0px;
-  background: none !important;
-  padding: 12px 20px;
+  border-radius: 10px;
+  background: none;
+  padding: 0;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller ul {
-  background: white !important;
+  background: #ffffff;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li {
-  height: 41px;
+  height: 40px;
+  padding: 0;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus {
-  background: #FAF6F0 !important;
+  background: #b8a96f;
   border: none;
   box-shadow: none;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus .k-list-item-text {
-  color: #967A45 !important;
+  color: #ffffff;
   font-weight: 700;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li:hover {
-  background: #FAF6F0;
+  background: #f5f5f5;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li:hover .k-list-item-text {
-  color: #967A45 !important;
+  color: #000000;
   font-weight: 700;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller li span {
@@ -1296,63 +1384,7 @@
   font-size: 14px;
   line-height: 21px;
   align-items: center;
-  text-align: right;
-  color: #000;
-}
-
-.k-window:has(#MessageBoxWindow) #divCobuttonbtn1 {
-  overflow: hidden;
-}
-.k-window:has(#MessageBoxWindow) button {
-  margin-bottom: 15px;
-  padding: 0 30px;
-  min-width: 200px;
-  width: auto !important;
-  border: none;
-  margin: auto;
-}
-.k-window:has(#MessageBoxWindow) button:hover {
-  background: #927338;
-  color: #FFFFFF;
-  border: 1px solid none;
-}
-.k-window:has(#MessageBoxWindow) button:focus {
-  border: 1px solid #FFFFFF;
-  filter: drop-shadow(0px 0px 6px #AE8B49);
-  opacity: 1;
-}
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection {
-  display: block;
   text-align: center;
-}
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection > div {
-  max-width: 100%;
-}
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection #controlMessageText {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 120%;
-  color: #000000;
-}
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection i {
-  border-radius: 0 !important;
-}
-.k-window:has(#MessageBoxWindow) #ctrlSectionMainSection .x-fa-warning:before {
-  content: "\e9cb";
-  color: #db0000;
-  font-family: "icomoon";
-  font-size: 60px;
-}
-.k-window:has(#MessageBoxWindow) .row {
-  margin: auto;
-}
-
-.k-i-close::before {
-  content: "\e904";
-  font-family: "icomoon";
-  font-size: 16px;
   color: #000000;
 }
 
@@ -1393,4 +1425,11 @@ body, html {
 
 .icon-xtar-double-arrow-left::before {
   font-size: 10px;
+}
+
+.k-i-close:before {
+  content: "\e904";
+  font-family: "icomoon";
+  font-size: 14px;
+  color: #a6a6a6;
 }/*# sourceMappingURL=style.css.map */

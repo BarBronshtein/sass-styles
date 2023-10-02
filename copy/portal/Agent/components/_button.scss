@@ -1,0 +1,165 @@
+
+
+
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleFleet,#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory{
+.header-grid{
+  .gridHeaderButton{
+
+    margin-top: 40px;
+
+  }
+}
+}
+
+
+.header-grid{
+  .gridHeaderButton{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+    padding: 0px;
+  
+
+  }
+}
+
+// button bordr //
+.gridHeaderButton{
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 15px;
+    & .spicellBTN{
+
+    
+        & button{
+        @extend %special-button;
+        }
+    }
+
+    & button{
+       
+        @extend %button;
+
+      &:hover{
+        background: $button-bg-hover;
+        color: $button-color-text-hover;
+        border:1px solid $button-color-border;
+
+        & span:before,& span:after{
+          color: $button-color-icon !important;
+        }
+      }
+
+      &:focus{
+        background: $button-color-bg-focus;
+        box-shadow:$button-box-shadow-focus;
+
+        opacity: 1;
+      }
+      & span{
+        color: $button-color-icon !important;
+        font-size: 30px;
+        right: 0px;
+
+
+    }
+
+   
+    
+    }
+
+
+
+// button icon + text //
+    & .icon-btn-text{
+        & button{
+            width: 110px;
+
+            span:before{
+                right: -15px;
+            }
+        }
+    }
+// button icon //
+    & .icon-btn{
+       
+        & button{
+            width: 50px !important;
+            min-width: auto;
+
+        }
+    }
+  }
+
+  .xstyle-buttoncontrol-wrapper{
+
+    &.k-state-disabled{
+      & button{
+        background: $button-disable-bg;
+        color:  $button-disable-text;
+        border: 1px solid $button-disable-border; 
+      }
+
+      
+    &.spicelBTN{
+
+      & button{
+        border: 1px solid $button-disable-border;
+        color:  $button-disable-text; 
+    }
+  }
+}
+
+    &.spicelBTN{
+
+      & button{
+      @extend %special-button;
+
+
+      &:hover{
+        background: $special-button-bg-hover;
+        color: $special-button-color-text-hover !important;
+        border:1px solid $special-button-color-border !important;
+        span::before{
+          color: $special-button-color-text-hover !important;
+        }
+      }
+
+      &:focus{
+        background: $special-button-bg-focus !important;
+        box-shadow: $button-box-shadow-focus !important;
+        color: $special-button-color-text-focus!important;
+        border:1px solid $special-button-color-border-focus;
+        opacity: 1;
+        span:before,span::after{
+          color: $special-button-color-text-focus !important;
+        }
+      }
+      }
+     }
+    & button{
+        @extend %button;
+        max-width: 200px;
+      &:hover{
+        background: $button-bg-hover;
+        color: $button-color-text-hover !important;
+        border:1px solid $button-bg-hover;
+        span::before{
+          color: $button-color-text-hover !important;
+        }
+      }
+
+      &:focus{
+        background: $button-color-bg-focus;
+        color: $button-color-text-focus !important;
+        box-shadow: $button-box-shadow-focus;
+        opacity: 1;
+        span:before{
+          color:  $button-color-text-focus !important;
+        }
+      }
+        }
+
+  }

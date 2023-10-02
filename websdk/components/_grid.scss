@@ -39,7 +39,11 @@
     .k-grid-header {
         background: none;
         border: none;
-        padding: $grid-content-padding;
+        padding: $grid-content-padding !important;
+
+        .k-grid-header-wrap{
+          border: none;
+        }
 
         .k-grid-filter {
             &.k-state-active {
@@ -67,7 +71,6 @@
                 color:#7B098B;
                 font-weight: 500;
                 font-size: 13px;
-                padding-right: 0 !important;
                 border-bottom: 2px solid #D9D9D9 !important;
             }
 
@@ -393,7 +396,7 @@
      
   }
   
-   .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable{
+   .x-control-content-wrapper > .k-toolbar.k-toolbar-resizable{
   
     & >:nth-child(2){
      
@@ -761,7 +764,6 @@ border-radius: 10px;
           font-weight: 400;
           font-size: 13px;
           line-height: 130%;
-          text-align: right !important;
           color: map-get($map: $Colors, $key: text-defualt ) ;
           border: none;
           border-bottom: 1px solid #F5F5F5;
@@ -835,11 +837,7 @@ border-radius: 10px;
       }
     }
   
-    & >table>thead>tr>th>span>a{
-      width: 34px;
-      margin-right:  -10px !important;
-     
-    }
+
     & >table>thead>tr>th>span>span{
     
       font-family: map-get($map: $typographyVariables, $key: -font-family);
@@ -1016,18 +1014,8 @@ border-radius: 10px;
   }
 
 
-  .k-grid-filter-menu.k-grid-filter{
-    position: relative !important;
-    align-items: normal !important;
-  }
-
   
-  .k-grid .k-cell-inner > .k-link{
 
-     
-    flex: none !important;
-   
-     }
 
      .k-rtl .k-grid-header .k-filterable .k-link{
       padding-left: 10px !important;
@@ -1150,7 +1138,6 @@ border-radius: 10px;
      .k-i-filter{
       width: 50px;
       height: 38px;
-      margin-top: -3px !important;
      }
 
 
@@ -1165,16 +1152,12 @@ border-radius: 10px;
       line-height: 1;
       font-size: 23px !important;
       color: #7E7B7B !important;
-      text-indent: 0 !important
+      text-indent: 0 !important;
+      top: -10px;
+      left: 10px;
      }
 
-     .k-grid-filter-menu.k-grid-filter{
-
-      width: 32px;
-
-
-
-     }
+ 
 
    
 
@@ -1213,7 +1196,7 @@ border-radius: 10px;
   border-radius: 10px;
   padding: 16px;
   padding-top: 0px;
-& .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group{
+& .x-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group{
   box-shadow: none !important;
   border-radius: 0 !important;
 }
@@ -1314,11 +1297,11 @@ border-radius: 10px;
   border-radius: 10px;
 
   .popUpWindowCls{
-    .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable{
+    .x-control-content-wrapper> .k-toolbar.k-toolbar-resizable{
       background: none !important;
     }
   }
-  .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable{
+  .x-control-content-wrapper> .k-toolbar.k-toolbar-resizable{
     padding: 10px 20px;
     height: 60px;
     background:  #f9f9f9;

@@ -1,34 +1,34 @@
-$Title-background: #10A831;
-$Title-text: White;
-$Title-secondary: #10A831;
-$Title-secondary-bottom-border: #BDF2C9;
+$title-background: #10A831;
+$title-text: White;
+$title-secondary: #10A831;
+$title-secondary-bottom-border: #BDF2C9;
 $icon-color : #4C7D32;
-$Required: #4C7D32;
+$required: #4C7D32;
 $Focus-border:  #88DB9A;
-$High-light-caption : #88DB9A;
-$Radio-button-on-background:  #10A831;
-$Radio-button-on-drop-shadow: 0px 0px 4px #4C7D32;;
-$Radio-button-on-border: #ffffff;
-$Upload-text: #10A831;
-$Upload-icon: #10A831;
-$Check-box-on-background: #10A831;
-$Check-box-on-drop-shadow: none;
-$Label-star-off-border: #FCDAC1;
-$Label-star-on-background: #FF7D19;
-$Link-text: #10A831;
-$Approve-icon-on: #4C7D32;
-$Button-background: #10A831;
-$Button-press-background: #3F934D;
-$Card-upload-file-icon-file: #10A831;
-$Card-upload-file-name-file: #495057;
-$Card-upload-file-ok-text: #10A831;
-$Card-upload-file-error-text: #DB0000;
-$Card-upload-file_error-icon-file: #DB0000;
+$high-light-caption : #88DB9A;
+$radio-button-on-background:  #10A831;
+$radio-button-on-drop-shadow: 0px 0px 4px #4C7D32;;
+$radio-button-on-border: #ffffff;
+$upload-text: #10A831;
+$upload-icon: #10A831;
+$check-box-on-background: #10A831;
+$check-box-on-drop-shadow: none;
+$label-star-off-border: #FCDAC1;
+$label-star-on-background: #FF7D19;
+$link-text: #10A831;
+$approve-icon-on: #4C7D32;
+$button-background: #10A831;
+$button-press-background: #3F934D;
+$card-upload-file-icon-file: #10A831;
+$card-upload-file-name-file: #495057;
+$card-upload-file-ok-text: #10A831;
+$card-upload-file-error-text: #DB0000;
+$card-upload-file_error-icon-file: #DB0000;
 $Box-shadow-footer: 0px -4px 8px rgba(76, 125, 50, 0.2);
 $Box-shadow-button:inset 4px 4px 10px rgba(90, 31, 105, 0.3);
 $Box-shadow-messagebox:0px -4px 8px rgba(76, 125, 50, 0.2);
-$Messagebox-icon-color:#4C7D32;
-$Messagebox-border-color:#4C7D32;
+$messagebox-icon-color:#4C7D32;
+$messagebox-border-color:#4C7D32;
 $signature-icon-before:#4C7D32;
 $signature-icon-after:#4C7D32;
 
@@ -37,291 +37,3 @@ $signature-icon-after:#4C7D32;
 
 
 
-#TafnitCore_SaaSServer_Survey_UI_Survey {
-
-   & div[uxid=SurveyLogo] img{
-    width: 270px !important; 
-    top: 50% !important;
-    transform: translateY(10px) !important;
-   } 
-    
-    & .surveyTitle{
-
-        background: $Title-background !important;
-    }
-
-& .xstyle-signature-wrapper .GraphicalSignaturePlaceHolders a:before{
-
-    color: $signature-icon-before !important;
-}
-
-& .xstyle-popupsignature-wrapper .GraphicalSignaturePlaceHolders::after{
-   color: $signature-icon-after !important;
-}
-
-
-// footer // 
-
-& .s-footer.x-footer{
-    box-shadow: 0px -4px 8px $Box-shadow-footer !important;
-}
-
-& .x-footer div[uxid=cSubmit] button.x-button.s-button.k-button,
-& .xstyle-buttoncontrol-wrapper button.x-button.k-button.s-button{
-
-    background: $Button-background !important;
-
-    &:focus-within,
-    &:focus{
-            background: $Button-press-background !important;  
-            box-shadow:  0px -4px 8px $Box-shadow-button !important;
-    }
-}
-
-}
-
-// message box //
-
-.k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) {
-
-& .k-widget.k-window.k-rtl:has(#MessageBoxWindow) {
-    border: 1px solid $Messagebox-border-color  !important;
-    box-shadow: 0px -4px 8px $Box-shadow-messagebox !important;
-
-    & .x-icons.x-fa-warning{
-
-        &::before{
-        color: $Messagebox-icon-color !important;
-        }
-    }
-     
-& #MessageBoxWindow{
-   
-
-
-& button.k-button{
-
-    background: $Button-background!important;
-    box-shadow: 0px -4px 8px $Box-shadow-button !important;
-
-    &:focus{
-
-        background: $Button-press-background !important;
-    }
-
- }
-}
-}
-
-// button succuss canvas //
-
-& .xstyle-canvas-wrapper .x-control-content-wrapper .k-icon.k-i-check.canvasSaveBtn-indicate-saved{
-    background: $Approve-icon-on !important;
-}
-
-// radio button // 
-
-&  .xstyle-radio-wrapper.x-control-wrapper{
- 
-
-    & input{
-        &:checked{
-            border: 2px solid $Radio-button-on-border !important;
-            box-shadow: 0px 0px 4px $Radio-button-on-drop-shadow !important;
-        }
-
-
-        &::before{
-            color: $Radio-button-on-background !important;
-            width: 10px !important;
-           height: 10px !important;
-        }
-    }
-
-   }
-
-// highlight //
-
-  &  .x-highlight{
-
-    & label{
-        color: $High-light-caption!important;
-    }
-  
-}
-
-// title // 
-
-& .x-freehandhtml-wrapper {
-    center{
-        border-bottom: 1px solid $Title-secondary-bottom-border !important;
-        color: $Title-secondary!important; 
-    }
-}
-
-   // check box //
-
-  & .xstyle-checkbox-wrapper.x-control-wrapper {
-
-    & input{
-     
-
-        &:checked{
-            box-shadow: 0px 0px 4px $Check-box-on-drop-shadow !important;
-        }
-
-        &:checked::before{
-            background: $Check-box-on-background;
-
-        }
-    }
-   }
-
-
-
-
-
-// star control //
-
-& .xstyle-krating-wrapper.x-control-wrapper{
-
-
-
-   & .kendo-rating{
-
-
-
-    &:has(.k-selected){
-        & .k-i-close-circle{
-            color: $Label-star-on-background !important ;
-        }
-    }
-    & .k-rating.k-widget{
-        display: grid;
-        grid-template-columns: 85% 15%;
-      
-        & .k-rating-container{
-           
-            
-
-            & .k-icon{
-                color:  $Label-star-off-border;
-        
-            }
- 
-            & .k-icon.k-i-star{
-            
-                color:  $Label-star-on-background !important;
-              
-            }
-        }
-    }
-
-   }
-
-}
-
-// focus color //
-
-& .xstyle-textareacontrol-wrapper textarea{
-
-    &:focus-visible{
-
-        outline: 1px solid $Focus-border!important;
-    }
-}
-&  .xstyle-date-wrapper span.k-datepicker.k-input,
-& .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist,
-& .xstyle-textcontrol-wrapper input,
-& .xstyle-autocomplete-wrapper input,
-& .xstyle-geoaddress-wrapper input,
-& .xstyle-googleaddress-wrapper input,
-& .xstyle-intlphonenumber-wrapper input{
-    &:focus,
-    &:focus-within,
-    &:active,
-    &:focus-visible{
-        border: 1px solid $Focus-border!important; 
-        box-shadow: none !important;
-    }
-}
-
-
-// all control lbael + text //
-.xstyle-googleaddress-wrapper .x-barcodeBtnContainer a{
-    color: $icon-color !important;
-
-}
-.xstyle-geoaddress-wrapper,
-.xstyle-geoaddress-wrapper,
-.xstyle-idropdownlist-wrapper,
-.xstyle-date-wrapper,
-.xstyle-textcontrol-wrapper{
-
-
-
-    & .x-control-wrapper .k-icon, 
-    & .x-control-content-wrapper .k-icon {
-
-        color: $icon-color !important;
-    
-        &::before{
-            
-        color: $icon-color !important;
-        }
-    }
-}
-
-
-// linke //
-
-& .xstyle-ilink-wrapper a{
-
-    color: $Link-text !important;
-}
-
-//uplod control //
-
-& .k-i-file-pdf,
-& .k-i-file-data,
-& .k-i-file-txt,
-& .k-i-file,
-& .k-i-file-image.k-file-group.k-icon{
-    &::before{
-        color: $Card-upload-file-icon-file !important; 
-    }
-}
-
-& .k-file-validation-message.k-text-success{
-    color: $Card-upload-file-icon-file !important; 
-}
-
-& .xstyle-upload-wrapper .k-upload-button span{
-
-    color: $Upload-text !important;
-}
-
-& .k-upload-button.k-focus{
-    box-shadow: none !important;
-    border: none;
-}
-
-& .xstyle-upload-wrapper .k-upload-button span::after{
-    color: $Upload-icon !important;
-}
-
-
-// mandatory //
-
-& .mandatory{
-    & label.x-control-caption-text{
-        margin-right: 12px !important;
-        &::before{
-            content: "*";
-            color: $Required !important;
-        }
-
-    }
-}
-
-}

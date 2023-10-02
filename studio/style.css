@@ -1086,9 +1086,20 @@
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-track {
   border-radius: 10px;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar {
   width: 10px;
   background: white;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar {
+  width: 10px;
+  background: white;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-thumb {
+  background: #29AFD9;
+  border-radius: 10px;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-thumb {
   background: #29AFD9;

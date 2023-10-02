@@ -1388,7 +1388,6 @@
 
 .k-grid tr td {
   cursor: pointer;
-  text-align: right;
 }
 .k-grid tr td:hover {
   background-color: #7ad2f7 !important;
@@ -2823,7 +2822,7 @@ label.btn {
 }
 #SignWindow #signatureFrame #toolbarSignatureFrame .signatureColorPicker, #SignWindow .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker, .xstyle-signature-wrapper #signatureFrame #toolbarSignatureFrame .signatureColorPicker, .xstyle-signature-wrapper .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker {
   border-radius: 50%;
-  background-color: red;
+  background-color: red !important;
   width: 18px;
   height: 18px;
   margin-left: 10px;
@@ -2832,13 +2831,13 @@ label.btn {
   cursor: pointer;
 }
 #SignWindow #signatureFrame #toolbarSignatureFrame .signatureColorPicker.black, #SignWindow .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker.black, .xstyle-signature-wrapper #signatureFrame #toolbarSignatureFrame .signatureColorPicker.black, .xstyle-signature-wrapper .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker.black {
-  background-color: black;
+  background-color: black !important;
 }
 #SignWindow #signatureFrame #toolbarSignatureFrame .signatureColorPicker.blue, #SignWindow .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker.blue, .xstyle-signature-wrapper #signatureFrame #toolbarSignatureFrame .signatureColorPicker.blue, .xstyle-signature-wrapper .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker.blue {
-  background-color: blue;
+  background-color: blue !important;
 }
 #SignWindow #signatureFrame #toolbarSignatureFrame .signatureColorPicker.red, #SignWindow .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker.red, .xstyle-signature-wrapper #signatureFrame #toolbarSignatureFrame .signatureColorPicker.red, .xstyle-signature-wrapper .x-signatureFrame #toolbarSignatureFrame .signatureColorPicker.red {
-  background-color: red;
+  background-color: red !important;
 }
 #SignWindow #signatureFrame .x-signature-canvas, #SignWindow .x-signatureFrame .x-signature-canvas, .xstyle-signature-wrapper #signatureFrame .x-signature-canvas, .xstyle-signature-wrapper .x-signatureFrame .x-signature-canvas {
   position: relative;
@@ -5157,6 +5156,19 @@ body.checkout-flow-v7.bg2 {
 #TafnitCore_SaaSServer_Survey_UI_Survey {
   padding: 0 !important;
 }
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a {
+  position: relative;
+  color: #0675B4;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a:focus, #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a:focus-within {
+  font-weight: 600;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #055C8D;
+}
 #TafnitCore_SaaSServer_Survey_UI_Survey .x-login-user-error {
   border: 1px solid red !important;
 }
@@ -5349,6 +5361,10 @@ body.checkout-flow-v7.bg2 {
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-upload-files {
   border: none !important;
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-button-solid-base:focus {
+  box-shadow: none;
+  border: none;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file-invalid {
   height: 80px !important;
@@ -5746,6 +5762,8 @@ body.checkout-flow-v7.bg2 {
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-googleaddress-wrapper .x-barcodeBtnContainer,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-intlphonenumber-wrapper .x-barcodeBtnContainer {
   background: none !important;
+  position: absolute;
+  left: 4px;
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-autocomplete-wrapper .x-barcodeBtnContainer a,
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-geoaddress-wrapper .x-barcodeBtnContainer a,
@@ -5825,7 +5843,7 @@ body.checkout-flow-v7.bg2 {
 #TafnitCore_SaaSServer_Survey_UI_Survey .x-footer div[uxid=cSubmit] button.x-button.s-button {
   height: 46px !important;
   background: #8C4D9C !important;
-  box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+  box-shadow: none !important;
   border-radius: 40px !important;
   border: none !important;
   width: 95%;
@@ -5894,11 +5912,11 @@ body.checkout-flow-v7.bg2 {
   left: 0 !important;
   right: 0 !important;
   margin: 0 auto;
-  padding-bottom: 35px !important;
   background: #FFFFFF !important;
   border: 1px solid #8C4D9C !important;
   box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
-  border-radius: 20px !important;
+  border-radius: 10px !important;
+  width: 90% !important;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-widget.k-window:has(#MessageBoxWindow) div {
   overflow: hidden;
@@ -6006,7 +6024,7 @@ body.checkout-flow-v7.bg2 {
   height: auto;
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container .k-popup.k-group.k-reset.k-rtl {
-  padding: 30px 20px;
+  padding: 20px 10px;
   margin: 0px auto;
   left: 0px;
   width: auto !important;
@@ -6100,6 +6118,9 @@ body.checkout-flow-v7.bg2 {
   top: -4px;
 }
 
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch {
+  width: 4em;
+}
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper label {
   font-family: "Assistant";
   font-style: normal;
@@ -6144,7 +6165,7 @@ body.checkout-flow-v7.bg2 {
 #TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-on .k-switch-thumb {
   width: 28px;
   height: 28px;
-  background: #8C4D9C;
+  background: #8C4D9C !important;
   border: 1px solid #F5F5F5;
   box-shadow: 0px 0px 4px rgba(113, 7, 139, 0.5);
   width: 28px;
@@ -6492,7 +6513,7 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page div[uxid=cbCheck] {
   position: absolute;
-  top: 73px;
+  top: 37x;
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page h4.x-cell-header.s-cell-header {
   font-family: "Assistant";
@@ -6899,11 +6920,11 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) {
   left: 0 !important;
   right: 0 !important;
   margin: 0 auto;
-  padding-bottom: 35px !important;
+  padding-bottom: 0px !important;
   background: #FFFFFF !important;
   border: 1px solid #8C4D9C !important;
   box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
-  border-radius: 20px !important;
+  border-radius: 10px !important;
 }
 .k-content:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
   background: none !important;
@@ -8468,9 +8489,20 @@ body.bodyPayment .logoImg {
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-track {
   border-radius: 10px;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar {
   width: 10px;
   background: white;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar {
+  width: 10px;
+  background: white;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-thumb {
+  background: #29AFD9;
+  border-radius: 10px;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper::-webkit-scrollbar-thumb {
   background: #29AFD9;
@@ -8670,4 +8702,20 @@ body.k-content {
 .x-dev-mode-edit-btn::before {
   color: black;
   pointer-events: all;
+}
+
+.x-control-wrapper {
+  flex-wrap: nowrap;
+  width: auto;
+}
+.x-control-wrapper > * {
+  flex-grow: 1;
+}
+.x-control-wrapper .x-control-caption-wrapper {
+  flex: 0 0 33%;
+  position: relative;
+}
+.x-control-wrapper .x-control-content-wrapper {
+  position: relative;
+  width: 100%;
 }/*# sourceMappingURL=newStyle.css.map */

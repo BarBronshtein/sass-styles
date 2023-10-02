@@ -1,6 +1,5 @@
 
-
-
+@import '../../../../base/variables/masterVariable' ;
 
 $button-color-text: #ffffff; 
 $button-color-icon: #ffffff; 
@@ -163,7 +162,7 @@ $spicel-button-color-border-focus: #13ae9f;
 $special-button-color-border: #00b8a6; 
 $special-button-color-icon: #00b8a6; 
 $special-button-color-text-hover: #ffffff; 
-$spicel-button-bg-hover: #0fcebc; 
+$special-button-bg-hover: #0fcebc; 
 $special-button-color-text: #00b8a6; 
 $special-button-color-text-focus: #13ae9f; 
 $tabscript-color-text: #00b8a6; 
@@ -176,31 +175,41 @@ $window-icon-close-color: #a6a6a6;
 $window-title-border: #00b8a6; 
 $window-title-color: #00b8a6; 
 $window-text-secondary-color: #000000; 
-$window-text-spicel-color: #00b8a6; 
+$window-text-special-color: #00b8a6; 
+$window-bg: #ffffff; 
 $button-color-border: #00b8a6; 
 $button-bg-press: #019687; 
 $check-box-focus-check: #ffec44; 
-$drawer-icon-color-before: #ffffff; 
 $drawer-icon-color-after: #ffe819; 
 $lable-list-bg: #ffffff; 
 $order-link-color: #e5ac04; 
 $radio-button-focus-border: #ffec44; 
 $special-button-color-border-hover: #0fcebc; 
 $upload-border-border-top: #019687; 
+$drawer-icon-color-before: #ffffff; 
+$time-picker-number-default: #a6a6a6; 
+$time-picker-title: #676767; 
+$time-picker-link-now: #00b8a6; 
+$time-picker-hour-select: #00b8a6; 
+$time-picker-border-hour-select: #dedede; 
+$time-picker-number-hover: #a6a6a6; 
+$time-picker-border: #e7e7e7; 
+
 
 $popup-k-filter-menu-box-shadow: 0px 5px 8px 0px rgba(0, 184, 166, 0.10);
 $button-box-shadow-focus: 0px 1px 3px 0px rgba(0, 184, 166, 0.30), 0px 4px 8px 0px rgba(0, 184, 166, 0.10);
 $row-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
 $check-box-focus-box-shadow: 0px 1px 3px 0px rgba(255, 212, 87, 0.30), 0px 4px 8px 0px rgba(255, 212, 87, 0.10);
-$calendar-box-shadow: 0px 5px 8px 0px rgba(0, 130, 197, 0.10);
+$calendar-box-shadow: 0px 5px 8px 0px rgba(0, 184, 166, 0.10);
 $header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
 $slider-box-shadow: 0px 5px 8px 0px rgba(0, 184, 166, 0.10);
 $window-box-shadow: 0px 5px 8px 0px rgba(0, 184, 166, 0.10);
-$messagebox-box-shaow: 0px 5px 8px 0px rgba(0, 184, 166, 0.10);
+$messagebox-box-shadow: 0px 5px 8px 0px rgba(0, 184, 166, 0.10);
 $control-box-shadow-focus: 0px 1px 3px 0px rgba(0, 184, 166, 0.30), 0px 4px 8px 0px rgba(0, 184, 166, 0.10);
 $cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
 $radio-button-box-shadow-focus: 0px 1px 3px 0px rgba(255, 212, 87, 0.30), 0px 4px 8px 0px rgba(255, 212, 87, 0.10);
 $list-container-shadow: 0px 0px 5px 5px rgba(0, 184, 166, 0.10), 0px 2px 4px 0px rgba(0, 184, 166, 0.03), 0px 4px 5px 0px rgba(0, 184, 166, 0.04);
+$time-picker-shadow: 0px 5px 8px 0px rgba(0, 184, 166, 0.10);
 
 
 
@@ -232,7 +241,7 @@ $list-container-shadow: 0px 0px 5px 5px rgba(0, 184, 166, 0.10), 0px 2px 4px 0px
     font-family: 'Heebo' ;
     font-style: normal ;
     font-weight: 400 ;
-    font-size: 16px !important ;
+    font-size: 13px !important ;
     color: $control-color-input ;
     text-align: right ;
 }

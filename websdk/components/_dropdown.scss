@@ -33,7 +33,7 @@
     // contextmenu //
   
     &.x-contextmenu {
-      & div:nth-child(1) > div.x-control-caption-wrapper::before {
+      & div.x-control-caption-wrapper::before {
         content: "\f0d8" !important;
         font-family: "Font Awesome 5 PRO";
         font-weight: 900;
@@ -85,7 +85,7 @@
 
 
 
-    & .col-67 {
+    & .x-control-content-wrapper {
         height: 25px !important;
         border-right: 1px solid map-get($map: $Colors, $key: border-color) !important ;
       }

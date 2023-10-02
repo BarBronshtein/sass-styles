@@ -3,7 +3,9 @@
 #TafnitCore_Sales_V2_UI_Login{
         margin: 0;
         padding: 0;
-
+        .xstyle-checkbox-wrapper{
+            margin-top: 20px;
+        }
         mainbody{
             margin-top: 0 !important;
         }
@@ -27,7 +29,7 @@
     
     .xstyle-buttoncontrol-wrapper button{
         width: 100% !important;
-        margin-top: 35px;
+        margin-top: 10px;
         margin-bottom: 35px;
     }
 

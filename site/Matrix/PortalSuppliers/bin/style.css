@@ -287,12 +287,12 @@ header.navbar-fixed-top.header-suppliers .details .left span {
   text-align: right;
   color: #000000;
 }
-header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4,
-header.navbar-fixed-top.header-suppliers .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33 {
+header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper,
+header.navbar-fixed-top.header-suppliers .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .x-control-caption-wrapper {
   flex: 0 0 0.1%;
 }
-header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4 label,
-header.navbar-fixed-top.header-suppliers .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33 label {
+header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper label,
+header.navbar-fixed-top.header-suppliers .details .left .details .left .xstyle-dynamiclabelcontrol-wrapper .x-control-caption-wrapper label {
   margin-left: 5px;
   font-family: "Heebo";
   font-style: normal;
@@ -421,6 +421,9 @@ mainbody > .row.boxShadow-0.border-0 > div {
 
 .k-drawer {
   border: 0;
+}
+.k-drawer .k-drawer-wrapper {
+  margin-top: 5px;
 }
 .k-drawer .k-drawer-items .k-drawer-item {
   background-image: none;
@@ -651,7 +654,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 }
 .k-grid .k-grid-header tr:hover, .k-grid .k-grid-header tr:hover td {
   background-image: none !important;
-  background-color: transparent !important;
+  background: none !important;
 }
 .k-grid .k-grid-header th {
   background: none;
@@ -696,15 +699,15 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 }
 .k-grid .k-grid-content tr:hover, .k-grid .k-grid-content tr:hover td {
   background-image: none;
-  background-color: #efe7f4 !important;
+  background-color: #f8f8f8 !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected {
-  background: none !important;
+  background: #f8f8f8 !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected td {
-  background: none !important;
+  background: #f8f8f8 !important;
   color: #000 !important;
 }
 .k-grid .k-grid-content td {
@@ -738,7 +741,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .k-grid .k-grid-pager .k-link:hover {
   background-image: none !important;
   background-color: #9e30bf !important;
-  color: #ebebeb !important;
+  color: #ddc3e7 !important;
 }
 .k-grid .k-grid-footer {
   background-color: #fff;
@@ -1071,7 +1074,7 @@ mainbody mainbody {
   font-size: 13px !important;
   line-height: 26px;
   text-align: center;
-  color: #DDC3E7 !important;
+  color: #ddc3e7 !important;
 }
 .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > .k-selected {
   background: none !important;
@@ -1119,7 +1122,7 @@ mainbody mainbody {
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr:hover {
   width: 1650px !important;
-  background: #FAF6FC !important;
+  background: #f8f8f8 !important;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td > button > .k-i-edit.k-button-icon:before {
   content: "\e987" !important;
@@ -1346,10 +1349,10 @@ mainbody mainbody {
 .k-pager-sizes.k-label > span > span {
   font-family: "Heebo" !important;
   font-style: normal !important;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 13px !important;
   line-height: 30px;
-  color: #7d0a8c !important;
+  color: #7b098b !important;
   left: -5px;
   top: 1px;
 }
@@ -1361,7 +1364,7 @@ mainbody mainbody {
 .k-pager-sizes.k-label span .k-input-button span:before {
   content: "\f078";
   font-family: "Font Awesome 5 Pro";
-  color: #7B098B !important;
+  color: #7b098b !important;
   font-size: 13px;
   /* margin: 0 !important; */
   right: 5px;
@@ -1650,7 +1653,7 @@ mainbody mainbody {
 }
 
 .k-pager-numbers-wrap .k-dropdown-list {
-  color: #7B098B;
+  color: #7b098b;
 }
 
 .k-grid-footer {
@@ -1658,7 +1661,7 @@ mainbody mainbody {
   border-bottom: none !important;
 }
 .k-grid-footer tr:hover {
-  background: none !important;
+  background: #f8f8f8 !important;
 }
 .k-grid-footer tr:hover td {
   background: none !important;
@@ -1879,7 +1882,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   display: flex;
   align-items: center;
@@ -1925,7 +1928,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   color: #650872;
 }
@@ -1936,7 +1939,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   color: #7b098b;
 }
@@ -1944,7 +1947,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   color: #7b098b;
 }
@@ -1986,7 +1989,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   color: #7b098b;
 }
@@ -2063,8 +2066,10 @@ div[uxid=tbID], div[uxid=tbPassword] {
   color: #ffffff !important;
 }
 .xstyle-buttoncontrol-wrapper.spicelBTN button:focus {
-  background: #ffffff;
+  background: #ffffff !important;
+  box-shadow: 0px 1px 3px 0px rgba(123, 9, 139, 0.3), 0px 4px 8px 0px rgba(123, 9, 139, 0.3) !important;
   color: #690779 !important;
+  border: 1px solid #690779;
   opacity: 1;
 }
 .xstyle-buttoncontrol-wrapper.spicelBTN button:focus span::before, .xstyle-buttoncontrol-wrapper.spicelBTN button:focus span::after {
@@ -2135,6 +2140,10 @@ div[uxid=tbID], div[uxid=tbPassword] {
   line-height: 120%;
   text-align: right;
   color: #0eaadc;
+}
+.order-hedr .x-kicon span:hover {
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .order {
@@ -2417,7 +2426,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   box-shadow: 0px 0px 5px 5px rgba(123, 9, 139, 0.1), 0px 2px 4px 0px rgba(123, 9, 139, 0.03), 0px 4px 5px 0px rgba(123, 9, 139, 0.04) !important;
   border: #e7e7e7;
   border-radius: 10px;
-  margin-top: 5px;
 }
 .k-animation-container .k-popup .k-list {
   border-radius: 10px;
@@ -2717,7 +2725,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   margin-bottom: 10px;
 }
 .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md:focus, .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md:focus-within {
-  border: #30c6f5 !important;
+  border: 1px solid #30c6f5 !important;
   box-shadow: 0px 1px 3px 0px rgba(48, 198, 245, 0.3), 0px 4px 8px 0px rgba(48, 198, 245, 0.3);
 }
 .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md .k-input-button {
@@ -2740,7 +2748,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   margin-bottom: 10px;
 }
 .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus, .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus-within {
-  border: #30c6f5 !important;
+  border: 1px solid #30c6f5 !important;
   box-shadow: 0px 1px 3px 0px rgba(48, 198, 245, 0.3), 0px 4px 8px 0px rgba(48, 198, 245, 0.3);
 }
 .k-filter-menu > .k-filter-menu-container > .k-numerictextbox .k-button {
@@ -2791,10 +2799,11 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .k-filter-menu > .k-filter-menu-container > .k-action-buttons {
   display: flex;
   flex-direction: row !important;
+  height: 67px;
 }
 .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button {
   width: 45% !important;
-  height: 50px;
+  height: 40px;
   background: #7b098b !important;
   border-radius: 10px !important;
   border: none;
@@ -2831,14 +2840,14 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base:hover span::before {
   color: #ffffff !important;
 }
-.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base:focus {
+.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base.k-button:focus {
   background: #ffffff !important;
-  box-shadow: none !important;
+  box-shadow: 0px 1px 3px 0px rgba(123, 9, 139, 0.3), 0px 4px 8px 0px rgba(123, 9, 139, 0.3) !important;
   color: #690779 !important;
   border: 1px solid #690779;
   opacity: 1;
 }
-.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base:focus span {
+.k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base.k-button:focus span {
   color: #690779 !important;
 }
 
@@ -2975,7 +2984,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 }
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
   box-shadow: 0px 1px 3px 0px rgba(48, 198, 245, 0.3), 0px 4px 8px 0px rgba(48, 198, 245, 0.3) !important;
-  border: #30c6f5 !important;
+  border: 1px solid #30c6f5 !important;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete::-moz-placeholder {
   color: #c7c7c7 !important;
@@ -3000,7 +3009,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 
 .payment-cube-row2 {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto !important;
   gap: 15px;
   margin-bottom: 15px;
 }
@@ -3100,7 +3109,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-size: 16px !important;
   line-height: 120%;
   text-align: left !important;
-  color: #7B098B;
+  color: #0176E1;
   height: auto !important;
   border: none;
   padding-right: 10px;
@@ -3147,7 +3156,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   border-bottom: none !important;
 }
 .xstyle-upload-wrapper .k-file-invalid .k-file-name {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   font-size: 14px !important;
   color: #000000 !important;
   font-family: "Heebo";
@@ -3208,7 +3217,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   border: none !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-file-name {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   font-size: 14px !important;
   color: black !important;
   font-family: "Heebo";
@@ -3224,9 +3233,10 @@ div[uxid=tbID], div[uxid=tbPassword] {
   margin-bottom: 15px;
   background: #7b098b;
   border-radius: 10px;
-  color: #ffffff !important;
+  color: #ffffff;
   height: 50px !important;
   width: 200px !important;
+  font-weight: 500;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button span span.k-icon {
   margin-left: 10px !important;
@@ -3236,17 +3246,17 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-size: 22px !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:hover {
-  background: #ffffff !important;
-  color: #7b098b !important;
+  background: #ffffff;
+  color: #7b098b;
   border: 1px solid #7b098b;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:hover span span.k-icon::before {
   color: #7b098b !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:focus, .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:focus-within {
-  background: #7b098b;
+  background: #7b098b !important;
   color: #ffffff !important;
-  box-shadow: 0px 1px 3px 0px rgba(123, 9, 139, 0.3), 0px 4px 8px 0px rgba(123, 9, 139, 0.3);
+  box-shadow: 0px 1px 3px 0px rgba(123, 9, 139, 0.3), 0px 4px 8px 0px rgba(123, 9, 139, 0.3) !important;
   opacity: 1;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:focus span span.k-icon::before, .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:focus-within span span.k-icon::before {
@@ -3561,6 +3571,7 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] > span {
   font-size: 20px;
   right: -7px;
+  padding: 10px 16px;
 }
 
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] {
@@ -3573,6 +3584,7 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 
 .k-drawer-container .k-drawer .k-drawer-wrapper .x-dynamic-label-control {
   font-family: "Heebo";
+  font-size: 14px;
 }
 
 .greyPanel .x-section-header-wrapper .x-section-header {
@@ -4202,7 +4214,7 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
-  color: #7B098B;
+  color: #7b098b;
 }
 #TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder .btn-flex,
 #TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark .btn-flex {
@@ -4521,4 +4533,26 @@ body, html {
 .icon-export-excel:after {
   content: "\ea5f";
   color: #cda3dd;
+}
+
+.icon-message1:before, .icon-report:before, .icon-invatation-2:before, .icon-dilvaery-2:before, .icon-money-2:before, .icon-menu-2:before, .icon-tracker:before {
+  color: #65b5ff;
+}
+.icon-message1:after, .icon-report:after, .icon-invatation-2:after, .icon-dilvaery-2:after, .icon-money-2:after, .icon-menu-2:after, .icon-tracker:after {
+  color: #ffffff;
+}
+
+.icon-car:after, .icon-customers::after {
+  color: #65b5ff;
+}
+
+.icon-car:before, .icon-customers::before {
+  color: #ffffff;
+}
+
+.icon-home-2:after, .icon-log-out:after {
+  color: #65b5ff;
+}
+.icon-home-2::before, .icon-log-out::before {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

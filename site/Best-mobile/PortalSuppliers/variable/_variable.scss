@@ -32,6 +32,8 @@ $calendar-body-button-color-text-hover: #00539f;
 $calendar-body-button-border-hover: #00539f; 
 $calendar-month-color-days-hover: #00539f; 
 $calendar-month-border-days-hover: #00539f; 
+$calendar-body-butoon-color-text-hover: #00539f !default;
+$calendar-body-butoon-border-hover: #00539f !default;
 $calendar-month-color-today: #0a66bb; 
 $calendar-body-button-color: #0a66bb; 
 $calendar-fotter-color-text: #0176e1; 
@@ -59,7 +61,7 @@ $checkbox-caption: #000000;
 $checkbox-border: #000000; 
 $check-box-focus-check: #34f6b1; 
 $control-color-icon: #000000; 
-$control-border-focus: #34f6b1; 
+$control-border-focus: #65B5FF; 
 $control-border-input: #a6a6a6; 
 $control-color-placeholder: #c7c7c7; 
 $control-border-input-disable: #e7e7e7; 
@@ -73,10 +75,10 @@ $cube-dashboard-color-text: #00488a;
 $cube-dashboard-color-price: #0176e1; 
 $cube-dashboard-bg: #fcfcfc; 
 $drawer-background-color: #000000; 
-$drawer-icon-color: #ffffff; 
+$drawer-icon-color-before: #ffffff; 
 $drawer-color: #ffffff; 
 $drawer-toggle-color: #95ccff; 
-$drawer-icon-after-color: #65b5ff; 
+$drawer-icon-color-after: #65b5ff; 
 $drawer-selected-color: #65b5ff; 
 $first-panel-color-title: #0176e1; 
 $first-panel-color-icon-button: #65b5ff; 
@@ -107,8 +109,8 @@ $header-usernamedetails-color: #ffffff;
 $header-hellotext-color: #ffffff; 
 $header-border: #ffffff; 
 $header-bg: #000000; 
-$icon-before: #0176e1; 
-$icon-after: #65b5ff; 
+$icon-before: #000000; 
+$icon-after: #000000; 
 $lable-list-bg: #0edc92; 
 $lable-list-caption-color: #003260; 
 $lable-list-value-color: #000000; 
@@ -163,7 +165,7 @@ $radio-button-focus-border: #34f6b1;
 $row-bg: #ffffff; 
 $scroll-bg-hover: #00539f; 
 $scroll-bg: #0176e1; 
-$special-button-color-text-focus: #000000; 
+$special-button-color-text-focus: #ffffff; 
 $special-button-color-border-focus: #000000; 
 $special-button-press: #4e4e4e; 
 $special-button-color-border: #000000; 
@@ -173,8 +175,8 @@ $special-button-bg-hover: #000000;
 $special-button-color-icon: #000000; 
 $special-button-color-text-hover: #ffffff; 
 $special-button-bg: #ffffff; 
-$special-button-bg-focus: #ffffff; 
-
+$special-button-bg-focus: #000000; 
+$specail-label-text-color: #0176E1 ;
 
 $header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
  
@@ -196,7 +198,7 @@ $messagebox-box-shaow:  0px 5px 8px 0px rgba(1, 118, 225, 0.10);
  
 $radio-button-box-shadow-focus:  0px 1px 3px 0px rgba(52, 246, 177, 0.30), 0px 4px 8px 0px rgba(52, 246, 177, 0.30);
  
-$control-box-shadow-focus:  0px 1px 3px 0px rgba(52, 246, 177, 0.30), 0px 4px 8px 0px rgba(52, 246, 177, 0.30);
+$control-box-shadow-focus:  0px 1px 3px 0px rgba(1, 118, 225, 0.30), 0px 4px 8px 0px rgba(1, 118, 225, 0.30);;
  
 $list-container-shadow: 0px 0px 5px 5px rgba(0, 130, 197, 0.10), 0px 2px 4px 0px rgba(0, 130, 197, 0.03), 0px 4px 5px 0px rgba(0, 130, 197, 0.04);
 

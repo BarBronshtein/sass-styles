@@ -13,7 +13,7 @@
 .xstyle-password-wrapper.mandatory,
 .xstyle-radio-wrapper.mandatory,
 .xstyle-timepicker-wrapper.mandatory {
-  :has(.x-control-caption-wrapper) {
+  .x-control-caption-wrapper{
     & label {
       &:before {
         content: "*";
@@ -34,7 +34,7 @@
 
 
 .xstyle-numberrange-wrapper.mandatory{
-  :has(.x-control-caption-wrapper) {
+  .x-control-caption-wrapper {
     & label {
       &:before {
         content: "*";
@@ -51,7 +51,7 @@
 }
 
 .xstyle-daterangev2-wrapper.mandatory{
-  :has(.x-control-caption-wrapper) {
+  .x-control-caption-wrapper {
     & label {
       &:before {
         content: "*";

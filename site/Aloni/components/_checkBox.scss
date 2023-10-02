@@ -1,0 +1,59 @@
+
+
+
+
+
+
+.k-checkbox{
+
+        border-color: $checkbox-border;
+        border-radius: 1px !important;
+    
+        &:checked{
+            border-color: $checkbox-border-checked;
+            &:before{
+            color: $checkbox-color-checked;
+            }
+        }
+    
+        &:focus{
+            box-shadow: none;
+        }
+
+
+
+}
+.xstyle-checkbox-wrapper{
+
+
+   & .x-checkbox{
+
+    border-color: $checkbox-border;
+    border-radius: 2px !important;
+
+    &:checked{
+        border-color: $checkbox-border-checked;
+        &:before{
+        color: $checkbox-color-checked;
+        }
+    }
+
+    &:focus{
+        box-shadow: none;
+    }
+   }
+
+   & label{
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: right;
+    color: $checkbox-caption;
+
+   }
+
+
+}

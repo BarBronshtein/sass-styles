@@ -41,7 +41,7 @@
 
         &:focus-within{
             box-shadow:$control-box-shadow-focus !important;
-            border: $control-border-focus !important;
+            border: 1px solid $control-border-focus !important;
         }
 
         &::placeholder{

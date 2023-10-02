@@ -16,6 +16,7 @@
 @import './components/drawer';
 @import './components/link';
 @import './components/messageBox';
+@import './components/tooltip';
 
 
 
@@ -90,3 +91,6 @@ body,html{
     color:$icon-after;
 }
 
+.k-grid-content-expander{
+    display: none;
+}

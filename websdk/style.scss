@@ -336,7 +336,7 @@ mainbody > .row.x-row.s-row.border.border-0.boxShadow-0 {
   margin-top: 10px !important;
 }
 
-.logoImg div:first-child div:last-child div:first-child img {
+.logoImg .x-control-content-wrapper img {
   height: 120px;
   max-width: 315px;
 }
@@ -962,12 +962,12 @@ span.k-header.cs-btn.x-input-group-text.s-input-group-text.x-cs-btn.s-x-cs-btn {
 }
 
 div {
-  &.x-control-content-wrapper.s-control-content-wrapper
+  &.x-control-content-wrapper
   
 
   &.x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-checkbox-wrapper.dir-ltr
     > div.col-67.x-cell.s-cell
-    > div.x-control-content-wrapper.s-control-content-wrapper
+    > div.x-control-content-wrapper
     > ul.fieldlist
     > li
     > input:before {
@@ -1058,7 +1058,7 @@ padding: 0;
 }
 
 .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-idropdownlist-wrapper.p-floating-container
-  div.x-control-content-wrapper.s-control-content-wrapper
+  div.x-control-content-wrapper
   span.k-picker.k-dropdownlist.x-dropdown-comp.s-dropdown-comp.k-picker-solid.k-picker-md.k-rounded-md
   span
   span.k-input-value-text {
@@ -1629,7 +1629,7 @@ li:has > a.active {
 /* eran */
 
 .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-idropdownlist-wrapper.p-floating-container
-  div.x-control-content-wrapper.s-control-content-wrapper
+  div.x-control-content-wrapper
   span.k-picker.dropdownlist.x-dropdown-comp.s-dropdown-comp.k-picker-solid.k-picker-md.k-rounded-md
   span {
   span.k-input-value-text {
@@ -1804,7 +1804,7 @@ li:has > a.active {
   width: 50px !important;
 }
 
-.x-control-content-wrapper.s-control-content-wrapper
+.x-control-content-wrapper
   > .k-toolbar.k-toolbar-resizable
   .k-button.k-disabled {
   & span.k-icon {
@@ -2125,7 +2125,7 @@ mainbody > .row {
   & > div.row.x-row.border.d-flex.align-items-center {
     margin-top: -15px !important;
   }
-  & div.x-control-content-wrapper.s-control-content-wrapper:has(a) {
+  & div.x-control-content-wrapper:has(a) {
     margin-top: 2px !important;
   }
 }
@@ -2144,9 +2144,7 @@ mainbody > .row {
   }
 }
 
-.k-window {
-  direction: rtl !important;
-}
+
 
 .k-content:has(#TafnitCore_xAgreements_UI_InvoiceDetailes), 
 .k-content:has(#TafnitCore_xAgreements_UI_ApprovePayment){

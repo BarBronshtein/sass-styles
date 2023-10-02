@@ -1,5 +1,4 @@
 
-
 .tabs-filter{
 
     display: grid;
@@ -15,7 +14,7 @@
 
         .activeTab{
             padding-bottom: 0px;
-            border-bottom: 1px solid #625337;
+            border-bottom: 1px solid $tab-script-border-bottom;
             border-radius: 0;
             span{
                 font-weight: 500;
@@ -29,7 +28,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 130%;
-            color: #625337;
+            color: $tab-script-color-text;
         }
     }
 
@@ -53,16 +52,15 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: flex-start;
-    gap: 15px;
+    gap: 5px;
     margin-top: 40px;
-    margin-bottom: 40px;
     padding: 0 40px;
     align-items: center;
  .templatex-wrapper{
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: flex-start;
-    gap: 15px;
+    gap: 5px;
     margin-bottom: 40px;
     align-items: center;
  }
@@ -72,7 +70,7 @@
         font-weight: 400;
         font-size: 14px !important;
         line-height: 130%;
-        color: #000000;
+        color: $bread-crumb-color-default;
         
         &.k-icon{
             font-size: 12px;
@@ -83,11 +81,11 @@
     .name-tabs{
         display: grid;
         grid-template-columns: auto 1fr;
-        gap: 15px;
+        gap: 5px;
 
         .activeTab span{
             font-weight: 700;
-            color: #AE8B49; 
+            color: $bread-crumb-color-active; 
         }
     }
 }

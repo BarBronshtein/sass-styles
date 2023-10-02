@@ -1,45 +1,19 @@
-@use '../variable/variable' as *;
+
 
 
 .xstyle-idropdownlist-wrapper{
-margin-top: 15px;
-&:has(.x-login-user-error-msg){
-  & span.x-dropdown-comp.s-dropdown-comp {
-  border-bottom: $control-border-error !important;
-  }
- }
+
+
   // readonly + disabled //
-
-  &.k-state-disabled,
-  &.x-readonly{
-     & span.x-dropdown-comp.s-dropdown-comp{
-
-      background: #F7F7F7 !important;
-         & span.k-icon{
-          &::before{
-            color: $control-caption-color-text-disable !important; 
-          }
-         }
-     }
-
-     & label{
-      color: $control-caption-color-text-disable !important; 
-       }
- }
-
- 
-
 
 
   & span.x-dropdown-comp.s-dropdown-comp {
    
        @extend %texbox-input;
 
-      
-
   &:focus,
   &:focus-within{
-    border: $control-border-focus !important;
+    border:1px solid $control-border-focus;
     box-shadow: $control-box-shadow-focus;
   }
 
@@ -77,83 +51,50 @@ margin-top: 15px;
 
 }
 
-
-.k-list-scroller{
-scrollbar-face-color: #AE8B49;
-scrollbar-track-color: #f3e9f8;
-scrollbar-arrow-color: #AE8B49;
-
-/* width */
-/* Track */
-/* Handle */
-/* Handle on hover */
-
-&::-webkit-scrollbar {
-  width: 10px !important;
-  border-radius: 10px;
-  position: absolute;
+.k-rtl .k-window-titlebar .k-window-actions{
+  right: auto;
+    left: -15px;
+    position: relative;
 }
-
-
-&::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: #f0f0f0;
-}
-
-&::-webkit-scrollbar-thumb {
-  background:#AE8B49  ;
-  border-radius: 10px;
-  
-
-  &:hover {
-    background: #AE8B49;
-    
-  }
-  }
-
-}
-
-
 .k-animation-container{
-  .k-list-optionlabel{
-    display: none !important;
-  }
+
   & .k-popup{
 
-    box-shadow: none !important;
-    border: $popup-border ;
+    box-shadow: $list-container-shadow ;
+    border: $list-view-border-bottom ;
     border-radius: 10px;
     margin-top: 5px;
 
     .k-list{
-      border-radius: 00px;
+      border-radius: 10px;
     }
     & .k-list-content.k-list-scroller{
-      border-radius: 00px;
-        background: none !important;
-        padding: 12px 20px;
+      border-radius: 10px;
+        background: none ;
+        padding: 0;
 & ul{
-  background: $popup-bg !important;
+  background: $list-view-bg-line-default ;
 }
         & li{
-            height: 41px;
+          height: 40px;
+          padding: 0;
 
             &.k-selected.k-focus{
-              background: $popup-bg-selected !important;
+              background: $list-view-selected-line ;
               border: none;
               box-shadow: none;
 
               .k-list-item-text{
-                color: $popup-color-text-selected !important;
+                color: $list-view-selected-line-text ;
                 font-weight: 700;
               }
             }
 
             &:hover{
-              background: $popup-bg-hover;
+              background: $list-view-hover-line;
             
               .k-list-item-text{
-                color: $popup-color-text-hover !important;
+                color: $list-view-text-default ;
                 font-weight: 700;
               }
             }
@@ -165,8 +106,8 @@ scrollbar-arrow-color: #AE8B49;
                 font-size: 14px;
                 line-height: 21px;
                 align-items: center;
-                text-align: right;
-                color: $popup-color-text;
+                text-align: center;
+                color: $list-view-text-default;
             }
 
         }

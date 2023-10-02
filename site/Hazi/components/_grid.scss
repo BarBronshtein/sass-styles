@@ -1,0 +1,101 @@
+
+
+.xstyle-gridv4-wrapper{
+
+    padding: 0 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .x-grid-control{
+        border: none;
+
+     // thead //   
+    .k-grid-header{
+        background: none;
+        border: none;
+
+        th.k-header{
+            border: none;
+            background: none;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 130%;
+            color: #AE8B49;
+            border-bottom: 2px solid #AE8B49;
+            padding: 15px 8px;
+        }
+    }
+
+    // td //
+
+    .k-master-row{
+        background: no-repeat;
+        td{
+            background: none;
+            border: none;  
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: #000000;
+            padding: 15px 8px;
+            border-bottom: 1px solid #C7C7C7;
+
+            button{
+                width: 62px;
+                background: none;
+                color: #AE8B49;
+                border: 1px solid #AE8B49;
+                border-radius: 20px;
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                padding: 10px 20px;
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+
+        }
+    }
+}
+
+.k-grid td.k-grid-content-sticky.k-selected:hover, 
+.k-grid td.k-grid-content-sticky.k-state-selected:hover, 
+.k-grid td.k-selected:hover, 
+.k-grid td.k-state-selected:hover, 
+.k-grid tr.k-selected:hover, 
+.k-grid tr.k-state-selected:hover{
+    background-color: #E7E7E7;
+
+}
+.k-grid tr:hover td {
+    background-color: #E7E7E7 !important;
+}
+.k-grid tr:hover{
+    background: none;
+}
+}
+
+.x-gridchkbxcontrolgrdOptions382975.k-checkbox{
+
+    border: 1px solid black;
+
+    &:checked{
+
+        border: 1px solid #AE8B49;
+
+        &::before{
+            color: #AE8B49;
+        }
+    }
+
+    &:focus,&:focus-within{
+        box-shadow: 0px 1px 3px 0px rgba(174, 139, 73, 0.50), 0px 4px 8px 0px rgba(174, 139, 73, 0.20);
+    }
+}

@@ -18,7 +18,9 @@
 
 .loginLayout{
   z-index: 10003;
-  margin-top: 160px !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .x-login-user-error-msg{
@@ -132,7 +134,7 @@
 @media screen and (min-width: 1050px) {
 
   #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody > .row {
-    margin-right: 140px !important;
+    margin-right: 85px !important;
   }
 }
 
@@ -275,4 +277,13 @@
     .checkboxHorizontal > div:first-child .x-login-user-error-msg {
       height: 40px;
     }
+  }
+
+
+  #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login.container.pageContainer.xtafnit_pageContainer{
+    position: unset;
+  }
+
+  html{
+    height: 100% !important;
   }

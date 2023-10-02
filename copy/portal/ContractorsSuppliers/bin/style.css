@@ -474,7 +474,43 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
   max-width: 100%;
 }
 
-.icon-up {
+.xtaf-edit-input {
+  background: #F5F5F5;
+  padding: 5px !important;
+}
+.xtaf-edit-input.k-edit-cell .k-numerictextbox.k-input.k-input-solid {
+  height: 39px;
+  border-radius: 0;
+  border: none;
+  background: white;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.k-grid .k-grid-content tr:has(.title-grid) {
+  background: #e7e7e7;
+}
+.k-grid .k-grid-content tr:has(.title-grid):hover {
+  background: #e7e7e7 !important;
+}
+
+.k-grid-content.k-auto-scrollable > table > tbody > tr:has(.title-grid) > td {
+  height: 25px;
+  background: #e7e7e7 !important;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr:has(.title-grid) > td:has(.title-grid) {
+  text-align: right !important;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr:has(.title-grid) > td:has(.title-grid) span {
+  color: #4E4E4E;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.icon-up-1 {
   width: 20px;
   height: 20px;
   padding: 5px;
@@ -487,21 +523,21 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
   margin-right: -7px;
 }
 
-.icon-close-popup {
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  border: 1px solid #F5F5F5;
-  background: #F5F5F5;
-  font-size: 22px;
-}
-
-.icon-money {
+.icon-error-message1, .icon-special {
   width: 20px;
   height: 20px;
   padding: 5px;
   border: 1px solid #AEDEE3;
   background: #AEDEE3;
+  font-size: 22px;
+}
+
+.icon-sign-document {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #F5F5F5;
+  background: #F5F5F5;
   font-size: 22px;
 }
 
@@ -515,6 +551,9 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
 
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .k-grid-header {
   border: none !important;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .k-grid-content.k-auto-scrollable > table > tbody > tr > td:last-child {
+  direction: ltr;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities thead tr th.k-header .k-link {
   justify-content: center;
@@ -541,7 +580,7 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
   font-family: Heebo;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .portalGrid h4 {
@@ -1161,7 +1200,7 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 130%;
   text-align: right !important;
   color: #000000;
@@ -1174,6 +1213,10 @@ mainbody mainbody {
   text-overflow: ellipsis;
   padding-right: 10px;
   text-align: center !important;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td:has(.xtf-btn) {
+  float: left;
+  padding: 5px;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td .k-input-spinner button {
   display: none;
@@ -1190,7 +1233,7 @@ mainbody mainbody {
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN:focus, .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN:focus-within, .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN:active {
   border: 1px solid #9FA717;
-  padding: 2px;
+  padding: 1px;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN a {
   min-width: 140px;
@@ -1933,6 +1976,10 @@ mainbody mainbody {
   border-radius: 0px;
   height: 40px;
 }
+.k-window .xstyle-gridv4-wrapper .toolbar.x-embeddedToolbar span.k-searchbox:focus, .k-window .xstyle-gridv4-wrapper .toolbar.x-embeddedToolbar span.k-searchbox:focus-within {
+  border: 1px solid #366934 !important;
+  box-shadow: 0px 1px 3px 0px rgba(57, 181, 74, 0.3), 0px 4px 8px 0px rgba(57, 181, 74, 0.1);
+}
 .k-window .xstyle-gridv4-wrapper .toolbar.x-embeddedToolbar span.k-searchbox input {
   text-align: right;
   font-family: "Heebo";
@@ -2092,7 +2139,7 @@ mainbody mainbody {
   margin-bottom: 10px;
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox:focus-within {
-  border: #366934;
+  border: 1px solid #366934;
   box-shadow: 0px 1px 3px 0px rgba(57, 181, 74, 0.3), 0px 4px 8px 0px rgba(57, 181, 74, 0.1);
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox .k-button {
@@ -2229,7 +2276,7 @@ mainbody mainbody {
   gap: 10px;
 }
 .greyPanel .x-section-header-wrapper:has(.x-btn-collapse) h3 {
-  background: #FCFCFC;
+  background: #f8f8f8;
   color: #204C1F;
   height: 35px;
   padding-right: 10px;
@@ -2255,14 +2302,18 @@ mainbody mainbody {
   display: grid;
   right: 0;
   margin: 0 auto;
+  transform: rotate(180deg);
+}
+.greyPanel .x-section-header-wrapper:has(.x-btn-collapse) .x-btn-collapse.collapsed {
+  transform: rotate(0deg);
 }
 
-#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer {
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer, #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Accounts .x-footer {
   background: #FFF;
   box-shadow: 0px 0px 10px 0px rgba(54, 105, 52, 0.1);
   height: 60px;
 }
-#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer > .row {
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities .x-footer > .row, #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Accounts .x-footer > .row {
   height: 60px;
   display: grid;
   grid-template-columns: auto auto;
@@ -2321,7 +2372,7 @@ mainbody mainbody {
   font-weight: 400;
   font-size: 13px;
   line-height: 120%;
-  color: #78AAB4;
+  color: #78AAB4 !important;
 }
 .link_Comp:hover {
   font-weight: 600 !important;
@@ -2358,6 +2409,13 @@ mainbody mainbody {
   content: "\e9cb";
   font-family: "icomoon";
   color: #366934;
+  font-weight: 500;
+}
+.k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div i.x-fa-success::before {
+  content: "\e98a";
+  font-family: "icomoon";
+  color: #366934;
+  font-weight: 500;
 }
 .k-window:has(#MessageBoxWindow) #MessageBoxWindow div#ctrlSectionMainSection > div span {
   font-family: "Heebo";
@@ -2398,6 +2456,25 @@ mainbody mainbody {
   background: #82BD80;
 }
 
+.k-animation-container .k-popup:has(.k-tooltip-content) {
+  border: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  box-shadow: none;
+  margin-top: 0;
+}
+.k-animation-container .k-popup:has(.k-tooltip-content) .k-tooltip-content {
+  color: #000;
+  text-align: center;
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+.k-animation-container .k-popup:has(.k-tooltip-content) .k-callout {
+  display: none;
+}
+
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody div[uxid=bLogin] .x-button-wrapper .k-button {
   margin-top: 0px;
 }
@@ -2414,7 +2491,9 @@ mainbody mainbody {
 
 .loginLayout {
   z-index: 10003;
-  margin-top: 160px !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .x-login-user-error-msg {
@@ -2501,7 +2580,7 @@ mainbody mainbody {
 }
 @media screen and (min-width: 1050px) {
   #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody > .row {
-    margin-right: 140px !important;
+    margin-right: 85px !important;
   }
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody .loginLayout {
@@ -2610,12 +2689,37 @@ mainbody mainbody {
     height: 40px;
   }
 }
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login.container.pageContainer.xtafnit_pageContainer {
+  position: unset;
+}
+
+html {
+  height: 100% !important;
+}
+
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer {
   position: relative;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-grid .k-grid-content tr {
   border: none;
   box-shadow: none;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .xstyle-gridv4-wrapper {
+  border: none;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .headerNone {
+  padding-bottom: 10px !important;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-grid td input.k-checkbox {
+  border-radius: 50%;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-grid td input.k-checkbox:checked:before {
+  content: "";
+  background: #366934;
+  border-radius: 50%;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-grid-content.k-auto-scrollable {
+  max-height: 300px;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .k-grid-content.k-auto-scrollable > table > tbody > tr > td {
   text-align: right !important;
@@ -2630,6 +2734,7 @@ mainbody mainbody {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  margin-bottom: 20px;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .list {
   display: grid;
@@ -2732,4 +2837,8 @@ body, html {
 .icon-export-excel:after {
   content: "\ea5f";
   color: #ffffff;
+}
+
+.k-grid-content-expander {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
