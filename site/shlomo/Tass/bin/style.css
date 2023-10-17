@@ -273,6 +273,15 @@ body {
   width: 10px !important;
   height: 10px !important;
 }
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper {
+  flex-direction: row-reverse !important;
+}
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper .x-control-caption-wrapper {
+  flex: 0 0 100%;
+}
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper .x-control-content-wrapper {
+  flex-grow: 0.1;
+}
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper input:checked {
   box-shadow: none !important;
 }

@@ -216,6 +216,30 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
 .xstyle-multiselect-wrapper {
   margin-top: 15px;
 }
+.xstyle-multiselect-wrapper .k-chip-solid-base {
+  border-radius: 8px;
+  border: 1px solid var(--chip-border-default, #676767);
+  background: var(--chip-bg-default, #FFF);
+}
+.xstyle-multiselect-wrapper .k-chip-solid-base .k-chip-label {
+  color: var(--chip-text-default, #676767);
+  text-align: right;
+  /* body M */
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.xstyle-multiselect-wrapper .k-chip-solid-base .k-chip-icon {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.xstyle-multiselect-wrapper .k-chip-solid-base .k-chip-icon::before {
+  content: "\e9c2";
+  font-family: "icomoon";
+  color: #A6A6A6;
+}
 .xstyle-multiselect-wrapper .k-input:focus-within, .xstyle-multiselect-wrapper .k-widget.k-input:focus-within {
   box-shadow: none;
 }
@@ -612,6 +636,9 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   border: none;
   padding: 10px 0px;
 }
+.k-grid .k-grid-header .k-grid-filter {
+  margin-left: 0 !important;
+}
 .k-grid .k-grid-header .k-grid-filter.k-state-active {
   background: #ccc;
 }
@@ -635,6 +662,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   text-align: right;
   color: #ae2a30;
   padding-right: 0px !important;
+  padding-left: 0;
 }
 .k-grid .k-grid-header th a {
   color: #ae2a30 !important;
@@ -1705,7 +1733,7 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 120%;
   text-align: right;
   color: #ae2a30;
@@ -1730,7 +1758,7 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 120%;
   text-align: right;
   color: #ae2a30;
@@ -1793,7 +1821,7 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 120%;
   text-align: right;
   color: #ae2a30;
@@ -2151,7 +2179,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .gridHeaderButton button:hover {
   background: #334768;
   color: #ffffff;
-  border: 1px solid #ae2a30;
+  border: none;
 }
 .gridHeaderButton button:hover span:before, .gridHeaderButton button:hover span:after {
   color: #ffffff !important;
@@ -2189,7 +2217,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-buttoncontrol-wrapper.spicelBTN button:hover {
   background: #334768;
   color: #ffffff !important;
-  border: 1px solid #ae2a30 !important;
+  border: 1px solid #334768 !important;
 }
 .xstyle-buttoncontrol-wrapper.spicelBTN button:hover span::before {
   color: #ffffff !important;
@@ -2210,7 +2238,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-buttoncontrol-wrapper button:hover {
   background: #334768;
   color: #ffffff !important;
-  border: 1px solid #334768;
+  border: none;
 }
 .xstyle-buttoncontrol-wrapper button:hover span::before {
   color: #ffffff !important;
@@ -2225,8 +2253,13 @@ div[uxid=tbID], div[uxid=tbPassword] {
   color: #ffffff !important;
 }
 
+.xstyle-checkbox-wrapper {
+  min-height: auto;
+}
 .xstyle-checkbox-wrapper .x-checkbox {
   border-color: #676767;
+  width: 14px;
+  height: 14px;
 }
 .xstyle-checkbox-wrapper .x-checkbox:checked {
   border-color: #ae2a30;
@@ -2545,6 +2578,15 @@ div[uxid=tbID], div[uxid=tbPassword] {
 
 .PickupRemark {
   margin-top: -10px;
+}
+
+.k-list-item.k-focus, .k-list-item:focus {
+  box-shadow: none;
+}
+
+.k-list-item.k-selected {
+  background: #ae2a30;
+  color: white !important;
 }
 
 .k-rtl .k-window-titlebar .k-window-actions {
@@ -3976,7 +4018,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 .k-grid .k-grid-header {
-  padding: 4px 0px;
+  padding: 4px 0px !important;
 }
 
 .k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > span {
@@ -4260,6 +4302,85 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-content {
   background: none;
   border: none;
+}
+
+#TafnitCore_SaaSServer_Portal_Agents_UI_Aging .x-radio-wrapper {
+  display: flex;
+}
+#TafnitCore_SaaSServer_Portal_Agents_UI_Aging .x-radio-wrapper .k-radio-label {
+  margin-left: 15px !important;
+}
+
+.xstyle-radio-wrapper label {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  color: #000000;
+}
+.xstyle-radio-wrapper.x-readonly {
+  opacity: 1 !important;
+}
+.xstyle-radio-wrapper.x-readonly input.k-radio {
+  border-color: #676767 !important;
+}
+.xstyle-radio-wrapper.x-readonly input.k-radio:checked {
+  border-color: #676767 !important;
+}
+.xstyle-radio-wrapper.x-readonly input.k-radio:checked::before {
+  color: #676767 !important;
+}
+.xstyle-radio-wrapper.x-readonly label {
+  font-size: 14px !important;
+}
+.xstyle-radio-wrapper.x-readonly label.x-control-caption-text {
+  color: #000000 !important;
+  font-size: 16px !important;
+}
+.xstyle-radio-wrapper.k-state-disabled {
+  opacity: 1 !important;
+}
+.xstyle-radio-wrapper.k-state-disabled input.k-radio {
+  border-color: #dedede !important;
+}
+.xstyle-radio-wrapper.k-state-disabled input.k-radio:checked {
+  border-color: #dedede !important;
+}
+.xstyle-radio-wrapper.k-state-disabled input.k-radio:checked::before {
+  color: #a6a6a6 !important;
+}
+.xstyle-radio-wrapper.k-state-disabled button span::before {
+  color: #a6a6a6 !important;
+}
+.xstyle-radio-wrapper.k-state-disabled label {
+  color: #a6a6a6 !important;
+  font-size: 14px !important;
+}
+.xstyle-radio-wrapper.k-state-disabled label.x-control-caption-text {
+  color: #000000 !important;
+  font-size: 16px !important;
+}
+.xstyle-radio-wrapper .k-radio {
+  border: 1px solid #676767;
+  color: #727272;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+.xstyle-radio-wrapper .k-radio:checked {
+  border: 1px solid #ae2a30;
+}
+.xstyle-radio-wrapper .k-radio:checked::before {
+  background: #ae2a30 !important;
+}
+
+.radio-border {
+  text-align: center;
+  padding: 10px 1px;
+  border-top: 1px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
 }
 
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login .xtaf-logo-image .x-image-wrapper {
@@ -4793,4 +4914,8 @@ body, html {
 
 #TafnitCore_SaaSServer_Portal_Agents_UI_InventorySearch .greyPanel:has(.first-panel) .first-panel {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+#uber-container {
+  padding-right: 50px !important;
 }/*# sourceMappingURL=style.css.map */

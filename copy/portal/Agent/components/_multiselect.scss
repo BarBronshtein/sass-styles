@@ -1,6 +1,35 @@
  
     .xstyle-multiselect-wrapper   {
 
+
+        .k-chip-solid-base{
+            border-radius: 8px;
+            border: 1px solid var(--chip-border-default, #676767);
+            background: var(--chip-bg-default, #FFF);
+
+            .k-chip-label{
+                color: var(--chip-text-default, #676767);
+                text-align: right;
+                /* body M */
+                font-family: Heebo;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            .k-chip-icon{
+                margin-left: 5px;
+                margin-right: 10px;
+                &::before{
+                    content: "\e9c2";
+                    font-family: 'icomoon';
+                    color:#A6A6A6;
+
+                }
+            }
+        }
+
       margin-top: 15px;
         .k-input:focus-within, .k-widget.k-input:focus-within{
             box-shadow: none

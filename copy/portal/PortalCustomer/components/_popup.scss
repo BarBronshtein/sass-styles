@@ -588,3 +588,15 @@
         opacity: 1 ;
       }
   }
+
+
+
+  .col-button{
+    box-shadow: none;
+    border: none;
+    padding: 0;
+
+    .xstyle-buttoncontrol-wrapper{
+      width: auto;
+    }
+   }

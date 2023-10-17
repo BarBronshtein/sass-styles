@@ -76,9 +76,8 @@
   background: none;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .x-section-header-wrapper:has(.x-btn-collapse) .x-btn-collapse #x-arrow-collapse {
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+  margin: 0;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -110,10 +109,10 @@
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .x-section-header-wrapper:has(.x-btn-collapse) .x-btn-collapse {
   top: 0;
-  position: relative;
+  position: absolute;
   left: 0;
   border: none;
-  width: 30px;
+  width: 100%;
   height: 30px;
   background: none;
   align-items: center;
@@ -254,7 +253,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 13px */
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-focus,
@@ -290,7 +290,7 @@
   margin-right: 0px;
   width: 100%;
   height: 40px;
-  z-index: 10000000;
+  z-index: 2;
   position: absolute;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top .k-treeview-toggle span,
@@ -557,6 +557,7 @@
   font-size: 14px;
   line-height: 100%;
   color: #690779;
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
@@ -849,13 +850,114 @@
   opacity: 1;
 }
 
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xtaf-switch-studio .col {
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .x-button.cancel {
+  color: #159BC5;
+  background: white;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .x-button.confirm {
+  background: #159BC5;
+  color: white;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls {
+  width: 70%;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl {
+  height: unset;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl mainbody {
+  padding-bottom: 25px !important;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl mainbody > *:not(:last-child) > div > div > :first-child {
+  border-right: 1px solid #ECECEC;
+  align-items: center;
+  flex: 33%;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl mainbody > *:not(:last-child) > div > div > :first-child label {
+  color: #7E7B7B;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl mainbody > *:not(:last-child) > div > div > * {
+  border-bottom: 1px solid #ECECEC;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl mainbody > *:not(:last-child) > div > div input {
+  border: none !important;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_UxStudioSCPrompt {
+  overflow: hidden;
+  height: unset;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_ComplexControlChildrenSettings mainbody > div:first-child {
+  display: grid;
+  grid-template-columns: 2fr 20px 1fr;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_ComplexControlChildrenSettings mainbody > div:first-child > :first-child {
+  grid-column: 1;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls #TafnitCore_System_UI_App_Tools_Studio_ComplexControlChildrenSettings mainbody > div:first-child > :last-child {
+  grid-column: 3;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls .x-pagePopup {
+  box-shadow: 0px 0px 15px 0px rgba(7, 114, 148, 0.3019607843);
+  box-shadow: 0px 8px 4px 0px rgba(7, 114, 148, 0.2509803922);
+  border-radius: 3px;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls mainbody {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls mainbody > * {
+  grid-column: 2;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls mainbody > .row {
+  box-shadow: unset;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls mainbody > :last-child {
+  width: 40%;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  margin-top: 30px;
+  flex-direction: row-reverse;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls mainbody > :last-child div:last-child {
+  padding: 0 0 0 10px;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls > div > h1 {
+  padding: 15px;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-inline: 30px;
+  background-color: #F5F5F5;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls .popup_close_btn {
+  position: absolute;
+  top: 8px;
+  right: 38px;
+  z-index: 1;
+}
+[xid=controlxstudioMainRow]:has([xid=controlxstudioComponent]) .popUpWindowCls .popup_close_btn [role=button] {
+  border: none;
+  background: none;
+  color: #A1A3A5;
+}
+
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio {
+  width: 100%;
+  height: clamp(400px, 100vh, 100vh);
+  display: flex;
+  flex-direction: column;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itoolbar-wrapper:nth-of-type(1) {
+  display: none;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xtaf-switch-studio > .col {
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
   gap: 20px;
   align-items: center;
   justify-content: right;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio {
   padding-inline: 30px;
@@ -894,13 +996,6 @@
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-label-off {
   display: none;
 }
-
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio {
-  width: 100%;
-  height: clamp(400px, 100vh, 100vh);
-  display: flex;
-  flex-direction: column;
-}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .x-control-caption-wrapper {
   display: flex;
 }
@@ -929,19 +1024,38 @@
   align-items: center;
   justify-content: space-between;
   background-color: #07475C;
-  padding: 10px 20px;
+  padding: 10px 20px !important;
   flex-direction: row;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=colControlType] * {
   color: white;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] {
+  height: 100%;
+}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div {
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
+  max-height: calc(85vh - 3rem);
+  display: flex;
+  flex-direction: column;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div mainbody {
+  flex: 1 1 auto;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div footer,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div mainbody {
+  position: relative;
+  background-image: none;
+  background-color: none;
+  background: white;
+  padding-bottom: unset !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer {
-  position: relative;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFC328FF' stroke-width='3' stroke-dasharray='10' stroke-dashoffset='25' stroke-linecap='square'/%3e%3c/svg%3e") !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-row {
   border-radius: 0;
@@ -957,10 +1071,7 @@
   position: relative;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col {
   padding-block: 20px;
   border: 1px dotted #C8C8C8 !important;
   border-collapse: collapse;
@@ -1045,39 +1156,42 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
-  align-items: center;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] mainbody {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   padding: 20px;
-  max-height: 84vh;
   direction: ltr;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel].x-self-container {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] > :nth-child(2) {
+  max-height: 84vh;
   background-color: rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
+  height: 100%;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] {
   width: 100%;
   height: 100%;
   flex: 1 1 auto;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div > div, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] > div > div > div > div > div {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] .one {
   height: 100% !important;
   max-height: 84vh;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] header,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanel] footer {
-  margin-block: 15px !important;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] footer {
+  margin-block: 20px !important;
   padding: 15px;
-  min-height: 20px;
+  min-height: 40px;
+  position: relative;
   width: 100%;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] header:has(div),
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainpanelCol] footer {
+  min-height: unset;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper {
   direction: ltr !important;
@@ -1099,6 +1213,216 @@
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper .bg-warning {
   background: rgba(41, 176, 217, 0.4588235294) !important;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-lg-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-lg-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-lg-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-md-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-md-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-md-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-sm-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-sm-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-sm-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-1,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-10,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-11,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-12,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-2,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-3,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-4,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-5,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-6,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-7,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-8,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-9,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .col-xl-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .col-xl-auto,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .col-xl-auto {
+  padding: 0;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .xstyle-textwithbuttonsimple-wrapper, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .xstyle-textwithbuttonsimple-wrapper, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .xstyle-textwithbuttonsimple-wrapper {
   padding: 0%;
@@ -1181,4 +1505,8 @@
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-specific-styling .xstyle-checkbox-wrapper li, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(1) .xstyle-checkbox-wrapper li, #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] > div:nth-of-type(4) .xstyle-checkbox-wrapper li {
   display: flex;
   gap: 10px;
+}
+
+#TafnitCore_System_UI_App_Tools_Studio_InitComplexControl mainbody > * > div > div {
+  flex-direction: row-reverse !important;
 }/*# sourceMappingURL=style.css.map */

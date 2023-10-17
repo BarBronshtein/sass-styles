@@ -1,0 +1,130 @@
+
+@import './variable/variable';
+
+
+@import './components/header';
+@import './components/row';
+@import './components/cubeDashboard';
+@import './components/drawer';
+@import './components/grid';
+@import './components/linkmenucontrol';
+@import './components/firstPanel';
+@import './components/textcontrol';
+@import './components/datecontrol';
+@import './components/dropdown';
+@import './components/button';
+@import './components/checkBox';
+@import './components/orderCube';
+@import './components/popup';
+@import './components/messageBox';
+@import './components/mandatory';
+@import './components/autocomplete';
+@import './components/payment-cube';
+@import './components/total-panel';
+@import './components/upload';
+@import './components/timeControl';
+@import './components/intlphone';
+@import './components/textarea';
+@import './components/madia';
+
+
+
+@import './page/WizardInput';
+@import './page/login';
+@import './page/AddInvoiceNoOrder';
+@import './page/WizardInvoices';
+@import './page/DisplayInputInvoiceNoOrder.scss';
+@import './page/OrdersWaitingEdit';
+@import './page/Report';
+@import './page/userDetailes';
+@import './page/DislayInputInvoice';
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
+
+
+body,html{
+    font-family: 'Heebo';
+    background: #F8F8F8 !important;
+}
+.border{
+    border: none !important;
+}
+
+.container.pageContainer.xtafnit_pageContainer {
+    margin: 65px auto;
+    width: 99%;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+}
+
+.dir-ltr{
+    text-align: end !important;
+}
+
+#TafnitCore_SaaSServer_Portal_Default_UI_Disclaimer{
+    mainbody {
+        margin-top: 0px !important;
+    }
+}
+
+.k-disabled, .k-state-disabled {
+    opacity: 1; 
+}
+
+.icon-export-excel:before {
+    content: "\ea5e";
+    color:$icon-before ;
+}
+
+.icon-export-excel:after {
+    content: "\ea5f";
+    color:$icon-after;
+}
+
+
+.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2,.icon-tracker{
+
+    &:before{
+        color:$drawer-icon-color-after;
+    }
+
+    &:after{
+        color:$drawer-icon-color-before;
+    }
+
+}
+
+.icon-car:after,.icon-customers::after {
+    color: $drawer-icon-color-after;
+}
+
+.icon-car:before,.icon-customers::before{
+    color:$drawer-icon-color-before;
+}
+
+
+.icon-home-2,.icon-log-out{
+    &:after{
+        color:$drawer-icon-color-after;
+    }
+
+    &::before{
+        color:$drawer-icon-color-before;
+    }
+}
+
+
+
+.k-content #uber-container {
+    padding-right: 50px !important;
+}

@@ -176,3 +176,11 @@ body,html{
         }
    }
 }
+
+.xtaf-flex{
+    display: flex !important;
+
+    .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper{
+        float: right !important;
+    }
+}

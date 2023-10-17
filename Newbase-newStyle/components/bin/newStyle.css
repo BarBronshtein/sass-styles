@@ -7425,4 +7425,9 @@ body.k-content {
 
 .x-map {
   min-height: 350px;
+}
+
+.x-control-wrapper:has(.x-control-info-bubble-wrapper) {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }/*# sourceMappingURL=newStyle.css.map */

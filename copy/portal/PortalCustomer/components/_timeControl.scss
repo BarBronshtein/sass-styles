@@ -70,7 +70,7 @@
     border: 1px solid $time-picker-border;
     background: #FFF;
     box-shadow: $time-picker-shadow;
-
+    
     .k-time-header{
         .k-button-text{
             color:  $time-picker-link-now;
@@ -81,12 +81,18 @@
             font-weight: 400;
             line-height: 18px;
         }
+
+        .k-title{
+            font-weight: 500;
+            font-size: 14px;
+        }
     }
 
 
     .k-time-list-container{
         background: none;
-
+        flex-direction: row-reverse;
+        margin-top: 10px;
         .k-time-list-wrapper{
             background: none;
 
@@ -111,7 +117,7 @@
                 font-family: Heebo;
                 font-size: 11px;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 400;
                 line-height: 100%;
             }
             .k-time-list{
@@ -150,7 +156,13 @@
         height: 40px !important;
         min-width: 75px !important;
         @extend %special-button;
-
+        span{
+            font-weight: 400 ;
+            font-size: 14px ;
+            line-height: 24px ;
+            text-align: right ;
+       
+        }
 
         &:hover{
           background: $special-button-bg-hover;
@@ -176,6 +188,15 @@
         min-width: 75px !important;
         @extend %button;
         max-width: 200px;
+
+        span{
+            font-family: 'Heebo' !important ;
+            font-style: normal ;
+            font-weight: 400 ;
+            font-size: 14px ;
+            line-height: 24px ;
+        
+        }
       &:hover{
         background: $button-bg-hover;
         color: $button-color-text-hover !important;

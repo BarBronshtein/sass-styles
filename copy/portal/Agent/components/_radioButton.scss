@@ -1,6 +1,14 @@
 
 
+#TafnitCore_SaaSServer_Portal_Agents_UI_Aging{
+  .x-radio-wrapper{
+    display: flex;
 
+    .k-radio-label{
+      margin-left: 15px !important;
+    }
+  }
+}
 //radio disable//
 
 .xstyle-radio-wrapper {
@@ -8,7 +16,7 @@
       font-family: 'Heebo';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 13px;
       line-height: 100%;
       color: $radio-button-text-label-color;
     }
@@ -70,18 +78,19 @@
       .k-radio {
         &:checked {
           
-           border: $radio-button-border-check;
+           border:1px solid $radio-button-border-check;
 
            &::before{
             background: $radio-button-bg-check !important;
            }
         }
       
-        border: 1px solid $radio-button-border-defaul;
+        border: 1px solid $radio-button-border-default;
         color: #727272;
         background-color:$radio-button-bg;
         border-radius: 50%;
-      
+        width: 14px;
+        height: 14px;
     
       }
 

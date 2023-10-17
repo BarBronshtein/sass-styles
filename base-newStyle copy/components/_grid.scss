@@ -71,7 +71,7 @@
         .k-grid-header-wrap{ 
             a.k-grid-filter{
                 float: right !important;
-                margin-left: 5px !important;
+               
             }
         }
     }
@@ -94,6 +94,7 @@
 .k-grid .k-grid-header th.k-header.xtaf-hidden{
   border: none !important;
   background: white !important;
+  pointer-events: none;
 }
 
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td{
@@ -105,6 +106,7 @@
     border: none !important;
     box-shadow: none !important;
     background: none !important;
+    pointer-events: none;
 }
 }
 

@@ -76,6 +76,7 @@
 @forward '../pages/meeting';
 @forward '../pages/Transportation';
 @forward '../pages/accessiblity-viewer';
+@forward '../pages/MakeRequest';
 
 
 
@@ -241,6 +242,12 @@ margin: 0;
 }
 
 
+
+
+
+
+// otp //
+
 #TafnitCore_SaaSServer_OTP_UI_OTPValidation{
   padding: 0px 0px;
 
@@ -291,6 +298,21 @@ border: none !important;
 background: none;
 box-shadow: none;
 
+textarea{
+
+  background: none;
+  border: none;
+  text-align: center;
+  color: #6B6E77;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; 
+  outline: none !important;
+}
 .xtaf-title{
   span{
     color: var(--primary-colors-prime-blue, var(--prime-blue-white-1000, #232873));
@@ -316,35 +338,151 @@ box-shadow: none;
     font-style: normal;
     font-weight: 400;
     line-height: 19px; 
+    margin-bottom: 30px;
   }
 }
 
-
+.x-control-content-wrapper:has(input) {
+  text-align: center !important;
+}
 input{
-  --otp-digits: 6;
-  --otp-ls: 43px;
-  --otp-gap: 1;
-  --_otp-bgsz: calc(var(--otp-ls) + 1ch);
-  --_otp-digit: 0;
-  all: initial;
-  background: linear-gradient(90deg, var(--otp-bg, #eee) calc(var(--otp-gap) * var(--otp-ls)), transparent 0), linear-gradient(90deg, var(--otp-bg, #EEE) calc(var(--otp-gap) * var(--otp-ls)), transparent 0 );
-  background-position: calc(var(--_otp-digit) * var(--_otp-bgsz)) 0, 0 0;
-  background-repeat: no-repeat, repeat-x;
-  background-size: var(--_otp-bgsz) 100%;
-  caret-color: var(--otp-cc, #222);
-  caret-shape: block;
-  clip-path: inset(0% calc(var(--otp-ls) / 2) 0% 0%);
-  font-family: ui-monospace, monospace;
-  font-size: var(--otp-fz, 1.5em);
-  inline-size: calc(var(--otp-digits) * var(--_otp-bgsz));
-  letter-spacing: var(--otp-ls);
-  padding-block: var(--otp-pb, 10px);
-  padding-inline-start: calc(((var(--otp-ls) - 1ch) / 2) * var(--otp-gap));
-  /* margin: auto; */
-  position: relative;
-  margin-inline-start: calc(((var(--otp-ls) - -4ch) / 2) * var(--otp-gap));
-  margin-top: 44px;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid var(--system-colors-prime-blue-30, #BDBFD5);
+  background: var(--system-colors-white, #FFF);
+  outline: none;
+  color: var(--primary-colors-prime-blue, var(--prime-blue-white-1000, #232873));
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Heebo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  &:focus,&:focus-within{
+    border: 1px solid var(--primary-colors-bright-blue, #14008E);
+
+  }
+
+  &:focus-visible{
+    outline: none;
+  }
 }
 }
 
+}
+
+.k-window:has(#TafnitCore_SaaSServer_OTP_UI_ErrorMessage){
+
+  border-radius: 6px;
+  background: var(--color-white-1000, #FFF);
+  padding: 34px 16px;
+  border: none;
+  box-shadow: none;
+  height: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 370px !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto;
+
+  #TafnitCore_SaaSServer_OTP_UI_ErrorMessage{
+    margin: 0 !important;
+  }
+.x-header {
+  display: none;
+}
+  .k-window-titlebar{
+    display: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    .k-window-title{
+      display: none;
+    }
+  .k-window-actions{
+    position: absolute;
+    left: 10px;
+
+  }
+
+  }
+
+
+  .xtaf-title-messagbox{
+    span{
+      color: var(--brand-med-gray, #6B6E77);
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Heebo;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      overflow: hidden !important;
+    }
+  }
+
+  .xtaf-text-messagbox{
+
+    span{
+    color: var(--brand-prime-blue, var(--prime-blue-white-1000, #232873));
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    overflow: hidden !important;
+  }
+  }
+
+.x-button-wrapper{
+  margin-top: 20px;
+  text-align: center;
+  button{
+    border-radius: 30px;
+    background: var(--primary-colors-prime-orange, #FF5A23);
+    height: 44px;
+    padding: 10px 30px;
+    color: var(--system-colors-white, var(--color-white-1000, #FFF));
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; 
+    border: none;
+
+    &:hover{
+
+      background: var(--base-secondery-600, #E53E07);
+    }
+
+    &:focus,&:focus-within{
+
+      background: var(--answersurvey-button-press-background, #FF5A23);
+      box-shadow: 0px 0px 6px 0px rgba(229, 62, 7, 0.60);
+    }
+  }
+}
+
+}
+
+
+.x-control-wrapper:has(.x-control-info-bubble-wrapper ) {
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+.x-control-content-wrapper{
+  grid-column: 1 / 3;
+}
 }

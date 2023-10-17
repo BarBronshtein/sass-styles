@@ -45,8 +45,7 @@
       &:hover{
         background: $button-bg-hover;
         color: $button-color-text-hover;
-        border:1px solid $button-color-border;
-
+        border:none;
         & span:before,& span:after{
           color: $button-color-icon !important;
         }
@@ -121,7 +120,7 @@
       &:hover{
         background: $special-button-bg-hover;
         color: $special-button-color-text-hover !important;
-        border:1px solid $special-button-color-border !important;
+        border:1px solid $special-button-bg-hover !important;
         span::before{
           color: $special-button-color-text-hover !important;
         }
@@ -145,7 +144,7 @@
       &:hover{
         background: $button-bg-hover;
         color: $button-color-text-hover !important;
-        border:1px solid $button-bg-hover;
+        border:none;
         span::before{
           color: $button-color-text-hover !important;
         }

@@ -234,7 +234,6 @@
   direction: ltr;
 }
 #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main .x-header .xstyle-itoolbar-wrapper .x-itoolbar #portalLogo img {
-  width: 50px;
   float: left;
 }
 #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main .x-header .xstyle-itoolbar-wrapper .x-itoolbar #kiDrawer {
@@ -1980,6 +1979,7 @@ div[uxid=MainPanel] {
 
 .container.pageContainer.xtafnit_pageContainer {
   margin-bottom: 90px !important;
+  margin-top: 70px !important;
 }
 
 .k-i-close::before {

@@ -1255,8 +1255,8 @@ mainbody mainbody {
   padding: 0 !important;
 }
 .k-grid-header-wrap.k-auto-scrollable .k-grid-filter-menu.k-grid-filter.k-active .k-icon.k-i-filter::before {
-  content: "\e971" !important;
-  color: #7B098B !important;
+  content: "\ea74" !important;
+  font-family: "icomoon";
 }
 .k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > a > span::before {
   content: "\f0dc";
@@ -2512,8 +2512,8 @@ div[uxid=tbID], div[uxid=tbPassword] {
 }
 .k-window .ttitle-border {
   padding: 7px 5px !important;
-  border-bottom: #0176e1;
-  border-top: #0176e1;
+  border-bottom: 1px solid #0176e1;
+  border-top: 1px solid #0176e1;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -3029,7 +3029,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   top: 15px;
   position: relative;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   background: #ffffff;
   width: 50px;
   height: 50px;
@@ -3037,10 +3037,10 @@ div[uxid=tbID], div[uxid=tbPassword] {
   border-radius: 10px;
   align-items: center;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 32px;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .x-kicon-caption {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
   display: none;
 }
 .greyPanel .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper {
@@ -3488,11 +3488,11 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   font-size: 14px;
 }
 
-.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   width: 40px;
   height: 40px;
 }
-.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 25px;
 }
 
@@ -4374,8 +4374,8 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 }
 #TafnitCore_SaaSServer_Portal_Default_UI_userDetailes .ttitle-border {
   padding: 7px 5px !important;
-  border-bottom: #0176e1;
-  border-top: #0176e1;
+  border-bottom: 1px solid #0176e1;
+  border-top: 1px solid #0176e1;
   margin-top: 15px;
   margin-bottom: 15px;
 }

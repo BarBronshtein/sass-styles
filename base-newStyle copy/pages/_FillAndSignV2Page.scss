@@ -198,10 +198,24 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
 
 
     // checkbox control //
-
+   
 
     & .xstyle-checkbox-wrapper{
 
+
+        &.x-control-wrapper {
+
+            flex-direction: row-reverse !important;
+            .x-control-caption-wrapper {
+                flex: auto;
+            }
+        
+            .x-control-content-wrapper {
+                flex-grow: 0.1;
+                width: auto;
+            }
+
+        }
        
         & label{
             font-family: 'Assistant' !important;
@@ -382,50 +396,80 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
 
     // signature //
 
-    .xstyle-signature-wrapper{
+    .xstyle-signaturev2-wrapper .x-control-content-wrapper{
 
-        & span.signatureColorPicker{
 
-            border-radius: 0px !important;
-         }
-    
-    
-       & .GraphicalSignaturePlaceHoldersSign,.GraphicalSignaturePlaceHolders{
-            border: 1px solid #CCCCCC !important;
-            border-radius: 8px !important;
-            padding: 20px !important;
-
-            & a img{
-                display: none !important;
-            }
-
-            & a::before{
-                content: "\f12d" !important;
-                font-family: "Font Awesome 5 pro" !important;
-                color: #0675B4 !important;
+        .k-i-arrow-s{
+            &::before{
+                font-family: 'icomoon';
+                content: "\e9bc";
+                color: #0675B4;
                 font-size: 22px;
-                font-weight: 100;
-
-            }
-
-            & .fas.fa-file-upload{
-
-                &::before{
-                    content: "\f357" !important;
-                    font-family: "Font Awesome 5 pro" !important;
-                    color: #0675B4 !important;
-                    font-size: 22px;
-                    font-weight: 100;
-                   
-                }
             }
         }
-    
-        & .x-signature-canvas{
-           border-top: none !important;
-           border-bottom: 1px dashed #ccc !important;
+     .toolbar{
+
+
+        span.k-colorpicker , span.k-dropdownlist{
+            border-radius: 8px;
+            border: 1px solid var(--taa-s-neutral-400, #CCC);
+            background: var(--taa-s-neutral-100, #FBFBFB);
+            height: 50px !important;
         }
+     }
+
+
+     .x-signaturev2{
+        border-radius: 4px;
+       border: 1px solid var(--taa-s-neutral-400, #CCC) !important;
+       padding: 10px 20px;
+     }
+
+     .k-input-inner:has(.k-input-value-text){
+        height: 25px;
+     }
+     .k-signature-action.k-signature-maximize.k-button.k-icon-button{
+
+        .k-icon{
+            font-size: 24px;
+            color: #6A3F75;
+        }
+     }
+
+
+    .signature-clear-btn{
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        span::before{
+            font-size: 26px;
+            margin-left: 0px;
+            color: #AAAAAA; 
+        }
+     }
+
+
+     .k-signature-line {
+        position: absolute;
+        bottom: 33%;
+        z-index: 2;
+        pointer-events: none;
+        border-bottom-width: 1px !important;
+        border-bottom-style: dashed !important;
+        width: calc(98% - 8px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-color: #BBB !important;
     }
+
+    .k-signature{
+        min-height: 250px;
+    }
+
+    }
+
+
 
 
     // upload control //
@@ -738,18 +782,91 @@ body.bodyPayment{
 
 
 
+.k-animation-container:has(.k-coloreditor){
+    border-radius: 8px;
+    border: 1px solid var(--taa-s-neutral-400, #CCC);
+    background: var(--taa-s-neutral-100, #FBFBFB);
+
+    .k-colorpicker-popup{
+        box-shadow: none;
+        border: none;
+        background: none;
+
+        .k-coloreditor{
+            background: none;
+        }
+        .k-upload-button.k-button-solid-base{
+            background: none !important;
+
+       
+        }
+    }
+}
+
+
+
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
+
+.k-animation-container .k-dropzone > .k-upload-button.k-button-solid-base span::before{
+    color: var(--secondery-600, #0675B4);
+    text-align: right;
+    font-family: Assistant;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+
+.k-animation-container:has(.k-list){
+    border-radius: 8px;
+    border: 1px solid var(--taa-s-neutral-400, #CCC);
+    background: var(--taa-s-neutral-100, #FBFBFB);
+    padding: 20px;
+
+.k-popup,.k-list-content {
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+.k-list-item{
+    border-radius: 8px;
+    border: 1px solid var(--taa-s-neutral-300, #E6E6E6);
+    background: var(--taa-s-other-white, #FFF);
+    padding: 15px 20px;
+    box-shadow: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    span{
+        color: var(--taa-s-other-black, #000);
+        text-align: right;
+        font-family: Assistant;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+}
+}
+
+
+}
 
 
 
 
 
 
+.k-signature{
+    min-height: 250px;
+  .k-signature-action.k-signature-minimize{
 
-
-
-
-
-
-
-
-
+        .k-icon{
+            font-size: 24px;
+            color: #6A3F75;
+        }
+     }
+}

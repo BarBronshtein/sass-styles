@@ -112,6 +112,7 @@
         padding: $grid-content-padding;
 
         .k-grid-filter {
+          margin-left: 0 !important;
             &.k-state-active {
                 background: $grid-header-filter-active-background;
 
@@ -144,6 +145,7 @@
               text-align: right;
               color: $grid-header-text-color;
                 padding-right: 0px !important;
+                padding-left: 0;
             }
 
             background: none;

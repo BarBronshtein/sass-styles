@@ -4,10 +4,17 @@
       text-align: center !important;
       margin-bottom: 15px;
     }
+
+    img{
+      width: 284px !important;
+      height: auto !important;
+
+    }
   }
 
   div[uxid="cPassword1"]{
-    margin-bottom: 40px !important;
+    margin-bottom: 10px !important;
+    margin-top: 25px !important;
   }
 }
 
@@ -98,7 +105,7 @@
 
   #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody [xid="controlcLogin1"]{
     padding-bottom: 25px !important;
-    padding-top: 80px !important;
+    padding-top: 35px !important;
   }
 }
 
@@ -202,6 +209,9 @@
           flex-direction: column;
   max-width: 550px;
   min-height:450px;
+  margin: 65px 80px 0px 0px !important;
+    position: absolute;
+    top: 50%;
 }
 
 @media only screen and (max-height: 950px) {

@@ -30,6 +30,7 @@
 @import './components/slider';
 @import './components/label';
 @import './components/tabscript';
+@import './components/radioButton';
 
 
 
@@ -160,4 +161,8 @@ body,html{
 .greyPanel:has(.first-panel) .first-panel{
     grid-template-columns: 1fr 1fr 1fr;
 }
+}
+
+#uber-container {
+    padding-right: 50px !important;
 }

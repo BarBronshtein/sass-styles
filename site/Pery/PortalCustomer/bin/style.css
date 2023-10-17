@@ -1293,8 +1293,8 @@ mainbody mainbody {
   padding: 0 !important;
 }
 .k-grid-header-wrap.k-auto-scrollable .k-grid-filter-menu.k-grid-filter.k-active .k-icon.k-i-filter::before {
-  content: "\e971" !important;
-  color: #7B098B !important;
+  content: "\ea74" !important;
+  font-family: "icomoon";
 }
 .k-grid-header-wrap.k-auto-scrollable .k-i-filter::before {
   content: "\f0dc";
@@ -1874,12 +1874,18 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-date-wrapper.k-state-disabled {
   opacity: 1 !important;
 }
+.xstyle-date-wrapper span.k-datepicker:has(.x-login-user-error) {
+  border: 1px solid red !important;
+}
 .xstyle-date-wrapper span.k-datepicker:focus-within {
   border: 1px solid #17d9c6;
   box-shadow: 0px 1px 3px 0px rgba(0, 184, 166, 0.3), 0px 4px 8px 0px rgba(0, 184, 166, 0.1);
 }
 .xstyle-date-wrapper input {
   padding: 0;
+}
+.xstyle-date-wrapper input {
+  border: none !important;
 }
 .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper input {
   width: 100%;
@@ -2068,6 +2074,10 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-weight: 700;
 }
 
+.xstyle-buttoncontrol-wrapper {
+  width: 100%;
+}
+
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleFleet .header-grid .gridHeaderButton, #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory .header-grid .gridHeaderButton {
   margin-top: 40px;
 }
@@ -2158,6 +2168,11 @@ div[uxid=tbID], div[uxid=tbPassword] {
 }
 .xstyle-buttoncontrol-wrapper button:focus span:before {
   color: #ffffff !important;
+}
+
+.k-checkbox {
+  width: 14px !important;
+  height: 14px !important;
 }
 
 .xstyle-checkbox-wrapper .x-checkbox {
@@ -2937,6 +2952,15 @@ div[uxid=tbID], div[uxid=tbPassword] {
   opacity: 1;
 }
 
+.col-button {
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+.col-button .xstyle-buttoncontrol-wrapper {
+  width: auto;
+}
+
 .k-window:has(#MessageBoxWindow) {
   background: #ffffff;
   box-shadow: 0px 5px 8px 0px rgba(0, 184, 166, 0.1);
@@ -2999,30 +3023,30 @@ div[uxid=tbID], div[uxid=tbPassword] {
   background: #0fcebc;
 }
 
-.mandatory.p-floating-container :has(.x-control-caption-wrapper) label,
-.xstyle-numberrange-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.mandatory.xstyle-textcontrol-wrapper :has(.x-control-caption-wrapper) label,
-.xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-textareacontrol-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-textareacontrol-wrapper.mandatory :has(.x-control-caption-wrapper) label,
-.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label {
+.mandatory.p-floating-container:has(.x-control-caption-wrapper) label,
+.xstyle-numberrange-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.xstyle-timepicker-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.mandatory.xstyle-textcontrol-wrapper:has(.x-control-caption-wrapper) label,
+.xstyle-daterangev2-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.xstyle-date-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.xstyle-password-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.xstyle-timepicker-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.xstyle-textareacontrol-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.xstyle-textareacontrol-wrapper.mandatory:has(.x-control-caption-wrapper) label,
+.xstyle-autocomplete-wrapper.mandatory:has(.x-control-caption-wrapper) label {
   padding-right: 10px;
 }
-.mandatory.p-floating-container :has(.x-control-caption-wrapper) label:before,
-.xstyle-numberrange-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.mandatory.xstyle-textcontrol-wrapper :has(.x-control-caption-wrapper) label:before,
-.xstyle-daterangev2-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-date-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-password-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-timepicker-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-textareacontrol-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-textareacontrol-wrapper.mandatory :has(.x-control-caption-wrapper) label:before,
-.xstyle-autocomplete-wrapper.mandatory :has(.x-control-caption-wrapper) label:before {
+.mandatory.p-floating-container:has(.x-control-caption-wrapper) label:before,
+.xstyle-numberrange-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.xstyle-timepicker-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.mandatory.xstyle-textcontrol-wrapper:has(.x-control-caption-wrapper) label:before,
+.xstyle-daterangev2-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.xstyle-date-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.xstyle-password-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.xstyle-timepicker-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.xstyle-textareacontrol-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.xstyle-textareacontrol-wrapper.mandatory:has(.x-control-caption-wrapper) label:before,
+.xstyle-autocomplete-wrapper.mandatory:has(.x-control-caption-wrapper) label:before {
   content: "*";
   font-family: "Font Awesome 5 pro" !important;
   position: absolute;
@@ -3347,7 +3371,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button {
   border: none;
   margin-bottom: 15px;
-  background: #00b8a6;
+  background: #00b8a6 !important;
   border-radius: 10px;
   color: #ffffff !important;
   height: 50px !important;
@@ -3473,8 +3497,14 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-weight: 400;
   line-height: 18px;
 }
+.k-animation-container .k-popup.k-timeselector .k-time-header .k-title {
+  font-weight: 500;
+  font-size: 14px;
+}
 .k-animation-container .k-popup.k-timeselector .k-time-list-container {
   background: none;
+  flex-direction: row-reverse;
+  margin-top: 10px;
 }
 .k-animation-container .k-popup.k-timeselector .k-time-list-container .k-time-list-wrapper {
   background: none;
@@ -3497,7 +3527,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-family: Heebo;
   font-size: 11px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 100%;
 }
 .k-animation-container .k-popup.k-timeselector .k-time-list-container .k-time-list-wrapper .k-time-list {
@@ -3524,6 +3554,12 @@ div[uxid=tbID], div[uxid=tbPassword] {
   height: 40px !important;
   min-width: 75px !important;
 }
+.k-animation-container .k-popup.k-timeselector .k-time-cancel span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+}
 .k-animation-container .k-popup.k-timeselector .k-time-cancel:hover {
   background: #0fcebc;
   color: #ffffff !important;
@@ -3544,6 +3580,13 @@ div[uxid=tbID], div[uxid=tbPassword] {
   height: 40px !important;
   min-width: 75px !important;
   max-width: 200px;
+}
+.k-animation-container .k-popup.k-timeselector .k-button-solid-primary span {
+  font-family: "Heebo" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 .k-animation-container .k-popup.k-timeselector .k-button-solid-primary:hover {
   background: #0fcebc;
@@ -3739,7 +3782,6 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   font-size: 14px;
 }
 
-.xstyle-textareacontrol-wrapper textarea,
 .xstyle-intlphonenumber-wrapper.k-state-disabled input,
 .xstyle-intlphonenumber-wrapper input,
 .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox,
@@ -3815,7 +3857,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 .greyPanel .x-section-header-wrapper .x-section-header {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .portalGrid h4 {
@@ -4190,8 +4232,13 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   text-align: center !important;
   margin-bottom: 15px;
 }
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login .xtaf-logo-image img {
+  width: 284px !important;
+  height: auto !important;
+}
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login div[uxid=cPassword1] {
-  margin-bottom: 40px !important;
+  margin-bottom: 10px !important;
+  margin-top: 25px !important;
 }
 
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody div[uxid=bLogin] .x-button-wrapper .k-button {
@@ -4258,7 +4305,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 @media screen and (min-width: 1050px) {
   #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody [xid=controlcLogin1] {
     padding-bottom: 25px !important;
-    padding-top: 80px !important;
+    padding-top: 35px !important;
   }
 }
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .x-button-wrapper {
@@ -4334,6 +4381,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   flex-direction: column;
   max-width: 550px;
   min-height: 450px;
+  margin: 65px 80px 0px 0px !important;
+  position: absolute;
+  top: 50%;
 }
 
 @media only screen and (max-height: 950px) {
@@ -4626,4 +4676,11 @@ body, html {
 }
 #TafnitCore_System_UI_App_Tools_BusinessTierTracker .xstyle-textareacontrol-wrapper .k-textarea {
   min-height: 150px;
+}
+
+.xtaf-flex {
+  display: flex !important;
+}
+.xtaf-flex .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper {
+  float: right !important;
 }/*# sourceMappingURL=style.css.map */

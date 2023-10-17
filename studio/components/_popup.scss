@@ -602,3 +602,112 @@
   }
 
 }
+[xid="controlxstudioMainRow"]:has( [xid="controlxstudioComponent"]){
+  .x-button.cancel{
+    color: #159BC5;
+    background: white;
+
+  }
+  .x-button.confirm{
+    background: #159BC5;
+    color: white;
+  }
+  .popUpWindowCls{
+    width: 70%;
+
+    ///// adding grid popup /////
+    #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl{
+      height: unset;
+      mainbody{padding-bottom: 25px !important;}
+      mainbody > *:not(:last-child)>div>div{
+        
+        &>:first-child{
+          border-right:1px solid #ECECEC;
+          align-items: center;
+          flex:33%;
+          label{
+            color: #7E7B7B;
+          }
+        }
+        &>*{
+          border-bottom:1px solid #ECECEC
+        }
+         input{
+          border: none !important;
+        }
+      }
+
+    }
+
+
+    ///// edit save class popup /////
+    
+    #TafnitCore_System_UI_App_Tools_Studio_UxStudioSCPrompt{
+      overflow: hidden;
+      height: unset;
+    }
+
+
+    ///// edit column popup /////
+    #TafnitCore_System_UI_App_Tools_Studio_ComplexControlChildrenSettings{
+
+      mainbody > div:first-child{
+        display: grid;
+        grid-template-columns: 2fr 20px 1fr;
+        &>:first-child{
+          grid-column: 1;
+        }
+        &>:last-child{
+          grid-column: 3;
+        }
+      }
+    }
+
+  .x-pagePopup{
+    box-shadow: 0px 0px 15px 0px #0772944D;
+    box-shadow: 0px 8px 4px 0px #07729440;
+    border-radius: 3px;
+  }
+  mainbody{
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+      &>*{
+        grid-column: 2;
+      }
+     &> .row{
+    box-shadow: unset;
+    }
+    &>:last-child{
+      width: 40%;
+      margin-inline-end: 15px;
+      margin-top: 30px;
+      flex-direction: row-reverse;
+      div:last-child {
+        padding: 0 0 0 10px;
+      }
+  }
+}
+  > div {
+    &>h1{
+      padding: 15px;
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-inline: 30px;
+      background-color: #F5F5F5;
+    }
+  }
+
+  .popup_close_btn{
+    position: absolute;
+    top: 8px;
+    right: 38px;
+    z-index: 1;
+    [role="button"]{
+      border: none;
+      background: none;
+      color:#A1A3A5;
+    }
+  }
+}
+
+}
