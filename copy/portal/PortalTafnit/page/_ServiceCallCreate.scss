@@ -1,0 +1,133 @@
+.k-window:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate){
+    .k-window-titlebar {
+        position: fixed;
+    z-index: 10005;
+    left: 0;
+    }
+}
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate{
+ 
+
+
+    .xtaf-cube-upload{
+        max-width: 250px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+        padding: 10px;
+
+        .k-icon{
+          &::before{
+            color: #690779;
+            font-size: 22px;
+          }
+        }
+
+
+        .x-kicon-caption{
+            margin-right: 20px; 
+            overflow: hidden;
+            color: var(--upload-color-file-name, #000);
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: Heebo;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%
+        }
+    }
+    .mt-26{
+        margin-top: 26rem !important;
+    }
+    mainbody{
+        margin-top: 395px !important;
+
+        &:has(.xtaf-mt-0){
+                margin-top: 0px !important; 
+        }
+    }
+    header{
+        background: none;
+        position: fixed;
+        padding: 60px 20px 30px 20px;
+        background: #F5F5F5;
+        border-radius: 10px 10px 0 0;
+    .xtaf-logo-image {
+
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        .x-image-wrapper{
+            text-align: center;
+        }
+    }
+       .xstyle-progressbar-wrapper{
+        background: none;
+        border: none;
+        direction: ltr;
+        .x-progressbar{
+            height: 10px;
+            border: none;
+        }
+
+        ul{
+            background: var(--step-step-progressbar-default, #DEDEDE);
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+
+
+            li{
+                height: 10px;
+                border:none;
+                border-radius:0;
+
+                &.k-first{
+                    border-radius: 4px 0px 0px 4px;
+                }
+
+                &.k-last{
+                    border-radius: 0 4px 4px 0;
+                }
+
+                &.k-selected{
+                    background: #0EAADC !important;
+                }
+            }
+        }
+       }
+
+
+       .xtaf-progressbar{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+         span{
+            color: var(--step-step-text-default, #A6A6A6);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Heebo;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center; 
+        }
+        .xtaf-activeTab{
+
+            span{
+            color: var(--step-step-text-done, #026180);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Heebo;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            }
+        }
+       }
+
+    }
+}

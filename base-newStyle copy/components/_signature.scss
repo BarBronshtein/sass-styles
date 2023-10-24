@@ -1,4 +1,4 @@
-@use '../variables/masterVariable' as *;
+
 
 
 .xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar { display:flex; gap:5px;}
@@ -223,4 +223,11 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%; 
+}
+
+
+.xstyle-signature-wrapper{
+    flex-wrap: nowrap;
+    display: block;
+    height: auto;
 }

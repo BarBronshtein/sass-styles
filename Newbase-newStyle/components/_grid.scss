@@ -1,9 +1,64 @@
+.xstyle-gridv4-wrapper .k-split-button .k-split-button-arrow {
+  position: absolute;
+  z-index: 5;
+  background: none !important;
+  width: 40px;
+  border-radius: 4px !important;
+  border-start-start-radius: 4p !important;
+  border-end-start-radius: 4px !important;
+}
+.xstyle-gridv4-wrapper {
 
-@use '../variables/masterVariable' as *;
+  .k-toolbar-resizable{
+    border-radius: 8px;
+    background: var(--vanilla-neutral-200, #F5F5F5);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  .k-button-group{
 
+      
+    &:has(.icon-xtar-import-xls){
+      span:before{
+        content: "" !important;
+      }
+     
+        .k-icon.k-i-arrow-s:before{
+          font-family: 'icomoon';
+          content: "\e97d" !important;
+        
+      }
+    }
+
+    &:has(.icon-xtar-share){
+      span:before{
+        content: "" !important;
+      }
+      
+        .k-icon.k-i-arrow-s:before{
+          font-family: 'icomoon';
+          content: "\e995" !important;  
+        
+      }
+    }
+  }
+
+}
 .k-grid {
     border: none;
     outline: 0;
+
+
+   
+
+
+
+
+
+
+
+
+
 
 
     th,td{
@@ -88,7 +143,9 @@
         }
 
         tr {
-
+         &.k-selected{
+          background: #8EBBCF;
+         }
           &.k-alt{
             background:$grid-tr-background-k-alt ;
           }
@@ -271,7 +328,9 @@
   
     
       & >table>tbody>tr{
-       
+        &.k-selected{
+          background-color: #8EBBCF;
+         }
         &.k-alt{
           background:$grid-tr-background-k-alt ;
         }
@@ -294,9 +353,56 @@
     
       & >table>tbody>tr>td>button{
         align-items: center;
-        padding: 20px;
         height: 35px ;
-      
+
+        &.k-grid-delete{
+          border: 1px solid var(--vanilla-primary-500, #8EBBCF);
+          background: var(--vanilla-other-white, #FFF);
+          span.k-button-text{
+            color: var(--vanilla-primary-500, #8EBBCF);
+            text-align: right;
+            font-family: Heebo;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110%; 
+          }
+          span{
+            color: #8EBBCF;
+            font-weight: 400;
+            &::before{
+              color: #8EBBCF;
+            }
+          }
+
+        }
+
+
+
+        span.k-button-text{
+          text-align: right;
+          font-family: Heebo;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%;
+        }
+        span{
+          color: #FFFFFF;
+          font-weight: 400;
+          &::before{
+            color: #FFFFFF;
+          }
+        }
+        &.k-button[disabled]{
+          span{
+            color: #C8C8C8;
+
+            &::before{
+              color: #C8C8C8;
+            }
+          }
+        }
 
         }
     

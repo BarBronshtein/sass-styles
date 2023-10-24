@@ -3,7 +3,7 @@
 
 .xtaf-grid-3 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
     margin-bottom: 15px;
     
@@ -14,7 +14,7 @@
 
 .xtaf-grid-2 {
     display: grid;
-    grid-template-columns: 1fr auto ;
+    grid-template-columns: 1fr 30%;
     gap: 15px;
     margin-bottom: 15px;
     

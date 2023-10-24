@@ -80,7 +80,7 @@
 
             &::after,
             &:before {
-                display: none ;
+                display: none !important;
             }
 
             .x-bcNodeArrow {

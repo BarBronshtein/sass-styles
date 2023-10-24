@@ -1231,6 +1231,18 @@
   border-radius: 0px;
   padding-top: 0px;
   margin-bottom: 25px;
+
+  .x-control-caption-wrapper{
+    label{
+      color: var(--control-caption-color-text, #310538);
+      text-align: right;
+      font-family: Heebo;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; 
+    }
+  }
 & .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group{
   box-shadow: none !important;
   border-radius: 0 !important;

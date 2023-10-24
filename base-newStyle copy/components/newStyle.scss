@@ -1,3 +1,4 @@
+
 @forward '../fonts/font.scss';
 @forward '../components/animation';
 @forward '../components/barcode';
@@ -227,7 +228,7 @@ margin: 0;
   flex-wrap: nowrap;
   width: auto;
   & > * {
-    flex-grow:1;
+    flex-grow:1 !important;
   }
 
   & .x-control-caption-wrapper{
@@ -480,7 +481,7 @@ input{
 .x-control-wrapper:has(.x-control-info-bubble-wrapper ) {
 
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 20%;
 
 .x-control-content-wrapper{
   grid-column: 1 / 3;

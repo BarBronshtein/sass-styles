@@ -1504,6 +1504,15 @@ mainbody mainbody {
   padding-top: 0px;
   margin-bottom: 25px;
 }
+.xstyle-gridv4-wrapper .x-control-caption-wrapper label {
+  color: var(--control-caption-color-text, #310538);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
 .xstyle-gridv4-wrapper .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group {
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -1598,9 +1607,6 @@ mainbody mainbody {
   color: #0eaadc;
 }
 
-.xstyle-kicon-wrapper.back {
-  padding-right: 20px;
-}
 .xstyle-kicon-wrapper.back .k-icon {
   margin-left: 5px;
   color: #0eaadc;
@@ -1620,7 +1626,7 @@ mainbody mainbody {
 
 .greyPanel .x-section-header-wrapper {
   background: no-repeat;
-  margin-bottom: 10px;
+  margin-bottom: -7px;
 }
 .greyPanel .x-section-header-wrapper .col {
   padding-right: 0;
@@ -2907,7 +2913,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 }
 .xtaf-grid-3 {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   margin-bottom: 15px;
 }
@@ -2917,7 +2923,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 
 .xtaf-grid-2 {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 30%;
   gap: 15px;
   margin-bottom: 15px;
 }
@@ -3480,10 +3486,6 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   top: 7px;
 }
 
-.k-drawer-overlay.k-drawer-right .k-drawer {
-  width: 40px;
-}
-
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] > span {
   font-size: 24px;
   right: -7px;
@@ -3666,33 +3668,375 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   line-height: 30px !important;
 }
 
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput) {
-  height: auto !important;
-}
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput) header {
-  display: none;
+.row-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  padding-right: 50px !important;
 }
 
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput {
+.row-list .list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  align-items: center;
+}
+.row-list .list::after {
+  width: 7px;
+  height: 7px;
+  background: #7B098B;
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -16px;
+}
+.row-list .list label {
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #1d5b25;
+  min-height: 2em;
+}
+.row-list .list span {
+  font-size: 14px !important;
+  font-weight: 400;
+  font-family: "Heebo";
+  line-height: 24px;
+  margin-top: -4px;
+  color: #000000 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  align-items: center;
+}
+.list::after {
+  width: 7px;
+  height: 7px;
+  background: #7B098B;
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -16px;
+}
+.list label {
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #1d5b25;
+  min-height: 2em;
+}
+.list span {
+  font-size: 14px !important;
+  font-weight: 400;
+  font-family: "Heebo";
+  line-height: 24px;
+  margin-top: -4px;
+  color: #000000 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard {
+  border-radius: 10px;
+  background: var(--base-other-white, #FFF);
+  box-shadow: 0px 0px 4px 0px #D9D9D9, 0px 4px 10px 0px rgba(217, 217, 217, 0.5);
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-title-cube {
+  display: flex;
+  justify-content: space-between;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-title-cube span, #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-title-cube label {
+  color: var(--neutral-800, #676767) !important;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 100%;
   margin: 0;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput .row-upload {
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-title-cube .list-cube {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput .row-upload .color-btn {
-  margin-top: 10px;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-title-cube .list-cube .x-control-caption-wrapper {
+  display: grid;
+  align-items: center;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput mainbody {
-  margin-top: 0px !important;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-title-cube .list-cube .x-control-caption-wrapper label {
+  margin: 0;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput .col:has(.xstyle-upload-wrapper) .k-upload-button {
-  height: 50px !important;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .title-Name-cube span {
+  color: var(--base-primary-500, #7B098B);
+  /* mobile/label medium */
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInput .xstyle-buttoncontrol-wrapper {
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .text-cube span {
+  color: var(--neutral-800, #676767);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-border-top {
+  padding-top: 10px;
+  border-top: 1px solid #DEDEDE;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .xtaf-border-bottom {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DEDEDE;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .list-cube {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .list-cube label {
+  color: var(--label-list-caption-color, #310538);
+  text-align: right;
+  /* label/medium */
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  margin-top: 2px !important;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .list-cube span {
+  color: var(--label-list-value-color, #000);
+  text-align: right;
+  /* label/regular */
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .list-cube .x-control-caption-wrapper {
+  display: grid;
+  align-items: center;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .xtaf-cube-dashboard .list-cube .x-control-caption-wrapper label {
+  margin: 0;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .cube-wrapper {
+  display: flex;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .cube-wrapper .cube.cubeFix {
+  padding: 30px 20px 40px 40px !important;
+  min-width: 170px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile .cube-wrapper .cube.cubeFix .k-icon {
+  font-size: 30px;
+  color: #7B098B;
+}
+
+header.navbar-fixed-top.header-suppliers.xtaf-mobile {
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  height: 70px;
+}
+header.navbar-fixed-top.header-suppliers.xtaf-mobile .mobileView {
+  grid-template-columns: auto;
+}
+header.navbar-fixed-top.header-suppliers.xtaf-mobile .mobileView .UserNameDetails span {
+  color: var(--header-user-name-details-color, #000);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+header.navbar-fixed-top.header-suppliers.xtaf-mobile .border-dark {
+  border: none !important;
+  padding: 0;
+}
+header.navbar-fixed-top.header-suppliers.xtaf-mobile .x-itoolbar {
+  background: none;
+  border: none;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+header.navbar-fixed-top.header-suppliers.xtaf-mobile .x-itoolbar span {
+  color: #5E6164;
+}
+header.navbar-fixed-top.header-suppliers.xtaf-mobile .x-itoolbar .k-button-flat-base {
+  display: none !important;
+}
+header.navbar-fixed-top.header-suppliers.xtaf-mobile .x-itoolbar .k-toolbar-item:has(.fa-bars) {
+  display: block !important;
+}
+
+.INDMobile .k-drawer-item:has(.x-image-wrapper) {
+  background: white !important;
+  position: absolute;
+  top: 0;
+}
+.INDMobile .k-drawer-item:has(.x-image-wrapper) .x-image-wrapper {
   text-align: center;
-  margin-top: 95px;
+}
+.INDMobile .k-drawer-item:has(.x-image-wrapper) .x-image-wrapper img {
+  width: 200px !important;
+  margin-top: 20px;
+}
+.INDMobile .k-drawer-item:has(.x-image-wrapper) .x-image-wrapper + span {
+  color: var(--header-user-name-details-color, #000);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  padding-top: 10px;
+  border-top: 1px solid #DEDEDE;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.INDMobile .k-drawer-item:has(.x-image-wrapper) .x-image-wrapper + span + span {
+  color: var(--header-last-login-details-color, #A6A6A6);
+  text-align: center;
+  /* Header/header date */
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DEDEDE;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.INDMobile .k-drawer-item:has(.x-image-wrapper) .x-image-wrapper + span + span + span, .INDMobile .k-drawer-item:has(.x-image-wrapper) .x-image-wrapper + span + span + span + span {
+  color: var(--header-details-span-color, #000);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  white-space: pre-wrap !important;
+}
+.INDMobile .k-drawer-item:has(.x-image-wrapper) .x-image-wrapper + span + span + span + span + a {
+  color: var(--header-link-color, #0EAADC);
+  text-align: center !important;
+  font-family: Heebo;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 100%;
+}
+.INDMobile .k-drawer-item:has(.icon-home-2) {
+  margin-top: 260px;
+}
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-CloudDashboard-page {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 20px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-CloudDashboard-page > .row {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.1);
+  border-radius: 10px;
+  padding: 30px 30px;
+  margin-bottom: 15px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .templatex-wrapper:has(.xtaf-Cloud) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud {
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+  padding: 20px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .x-kicon {
+  text-align: center;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .x-kicon .k-icon {
+  font-size: 30px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .xtaf-title-cube {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .xtaf-title-cube span {
+  color: var(--base-other-black, #000);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .xtaf-grid-2col {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 15px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .xtaf-grid-2col span {
+  color: var(--base-primary-500, #7B098B);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .xtaf-grid-2col label {
+  color: var(--base-other-black, #000);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .xtaf-border-top {
+  border-top: 1px solid #E7E7E7;
+  padding-top: 10px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard .xtaf-Cloud .xtaf-border-top span {
+  color: var(--neutral-800, #676767);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
 }
 
 #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login .xtaf-logo-image .x-image-wrapper {
@@ -3889,173 +4233,6 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
     height: 40px;
   }
 }
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder),
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark) {
-  height: auto !important;
-}
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder) header, .k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder) .k-window-title,
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark) header,
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark) .k-window-title {
-  display: none;
-}
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder) .k-window-titlebar,
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark) .k-window-titlebar {
-  justify-content: end;
-}
-
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder,
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark {
-  margin: 0;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder mainbody,
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark mainbody {
-  margin-top: 0px !important;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder .s-section-header-wrapper,
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark .s-section-header-wrapper {
-  background: none;
-  border: none;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder .s-section-header-wrapper h3,
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark .s-section-header-wrapper h3 {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  color: #7b098b;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder .btn-flex,
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark .btn-flex {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  justify-content: end;
-  margin-top: 30px;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceNoOrder .xstyle-textcontrol-wrapper,
-#TafnitCore_SaaSServer_Portal_Default_UI_AddInvoiceRemark .xstyle-textcontrol-wrapper {
-  margin-top: 15px;
-}
-
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_WizardInvoices) {
-  height: auto !important;
-}
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_WizardInvoices) header {
-  display: none;
-}
-
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInvoices {
-  margin: 0;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInvoices mainbody {
-  margin-top: 0px !important;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_WizardInvoices .xstyle-buttoncontrol-wrapper {
-  text-align: center;
-}
-
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder) {
-  height: auto !important;
-}
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder) header {
-  display: none;
-}
-
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder {
-  margin: 0;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder mainbody {
-  margin-top: 0px !important;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder .labelTitle .x-control-content-wrapper span {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  text-align: right;
-  color: #000000;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder .labelTitle .x-control-content-wrapper span:hover {
-  white-space: normal;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder .labelTitle .x-control-caption-wrapper label {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  text-align: right;
-  color: #676767;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder .labelTitle .xstyle-dynamiclabelcontrol-wrapper .col-4 {
-  max-width: 35%;
-  flex: 0 0 35%;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder .labelTitle .xstyle-dynamiclabelcontrol-wrapper {
-  margin-bottom: 10px;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder .labelTitle .xstyle-dynamiclabelcontrol-wrapper .col-8 {
-  max-width: 65%;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DisplayInputInvoiceNoOrder .total-panel .totalCol {
-  padding-top: 10px !important;
-}
-
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_OrdersWaitingEdit) {
-  height: auto !important;
-  width: 900px !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: 0 auto;
-  top: 50px !important;
-}
-.k-window:has(#TafnitCore_SaaSServer_Portal_Default_UI_OrdersWaitingEdit) header {
-  display: none;
-}
-
-#TafnitCore_SaaSServer_Portal_Default_UI_OrdersWaitingEdit {
-  margin: 0;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_OrdersWaitingEdit mainbody {
-  margin-top: 0px !important;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_OrdersWaitingEdit .s-section-header-wrapper {
-  background: none;
-  border: none;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_OrdersWaitingEdit .s-section-header-wrapper h3 {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  color: #7b098b;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_OrdersWaitingEdit .btn-flex {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  justify-content: end;
-  margin-top: 30px;
-}
-
-#TafnitCore_SaaSServer_Portal_Tools_UI_ReportGenerator .back {
-  padding-right: 0 !important;
-  margin-bottom: 15px;
-}
-#TafnitCore_SaaSServer_Portal_Tools_UI_ReportGenerator .col-grid-2col > .row {
-  display: none;
-}
-#TafnitCore_SaaSServer_Portal_Tools_UI_ReportGenerator .greyPanel > .col,
-#TafnitCore_SaaSServer_Portal_Tools_UI_ReportGenerator .greyPanel > .col-12 {
-  padding-right: 0 !important;
-}
-
 #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ClientSelect .list {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -4123,85 +4300,151 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   display: none;
 }
 
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .window-details-col,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .window-details-col {
-  margin-top: 10px;
-  padding-bottom: 10px;
+.k-window:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate) .k-window-titlebar {
+  position: fixed;
+  z-index: 10005;
+  left: 0;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .labelTitle,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .labelTitle {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 5px;
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate .xtaf-cube-upload {
+  max-width: 250px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+  padding: 10px;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .labelTitle > .x-cell,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .labelTitle > .x-cell {
-  max-width: 100%;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate .xtaf-cube-upload .k-icon::before {
+  color: #690779;
+  font-size: 22px;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .labelTitle label,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .labelTitle label {
-  color: #676767;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate .xtaf-cube-upload .x-kicon-caption {
+  margin-right: 20px;
+  overflow: hidden;
+  color: var(--upload-color-file-name, #000);
   text-align: right;
-  font-size: 16px;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-}
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .labelTitle span,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .labelTitle span {
-  color: #000;
-  text-align: right;
-  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-family: Heebo;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
+  font-weight: 400;
+  line-height: 100%;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .list,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .list {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 5px;
-  height: 30px;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate .mt-26 {
+  margin-top: 26rem !important;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .list > .x-cell,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .list > .x-cell {
-  max-width: 100%;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate mainbody {
+  margin-top: 395px !important;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .list label,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .list label {
-  color: #676767;
-  text-align: right;
-  font-size: 20px;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate mainbody:has(.xtaf-mt-0) {
+  margin-top: 0px !important;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .list span,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .list span {
-  color: #000;
-  text-align: right;
-  font-size: 20px;
-  font-family: Heebo;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  margin-top: 5px;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header {
+  background: none;
+  position: fixed;
+  padding: 60px 20px 30px 20px;
+  background: #F5F5F5;
+  border-radius: 10px 10px 0 0;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xtaf-logo-image {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xtaf-logo-image .x-image-wrapper {
+  text-align: center;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xstyle-progressbar-wrapper {
+  background: none;
+  border: none;
   direction: ltr;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .list.listSP span,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .list.listSP span {
-  color: #7B098B;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xstyle-progressbar-wrapper .x-progressbar {
+  height: 10px;
+  border: none;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .totalCol,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .totalCol {
-  padding-bottom: 10px;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xstyle-progressbar-wrapper ul {
+  background: var(--step-step-progressbar-default, #DEDEDE);
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_DispayInputInvoiceForService .totalCol.border-bottom,
-#TafnitCore_SaaSServer_Portal_Default_UI_DislayInputInvoice .totalCol.border-bottom {
-  border-bottom: 1px solid #8E8E8E;
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xstyle-progressbar-wrapper ul li {
+  height: 10px;
+  border: none;
+  border-radius: 0;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xstyle-progressbar-wrapper ul li.k-first {
+  border-radius: 4px 0px 0px 4px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xstyle-progressbar-wrapper ul li.k-last {
+  border-radius: 0 4px 4px 0;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xstyle-progressbar-wrapper ul li.k-selected {
+  background: #0EAADC !important;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xtaf-progressbar {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xtaf-progressbar span {
+  color: var(--step-step-text-default, #A6A6A6);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Heebo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate header .xtaf-progressbar .xtaf-activeTab span {
+  color: var(--step-step-text-done, #026180);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Heebo;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage {
+  border-radius: 10px;
+  background: var(--neutral-50, #FCFCFC);
+  box-shadow: 0px 0px 4px 0px #D9D9D9, 0px 4px 10px 0px rgba(217, 217, 217, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage:focus-within, #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage:active, #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage:focus {
+  box-shadow: 0px 0px 2px 0px rgba(123, 9, 139, 0.2), 0px 2px 6px 0px rgba(123, 9, 139, 0.3) !important;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage .list-cube label {
+  color: var(--neutral-800-card-text-secondary, #727272);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage .list-cube span {
+  color: var(--base-other-black, #000);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage .list-cube-small span {
+  color: var(--base-other-black, #000);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_SelectMobile .xtaf-cube-clientPage .x-control-content-wrapper {
+  margin-top: -9px;
 }
 
 body, html {
@@ -4234,12 +4477,15 @@ body, html {
   opacity: 1;
 }
 
-.icon-export-excel:before {
+.icon-finance-graph:before,
+.icon-export-excel:before,
+.icon-xtar-print:after {
   content: "\ea5e";
   color: #7b098b;
 }
 
-.icon-export-excel:after {
+.icon-export-excel:after,
+.icon-xtar-print:before {
   content: "\ea5f";
   color: #cda3dd;
 }
@@ -4266,6 +4512,14 @@ body, html {
   color: #ffffff;
 }
 
-.k-content #uber-container {
-  padding-right: 50px !important;
+.k-content:has(.k-drawer-mini) .k-drawer-overlay.k-drawer-right .k-drawer {
+  width: 40px;
+}
+
+.icon-xtar-attach {
+  font-size: 25px;
+}
+
+.justify-content-start {
+  justify-content: end !important;
 }/*# sourceMappingURL=style.css.map */

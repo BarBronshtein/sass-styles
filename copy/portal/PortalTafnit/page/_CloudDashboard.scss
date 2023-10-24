@@ -1,0 +1,109 @@
+
+
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_CloudDashboard{
+
+   .xtaf-CloudDashboard-page{
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 20px;
+
+
+    & > .row{
+        background: #ffffff;
+        box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.1);
+        border-radius: 10px;
+        padding: 30px 30px;
+        margin-bottom: 15px;
+    }
+
+   }
+
+
+
+.templatex-wrapper:has(.xtaf-Cloud){
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+
+}
+
+.xtaf-Cloud{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+    padding: 20px;
+
+& .x-kicon{
+    text-align: center;
+    
+    .k-icon{
+        font-size: 30px;
+    }
+}
+
+
+.xtaf-title-cube{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    span{
+        color: var(--base-other-black, #000);
+        text-align: center;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; 
+    }
+}
+
+
+.xtaf-grid-2col{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 15px;
+    span{
+        color: var(--base-primary-500, #7B098B);
+        text-align: center;
+        font-family: Heebo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; 
+    }
+
+    label{
+
+        color: var(--base-other-black, #000);
+        text-align: center;
+        font-family: Heebo;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+
+    }
+}
+
+
+.xtaf-border-top{
+    border-top: 1px solid #E7E7E7;
+    padding-top: 10px;
+
+
+    span{
+        color: var(--neutral-800, #676767);
+        text-align: center;
+        font-family: Heebo;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+}
+
+}
+
+}

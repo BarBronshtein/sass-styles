@@ -1663,7 +1663,7 @@ header .fal.fa-home {
   transform: rotate(90deg);
 }
 .x-infoWrap .x-infoButton .x-infoBubble.Left {
-  right: 100%;
+  left: 50%;
 }
 .x-infoWrap .x-infoButton .x-infoBubble.Left::after {
   top: 12px;
@@ -4208,6 +4208,12 @@ a:not([href]):hover {
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
+}
+
+.xstyle-signature-wrapper {
+  flex-wrap: nowrap;
+  display: block;
+  height: auto;
 }
 
 #TafnitCore_System_UI_App_Tools_Accessibility_EditEnvVars {
@@ -9908,7 +9914,7 @@ body.k-content {
   width: auto;
 }
 .x-control-wrapper > * {
-  flex-grow: 1;
+  flex-grow: 1 !important;
 }
 .x-control-wrapper .x-control-caption-wrapper {
   flex: 0 0 33%;
@@ -10112,7 +10118,7 @@ body.k-content {
 
 .x-control-wrapper:has(.x-control-info-bubble-wrapper) {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 20%;
 }
 .x-control-wrapper:has(.x-control-info-bubble-wrapper) .x-control-content-wrapper {
   grid-column: 1/3;

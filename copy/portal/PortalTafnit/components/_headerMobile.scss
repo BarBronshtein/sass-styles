@@ -1,0 +1,130 @@
+
+
+header.navbar-fixed-top.header-suppliers.xtaf-mobile{
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    height: 70px;
+    .mobileView{
+        grid-template-columns: auto;
+
+        .UserNameDetails span{
+            color: var(--header-user-name-details-color, #000);
+            text-align: right;
+            font-family: Heebo;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 30px;
+
+        }
+    }
+
+    .border-dark{
+        border: none !important;
+        padding: 0;
+    }
+
+    .x-itoolbar{
+
+        background: none;
+        border: none;
+        margin-right: 20px;
+        margin-top: 7px;
+
+        span{
+            color: #5E6164;
+        }
+
+        .k-button-flat-base{
+            display: none !important;
+        }
+
+        .k-toolbar-item:has(.fa-bars){
+            display: block !important;
+        }
+    }
+
+}
+
+
+
+
+.INDMobile {
+
+.k-drawer-item:has(.x-image-wrapper ){
+    background: white !important;
+    position: absolute;
+    top: 0;
+
+    .x-image-wrapper{
+        text-align: center;
+        img{
+            width: 200px !important;
+            margin-top: 20px;
+        }
+    
+
+  & + span{
+
+        color: var(--header-user-name-details-color, #000);
+        text-align: center;
+        font-family: Heebo;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        padding-top: 10px;
+        border-top: 1px solid #DEDEDE;
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+
+   & + span + span{
+
+        color: var(--header-last-login-details-color, #A6A6A6);
+        text-align: center;
+        /* Header/header date */
+        font-family: Heebo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #DEDEDE;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    & + span + span + span,& + span + span + span+ span{
+
+        color: var(--header-details-span-color, #000);
+        text-align: center;
+        font-family: Heebo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        white-space: pre-wrap !important;
+    }
+
+    & + span + span + span+ span + a{
+
+        color: var(--header-link-color, #0EAADC);
+        text-align: center !important;
+        font-family: Heebo;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        width: 100%;
+    }
+}
+
+
+}
+
+.k-drawer-item:has(.icon-home-2 ){
+    margin-top: 260px;
+}
+}
