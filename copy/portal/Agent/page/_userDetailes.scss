@@ -1,7 +1,9 @@
 
 
 #TafnitCore_SaaSServer_Portal_Agents_UI_ClientSelect{
-
+  .xstyle-buttoncontrol-wrapper.spicelBTN button{
+    min-width: 200px;
+  }
   .list{
       display: grid;
       grid-template-columns: auto 1fr;

@@ -160,7 +160,7 @@
             & .k-button-solid-base.k-upload-button{
                border: none;
                margin-bottom: 15px;
-               background: $button-bg;
+               background: $button-bg !important;
                border-radius: 10px;
                color:$button-color-text !important;
                height: 50px !important;

@@ -1,0 +1,30 @@
+
+
+.k-scrollview {
+    .k-scrollview-wrap {
+        .k-scrollview-page {
+            text-align: center;
+            display: table;
+            box-sizing: border-box;
+
+            .img-wrapper {
+               
+                display: table-cell;
+                vertical-align: middle;
+
+                >div {
+                    width: 90% !important;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-bottom: 1em;
+                    margin-top: -6px;
+                    >div {
+                        margin: auto;
+                        margin-bottom: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}

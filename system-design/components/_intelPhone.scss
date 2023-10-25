@@ -1,0 +1,41 @@
+
+
+.x-phoneNumber_wrapper {
+    .x-dailPhoneBtn {
+        .x-callBtnPhone {
+            height: 37px;
+            display: inline-flex;
+            align-items: center;
+            color: unset;
+            text-decoration: none;
+            font-size: 30px;
+        }
+    }
+
+    .intl-tel-input {
+        width: 100%;
+
+        &.separate-dial-code {
+            .selected-dial-code {
+                direction: ltr;
+                line-height: 2.2;
+                padding: 0 !important;
+                float: right;
+            }
+        }
+
+        .country-list {
+            position: relative !important;
+        }
+    }
+}
+
+.k-rtl {
+    .intl-tel-input {
+        &.separate-dial-code {
+            .selected-dial-code {
+                float: left !important;
+            }
+        }
+    }
+}

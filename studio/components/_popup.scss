@@ -1,176 +1,184 @@
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) {
 
-
-.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio){
-
-.k-rtl .k-window-titlebar .k-window-actions{
-  right: auto;
+  .k-rtl .k-window-titlebar .k-window-actions {
+    right: auto;
     left: -15px;
     position: relative;
-}
-.k-animation-container{
+  }
 
-  & .k-popup{
+  .k-animation-container {
 
-    box-shadow: $list-container-shadow ;
-    border: $list-view-border-bottom ;
-    border-radius: 10px;
-    margin-top: 5px;
+    & .k-popup {
 
-    .k-list{
+      box-shadow: $list-container-shadow ;
+      border: $list-view-border-bottom ;
       border-radius: 10px;
-    }
-    & .k-list-content.k-list-scroller{
-      border-radius: 10px;
-        background: none ;
+      margin-top: 5px;
+
+      .k-list {
+        border-radius: 10px;
+      }
+
+      & .k-list-content.k-list-scroller {
+        border-radius: 10px;
+        background: none;
         padding: 12px 20px;
-& ul{
-  background: $list-view-bg-line-default ;
-}
-        & li{
-            height: 41px;
 
-            &.k-selected.k-focus{
-              background: $list-view-selected-line ;
-              border: none;
-              box-shadow: none;
+        & ul {
+          background: $list-view-bg-line-default ;
+        }
 
-              .k-list-item-text{
-                color: $list-view-selected-line-text ;
-                font-weight: 700;
-              }
+        & li {
+          height: 41px;
+
+          &.k-selected.k-focus {
+            background: $list-view-selected-line ;
+            border: none;
+            box-shadow: none;
+
+            .k-list-item-text {
+              color: $list-view-selected-line-text ;
+              font-weight: 700;
             }
+          }
 
-            &:hover{
-              background: $list-view-hover-line;
-            
-              .k-list-item-text{
-                color: $list-view-text-default ;
-                font-weight: 700;
-              }
-            }
+          &:hover {
+            background: $list-view-hover-line;
 
-            & span{
-                font-family: 'Heebo';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 21px;
-                align-items: center;
-                text-align: right;
-                color: $list-view-text-default;
+            .k-list-item-text {
+              color: $list-view-text-default ;
+              font-weight: 700;
             }
+          }
+
+          & span {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            align-items: center;
+            text-align: right;
+            color: $list-view-text-default;
+          }
 
         }
+      }
     }
+
+
   }
 
-
-}
-
-// window //
+  // window //
 
 
 
-.k-window{
-  background: #FFFFFF;
-  box-shadow:$window-box-shadow;
-  border-radius: 10px;
-  border:none;
-  padding: 0px 20px 20px;
-  max-height: 95%;
-  height: auto !important;
-  & .container.pageContainer.xtafnit_pageContainer{
-    position: relative;
-  }
+  .k-window {
+    background: #FFFFFF;
+    box-shadow: $window-box-shadow;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 20px 20px;
+    max-height: 95%;
+    height: auto !important;
+
+    & .container.pageContainer.xtafnit_pageContainer {
+      position: relative;
+    }
 
 
-  &:has(#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect){
-   
-    right: 0;
-    margin: 0 auto;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    width: 60% !important;
-    left: 0 !important;
+    &:has(#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect) {
 
-    #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer{
+      right: 0;
+      margin: 0 auto;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      width: 60% !important;
+      left: 0 !important;
+
+      #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer {
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    .k-button.k-active::before,
+    .k-button:active::before {
+      opacity: 1;
+    }
+
+    .k-window-titlebar {
+      border: none;
+      background: none;
       top: 0;
-      width: 100%;
-    }
-  }
 
-  .k-button.k-active::before, .k-button:active::before {
-  opacity: 1;
-}
-  .k-window-titlebar{
-    border: none;
-    background: none;
-    top: 0;
-    span{
-      color: $window-icon-close-color;
-    }
-  }
-
-  .k-window-content{
-    overflow: auto !important ;
-  }
-
-  .x-footer{
-    background: none;
-    border: none;
-  }
- 
-   
-  #TafnitCore_SaaSServer_Portal_Default_UI_userDetailes{
-    margin-bottom: 0;
-    header{
-     display: none;
-    }
-    mainbody{
-      margin-top: 0px ;
-      padding-bottom: 22px;
+      span {
+        color: $window-icon-close-color;
+      }
     }
 
-    .k-grid-header{
-      display: none;
+    .k-window-content {
+      overflow: auto !important;
     }
 
-  }
-
-
-
-  .ttitle-border {
-    padding: 7px 5px ;
-    border-bottom:1px solid $window-title-border;
-    border-top:1px solid $window-title-border;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-    span{
-      font-family: 'Heebo';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 120%;
-      text-align: center ;
-      color: $window-title-color;
+    .x-footer {
+      background: none;
+      border: none;
     }
-  }
 
-  .text-secondary{
-    span{
-      font-family: 'Heebo';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 100%;
-      color:$window-text-secondary-color;
-      margin-bottom: 20px;
+
+    #TafnitCore_SaaSServer_Portal_Default_UI_userDetailes {
+      margin-bottom: 0;
+
+      header {
+        display: none;
+      }
+
+      mainbody {
+        margin-top: 0px;
+        padding-bottom: 22px;
+      }
+
+      .k-grid-header {
+        display: none;
+      }
+
     }
-  }
 
-  .text-spicel{
-    label{
+
+
+    .ttitle-border {
+      padding: 7px 5px;
+      border-bottom: 1px solid $window-title-border;
+      border-top: 1px solid $window-title-border;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      span {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        color: $window-title-color;
+      }
+    }
+
+    .text-secondary {
+      span {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $window-text-secondary-color;
+        margin-bottom: 20px;
+      }
+    }
+
+    .text-spicel {
+      label {
         font-family: 'Heebo';
         font-style: normal;
         font-weight: 400;
@@ -178,58 +186,21 @@
         line-height: 100%;
         color: $window-text-special-color;
         margin-bottom: 10px;
-    }
-  }
-    
-.col-list{
-  padding-bottom: 15px ;
-
-}
-  .list{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px;
-    height: 25px;
-    span{
-      font-family: 'Heebo';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 100%;
-      color: #000000;
+      }
     }
 
-    label{
-      font-family: "Heebo";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 100%;
-      color: #690779;
-      width: max-content;
-      margin-top: 5px;
+    .col-list {
+      padding-bottom: 15px;
 
     }
-  }
-   .col-grid{
-    padding: 0 ;
-   }
 
-   .col-button{
-    box-shadow: none;
-    border: none;
-    padding: 0;
-   }
-  .xstyle-gridv4-wrapper {
-    padding: 0 ;
-    .toolbar.x-embeddedToolbar span.k-searchbox{
-      background: #FFFFFF;
-      border: 1px solid #A6A6A6 !important ;
-      border-radius: 10px;
-      height: 40px;
+    .list {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      height: 25px;
 
-      input{
-        text-align: right;
+      span {
         font-family: 'Heebo';
         font-style: normal;
         font-weight: 400;
@@ -237,167 +208,219 @@
         line-height: 100%;
         color: #000000;
       }
+
+      label {
+        font-family: "Heebo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #690779;
+        width: max-content;
+        margin-top: 5px;
+
+      }
     }
 
- 
-    td{
-      padding-left:0 ;
+    .col-grid {
+      padding: 0;
     }
 
-    tr:nth-child(2){
+    .col-button {
+      box-shadow: none;
+      border: none;
+      padding: 0;
+    }
+
+    .xstyle-gridv4-wrapper {
+      padding: 0;
+
+      .toolbar.x-embeddedToolbar span.k-searchbox {
+        background: #FFFFFF;
+        border: 1px solid #A6A6A6 !important;
+        border-radius: 10px;
+        height: 40px;
+
+        input {
+          text-align: right;
+          font-family: 'Heebo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          color: #000000;
+        }
+      }
+
+
+      td {
+        padding-left: 0;
+      }
+
+      tr:nth-child(2) {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #690779;
+      }
+    }
+
+  }
+
+  // window edit //
+
+  .k-window:has(.k-edit-form-container) {
+
+    .k-form-field {
+      label {
+        @extend %texbox-label;
+      }
+    }
+
+    .k-input.k-textbox,
+    .k-numerictextbox {
+      @extend %texbox-input;
+
+      input {
+        text-align: right;
+      }
+
+      &:focus-within {
+        box-shadow: $control-box-shadow-focus ;
+        border: $control-border-focus ;
+      }
+
+    }
+
+    .k-edit-form-container {
+      width: 100%;
+    }
+
+    .k-window-title {
+      margin-top: 20px;
       font-family: 'Heebo';
       font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 100%;
-      color: #690779;
-    }
-  }
-
-}
-
-// window edit //
-
-.k-window:has(.k-edit-form-container){
-
-  .k-form-field  {
-    label{
-      @extend %texbox-label;
-    }
-  }
-
-  .k-input.k-textbox,.k-numerictextbox{
-    @extend %texbox-input;
-
-    input{
-      text-align: right ;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      color: $window-title-color;
     }
 
-    &:focus-within{
-      box-shadow:$control-box-shadow-focus ;
-      border: $control-border-focus ;
-  }
+    .k-popup-edit-form {
+      padding: 0;
+      margin-top: 20px;
+    }
 
-  }
-  .k-edit-form-container{
-  width: 100%;
-  }
-  .k-window-title{
-    margin-top: 20px;
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    color: $window-title-color;
-  }
+    .k-edit-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
 
-  .k-popup-edit-form {
-    padding: 0;
-    margin-top: 20px;
-  }
-   .k-edit-buttons{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-   }
-  button{
+    button {
 
-    &.k-button-solid-primary{
-      @extend %special-button;
+      &.k-button-solid-primary {
+        @extend %special-button;
 
 
-      &:hover{
+        &:hover {
+          background: $button-bg-hover;
+          color: white;
+
+          span::before {
+            color: white;
+          }
+        }
+
+        &:focus:before {
+          background: $button-color-bg-focus;
+          color: white;
+          opacity: 1;
+
+          span {
+            color: white;
+          }
+        }
+
+      }
+
+      @extend %button;
+      margin-right: 0;
+
+      &:hover {
         background: $button-bg-hover;
-        color: white ;
-        span::before{
-          color:  white ;
-        }
+        color: $button-color-text;
+
       }
 
-      &:focus:before{
+      &:focus {
         background: $button-color-bg-focus;
-        color: white ;
         opacity: 1;
-        span{
-          color:  white ;
-        }
+
       }
-      
-    }
-    @extend %button;
-    margin-right: 0 ;
-    
-  &:hover{
-    background: $button-bg-hover;
-    color: $button-color-text;
-   
-  }
-
-  &:focus{
-    background: $button-color-bg-focus;
-    opacity: 1;
- 
-  }
     }
 
-}
-
-.k-grid-content.k-auto-scrollable,.k-window-content,.k-list-scroller{
-
-  scrollbar-face-color: #7B098B ;
-  scrollbar-track-color: #f3e9f8;
-  scrollbar-arrow-color: #7B098B ;
-
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-
-  &::-webkit-scrollbar {
-    width: 10px ;
-    border-radius: 10px;
-    position: absolute;
   }
 
+  .k-grid-content.k-auto-scrollable,
+  .k-window-content,
+  .k-list-scroller {
 
-  &::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: #f0f0f0;
-  }
+    scrollbar-face-color: #7B098B;
+    scrollbar-track-color: #f3e9f8;
+    scrollbar-arrow-color: #7B098B;
 
-  &::-webkit-scrollbar-thumb {
-    background: $scroll-bg;
-    border-radius: 10px;
-    
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
 
-    &:hover {
-      background:  $scroll-bg-hover;
-      
+    &::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 10px;
+      position: absolute;
     }
+
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: #f0f0f0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $scroll-bg;
+      border-radius: 10px;
+
+
+      &:hover {
+        background: $scroll-bg-hover;
+
+      }
     }
   }
 
 
   .k-animation-container .k-filter-menu {
-    background: #FFFFFF ;
-    border: 1px solid   $popup-k-filter-menu-border ;
-    box-shadow:   $popup-k-filter-menu-box-shadow ;
+    background: #FFFFFF;
+    border: 1px solid $popup-k-filter-menu-border ;
+    box-shadow: $popup-k-filter-menu-box-shadow ;
     border-radius: 10px;
     border-radius: 10px;
     height: auto;
     width: 230px;
     padding: 10px;
-  
-    > .k-filter-menu-container {
+
+    >.k-filter-menu-container {
       padding: 0;
- 
-  
+
+
       > {
         .k-filter-help-text {
           width: 100%;
           background: white;
-          color:$popup-title-color;
+          color: $popup-title-color;
           height: 28px;
           text-align: right;
           border-top-right-radius: 0px;
@@ -409,176 +432,193 @@
           font-size: 13px;
           line-height: 18px;
         }
-  
+
         .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
           @extend %texbox-input;
-          background: #FFFFFF ;
-          border: 1px solid #A6A6A6 ;
-            width: 100%;
-            margin-bottom: 10px;
-            &:focus,
-            &:focus-within{
-              border:1px solid $control-border-focus ;
-              box-shadow: $control-box-shadow-focus;
-            }
-            & .k-input-button{
-              left: 10px;
-                &:hover{
-                  background: none;
-                }
-              & span.k-icon{
-                &::before{
-                  
-                  content: "\f0d7";
-                  font-size: 22px;
-                  font-family: "Font Awesome 5 Pro";
-                  color: $control-color-icon;
-                  font-weight: 700;
-                }
-          
-            }
-            
-            }
-  
-        }
+          background: #FFFFFF;
+          border: 1px solid #A6A6A6;
+          width: 100%;
+          margin-bottom: 10px;
 
-         .k-numerictextbox{
-          @extend %texbox-input;
-          background: #FFFFFF ;
-          border: 1px solid #A6A6A6 ;
-            width: 100%;
-            margin-bottom: 10px;
-            &:focus,
-            &:focus-within{
-              border: $control-border-focus ;
-              box-shadow: $control-box-shadow-focus;
-            }
-            & .k-button{
-              left: -8px;
-              background: none ;
-                &:hover{
-                  background: none;
-                }
-
-        
-              & span.k-icon{
-                &::before{
-        
-                  color: $control-color-icon;
-                  font-size: 25px;
-                }
-          
-            }
-            
-            }
-  
-         }
-
-        .k-datepicker  {
-          @extend %texbox-input;
-          background: #FFFFFF ;
-          border: 1px solid #A6A6A6 ;
-            width: 100%;
-            margin-bottom: 10px;
-            &:focus,
-            &:focus-within{
-              border: $control-border-focus ;
-              box-shadow: $control-box-shadow-focus;
-            }
-            & .k-input-button{
-              left: 10px;
-              background: none ;
-                &:hover{
-                  background: none;
-                }
-
-        
-              & span.k-icon{
-                &::before{
-        
-                  content: "\e973";
-                  font-size: 22px;
-                  font-family: "icomoon";
-                  color: $control-color-icon;
-                 
-                }
-          
-            }
-            
-            }
-  
-        }
-  
-        .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid {
-         
-          @extend %texbox-input;
-          background: #FFFFFF ;
-          border: 1px solid #A6A6A6 ;
-
-          input{
-          text-align: right ;
-          }
           &:focus,
-          &:focus-within{
-            border:1px solid $control-border-focus ;
+          &:focus-within {
+            border: 1px solid $control-border-focus ;
+            box-shadow: $control-box-shadow-focus;
+          }
+
+          & .k-input-button {
+            left: 10px;
+
+            &:hover {
+              background: none;
+            }
+
+            & span.k-icon {
+              &::before {
+
+                content: "\f0d7";
+                font-size: 22px;
+                font-family: "Font Awesome 5 Pro";
+                color: $control-color-icon;
+                font-weight: 700;
+              }
+
+            }
+
+          }
+
+        }
+
+        .k-numerictextbox {
+          @extend %texbox-input;
+          background: #FFFFFF;
+          border: 1px solid #A6A6A6;
+          width: 100%;
+          margin-bottom: 10px;
+
+          &:focus,
+          &:focus-within {
+            border: $control-border-focus ;
+            box-shadow: $control-box-shadow-focus;
+          }
+
+          & .k-button {
+            left: -8px;
+            background: none;
+
+            &:hover {
+              background: none;
+            }
+
+
+            & span.k-icon {
+              &::before {
+
+                color: $control-color-icon;
+                font-size: 25px;
+              }
+
+            }
+
+          }
+
+        }
+
+        .k-datepicker {
+          @extend %texbox-input;
+          background: #FFFFFF;
+          border: 1px solid #A6A6A6;
+          width: 100%;
+          margin-bottom: 10px;
+
+          &:focus,
+          &:focus-within {
+            border: $control-border-focus ;
+            box-shadow: $control-box-shadow-focus;
+          }
+
+          & .k-input-button {
+            left: 10px;
+            background: none;
+
+            &:hover {
+              background: none;
+            }
+
+
+            & span.k-icon {
+              &::before {
+
+                content: "\e973";
+                font-size: 22px;
+                font-family: "icomoon";
+                color: $control-color-icon;
+
+              }
+
+            }
+
+          }
+
+        }
+
+        .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid {
+
+          @extend %texbox-input;
+          background: #FFFFFF;
+          border: 1px solid #A6A6A6;
+
+          input {
+            text-align: right;
+          }
+
+          &:focus,
+          &:focus-within {
+            border: 1px solid $control-border-focus ;
             box-shadow: $control-box-shadow-focus;
           }
         }
-  
+
         .k-action-buttons {
           display: flex;
-          flex-direction: row ;
-        
-  
-          > button {
-            width: 45% ;
+          flex-direction: row;
+
+
+          >button {
+            width: 45%;
             height: 40px;
             background: $button-bg;
-            border-radius: 10px ;
-            border:none;
+            border-radius: 10px;
+            border: none;
             color: $button-color-text ;
             font-size: 14px;
-            &:hover{
+
+            &:hover {
               background: $button-bg-hover ;
               color: $button-color-text-hover;
-              span::before{
-                color:  $button-color-icon-hover ;
+
+              span::before {
+                color: $button-color-icon-hover ;
               }
             }
-      
-            &:focus{
+
+            &:focus {
               background: $button-color-bg-focus ;
               box-shadow: $button-box-shadow-focus ;
               color: $button-color-text-focus ;
               opacity: 1;
-              span{
-                color:  $button-color-text-focus  ;
+
+              span {
+                color: $button-color-text-focus ;
               }
             }
-            
-            &.k-button-solid-base{
-                background: $special-button-bg ;
-                border: 1px solid $special-button-color-border ;
-                color: $special-button-color-text ;
-                &:hover{
-                  background: $special-button-bg-hover ;
+
+            &.k-button-solid-base {
+              background: $special-button-bg ;
+              border: 1px solid $special-button-color-border ;
+              color: $special-button-color-text ;
+
+              &:hover {
+                background: $special-button-bg-hover ;
+                color: $special-button-color-text-hover ;
+                border: 1px solid $speical-button-color-border-hover;
+
+                span::before {
                   color: $special-button-color-text-hover ;
-                  border:1px solid $speical-button-color-border-hover;
-                  span::before{
-                    color:  $special-button-color-text-hover  ;
-                  }
                 }
-          
-                &:focus{
-                  background: $special-button-bg-focus ;
-                  box-shadow: none ;
-                  color: $special-button-color-text-focus;
-                  border:1px solid $speical-button-color-border-hover;
-                  opacity: 1;
-                  span{
-                    color:  $special-button-color-text-focus ;
-                  }
+              }
+
+              &:focus {
+                background: $special-button-bg-focus ;
+                box-shadow: none;
+                color: $special-button-color-text-focus;
+                border: 1px solid $speical-button-color-border-hover;
+                opacity: 1;
+
+                span {
+                  color: $special-button-color-text-focus ;
                 }
+              }
             }
           }
         }
@@ -586,19 +626,311 @@
     }
   }
 
-  .k-i-close{
-    font-size: 18px ;
+  .k-i-close {
+    font-size: 18px;
   }
-  
-  .k-window-titlebar .k-window-action{
-    opacity: 1 ;
-    &:focus::after{
-      opacity: 0 ;
+
+  .k-window-titlebar .k-window-action {
+    opacity: 1;
+
+    &:focus::after {
+      opacity: 0;
     }
-      &::before{
-        background: none ;
-        opacity: 1 ;
+
+    &::before {
+      background: none;
+      opacity: 1;
+    }
+  }
+
+}
+
+[xid="controlxstudioMainRow"]:has([xid="controlxstudioComponent"]) {
+  .x-button.cancel {
+    color: #159BC5;
+    background: white;
+
+  }
+
+  .x-button.confirm {
+    background: #159BC5;
+    color: white;
+  }
+
+  .popUpWindowCls {
+    width: 70%;
+
+    ///// adding grid popup /////
+    #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl {
+      height: unset;
+
+      mainbody {
+        padding-bottom: 25px !important;
       }
+
+      mainbody>*:not(:last-child)>div>div {
+
+        &>:first-child {
+          border-right: 1px solid #ECECEC;
+          align-items: center;
+          flex: 33%;
+
+          label {
+            color: #7E7B7B;
+          }
+        }
+
+        &>* {
+          border-bottom: 1px solid #ECECEC
+        }
+
+        input {
+          border: none !important;
+        }
+      }
+
+    }
+
+
+    ///// edit save class popup /////
+
+    #TafnitCore_System_UI_App_Tools_Studio_UxStudioSCPrompt {
+      overflow: hidden;
+      height: unset;
+    }
+
+
+    ///// edit column popup /////
+    #TafnitCore_System_UI_App_Tools_Studio_ComplexControlChildrenSettings {
+
+      mainbody>div:first-child {
+        display: grid;
+        grid-template-columns: 2fr 20px 1fr;
+
+        &>:first-child {
+          grid-column: 1;
+        }
+
+        &>:last-child {
+          grid-column: 3;
+        }
+      }
+    }
+
+    .x-pagePopup {
+      box-shadow: 0px 0px 15px 0px #0772944D;
+      box-shadow: 0px 8px 4px 0px #07729440;
+      border-radius: 3px;
+    }
+
+    mainbody {
+      display: grid;
+      grid-template-columns: 30px 1fr 30px;
+
+      &>* {
+        grid-column: 2;
+      }
+
+      &>.row {
+        box-shadow: unset;
+      }
+
+      &>:last-child {
+        width: 40%;
+        margin-inline-end: 15px;
+        margin-top: 30px;
+        flex-direction: row-reverse;
+
+        div:last-child {
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+
+    >div {
+      &>h1 {
+        padding: 15px;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding-inline: 30px;
+        background-color: #F5F5F5;
+      }
+    }
+
+    .popup_close_btn {
+      position: absolute;
+      top: 8px;
+      right: 38px;
+      z-index: 1;
+
+      [role="button"] {
+        border: none;
+        background: none;
+        color: #A1A3A5;
+      }
+    }
+  }
+
+}
+
+
+
+
+#TafnitCore_System_UI_App_Tools_Studio_ComplexControlChildrenSettings {
+  display: flex;
+  flex-direction: column;
+
+  div[uxid=content] {
+    height: 100%;
+    flex-grow: 1;
+    overflow: auto;
+  }
+
+  div[uxid=colInfo] {
+    border-right: 1px solid #D9D9D9;
+    padding-right: 20px !important;
+  }
+
+  mainbody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .buttons-row {
+    width: 100%;
+    margin-inline: 0;
+    padding: 0;
+  }
+
+  .buttons-row {
+    border-top: 1px solid #D9D9D9 !important;
+    padding-top: 20px !important;
+    border-radius: 0 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    gap: 20px !important;
+
+    div {
+      width: 140px;
+      flex-grow: 0;
+
+      button[xid=controlbtnConfirm] {
+        border-radius: 4px;
+        background: #159BC5;
+        color: white;
+      }
+
+      button[xid=controlbtnCancel] {
+        border-radius: 4px;
+        border: 1px solid #159BC5;
+        background: #FFF;
+        color: #159BC5;
+
+      }
+
+      button[xid=controlbtnConfirm]:hover {
+        background: #29AFD9;
+      }
+
+      button[xid=controlbtnCancel]:hover {
+        color: white;
+        background: #29AFD9;
+      }
+    }
+  }
+
+  .k-treeview-item>div {
+    background: none !important;
+    border-bottom: none !important;
+  }
+
+  .k-treeview-item>div:hover {
+    background: #F9F9F9 !important;
+    border-bottom: none !important;
+  }
+
+  .k-treeview-item>div:has(.k-selected) {
+    border-radius: 4px;
+    background: #159BC5 !important;
+    border-bottom: none !important;
+  }
+
+  .k-selected .k-treeview-leaf-text {
+    color: white !important;
+  }
+
+  .k-treeview-leaf-text {
+    color: #159BC5;
+    /* medium regular */
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 16.8px */
+  }
+
+  .k-treeview-item {
+    padding-left: 16px !important;
+  }
+
+  .button-add-row {
+    border-top: 1px solid #D9D9D9 !important;
+    padding-top: 20px;
+    border-radius: 0 !important;
+  }
+
+  button[xid=controlbtnAdd] {
+    display: flex;
+    height: 30px;
+    padding: 7px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex: 1 0 0;
+    border-radius: 4px;
+    background: #159BC5;
+    color: #FFF;
+    text-align: right;
+
+    /* button medium */
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 16.8px */
+  }
+
+  .k-i-collapse:before,
+  .k-i-expand:before {
+    color: black !important;
+  }
+
+  div[uxid=colProps] {
+
+    .x-control-wrapper {
+      flex-direction: row-reverse !important;
+      width: auto;
+      border-bottom: 1px solid #ECECEC;
+      border-radius: 0;
+      justify-content: space-between !important;
+
+      .x-textbox,
+      .x-dropdown-comp,
+      .s-dropdown-comp {
+        border: none !important;
+      }
+    }
+
+    .x-control-content-wrapper {
+      border-left: 1px solid #ECECEC !important;
+    }
+
   }
 
 }

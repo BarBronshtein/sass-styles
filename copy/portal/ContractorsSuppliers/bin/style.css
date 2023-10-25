@@ -568,11 +568,14 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
   line-height: 100%;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities thead tr:nth-child(2) {
-  height: 35px;
-  border-bottom: 2px solid #C7C7C7 !important;
-  border-top: 1px solid #C7C7C7;
   border-collapse: collapse;
   background: #FFF;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities thead tr:nth-child(2) th {
+  border-bottom: 1px solid #C7C7C7 !important;
+}
+#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities thead tr:nth-child(2) th.xtaf-hidden {
+  border: none !important;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_WroteQuantities thead tr:nth-child(2) span {
   color: #5E955C;
@@ -655,7 +658,7 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
   border-top: none !important;
   border-bottom: 1px solid #C7C7C7 !important;
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: -10px;
   padding: 0 !important;
   background: none;
 }
@@ -698,8 +701,8 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
 }
 .k-grid .k-grid-content tr {
   transition: 0.6s all;
-  border: 1px solid var(--base-netural-100, #F8F8F8);
-  box-shadow: 0px 0px 3px 0px rgba(54, 105, 52, 0.15);
+  border: none;
+  box-shadow: none;
 }
 .k-grid .k-grid-content tr:hover {
   background: #efe7f4 !important;
@@ -1381,6 +1384,10 @@ mainbody mainbody {
   background: none !important;
 }
 
+.k-toolbar.k-toolbar-resizable {
+  background: none;
+  border: none;
+}
 .k-toolbar.k-toolbar-resizable > .k-overflow-anchor.k-button.k-button-md.k-rounded-md.k-button-flat {
   border: none !important;
   width: 50px;
@@ -1785,6 +1792,31 @@ mainbody mainbody {
   line-height: 100%;
   text-align: right;
   color: #000000;
+}
+
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid-content.k-auto-scrollable > table > tbody > tr > td {
+  border: none;
+}
+
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) td {
+  background: #F5F5F5 !important;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) td.xtaf-edit-input {
+  background: #E8E8E8 !important;
+  padding: 5px !important;
+}
+
+.k-grid .k-grid-header .k-grid-header-wrap th.k-header {
+  white-space: pre-line !important;
+  border-bottom: 1px solid #C7C7C7 !important;
+}
+
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid table {
+  border-spacing: 0 15px;
+  border-collapse: separate;
+}
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid table:has(thead) {
+  border-spacing: 0 5px;
 }
 
 .k-rtl .k-window-titlebar .k-window-actions {
@@ -2824,9 +2856,6 @@ body, html {
 }
 .container.pageContainer.xtafnit_pageContainer#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Main div[uxid=iLogo] {
   width: 180px !important;
-}
-.container.pageContainer.xtafnit_pageContainer#TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_Main img {
-  width: 100%;
 }
 
 .icon-export-excel:before {

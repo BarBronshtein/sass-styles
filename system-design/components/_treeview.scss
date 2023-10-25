@@ -1,0 +1,109 @@
+.xstyle-itreeview-wrapper {
+    .k-sprite {
+        font-size: 18px ;
+        color:black;
+    }
+
+    .k-icon{
+        color: black;
+        font-size: 18px;
+    }
+    .k-treeview-leaf{
+    background: none;
+    padding: 4px 8px;
+     .k-treeview-leaf-text,span{
+        color: var(--vanilla-other-black, #000);
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; 
+    }
+    &.k-selected{
+        border-radius: 4px;
+        background: var(--vanilla-primary-500, #8EBBCF);
+
+        .k-treeview-leaf-text,span{
+            color: var(--vanilla-other-white, var(--color-other-white, #FFF));
+        }
+    }
+    &.k-focus{
+        border-radius: 4px;
+        box-shadow: 0px 0px 8px 0px rgba(166, 203, 221, 0.50);
+    }
+
+    &.k-hover{
+
+        background: var(--vanilla-neutral-200, #F5F5F5);
+
+    }
+
+
+}
+
+
+.k-checkbox-wrapper{
+    input.k-checkbox{
+        width: 14px;
+        height: 14px;
+        border-color: #000;
+
+        &:checked{
+            border-color: #8EBBCF;
+            color: #8EBBCF;
+            &::before{
+                color: #8EBBCF;
+            }
+        }
+    }
+}
+
+
+
+.fa-file-image::before{
+  font-family: 'icomoon';
+  content: "\e9af";
+}
+
+.fa-file-pdf::before{
+    font-family: 'icomoon';
+    content: "\e98e";
+}
+
+.fa-file-alt::before{
+    font-family: 'icomoon';
+    content: "\e9b6";
+}
+
+.fa-envelope::before{
+    font-family: 'icomoon';
+    content: "\e985";
+}
+
+.fa-file-word::before{
+    font-family: 'icomoon';
+    content: "\e9ae";
+}
+
+
+.fa-folder::before{
+    font-family: 'icomoon';
+    content: "\e9ac";
+}
+   
+}
+
+#TafnitCore_Archive_UI_SearchByKeywords {
+    ul.k-group.k-treeview-group li.k-item {
+
+        input{ 
+            display:block;
+        }
+        .k-treeview-toggle + .k-checkbox-wrapper input { 
+            display:none;
+        }
+        div + ul.k-group .k-treeview-toggle + .k-checkbox-wrapper input {
+            display:block;
+        }
+    }
+}

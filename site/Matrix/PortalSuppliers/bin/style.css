@@ -302,7 +302,7 @@ header.navbar-fixed-top.header-suppliers .details .left .details .left .xstyle-d
   text-align: right;
   color: #7b098b;
 }
-header.navbar-fixed-top.header-suppliers .logo .x-self-container.s-self-container {
+header.navbar-fixed-top.header-suppliers .logo .x-control-wrapper {
   position: absolute;
   width: 275px;
   left: 10px;
@@ -391,7 +391,7 @@ mainbody > .row.boxShadow-0.border-0 > div {
   grid-template-columns: auto 1fr;
   gap: 5px;
 }
-.cube.cubeFix .shekel-wrapper .x-self-container {
+.cube.cubeFix .shekel-wrapper .x-control-wrapper {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
@@ -1255,8 +1255,8 @@ mainbody mainbody {
   padding: 0 !important;
 }
 .k-grid-header-wrap.k-auto-scrollable .k-grid-filter-menu.k-grid-filter.k-active .k-icon.k-i-filter::before {
-  content: "\e971" !important;
-  color: #7B098B !important;
+  content: "\ea74" !important;
+  font-family: "icomoon";
 }
 .k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > a > span::before {
   content: "\f0dc";
@@ -1744,8 +1744,9 @@ mainbody mainbody {
   align-self: center;
   top: 15px;
   position: relative;
+  margin-left: 0 !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper {
   background: #ffffff;
   width: 50px;
   height: 50px;
@@ -1753,37 +1754,37 @@ mainbody mainbody {
   border-radius: 10px;
   align-items: center;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper span::before {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper span::before {
   color: #690779 !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper span::after {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper span::after {
   color: #690779 !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover {
   background: #690779 !important;
   color: #ffffff !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::before {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::before {
   color: #ffffff !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:hover span::after {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:hover span::after {
   color: #ffffff !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:focus-within, .greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:active {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus-within, .greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:active {
   background: #ffffff !important;
   color: #690779 !important;
   opacity: 1;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:focus-within span::before, .greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:active span::before {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus-within span::before, .greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:active span::before {
   color: #690779 !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:focus-within span::after, .greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper:active span::after {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:focus-within span::after, .greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper:active span::after {
   color: #690779 !important;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 32px;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .x-kicon-caption {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
   display: none;
 }
 
@@ -2029,8 +2030,8 @@ div[uxid=tbID], div[uxid=tbPassword] {
   padding: 0px;
 }
 .gridHeaderButton button:hover {
-  background: #ffffff;
-  color: #7b098b;
+  background: #690779;
+  color: #FFFFFF;
   border: 1px solid #7b098b;
 }
 .gridHeaderButton button:hover span:before, .gridHeaderButton button:hover span:after {
@@ -2079,12 +2080,12 @@ div[uxid=tbID], div[uxid=tbPassword] {
   max-width: 200px;
 }
 .xstyle-buttoncontrol-wrapper button:hover {
-  background: #ffffff;
-  color: #7b098b !important;
+  background: #690779;
+  color: #FFFFFF !important;
   border: 1px solid #7b098b;
 }
 .xstyle-buttoncontrol-wrapper button:hover span::before {
-  color: #7b098b !important;
+  color: #FFFFFF !important;
 }
 .xstyle-buttoncontrol-wrapper button:focus {
   background: #7b098b;
@@ -2511,8 +2512,8 @@ div[uxid=tbID], div[uxid=tbPassword] {
 }
 .k-window .ttitle-border {
   padding: 7px 5px !important;
-  border-bottom: #7b098b;
-  border-top: #7b098b;
+  border-bottom: 1px solid #7b098b;
+  border-top: 1px solid #7b098b;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -2641,7 +2642,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   margin-right: 0 !important;
 }
 .k-window:has(.k-edit-form-container) button.k-button-solid-primary:hover {
-  background: #ffffff;
+  background: #690779;
   color: white !important;
 }
 .k-window:has(.k-edit-form-container) button.k-button-solid-primary:hover span::before {
@@ -2656,7 +2657,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   color: white !important;
 }
 .k-window:has(.k-edit-form-container) button:hover {
-  background: #ffffff;
+  background: #690779;
   color: #ffffff;
 }
 .k-window:has(.k-edit-form-container) button:focus {
@@ -2811,12 +2812,12 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-size: 16px;
 }
 .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button:hover {
-  background: #ffffff !important;
-  color: #7b098b !important;
+  background: #690779 !important;
+  color: #FFFFFF !important;
   border: 1px solid #7b098b;
 }
 .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button:hover span::before {
-  color: #7b098b !important;
+  color: #FFFFFF !important;
 }
 .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button:focus {
   background: #7b098b !important;
@@ -3028,7 +3029,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   top: 15px;
   position: relative;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   background: #ffffff;
   width: 50px;
   height: 50px;
@@ -3036,13 +3037,13 @@ div[uxid=tbID], div[uxid=tbPassword] {
   border-radius: 10px;
   align-items: center;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 32px;
 }
-.greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .x-kicon-caption {
+.greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .x-kicon-caption {
   display: none;
 }
-.greyPanel .gridHeaderButton > div .xstyle-buttoncontrol-wrapper .x-button-wrapper {
+.greyPanel .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper {
   float: left;
 }
 
@@ -3246,12 +3247,12 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-size: 22px !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:hover {
-  background: #ffffff;
-  color: #7b098b;
+  background: #690779;
+  color: #FFFFFF;
   border: 1px solid #7b098b;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:hover span span.k-icon::before {
-  color: #7b098b !important;
+  color: #FFFFFF !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:focus, .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button:focus-within {
   background: #7b098b !important;
@@ -3266,7 +3267,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .text-upload {
   position: absolute;
   top: 45px;
-  left: -16px;
 }
 .text-upload span.x-dynamic-label-control {
   font-family: "Heebo";
@@ -3465,7 +3465,7 @@ header.navbar-fixed-top.header-suppliers .mobileView .helloText span {
 header.navbar-fixed-top.header-suppliers .mobileView .LastLoginDetails span {
   font-size: 12px;
 }
-header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcontrol-wrapper > .col-4 label, header.navbar-fixed-top.header-suppliers .details .left span {
+header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcontrol-wrapper > .x-control-caption-wrapper label, header.navbar-fixed-top.header-suppliers .details .left span {
   font-size: 13px;
   line-height: 30px !important;
 }
@@ -3488,11 +3488,11 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   font-size: 14px;
 }
 
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper {
   width: 40px;
   height: 40px;
 }
-.greyPanel .first-panel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div .xstyle-kicon-wrapper .k-icon {
+.greyPanel .first-panel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon, .greyPanel .gridHeaderButton > div.xstyle-kicon-wrapper .k-icon {
   font-size: 25px;
 }
 
@@ -4374,8 +4374,8 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 }
 #TafnitCore_SaaSServer_Portal_Default_UI_userDetailes .ttitle-border {
   padding: 7px 5px !important;
-  border-bottom: #7b098b;
-  border-top: #7b098b;
+  border-bottom: 1px solid #7b098b;
+  border-top: 1px solid #7b098b;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -4536,14 +4536,14 @@ body, html {
 }
 
 .icon-message1:before, .icon-report:before, .icon-invatation-2:before, .icon-dilvaery-2:before, .icon-money-2:before, .icon-menu-2:before, .icon-tracker:before {
-  color: #65b5ff;
+  color: #ffb444;
 }
 .icon-message1:after, .icon-report:after, .icon-invatation-2:after, .icon-dilvaery-2:after, .icon-money-2:after, .icon-menu-2:after, .icon-tracker:after {
   color: #ffffff;
 }
 
 .icon-car:after, .icon-customers::after {
-  color: #65b5ff;
+  color: #ffb444;
 }
 
 .icon-car:before, .icon-customers::before {
@@ -4551,8 +4551,16 @@ body, html {
 }
 
 .icon-home-2:after, .icon-log-out:after {
-  color: #65b5ff;
+  color: #ffb444;
 }
 .icon-home-2::before, .icon-log-out::before {
   color: #ffffff;
+}
+
+.k-content #uber-container {
+  padding-right: 50px !important;
+}
+
+.header-suppliers img {
+  width: 200px !important;
 }/*# sourceMappingURL=style.css.map */

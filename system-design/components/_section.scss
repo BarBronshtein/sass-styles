@@ -1,0 +1,33 @@
+
+
+
+.x-section-wrraper {
+    margin-bottom: 8px;
+    border: 1px solid rgba(162, 162, 162, 0.7);
+    border-radius: 5px;
+    background:#fff;
+    .x-section-header-wrraper {
+        height: auto;
+        border-bottom: 1px solid #ccc;
+        min-height: 30px;
+        border-radius: 3px;
+    }
+
+    .x-section-content-wrapper {
+        padding: 1px;
+        margin-bottom: 2px;
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.x-section-header {
+    width: 100%;
+    font: bold 18px Arial;
+    padding: 5px 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

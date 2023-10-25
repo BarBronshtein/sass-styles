@@ -1,3 +1,4 @@
 
-@forward '../variables/colors';
-@forward '../variables/fonts';
+@import '../variables/colors';
+@import '../variables/fonts';
+@import '../../base/variables/masterVariable' ;

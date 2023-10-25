@@ -14,7 +14,7 @@
     box-shadow: $list-container-shadow ;
     border: $list-view-border-bottom ;
     border-radius: 10px;
-    margin-top: 5px;
+    
 
     .k-list{
       border-radius: 10px;
@@ -551,7 +551,7 @@
                 &:hover{
                   background: $special-button-bg-hover ;
                   color: $special-button-color-text-hover ;
-                  border:1px solid $speical-button-color-border-hover;
+                  border:1px solid $special-button-color-border-hover;
                   span::before{
                     color:  $special-button-color-text-hover  ;
                   }
@@ -561,7 +561,7 @@
                   background: $special-button-bg-focus ;
                   box-shadow: none ;
                   color: $special-button-color-text-focus;
-                  border:1px solid $speical-button-color-border-hover;
+                  border:1px solid $special-button-color-border-hover;
                   opacity: 1;
                   span{
                     color:  $special-button-color-text-focus ;
@@ -588,3 +588,15 @@
         opacity: 1 ;
       }
   }
+
+
+
+  .col-button{
+    box-shadow: none;
+    border: none;
+    padding: 0;
+
+    .xstyle-buttoncontrol-wrapper{
+      width: auto;
+    }
+   }

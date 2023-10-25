@@ -1,83 +1,89 @@
-@forward '../fonts/font.scss';
-@forward '../components/animation';
-@forward '../components/barcode';
-@forward '../components/breadcrumb';
-@forward '../components/button';
-@forward '../components/calendar';
-@forward '../components/canvas';
-@forward '../components/carDamage';
-@forward '../components/cell';
-@forward '../components/chat';
-@forward '../components/checkbox';
-@forward '../components/compass';
-@forward '../components/creditGuard';
-@forward '../components/currentLocation';
-@forward '../components/date-picker';
-@forward '../components/diagram';
-@forward '../components/drawer';
-@forward '../components/drop-down';
-@forward '../components/dropDownTree';
-@forward '../components/fileViewer';
-@forward '../components/footer';
-@forward '../components/generalClass';
-@forward '../components/grid';
-@forward '../components/groupBox';
-@forward '../components/header';
-@forward '../components/imap';
-@forward '../components/infoBubble';
-@forward '../components/intelPhone';
-@forward '../components/iSlider';
-@forward '../components/layout';
-@forward '../components/listview';
-@forward '../components/loanSlider';
-@forward '../components/lookup';
-@forward '../components/mediaQuery';
-@forward '../components/menu';
-@forward '../components/messageBox';
-@forward '../components/multiCheckboxDropdown';
-@forward '../components/multichoice';
-@forward '../components/multiselect';
-@forward '../components/pFloating';
-@forward '../components/popupSignature';
-@forward '../components/popupwincls';
-@forward '../components/progressBar';
-@forward '../components/radio-button';
-@forward '../components/rangeNumber';
-@forward '../components/rating';
-@forward '../components/scrollviewKendo';
-@forward '../components/section';
-@forward '../components/spinner';
-@forward '../components/switch';
-@forward '../components/textbox';
-@forward '../components/timelineRTL';
-@forward '../components/timepicker';
-@forward '../components/treeview';
-@forward '../components/upload';
-@forward '../components/video';
-@forward '../components/videoStream';
-@forward '../components/virtual-keyboard';
-@forward '../components/window';
-@forward '../components/autocomplete';
-@forward '../components/threeoptionsSwitch';
-@forward '../components/linke';
-@forward '../components/linklist';
-@forward '../components/simpleXML';
-@forward '../pages/accessiblity-edit';
+
+@import '../fonts/font.scss';
+@import '../components/animation';
+@import '../components/barcode';
+@import '../components/breadcrumb';
+@import '../components/button';
+@import '../components/calendar';
+@import '../components/canvas';
+@import '../components/carDamage';
+@import '../components/cell';
+@import '../components/chat';
+@import '../components/checkbox';
+@import '../components/compass';
+@import '../components/creditGuard';
+@import '../components/currentLocation';
+@import '../components/date-picker';
+@import '../components/diagram';
+@import '../components/drawer';
+@import '../components/drop-down';
+@import '../components/dropDownTree';
+@import '../components/fileViewer';
+@import '../components/footer';
+@import '../components/generalClass';
+@import '../components/grid';
+@import '../components/groupBox';
+@import '../components/header';
+@import '../components/imap';
+@import '../components/infoBubble';
+@import '../components/intelPhone';
+@import '../components/iSlider';
+@import '../components/layout';
+@import '../components/listview';
+@import '../components/loanSlider';
+@import '../components/lookup';
+@import '../components/mediaQuery';
+@import '../components/menu';
+@import '../components/messageBox';
+@import '../components/multiCheckboxDropdown';
+@import '../components/multichoice';
+@import '../components/multiselect';
+@import '../components/pFloating';
+@import '../components/popupSignature';
+@import '../components/popupwincls';
+@import '../components/progressBar';
+@import '../components/radio-button';
+@import '../components/rangeNumber';
+@import '../components/rating';
+@import '../components/scrollviewKendo';
+@import '../components/section';
+@import '../components/spinner';
+@import '../components/switch';
+@import '../components/textbox';
+@import '../components/timelineRTL';
+@import '../components/timepicker';
+@import '../components/treeview';
+@import '../components/upload';
+@import '../components/video';
+@import '../components/videoStream';
+@import '../components/virtual-keyboard';
+@import '../components/window';
+@import '../components/autocomplete';
+@import '../components/threeoptionsSwitch';
+@import '../components/linke';
+@import '../components/linklist';
+@import '../components/simpleXML';
+@import '../components/signature';
+@import '../pages/accessiblity-edit';
 
 
 
-@forward '../pages/login';
-@forward '../pages/payment';
-@forward '../pages/Survey';
-@forward '../pages/receipt';
-@forward '../pages/errorPage';
-@forward '../pages/FillAndSignV2Page';
-@forward '../pages/meeting';
-@forward '../pages/Transportation';
-@forward '../pages/accessiblity-viewer';
+@import '../pages/login';
+@import '../pages/payment';
+@import '../pages/Survey';
+@import '../pages/receipt';
+@import '../pages/errorPage';
+@import '../pages/FillAndSignV2Page';
+@import '../pages/meeting';
+@import '../pages/Transportation';
+@import '../pages/accessiblity-viewer';
+@import '../pages/MakeRequest';
 
 
-@forward '../../studio/style.scss';
+
+
+
+@import '../../studio/style.scss';
 
 html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),
 html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
@@ -222,7 +228,7 @@ margin: 0;
   flex-wrap: nowrap;
   width: auto;
   & > * {
-    flex-grow:1;
+    flex-grow:1 !important;
   }
 
   & .x-control-caption-wrapper{
@@ -234,4 +240,250 @@ margin: 0;
     position:relative;
     width:100%;
   }
+}
+
+
+
+
+
+
+// otp //
+
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation{
+  padding: 0px 0px;
+
+  #watermark{
+    background: var(--background-light-grey, #F9F9F9);
+
+  }
+.xstyle-ilink-wrapper{
+
+  .x-control-content-wrapper {
+    text-align: center;
+  }
+}
+  a{
+    color: var(--system-colors-med-gray, #6B6E77);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+    text-decoration-line: underline;
+    margin-top: 30px;
+  }
+   div[uxid="rLogo"]{
+    border: none !important;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    height: 68px;
+   padding: 14px 9px 14px 16px;
+   background: var(--bright-blue, #14008E);
+   }
+
+.xstyle-image-wrapper{
+   position: absolute;
+   margin: 0 auto;
+   left: 0;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.xtaf-row-main{
+padding: 0;
+border: none !important;
+background: none;
+box-shadow: none;
+
+textarea{
+
+  background: none;
+  border: none;
+  text-align: center;
+  color: #6B6E77;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; 
+  outline: none !important;
+}
+.xtaf-title{
+  span{
+    color: var(--primary-colors-prime-blue, var(--prime-blue-white-1000, #232873));
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 33px;
+    margin-top: 59px;
+    margin-bottom: 10px;
+  }
+}
+
+.xtaf-text{
+  span{
+    color: #6B6E77;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; 
+    margin-bottom: 30px;
+  }
+}
+
+.x-control-content-wrapper:has(input) {
+  text-align: center !important;
+}
+input{
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid var(--system-colors-prime-blue-30, #BDBFD5);
+  background: var(--system-colors-white, #FFF);
+  outline: none;
+  color: var(--primary-colors-prime-blue, var(--prime-blue-white-1000, #232873));
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Heebo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  &:focus,&:focus-within{
+    border: 1px solid var(--primary-colors-bright-blue, #14008E);
+
+  }
+
+  &:focus-visible{
+    outline: none;
+  }
+}
+}
+
+}
+
+.k-window:has(#TafnitCore_SaaSServer_OTP_UI_ErrorMessage){
+
+  border-radius: 6px;
+  background: var(--color-white-1000, #FFF);
+  padding: 34px 16px;
+  border: none;
+  box-shadow: none;
+  height: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 370px !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto;
+
+  #TafnitCore_SaaSServer_OTP_UI_ErrorMessage{
+    margin: 0 !important;
+  }
+.x-header {
+  display: none;
+}
+  .k-window-titlebar{
+    display: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    .k-window-title{
+      display: none;
+    }
+  .k-window-actions{
+    position: absolute;
+    left: 10px;
+
+  }
+
+  }
+
+
+  .xtaf-title-messagbox{
+    span{
+      color: var(--brand-med-gray, #6B6E77);
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Heebo;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      overflow: hidden !important;
+    }
+  }
+
+  .xtaf-text-messagbox{
+
+    span{
+    color: var(--brand-prime-blue, var(--prime-blue-white-1000, #232873));
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    overflow: hidden !important;
+  }
+  }
+
+.x-button-wrapper{
+  margin-top: 20px;
+  text-align: center;
+  button{
+    border-radius: 30px;
+    background: var(--primary-colors-prime-orange, #FF5A23);
+    height: 44px;
+    padding: 10px 30px;
+    color: var(--system-colors-white, var(--color-white-1000, #FFF));
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; 
+    border: none;
+
+    &:hover{
+
+      background: var(--base-secondery-600, #E53E07);
+    }
+
+    &:focus,&:focus-within{
+
+      background: var(--answersurvey-button-press-background, #FF5A23);
+      box-shadow: 0px 0px 6px 0px rgba(229, 62, 7, 0.60);
+    }
+  }
+}
+
+}
+
+
+.x-control-wrapper:has(.x-control-info-bubble-wrapper ) {
+
+  display: grid;
+  grid-template-columns: 1fr 20%;
+
+.x-control-content-wrapper{
+  grid-column: 1 / 3;
+}
 }

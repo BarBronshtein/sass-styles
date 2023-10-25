@@ -89,11 +89,16 @@ thead{
       }
     }
     &:nth-child(2){
-      height: 35px;
-      border-bottom: 2px solid #C7C7C7 !important;
-      border-top: 1px solid #C7C7C7;
       border-collapse: collapse;
      background: #FFF;
+
+     th{
+      border-bottom: 1px solid #C7C7C7 !important;
+
+      &.xtaf-hidden{
+        border: none !important;
+      }
+     }
 
      span{
       color:  #5E955C;
@@ -205,7 +210,7 @@ thead{
       border-top: none !important;
       border-bottom: 1px solid $grid-header-border !important ;
       margin-top: 15px;
-      margin-bottom: 5px;
+      margin-bottom: -10px;
       padding: 0 !important;
       background: none;
         .k-grid-filter {
@@ -268,8 +273,8 @@ thead{
 
         tr {
             transition: 0.6s all;
-            border: 1px solid var(--base-netural-100, #F8F8F8);
-            box-shadow: 0px 0px 3px 0px rgba(54, 105, 52, 0.15);
+            border: none;
+            box-shadow:none;
             &:hover{
               background: $grid-content-line-background-hover !important;
             }
@@ -1152,7 +1157,8 @@ thead{
   
   
   .k-toolbar.k-toolbar-resizable{
-  
+   background: none;
+   border: none;
     & >.k-overflow-anchor.k-button.k-button-md.k-rounded-md.k-button-flat {
   
       border: none !important;
@@ -1569,3 +1575,46 @@ thead{
  }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid-content.k-auto-scrollable > table > tbody > tr > td{
+   border: none;
+ }
+
+ .xstyle-gridv4-wrapper:has(.xtaf-hidden)  td{
+  background: #F5F5F5 !important;
+
+  &.xtaf-edit-input {
+    background: #E8E8E8 !important;
+    padding: 5px !important;
+}
+ }
+
+ .k-grid .k-grid-header .k-grid-header-wrap th.k-header {
+  white-space: pre-line !important;
+  border-bottom: 1px solid #C7C7C7 !important;
+}
+
+.xstyle-gridv4-wrapper:has(.xtaf-hidden) .k-grid table {
+  border-spacing: 0 15px;
+  border-collapse: separate;
+
+  &:has(thead){
+    border-spacing: 0 5px;
+  }
+}

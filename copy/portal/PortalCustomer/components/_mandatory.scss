@@ -14,9 +14,10 @@
 .xstyle-textareacontrol-wrapper.mandatory,
 .xstyle-textareacontrol-wrapper.mandatory,
 .xstyle-autocomplete-wrapper.mandatory {
-  :has(.x-control-caption-wrapper) {
+  &:has(.x-control-caption-wrapper) {
     & label {
       padding-right: 10px;
+
       &:before {
         content: "*";
         font-family: "Font Awesome 5 pro" !important;

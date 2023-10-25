@@ -150,3 +150,37 @@ body,html{
     border-bottom: 1px solid #C7C7C7;
     padding: 25px 0 !important;
 }
+
+
+.k-content #uber-container {
+    padding-right: 50px !important;
+}
+
+
+#TafnitCore_System_UI_App_Tools_BusinessTierTracker{
+    .xstyle-gridv4-wrapper{
+        .k-pager-sizes.k-label{
+            .k-dropdownlist{
+                .k-input-inner{
+                    .k-input-value-text{
+                       text-align: right;
+                   }
+               }
+           }
+       }
+   }
+    .xstyle-textareacontrol-wrapper{
+        .k-textarea{
+            min-height: 150px;
+
+        }
+   }
+}
+
+.xtaf-flex{
+    display: flex !important;
+
+    .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper{
+        float: right !important;
+    }
+}

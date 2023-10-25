@@ -41,7 +41,10 @@
 
 #TafnitCore_SaaSServer_Survey_UI_Survey{
 
- 
+    .x-control-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+      }
 
     .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a{
 
@@ -179,6 +182,7 @@ div[uxid="SurveyMainSec"]{
         width: 100%;
         position: absolute;
         right: 0;
+        padding-bottom: 70px !important;
     }
 
     & .title{
@@ -822,6 +826,88 @@ div[uxid="SurveyMainSec"]{
    }
 
 
+   .x-control-wrapper:has(.x-control-info-bubble-wrapper){
+      .x-control-caption-wrapper {
+        flex: inherit;
+      }
+   }
+
+       // signature //
+
+       .xstyle-signaturev2-wrapper .x-control-content-wrapper{
+
+
+        .k-i-arrow-s{
+            &::before{
+                font-family: 'icomoon';
+                content: "\e9bc";
+                color: #0675B4;
+                font-size: 22px;
+            }
+        }
+     .toolbar{
+
+
+        span.k-colorpicker , span.k-dropdownlist{
+            border-radius: 8px;
+            border: 1px solid var(--taa-s-neutral-400, #CCC);
+            background: var(--taa-s-neutral-100, #FBFBFB);
+            height: 50px !important;
+        }
+     }
+
+
+     .x-signaturev2{
+        border-radius: 4px;
+       border: 1px solid var(--taa-s-neutral-400, #CCC) !important;
+       padding: 10px 20px;
+     }
+
+     .k-input-inner:has(.k-input-value-text){
+        height: 25px;
+     }
+     .k-signature-action.k-signature-maximize.k-button.k-icon-button{
+
+        .k-icon{
+            font-size: 24px;
+            color: #6A3F75;
+        }
+     }
+
+
+    .signature-clear-btn{
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        span::before{
+            font-size: 26px;
+            margin-left: 0px;
+            color: #AAAAAA; 
+        }
+     }
+
+
+     .k-signature-line {
+        position: absolute;
+        bottom: 33%;
+        z-index: 2;
+        pointer-events: none;
+        border-bottom-width: 1px !important;
+        border-bottom-style: dashed !important;
+        width: calc(98% - 8px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-color: #BBB !important;
+    }
+
+    .k-signature{
+        min-height: 250px;
+    }
+
+    }
+
+
    .xstyle-geoaddress-wrapper{
 
     & .k-i-marker-pin-target{
@@ -913,7 +999,42 @@ div[uxid="SurveyMainSec"]{
   
    }
 
+  // info //
+  .x-infoWrap .x-infoButton .x-infoBubble::after{
+    display: none;
+  }
 
+  .x-infoButton {
+    margin-right: 10px;
+  }
+  .x-infoWrap .x-infoButton .x-infoBubble{
+    border-radius: 10px;
+    background: var(--color-other-white, #FFF);
+    box-shadow: 0px 0px 6px 0px rgba(142, 187, 207, 0.60);
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    .x-infoBubbleTitle{
+        border-bottom: 1px solid #dedede !important;
+        color: var(--vanilla-neutral-900, #4B4B4B) !important;
+        text-align: center;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: 120%;
+        padding-bottom: 10px;
+    }
+    .x-infoBubbleContent{
+        color: var(--vanilla-neutral-900, #4B4B4B) !important;
+        text-align: center;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 120%;
+    }
+  }
    // linke control //
 
    .xstyle-ilink-wrapper {

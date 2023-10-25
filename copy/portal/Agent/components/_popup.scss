@@ -1,6 +1,12 @@
 
+.k-list-item.k-focus, .k-list-item:focus{
+  box-shadow: none;
+}
 
-
+.k-list-item.k-selected{
+  background: #ae2a30;
+  color: white !important;
+}
 
 .k-rtl .k-window-titlebar .k-window-actions{
   right: auto;

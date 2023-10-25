@@ -20,7 +20,10 @@ body.checkout-flow-v7.bg2{
   padding: 0 !important;
 }
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment{
-
+  .x-control-wrapper{
+    flex-wrap: wrap;
+   
+  }
 & .price{
     padding-right: 0 !important;
     padding-top: 5px;

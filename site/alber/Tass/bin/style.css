@@ -474,4 +474,8 @@ body {
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .mandatory label.x-control-caption-text::before {
   content: "*";
   color: #007FC1 !important;
+}
+
+#TafnitCore_SaaSServer_Validation_J5_UI_MakeRequest .MakeRequestTitle {
+  background: #007FC1 !important;
 }/*# sourceMappingURL=style.css.map */

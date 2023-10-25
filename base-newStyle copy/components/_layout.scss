@@ -403,6 +403,41 @@ select:-webkit-autofill:focus {
 /*ux studio web studio*/
 
 
+
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio,
+#TafnitCore_System_UI_App_WebSDK_UXStudio {
+    // .k-tabstrip .k-content.k-state-active {
+    // background-color: #efefef;
+    // }
+
+
+    .xstudioTab,
+    .xstudioRow,
+    .xstudioCol {
+        min-height: 50px;
+        padding: 10px;
+    }
+
+    .xtafnit_pageContainer {
+        height: 495px;
+        margin-bottom: 0;
+
+        .xstyle-tab-wrapper {
+            .k-content {
+                >.row {
+                    min-height: 50px;
+                    padding: 10px;
+
+                    >.col {
+                        min-height: 50px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*Unknow*/
 
 label {

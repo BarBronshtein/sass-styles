@@ -180,14 +180,14 @@
   grid-template-columns: auto 1fr auto;
   width: 90%;
   align-items: center;
-  .col-scroll{
+.col-scroll{
     align-items: stretch;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-y: hidden;
     margin-top: 0px;
-    gap: 20px;
+    gap: 12px;
 
 
 
@@ -219,7 +219,7 @@
 
 .selected-image{
  img{
-  filter:$scrollview-selected-image-box-shadow ;
+  box-shadow:$scrollview-selected-image-box-shadow ;
   border: 1px solid #FFFFFF;
  }
 }

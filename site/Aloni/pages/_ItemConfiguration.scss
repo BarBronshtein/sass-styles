@@ -9,9 +9,12 @@
     }
 
   .dataAndScrollview{
+    .x-image-wrapper{
+        padding-top: 15px;
+    }
     img{
         width: 100%;
-        border-radius: 8px;
+        border-radius: 2px;
     }
   }
     .col-detailView{
