@@ -3,7 +3,10 @@
 
 
 #TafnitCore_System_UI_App_ErrorPage{
-
+    .x-control-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+      }
    
     width: 40%;
     position: absolute;
@@ -16,33 +19,33 @@
 
     & .logoErro {
         background: none ;
-        border: none ;
+        border: none !important;
         box-shadow: none;
-        margin-bottom: 0 ;
-        padding-bottom: 0 ;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
         & .xstyle-image-wrapper {
             width: 50%;
-            float: left ;
+            float: left !important;
             margin-left: -25px;
         }
     }
 
     & .row{
         background: none ;
-        border: none ;
+        border: none !important;
         box-shadow: none;
     }
 
     & .k-icon{
         font-size: 45px;
-        color: #8C4D9C ;
+        color: #8C4D9C !important;
 
 
     }
 
     & .titleErro{
 
-        padding: 0 ;
+        padding: 0 !important;
         max-width: none ;
           
         & .xstyle-dynamiclabelcontrol-wrapper {
@@ -50,50 +53,50 @@
             & span{
                 font-family: 'Heebo';
                 font-style: normal;
-                font-weight: 700 ;
-                font-size: 24px ;
-                line-height: 50px ;
-                text-align: right ;
-                color: #000000 ; 
+                font-weight: 700 !important;
+                font-size: 24px !important;
+                line-height: 50px !important;
+                text-align: right !important;
+                color: #000000 !important; 
             }
         }
     }
 
     & .lineErro {
-        border-top: 1px solid #8C4D9C ;
-        margin-bottom: 10px ;
+        border-top: 1px solid #8C4D9C !important;
+        margin-bottom: 10px !important;
     }
 
     & .messageErro{
-        font-family: 'Heebo' ;
-        font-style: normal ;
-        color: #000000 ;
-        font-weight: 400 ;
-        font-size: 24px ;
-        line-height: 35px ;
-        text-align: right ;
-        max-width: 90% ;
+        font-family: 'Heebo' !important;
+        font-style: normal !important;
+        color: #000000 !important;
+        font-weight: 400 !important;
+        font-size: 24px !important;
+        line-height: 35px !important;
+        text-align: right !important;
+        max-width: 90% !important;
         flex: 0 0 90%;
-        padding: 0 ;
+        padding: 0 !important;
     }
 }
 
 @media only screen and (max-width: 1000px)   {
     #TafnitCore_System_UI_App_ErrorPage{
-        top: 0% ;
-        transform: none ;
+        top: 0% !important;
+        transform: none !important;
 
         & .logoErro.border{
-           margin-bottom: 90px ;
+           margin-bottom: 90px !important;
         }
 
         & .titleErro .xstyle-dynamiclabelcontrol-wrapper span.x-dynamic-label-control{
-            font-size: 14px ;  
+            font-size: 14px !important;  
         }
 
         & .messageErro{
             & span.x-dynamic-label-control{
-                font-size: 14px ;
+                font-size: 14px !important;
             }
         }
     }

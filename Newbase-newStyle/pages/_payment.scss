@@ -2,10 +2,6 @@
 
 
 
-
-
-
-
 $main-background-color:#8C4D9C;
 $box-Details-background-color:#1F8FCE;
 
@@ -17,27 +13,30 @@ body.checkout-flow-v7.bg2{
   margin: auto;
 }
 #uber-container{
-  padding: 0 ;
+  padding: 0 !important;
 }
 #TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment{
-
+  .x-control-wrapper{
+    flex-wrap: wrap;
+   
+  }
 & .price{
-    padding-right: 0 ;
+    padding-right: 0 !important;
     padding-top: 5px;
     border-top: solid 1px;
     margin-top: 75px;
 }
 @media only screen and (max-width: 1165px) {
   .col.x-col.s-col.col-12.titlePaymentOption > div > div.x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper{
-    width: 276px ;
-    margin: auto ;
+    width: 276px !important;
+    margin: auto !important;
 }
 
 // &  .x-iframe-wrapper {
 //   background-color: white;
-//   top: 300px ;
-//   width: auto ;
-//   padding-right: 0% ;
+//   top: 300px !important;
+//   width: auto !important;
+//   padding-right: 0% !important;
  
 // }
 
@@ -56,11 +55,11 @@ body.checkout-flow-v7.bg2{
   //   & :.s-iframe{
 
     
-  //   padding-right: 0% ;
+  //   padding-right: 0% !important;
   //   }
 
   //   & .paymenIframe{
-  //     padding-right: 0 ;
+  //     padding-right: 0 !important;
   //   }
   // }
   
@@ -80,27 +79,27 @@ body.checkout-flow-v7.bg2{
 
 .row.x-row.s-row.border-0.paymentCard {
   margin-top: 130px ;
-  height: 1000px ;
-  border-radius: 20px ;
-  border: none ;
-  background-color: rgb(255, 255, 255) ;
-  margin-right: 0 ;
+  height: 1000px !important;
+  border-radius: 20px !important;
+  border: none !important;
+  background-color: rgb(255, 255, 255) !important;
+  margin-right: 0 !important;
 }
 
 
 
 &  .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper.pricePayment .x-dynamic-label-control.s-dynamic-label-control {
   height: 100px;
-  text-align: center ;
+  text-align: center !important;
   width: 100%;
   font-family: "Assistant", sans-serif;
   display: block;
   margin-top: 27px;
-  font-weight: 900 ;
+  font-weight: 900 !important;
   margin-left: 15px;
-  font-size: 40px ;
+  font-size: 40px !important;
   color: white;
-  font-weight: bold ;
+  font-weight: bold !important;
   margin-bottom: 0;
 }
 
@@ -111,22 +110,22 @@ body.checkout-flow-v7.bg2{
 
 
   & .titlePay {
-    border-radius: 20px ;
-    margin-top: 130px ;
-    height: 215px ;
+    border-radius: 20px !important;
+    margin-top: 130px !important;
+    height: 215px !important;
   }
   & {
-    width: 100% ;
-    height: 607px ;
-    margin: auto ;
-    background-color: $main-background-color;
-    padding: 0px ;
+    width: 100% !important;
+    height: 607px !important;
+    margin: auto !important;
+    background-color: $main-background-color!important;
+    padding: 0px !important;
     position: relative;
   }
 
   
   & .x-dynamic-label-control {
-    text-align: center ;
+    text-align: center !important;
   }
  & .textPricePayment {
     font-family: "Assistant";
@@ -139,18 +138,18 @@ body.checkout-flow-v7.bg2{
     margin-top: 165px;
     font-family: "Assistant";
     font-style: normal;
-    font-size: 20px ;
+    font-size: 20px !important;
     font-weight: 400;
     line-height: 25px;
-    color: black ;
+    color: black !important;
   }
   & .x-cell {
     padding-left: 0;
     padding-right: 0;
   }
 //   & :.s-iframe {
-//     padding-right: 0% ;
-//     height: 105vh ;
+//     padding-right: 0% !important;
+//     height: 105vh !important;
 // // & body.dektop{
   
 // // }
@@ -169,26 +168,26 @@ body.checkout-flow-v7.bg2{
     height: 50px;
   }
   & .gal {
-    padding: 0 ;
-    border: none ;
+    padding: 0 !important;
+    border: none !important;
     height: 29px;
   }
   & .row .x-row .s-row .border .border-0 {
-    border-radius: 0px ;
-    background-color: $main-background-color;
+    border-radius: 0px !important;
+    background-color: $main-background-color!important;
   }
  & .btnPay button {
-    background-color: $box-Details-background-color ;
-    color: rgb(255, 255, 255) ;
-    width: 274px ;
-    height: 69px ;
+    background-color: $box-Details-background-color !important;
+    color: rgb(255, 255, 255) !important;
+    width: 274px !important;
+    height: 69px !important;
     right: 0%;
     top: 0%;
     bottom: 0%;
     border-radius: 40px;
     font-family: "Assistant";
     font-style: normal;
-    font-size: 30px ;
+    font-size: 30px !important;
     font-weight: 700;
     box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
   }
@@ -197,26 +196,26 @@ body.checkout-flow-v7.bg2{
     margin: auto;
   }
   & .watermark {
-    background-color: rgb(255, 255, 255) ;
+    background-color: rgb(255, 255, 255) !important;
   }
   & .PaymetnMS {
-    width: 80% ;
-    height: 40% ;
-    background-color: $box-Details-background-color ;
-    position: absolute ;
+    width: 80% !important;
+    height: 40% !important;
+    background-color: $box-Details-background-color !important;
+    position: absolute !important;
     z-index: 2;
-    border-radius: 15px ;
+    border-radius: 15px !important;
     text-align: center;
-    color: rgb(255, 255, 255) ;
-    font-family: "Assistant", sans-serif ;
-    margin: 0 auto ;
-    left: 0 ;
-    right: 0 ;
-    max-width: 300px ;
+    color: rgb(255, 255, 255) !important;
+    font-family: "Assistant", sans-serif !important;
+    margin: 0 auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-width: 300px !important;
   }
   & .logoPayment {
-    margin-bottom: 43px ;
-    border-radius: 0px ;
+    margin-bottom: 43px !important;
+    border-radius: 0px !important;
   }
   & .userNamePayment {
     font-family: "Assistant";
@@ -234,27 +233,27 @@ body.checkout-flow-v7.bg2{
     line-height: 25px;
   }
   & .textPayment2 {
-    font-family: "Assistant" ;
-    font-style: normal ;
-    font-weight: 400 ;
-    font-size: 19px ;
-    line-height: 25px ;
+    font-family: "Assistant" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 19px !important;
+    line-height: 25px !important;
   }
   &  {
     line-height: 0;
-    font-size: 19px ;
-    font-weight: 700 ;
+    font-size: 19px !important;
+    font-weight: 700 !important;
   }
   & .container-fluid {
-    padding: 0px ;
+    padding: 0px !important;
   }
  & .paymentOption{
-    margin-top: 130px ;
-    height: 100% ;
-    border-radius: 20px ;
-    border: none ;
-    background-color: rgb(255, 255, 255) ;
-    margin-right: 0 ;
+    margin-top: 130px !important;
+    height: 100% !important;
+    border-radius: 20px !important;
+    border: none !important;
+    background-color: rgb(255, 255, 255) !important;
+    margin-right: 0 !important;
   }
 
 
@@ -267,7 +266,7 @@ body.checkout-flow-v7.bg2{
   //   bottom: 0px;
   //   right: 56px;
   //   margin: auto;
-  //   width: 100% ;
+  //   width: 100% !important;
   //   left: 0px;
   //   padding-right: 17%;
     
@@ -280,14 +279,14 @@ body.checkout-flow-v7.bg2{
 
 
   & .titlePaymentOption {
-    text-align: center ;
-    font-family: "Assistant" ;
-    color: black ;
-    margin-top: 180px ;
+    text-align: center !important;
+    font-family: "Assistant" !important;
+    color: black !important;
+    margin-top: 180px !important;
     font-size: 18px;
     padding-left: 59px;
     padding-right: 68px;
-    padding-right: 0px ;
+    padding-right: 0px !important;
   }
  & .buttonLayout {
     border: none;
@@ -300,32 +299,32 @@ body.checkout-flow-v7.bg2{
   }
   & .paymentButton {
     text-align: center;
-    background-color: rgb(255, 255, 255) ;
+    background-color: rgb(255, 255, 255) !important;
     border: none;
     margin-top: 30px;
     flex-basis: 29%;
     border-radius: 10px;
     max-width: 31%;
-    color: rgb(0, 0, 0) ;
+    color: rgb(0, 0, 0) !important;
     text-align: center;
   }
   & .k-button {
-    background-color: rgb(255, 255, 255) ;
+    background-color: rgb(255, 255, 255) !important;
     border: none;
   }
   & .paymentButton :hover {
     opacity: 0.9;
   }
   & .cardPrice {
-    border: none ;
+    border: none !important;
     width: 220px;
     margin: auto;
   }
   & .price {
-    padding: 0 ;
+    padding: 0 !important;
   justify-content: center;
-  margin-top: 0 ;
-    border: none ;
+  margin-top: 0 !important;
+    border: none !important;
     display: flex;
   }
   & .k-icon-wrapper {
@@ -333,15 +332,15 @@ body.checkout-flow-v7.bg2{
   }
   & .iconShekl {
     margin-top: 47px;
-	font-size: 50px ;
+	font-size: 50px !important;
   }
   & .buxPaymentSuccess {
-    margin-top: 130px ;
-    height: 500px ;
-    border-radius: 20px ;
-    border: none ;
-    background-color: rgb(255, 255, 255) ;
-    margin-right: 0 ;
+    margin-top: 130px !important;
+    height: 500px !important;
+    border-radius: 20px !important;
+    border: none !important;
+    background-color: rgb(255, 255, 255) !important;
+    margin-right: 0 !important;
   }
   & .iconSuccess {
     width: 202px;
@@ -357,12 +356,12 @@ body.checkout-flow-v7.bg2{
 
 
   & .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper.theUserName .x-dynamic-label-control.s-dynamic-label-control {
-    color: white ;
-    /* font-weight: 900 ; */
-    font-size: 30px ;
-    justify-content: center ;
+    color: white !important;
+    /* font-weight: 900 !important; */
+    font-size: 30px !important;
+    justify-content: center !important;
     margin-bottom: 27px;
-    font-weight: 800 ;
+    font-weight: 800 !important;
     font-family: "Assistant";
     font-style: normal;
 }
@@ -377,14 +376,14 @@ body.checkout-flow-v7.bg2{
 
 &  .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper.thePrice .x-dynamic-label-control.s-dynamic-label-control {
     height: 100px;
-    text-align: right ;
+    text-align: right !important;
     width: 100%;
     font-family: "Assistant", sans-serif;
     display: block;
-    font-weight: 900 ;
-    font-size: 79px ;
+    font-weight: 900 !important;
+    font-size: 79px !important;
     color: white;
-    font-weight: bold ;
+    font-weight: bold !important;
     margin-bottom: 0;
 }
 
@@ -399,19 +398,19 @@ body.checkout-flow-v7.bg2{
 }
 
   & {
-    background-color: $main-background-color ;
-    width: 100% ;
-    height: 954px ;
+    background-color: $main-background-color !important;
+    width: 100% !important;
+    height: 954px !important;
     margin: 0%;
     padding: 0%;
-    margin: auto ;
-    max-width: 1900px ;
+    margin: auto !important;
+    max-width: 1900px !important;
    }
   & .x-image-wrapper {
-    max-width: 1900px ;
+    max-width: 1900px !important;
   }
   & .PaymetnMS {
-    background-color: $box-Details-background-color ;
+    background-color: $box-Details-background-color !important;
     position: absolute;
     width: 466px;
     height: 470px;
@@ -423,7 +422,7 @@ body.checkout-flow-v7.bg2{
     top: 78px;
     bottom: 0;
     border-radius: 20px;
-    color: rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255) !important;
     padding-right: 31px;
     padding-left: 49px;
   }
@@ -454,11 +453,11 @@ body.checkout-flow-v7.bg2{
  & .logoPayment {
     position: absolute;
     width: 100%;
-    border-radius: 0px ;
+    border-radius: 0px !important;
     margin-bottom: 100px;
   }
  & .buttonLayout {
-  border: none ;
+  border: none !important;
   justify-content: left;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -487,12 +486,12 @@ body.checkout-flow-v7.bg2{
     line-height: 20px;
   }
   & .k-button {
-    background: none ;
+    background: none !important;
     border: none;
     opacity: 0.7;
   }
   & .k-button:hover {
-    opacity: 1 ;
+    opacity: 1 !important;
   }
   & .userNamePayment {
     font-family: "Assistant";
@@ -512,7 +511,7 @@ body.checkout-flow-v7.bg2{
     text-align: right;
     height: 147px;
     line-height: 1.6;
-    border-radius: 0 ;
+    border-radius: 0 !important;
   }
   & .textPayment2 {
     font-family: "Assistant";
@@ -544,14 +543,14 @@ body.checkout-flow-v7.bg2{
 
     & span{
       width: 166%;
-    margin-top: 86px ;
-    font-weight: 400 ;
-    font-size: 30px ;
+    margin-top: 86px !important;
+    font-weight: 400 !important;
+    font-size: 30px !important;
     text-align: right;
     }
   }
   & .cardPrice {
-    border: none ;
+    border: none !important;
   }
   & .k-icon-wrapper {
     float: left;
@@ -572,34 +571,34 @@ body.checkout-flow-v7.bg2{
 
  
  & .btnPay button {
-    background-color: $box-Details-background-color ;
-    color: rgb(255, 255, 255) ;
+    background-color: $box-Details-background-color !important;
+    color: rgb(255, 255, 255) !important;
     border-radius: 20px;
     padding: 15px;
     font-size: 18px;
-    width: 274px ;
-    height: 69px ;
+    width: 274px !important;
+    height: 69px !important;
     border-radius: 40px;
     font-family: "Assistant";
     font-style: normal;
-    font-size: 30px ;
+    font-size: 30px !important;
     font-weight: 700;
     box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
   }
  & .btnPay .x-control-content-wrapper {
-    width: 274px ;
+    width: 274px !important;
     margin: auto;
   }
   & .btnPay {
-    width: 100% ;
+    width: 100% !important;
     position: absolute;
     margin-top: 856px;
   }
  & .fotterText {
     position: absolute;
-    width: 13% ;
-    margin-top: 930px ;
-    margin-right: 833px ;
+    width: 13% !important;
+    margin-top: 930px !important;
+    margin-right: 833px !important;
     font-family: "Assistant";
     font-style: normal;
     font-weight: 400;
@@ -610,7 +609,7 @@ body.checkout-flow-v7.bg2{
     margin-right: 525px;
     margin-top: 194px;
     position: absolute;
-    color: rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255) !important;
     font-family: "Assistant";
     font-style: normal;
     font-weight: 900;
@@ -618,7 +617,7 @@ body.checkout-flow-v7.bg2{
   }
   & .buxPaymentSuccess {
     height: 607px;
-    width: 982px ;
+    width: 982px !important;
     border-radius: 15px;
     position: absolute;
     margin-right: 508px;
@@ -688,8 +687,8 @@ body.checkout-flow-v7.bg2{
   width: 982px;
   height: 607px;
   padding-right: 176px;
-  margin: auto ;
-  border-radius: 20px ;
+  margin: auto !important;
+  border-radius: 20px !important;
 }
 
 
@@ -704,11 +703,11 @@ body.checkout-flow-v7.bg2{
 
 
 .x-iframe{
-  border: none ;
+  border: none !important;
 
   padding-right: 30% ;
-  height: 580px ;
-  padding-bottom: 57px ;
+  height: 580px !important;
+  padding-bottom: 57px !important;
 
  .signup-body{
     width: 90%;
@@ -743,7 +742,7 @@ body.checkout-flow-v7.bg2{
     font-weight: 300;
     font-size: 20px;
     line-height: 20px;
-    width: 257px ;
+    width: 257px !important;
   }
 
 
@@ -761,24 +760,24 @@ body.checkout-flow-v7.bg2{
 
   .x-iframe{
     margin-top: 204px;
-    padding-right: 20px ;
+    padding-right: 20px !important;
     height: 103vh;
 }
   
   //   .col.x-col.s-col.paymenIframe div:nth-child(4) {
-  //     position: absolute ;
-  //     top: 642px ;
-  //     right: -108px ;
-  //     bottom: 0px ;
-  //     left: 0px ;
+  //     position: absolute !important;
+  //     top: 642px !important;
+  //     right: -108px !important;
+  //     bottom: 0px !important;
+  //     left: 0px !important;
   // }
 
   .col.x-col.s-col.price{
-    padding: 0px ;
+    padding: 0px !important;
   }
 
   & .textPricePayment span{
-    margin-top: 29px ;
+    margin-top: 29px !important;
   }
 
 
@@ -793,7 +792,7 @@ body.checkout-flow-v7.bg2{
 
 .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-buttoncontrol-wrapper.paymentButton button
 {
-  width: 100px ;
+  width: 100px !important;
 
   & span.x-button_caption_text{
     font-size: 16px;

@@ -1,18 +1,18 @@
 
 %inputFont{
-    font-family: 'Assistant' ;
-    font-style: normal ;
-    font-weight: 600 ;
-    font-size: 16px ;
-    line-height: 100% ;
-    color: #000000 ;
-    text-align: right ;
-    text-indent: 10px ;
-    height: 50px ;
-    background: #FBFBFB ;
-    border-radius: 8px ;
+    font-family: 'Assistant' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 100% !important;
+    color: #000000 !important;
+    text-align: right !important;
+    text-indent: 10px !important;
+    height: 50px !important;
+    background: #FBFBFB !important;
+    border-radius: 8px !important;
     border: 1px solid #CCCCCC;
-    padding-right: 0 ;
+    padding-right: 0 !important;
     direction: rtl;
 }
 
@@ -28,16 +28,38 @@
     color: #7E7B7B;
 }
 
+.x-highlight{
+
+    & label{
+        color: #8C4D9C !important;
+    }
+    & input.k-textbox.x-textbox.s-textbox{
+        border: 1px solid #8C4D9C !important;
+    }
+}
+
 
 #TafnitCore_SaaSServer_Survey_UI_Survey{
 
-    .x-highlight{
+    .x-control-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+      }
 
-        & label{
-            color: #8C4D9C ;
+    .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a{
+
+        position: relative;
+        color: #0675B4;
+
+        &:focus,&:focus-within{
+            font-weight: 600;
         }
-        & input.k-textbox.x-textbox.s-textbox{
-            border: 1px solid #8C4D9C ;
+
+        &:after{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color:#055C8D;
         }
     }
 
@@ -45,18 +67,18 @@
 
     .x-login-user-error{
 
-        border: 1px solid red ;
+        border: 1px solid red !important;
     }
 
     .x-login-user-error-msg{
         margin-top: 3px;
     }
-padding: 0 ;
+padding: 0 !important;
 div[uxid="SurveyMainSec"]{
-    height: 118px ;
+    height: 118px !important;
 }
    & .k-state-disabled{
-        opacity: 1 ;
+        opacity: 1 !important;
    }
     & .surveyTitle{
         position: absolute;
@@ -65,7 +87,7 @@ div[uxid="SurveyMainSec"]{
         top: 118px;
         background: #8C4D9C;
         border-radius: 20px 20px 0px 0px;
-        border: none ;
+        border: none !important;
 
         & .surveyBodyTitle{
             position: absolute;
@@ -73,65 +95,65 @@ div[uxid="SurveyMainSec"]{
             transform: translateY(-15%);
            & .mainTitle{
            & span{
-            font-weight: 700 ;
-            font-size: 24px ;
+            font-weight: 700 !important;
+            font-size: 24px !important;
            }
         }
            & span{
-            font-family: 'Assistant' ;
-            font-style: normal ;
-            font-weight: 400 ;
-            font-size: 20px ;
-            line-height: 100% ;
-            color: #FFFFFF ;
+            font-family: 'Assistant' !important;
+            font-style: normal !important;
+            font-weight: 400 !important;
+            font-size: 20px !important;
+            line-height: 100% !important;
+            color: #FFFFFF !important;
            }
         }
     }
     & .xstyle-buttoncontrol-wrapper{
 
         &.k-state-disabled{
-            opacity: 1 ;
+            opacity: 1 !important;
             & button.k-button.x-button{
-            height: 46px ;
-            border: 1px solid #BBBBBB ;
-            background: white ;
-            color: #7E7B7B ;
-            border-radius: 40px ;
-            box-shadow: none ;
+            height: 46px !important;
+            border: 1px solid #BBBBBB !important;
+            background: white !important;
+            color: #7E7B7B !important;
+            border-radius: 40px !important;
+            box-shadow: none !important;
         }
     }
         & button.x-button{
 
-            height: 46px ;
-            background: #8C4D9C ;
-            box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) ;
-            border-radius: 40px ;
+            height: 46px !important;
+            background: #8C4D9C !important;
+            box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+            border-radius: 40px !important;
             font-family: 'Assistant';
-            font-style: normal ;
-            font-weight: 700 ;
-            font-size: 20px ;
-            line-height: 26px ;
-            text-align: center ;
-            color: white ;
-            margin-top: 14px ;
+            font-style: normal !important;
+            font-weight: 700 !important;
+            font-size: 20px !important;
+            line-height: 26px !important;
+            text-align: center !important;
+            color: white !important;
+            margin-top: 14px !important;
             border: none;
         }
     }
 
     & .x-login-user-error-msg{
-        font-family: 'Assistant' ;
-        font-style: normal ;
-        font-weight: 400 ;
-        font-size: 13px ;
-        line-height: 100% ;
-        color: #E60404 ;
+        font-family: 'Assistant' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 13px !important;
+        line-height: 100% !important;
+        color: #E60404 !important;
     }
     & .mandatory{
         & label.x-control-caption-text{
-            margin-right: 12px ;
+            margin-right: 12px !important;
             &::before{
                 content: "*";
-                font-family: "Font Awesome 5 pro" ;
+                font-family: "Font Awesome 5 pro" !important;
                 position: absolute;
                 top: -8px;
                 right: 3px;
@@ -140,26 +162,27 @@ div[uxid="SurveyMainSec"]{
             }
         }
         & input{
-            background:#FBFBFB  ;
+            background:#FBFBFB  !important;
         }
     }
 
     & div[uxid="SurveyMainSec"]{
-        border: none ;
-        box-shadow: none ;
+        border: none !important;
+        box-shadow: none !important;
 
     }
 
     & div[uxid="sQuestions"]{
         min-height: 611px;
-        background: #FFFFFF ;
-        border-radius: 20px ;
-        border: none ;
-        margin-top:115px ;
-        padding: 30px 15px ;
+        background: #FFFFFF !important;
+        border-radius: 20px !important;
+        border: none !important;
+        margin-top:115px !important;
+        padding: 30px 15px !important;
         width: 100%;
         position: absolute;
         right: 0;
+        padding-bottom: 70px !important;
     }
 
     & .title{
@@ -178,7 +201,7 @@ div[uxid="SurveyMainSec"]{
                 font-style: normal;
                 font-weight: 700;
                  font-size: 36px;
-                 color: #FFFFFF ;
+                 color: #FFFFFF !important;
             }
         }
 
@@ -187,7 +210,7 @@ div[uxid="SurveyMainSec"]{
              font-size: 25px;
              font-family: 'Assistant';
             font-style: normal;
-             color: #FFFFFF ;
+             color: #FFFFFF !important;
         }
     }
 
@@ -196,48 +219,48 @@ div[uxid="SurveyMainSec"]{
     //date control//
 
     .xstyle-date-wrapper  {
-        margin-bottom: 25px ;
+        margin-bottom: 25px !important;
         & label{
          @extend %labelMain;
-            direction: rtl ;
+            direction: rtl !important;
         }
 
         & input.s-datePicker-mobile{
             @extend %inputFont;
             padding-top: 15px;
-            border: 1px solid #CCCCCC ;
+            border: 1px solid #CCCCCC !important;
             &::placeholder{
-                color: #BBBBBB ;
-                font-weight: 600 ;
-                font-size: 16px ;
+                color: #BBBBBB !important;
+                font-weight: 600 !important;
+                font-size: 16px !important;
             }
             &.k-input:focus,
             &.k-input:focus-within,
             &.k-input:active{
-                border: 1px solid #1F8FCE ; 
-                box-shadow: none ;
+                border: 1px solid #1F8FCE !important; 
+                box-shadow: none !important;
             }
         }
 
         & span.k-datepicker{
-            height: 50px ;
-            background: #FBFBFB ;
-            border-radius: 8px ;
-            border: none ;
+            height: 50px !important;
+            background: #FBFBFB !important;
+            border-radius: 8px !important;
+            border: none !important;
 
             &.k-input:focus,
             &.k-input:focus-within,
             &.k-input:active{
-                border: 1px solid #1F8FCE ; 
-                box-shadow: none ;
+                border: 1px solid #1F8FCE !important; 
+                box-shadow: none !important;
             }
 
             & input{
                @extend %inputFont;
                 &::placeholder{
-                    color: #BBBBBB ;
-                    font-weight: 600 ;
-                    font-size: 16px ;
+                    color: #BBBBBB !important;
+                    font-weight: 600 !important;
+                    font-size: 16px !important;
                 }
 
                 
@@ -252,11 +275,11 @@ div[uxid="SurveyMainSec"]{
             background: none;
             & span{
                 font-size: 21px;
-                color: #004B93 ;
-                font-weight: 300 ;
+                color: #004B93 !important;
+                font-weight: 300 !important;
                 &::before{
 
-                    content: "\f274" ;
+                    content: "\f274" !important;
                     font-family: "Font Awesome 6 Pro";
                 }
             }
@@ -266,25 +289,31 @@ div[uxid="SurveyMainSec"]{
     // upload //
 
     & .xstyle-upload-wrapper {
-        margin-bottom: 25px ;
+        margin-bottom: 25px !important;
         & .k-state-focused{
-            box-shadow: none ;
+            box-shadow: none !important;
         }
         & .k-upload-files{
-            border: none ;
+            border: none !important;
         }
 
+        
+        .k-button-solid-base:focus{
+            box-shadow: none;
+            border: none;
+        }
+        
 
         & .k-file-invalid{
-            height: 80px ;
-            background: #FFFFFF ;
-            border: 1px solid #CCCCCC ;
-            border-radius: 8px ;
+            height: 80px !important;
+            background: #FFFFFF !important;
+            border: 1px solid #CCCCCC !important;
+            border-radius: 8px !important;
             padding-top: 18px;
             margin-top: 20px;
       
             & .k-file-invalid-group-wrapper{
-                margin-top: 4px ;
+                margin-top: 4px !important;
             }
 
             & .k-file-group.k-icon{
@@ -299,36 +328,36 @@ div[uxid="SurveyMainSec"]{
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px ;
-                line-height: 130% ;
-                text-align: right ;
-                color: #7E7B7B ;
+                font-size: 16px !important;
+                line-height: 130% !important;
+                text-align: right !important;
+                color: #7E7B7B !important;
             }
 
             & [class="k-file-validation-message !k-text-error"]{
-                font-family: 'Heebo' ;
-                font-style: normal ;
-                font-weight: 400 ;
-                font-size: 14px ;
-                line-height: 100% ;
-                text-align: right ;
+                font-family: 'Heebo' !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 14px !important;
+                line-height: 100% !important;
+                text-align: right !important;
 
             }
             
             & .k-icon-button{
-                margin-top: -15px ;
+                margin-top: -15px !important;
             }
         }
         .k-file.k-file-success{
-            height: 80px ;
-            background: #FFFFFF ;
-            border: 1px solid #CCCCCC ;
-            border-radius: 8px ;
+            height: 80px !important;
+            background: #FFFFFF !important;
+            border: 1px solid #CCCCCC !important;
+            border-radius: 8px !important;
             padding-top: 22px;
             margin-top: 20px;
              
             & .k-file-group-wrapper{
-                margin-top: 3px ;
+                margin-top: 3px !important;
             }
 
             & .k-i-file-pdf{
@@ -385,24 +414,24 @@ div[uxid="SurveyMainSec"]{
                 font-family: 'Heebo';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px ;
-                line-height: 130% ;
-                text-align: right ;
-                color: #7E7B7B ;
+                font-size: 16px !important;
+                line-height: 130% !important;
+                text-align: right !important;
+                color: #7E7B7B !important;
             }
 
             & [class^="k-file-validation-message !k-text-success"]{
-                font-family: 'Heebo' ;
-                font-style: normal ;
-                font-weight: 400 ;
-                font-size: 14px ;
-                line-height: 100% ;
-                text-align: right ;
+                font-family: 'Heebo' !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 14px !important;
+                line-height: 100% !important;
+                text-align: right !important;
                 color: #6E2C7E ;
             }
 
             & .k-icon-button{
-                margin-top: -15px ;
+                margin-top: -15px !important;
             }
         }
         & label{
@@ -414,7 +443,7 @@ div[uxid="SurveyMainSec"]{
 
             & span::after{
                 content: "\f357";
-                font-family: "Font Awesome 5 pro" ;
+                font-family: "Font Awesome 5 pro" !important;
                 font-size: 18px;
                 margin-right: 7px;
                 font-weight: 100;
@@ -425,47 +454,47 @@ div[uxid="SurveyMainSec"]{
 
     //dropdown control //
     .xstyle-idropdownlist-wrapper {
-        margin-bottom: 25px ;
+        margin-bottom: 25px !important;
         & label{
             @extend %labelMain;
         }
 
 
         & span.k-picker.k-dropdownlist{
-            height: 50px ;
-            background: #FBFBFB ;
-            border-radius: 8px ;
-            border: none ;
-            border: 1px solid #CCCCCC ;
+            height: 50px !important;
+            background: #FBFBFB !important;
+            border-radius: 8px !important;
+            border: none !important;
+            border: 1px solid #CCCCCC !important;
             
 
             &:focus,
             &:focus-within,
             &:active{
-                border: 1px solid #1F8FCE ; 
-                box-shadow: none 
+                border: 1px solid #1F8FCE !important; 
+                box-shadow: none !important
             }
 
 
             & input{
                 @extend %inputFont;
                 &::placeholder{
-                    color: #BBBBBB ;
-                    font-weight: 600 ;
-                    font-size: 16px ;
+                    color: #BBBBBB !important;
+                    font-weight: 600 !important;
+                    font-size: 16px !important;
                 }
 
             }
 
             & .k-input-value-text{
-                font-family: 'Assistant' ;
-                font-style: normal ;
-                font-weight: 600 ;
-                font-size: 16px ;
-                line-height: 100% ;
-                color: #000000 ;
-                text-align: right ;
-                text-indent: 10px ;
+                font-family: 'Assistant' !important;
+                font-style: normal !important;
+                font-weight: 600 !important;
+                font-size: 16px !important;
+                line-height: 100% !important;
+                color: #000000 !important;
+                text-align: right !important;
+                text-indent: 10px !important;
             }
 
           
@@ -475,10 +504,10 @@ div[uxid="SurveyMainSec"]{
             font-size: 29px;
             & span{
                 font-size: 21px;
-                color: #0675B4 ;
+                color: #0675B4 !important;
                 &::before{
                     content: "\f354";
-                    font-family: "Font Awesome 5 pro" ;
+                    font-family: "Font Awesome 5 pro" !important;
                     font-weight: 100;
                     
                 }
@@ -489,7 +518,7 @@ div[uxid="SurveyMainSec"]{
 
     & div[uxid="cQuestions"]{
         & .x-self-container:last-child {
-            margin-bottom: 80px ;
+            margin-bottom: 80px !important;
         }
     }
 
@@ -498,24 +527,24 @@ div[uxid="SurveyMainSec"]{
 
     .xstyle-textareacontrol-wrapper{
 
-        margin-bottom: 25px ;
+        margin-bottom: 25px !important;
         & label{
             @extend %labelMain;
         }
 
         & textarea{
-            height: 176px ;
-            background: #F8F8F8 ;
+            height: 176px !important;
+            background: #F8F8F8 !important;
             border-radius: 8px;
-            border: none ;
-            border: 1px solid #CCCCCC ;
-            padding-top: 10px ;
-            padding-right:10px ;
-            text-indent: 0 ;
+            border: none !important;
+            border: 1px solid #CCCCCC !important;
+            padding-top: 10px !important;
+            padding-right:10px !important;
+            text-indent: 0 !important;
 
             @extend %inputFont;
             &:focus-visible{
-                outline: 1px solid #1F8FCE ; 
+                outline: 1px solid #1F8FCE !important; 
             }
         }
     }
@@ -543,7 +572,7 @@ div[uxid="SurveyMainSec"]{
         & .k-icon.k-i-close-circle{
             color: #CCCCCC ;
             font-size: 24px;
-            margin-top: 7px ;
+            margin-top: 7px !important;
             &:hover{
 
                 color: #CCCCCC ;
@@ -551,7 +580,7 @@ div[uxid="SurveyMainSec"]{
             &::before{
                 content: "\e9a5";
                 font-family: "icomoon";
-                font-size: 24px ;
+                font-size: 24px !important;
                 font-weight: 600;
             }
         }
@@ -569,13 +598,13 @@ div[uxid="SurveyMainSec"]{
            & .k-rating-label{
             direction: ltr;
             & span{
-                font-family: 'Assistant' ;
-                font-style: normal ;
-                font-weight: 400 ;
-                font-size: 16px ;
-                line-height: 100% ;
-                text-align: right ;
-                color: #7E7B7B ;
+                font-family: 'Assistant' !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 16px !important;
+                line-height: 100% !important;
+                text-align: right !important;
+                color: #7E7B7B !important;
             }
            }
 
@@ -596,8 +625,8 @@ div[uxid="SurveyMainSec"]{
                 }
 
                 & .k-icon.k-i-star{
-                     text-shadow: none ;
-                    color: #8C4D9C ;
+                     text-shadow: none !important;
+                    color: #8C4D9C !important;
                     &::before{
                         content: "\e9c6";
                         font-family: 'icomoon';
@@ -614,7 +643,7 @@ div[uxid="SurveyMainSec"]{
     // text control //
 
     .xstyle-textcontrol-wrapper {
-        margin-bottom: 25px ;
+        margin-bottom: 25px !important;
         & label{
             @extend %labelMain;
         }
@@ -625,7 +654,7 @@ div[uxid="SurveyMainSec"]{
             &:focus,
             &:focus-within,
             &:active{
-                border: 1px solid #1F8FCE ; 
+                border: 1px solid #1F8FCE !important; 
             }
         }
    }
@@ -633,63 +662,69 @@ div[uxid="SurveyMainSec"]{
    // radio button // 
 
    .xstyle-radio-wrapper{
-    margin-bottom: 25px ;
+    margin-bottom: 25px !important;
     & label{
         @extend %labelMain;
     }
 
     & label.k-radio-label{
-        color:  black ;
+        color:  black !important;
     }
 
     & input{
 
-        border: none ;
+        border: none !important;
         background: #F5F5F5;
-        border: 1px solid #CCCCCC ;
-        box-shadow: none ;
+        border: 1px solid #CCCCCC !important;
+        box-shadow: none !important;
 
         &:checked{
-            border: 2px solid #FFFFFF ;
-            box-shadow: 0px 0px 4px #71078B ;
+            border: 2px solid #FFFFFF !important;
+            box-shadow: 0px 0px 4px #71078B !important;
         }
 
 
         &::before{
-            color: #71078B ;
-            width: 10px ;
-    height: 10px ;
+            color: #71078B !important;
+            width: 10px !important;
+    height: 10px !important;
         }
     }
 
    }
 
+
+
    // signature // 
    .xstyle-signature-wrapper{
-    margin-bottom: 25px ;
+    margin-bottom: 25px !important;
+
+
     & label{
         @extend %labelMain;
     }
 
      & span.signatureColorPicker{
 
-        border-radius: 0px ;
+        border-radius: 0px !important; 
+   
+
      }
 
 
    & .GraphicalSignaturePlaceHoldersSign,.GraphicalSignaturePlaceHolders{
-        border: 1px solid #CCCCCC ;
-        border-radius: 8px ;
-        padding: 20px ;
+        border: 1px solid #CCCCCC !important;
+        border-radius: 8px !important;
+        padding: 20px !important;
 
         & a img{
-            display: none ;
+            display: none !important;
         }
 
         & a::before{
-            content: "\f12d" ;
-            font-family: "Font Awesome 5 pro" ;
-            color: #0675B4 ;
+            content: "\f12d" !important;
+            font-family: "Font Awesome 5 pro" !important;
+            color: #0675B4 !important;
             font-size: 22px;
             font-weight: 100;
 
@@ -697,15 +732,15 @@ div[uxid="SurveyMainSec"]{
     }
 
     & .x-signature-canvas{
-       border-top: none ;
-       border-bottom: 1px dashed #ccc ;
+       border-top: none !important;
+       border-bottom: 1px dashed #ccc !important;
     }
    }
 
    // check box //
 
    .xstyle-checkbox-wrapper {
-    margin-bottom: 25px ;
+    margin-bottom: 25px !important;
     & label{
         @extend %labelMain;
     }
@@ -714,20 +749,20 @@ div[uxid="SurveyMainSec"]{
         background: #F5F5F5;
         border: 1px solid #CCCCCC;
         border-radius: 4px;
-        box-shadow: none ;
+        box-shadow: none !important;
 
         &:focus-within{
             border: 1px solid #1F8FCE;
         }
 
         &:checked{
-            border: 2px solid #FFFFFF ;
-            box-shadow: 0px 0px 4px #71078B ;
+            border: 2px solid #FFFFFF !important;
+            box-shadow: 0px 0px 4px #71078B !important;
         }
 
         &:checked::before{
             background: #8C4D9C;
-            content: "" ;
+            content: "" !important;
         }
     }
    }
@@ -737,10 +772,10 @@ div[uxid="SurveyMainSec"]{
     & input{
         &::before{
             content: "\f354";
-            font-family: "Font Awesome 5 pro" ;
+            font-family: "Font Awesome 5 pro" !important;
             font-weight: 100;
             font-size: 21px;
-            color: #0675B4 ;
+            color: #0675B4 !important;
         }
     }
    }
@@ -757,7 +792,7 @@ div[uxid="SurveyMainSec"]{
        & img{
         max-height: 118px;
         position: relative;
-        height: 80% ;
+        height: 80% !important;
       
        }
 
@@ -773,11 +808,11 @@ div[uxid="SurveyMainSec"]{
     }
 
     & .GraphicalSignaturePlaceHolders{
-        height: 237px ;
-        border: 1px solid #CCCCCC ;
-        border-radius: 8px ;
-        padding: 10px ;
-        margin-bottom: 20px ;
+        height: 237px !important;
+        border: 1px solid #CCCCCC !important;
+        border-radius: 8px !important;
+        padding: 10px !important;
+        margin-bottom: 20px !important;
         &::after{
             content: "\e9ca";
             font-family: "icomoon";
@@ -791,26 +826,108 @@ div[uxid="SurveyMainSec"]{
    }
 
 
+   .x-control-wrapper:has(.x-control-info-bubble-wrapper){
+      .x-control-caption-wrapper {
+        flex: inherit;
+      }
+   }
+
+       // signature //
+
+       .xstyle-signaturev2-wrapper .x-control-content-wrapper{
+
+
+        .k-i-arrow-s{
+            &::before{
+                font-family: 'icomoon';
+                content: "\e9bc";
+                color: #0675B4;
+                font-size: 22px;
+            }
+        }
+     .toolbar{
+
+
+        span.k-colorpicker , span.k-dropdownlist{
+            border-radius: 8px;
+            border: 1px solid var(--taa-s-neutral-400, #CCC);
+            background: var(--taa-s-neutral-100, #FBFBFB);
+            height: 50px !important;
+        }
+     }
+
+
+     .x-signaturev2{
+        border-radius: 4px;
+       border: 1px solid var(--taa-s-neutral-400, #CCC) !important;
+       padding: 10px 20px;
+     }
+
+     .k-input-inner:has(.k-input-value-text){
+        height: 25px;
+     }
+     .k-signature-action.k-signature-maximize.k-button.k-icon-button{
+
+        .k-icon{
+            font-size: 24px;
+            color: #6A3F75;
+        }
+     }
+
+
+    .signature-clear-btn{
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        span::before{
+            font-size: 26px;
+            margin-left: 0px;
+            color: #AAAAAA; 
+        }
+     }
+
+
+     .k-signature-line {
+        position: absolute;
+        bottom: 33%;
+        z-index: 2;
+        pointer-events: none;
+        border-bottom-width: 1px !important;
+        border-bottom-style: dashed !important;
+        width: calc(98% - 8px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-color: #BBB !important;
+    }
+
+    .k-signature{
+        min-height: 250px;
+    }
+
+    }
+
+
    .xstyle-geoaddress-wrapper{
 
     & .k-i-marker-pin-target{
         &::before{
-            content: "\f124" ;
-            font-family: "Font Awesome 5 pro" ;
+            content: "\f124" !important;
+            font-family: "Font Awesome 5 pro" !important;
         }
     }
    }
    .xstyle-googleaddress-wrapper{
     & .x-barcodeBtnContainer.s-barcodeBtnContainer{
-        top: 50% ;
-        transform: translateY(-50%) ;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
         height: 45px;
     }
     & a{
-        top: 0px ;
+        top: 0px !important;
         &::before{
-            content: "\f3c5" ;
-            font-family: "Font Awesome 5 pro" ;
+            content: "\f3c5" !important;
+            font-family: "Font Awesome 5 pro" !important;
         }
     }
    }
@@ -820,7 +937,7 @@ div[uxid="SurveyMainSec"]{
    .xstyle-googleaddress-wrapper,
    .xstyle-intlphonenumber-wrapper{
 
-    margin-bottom: 25px ;
+    margin-bottom: 25px !important;
     & label{
         @extend %labelMain;
     }
@@ -828,7 +945,7 @@ div[uxid="SurveyMainSec"]{
     & .selected-flag{
         background: none;
         border-right: 1px solid #7E7B7B;
-        height: 30px ;
+        height: 30px !important;
         padding-right: 7px;
         margin-top: 9px;
         width: 95px;
@@ -846,41 +963,78 @@ div[uxid="SurveyMainSec"]{
     }
 
     & span.k-autocomplete{
-        border: none ;
+        border: none !important;
         &:focus,
         &:focus-within{
-            box-shadow: none ;
+            box-shadow: none !important;
         }
     }
 
     & .x-barcodeBtnContainer{
-        background: none ;
+        background: none !important;
+        position: absolute;
+        left: 4px;
         & a{
-            color:#0675B4 ;
-            font-weight: 100 ;
-            font-size: 23px ;
+            color:#0675B4 !important;
+            font-weight: 100 !important;
+            font-size: 23px !important;
         }
     }
 
     & input{
 
-        background: #FBFBFB ;
-       border-radius: 8px ;
-       height: 50px ;
-       border: none ;
-       border: 1px solid #CCCCCC ;
+        background: #FBFBFB !important;
+       border-radius: 8px !important;
+       height: 50px !important;
+       border: none !important;
+       border: 1px solid #CCCCCC !important;
        @extend %inputFont;
        &:focus,
        &:focus-within,
        &:active{
-           border: 1px solid #1F8FCE ; 
-           box-shadow: none ;
+           border: 1px solid #1F8FCE !important; 
+           box-shadow: none !important;
        }
     }
   
    }
 
+  // info //
+  .x-infoWrap .x-infoButton .x-infoBubble::after{
+    display: none;
+  }
 
+  .x-infoButton {
+    margin-right: 10px;
+  }
+  .x-infoWrap .x-infoButton .x-infoBubble{
+    border-radius: 10px;
+    background: var(--color-other-white, #FFF);
+    box-shadow: 0px 0px 6px 0px rgba(142, 187, 207, 0.60);
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    .x-infoBubbleTitle{
+        border-bottom: 1px solid #dedede !important;
+        color: var(--vanilla-neutral-900, #4B4B4B) !important;
+        text-align: center;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: 120%;
+        padding-bottom: 10px;
+    }
+    .x-infoBubbleContent{
+        color: var(--vanilla-neutral-900, #4B4B4B) !important;
+        text-align: center;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 120%;
+    }
+  }
    // linke control //
 
    .xstyle-ilink-wrapper {
@@ -899,10 +1053,10 @@ div[uxid="SurveyMainSec"]{
 // canvas control // 
 
 .xstyle-canvas-wrapper{
-margin-bottom: 25px ;
+margin-bottom: 25px !important;
     & .x-control-content-wrapper{
-        border: 1px solid #CCCCCC ;
-        border-radius: 8px ;
+        border: 1px solid #CCCCCC !important;
+        border-radius: 8px !important;
         padding: 17px;
 
     & .k-icon{
@@ -913,8 +1067,8 @@ margin-bottom: 25px ;
         color: #BBBBBB;
         
         &.canvasSaveBtn-indicate-saved{
-          background: #8C4D9C ;
-          color: white ;  
+          background: #8C4D9C !important;
+          color: white !important;  
         }
 
         &.k-i-close{
@@ -923,7 +1077,7 @@ margin-bottom: 25px ;
     }
 
      & .x-canvas-comp{
-        margin-top: 15px ;
+        margin-top: 15px !important;
         width: -webkit-fill-available;
      }
     }
@@ -932,34 +1086,34 @@ margin-bottom: 25px ;
 
 .x-footer {
 
-    border: none ;
-    background: #FCFCFC ;
-    height: 76px ;
-    box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) ;
+    border: none !important;
+    background: #FCFCFC !important;
+    height: 76px !important;
+    box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
 
     & .row{
-        border: none ;
+        border: none !important;
     }
 
     & div[uxid="cSubmit"]{
     
 
         & button.x-button.s-button {
-            height: 46px ; 
-            background: #8C4D9C ;
-            box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) ;
-            border-radius: 40px ;
-            border: none ;
+            height: 46px !important; 
+            background: #8C4D9C !important;
+            box-shadow: none !important;
+            border-radius: 40px !important;
+            border: none !important;
             width: 95%;
             margin: auto;
             font-family: 'Assistant';
             font-style: normal;
             font-weight: 700;
-            font-size: 20px ;
+            font-size: 20px !important;
             line-height: 26px;
             text-align: center;
-            color: #FFFFFF ;
-            margin-top: 14px ;
+            color: #FFFFFF !important;
+            margin-top: 14px !important;
 
             & span {
                 position: absolute;
@@ -968,7 +1122,7 @@ margin-bottom: 25px ;
             }
 
             & .fa-paper-plane{
-                display: none ;
+                display: none !important;
             }
         }
     }
@@ -976,21 +1130,21 @@ margin-bottom: 25px ;
 
 
 &div[uxid="cQuestions"]{
-    padding: 0 ;
+    padding: 0 !important;
 }
 .xstyle-freehandhtml-wrapper{
-    margin-top: 50px ;
+    margin-top: 50px !important;
   & center{
-    background: none ;
-    border: none ;
-    border-bottom: 1px solid #E1ABEF ;
-    text-align: right ;
-    font-family: 'Assistant' ;
-    font-weight: 700 ;
-    font-size: 20px  ;
-   border-radius: 0px ;
-    line-height: 140% ;
-    color: #8C4D9C ;
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #E1ABEF !important;
+    text-align: right !important;
+    font-family: 'Assistant' !important;
+    font-weight: 700 !important;
+    font-size: 20px  !important;
+   border-radius: 0px !important;
+    line-height: 140% !important;
+    color: #8C4D9C !important;
   }  
 }
 
@@ -999,12 +1153,35 @@ margin-bottom: 25px ;
 }
 
 #uber-container:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
-    padding: 0 ;
+    padding: 0 !important;
+
+
 
 }
 
+.k-content:has(indtextmagnifier){
+    .k-calendar-view{
+        width: auto !important;
+        .k-link{
+            width: auto !important;
+        }
+    }
+
+    .k-animation-container{
+        top: 50%!important;
+        width: 86% !important;
+        margin: 0 auto;
+        left: 0 !important;
+        right: 0 !important;
+        transform: translateY(-50%);
+        position: fixed !important;
+      
+    }
+
+}
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
-    padding: 0 ;
+    padding: 0 !important;
+
 
     .k-widget.k-window:has(#MessageBoxWindow) {
 
@@ -1012,26 +1189,25 @@ margin-bottom: 25px ;
             overflow: hidden;
         }
         position: absolute;
-        left: 0 ;
-        right: 0 ;
+        left: 0 !important;
+        right: 0 !important;
         margin: 0 auto;
-        padding-bottom: 35px ;
-        background: #FFFFFF ;
-        border: 1px solid #8C4D9C ;
-        box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) ;
-        border-radius: 20px ;
-      
+        background: #FFFFFF !important;
+        border: 1px solid #8C4D9C !important;
+        box-shadow: 0px 0px 8px rgba(113, 7, 139, 0.3), 0px 10px 5px rgba(113, 7, 139, 0.1) !important;
+        border-radius: 10px !important;
+        width: 90% !important;
         & .k-window-titlebar.k-hstack{
-         background: none ;
+         background: none !important;
          flex-direction: row-reverse;
-         border: none ;
+         border: none !important;
 
           & .k-icon{
-            color: black ;
-            font-size: 20px ;
+            color: black !important;
+            font-size: 20px !important;
           }
           & .k-window-title{
-            display: none ;
+            display: none !important;
           }
         }
         & #MessageBoxWindow{
@@ -1040,17 +1216,17 @@ margin-bottom: 25px ;
       
           & #ctrlSectionMainSection{
         
-            display: block ;
+            display: block !important;
             & div{
-                 margin: auto ;
+                 margin: auto !important;
                  text-align: center;
-                 margin-bottom: 10px ;
-                 max-width: 100% ;
+                 margin-bottom: 10px !important;
+                 max-width: 100% !important;
 
                  & .x-fa-warning{
                     &::before{
-                        font-family: 'icomoon' ;
-                        content: "\e9a6" ;
+                        font-family: 'icomoon' !important;
+                        content: "\e9a6" !important;
                         color: #8C4D9C ;
 
                     }
@@ -1077,7 +1253,7 @@ margin-bottom: 25px ;
       
       & .x-fa-error{
         color: #EE0909 ;
-        background: none ;
+        background: none !important;
         &::before{
           content: "\e9a5";;
           font-family: 'icomoon';
@@ -1087,28 +1263,28 @@ margin-bottom: 25px ;
       & span#controlMessageText{
         font-family: 'Heebo';
       font-style: normal;
-      font-weight: 400 ;
-      font-size: 16px ;
+      font-weight: 400 !important;
+      font-size: 16px !important;
       line-height: 130%;
       text-align: center;
-      color: #000000 ;
+      color: #000000 !important;
       }
       & button{
         height: 46px;
         margin: auto;
-        background: #8C4D9C ;
-        box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) ;
-        border-radius: 40px ;
-        color: white ;
-        font-size: 20px ;
+        background: #8C4D9C !important;
+        box-shadow: inset 4px 4px 10px rgba(90, 31, 105, 0.3) !important;
+        border-radius: 40px !important;
+        color: white !important;
+        font-size: 20px !important;
         text-align: center;
-        margin-top: 10px ;
+        margin-top: 10px !important;
         border: none;
-        line-height: 130% ;
+        line-height: 130% !important;
     
         
           &:hover{
-            background: #690779 ;
+            background: #690779 !important;
           }
         }
       
@@ -1118,28 +1294,28 @@ margin-bottom: 25px ;
    & .k-animation-container{
 
     top: 434.188px;
-    width: 86% ;
+    width: 86% !important;
     margin: 0 auto;
-    left: 0 ;
-    right: 0 ;
+    left: 0 !important;
+    right: 0 !important;
 
 & .k-list-filter{
-    padding: 3px ;
+    padding: 3px !important;
 
     & .k-input:focus{
-        box-shadow: none ;
+        box-shadow: none !important;
     }
 }
     & .k-searchbox.k-input{
-        height: 40px ;
-        background: #FFFFFF ;
-        border: 1px solid #BBBBBB ;
-        border-radius: 8px ;
-        color: #BBBBBB ;
+        height: 40px !important;
+        background: #FFFFFF !important;
+        border: 1px solid #BBBBBB !important;
+        border-radius: 8px !important;
+        color: #BBBBBB !important;
 
         & .k-icon{
               
-            margin-right: 10px ;
+            margin-right: 10px !important;
         }   
      }
 
@@ -1151,102 +1327,102 @@ margin-bottom: 25px ;
         }
         & .k-popup.k-group.k-reset.k-rtl{
     
-            padding: 30px 20px;
+            padding: 20px 10px;
             margin: 0px auto;
             left: 0px;
-            width: auto ;
+            width: auto !important;
             right: 0px;
-            background: #FCFCFC ;
-            border: 1px solid #CCCCCC ;
+            background: #FCFCFC !important;
+            border: 1px solid #CCCCCC !important;
             border-radius: 8px;
             top: 10px;
-            transform: none ;
-            height: auto ;
-            min-width: auto ;
+            transform: none !important;
+            height: auto !important;
+            min-width: auto !important;
         }
     
         & li{
-            background: #ffffff ;
-            border: 1px solid #E6E6E6 ;
-            height: 40px ;
+            background: #ffffff !important;
+            border: 1px solid #E6E6E6 !important;
+            height: 40px !important;
             margin-bottom: 5px;
             border-radius: 8px;
             &.k-focus{
-                background: #F5F5F5 ;
-                border: 1px solid #1F8FCE ; 
-                box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) ;
-                border-radius: 8px ;
+                background: #F5F5F5 !important;
+                border: 1px solid #1F8FCE !important; 
+                box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
+                border-radius: 8px !important;
             }
     
             &:hover{
-                background: #F5F5F5 ;
-                border: 1px solid #E6E6E6 ;
-                box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) ;
-                border-radius: 8px ;
+                background: #F5F5F5 !important;
+                border: 1px solid #E6E6E6 !important;
+                box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
+                border-radius: 8px !important;
             }
 
             & span.k-list-item-text{
-                font-family: 'Assistant' ;
-                font-style: normal ;
-                font-weight: 400 ;
-                font-size: 16px ;
+                font-family: 'Assistant' !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 16px !important;
                 line-height: 100%;
-                color: #000000 ;
+                color: #000000 !important;
             }
         }
     }
 
 }
 
-.k-window:has(.x-signature-canvas){
+.k-widget.k-window:has(.x-signature-canvas){
 
-    left: 0 ;
+    left: 0 !important;
     padding: 0 20px;
-    right: 0 ;
+    right: 0 !important;
     margin: 0 auto;
-    padding-bottom: 35px ;
-    background: #FFFFFF ;
-    border: 1px solid #8C4D9C ;
-    -webkit-box-shadow: 0px 0px 8px rgb(113 7 139 / 30%), 0px 10px 5px rgb(113 7 139 / 10%) ;
-    box-shadow: 0px 0px 8px rgb(113 7 139 / 30%), 0px 10px 5px rgb(113 7 139 / 10%) ;
-    border-radius: 20px ;
+    padding-bottom: 35px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #8C4D9C !important;
+    -webkit-box-shadow: 0px 0px 8px rgb(113 7 139 / 30%), 0px 10px 5px rgb(113 7 139 / 10%) !important;
+    box-shadow: 0px 0px 8px rgb(113 7 139 / 30%), 0px 10px 5px rgb(113 7 139 / 10%) !important;
+    border-radius: 20px !important;
     width: 93%;
 
     & .k-window-titlebar.k-hstack {
-        background: none ;
-        border: none ;
+        background: none !important;
+        border: none !important;
 
         & a{
             left: -13px;
         }
 
         & .k-icon {
-            color: black ;
-            font-size: 20px ;
+            color: black !important;
+            font-size: 20px !important;
         }
 
     }
 
     & span.signatureColorPicker {
-        border-radius: 0px ;
+        border-radius: 0px !important;
     }
 
     & .x-signature-canvas{
-        border-top: none ;
-        border-bottom: 1px dashed #ccc ;
-        overflow: hidden ;
+        border-top: none !important;
+        border-bottom: 1px dashed #ccc !important;
+        overflow: hidden !important;
     }
 
     & #toolbarSignatureFrame{
 
         & a img {
-            display: none ;
+            display: none !important;
         }
 
         & a:nth-child(1)::before{
             content: "\e9bf";
             font-family: 'icomoon';
-            color: #BBBBBB ;
+            color: #BBBBBB !important;
             font-size: 30px;
             position: absolute;
             right: 9px;
@@ -1256,7 +1432,7 @@ margin-bottom: 25px ;
         & a:nth-child(2)::before{
             content: "\e9c2";
             font-family: 'icomoon';
-            color: #BBBBBB ;
+            color: #BBBBBB !important;
             font-size: 30px;
             position: absolute;
             right: 40px;
@@ -1269,6 +1445,10 @@ margin-bottom: 25px ;
 #TafnitCore_SaaSServer_Survey_UI_Survey{
 
     .xstyle-switch-wrapper{
+
+        .k-switch{
+            width: 4em;
+        }
 
         label{
             font-family: 'Assistant';
@@ -1296,7 +1476,7 @@ margin-bottom: 25px ;
             }
 
             &:focus{
-                box-shadow: none ;
+                box-shadow: none !important;
             }
 
             .k-switch-thumb {
@@ -1322,13 +1502,13 @@ margin-bottom: 25px ;
             }
 
             &:focus{
-                box-shadow: none ;
+                box-shadow: none !important;
             }
 
             .k-switch-thumb {
                 width: 28px;
                 height: 28px;
-                background: #8C4D9C;
+                background: #8C4D9C !important;
                 border: 1px solid #F5F5F5;
                 box-shadow: 0px 0px 4px rgba(113, 7, 139, 0.5);
                 width: 28px;

@@ -2,89 +2,94 @@
 
 @import '../variables/masterVariable';
 
-@import '../components/animation';
-@import '../components/barcode';
-@import '../components/breadcrumb';
-@import '../components/button';
-@import '../components/calendar';
-@import '../components/canvas';
-@import '../components/carDamage';
-@import '../components/cell';
-@import '../components/chat';
-@import '../components/checkbox';
-@import '../components/compass';
-@import '../components/creditGuard';
-@import '../components/currentLocation';
-@import '../components/date-picker';
-@import '../components/diagram';
-@import '../components/drawer';
-@import '../components/drop-down';
-@import '../components/dropDownTree';
-@import '../components/fileViewer';
-@import '../components/footer';
-@import '../components/generalClass';
-@import '../components/grid';
-@import '../components/groupBox';
-@import '../components/header';
-@import '../components/imap';
-@import '../components/infoBubble';
-@import '../components/intelPhone';
-@import '../components/iSlider';
-@import '../components/layout';
-@import '../components/listview';
-@import '../components/loanSlider';
-@import '../components/lookup';
-@import '../components/mediaQuery';
-@import '../components/menu';
-@import '../components/messageBox';
-@import '../components/multiCheckboxDropdown';
-@import '../components/multichoice';
-@import '../components/multiselect';
-@import '../components/pFloating';
-@import '../components/popupSignature';
-@import '../components/popupwincls';
-@import '../components/progressBar';
-@import '../components/radio-button';
-@import '../components/rangeNumber';
-@import '../components/rating';
-@import '../components/scrollviewKendo';
-@import '../components/section';
-@import '../components/spinner';
-@import '../components/switch';
-@import '../components/textbox';
-@import '../components/timelineRTL';
-@import '../components/timepicker';
-@import '../components/treeview';
-@import '../components/upload';
-@import '../components/video';
-@import '../components/videoStream';
-@import '../components/virtual-keyboard';
-@import '../components/window';
-@import '../components/autocomplete';
-@import '../components/threeoptionsSwitch';
-@import '../components/linke';
-@import '../components/linklist';
-@import '../components/password';
-@import '../components/row';
-@import '../components/textwithbuttonsimple';
-@import '../components/vkeyboard';
-@import '../components/floatbutton';
-@import '../components/mandatory';
-@import '../components/textarea';
-@import '../fonts/font';
-@import '../components/label';
-@import '../components/signature';
-@import '../components/image';
-@import '../components/colorPicker';
-@import '../components/combobox';
-@import '../components/OTPinput';
-@import '../components/google-address';
-@import '../components/tab';
-@import '../components/dateRange';
+@import '../components/container-controls/drawer';
+@import '../components/container-controls/footer';
+@import '../components/container-controls/header';
+@import '../components/container-controls/menu';
+@import '../components/container-controls/messageBox';
+@import '../components/container-controls/popupwincls';
+@import '../components/container-controls/row';
+@import '../components/container-controls/section';
+@import '../components/container-controls/tab';
+@import '../components/container-controls/window';
 
 
 
+@import '../components/Media-Control/barcode';
+@import '../components/Media-Control/canvas';
+@import '../components/Media-Control/carDamage';
+@import '../components/Media-Control/colorPicker';
+@import '../components/Media-Control/diagram';
+@import '../components/Media-Control/fileViewer';
+@import '../components/Media-Control/image';
+@import '../components/Media-Control/mediaQuery';
+@import '../components/Media-Control/popupSignature';
+@import '../components/Media-Control/scrollviewKendo';
+@import '../components/Media-Control/signature';
+@import '../components/Media-Control/video';
 
+
+@import '../components/Simple/button';
+@import '../components/Simple/calendar';
+@import '../components/Simple/date-picker';
+@import '../components/Simple/dateRange';
+@import '../components/Simple/floatbutton';
+@import '../components/Simple/infoBubble';
+@import '../components/Simple/label';
+@import '../components/Simple/linke';
+@import '../components/Simple/linklist';
+@import '../components/Simple/mandatory';
+@import '../components/Simple/password';
+@import '../components/Simple/pFloating';
+@import '../components/Simple/textarea';
+@import '../components/Simple/textbox';
+@import '../components/Simple/textwithbuttonsimple';
+@import '../components/Simple/timepicker';
+@import '../components/Simple/upload';
+
+
+
+@import '../components/Tool-Control/google-address';
+
+
+@import '../components/Value-Control/autocomplete';
+@import '../components/Value-Control/breadcrumb';
+@import '../components/Value-Control/checkbox';
+@import '../components/Value-Control/combobox';
+@import '../components/Value-Control/drop-down';
+@import '../components/Value-Control/dropDownTree';
+@import '../components/Value-Control/intelPhone';
+@import '../components/Value-Control/iSlider';
+@import '../components/Value-Control/listview';
+@import '../components/Value-Control/lookup';
+@import '../components/Value-Control/multiCheckboxDropdown';
+@import '../components/Value-Control/multichoice';
+@import '../components/Value-Control/OTPinput';
+@import '../components/Value-Control/progressBar';
+@import '../components/Value-Control/radio-button';
+@import '../components/Value-Control/rangeNumber';
+@import '../components/Value-Control/rating';
+@import '../components/Value-Control/spinner';
+@import '../components/Value-Control/threeoptionsSwitch';
+@import '../components/Value-Control/treeview';
+
+@import '../components/Other/animation';
+@import '../components/Other/cell';
+@import '../components/Other/chat';
+@import '../components/Other/compass';
+@import '../components/Other/creditGuard';
+@import '../components/Other/currentLocation';
+@import '../components/Other/generalClass';
+@import '../components/Other/groupBox';
+@import '../components/Other/imap';
+@import '../components/Other/layout';
+@import '../components/Other/loanSlider';
+@import '../components/Other/ReceiptPage';
+@import '../components/Other/switch';
+@import '../components/Other/timelineRTL';
+@import '../components/Other/videoStream';
+@import '../components/Other/virtual-keyboard';
+@import '../components/Other/vkeyboard';
 
 @import '../pages/login';
 @import '../../studio/style.scss';
@@ -94,7 +99,7 @@
 @import '../pages/errorPage';
 @import '../pages/FillAndSignV2Page';
 @import '../pages/meeting';
-@import '../pages/Transportation';
+
 
 
 

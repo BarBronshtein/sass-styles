@@ -1766,20 +1766,4 @@ ul.fieldlist {
 }
 
 
-// @mixin gridHeight($selectors...) {
-//     $height: 50;
-
-//     @for $i from 0 to length($selectors) {
-//         #{nth($selectors, $i + 1)} {
-//             .k-grid-content {
-//                 height: $height + px ;
-//             }
-//         }
-
-//         $height:$height+50;
-//     }
-// }
-
-// @include gridHeight(".gridHeight50", ".gridHeight100", ".gridHeight150", ".gridHeight200",
-//     ".gridHeight250", ".gridHeight300", ".gridHeight350", ".gridHeight400", ".gridHeight450", ".gridHeight500");
 

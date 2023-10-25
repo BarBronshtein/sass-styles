@@ -1,209 +1,205 @@
 //Company//
 
 
-$Logo-tafnit:#64328A;
-$Logo-tafnit:gradient(0deg, #1687C9 0%, #1998D5 17%, #1CA9E1 41%, #1EB2E8 66%, #1FB6EB 100%);
-$Logo-tafnit-disable: #B3B3B3;
-$Logo-tafnit-disable-light: #E1E1E1;
+$Logo-tafnit:#64328A !default;
+$Logo-tafnit:gradient(0deg, #1687C9 0%, #1998D5 17%, #1CA9E1 41%, #1EB2E8 66%, #1FB6EB 100%) !default;
+$Logo-tafnit-disable: #B3B3B3 !default;
+$Logo-tafnit-disable-light: #E1E1E1 !default;
 
 //Basic//
 
-$Text-Basic: black;
-$Text-placeholder: #7E7B7B;
-$Text-disable: #D9D9D9;
-$Background-main-screen:#FBFBFB;
-$Background-cube: White;
+$Text-Basic: black !default;
+$Text-placeholder: #7E7B7B !default;
+$Text-disable: #D9D9D9 !default;
+$Background-main-screen:#FBFBFB !default;
+$Background-cube: White !default;
 
-$Drawer-line:#80A9BB;
-$Main-color:#7D0A8C;
-$Drawer: #7D0A8C;
-$Text-link:#7D0A8C;
+$Drawer-line:#80A9BB !default;
+$Main-color:#7D0A8C !default;
+$Drawer: #7D0A8C !default;
+$Text-link:#7D0A8C !default;
 
-$Requier:#FF7A00;
-$Contacts-menu: #037295;
-$Notifications: #c3ce65;
-$Warning: #EE0909;
+$Requier:#FF7A00 !default;
+$Contacts-menu: #037295 !default;
+$Notifications: #c3ce65 !default;
+$Warning: #EE0909 !default;
 
 //Grid//
 
 
-$Text-Basic: black;
-$Grid-text-title: #7E7B7B;
-$Grid-icon-filter-off:#7E7B7B;
-$Title-filtered-value:#7E7B7B;
-$Button-filter-second: #D9D9D9;
-$Grid-stroke-under-line:#F5F5F5;
-$Popup-filter-background:#F5F5F5;
-$Background-filtered-value:#F5F5F5; 
-$Grid-line:#FFFFFF;
-$Grid-checkBox-border:#007FC1 !default;
-$Grid-color-title-th:#323C4B  !default;
-$Grid-color-text-td:#323C4B  !default;
-$grid-icon-search-color:#007FC1 !default;
-$Grid-checkBox-bg:#007FC1 !default;
-$grid-header-title-background: none !default;
-$grid-header-toolbar-border-color:#fff !default;
-$grid-header-filter-active-background:#ccc !default;
-$grid-header-filter-active-color:#fff !default;
-$grid-border-td: 1px solid #F5F5F5 !default;
-$grid-filter-icon:#DA3382 !default;
-$grid-header-text-color:#868387 !default;
-$grid-header-background:#ffffff  !default;
-$grid-tr-background-hover:#CDE7F2   !default;
-$grid-tr-background-k-alt:#FCFCFC   !default;
-$grid-header-serach-float:right !default;
-$grid-header-serach-border:1px solid #ccc !default;
-$grid-header-serach-border-radius:1px solid #ccc !default;
-$grid-color-link-td:#DA3382 !default;
-$grid-scrollbar-color:#da3382 !default;
-$grid-scrollbar-color-hover:#bb2e71 !default;
-$Icons: #7D0A8C;
-$Grid-icon-filter-on: #7D0A8C;
-$Button-filter:#7D0A8C;
-$Current-number-page:#7D0A8C;
-$Number-page:#DDC3E7;
-$Grid-line-hover:#FAF6FC;
+$Text-Basic: black !default;
+$Grid-text-title: #7E7B7B !default;
+$Grid-icon-filter-off:#7E7B7B !default;
+$Title-filtered-value:#7E7B7B !default;
+$Button-filter-second: #D9D9D9 !default;
+$Grid-stroke-under-line:#F5F5F5 !default;
+$Popup-filter-background:#F5F5F5 !default;
+$Background-filtered-value:#F5F5F5 !default; 
+$Grid-line:#FFFFFF !default;
+$Grid-checkBox-border:#007FC1 !default !default;
+$Grid-color-title-th:#323C4B  !default !default;
+$Grid-color-text-td:#323C4B  !default !default;
+$grid-icon-search-color:#007FC1 !default !default;
+$Grid-checkBox-bg:#007FC1 !default !default;
+$grid-header-title-background: none !default !default;
+$grid-header-toolbar-border-color:#fff !default !default;
+$grid-header-filter-active-background:#ccc !default !default;
+$grid-header-filter-active-color:#fff !default !default;
+$grid-border-td: 1px solid #F5F5F5 !default !default;
+$grid-filter-icon:#DA3382 !default !default;
+$grid-header-text-color:#868387 !default !default;
+$grid-header-background:#ffffff  !default !default;
+$grid-tr-background-hover:#CDE7F2   !default !default;
+$grid-tr-background-k-alt:#FCFCFC   !default !default;
+$grid-header-serach-float:right !default !default;
+$grid-header-serach-border:1px solid #ccc !default !default;
+$grid-header-serach-border-radius:1px solid #ccc !default !default;
+$grid-color-link-td:#DA3382 !default !default;
+$grid-scrollbar-color:#da3382 !default !default;
+$grid-scrollbar-color-hover:#bb2e71 !default !default;
+$Icons: #7D0A8C !default;
+$Grid-icon-filter-on: #7D0A8C !default;
+$Button-filter:#7D0A8C !default;
+$Current-number-page:#7D0A8C !default;
+$Number-page:#DDC3E7 !default;
+$Grid-line-hover:#FAF6FC !default;
 
 // button //
 
-$Button-bg-hover:#BB2E71 !default;
-$Button-bg-disabled:#FFFFFF !default;
-$Button-border-disabled:#ADB5BD !default;
-$Button-color-disabled:#ADB5BD !default;
-$Button-color-text: #FFFFFF !default;
-$Button-color-border:none !default;
-$Button-color-border-focus: #FAC9E0 !default; 
-$Button-color-filter-focus:drop-shadow(0px 0px 6px rgba(255, 120, 11, 0.2)) !default;
-$Button-color-icon:#DA3382 !default;
-$Button-bg:#DA3382 !default;
-$Button-float-bg:#007FC1 !default;
-$Button-float-color: white !default;
+$Button-bg-hover:#BB2E71 !default !default;
+$Button-bg-disabled:#FFFFFF !default !default;
+$Button-border-disabled:#ADB5BD !default !default;
+$Button-color-disabled:#ADB5BD !default !default;
+$Button-color-text: #FFFFFF !default !default;
+$Button-color-border:none !default !default;
+$Button-color-border-focus: #FAC9E0 !default !default; 
+$Button-color-filter-focus:drop-shadow(0px 0px 6px rgba(255, 120, 11, 0.2)) !default !default;
+$Button-color-icon:#DA3382 !default !default;
+$Button-bg:#DA3382 !default !default;
+$Button-float-bg:#007FC1 !default !default;
+$Button-float-color: white !default !default;
 //Button + icons + popup//
 
 
-$Text-Basic: black;
-$Popup-button-primary-base: #F5F5F5;
-$User-screen-button-hover:#F5F5F5;
-$Button-important-icons: white;
-$User-screen-button-primary-base: white;
-$Button-background: white;
+$Text-Basic: black !default;
+$Popup-button-primary-base: #F5F5F5 !default;
+$User-screen-button-hover:#F5F5F5 !default;
+$Button-important-icons: white !default;
+$User-screen-button-primary-base: white !default;
+$Button-background: white !default;
 
-$Popup-button-press:#80A9BB;
-$Button-important-background:#7D0A8C;
-$Popup-button-hover:#7D0A8C; 
-$Button-icons:#7D0A8C;
-$Icon-close-drawer:#DDC3E7;
+$Popup-button-press:#80A9BB !default;
+$Button-important-background:#7D0A8C !default;
+$Popup-button-hover:#7D0A8C !default; 
+$Button-icons:#7D0A8C !default;
+$Icon-close-drawer:#DDC3E7 !default;
 
 // new //
 
 
 /*controls*/
-$control-caption-color-text: #323C4B;
-$control-background: #FFFFFF;
-$control-border-input: 1px solid #D9D9D9;
-$control-color-input:#000000;
-$control-radius-input:0px;
-$control-caption-color-text-disable: #C7C7C7;
-$control-border-input-disable: 1px solid #D9D9D9;;
-$control-border-focus:1px solid #D9D9D9;
-$control-box-shadow-focus: 0px 6px 5px 0px rgba(187, 216, 229, 0.30);
-$control-color-placeholder:#D9D9D9;
-$control-color-icon:#94B6C6;
-$control-border-error:1px solid #EE0909;
+$control-caption-color-text: #323C4B !default;
+$control-background: #FFFFFF !default;
+$control-border-input: 1px solid #D9D9D9 !default;
+$control-color-input:#000000 !default;
+$control-radius-input:0px !default;
+$control-caption-color-text-disable: #C7C7C7 !default;
+$control-border-input-disable: 1px solid #D9D9D9 !default; ;
+$control-border-focus:1px solid #D9D9D9 !default;
+$control-box-shadow-focus: 0px 6px 5px 0px rgba(187, 216, 229, 0.30) !default;
+$control-color-placeholder:#D9D9D9 !default;
+$control-color-icon:#94B6C6 !default;
+$control-border-error:1px solid #EE0909 !default;
 
 //calnder //
 
-$calendar-box-shadow:rgba(123, 9, 139, 0.1) 0px 0px 10px, rgba(123, 9, 139, 0.1) 0px 5px 8px ;
-$calendar-bg-header:#FCFCFC;
-$calendar-color-icon-header:#8EBBCF;
-$calendar-color-text-header:#000000;
-$calendar-bg-body:#F5F5F5;
-$calendar-border-bottom-body:1px solid #8EBBCF;
-$calendar-body-button-color:#80A9BB;
-$calendar-body-butoon-color-text-focus:white;
-$calendar-body-butoon-bg-focus:#8EBBCF;
-$calendar-body-butoon-color-text-hover: #759BAC;
-$calendar-body-butoon-border-hover:1px solid #80A9BB;
-$calendar-month-color-days-focus:#ffffff;
-$calendar-month-bg-days-focus:#80A9BB;
-$calendar-month-color-today:#80A9BB;
-$calendar-month-border-today: 1px solid #80A9BB;
-$calendar-month-color-days-other-month:#8E8E8E;
-$calendar-month-border-other-month-hover:1px solid #8E8E8E;
-$calendar-month-color-other-month-hover:#8E8E8E;
-$calendar-month-color-title:#759BAC;
-$calendar-month-color-days:#759BAC;
-$calendar-month-color-days-hover:#759BAC;
-$calendar-month-border-days-hover:1px solid #80A9BB;;
-$calendar-fotter-color-text:#8EBBCF;
+$calendar-box-shadow:rgba(123, 9, 139, 0.1) 0px 0px 10px, rgba(123, 9, 139, 0.1) 0px 5px 8px  !default;
+$calendar-bg-header:#FCFCFC !default;
+$calendar-color-icon-header:#8EBBCF !default;
+$calendar-color-text-header:#000000 !default;
+$calendar-bg-body:#F5F5F5 !default;
+$calendar-border-bottom-body:1px solid #8EBBCF !default;
+$calendar-body-button-color:#80A9BB !default;
+$calendar-body-butoon-color-text-focus:white !default;
+$calendar-body-butoon-bg-focus:#8EBBCF !default;
+$calendar-body-butoon-color-text-hover: #759BAC !default;
+$calendar-body-butoon-border-hover:1px solid #80A9BB !default;
+$calendar-month-color-days-focus:#ffffff !default;
+$calendar-month-bg-days-focus:#80A9BB !default;
+$calendar-month-color-today:#80A9BB !default;
+$calendar-month-border-today: 1px solid #80A9BB !default;
+$calendar-month-color-days-other-month:#8E8E8E !default;
+$calendar-month-border-other-month-hover:1px solid #8E8E8E !default;
+$calendar-month-color-other-month-hover:#8E8E8E !default;
+$calendar-month-color-title:#759BAC !default;
+$calendar-month-color-days:#759BAC !default;
+$calendar-month-color-days-hover:#759BAC !default;
+$calendar-month-border-days-hover:1px solid #80A9BB !default;
+$calendar-fotter-color-text:#8EBBCF !default;
 
 
-$upload-border-border-top:#BBD8E5; 
-$upload-color-text: white; 
-$upload-color-icon: #BBD8E5; 
-$upload-color-success: #BBD8E5; 
-$upload-color-file-name: #000000; 
+$upload-border-border-top:#BBD8E5 !default; 
+$upload-color-text: white !default; 
+$upload-color-icon: #BBD8E5 !default; 
+$upload-color-success: #BBD8E5 !default; 
+$upload-color-file-name: #000000 !default; 
 //label//
-$tab-script-border-bottom:#8EBBCF;
-$tab-script-color-text:#7E7B7B;
+$tab-script-border-bottom:#8EBBCF !default;
+$tab-script-color-text:#7E7B7B !default;
 %texbox-label{
 
    
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px ;
-    line-height: 21px;
-    text-align: right;
-    color: $control-caption-color-text;
-    margin: 0;
-    max-width: max-content;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 14px  ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
+    max-width: max-content ;
 }
 
 // popup //
-$popup-border:1px solid #7E7B7B;
-$popup-bg:white;
-$popup-color-text:#000;
-$popup-bg-selected:#FAF6F0;
-$popup-color-text-selected:#8EBBCF;
-$popup-bg-hover:#FAF6F0;
-$popup-color-text-hover:#8EBBCF;
+$popup-border:1px solid #7E7B7B !default;
+$popup-bg:white !default;
+$popup-color-text:#000 !default;
+$popup-bg-selected:#FAF6F0 !default;
+$popup-color-text-selected:#8EBBCF !default;
+$popup-bg-hover:#FAF6F0 !default;
+$popup-color-text-hover:#8EBBCF !default;
 
 
 // row //
 
-$row-main-vanilla-box-shadow:0px 4px 8px rgba(187, 216, 229, 0.2), 0px 1px 3px rgba(187, 216, 229, 0.5) !default;
-$row-main-vanilla-border-radius:10px !default;
-$row-main-vanilla-padding:30px !default;
-$row-main-vanilla-bg:#FFFFFF !default;
-
-$row-radius-vanilla-border-radius:40px !default;
-
-$row-border-vanilla-border:1px solid #A1A3A5 !default;
-
-$row-bg-color-vanilla-bg:#FBFBFB !default;
-$row-bg-color-vanilla-box-shadow:0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9 !default;
-
-$row-hidden-vanilla-border-radius:0px !default;
-$row-hidden-vanilla-box-shadow:none !default;
-$row-hidden-vanilla-bg:none !default;
+$row-main-vanilla-box-shadow:0px 4px 8px rgba(187, 216, 229, 0.2), 0px 1px 3px rgba(187, 216, 229, 0.5) !default !default;
+$row-main-vanilla-border-radius:10px !default !default;
+$row-main-vanilla-padding:30px !default !default;
+$row-main-vanilla-bg:#FFFFFF !default !default;
+$row-radius-vanilla-border-radius:40px !default !default;
+$row-border-vanilla-border:1px solid #A1A3A5 !default !default;
+$row-bg-color-vanilla-bg:#FBFBFB !default !default;
+$row-bg-color-vanilla-box-shadow:0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9 !default !default;
+$row-hidden-vanilla-border-radius:0px !default !default;
+$row-hidden-vanilla-box-shadow:none !default !default;
+$row-hidden-vanilla-bg:none !default !default;
 
 //input//
 
 %texbox-input{
 
-    height: 50px;
-    background: $control-background;
-    border: $control-border-input ;
-    border-radius: $control-radius-input;
-    padding: 10px 20px;
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px ;
-    color: $control-color-input;
-    text-align: right;
-    width: 100%;
+    
+    background: $control-background ;
+    border: $control-border-input  ;
+    border-radius: $control-radius-input ;
+    padding: 10px 20px ;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 16px  ;
+    color: $control-color-input ;
+    text-align: right ;
+    width: 100% ;
 }
 
 
@@ -211,12 +207,12 @@ $row-hidden-vanilla-bg:none !default;
 
 %texbox-input-disable{
 
-    background: $control-background;
-    border:$control-border-input-disable;
+    background: $control-background ;
+    border:$control-border-input-disable ;
 }
 
 // disable-caption // 
 
 %texbox-label-disable{
-    color: $control-caption-color-text-disable;
+    color: $control-caption-color-text-disable ;
 }
