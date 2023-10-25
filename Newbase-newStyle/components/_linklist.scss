@@ -37,12 +37,24 @@
 
             td{
                 a{
-                    font-family: 'Heebo';
+                    color: var(--vanilla-secondary-500, #0EAADC);
+                    text-align: right;
+                    /* Link */
+                    font-family: Heebo;
+                    font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 16px;
-                    line-height: 130%;
-                    text-decoration: none !important;
+                    line-height: 150%; 
+                    text-decoration: none ;
+
+                    &:hover{
+                        text-decoration: underline;
+                        color: var(--vanilla-secondary-500, #0EAADC);
+                    }
+
+                    &:focus{
+                        font-weight: 700;
+                    }
 
                     &::after{
                         content: "\e974";

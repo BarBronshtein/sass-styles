@@ -1,6 +1,46 @@
 
 
+.xstyle-progressbar-wrapper{
+    background: none;
+    border: none;
+    &.k-selected,&.k-complete{
+        background: #0EAADC !important;
+    }
+    .x-progressbar{
+ 
+        border: none;
+    }
 
+    label{
+        @extend %texbox-label;
+    }
+
+    ul,.k-progressbar{
+        background: var(--step-step-progressbar-default, #DEDEDE);
+        border-radius: 10px;
+        align-items: center;
+        display: flex;
+
+
+        li{
+        
+            border:none;
+            border-radius:0;
+
+            &.k-first{
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            &.k-last{
+                border-radius: 0 4px 4px 0;
+            }
+
+            &.k-selected,&.k-complete{
+                background: #0EAADC !important;
+            }
+        }
+    }
+   }
 .xstyle-progressbar-wrapper {
 
     .x-minvalue,

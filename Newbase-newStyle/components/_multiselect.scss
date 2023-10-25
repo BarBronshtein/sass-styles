@@ -8,6 +8,77 @@
             padding-bottom: 5.5px;
         }
     }
+    .k-chip-solid-base{
+        border-radius: 4px;
+        border: 1px solid var(--vanilla-neutral-400, #DEDEDE);
+        background: var(--vanilla-neutral-200, #F5F5F5);
+
+        .k-chip-label{
+            color: var(--vanilla-other-black, var(--color-other-black, #000));
+            text-align: center;
+            /* Base Text */
+            font-family: Heebo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; 
+        }
+
+        .k-chip-icon{
+            margin-left: 5px;
+            margin-right: 10px;
+            &::before{
+                content: "\e9c2";
+                font-family: 'icomoon';
+                color:#000;
+
+            }
+        }
+    }
+    
+ 
+    &.k-state-disabled{ 
+
+        opacity: 1;
+  
+          & .x-multiselect-wrapper{
+  
+            background: #F7F7F7 ;
+             
+          }
+  
+          & label{
+              color: $control-caption-color-text-disable ; 
+            }
+      }
+  
+  
+      & .x-multiselect-wrapper{
+        @extend %texbox-input;
+        padding-right: 10px ;
+        align-items: center;
+        &.x-login-user-error{
+          
+          border-bottom: 1px solid #DB0000 ;
+        }
+  
+          &:focus{
+              box-shadow:$control-box-shadow-focus ;
+              border: $control-border-focus ;
+              outline: none !important;
+          }
+  
+          &::placeholder{
+  
+              color: $control-color-placeholder ;
+  
+          }
+      }
+  
+      & label{
+          @extend %texbox-label;
+  
+      }
 }
 
 .k-multiselect-wrap {
@@ -21,4 +92,8 @@
             margin-bottom: 3.2px;
         }
     }
+
+    
+
+    
 }

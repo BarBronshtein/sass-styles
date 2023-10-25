@@ -81,6 +81,7 @@ margin-top: 15px;
  
   & .k-input-button{
     left: -10px;
+    top: -6px;
       &:hover{
         background: none;
       }
@@ -102,7 +103,7 @@ margin-top: 15px;
 }
 
 
-.k-list-scroller{
+.k-list-scroller,.k-virtual-content{
 scrollbar-face-color: #8EBBCF;
 scrollbar-track-color: #f3e9f8;
 scrollbar-arrow-color: #8EBBCF;
@@ -145,17 +146,16 @@ scrollbar-arrow-color: #8EBBCF;
   & .k-popup{
 
     box-shadow: none ;
-    border: $popup-border ;
     border-radius: 10px;
     margin-top: 5px;
 
     .k-list{
       border-radius: 10px;
     }
-    & .k-list-content.k-list-scroller{
+    & .k-list-content.k-list-scroller,.k-list-content.k-virtual-content{
       border-radius: 10px;
         background: none ;
-        padding: 12px 20px;
+        padding: 5px 10px;
 & ul{
   background: $popup-bg ;
 }

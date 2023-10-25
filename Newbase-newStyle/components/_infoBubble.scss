@@ -115,3 +115,15 @@
     }
   }
 }
+
+
+
+.x-control-wrapper:has(.x-control-info-bubble-wrapper ) {
+
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+.x-control-content-wrapper{
+  grid-column: 1 / 3;
+}
+}

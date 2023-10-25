@@ -5,7 +5,7 @@
 mainbody{
 
     // row-main //
-
+& > .row,
 .row-main{
     border: none !important;
     background: $row-main-vanilla-bg;
@@ -13,9 +13,7 @@ mainbody{
     border-radius: $row-main-vanilla-border-radius;
     padding: $row-main-vanilla-padding;
     margin: auto;
-    margin-top: 15px;
     margin-bottom: 15px;
-    width: 95%;
     height: auto !important;
     min-width: 350px;
     

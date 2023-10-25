@@ -6,3 +6,57 @@ a:not([href]){
         color: black;
     }
 }
+
+.xstyle-ilink-wrapper      {
+
+    label{
+        color: var(--vanilla-other-black, var(--color-other-black, #000));
+        text-align: right;
+        /* base text large */
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    a{
+        color: var(--vanilla-secondary-500, #0EAADC);
+        text-align: right;
+        /* Link */
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &:focus{
+            font-weight: 700;
+        }
+    }
+}
+
+.x-control-caption-wrapper{
+    a{
+        color: var(--vanilla-secondary-500, #0EAADC);
+        text-align: right;
+        /* Link */
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &:focus{
+            font-weight: 700;
+        }
+    }
+}

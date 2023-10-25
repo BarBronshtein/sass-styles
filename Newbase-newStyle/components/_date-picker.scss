@@ -2,7 +2,7 @@
 
 
 
-.xstyle-date-wrapper{
+.xstyle-date-wrapper,.xstyle-datetimepicker-wrapper,.xstyle-timepicker-wrapper,.xstyle-daterangev2-wrapper {
 
     // disable // 
 
@@ -29,10 +29,26 @@
         @extend %texbox-input;
     }
     
+  .x-datetimepicker{
+    
+    & span{
+
+    
+            left: 14px;
+        &::before{
+            content: "\e973" ;
+            font-family: "icomoon";
+            font-size: 25px;
+            /* top: 5px; */
+            left: -24px;
+            color: $control-color-icon;
+        }
+    }
+ }
+
     
     
-    
-    & span.k-datepicker{
+    & span.k-datepicker,span.x-datetimepicker,span.x-timepicker.span,span.x-datePickerResponsive{
         @extend %texbox-input;
 
         &:focus-within{
@@ -41,7 +57,7 @@
         }
     }
     & input{
-
+text-align: right;
         padding: 0;
     }
 
@@ -72,9 +88,19 @@
     left: 6px;
     margin-left: 12px;
     background: none ;
+    &:hover{
+        background: white;
+    }
     & span{
-            left: 14px;
+
         &::before{
+      
+            font-size: 25px;
+            left: -24px;
+            color: $control-color-icon;
+        }
+            left: 14px;
+        &.k-i-calendar::before{
             content: "\e973" ;
             font-family: "icomoon";
             font-size: 25px;

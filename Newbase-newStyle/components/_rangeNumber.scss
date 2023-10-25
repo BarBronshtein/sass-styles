@@ -12,4 +12,59 @@
         color: #f00;
         font-size: 14px;
     }
+
+    &.k-state-disabled{ 
+
+        opacity: 1;
+  
+          & input.k-textbox{
+  
+            background: #F7F7F7 ;
+             
+          }
+  
+          & label{
+              color: $control-caption-color-text-disable ; 
+            }
+      }
+
+    .x-numberrange{
+       
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: end;
+        border: none;
+
+  
+      
+      
+          & input{
+            @extend %texbox-input;
+            padding-right: 10px ;
+           
+            &.x-login-user-error{
+              
+              border-bottom: 1px solid #DB0000 ;
+            }
+      
+              &:focus{
+                  box-shadow:$control-box-shadow-focus ;
+                  border: $control-border-focus ;
+                  outline: none !important;
+              }
+      
+              &::placeholder{
+      
+                  color: $control-color-placeholder ;
+      
+              }
+          }
+      
+       
+    }
+
+    & label,span{
+        @extend %texbox-label;
+
+    }
 }

@@ -1,4 +1,39 @@
 .x-crumb-wrapper {
+
+
+    .k-i-arrow-chevron-left{
+        display: flex;
+        font-size: 11px;
+        margin-right: 5px;
+        margin-left: 5px;
+        top: -3px;
+        &:before{
+            content: "\e974";
+            font-family: 'icomoon';
+        }
+    }
+    .x-brscCaption,a{
+        color: var(--vanilla-secondary-500, #0EAADC);
+        
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        &:hover{
+            color: var(--vanilla-secondary-700, #0082AB);
+    
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%; /* 16.8px */
+        text-decoration-line: underline;
+        }
+        &:focus{
+            font-weight: 500;
+        }
+    }
     display: inline-block;
 
     &.x-horizontal,

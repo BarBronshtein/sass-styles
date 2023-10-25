@@ -1,0 +1,30 @@
+.xstyle-otpinput-wrapper{
+  label{
+    @extend %texbox-label;
+  }
+    input{
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid var(--system-colors-prime-blue-30, #BDBFD5);
+        background: var(--system-colors-white, #FFF);
+        outline: none;
+        color: var(--primary-colors-prime-blue, var(--prime-blue-white-1000, #000000));
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Heebo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        &:focus,&:focus-within{
+      
+            border: 1px solid var(--vanilla-primary-400, #ACCEDD);
+            box-shadow: 0px 4px 8px 0px rgba(142, 187, 207, 0.50);
+        }
+      
+        &:focus-visible{
+          outline: none;
+        }
+    }
+}

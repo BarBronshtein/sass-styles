@@ -1,0 +1,32 @@
+.xstyle-dynamiclabelcontrol-wrapper{
+
+    label{
+        color: var(--vanilla-neutral-900, var(--color-grey-900, #4B4B4B));
+        text-align: right;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; 
+    }
+
+    span{
+        color: var(--vanilla-other-black, var(--color-other-black, #000));
+        text-align: right;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
+
+.x-highlight{
+
+    & label{
+        color: #8EBBCF ;
+    }
+    & input.k-textbox.x-textbox.s-textbox{
+        border: 1px solid #8EBBCF ;
+    }
+}

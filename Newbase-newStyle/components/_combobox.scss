@@ -1,0 +1,52 @@
+
+
+.xstyle-combobox-wrapper {
+    .x-combobox.k-combobox-clearable {
+
+
+   
+            @extend %texbox-input;
+     
+           
+     
+       &:focus,
+       &:focus-within{
+         border: $control-border-focus ;
+         box-shadow: $control-box-shadow-focus;
+       }
+     
+       & .k-input-inner{
+         padding: 0
+       }
+     
+       }
+     
+       & label{
+     
+         @extend %texbox-label;
+       }
+     
+      
+       & .k-input-button{
+        background: white;
+         margin-left: 20px;
+           &:hover{
+             background: white;
+           }
+         & span.k-icon{
+           &::before{
+             
+             content: "\f0d7";
+             font-size: 20px;
+             font-family: "Font Awesome 5 Pro";
+             color: $control-color-icon;
+             font-weight: 700;
+           }
+     
+       }
+       
+       }
+     
+     
+     
+    }

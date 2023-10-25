@@ -1,0 +1,40 @@
+.xstyle-daterange-wrapper      {
+
+   .k-floating-label-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+    .k-label{
+        position: relative;
+        top: 0;
+        transform: none;
+        color: var(--label-default, var(--color-other-black, #000));
+        text-align: right;
+        /* Base Text */
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+   }
+.k-dateinput {
+    @extend %texbox-input;
+}
+input{
+    text-align: right;
+}
+}
+
+
+
+.x-daterangev2{
+    display: grid !important;
+    align-items: end;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+
+
+ 
+
+}

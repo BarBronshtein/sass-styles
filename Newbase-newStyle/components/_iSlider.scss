@@ -2,6 +2,16 @@
 
 
 .x-islider-wrapper {
+    .k-slider-horizontal .k-draghandle{
+        width: 35px;
+        height: 20px;
+        background: var(--vanilla-primary-700, #759BAC);
+        border: 1px solid white;
+    }
+    .k-slider-selection{
+
+        background: var(--vanilla-primary-700, #759BAC);
+    }
     .k-slider-vertical {
         &:first-of-type {
             margin: 0px 40px;

@@ -72,6 +72,17 @@
 @import '../components/mandatory';
 @import '../components/textarea';
 @import '../fonts/font';
+@import '../components/label';
+@import '../components/signature';
+@import '../components/image';
+@import '../components/colorPicker';
+@import '../components/combobox';
+@import '../components/OTPinput';
+@import '../components/google-address';
+@import '../components/tab';
+@import '../components/dateRange';
+
+
 
 
 
@@ -160,7 +171,7 @@ a.k-icon{
   
 
   body.k-content{
-    padding-right: 0px ;
+    padding-right: 0px !important;
   }
 
  .k-content:has(.k-drawer-container.k-drawer-mini){
@@ -238,12 +249,13 @@ margin: 0;
 
   flex-wrap: nowrap;
   width: auto;
+  gap: 10px;
+
   & > * {
     flex-grow:1 !important;
   }
 
   & .x-control-caption-wrapper{
-    flex:0 0 33%;
     position:relative;    
    }
 
@@ -489,14 +501,6 @@ input{
 }
 
 
-.x-control-wrapper:has(.x-control-info-bubble-wrapper ) {
 
-  display: grid;
-  grid-template-columns: 1fr 20%;
-
-.x-control-content-wrapper{
-  grid-column: 1 / 3;
-}
-}
 
  

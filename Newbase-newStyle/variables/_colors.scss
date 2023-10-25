@@ -14,7 +14,7 @@ $Text-disable: #D9D9D9;
 $Background-main-screen:#FBFBFB;
 $Background-cube: White;
 
-$Drawer-line:#690779;
+$Drawer-line:#80A9BB;
 $Main-color:#7D0A8C;
 $Drawer: #7D0A8C;
 $Text-link:#7D0A8C;
@@ -88,7 +88,7 @@ $Button-important-icons: white;
 $User-screen-button-primary-base: white;
 $Button-background: white;
 
-$Popup-button-press:#690779;
+$Popup-button-press:#80A9BB;
 $Button-important-background:#7D0A8C;
 $Popup-button-hover:#7D0A8C; 
 $Button-icons:#7D0A8C;
@@ -115,30 +115,37 @@ $control-border-error:1px solid #EE0909;
 
 $calendar-box-shadow:rgba(123, 9, 139, 0.1) 0px 0px 10px, rgba(123, 9, 139, 0.1) 0px 5px 8px ;
 $calendar-bg-header:#FCFCFC;
-$calendar-color-icon-header:#7B098B;
+$calendar-color-icon-header:#8EBBCF;
 $calendar-color-text-header:#000000;
 $calendar-bg-body:#F5F5F5;
-$calendar-border-bottom-body:1px solid #7B098B;
-$calendar-body-button-color:#650872;
+$calendar-border-bottom-body:1px solid #8EBBCF;
+$calendar-body-button-color:#80A9BB;
 $calendar-body-butoon-color-text-focus:white;
-$calendar-body-butoon-bg-focus:#7B098B;
-$calendar-body-butoon-color-text-hover: #650872;
-$calendar-body-butoon-border-hover:1px solid #690779;
+$calendar-body-butoon-bg-focus:#8EBBCF;
+$calendar-body-butoon-color-text-hover: #759BAC;
+$calendar-body-butoon-border-hover:1px solid #80A9BB;
 $calendar-month-color-days-focus:#ffffff;
-$calendar-month-bg-days-focus:#650872;
-$calendar-month-color-today:#650872;
-$calendar-month-border-today: 1px solid #690779;
+$calendar-month-bg-days-focus:#80A9BB;
+$calendar-month-color-today:#80A9BB;
+$calendar-month-border-today: 1px solid #80A9BB;
 $calendar-month-color-days-other-month:#8E8E8E;
 $calendar-month-border-other-month-hover:1px solid #8E8E8E;
 $calendar-month-color-other-month-hover:#8E8E8E;
-$calendar-month-color-title:#650872;
-$calendar-month-color-days:#650872;
-$calendar-month-color-days-hover:#650872;
-$calendar-month-border-days-hover:1px solid #690779;;
-$calendar-fotter-color-text:#7B098B;
+$calendar-month-color-title:#759BAC;
+$calendar-month-color-days:#759BAC;
+$calendar-month-color-days-hover:#759BAC;
+$calendar-month-border-days-hover:1px solid #80A9BB;;
+$calendar-fotter-color-text:#8EBBCF;
 
+
+$upload-border-border-top:#BBD8E5; 
+$upload-color-text: white; 
+$upload-color-icon: #BBD8E5; 
+$upload-color-success: #BBD8E5; 
+$upload-color-file-name: #000000; 
 //label//
-
+$tab-script-border-bottom:#8EBBCF;
+$tab-script-color-text:#7E7B7B;
 %texbox-label{
 
    
@@ -150,6 +157,7 @@ $calendar-fotter-color-text:#7B098B;
     text-align: right;
     color: $control-caption-color-text;
     margin: 0;
+    max-width: max-content;
 }
 
 // popup //
