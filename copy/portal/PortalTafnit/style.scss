@@ -29,14 +29,20 @@
 @import './components/label';
 @import './components/DashboardMobile';
 @import './components/headerMobile';
+@import './components/tab';
+@import './components/treeview';
 
 @import './page/CloudDashboard';
 @import './page/login';
 @import './page/userDetailes';
 @import './page/ServiceCallCreate';
 @import './page/ClientMobile';
+@import './page/ServiceCallCreateMobile';
+@import './page/loginMobile';
+@import './page/MobilePortalTransaction';
+@import './page/AreaSelection';
 
-@import '../../../Newbase-newStyle/components/newStyle.scss';
+
 
 
 
@@ -47,6 +53,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
+mainbody > .row{
+&.xtaf-btn-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: var(--row-bg, #FFF);
+    box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+    padding: 20px;
+    margin: 0;
+    & > .col{
+        display: flex;
+        gap: 10px;
+        justify-content: center; 
+    }
+
+    .xstyle-buttoncontrol-wrapper button{
+        min-width: 150px;
+    }
+}
+
+
+.xtaf-icon-goback{
+
+    .x-kicon-caption,.x-dynamic-label-control{
+        color: var(--first-panel-color-title, #7B098B);
+        text-align: right;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-right: 10px;
+    }
+
+    .k-icon {
+      color: #0EAADC;
+      font-size: 12px;
+    }
+}
+}
+
 
 
 body,html{
@@ -83,7 +131,7 @@ body,html{
 .icon-finance-graph:before,
 .icon-export-excel:before ,
     .icon-xtar-print:after {
-    content: "\ea5e";
+   
     color:$icon-before ;
 }
 

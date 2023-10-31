@@ -52,10 +52,9 @@
 button.k-button {
     
     border: none;
-    color:white;
-    background-color: #8EBBCF;
+    color: $Button-color-text;
+    background-color: $Button-bg;
     border-radius: 4px;
-    height: 40px ;
     font-family: Heebo;
     font-size: 14px;
     font-style: normal;
@@ -73,22 +72,21 @@ button.k-button {
 
     &:hover{
         border: none;
-        background-color: #ACCEDD;
+        background-color: $Button-bg-hover;
 
         span{
-            color: white;
+            color: $Button-color-text;
         }
     }
 
     &:focus{
-        background: #759BAC;
+        background: $Button-bg-focus;
     }
 
     .k-button-text{
         text-align: center;
         align-items: center;
         display: grid;
-        color: white;
         font-family: Heebo;
         font-size: 14px;
 

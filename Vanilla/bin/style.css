@@ -270,9 +270,6 @@ input::-webkit-inner-spin-button {
   height: 50px;
   align-self: center;
 }
-.xstyle-date-wrapper span.k-datepicker::-moz-placeholder, .xstyle-date-wrapper input::-moz-placeholder {
-  color: #C8C8C8;
-}
 .xstyle-date-wrapper span.k-datepicker::placeholder, .xstyle-date-wrapper input::placeholder {
   color: #C8C8C8;
 }
@@ -581,9 +578,6 @@ input::-webkit-inner-spin-button {
 }
 .xstyle-autocomplete-wrapper input.x-login-user-error {
   border-bottom: 1px solid #E91E63 !important;
-}
-.xstyle-autocomplete-wrapper input::-moz-placeholder {
-  color: #C8C8C8 !important;
 }
 .xstyle-autocomplete-wrapper input::placeholder {
   color: #C8C8C8 !important;

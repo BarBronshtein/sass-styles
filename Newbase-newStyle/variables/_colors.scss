@@ -36,27 +36,27 @@ $Grid-stroke-under-line:#F5F5F5 !default;
 $Popup-filter-background:#F5F5F5 !default;
 $Background-filtered-value:#F5F5F5 !default; 
 $Grid-line:#FFFFFF !default;
-$Grid-checkBox-border:#007FC1 !default !default;
-$Grid-color-title-th:#323C4B  !default !default;
-$Grid-color-text-td:#323C4B  !default !default;
-$grid-icon-search-color:#007FC1 !default !default;
-$Grid-checkBox-bg:#007FC1 !default !default;
-$grid-header-title-background: none !default !default;
-$grid-header-toolbar-border-color:#fff !default !default;
-$grid-header-filter-active-background:#ccc !default !default;
-$grid-header-filter-active-color:#fff !default !default;
-$grid-border-td: 1px solid #F5F5F5 !default !default;
-$grid-filter-icon:#DA3382 !default !default;
-$grid-header-text-color:#868387 !default !default;
-$grid-header-background:#ffffff  !default !default;
-$grid-tr-background-hover:#CDE7F2   !default !default;
-$grid-tr-background-k-alt:#FCFCFC   !default !default;
-$grid-header-serach-float:right !default !default;
-$grid-header-serach-border:1px solid #ccc !default !default;
-$grid-header-serach-border-radius:1px solid #ccc !default !default;
-$grid-color-link-td:#DA3382 !default !default;
-$grid-scrollbar-color:#da3382 !default !default;
-$grid-scrollbar-color-hover:#bb2e71 !default !default;
+$Grid-checkBox-border:#007FC1  !default;;
+$Grid-color-title-th:#323C4B   !default;;
+$Grid-color-text-td:#323C4B   !default;;
+$grid-icon-search-color:#007FC1  !default;;
+$Grid-checkBox-bg:#007FC1  !default;;
+$grid-header-title-background: none  !default;;
+$grid-header-toolbar-border-color:#fff  !default;;
+$grid-header-filter-active-background:#ccc  !default;;
+$grid-header-filter-active-color:#fff  !default;;
+$grid-border-td: 1px solid #F5F5F5  !default;;
+$grid-filter-icon:#DA3382  !default;;
+$grid-header-text-color:#868387  !default;;
+$grid-header-background:#ffffff   !default;;
+$grid-tr-background-hover:#CDE7F2    !default;;
+$grid-tr-background-k-alt:#FCFCFC    !default;;
+$grid-header-serach-float:right  !default;;
+$grid-header-serach-border:1px solid #ccc  !default;;
+$grid-header-serach-border-radius:1px solid #ccc  !default;;
+$grid-color-link-td:#DA3382  !default;;
+$grid-scrollbar-color:#da3382  !default;;
+$grid-scrollbar-color-hover:#bb2e71  !default;;
 $Icons: #7D0A8C !default;
 $Grid-icon-filter-on: #7D0A8C !default;
 $Button-filter:#7D0A8C !default;
@@ -65,19 +65,17 @@ $Number-page:#DDC3E7 !default;
 $Grid-line-hover:#FAF6FC !default;
 
 // button //
+$Button-bg-hover:#ACCEDD !default;
+$Button-color-text: #FFFFFF !default;
+$Button-color-border:none !default;
+$button-border-color-focus:  #FFFFFF !default;
+$Button-boxshadow-focus:  drop-shadow(0px 0px 6px #AE8B49) !default;
+$Button-color-icon:#AE8B49  !default;
+$Button-bg:#8EBBCF  !default;
+$Button-bg-focus:#759BAC !default;
+$Button-float-bg:#14008E !default;
+$Button-float-color: white !default;
 
-$Button-bg-hover:#BB2E71 !default !default;
-$Button-bg-disabled:#FFFFFF !default !default;
-$Button-border-disabled:#ADB5BD !default !default;
-$Button-color-disabled:#ADB5BD !default !default;
-$Button-color-text: #FFFFFF !default !default;
-$Button-color-border:none !default !default;
-$Button-color-border-focus: #FAC9E0 !default !default; 
-$Button-color-filter-focus:drop-shadow(0px 0px 6px rgba(255, 120, 11, 0.2)) !default !default;
-$Button-color-icon:#DA3382 !default !default;
-$Button-bg:#DA3382 !default !default;
-$Button-float-bg:#007FC1 !default !default;
-$Button-float-color: white !default !default;
 //Button + icons + popup//
 
 
@@ -172,17 +170,17 @@ $popup-color-text-hover:#8EBBCF !default;
 
 // row //
 
-$row-main-vanilla-box-shadow:0px 4px 8px rgba(187, 216, 229, 0.2), 0px 1px 3px rgba(187, 216, 229, 0.5) !default !default;
-$row-main-vanilla-border-radius:10px !default !default;
-$row-main-vanilla-padding:30px !default !default;
-$row-main-vanilla-bg:#FFFFFF !default !default;
-$row-radius-vanilla-border-radius:40px !default !default;
-$row-border-vanilla-border:1px solid #A1A3A5 !default !default;
-$row-bg-color-vanilla-bg:#FBFBFB !default !default;
-$row-bg-color-vanilla-box-shadow:0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9 !default !default;
-$row-hidden-vanilla-border-radius:0px !default !default;
-$row-hidden-vanilla-box-shadow:none !default !default;
-$row-hidden-vanilla-bg:none !default !default;
+$row-main-vanilla-box-shadow:0px 4px 8px rgba(187, 216, 229, 0.2), 0px 1px 3px rgba(187, 216, 229, 0.5)  !default;;
+$row-main-vanilla-border-radius:10px  !default;;
+$row-main-vanilla-padding:30px  !default;;
+$row-main-vanilla-bg:#FFFFFF  !default;;
+$row-radius-vanilla-border-radius:40px  !default;;
+$row-border-vanilla-border:1px solid #A1A3A5  !default;;
+$row-bg-color-vanilla-bg:#FBFBFB  !default;;
+$row-bg-color-vanilla-box-shadow:0px 4px 10px rgba(217, 217, 217, 0.5), 0px 0px 4px #D9D9D9  !default;;
+$row-hidden-vanilla-border-radius:0px  !default;;
+$row-hidden-vanilla-box-shadow:none  !default;;
+$row-hidden-vanilla-bg:none  !default;;
 
 //input//
 

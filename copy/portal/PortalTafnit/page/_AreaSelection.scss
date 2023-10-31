@@ -1,0 +1,50 @@
+#TafnitCore_System_UI_App_Tools_Image_AreaSelection{
+
+    mainbody > .row{
+        background: #F8F8F8;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .xtaf-areaSelection {
+
+        background: white;
+        margin-bottom: 10px;
+
+        .xtaf-areaSelection-group1{
+            gap: 10px;
+           .border-left{
+            padding-left: 10px;
+            border-radius: 0;
+            border-left: 1px solid #C7C7C7 !important;
+           }
+            .k-icon{
+                font-size: 24px;
+                color: black;
+            }
+        }
+
+        .xtaf-areaSelection-group2{
+           .x-dynamic-label-control {
+            color: var(--base-other-black, #000);
+            text-align: right;
+            /* desktop/textbox/input */
+            font-family: Heebo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110%
+           }
+            .k-icon{
+                color: black;
+                font-size: 14px;
+            }
+
+
+        }
+
+        .k-state-disabled .k-icon{
+            opacity: 1;
+            color: #A6A6A6;
+        }
+    }
+}

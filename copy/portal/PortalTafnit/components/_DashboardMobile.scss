@@ -1,7 +1,7 @@
 
-
-#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile{
-
+mainbody:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile){
+    padding-bottom: 80px !important;
+}
 .xtaf-cube-dashboard {
 
     border-radius: 10px;
@@ -125,6 +125,9 @@
 }
 
 }
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile{
+
 
 
 

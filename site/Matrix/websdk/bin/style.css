@@ -1,10 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
 /*header*/
 /*footer*/
 /*row*/
@@ -47,6 +41,12 @@
 /*phone*/
 /*spinner*/
 /*Dashboard*/
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
 .k-autocomplete {
   border-radius: 0px;
   border: 0;
@@ -212,16 +212,16 @@
 .k-drawer .k-panelbar .k-item {
   background: none !important;
 }
-.k-drawer .k-panelbar .k-item .k-link.k-state-focused {
+.k-drawer .k-panelbar .k-item .k-link.k-state-focused, .k-drawer .k-panelbar .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-drawer .k-panelbar .k-item td.k-state-focused.k-state-hover {
   box-shadow: none !important;
   border: 0 !important;
 }
-.k-drawer .k-panelbar .k-item .k-link.k-header {
+.k-drawer .k-panelbar .k-item .k-link.k-header, .k-drawer .k-panelbar .k-item .k-calendar .k-calendar-view td.k-header.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-drawer .k-panelbar .k-item td.k-header.k-state-focused.k-state-hover {
   color: #fff !important;
   background-image: none !important;
   background: #9038ba !important;
 }
-.k-drawer .k-panelbar .k-item .k-panel .k-item .k-link.k-state-hover {
+.k-drawer .k-panelbar .k-item .k-panel .k-item .k-link.k-state-hover, .k-drawer .k-panelbar .k-item .k-panel .k-item .k-calendar .k-calendar-view td.k-state-hover.k-state-focused, .k-calendar .k-calendar-view .k-drawer .k-panelbar .k-item .k-panel .k-item td.k-state-hover.k-state-focused {
   background: none !important;
   font-weight: bold !important;
 }
@@ -353,12 +353,12 @@
 .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap {
   border-color: #000;
 }
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link {
+.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link, .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover {
   background-color: #9e30bf;
   color: #fff;
   transition: 0.2s all;
 }
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link:hover {
+.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link:hover, .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover:hover {
   opacity: 0.7;
 }
 .k-grid .k-grid-content tr:hover, .k-grid .k-grid-content tr:hover td {
@@ -402,10 +402,10 @@
 .k-grid .k-grid-pager .k-pager-nav > span {
   font-size: 27px !important;
 }
-.k-grid .k-grid-pager .k-link.k-selected {
+.k-grid .k-grid-pager .k-link.k-selected, .k-grid .k-grid-pager .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-grid .k-grid-pager td.k-selected.k-state-focused.k-state-hover {
   background: linear-gradient(to top, #5e1780 -46%, #7f2ba7 163%, #9e30bf 163%);
 }
-.k-grid .k-grid-pager .k-link:hover {
+.k-grid .k-grid-pager .k-link:hover, .k-grid .k-grid-pager .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .k-grid .k-grid-pager td.k-state-focused.k-state-hover:hover {
   background-image: none !important;
   background-color: #9e30bf !important;
   color: #ebebeb !important;
@@ -418,7 +418,7 @@
   background-color: #fff;
   border-color: #eee;
 }
-.k-grid .k-auto-scrollable {
+.k-grid .k-auto-scrollable, .k-grid .DashboardPage .dashDiary .k-scheduler-content, .DashboardPage .dashDiary .k-grid .k-scheduler-content {
   scrollbar-face-color: #7d0a8c;
   scrollbar-track-color: #ee9df8;
   scrollbar-arrow-color: #7d0a8c;
@@ -428,19 +428,19 @@
   scrollbar-shadow-color: #000;
   scrollbar-darkshadow-color: #000;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar-track {
+.k-grid .k-auto-scrollable::-webkit-scrollbar-track, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar-track, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar {
+.k-grid .k-auto-scrollable::-webkit-scrollbar, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar {
   width: 10px;
   height: 10px;
   background: #7d0a8c;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb {
+.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar-thumb, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar-thumb {
   background: #7d0a8c;
   border-radius: 10px;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb:hover {
+.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb:hover, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar-thumb:hover, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar-thumb:hover {
   background: #680874;
 }
 
@@ -543,12 +543,12 @@ header.k-header .k-toolbar {
 .k-filter-menu .k-numerictextbox .k-numeric-wrap {
   border-color: #000;
 }
-.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link {
+.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link, .k-filter-menu .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-filter-menu .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover {
   background-color: #9e30bf;
   color: #fff;
   transition: 0.2s all;
 }
-.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link:hover {
+.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link:hover, .k-filter-menu .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .k-filter-menu .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover:hover {
   opacity: 0.7;
 }
 
@@ -639,9 +639,6 @@ header.k-header .k-toolbar {
   border-top-width: 0px;
   border-bottom-width: 1px;
 }
-.xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::-moz-placeholder {
-  color: #464247;
-}
 .xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::placeholder {
   color: #464247;
 }
@@ -701,6 +698,7 @@ mainbody .x-section-header-wrraper {
 .k-slider .k-draghandle {
   border-color: #000;
   background-color: #000;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .k-slider .k-draghandle:hover {
@@ -758,7 +756,7 @@ mainbody .x-section-header-wrraper {
 .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item.k-state-active {
   background: #fff;
 }
-.xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link {
+.xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link, .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover {
   color: #7d0a8c;
 }
 .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-next,
@@ -1070,10 +1068,10 @@ input[type=time] {
 .DashboardPage .k-animation-container .k-header {
   background: #8733af;
 }
-.DashboardPage .k-animation-container .k-link:hover {
+.DashboardPage .k-animation-container .k-link:hover, .DashboardPage .k-animation-container .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .DashboardPage .k-animation-container td.k-state-focused.k-state-hover:hover {
   background: #7924a0 !important;
 }
-.DashboardPage .k-animation-container .k-calendar td.k-state-focused .k-link {
+.DashboardPage .k-animation-container .k-calendar td.k-state-focused .k-link, .DashboardPage .k-animation-container .k-calendar td.k-state-focused .k-calendar-view td.k-state-focused.k-state-hover, .DashboardPage .k-animation-container .k-calendar .k-calendar-view td.k-state-focused td.k-state-focused.k-state-hover {
   box-shadow: inset 0 0 2px 1px #8733af;
 }
 .DashboardPage .k-animation-container .k-calendar .k-footer .k-nav-today {
@@ -1085,7 +1083,7 @@ input[type=time] {
 .DashboardPage .k-grid .k-grid-content td a {
   color: #7d0a8c !important;
 }
-.DashboardPage .k-grid .k-link:hover {
+.DashboardPage .k-grid .k-link:hover, .DashboardPage .k-grid .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .DashboardPage .k-grid td.k-state-focused.k-state-hover:hover {
   background: transparent !important;
 }
 .DashboardPage .k-button {
@@ -1342,10 +1340,16 @@ input[type=time] {
 .DashboardPage .dashOverview .k-pager-nav {
   border-color: #8733af;
 }
-.DashboardPage .dashMyMission .k-link.k-selected,
+.DashboardPage .dashMyMission .k-link.k-selected, .DashboardPage .dashMyMission .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .DashboardPage .dashMyMission td.k-selected.k-state-focused.k-state-hover,
 .DashboardPage .dashStatus .k-link.k-selected,
+.DashboardPage .dashStatus .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover,
+.k-calendar .k-calendar-view .DashboardPage .dashStatus td.k-selected.k-state-focused.k-state-hover,
 .DashboardPage .dashContact .k-link.k-selected,
-.DashboardPage .dashOverview .k-link.k-selected {
+.DashboardPage .dashContact .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover,
+.k-calendar .k-calendar-view .DashboardPage .dashContact td.k-selected.k-state-focused.k-state-hover,
+.DashboardPage .dashOverview .k-link.k-selected,
+.DashboardPage .dashOverview .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover,
+.k-calendar .k-calendar-view .DashboardPage .dashOverview td.k-selected.k-state-focused.k-state-hover {
   background: #8733af;
 }
 .DashboardPage .dashMission1,
@@ -1802,7 +1806,7 @@ mainbody .gridHeaderButton .kIconPaint {
 .k-tabstrip .k-tabstrip-items .k-item.k-state-active {
   border-bottom: 4px solid #7d0a8c;
 }
-.k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link {
+.k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link, .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover {
   font-weight: bold;
 }
 
@@ -2337,7 +2341,7 @@ mainbody .gridHeaderButton .kIconPaint {
   font-size: 14px !important;
   color: #464247 !important;
 }
-.window-details-row .k-grid .k-grid-header th .k-link {
+.window-details-row .k-grid .k-grid-header th .k-link, .window-details-row .k-grid .k-grid-header th .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .window-details-row .k-grid .k-grid-header th td.k-state-focused.k-state-hover {
   color: #464247 !important;
   opacity: 0.7;
 }
@@ -2613,13 +2617,19 @@ mainbody .gridHeaderButton .kIconPaint {
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .xstyle-password-wrapper span.k-textbox {
   border: 0;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-text-control-container .x-textbox, #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_ToDo_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-text-control-container .x-textbox {
+#TafnitCore_ToDo_UI_Login mainbody .k-filter-menu-container .x-textbox,
+#TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Funding_UI_Login mainbody .k-filter-menu-container .x-textbox {
   border-bottom: 1.5px solid #043563 !important;
 }
 #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-textbox,
@@ -2998,7 +3008,7 @@ progress[value]::-webkit-progress-value {
     max-height: 300px;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .drawerItemScroller {
     max-height: 300px;
   }
@@ -3057,10 +3067,10 @@ progress[value]::-webkit-progress-value {
 .k-drawer-container .k-drawer .k-drawer-wrapper .x-dynamic-label-control:hover {
   font-weight: bold !important;
 }
-.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header {
+.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header, .k-drawer-container .k-drawer .k-drawer-wrapper .k-calendar .k-calendar-view td.k-header.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-drawer-container .k-drawer .k-drawer-wrapper td.k-header.k-state-focused.k-state-hover {
   font-weight: normal !important;
 }
-.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header.k-state-hover {
+.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header.k-state-hover, .k-drawer-container .k-drawer .k-drawer-wrapper .k-calendar .k-calendar-view td.k-header.k-state-hover.k-state-focused, .k-calendar .k-calendar-view .k-drawer-container .k-drawer .k-drawer-wrapper td.k-header.k-state-hover.k-state-focused {
   font-weight: bold !important;
 }
 
@@ -3208,29 +3218,13 @@ legend {
   font-weight: normal !important;
 }
 
-::-moz-placeholder {
-  color: #464247 !important;
-  font-size: 14px !important;
-  font-weight: bold;
-}
-
 ::placeholder {
   color: #464247 !important;
   font-size: 14px !important;
   font-weight: bold;
 }
 
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
 .p-floating-container input:not(:placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
-.p-floating-container textarea:not(:-moz-placeholder-shown) + label {
   font-size: 14px !important;
   color: #464247 !important;
 }
@@ -3486,17 +3480,11 @@ ul.fieldlist {
   padding-top: 15px;
   padding-right: 15px;
 }
-.textAreaPadding textarea::-moz-placeholder {
-  color: #464247 !important;
-}
 .textAreaPadding textarea::placeholder {
   color: #464247 !important;
 }
 
 /*color floating label*/
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  color: #afaeb0 !important;
-}
 .p-floating-container input:not(:placeholder-shown) + label,
 .p-floating-container ul[role=listbox] + input + label {
   color: #afaeb0 !important;
@@ -3510,19 +3498,11 @@ ul.fieldlist {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.xstyle-lookuptafnit-wrapper input.k-textbox::-moz-placeholder {
-  text-overflow: ellipsis;
-  width: 39%;
-}
 .xstyle-lookuptafnit-wrapper input.k-textbox::placeholder {
   text-overflow: ellipsis;
   width: 39%;
 }
 @media screen and (max-width: 576px) {
-  .xstyle-lookuptafnit-wrapper::-moz-placeholder {
-    text-overflow: ellipsis;
-    width: 69% !important;
-  }
   .xstyle-lookuptafnit-wrapper::placeholder {
     text-overflow: ellipsis;
     width: 69% !important;
@@ -3569,7 +3549,7 @@ ul.fieldlist {
   opacity: 0.8;
 }
 
-.k-rtl .k-grid-header th.k-with-icon .k-link {
+.k-rtl .k-grid-header th.k-with-icon .k-link, .k-rtl .k-grid-header th.k-with-icon .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-rtl .k-grid-header th.k-with-icon td.k-state-focused.k-state-hover {
   margin-left: 0 !important;
 }
 
@@ -3587,15 +3567,17 @@ ul.fieldlist {
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item.k-state-active span.k-link {
   border: none !important;
 }
-#TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link, #TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover,
+#TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link, .k-calendar .k-calendar-view #TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link,
+.k-calendar .k-calendar-view #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover {
   color: #7d0a8c !important;
   opacity: 0.6 !important;
 }
-#TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link, #TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover,
+#TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link, .k-calendar .k-calendar-view #TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link,
+.k-calendar .k-calendar-view #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover {
   color: #7d0a8c !important;
@@ -3614,10 +3596,6 @@ ul.fieldlist {
 }
 #TafnitCore_System_UI_App_WebSDK_Login input.k-textbox,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login input.k-textbox {
-  padding-right: 10px !important;
-}
-#TafnitCore_System_UI_App_WebSDK_Login ::-moz-placeholder, #TafnitCore_SaaSServer_TafnitCloud_UI_Login ::-moz-placeholder {
-  font-weight: normal !important;
   padding-right: 10px !important;
 }
 #TafnitCore_System_UI_App_WebSDK_Login ::placeholder,
@@ -3797,9 +3775,6 @@ ul.fieldlist {
 .xstyle-autocomplete-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-autocomplete-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-autocomplete-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -3817,9 +3792,6 @@ ul.fieldlist {
   color: #a1a3a5 !important;
 }
 .xstyle-autocomplete-wrapper.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-autocomplete-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-autocomplete-wrapper.k-state-disabled div:last-child input::placeholder {
@@ -3855,10 +3827,6 @@ ul.fieldlist {
   border: none !important;
   font-size: 14px !important;
   height: 37px !important;
-}
-.xstyle-autocomplete-wrapper div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-autocomplete-wrapper div:last-child input::placeholder {
   color: #ececec !important;
@@ -3979,9 +3947,6 @@ tr.k-master-row > td > input.k-checkbox:before {
 .xstyle-checkbox-wrapper.mandatory input {
   border-color: #ff7a00 !important;
 }
-.xstyle-checkbox-wrapper.mandatory input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-checkbox-wrapper.mandatory input::placeholder {
   color: #ececec !important;
 }
@@ -4049,9 +4014,6 @@ tr.k-master-row > td > input.k-checkbox:before {
   color: #000000 !important;
   font-size: 14px !important;
 }
-.xstyle-daterangev2-wrapper input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-daterangev2-wrapper input::placeholder {
   color: #ececec !important;
 }
@@ -4079,14 +4041,12 @@ tr.k-master-row > td > input.k-checkbox:before {
 .xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input {
   border-right: 1px solid #d9d9d9 !important;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::placeholder {
   color: #ececec !important;
 }
 .xstyle-daterangev2-wrapper:focus-within {
   border: 1px solid #ddc3e7 !important;
+  -webkit-box-shadow: 0px 0px 10px #f6ecfb !important;
   box-shadow: 0px 0px 10px #f6ecfb !important;
 }
 .xstyle-daterangev2-wrapper .k-input:focus-within,
@@ -4148,9 +4108,6 @@ tr.k-master-row > td > input.k-checkbox:before {
 .xstyle-date-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-date-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-date-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -4168,9 +4125,6 @@ tr.k-master-row > td > input.k-checkbox:before {
   color: #a1a3a5 !important;
 }
 .xstyle-date-wrapper.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-date-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-date-wrapper.k-state-disabled div:last-child input::placeholder {
@@ -4210,10 +4164,6 @@ tr.k-master-row > td > input.k-checkbox:before {
   border: none !important;
   font-size: 14px !important;
   height: 37px !important;
-}
-.xstyle-date-wrapper div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-date-wrapper div:last-child input::placeholder {
   color: #ececec !important;
@@ -4448,9 +4398,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .xstyle-idropdownlist-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-idropdownlist-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-idropdownlist-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -4470,9 +4417,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .xstyle-idropdownlist-wrapper.k-state-disabled div:last-child input {
   color: #a1a3a5 !important;
 }
-.xstyle-idropdownlist-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
-  color: #a1a3a5 !important;
-}
 .xstyle-idropdownlist-wrapper.k-state-disabled div:last-child input::placeholder {
   color: #a1a3a5 !important;
 }
@@ -4487,10 +4431,14 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   color: #000000 !important;
   font-size: 14px !important;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .xstyle-idropdownlist-wrapper .col-33 {
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .xstyle-idropdownlist-wrapper div:nth-child(1) label {
@@ -4516,10 +4464,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   border: none !important;
   font-size: 14px !important;
   height: 37px !important;
-}
-.xstyle-idropdownlist-wrapper div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-idropdownlist-wrapper div:last-child input::placeholder {
   color: #ececec !important;
@@ -5018,6 +4962,7 @@ mainbody mainbody {
   width: 50px;
   height: 50px;
   background: #ffffff !important;
+  -webkit-box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
   top: 4px;
@@ -5080,6 +5025,7 @@ mainbody mainbody {
 }
 .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
   background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px !important;
   width: 80px !important;
@@ -5497,10 +5443,6 @@ mainbody mainbody {
   line-height: 120%;
   color: #000000 !important;
 }
-.xstyle-gridv4-wrapper .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-toolbar-item:has(.k-searchbox.k-grid-search) .k-searchbox.k-grid-search input::-moz-placeholder {
-  color: #c8c8c8 !important;
-  font-size: 12px !important;
-}
 .xstyle-gridv4-wrapper .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-toolbar-item:has(.k-searchbox.k-grid-search) .k-searchbox.k-grid-search input::placeholder {
   color: #c8c8c8 !important;
   font-size: 12px !important;
@@ -5765,9 +5707,6 @@ div[uxid=portalUser],
     margin-top: -77px !important;
   }
 }
-.searchDesign .s-row.xstyle-textcontrol-wrapper .s-text-control-container input::-moz-placeholder {
-  padding-right: 20px;
-}
 .searchDesign .s-row.xstyle-textcontrol-wrapper .s-text-control-container input::placeholder {
   padding-right: 20px;
 }
@@ -5953,9 +5892,6 @@ div[uxid=portalUser],
 .xstyle-lookup-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-lookuptafnit-wrapper.x-readonly div:last-child input::-moz-placeholder, .xstyle-lookup-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-lookuptafnit-wrapper.x-readonly div:last-child input::placeholder,
 .xstyle-lookup-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
@@ -5985,9 +5921,6 @@ div[uxid=portalUser],
 .xstyle-lookup-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control {
   color: #a1a3a5 !important;
   background: none;
-}
-.xstyle-lookuptafnit-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::-moz-placeholder, .xstyle-lookup-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::-moz-placeholder {
-  color: #a1a3a5 !important;
 }
 .xstyle-lookuptafnit-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::placeholder,
 .xstyle-lookup-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::placeholder {
@@ -6030,9 +5963,6 @@ div[uxid=portalUser],
   border-bottom-right-radius: 0px !important;
   text-indent: 10px !important;
   color: #000000 !important;
-}
-.xstyle-lookuptafnit-wrapper .x-lookup.s-lookup input::-moz-placeholder, .xstyle-lookup-wrapper .x-lookup.s-lookup input::-moz-placeholder {
-  color: #ececec !important;
 }
 .xstyle-lookuptafnit-wrapper .x-lookup.s-lookup input::placeholder,
 .xstyle-lookup-wrapper .x-lookup.s-lookup input::placeholder {
@@ -6171,7 +6101,6 @@ div[uxid=portalUser],
   line-height: 130%;
   font-family: "Heebo";
   border: none;
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   left: 0;
@@ -6221,6 +6150,7 @@ div[uxid=portalUser],
   #TafnitCore_System_UI_App_WebSDK_PageInfo.xtafnit_pageContainer {
     width: auto !important;
     background: none !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     position: absolute !important;
     top: -9px !important;
@@ -7013,6 +6943,7 @@ div[uxid=portalUser],
 }
 .xstyle-numberrange-wrapper:focus-within {
   border: 1px solid #ddc3e7 !important;
+  -webkit-box-shadow: 0px 0px 10px #f6ecfb !important;
   box-shadow: 0px 0px 10px #f6ecfb !important;
 }
 .xstyle-numberrange-wrapper .k-input:focus-within,
@@ -7080,6 +7011,7 @@ div[uxid=portalUser],
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container {
   width: 94%;
   display: flex;
+  -webkit-box-direction: normal;
   flex-flow: inherit;
   border-bottom: 1px solid #d9d9d9 !important;
 }
@@ -7094,13 +7026,11 @@ div[uxid=portalUser],
   border-bottom-right-radius: 0px !important;
   width: 100% !important;
 }
-.xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container input::placeholder {
   color: #ececec !important;
 }
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container input:focus-within {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container span {
@@ -7357,6 +7287,7 @@ div[uxid=portalUser],
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header #tbbTitle {
   height: 90px !important;
+  -webkit-box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   width: 100%;
@@ -7368,6 +7299,7 @@ div[uxid=portalUser],
   font-weight: 400 !important;
   font-size: 30px !important;
   line-height: 30px !important;
+  height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
   margin: auto !important;
@@ -7379,6 +7311,7 @@ div[uxid=portalUser],
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header .k-button-group {
   height: 90px !important;
   background: #FFFFFF !important;
+  -webkit-box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   padding-right: 30px !important;
@@ -7387,6 +7320,7 @@ div[uxid=portalUser],
   margin-right: 0px !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header .k-button-group button.k-button {
+  -webkit-box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
   box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
   border-radius: 10px !important;
   margin-left: 20px !important;
@@ -7626,6 +7560,7 @@ div[uxid=portalUser],
 }
 #TafnitCore_Salary_UI_SubmitRequest #rEmployee {
   height: 90px !important;
+  -webkit-box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   width: 100%;
@@ -7680,7 +7615,6 @@ div[uxid=portalUser],
   font-weight: 400 !important;
   font-size: 30px !important;
   line-height: 30px !important;
-  height: -moz-fit-content !important;
   height: fit-content !important;
   margin: auto !important;
   margin-right: 20px !important;
@@ -8303,9 +8237,6 @@ div[uxid=portalUser],
   color: #000 !important;
   padding: 0 !important;
 }
-#TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput1 .xstyle-date-wrapper input::-moz-placeholder {
-  color: #ececec !important;
-}
 #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput .xstyle-date-wrapper input::placeholder, #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput .xstyle-date-wrapper input::placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::placeholder,
 #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput .xstyle-date-wrapper input::placeholder,
 #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput1 .xstyle-date-wrapper input::placeholder {
@@ -8333,9 +8264,6 @@ div[uxid=portalUser],
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=newValue] .xstyle-textcontrol-wrapper input {
   border-right: none;
   color: black !important;
-}
-#TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestPromotion div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #d9d9d9 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::placeholder, #TafnitCore_Salary_UI_RequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::placeholder,
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=newValue] .xstyle-textcontrol-wrapper input::placeholder {
@@ -8532,9 +8460,6 @@ div[uxid=portalUser],
   position: relative;
   z-index: 50;
 }
-#TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=newValue] input::-moz-placeholder, #TafnitCore_Salary_UI_RequestRaise div[uxid=newValue] input::-moz-placeholder {
-  color: #ececec !important;
-}
 #TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=newValue] input::placeholder,
 #TafnitCore_Salary_UI_RequestRaise div[uxid=newValue] input::placeholder {
   color: #ececec !important;
@@ -8550,9 +8475,6 @@ div[uxid=portalUser],
   z-index: 9;
   color: #000000 !important;
   border-right: none !important;
-}
-#TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=fromDate] input::-moz-placeholder, #TafnitCore_Salary_UI_RequestRaise div[uxid=fromDate] input::-moz-placeholder {
-  color: #ececec !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=fromDate] input::placeholder,
 #TafnitCore_Salary_UI_RequestRaise div[uxid=fromDate] input::placeholder {
@@ -8890,9 +8812,6 @@ div[uxid=portalUser],
 .xstyle-password-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-password-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-password-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -8910,9 +8829,6 @@ div[uxid=portalUser],
   color: #a1a3a5 !important;
 }
 .xstyle-password-wrapper.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-password-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-password-wrapper.k-state-disabled div:last-child input::placeholder {
@@ -8948,10 +8864,6 @@ div[uxid=portalUser],
   border: none !important;
   font-size: 14px !important;
   height: 37px !important;
-}
-.xstyle-password-wrapper div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-password-wrapper div:last-child input::placeholder {
   color: #ececec !important;
@@ -9014,10 +8926,13 @@ div[uxid=portalUser],
 }
 
 .xstyle-radio-wrapper .k-radio:focus, .x-damageTypeAndCamera .k-radio:focus {
+  -webkit-box-shadow: 0 0 3px 0 #7d0a8c;
   box-shadow: 0 0 3px 0 #7d0a8c;
 }
 
 .k-radio:checked::before {
+  -webkit-transform: scale(1) translate(-50%, -50%);
+  -ms-transform: scale(1) translate(-50%, -50%);
   transform: scale(1) translate(-50%, -50%);
   height: 9px;
   width: 9px;
@@ -9045,6 +8960,7 @@ div[uxid=portalUser],
 }
 
 .xstyle-radio-wrapper .k-radio:focus, .x-damageTypeAndCamera .k-radio:focus {
+  -webkit-box-shadow: 0 0 3px 0 #7d0a8c;
   box-shadow: 0 0 3px 0 #7d0a8c;
 }
 
@@ -9224,6 +9140,7 @@ div[uxid=portalUser],
 .xstyle-textareacontrol-wrapper textarea:focus {
   outline: none !important;
   border: 1px solid #ddc3e7 !important;
+  -webkit-box-shadow: 0px 0px 10px #f6ecfb !important;
   box-shadow: 0px 0px 10px #f6ecfb !important;
 }
 .xstyle-textareacontrol-wrapper label {
@@ -9305,9 +9222,6 @@ textarea {
 .p-floating-container.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-textcontrol-wrapper.x-readonly div:last-child input::-moz-placeholder, .p-floating-container.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-textcontrol-wrapper.x-readonly div:last-child input::placeholder,
 .p-floating-container.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
@@ -9331,9 +9245,6 @@ textarea {
 }
 .xstyle-textcontrol-wrapper.k-state-disabled div:last-child input,
 .p-floating-container.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-textcontrol-wrapper.k-state-disabled div:last-child input::-moz-placeholder, .p-floating-container.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-textcontrol-wrapper.k-state-disabled div:last-child input::placeholder,
@@ -9377,10 +9288,6 @@ textarea {
   border: none !important;
   font-size: 14px !important;
   height: 37px !important;
-}
-.xstyle-textcontrol-wrapper div:last-child input::-moz-placeholder, .p-floating-container div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-textcontrol-wrapper div:last-child input::placeholder,
 .p-floating-container div:last-child input::placeholder {
@@ -9431,9 +9338,6 @@ textarea {
 }
 .searchDesign .xstyle-textcontrol-wrapper input.k-textbox.x-textbox.s-textbox:focus-within {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3) !important;
-}
-.searchDesign .xstyle-textcontrol-wrapper input.k-textbox.x-textbox.s-textbox::-moz-placeholder {
-  color: #ececec !important;
 }
 .searchDesign .xstyle-textcontrol-wrapper input.k-textbox.x-textbox.s-textbox::placeholder {
   color: #ececec !important;
@@ -9515,9 +9419,6 @@ textarea {
 .xstyle-timepicker-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-timepicker-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-timepicker-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -9535,9 +9436,6 @@ textarea {
   color: #a1a3a5 !important;
 }
 .xstyle-timepicker-wrapper.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-timepicker-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-timepicker-wrapper.k-state-disabled div:last-child input::placeholder {
@@ -9573,10 +9471,6 @@ textarea {
   border: none !important;
   font-size: 14px !important;
   height: 37px !important;
-}
-.xstyle-timepicker-wrapper div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-timepicker-wrapper div:last-child input::placeholder {
   color: #ececec !important;
@@ -10133,7 +10027,6 @@ th .k-checkbox::before {
   font-weight: 400 !important;
   font-size: 30px !important;
   line-height: 30px !important;
-  height: -moz-fit-content !important;
   height: fit-content !important;
   margin: auto !important;
   margin-right: 20px !important;
@@ -11161,6 +11054,7 @@ mainbody > .row.x-row.s-row.border.border-0.boxShadow-0 {
     font-size: 13px !important;
   }
   .DashboardPage .dashLeftCol {
+    -webkit-box-shadow: 0 0px 9px 0 !important;
     box-shadow: 0 0px 0px 0 !important;
     border-radius: 20px !important;
     padding-top: 20px !important;
@@ -11172,6 +11066,7 @@ mainbody > .row.x-row.s-row.border.border-0.boxShadow-0 {
   .DashboardPage .dashDiary {
     margin-top: 0 !important;
     background-color: #ffffff !important;
+    -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
     box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
     border-radius: 20px !important;
     border-top: none !important;
@@ -11219,6 +11114,8 @@ mainbody > .row {
 }
 
 .details .right {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 14%;
   flex: 0 0 34%;
   color: #464247 !important;
 }
@@ -11245,6 +11142,8 @@ mainbody > .row {
 
 @media only screen and (min-width: 700px) {
   .cube-wrapper .cube {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 49%;
     flex: 0 0 49%;
     max-width: 49%;
   }
@@ -11255,10 +11154,6 @@ mainbody > .row {
 
 .goUpArrow {
   width: 50px !important;
-}
-
-::-moz-placeholder {
-  font-weight: normal;
 }
 
 ::placeholder {
@@ -11298,6 +11193,8 @@ span.mandatory.active + span.k-switch .k-switch-container {
 
 @media only screen and (min-width: 1480px) {
   .cube-wrapper .cube {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 22% !important;
     flex: 0 0 22% !important;
     max-width: 22% !important;
   }
@@ -11496,6 +11393,7 @@ span.mandatory.active + span.k-switch .k-switch-container {
     background-color: #ffffff;
   }
   .DashboardPage .dashLeftCol {
+    -webkit-box-shadow: 0 0px 9px 0;
     box-shadow: 0 0px 0px 0;
     border-radius: 20px;
     background: none !important;
@@ -12094,6 +11992,7 @@ li:has > a.active {
 
 #TafnitCore_System_UI_App_WebSDK_Main .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper {
   background-color: #fff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.08);
   border-radius: 10px;
   padding: 10px;
@@ -12174,12 +12073,17 @@ li:has > a.active {
 
 /* eran */
 .x-numberrange {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex !important;
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -ms-flex-align: start;
   align-items: flex-start;
   gap: 0px !important;
 }
@@ -12543,7 +12447,6 @@ mainbody > .row {
 .dashMyMission > div.border div.col.x-col.s-col:first-child,
 .dashStatus > div.border div.col.x-col.s-col:first-child,
 .dashOverview > div.border div.col.x-col.s-col:first-child {
-  max-width: -moz-fit-content !important;
   max-width: fit-content !important;
   margin-top: -30px !important;
   margin-right: -26px !important;
@@ -12556,7 +12459,6 @@ mainbody > .row {
 
 .dashContact > div.border div.col.x-col.s-col:first-child,
 .dashDiary > div.border div.col.x-col.s-col:first-child {
-  max-width: -moz-fit-content !important;
   max-width: fit-content !important;
 }
 .dashContact > div.border div:last-child,

@@ -1,16 +1,85 @@
 @import './variable/variable';
-@import './components/button';
-@import './components/collapse';
-@import './components/header';
-@import './components/row';
-@import './components/textcontrol';
-@import './components/treeview-item';
-@import './components/dropdown';
-@import './components/popup';
+
 // @import './components/toggleswitch';
 
 
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) {
+
+    .k-widget {
+        padding: 0 !important;
+
+        .k-window-titlebar {
+            background: #F5F5F5 !important;
+            width: 100%;
+        }
+
+        .k-window-actions {
+            margin: none !important;
+        }
+
+        .k-window-actions {
+            margin-left: 20px !important;
+        }
+
+        .row:last-of-type {
+            .col-12:nth-of-type(1) {
+                flex-grow: 0;
+                width: fit-content;
+                flex: none;
+
+                button {
+                    width: fit-content !important;
+                    padding-inline: 20px;
+                    border-radius: 4px;
+                    background: #159BC5;
+                    color: white;
+                }
+
+                button:hover {
+                    background: #29AFD9;
+                }
+            }
+
+            .col-12:nth-of-type(2) {
+                flex-grow: 0;
+                width: fit-content;
+                flex: none;
+
+                button:hover {
+                    color: white;
+                    background: #29AFD9;
+                }
+
+
+                button {
+                    width: fit-content !important;
+                    padding-inline: 20px;
+                    border-radius: 4px;
+                    border: 1px solid #159BC5;
+                    background: #FFF;
+                    color: #159BC5;
+
+                }
+            }
+        }
+
+    }
+}
+
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio {
+
+
+    .xtafnit_pageContainer {
+        height: auto;
+    }
+
+    * {
+        transition: all 100ms cubic-bezier(0.62, -0.07, 0.69, 1.25);
+    }
+
+    .border {
+        border: none !important;
+    }
 
     .xstyle-itoolbar-wrapper:nth-of-type(1) {
         display: none;
@@ -108,10 +177,6 @@
         margin: 0;
     }
 
-    .border {
-        border: none !important;
-    }
-
     div[uxid=colControlType] {
         & * {
             color: white;
@@ -127,16 +192,20 @@
 
     div[xid=controlxstudioMainpanel] {
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     div[xid=controlxstudioMainpanel]>div {
         height: 100%;
         overflow: auto;
-        max-height: calc(85vh - 3rem);
+        max-height: calc(85vh - 1rem);
         display: flex;
         flex-direction: column;
+        flex-grow: 0;
 
-        mainbody{
+        mainbody {
             flex: 1 1 auto;
         }
 
@@ -156,8 +225,22 @@
         header,
         footer,
         mainbody {
-            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFC328FF' stroke-width='3' stroke-dasharray='10' stroke-dashoffset='25' stroke-linecap='square'/%3e%3c/svg%3e") !important;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFC328FF' stroke-width='1' stroke-dasharray='30%2c 20' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e") !important;
         }
+
+        header.ux-studio-border-hover,
+        footer.ux-studio-border-hover,
+        mainbody.ux-studio-border-hover {
+            background-image: none !important;
+            border: 1px solid #E2AB1D !important;
+        }
+
+        header.ux-studio-border-hover::before,
+        footer.ux-studio-border-hover::before,
+        mainbody.ux-studio-border-hover::before {
+            background-color: #E2AB1D;
+        }
+
 
         .x-row {
             border-radius: 0;
@@ -178,14 +261,25 @@
         .row,
         .col {
             padding-block: 20px;
-            border: 1px dotted $component-component-border-dash !important;
-            border-collapse: collapse;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23C8C8C8FF' stroke-width='1' stroke-dasharray='20%2c 10' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e") !important;
+        }
+
+        .row.ux-studio-border-hover,
+        .col.ux-studio-border-hover {
+            background-image: none !important;
+            border: 1px solid #A1A3A5 !important;
+        }
+
+        .row.ux-studio-border-hover::before,
+        .col.ux-studio-border-hover::before,
+        .x-control-wrapper.ux-studio-border-hover::before {
+            background-color: #a1a3a5;
         }
 
         .x-control-wrapper {
             margin-block: 20px;
-            padding: 0;
-            border: 1px dotted $component-component-border-dash !important;
+            padding: 5px;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23C8C8C8FF' stroke-width='1' stroke-dasharray='20%2c 10' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e") !important;
 
             &.ux-studio-bottom-border {
                 border-bottom: 2px solid #074b5f !important;
@@ -194,6 +288,11 @@
             &.ux-studio-top-border {
                 border-top: 2px solid #074b5f !important;
             }
+        }
+
+        .x-control-wrapper.ux-studio-border-hover {
+            background-image: none !important;
+            border: 1px solid #A1A3A5 !important;
         }
 
         header::before,
@@ -215,21 +314,36 @@
             font-weight: 500;
             line-height: 120%;
         }
+
+        header::before,
+        footer::before,
+        mainbody::before {
+            background-color: #FFC328;
+        }
+
+        .ux-studio-selected {
+            background-image: none !important;
+            border: 1px solid #2950D9 !important;
+        }
+
+        .ux-studio-selected::before {
+            content: attr(data-controlType)"  \e9b8";
+            background-color: #2950D9;
+        }
     }
 
-    .ux-studio-disabled-container {
-        & .row:not([uxid="xstudioOtherTabPage"]):not([uxid="xstudioAdvancedTabPage"]) .x-section-header-wrapper {
+    .ux-studio-disabled-container #xTabPageTabPropsTabElementProps {
 
-            .row,
-            .col {
-                background-color: $properties-list-proprties-list-bg-disable !important;
-                pointer-events: none !important;
+        .row,
+        .col {
+            background-color: $properties-list-proprties-list-bg-disable !important;
+            pointer-events: none !important;
 
-                &>* {
-                    color: $properties-list-proprties-list-text-disable !important;
-                }
+            &>* {
+                color: $properties-list-proprties-list-text-disable !important;
             }
         }
+
     }
 
     &,
@@ -323,11 +437,10 @@
             position: relative;
             width: 100%;
         }
+
         header:has(div),
-        footer {
-            
+        footer:has(div) {
             min-height: unset;
-            
         }
     }
 
@@ -458,11 +571,13 @@
             border-radius: 0;
             border: 1px solid var(--text-field-text-field-input-default-border, #D9D9D9);
             display: flex;
-            height: 35px;
-            padding: 10px;
+            height: 30px;
+            padding: 5px;
             align-items: center;
             gap: 10px;
             align-self: stretch;
+            min-height: 30px;
+            font-size: 13px;
         }
 
         .x-control-caption-text {
@@ -471,7 +586,7 @@
 
             /* desktop/label/default */
             font-family: Heebo;
-            font-size: 0.9rem;
+            font-size: 12px;
             font-style: normal;
             font-weight: 400;
             line-height: 120%;
@@ -518,7 +633,7 @@
             display: flex;
             cursor: default;
             flex-direction: column;
-            gap: 15px;
+            gap: 10px;
             padding-block: 15px;
         }
 
@@ -535,6 +650,72 @@
             }
         }
     }
+
+    .x-pagePopup {
+        padding-bottom: 20px !important;
+    }
+
+
+    #TafnitCore_System_UI_App_Tools_Studio_UxStudioSCPrompt {
+        width: 620px;
+
+        img {
+            width: 230px;
+        }
+
+        .x-image-wrapper {
+            text-align: center;
+        }
+
+        .x-control-wrapper {
+            display: flex;
+            flex-direction: column !important;
+            align-items: left !important;
+        }
+
+    }
+
+    .confirm-button button {
+        border-radius: 4px;
+        background: #159BC5;
+        color: white;
+    }
+
+    .cancel-button button {
+        border-radius: 4px;
+        border: 1px solid #159BC5;
+        background: #FFF;
+        color: #159BC5;
+
+    }
+
+    .confirm-button button:hover {
+        background: #29AFD9;
+    }
+
+    .cancel-button button:hover {
+        color: white;
+        background: #29AFD9;
+    }
+
+
+}
+
+
+#TafnitCore_System_UI_App_Tools_Studio_SelectVersion {
+    .x-control-wrapper {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    img {
+        width: 230px;
+    }
+
+    .x-image-wrapper {
+        text-align: center;
+    }
+
 }
 
 #TafnitCore_System_UI_App_Tools_Studio_InitComplexControl {
@@ -542,3 +723,12 @@
         flex-direction: row-reverse !important;
     }
 }
+
+@import './components/button';
+@import './components/collapse';
+@import './components/header';
+@import './components/row';
+@import './components/textcontrol';
+@import './components/treeview-item';
+@import './components/dropdown';
+@import './components/popup';
