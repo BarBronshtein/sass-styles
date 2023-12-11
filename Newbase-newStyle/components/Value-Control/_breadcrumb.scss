@@ -6,14 +6,15 @@
         font-size: 11px;
         margin-right: 5px;
         margin-left: 5px;
-        top: -3px;
+        top: 0;
         &:before{
             content: "\e974";
             font-family: 'icomoon';
+            color: var(--breadcrumb-arrow-icon-color);
         }
     }
     .x-brscCaption,a{
-        color: var(--vanilla-secondary-500, #0EAADC);
+        color: var(--breadcrumb-text-color-default);
         
         font-family: Heebo;
         font-size: 14px;
@@ -21,7 +22,7 @@
         font-weight: 400;
         line-height: 120%;
         &:hover{
-            color: var(--vanilla-secondary-700, #0082AB);
+            color: var(--breadcrumb-text-color-hover);
     
         font-family: Heebo;
         font-size: 14px;
@@ -31,6 +32,7 @@
         text-decoration-line: underline;
         }
         &:focus{
+            color: var(--breadcrumb-text-color-selected);
             font-weight: 500;
         }
     }
@@ -48,7 +50,8 @@
 
         .x-progressBread {
             .x-bsLinkLi{
-                display:inline;
+                display:flex;
+                align-items: center;
             }
             .x-breadcrumbNode {
                 &:after {
@@ -103,9 +106,9 @@
         display: inline-block;
         table-layout: fixed;
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
         font-size: 1em;
-
+        display: flex;
         .x-bsLinkLi {
             text-align: right ;
             font-size: 1em ;
@@ -129,14 +132,20 @@
             display: inline-block;
             text-align: center;
             font-size: 1.3em;
-            width: 4.3em;
+          
 
             a {
-                color: #3498db;
+                color: var(--breadcrumb-text-color-default);
                 text-decoration: none;
 
                 &:hover {
-                    text-decoration: underline;
+                    color: var(--breadcrumb-text-color-hover);
+                    font-family: Heebo;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 120%; /* 16.8px */
+                    text-decoration-line: underline;
                 }
             }
 

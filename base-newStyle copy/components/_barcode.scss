@@ -79,3 +79,13 @@
         }
     }
 }
+
+
+.xstyle-barcodetextcontrol-wrapper input.k-textbox.x-textbox{ padding-right:unset }
+
+
+.x-text-with-button-wrapper.barcode-container{width:fit-content}
+
+.x-text-with-button-wrapper .x-barcodeBtnContainer{border-radius:4px;left:unset;right:calc(100% + 5px);color:#fff;background-color:rgba(142,187,207,1)}
+
+.x-text-with-button-wrapper .x-barcodeBtnContainer {height:100%;top:0;}

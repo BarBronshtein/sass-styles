@@ -9,7 +9,7 @@
 
   & span.x-dropdown-comp.s-dropdown-comp {
    
-       @extend %texbox-input;
+       @extend %texbox-inputstudio;
 
   &:focus,
   &:focus-within{
@@ -24,7 +24,7 @@
   }
 
   & label{
-    @extend %texbox-label;
+    @extend %texbox-labelstudio;
   }
 
  

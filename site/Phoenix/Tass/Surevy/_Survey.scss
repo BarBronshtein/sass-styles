@@ -13,7 +13,7 @@ $upload-icon: #e53e07;
 $check-box-on-background: #14008e; 
 $label-star-off-border: #bdbfd5; 
 $label-star-on-background: #14008e; 
-$link-text: #e53e07; 
+$link-text: #232873; 
 $approve-icon-on: #14008e; 
 $button-background: #ff5a23; 
 $button-press-background: #ff5a23; 
@@ -43,21 +43,17 @@ $check-box-on-drop-shadow: 0px 0px 4px 0px rgba(20, 0, 142, 0.20);
 
 
 
-
-#TafnitCore_SaaSServer_Survey_UI_Survey {
-
-   & div[uxid=SurveyLogo] .x-image-wrapper img{
-      width: 60% !important;
-      top: 50% !important;
-      transform: translateY(-5%) !important
-   } 
-    
-  
+.xstyle-textcontrol-wrapper {
+    & input{
+       
+        color:  #232873 !important;
+        &:focus,
+        &:focus-within,
+        &:active{
+            box-shadow: 0px 4px 8px 0px rgba(255, 90, 35, 0.20);
+        }
+    }
 }
-
-
-
-
 
 
 

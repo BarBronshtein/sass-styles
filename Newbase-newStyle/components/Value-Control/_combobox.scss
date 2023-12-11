@@ -11,8 +11,8 @@
      
        &:focus,
        &:focus-within{
-         border: $control-border-focus ;
-         box-shadow: $control-box-shadow-focus;
+        box-shadow:var(--input-focus-shadow) ;
+        border: 1px solid var(--input-border-color-focus) ;
        }
      
        & .k-input-inner{
@@ -28,10 +28,10 @@
      
       
        & .k-input-button{
-        background: white;
+        background: var(--input-bg-color-default) ;
          margin-left: 20px;
            &:hover{
-             background: white;
+            background: var(--input-bg-color-default) ;
            }
          & span.k-icon{
            &::before{
@@ -39,7 +39,7 @@
              content: "\f0d7";
              font-size: 20px;
              font-family: "Font Awesome 5 Pro";
-             color: $control-color-icon;
+             color: var(--input-icon-color-default);
              font-weight: 700;
            }
      

@@ -37,13 +37,13 @@
 
 
 .xstyle-upload-wrapper{
-    
+    margin-top: 15px;
     label{
         @extend %texbox-label;
     }
     & .k-file-group.k-i-file-config {
         font-size: 22px;
-        color: #7e7b7b ;
+        color: var(--upload-icon-color-sucess) ;
         top: 4px;
         &::before {
           content: "\e9ad" ;
@@ -58,7 +58,7 @@
       & .k-file.k-file-error {
         & .k-file-group.k-i-file-config {
           font-size: 22px;
-          color: #7e7b7b ;
+          color: var(--upload-icon-color-error) ;
           top: 4px;
           &::before {
             content: "\e9b0";
@@ -70,7 +70,7 @@
       & .k-file.k-file-success {
         & .k-file-group.k-i-file-image {
           font-size: 22px;
-          color: #7e7b7b ;
+          color: var(--upload-icon-color-sucess) ;
           top: 4px;
           &::before {
             content: "\e9af";
@@ -80,7 +80,7 @@
     
         & .k-file-group.k-i-file-config {
           font-size: 22px;
-          color: #7e7b7b ;
+          color: var(--upload-icon-color-sucess) ;
           top: 4px;
           &::before {
             content: "\e9ad" ;
@@ -90,7 +90,7 @@
     
         & .k-file-group.k-i-file-txt {
           font-size: 22px;
-          color: #7e7b7b ;
+          color: var(--upload-icon-color-sucess) ;
           top: 4px;
           &::before {
             content: "\e9b6";
@@ -100,7 +100,7 @@
     
         & .k-file-group.k-i-file-data {
           font-size: 22px;
-          color: #7e7b7b ;
+          color: var(--upload-icon-color-sucess) ;
           top: 4px;
           &::before {
             content: "\e9ac";
@@ -110,7 +110,7 @@
     
         & .k-file-group.k-i-file {
           font-size: 22px;
-          color: #7e7b7b ;
+          color: var(--upload-icon-color-sucess) ;
           top: 4px;
           &::before {
             content: "\e9ae";
@@ -133,7 +133,7 @@
         font-style: normal ;
         font-weight: 400 ;
         font-size: 12px;
-        color: $upload-color-success ;
+        color: var(--upload-status-text-color-sucess) ;
     
       }
       
@@ -144,19 +144,19 @@
         font-size: 12px;
       }
         & .k-file-invalid{
-            border-top: 1px solid $upload-border-border-top ;
+            border-top: 1px solid var(--upload-border-color) ;
             border-bottom: none ;
             & .k-file-name{
                 font-weight: 500 ;
                 font-size: 14px ;
-                color: $upload-color-file-name ;
+                color: var(--upload-filename-text-color) ;
                 font-family: 'Heebo';
             }
     
     
             & .k-file-invalid-group-wrapper{
                 & .k-icon{
-                    color: $upload-color-icon ;
+                    color: var(--upload-icon-color-error) ;
                     font-size: 30px;
                     top: 2px;
                     &::before{
@@ -189,7 +189,7 @@
                     font-family: 'icomoon';
                     font-weight: bolder;
                     font-size: 12px;
-                    color: $upload-color-icon ;
+                    color: var( --upload-icon-color-error) ;
                 }
             }
     
@@ -202,13 +202,13 @@
                     &.k-i-file-pdf{
                     &::before{
                         content: "\ea65" ;
-                        color: $upload-color-icon ;
+                        color: var(--upload-icon-color-sucess) ;
                         font-family: 'icomoon';
                     }
     
                     &:after{
                         content: "\ea66" ;
-                        color: $upload-color-icon ;
+                        color: var(--upload-icon-color-sucesss);
                         font-family: 'icomoon';
                     }
                 }
@@ -216,35 +216,20 @@
                 &.k-i-file-data{
                     &::before{
                         content: "\ea5e" ;
-                        color:$upload-color-icon ;
+                        color:var(--upload-icon-color-sucess) ;
                         font-family: 'icomoon';
                     }
     
                     &:after{
                         content: "\ea5f" ;
-                        color: $upload-color-icon ;
+                        color: var(--upload-icon-color-sucess);
                         font-family: 'icomoon';
                     }
                 }
                 }
             }
             
-            & .k-file.k-file-success{
-                border-top: 1px solid $upload-border-border-top ;
-                border-color: $upload-border-border-top;
-                border-bottom: none ;
-            }
-    
-            & .k-upload-files.k-reset{
-                border: none ;
-            }
-    
-            & .k-file-name{
-                font-weight: 500 ;
-                font-size: 14px ;
-                color: black ;
-                font-family: 'Heebo';
-            }
+   
     
     
             &.k-upload-empty{
@@ -266,8 +251,8 @@
     
             & .k-button-solid-base.k-upload-button{
                 border: none;
-                color:white;
-                background-color: #8EBBCF;
+                color:var(--button-primary-text-color-default);
+                background-color: var(--button-primary-bg-color-default);
                 border-radius: 4px;
                 height: 40px ;
                 font-family: Heebo;
@@ -279,38 +264,42 @@
                 & span.k-icon{
                     margin-left: 10px ;
                     &::before{
-                        color:white;
+                        color:var(--button-primary-text-color-default);
                         font-size: 22px ;  
                     }
                 }
             }
     
-            &:focus{
-                background: #759BAC;
-            }
-    
             &:hover{
                 border: none;
-                background-color: #ACCEDD;
+                background-color:var(--button-primary-bg-color-hover) ;
         
                 span{
-                    color: white;
+                    color:var(--button-primary-text-color-default);
                 }
-            
-        
+
                 & span{
                 
                     & span.k-icon{
                      
                         &::before{
-                            color: white;
+                            color: var(--button-primary-text-color-default);
             
                         }
                     }
                 }
+            }
+        
+            &:focus{
+                background: var(--button-primary-bg-color-focus);
+                box-shadow: var(--button-primary-focus);
+            }
+            
+        
+          
     
             
-            }
+            
     
      
         }

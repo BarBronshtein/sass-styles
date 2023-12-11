@@ -10,7 +10,7 @@ a:not([href]){
 .xstyle-ilink-wrapper      {
 
     label{
-        color: var(--vanilla-other-black, var(--color-other-black, #000));
+        color: var(--label-text-color-default);
         text-align: right;
         /* base text large */
         font-family: Heebo;
@@ -21,7 +21,7 @@ a:not([href]){
     }
 
     a{
-        color: var(--vanilla-secondary-500, #0EAADC);
+        color: var(--link-text-color-default);
         text-align: right;
         /* Link */
         font-family: Heebo;
@@ -29,20 +29,44 @@ a:not([href]){
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-
+        &:focus-visible{
+            outline: none;
+            border: none;
+        }
         &:hover{
             text-decoration: underline;
         }
 
         &:focus{
-            font-weight: 700;
+            font-weight: 500;
+            text-decoration: underline;
         }
     }
+
+
+    &.x-link-secondary{
+        .x-control-content-wrapper{
+            text-align: center;
+        }
+        a{
+                color: var(--link-secondary-text-color-default) !important;
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Heebo;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px; /* 137.5% */
+                text-decoration-line: underline;
+         }
+        }
+
+
 }
 
 .x-control-caption-wrapper{
     a{
-        color: var(--vanilla-secondary-500, #0EAADC);
+        color: var(--link-text-color-default-default);
         text-align: right;
         /* Link */
         font-family: Heebo;

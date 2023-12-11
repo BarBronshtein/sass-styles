@@ -2,14 +2,17 @@
 
 
 .xstyle-numberrange-wrapper {
-
+   .k-textbox-container{
+    width: 100%;
+    max-width: 100%;
+   }
     &.x-login-user-error,
     &.x-login-user-error-msg {
-        border-color: #f00 !important;
+        border-color: var(--input-border-color-error) !important;
     }
 
     .x-login-user-error-msg {
-        color: #f00;
+        color: var(--input-border-color-error);
         font-size: 14px;
     }
 
@@ -19,12 +22,12 @@
   
           & input.k-textbox{
   
-            background: #F7F7F7 ;
+            background: var(--input-bg-color-default) ;
              
           }
   
           & label{
-              color: $control-caption-color-text-disable ; 
+            color: var(--label-text-color-disable) ; 
             }
       }
 
@@ -44,18 +47,20 @@
            
             &.x-login-user-error{
               
-              border-bottom: 1px solid #DB0000 ;
+              border-bottom: 1px solid var(--input-border-color-error) ;
             }
       
               &:focus{
-                  box-shadow:$control-box-shadow-focus ;
-                  border: $control-border-focus ;
+                box-shadow:var(--input-focus-shadow) ;
+                border: 1px solid var(--input-border-color-focus) ;
                   outline: none !important;
               }
       
               &::placeholder{
       
-                  color: $control-color-placeholder ;
+
+                color:var(--input-text-color-place-holder);
+
       
               }
           }

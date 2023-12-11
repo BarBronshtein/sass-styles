@@ -1,0 +1,570 @@
+
+
+
+$font-family: "Assistant", sans-serif;
+
+#TafnitCore_SaaSServer_PaymentGetway_UI_SelectPayment{
+    .x-control-wrapper{
+      flex-wrap: wrap;
+     
+    }
+
+
+    & .titlePaymentOption {
+        justify-content: center;
+        display: flex;
+        margin-top: 145px;
+        padding-left: 0;
+        padding-right: 284px ;
+        width: 257px !important;
+      }
+
+    .xstyle-dynamiclabelcontrol-wrapper.userNamePayment span{
+        color: var(--taas-payment-main-text-color) !important;
+        margin-bottom: 9px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    & .xstyle-dynamiclabelcontrol-wrapper.textPayment span,.xstyle-dynamiclabelcontrol-wrapper.textPricePayment span,.xstyle-dynamiclabelcontrol-wrapper.pricePayment span {
+        color: var(--taas-payment-main-text-color) !important;
+        text-align: center;
+        height:fit-content;
+
+    }
+
+    .fa-shekel-sign{
+        font-size: 22px;
+        top: -25px;
+        color: var(--taas-payment-main-text-color);
+    }
+
+  
+    
+    
+    & .titlePaymentOption {
+        justify-content: center;
+        display: flex;
+        margin-top: 145px;
+        padding-left: 0;
+        padding-right: 284px ;
+        width: 257px !important;
+      }
+
+
+  
+    .col.x-col.s-col.col-12.titlePaymentOption > div > div.x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper{
+        width: 276px !important;
+        margin: auto !important;
+    }
+
+    & .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper.theUserName .x-dynamic-label-control.s-dynamic-label-control {
+      color: white !important;
+      /* font-weight: 900 !important; */
+      font-size: 30px !important;
+      justify-content: center !important;
+      margin-bottom: 27px;
+      font-weight: 800 !important;
+      font-family: "Assistant";
+      font-style: normal;
+  }
+  
+  
+  
+  & .textIntoBlueBox {
+    position: relative;
+  }
+  
+  
+  
+  &  .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper.thePrice .x-dynamic-label-control.s-dynamic-label-control {
+      height: 100px;
+      text-align: right !important;
+      width: 100%;
+      font-family: "Assistant", sans-serif;
+      display: block;
+      font-weight: 900 !important;
+      font-size: 79px !important;
+      color: white;
+      font-weight: bold !important;
+      margin-bottom: 0;
+  }
+  
+  
+
+  
+
+  
+    & {
+        background: var(--taas-bg-color);
+      margin: 0%;
+      padding: 0%;
+      margin: auto !important;
+      max-width: 1900px !important;
+     }
+    & .x-image-wrapper {
+      max-width: 1900px !important;
+    }
+    & .PaymetnMS {
+      position: absolute;
+      width: 466px;
+      height: 470px;
+      z-index: 3;
+      left: 659px;
+      right: 0;
+      top: 78px;
+      bottom: 0;
+      background:var(--taas-payment-row-bg-bg-color) ;
+      padding: 20px;
+      height: fit-content;
+    }
+    
+    & .paymentOption {
+      width: 100%;
+      position: absolute;
+      left: -19px;
+      top: 75px;
+      bottom: 0;
+      right: 0;
+      width: 982px;
+      height: 607px;
+      padding-right: 120px;
+      box-shadow:var(--taas-payment-row-shadow);
+    }
+  
+    
+   & .logoPayment {
+      position: absolute;
+      width: 100%;
+      border-radius: 0px !important;
+      margin-bottom: 100px;
+    }
+   & .buttonLayout {
+    border: none !important;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    padding-left: 120px;
+    height: 502px;
+    /* width: 29px; */
+    padding-bottom: 159px;
+     grid-template-areas:
+          "a s c"
+          "a s c"
+          "a b c";
+  
+        
+    }
+  
+
+    & .k-button {
+      background: none !important;
+      border: none;
+      opacity: 0.7;
+    }
+    & .k-button:hover {
+      opacity: 1 !important;
+    }
+
+ 
+    & .textPayment2 {
+      font-family: "Assistant";
+      font-style: normal;
+      font-weight: 0;
+      font-size: 27px;
+      text-align: right;
+      line-height: 1.6;
+    }
+
+    & .paymentButton {
+      margin-right: 15px;
+    }
+
+    & .cardPrice {
+      border: none !important;
+    }
+
+ 
+  
+  
+  
+  
+   
+   & .btnPay button {
+      color: rgb(255, 255, 255) !important;
+      border-radius: 20px;
+      padding: 15px;
+      font-size: 18px;
+      width: 274px !important;
+      height: 69px !important;
+      border-radius: 40px;
+      font-family: "Assistant";
+      font-style: normal;
+      font-size: 30px !important;
+      font-weight: 700;
+      box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
+    }
+   & .btnPay .x-control-content-wrapper {
+      width: 274px !important;
+      margin: auto;
+    }
+    & .btnPay {
+      width: 100% !important;
+      position: absolute;
+      margin-top: 856px;
+    }
+   & .fotterText {
+      position: absolute;
+      width: 13% !important;
+      margin-top: 930px !important;
+      margin-right: 833px !important;
+      font-family: "Assistant";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    & .haderText {
+      margin-right: 525px;
+      margin-top: 194px;
+      position: absolute;
+      color: rgb(255, 255, 255) !important;
+      font-family: "Assistant";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 20px;
+    }
+    & .buxPaymentSuccess {
+      height: 607px;
+      width: 982px !important;
+      border-radius: 15px;
+      position: absolute;
+      margin-right: 508px;
+      margin-top: 237px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 15px 15px rgba(113, 7, 139, 0.2);
+    }
+    & .iconSuccess {
+      width: 230px;
+      margin-right: 571px;
+      margin-top: 158px;
+    }
+    & .textSuccess {
+      width: 200px;
+      margin-right: 591px;
+      margin-top: 21px;
+      font-family: "Assistant";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22.4409px;
+      line-height: 28px;
+    }
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 1165px) {
+    & .PaymetnMS {
+      margin-right: 14px;
+    }
+  
+  
+    & .paymentOption {
+      margin-right: 90px;
+    }
+  
+  
+   
+    & .x-iframe-wrapper {
+        background-color: white;
+        width: 982px;
+        display: flex;
+        width: 100%;
+        position: absolute;
+        left: -19px;
+        top: 520px;
+        bottom: 0;
+        right: 0;
+        padding-top: 0;
+        width: 982px;
+        padding-right: 0;
+        margin-right: 30%;
+        width: 982px;
+        height: 607px;
+        padding-right: 176px;
+        margin: auto !important;
+        border-radius: 20px !important;
+      }
+      
+      
+      
+      .col.x-col.s-col.paymenIframe div:nth-child(4) {
+        position: absolute;
+        top: 771px;
+        right: 412px;
+        bottom: 0px;
+        left: 0px;
+      }
+      
+      
+      .x-iframe{
+        border: none !important;
+      
+        padding-right: 30% ;
+        height: 580px !important;
+        padding-bottom: 57px !important;
+      
+       .signup-body{
+          width: 90%;
+          margin: auto;
+        }
+        }
+      
+      .signup-body{
+        width: 90%;
+        margin: auto;
+      }
+    
+      & .titlePaymentOption {
+        margin-top: 190px;
+        padding-left: 0;
+        padding-right: 0 ;
+        width: 257px !important;
+      }
+  
+  
+
+      .col.x-col.s-col.textIntoBlueBox {
+        padding-top: 10px;
+    }
+  
+  
+    .x-iframe{
+      margin-top: 204px;
+      padding-right: 20px !important;
+      height: 103vh;
+  }
+    
+  
+    .col.x-col.s-col.price{
+      padding: 0px !important;
+    }
+
+
+    .row.x-row.s-row.border-0.paymentCard {
+        margin-top: 130px ;
+        height: 1000px !important;
+        border-radius: 20px !important;
+        border: none !important;
+        background-color: rgb(255, 255, 255) !important;
+        margin-right: 0 !important;
+      }
+      
+      
+      
+    
+      
+        & .titlePay {
+          border-radius: 20px !important;
+          margin-top: 130px !important;
+          height: 215px !important;
+        }
+        & {
+  
+          margin: auto ;
+          background-color:var(--taas-bg-color);
+          padding: 0px !important;
+          position: relative;
+        }
+      
+        
+        & .x-dynamic-label-control {
+          text-align: center !important;
+        }
+     
+        & .haderText {
+          margin-top: 165px;
+          font-family: "Assistant";
+          font-style: normal;
+          font-size: 20px !important;
+          font-weight: 400;
+          line-height: 25px;
+          color: black !important;
+        }
+        & .x-cell {
+          padding-left: 0;
+          padding-right: 0;
+        }
+    
+      
+        & .fotterText {
+          margin-top: 5px;
+          font-family: "Assistant";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #989696;
+          height: 50px;
+        }
+  
+       & .btnPay button {
+          color: rgb(255, 255, 255) !important;
+          width: 274px !important;
+          height: 69px !important;
+          right: 0%;
+          top: 0%;
+          bottom: 0%;
+          border-radius: 40px;
+          font-family: "Assistant";
+          font-style: normal;
+          font-size: 30px !important;
+          font-weight: 700;
+          box-shadow: inset 4px 4px 10px rgba(12, 62, 73, 0.3);
+        }
+        & .btnPay {
+          width: 68%;
+          margin: auto;
+        }
+        & .watermark {
+          background-color: rgb(255, 255, 255) ;
+        }
+        & .PaymetnMS {
+          width: fit-content;
+          padding: 20px;
+          position: absolute ;
+          z-index: 2;
+          margin: 0 auto ;
+          left: 0 ;
+          right: 0 ;
+          background: var(--taas-payment-row-bg-bg-color);
+          max-width: 90%;
+          top: 105px;
+        }
+        & .logoPayment {
+          margin-bottom: 43px ;
+          border-radius: 0px ;
+        }
+        & .userNamePayment {
+            color: var(--taas-payment-main-text-color) ;
+        }
+    
+        &  {
+          line-height: 0;
+          font-size: 19px ;
+          font-weight: 700 ;
+        }
+        & .container-fluid {
+          padding: 0px ;
+        }
+       & .paymentOption{
+          margin-top: 165px ;
+          height: 100% ;
+          border: none ;
+          margin-right: 0 ;
+          width: auto;
+          padding-right:0;
+          width: 100%;
+
+        }
+
+      
+  
+        & .buttonLayout{
+
+            padding-left: 10px;
+        }
+       & .buttonLayout {
+          border: none;
+          justify-content: center;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          margin-bottom: 40px;
+      
+          
+        }
+        & .paymentButton {
+          text-align: center;
+          background-color: rgb(255, 255, 255) !important;
+          border: none;
+          flex-basis: 29%;
+          border-radius: 10px;
+          max-width: 31%;
+          color: rgb(0, 0, 0) !important;
+          text-align: center;
+          margin-right: 0;
+        }
+
+
+        & .k-button {
+          background-color: rgb(255, 255, 255) !important;
+          border: none;
+        }
+        & .paymentButton :hover {
+          opacity: 0.9;
+        }
+        & .cardPrice {
+          border: none !important;
+          width: 220px;
+          margin: auto;
+        }
+    
+     
+        & .iconShekl {
+          margin-top: 47px;
+          font-size: 50px !important;
+        }
+        & .buxPaymentSuccess {
+          margin-top: 130px !important;
+          height: 500px !important;
+          border-radius: 20px !important;
+          border: none !important;
+          background-color: rgb(255, 255, 255) !important;
+          margin-right: 0 !important;
+        }
+        & .iconSuccess {
+          width: 202px;
+          margin: auto;
+          margin-top: 205px;
+        }
+        & .textSuccess {
+          margin-top: 15px;
+        }
+  }
+  
+  
+  
+  
+  .col.x-col.s-col.col-12.titlePaymentOption > div > div.x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-dynamiclabelcontrol-wrapper {
+    width: 431px;
+    margin: auto;
+  }  
+  
+  .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-buttoncontrol-wrapper.paymentButton button
+  {
+    width: 100px !important;
+
+    &:focus{
+        box-shadow: none !important;
+    }
+  
+    & span.x-button_caption_text{
+      font-size: 14px;
+      font-weight: 400;
+      color: #7E7B7B;
+    }
+  }
+  
+  
+  }
+  
+  

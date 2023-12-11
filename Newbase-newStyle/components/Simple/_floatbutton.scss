@@ -8,12 +8,13 @@
     
     .x-floatbutton {
         border: 1px solid #ECECEC;
-        background: #FBFBFB ;
-        color: #C8C8C8;
+        background:var(--floatbutton-bg-disable);
+        color: var(--floatbutton-text-disable);
+        box-shadow:var(--x-floatbutton-shadow-disable);
         opacity: 1;
 
         span{
-            color: #C8C8C8;
+            color: var(--floatbutton-icon-disable);
         }
     }
 }
@@ -28,29 +29,30 @@
         }
     }
     button{
-    background:  #8EBBCF ;
-     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    background:  var(--floatbutton-bg-color-default) ;
+     box-shadow:var(--floatbutton-shadow);
      padding: 25px;
      border-radius: 0;
      height: 80px;
     
 
      & .k-icon{
-        color: white;
+        color: var(--floatbutton-icon-color-default);
      }
 
      & .k-fab-text{
         font-family: 'Heebo';
-        color: white;
+        color: var(--floatbutton-text-color-default);
      }
 
 
      &:hover{
-        background: #ACCEDD ;
+        background: var(--floatbutton-bg-color-hover) ;
      }
 
      &:focus{
-        background: #759BAC ;
+        background: var(--floatburron-bg-color-focus);
+        border: 1px solid var(--floatbutton-border-color-focus);
      }
     }
 }

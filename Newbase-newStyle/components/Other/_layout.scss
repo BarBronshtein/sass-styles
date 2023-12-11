@@ -2,19 +2,25 @@
 
 
 
-html,
-body {
+html {
     padding: 0;
     margin: 0;
     font-family: "Arial" ;
+    height: 100% !important;
 }
 
 html {
     position: relative;
 }
 
-body {
-    height: calc(100% - 130px);
+html,
+body,
+#uber-container,
+.xtafnit_pageContainer,
+mainbody {
+    height: 100% !important;
+
+ 
 }
 
 mainbody {
@@ -350,8 +356,11 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    box-shadow: 0 0 0px 1000px rgba(255, 234, 97, 0) inset;
+    box-shadow:none;
+    outline: none !important;
     transition: background-color 5000s ease-in-out 0s;
+    background-color:white !important;
+
 }
 
 /*mask textbox*/
@@ -382,24 +391,24 @@ select:-webkit-autofill:focus {
 
 /*portalNew - page */
 
-#TafnitCore_System_UI_App_PortalNew {
-    .k-listview-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
+// #TafnitCore_System_UI_App_PortalNew {
+//     .k-listview-content {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
 
-    .x-listview-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        border-bottom: 1px solid #ccc;
+//     .x-listview-item {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: flex-start;
+//         align-items: center;
+//         border-bottom: 1px solid #ccc;
 
-        &:hover {
-            background-color: #f5f5f5;
-        }
-    }
-}
+//         &:hover {
+//             background-color: #f5f5f5;
+//         }
+//     }
+// }
 
 /*ux studio web studio*/
 

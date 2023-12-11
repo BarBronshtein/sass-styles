@@ -64,6 +64,7 @@
 @forward '../components/linklist';
 @forward '../components/simpleXML';
 @forward '../components/signature';
+@forward '../components/otp';
 @forward '../pages/accessiblity-edit';
 
 
@@ -78,6 +79,8 @@
 @forward '../pages/Transportation';
 @forward '../pages/accessiblity-viewer';
 @forward '../pages/MakeRequest';
+@forward '../pages/FileViewer';
+@forward '../pages/mainPanelTass';
 
 
 
@@ -101,9 +104,10 @@ html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
 }
 .x-login-user-error-msg{
   color: red !important;
+  line-height: 1.5;
 }
 .x-login-user-error{
-    border-bottom: 1px solid red !important;
+    border: 1px solid red !important;
   }
 
 a.k-icon{
@@ -374,7 +378,7 @@ input{
 
 }
 
-.k-window:has(#TafnitCore_SaaSServer_OTP_UI_ErrorMessage){
+.k-window:has(#TafnitCore_SaaSServer_OTP_UI_ResultMessage){
 
   border-radius: 6px;
   background: var(--color-white-1000, #FFF);
@@ -389,8 +393,9 @@ input{
   right: 0 !important;
   margin: 0 auto;
 
-  #TafnitCore_SaaSServer_OTP_UI_ErrorMessage{
+  #TafnitCore_SaaSServer_OTP_UI_ResultMessage{
     margin: 0 !important;
+
   }
 .x-header {
   display: none;
@@ -486,4 +491,8 @@ input{
 .x-control-content-wrapper{
   grid-column: 1 / 3;
 }
+}
+
+img{
+  margin: auto;
 }

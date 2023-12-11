@@ -9,21 +9,21 @@ mandatory {
 }
 input{
     border-radius: 4px;
-    border: 1px solid var(--vanilla-neutral-400, #DEDEDE) !important;
-    background: var(--color-other-white, #FFF);
+    border: 1px solid var(--input-border-color-default) !important;
+    background: var(--color-other-white);
     height: 50px;
     width: 100%;
     &:focus{
-        box-shadow:$control-box-shadow-focus ;
-        border: $control-border-focus ;
+        box-shadow:var(--input-focus-shadow) ;
+        border: 1px solid var(--input-border-color-focus) ;
         outline: none !important;
     }
 }
 
 .x-selection-lookup-button {
     border-radius: 4px;
-    border: 1px solid var(--vanilla-neutral-300, #E7E7E7);
-    background: var(--vanilla-neutral-100, #F8F8F8);
+    border: none !important;
+    background: var(--button-primary-bg-color-default);
     width: 50px;
     height: 50px;
     display: grid;
@@ -44,19 +44,20 @@ input{
 }
 input{
     border-radius: 4px;
-    border: 1px solid var(--vanilla-neutral-400, #DEDEDE) !important;
-    background: var(--color-other-white, #FFF);
+    border: 1px solid var(--input-border-color-default) !important;
+    background: var(--color-other-white);
     &:focus{
-        box-shadow:$control-box-shadow-focus ;
-        border: $control-border-focus ;
+        box-shadow:var(--input-focus-shadow) ;
+        border: 1px solid var(--input-border-color-focus) ;
         outline: none !important;
     }
+
 }
 
 .x-selection-lookup-button {
     border-radius: 4px;
-    border: 1px solid var(--vanilla-neutral-300, #E7E7E7);
-    background: var(--vanilla-primary-500, #8EBBCF);
+    border: none !important;
+    background: var(--button-primary-bg-color-default);
     width: 50px;
     height: 50px;
     display: grid;
@@ -69,7 +70,7 @@ label{
 
 .x-input-group-text {
     background: none;
-    color: white;
+    color: var(--color-other-white);;
 }
 }
 .k-rtl {

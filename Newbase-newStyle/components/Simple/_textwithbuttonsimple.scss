@@ -47,7 +47,7 @@ input::-webkit-inner-spin-button {
         }
 
         & label{
-            color: $control-caption-color-text-disable ; 
+            color: var(--label-text-color-disable) ; 
           }
     }
 

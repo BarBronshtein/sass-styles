@@ -4,7 +4,7 @@
     background: none;
     border: none;
     &.k-selected,&.k-complete{
-        background: #0EAADC !important;
+        background: var(--progressbar-progress-bg-color-default) !important;
     }
     .x-progressbar{
  
@@ -16,7 +16,7 @@
     }
 
     ul,.k-progressbar{
-        background: var(--step-step-progressbar-default, #DEDEDE);
+        background:var(--progressbar-bg-color-default);
         border-radius: 10px;
         align-items: center;
         display: flex;
@@ -36,7 +36,7 @@
             }
 
             &.k-selected,&.k-complete{
-                background: #0EAADC !important;
+                background: var(--progressbar-progress-bg-color-default) !important;
             }
         }
     }

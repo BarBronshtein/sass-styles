@@ -45,3 +45,32 @@ header {
     border-radius: 4px;
 }
 
+.x-taas-header {
+    height: 68px;
+    background: var(--taas-header-bg-color) !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0;
+    height: 68px;
+    z-index: 50;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--taas-header-border-color, #DEDEDE) !important;
+    .xstyle-image-wrapper {
+        position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    }
+    img{
+
+        width: 130px!important;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: auto !important;
+        max-height: 65px !important;
+    }
+} 

@@ -25,18 +25,18 @@
                     font-weight: 300;
                     font-size: 14px;
                     line-height: 130%;
-                    color: $tab-script-color-text;  
+                    color: var(--tab-text-color-default);  
                 }
                 border-radius: 0 !important;
-                border-bottom: 1px solid #c7c2c2;
+                border-bottom: 1px solid var(--tab-border-color-default);
                 &.k-active{
-                    border-bottom: 2px solid $tab-script-border-bottom;
+                    border-bottom: 2px solid var(--tab-selected-border-color-default);
                     background: none;
                     border-radius: 0;
 
                     span{
                         font-weight: 700;
-                        color: black;
+                        color: var(--tab-selected-text-color-default);
                     }
                 }
             }

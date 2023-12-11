@@ -95,11 +95,15 @@ mainbody > .row{
 }
 }
 
-
+.icon-xtar-pdf:before {
+    content: "\e98e";
+    font-family: 'icomoon';
+    color: #690779;
+}
 
 body,html{
     font-family: 'Heebo';
-    background: #F8F8F8 !important;
+    line-height: 0;
 }
 .border{
     border: none !important;
@@ -138,11 +142,11 @@ body,html{
 .icon-export-excel:after ,
 .icon-xtar-print:before {
     content: "\ea5f";
-    color:$icon-after;
+    color:$special-button-color-icon;
 }
 
 
-.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2,.icon-tracker{
+.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2{
 
     &:before{
         color:$drawer-icon-color-after;
@@ -154,11 +158,11 @@ body,html{
 
 }
 
-.icon-car:after,.icon-customers::after {
+.icon-car:after,.icon-customers::after,.icon-tracker::after {
     color: $drawer-icon-color-after;
 }
 
-.icon-car:before,.icon-customers::before{
+.icon-car:before,.icon-customers::before,.icon-tracker::before{
     color:$drawer-icon-color-before;
 }
 
@@ -178,6 +182,7 @@ body,html{
 
     .k-drawer-overlay.k-drawer-right .k-drawer{
         width: 40px;
+        overflow-x: hidden;
        }
 }
 
@@ -190,3 +195,27 @@ body,html{
 .justify-content-start {
     justify-content:end !important;
   }
+
+  .x-control-wrapper .x-control-caption-wrapper{
+    max-height: 25px;
+  }
+
+  .x-login-user-error {
+    border: 1px solid red !important;
+}
+
+.INDMobile{
+    background: none !important;
+}
+
+.k-i-file-image{
+    &::before{
+        content: "\e9af";
+        color: #690779 !important;
+        font-family: "icomoon";
+    }
+}
+
+img{
+    margin: auto;
+}

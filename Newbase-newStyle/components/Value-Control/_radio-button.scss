@@ -2,6 +2,7 @@
 
 
 .xstyle-radio-wrapper {
+    margin-top: 15px;
     .x-RBComp {
         display: inline-block;
         clear: both;
@@ -13,22 +14,23 @@
     }
 
     .x-radio-input{
-        border: 1px solid #80A9BB;
+        border: 1px solid var(--radio-unselect-icon-color-default);
 
         &:checked{
+            border: 1px solid var(--radio-selected-icon-color-default);
             &:before{
-                background: #80A9BB;;
+                background: var(--radio-selected-icon-color-default);;
             }
 
             &:focus{
                 filter: drop-shadow(0px 4px 8px rgba(142, 187, 207, 0.50));
-                border: 1px solid #80A9BB;
+                border: 1px solid var(--radio-selected-icon-color-default);
             }
         }
     }
 
     label{
-        color: var(--black-text, var(--color-other-black, #000));
+        color: var(--label-text-color-default);
         text-align: right;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: Heebo;

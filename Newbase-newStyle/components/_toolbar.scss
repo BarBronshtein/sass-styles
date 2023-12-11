@@ -1,0 +1,63 @@
+.xstyle-itoolbar-wrapper{
+
+    background: var(--toolbar-bg-color);
+    padding: 10px 30px !important;
+    border-radius:0 ;
+
+    .x-itoolbar{
+        padding: 0 !important;
+    }
+    .header-toolbar{
+        span{
+            color: var(--label-toolbar-title);
+            text-align: right;
+            /* label-toolbar-title */
+            font-family: Heebo;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+   .k-button{
+        min-width: 40px;
+        background-color:var(--button-primary-bg-color-default) !important ;
+        height: 40px ;
+        border: none;
+        border-radius: 4px;
+
+        span{
+            color: var(--button-primary-text-color-default)
+        }
+        &:hover{
+            border: none;
+            background-color:var(--button-primary-bg-color-hover) !important ;
+    
+            span{
+                color: var(--button-primary-text-color-default)
+            }
+        }
+        &:focus{
+            background: var(--button-primary-bg-color-focus) !important;
+            box-shadow: var(--button-primary-focus);
+        }
+    
+    
+    
+    
+    }
+
+.k-overflow-anchor{
+    position: relative;
+}
+}
+
+.k-toolbar>*{
+    margin-top:0 ;
+    margin-bottom:0 ;
+    margin-left: 10px !important;
+}
+
+.x-header{
+    border: none !important;
+}

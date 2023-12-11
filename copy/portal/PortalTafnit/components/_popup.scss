@@ -1,6 +1,12 @@
 
 
+@media (max-width: 900px) {
 
+  .k-animation-container .k-popup .k-list-content.k-list-scroller li{
+    height: 50px !important;
+  }
+
+}
 
 
 .k-animation-container{
@@ -23,9 +29,9 @@
   background: $list-view-bg-line-default !important;
 }
         & li{
-          height: 30px;
+          height: 40px;
           padding: 0;
-
+         
             &.k-selected.k-focus{
               background: $list-view-selected-line !important;
               border: none;
@@ -185,7 +191,7 @@
       line-height: 100%;
       color: #690779;
       width: max-content;
-      margin-top: 5px;
+
 
     }
   }

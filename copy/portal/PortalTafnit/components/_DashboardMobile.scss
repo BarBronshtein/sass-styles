@@ -2,6 +2,21 @@
 mainbody:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile){
     padding-bottom: 80px !important;
 }
+
+
+mainbody > .row.xtaf-btn-footer{
+    width: 100%;
+
+    .x-control-wrapper{
+        width: 100%;
+
+
+    }
+}
+mainbody > .row.xtaf-btn-footer .xstyle-buttoncontrol-wrapper button {
+    width: 100%;
+    max-width: none;
+}
 .xtaf-cube-dashboard {
 
     border-radius: 10px;
@@ -66,6 +81,8 @@ mainbody:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMob
     font-style: normal;
     font-weight: 400;
     line-height: 100%; 
+    margin-bottom: 8px;
+    margin-top: 4px;
   }  
 }
 
@@ -82,13 +99,15 @@ mainbody:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMob
 
 }
 
-
+.x-col:has(.list-cube){
+    padding-bottom: 5px;
+}
 .list-cube{
     
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 5px;
-
+    max-height: 23px;
     label{
 
         color: var(--label-list-caption-color, #310538);
@@ -99,7 +118,7 @@ mainbody:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMob
         font-style: normal;
         font-weight: 500;
         line-height: 100%; 
-        margin-top: 2px !important;
+      
     }
 
     span{
@@ -129,14 +148,19 @@ mainbody:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMob
 #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMobile{
 
 
-
-
+    .cube.cubeFix .shekel-wrapper .x-dynamic-label-control{
+        font-size: 30px;
+    }
+    .cube.cubeFix .x-dynamic-label-control{
+        font-size: 14px;
+    }
 .cube-wrapper{
     display: flex;
     overflow: auto;
     flex-wrap: nowrap;
     .cube.cubeFix{
-        padding: 30px 20px 40px 40px !important;
+        padding: 20px 10px 10px 10px !important;
+        height: auto;
         min-width: 170px;   
 
         .k-icon {
@@ -144,6 +168,26 @@ mainbody:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_DashboardMob
             color:#7B098B;
         }
     }
+
+
+  
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: white;
+    }
+
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: white;
+    }
+
+
 }
 
 

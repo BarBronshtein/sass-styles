@@ -74,7 +74,9 @@
     th,td{
       & input.k-checkbox{
         border-color: $grid-checkbox-border;
-      
+        width: 14px;
+        height: 14px;
+        border-radius: 2px;
 
         &:checked{
             border-color: $grid-checkbox-checked-border;
@@ -227,6 +229,7 @@
             font-size: 14px;
             padding: $grid-content-padding;
             &.xtaf-bg{
+              padding-right: 10px;
               background: var(--neutral-200, #F5F5F5) !important;
             }
             .col-template-val {
@@ -932,9 +935,7 @@
     &.k-active{
         
       & .k-icon.k-i-filter::before{
-
-        content: "\e971" !important;
-        color: #7B098B !important;
+font-weight: 600;
       }
 
      }
@@ -1224,7 +1225,7 @@
       border-top: 1px solid $grid-header-border !important;
       border-bottom: 1px solid $grid-header-border !important ;
       margin-top: 15px;
-      margin-bottom: 15px;
+      margin-bottom: 0px;
      }
 
      .k-grid-content.k-auto-scrollable{
@@ -1257,7 +1258,6 @@
 
 .xstyle-gridv4-wrapper{
 
-  border-bottom: 1px solid #DEDEDE;
   border-radius: 0px;
   padding-top: 0px;
   margin-bottom: 25px;

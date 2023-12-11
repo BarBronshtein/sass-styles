@@ -37,7 +37,7 @@
 
             td{
                 a{
-                    color: var(--vanilla-secondary-500, #0EAADC);
+                    color: var(--link-text-color-default);
                     text-align: right;
                     /* Link */
                     font-family: Heebo;
@@ -49,7 +49,7 @@
 
                     &:hover{
                         text-decoration: underline;
-                        color: var(--vanilla-secondary-500, #0EAADC);
+                        color: var(--link-text-color-hover);
                     }
 
                     &:focus{
@@ -60,7 +60,7 @@
                         content: "\e974";
                         font-family: 'icomoon';
                         margin-right: 5px;
-                        color: black;
+                        color: var(--linklist-arrow-anable-icon-color);
                         font-size: 12px;
                     }
 

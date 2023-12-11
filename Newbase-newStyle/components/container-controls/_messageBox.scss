@@ -1,4 +1,14 @@
+#MessageBoxWindow{
+    .row{
+        display: block;
 
+        div{
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
 
 .x-icons {
     font-size: 50px;

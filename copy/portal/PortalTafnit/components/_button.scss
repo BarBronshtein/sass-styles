@@ -14,7 +14,7 @@
 // button bordr //
 .gridHeaderButton{
     display:grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr ;
     gap: 15px;
     padding: 0px;
     & .spicelBTN{
@@ -27,7 +27,7 @@
     & button{
        
         @extend %button;
-
+       
       &:hover{
         background: $button-bg-hover;
         color: $button-color-text-hover;
@@ -109,6 +109,7 @@
       }
      }
     & button{
+      border: 1px solid $button-color-border;
         @extend %button;
         max-width: 200px;
       &:hover{

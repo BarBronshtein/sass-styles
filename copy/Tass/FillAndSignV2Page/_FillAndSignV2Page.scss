@@ -98,12 +98,10 @@
   & .xstyle-checkbox-wrapper.x-control-wrapper {
 
     flex-direction: row-reverse !important;
-    .x-control-caption-wrapper {
-        flex: 0 0 100%;
-    }
+
 
     .x-control-content-wrapper {
-        flex-grow: 0.1;
+        flex-grow: 0.1 !important;
     }
 
     & input{

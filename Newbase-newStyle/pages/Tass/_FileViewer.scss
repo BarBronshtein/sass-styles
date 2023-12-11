@@ -1,0 +1,62 @@
+#TafnitCore_SaaSServer_Storage_UI_FileViewer{
+ .x-card-wrapper .x-card-flie{
+    border-bottom: 1px solid var(--taas-fileviewer-card-line-color) !important;
+    border-radius: 0;
+ }
+.xstyle-dynamiclabelcontrol-wrapper.x-label-pagetitle span{
+
+    color: var(--label-text-color-title) !important;
+}
+.xstyle-dynamiclabelcontrol-wrapper.x-label-pagesubtitle span{
+    color: var(--label-text-color-subtitle) !important;
+
+}
+.xstyle-dynamiclabelcontrol-wrapper{
+
+    &.x-label-large{
+        span,label{
+            color: var(--taas-fileviewer-card-title-text-color);
+        }
+    }
+    
+    &.x-label-medium{
+        label,span{
+            color: var(--taas-fileviewer-card-title-text-color);
+        }
+    }
+    
+    label{
+        color: var(--taas-fileviewer-card-title-text-color);
+
+    }
+    
+    span{
+        color: var(--taas-fileviewer-card-title-text-color);
+
+    }
+}    
+
+.x-card-icons {
+    .xstyle-dynamiclabelcontrol-wrapper{
+
+        span{
+            color: var(--taas-fileviewer-card-button-text-color-default) !important;
+
+        }
+    }
+
+    .k-icon{
+        font-size: 24px;
+        color: var(--taas-fileviewer-card-button-text-color-default) !important;
+
+    }
+
+    
+}
+
+.icon-xtar-pdf{
+     font-size: 30px;
+     color: var(--taas-fileviewer-card-icon-color) !important;
+}
+
+}

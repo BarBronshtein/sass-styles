@@ -25,10 +25,11 @@
         }
 
         & label{
-            color: $control-caption-color-text-disable ; 
+            color: var(--label-text-color-disable) ; 
           }
     }
 
+    
     .k-autocomplete{
       
         &:focus{
@@ -42,15 +43,15 @@
       padding: 0;
 
         &:focus-within{
-            box-shadow:$control-box-shadow-focus ;
-            border: $control-border-focus ;
-        }
+            box-shadow:var(--input-focus-shadow) ;
+            border: 1px solid var(--input-border-color-focus) ;
+              outline: none !important;
+          }
+          &::placeholder{
 
-        &::placeholder{
-
-            color: $control-color-placeholder ;
-
-        }
+            color:var(--input-text-color-place-holder);
+  
+          }
 
         input{
             border: none;

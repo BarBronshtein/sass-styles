@@ -27,10 +27,18 @@
 
 .xstyle-idropdownlist-wrapper{
 margin-top: 15px;
+
+&.x-dropdown-small{
+
+  span.x-dropdown-comp.s-dropdown-comp{
+    height: 30px;
+  }
+}
 &:has(.x-login-user-error-msg){
   & span.x-dropdown-comp.s-dropdown-comp {
-  border-bottom: $control-border-error ;
+    border-bottom: 1px solid var(--input-border-color-error) ;
   }
+
  }
   // readonly + disabled //
 
@@ -38,17 +46,20 @@ margin-top: 15px;
   &.x-readonly{
      & span.x-dropdown-comp.s-dropdown-comp{
 
-      background: #F7F7F7 ;
-         & span.k-icon{
+      background: var(--input-bg-color-default) ;
+      & span.k-icon{
           &::before{
-            color: $control-caption-color-text-disable ; 
+            color: var(--label-text-color-disable) ; 
           }
          }
+
+
+      
      }
 
      & label{
-      color: $control-caption-color-text-disable ; 
-       }
+      color: var(--label-text-color-disable) ; 
+    }
  }
 
  
@@ -59,12 +70,16 @@ margin-top: 15px;
    
        @extend %texbox-input;
 
-      
+       .k-icon-button{
+        position: relative;
+        top: 50%;
+        transform:translateY(-50%);
+       }
 
   &:focus,
   &:focus-within{
-    border: $control-border-focus ;
-    box-shadow: $control-box-shadow-focus;
+     box-shadow:var(--input-focus-shadow) ;
+          border: 1px solid var(--input-border-color-focus) ;
   }
 
   & .k-input-inner{
@@ -80,8 +95,7 @@ margin-top: 15px;
 
  
   & .k-input-button{
-    left: -10px;
-    top: -6px;
+
       &:hover{
         background: none;
       }
@@ -91,7 +105,7 @@ margin-top: 15px;
         content: "\f0d7";
         font-size: 20px;
         font-family: "Font Awesome 5 Pro";
-        color: $control-color-icon;
+        color: var(--input-icon-color-default);
         font-weight: 700;
       }
 
@@ -122,16 +136,16 @@ scrollbar-arrow-color: #8EBBCF;
 
 &::-webkit-scrollbar-track {
   border-radius: 10px;
-  background: #f0f0f0;
+  background: var(--scrollbar-track-bg-color);
 }
 
 &::-webkit-scrollbar-thumb {
-  background:#8EBBCF  ;
+  background:var(--scrollbar-thumb-bg-color-default)  ;
   border-radius: 10px;
   
 
   &:hover {
-    background: #8EBBCF;
+    background: var(--scrollbar-thumb-bg-color-hover);
     
   }
   }
@@ -157,27 +171,29 @@ scrollbar-arrow-color: #8EBBCF;
         background: none ;
         padding: 5px 10px;
 & ul{
-  background: $popup-bg ;
+  background: var(--window-bg-color-default) ;
 }
         & li{
             height: 41px;
+            border-bottom: 1px solid var(--listitem-border-color-default);
+            background: var(--listitem-bg-color-default);
 
             &.k-selected.k-focus{
-              background: $popup-bg-selected ;
-              border: none;
+              background: var(--listitem-bg-color-selected) ;
+              border-bottom: 1px solid var(--listitem-border-color-default);
               box-shadow: none;
 
               .k-list-item-text{
-                color: $popup-color-text-selected ;
+                color: var(--listitem-text-color-selected) ;
                 font-weight: 700;
               }
             }
 
             &:hover{
-              background: $popup-bg-hover;
+              background:var(--listitem-bg-color-hover);
             
               .k-list-item-text{
-                color: $popup-color-text-hover ;
+                color: var(--listitem-text-color-default) ;
                 font-weight: 700;
               }
             }
@@ -190,7 +206,7 @@ scrollbar-arrow-color: #8EBBCF;
                 line-height: 21px;
                 align-items: center;
                 text-align: right;
-                color: $popup-color-text;
+                color: var(--listitem-text-color-default) ;
             }
 
         }

@@ -1,65 +1,84 @@
 
 
 
-#TafnitCore.System.UI.App.PortalNew{
+
 mainbody{
 
-    // row-main //
-& > .row,
-.row-main{
+// row-main //
+& > .row{
+
+
     border: none !important;
-    background: $row-main-vanilla-bg;
-    box-shadow: $row-main-vanilla-box-shadow;
-    border-radius: $row-main-vanilla-border-radius;
-    padding: $row-main-vanilla-padding;
+    background: var(--row-primary-bg-color); 
+    border: none;   
+    box-shadow: none;
+    border-radius: 8px;
     margin: auto;
-    margin-bottom: 15px;
-    height: auto !important;
-    min-width: 350px;
+   padding: 0;
+
     
+&.x-row-shadow{
+    box-shadow: var(--row-shadow);
+    background: var(--row-primary-bg-color);
+}
+
+&.x-row-border{
+    border: 1px solid var(--row-border-border-color);
+}
+
+&.x-row-bg-color{
+    background: var(--row-bg-bg-color); 
+}
+
+&.x-row-hidden{
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+}
+
+
 
 
 }
 
-}
-
-// row-radius //
-
-.x-row.row-radius{
-
-    border-radius: $row-radius-vanilla-border-radius;
-   
-}
 
 
-// row-hidden //
+.row{
 
-.x-row.row-hidden{
+
+
+    
+&.x-row-shadow{
+    box-shadow: var(--row-shadow);
+    background: var(--row-primary-bg-color);
     border: none !important;
-    border-radius: $row-hidden-vanilla-border-radius;
-    box-shadow: $row-hidden-vanilla-box-shadow;
-    background: $row-hidden-vanilla-bg;
-    width: 100%;
-& >.col{
-    padding: 0;
-}
-   
 }
 
-// row-border //
+&.x-row-border{
+    border: 1px solid var(--row-border-border-color);
+}
 
-.x-row.row-border{
-  
-    border:$row-border-vanilla-border !important;
+&.x-row-bg-color{
+    background: var(--row-bg-bg-color); 
+}
+
+&.x-row-hidden{
+    border: none !important;
+    box-shadow: none;
+    background: white;
+    margin: 0;
+    padding:0;
 
 }
 
-// row-bg-color //
-
-.x-row.row-bg-color{
-    background: $row-bg-color-vanilla-bg;
-    box-shadow: $row-bg-color-vanilla-box-shadow;
+&.x-row-floatBottom{
+    position: absolute;
+    bottom: 0px;
 }
+}
+
+
 
 
 // row-bg-color //
@@ -90,7 +109,7 @@ mainbody{
         margin: auto;
     }
   }
-}
+
 
 .k-header.row.x-row {
 
@@ -114,4 +133,10 @@ h4.x-cell-header.s-cell-header{
     font-weight: 400;
     font-family: 'Heebo';
     color: black;
+}
+
+.x-row-shadow{
+    box-shadow: var(--row-shadow);
+    background: var(--row-primary-bg-color);
+    border: none !important;
 }

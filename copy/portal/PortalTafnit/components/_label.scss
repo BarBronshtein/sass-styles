@@ -6,13 +6,20 @@
     padding-right: 50px !important;
 }
 
-
+div[uxid="ctserciveCallDesc2"]{
+    margin-top: 20px;
+}
 .row-list .list{
 
     display: grid;
     grid-template-columns: auto 1fr;
     gap:4px;
-    align-items: center;
+    align-items: flex-start;
+ 
+
+    .x-control-caption-wrapper{
+    max-height: none;
+    }
     &::after{
     width: 7px;
     height: 7px;
@@ -26,7 +33,7 @@
         width:max-content;
         font-family: 'Heebo';
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         text-align: right;
@@ -37,14 +44,14 @@
 
     span{
         font-size: 14px !important;
-        font-weight: 400;
+        font-weight: 500;
         font-family: 'Heebo';
         line-height: 24px ;
-        margin-top: -4px;
+        margin-top: 0px;
         color: $label-list-value-color !important;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        
     }
 }
 
@@ -55,7 +62,12 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap:4px;
-    align-items: center;
+    align-items: flex-start;
+   
+
+    .x-control-caption-wrapper{
+    max-height: none !important;
+    }
     &::after{
     width: 7px;
     height: 7px;
@@ -69,7 +81,7 @@
         width:max-content;
         font-family: 'Heebo';
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         text-align: right;
@@ -80,14 +92,14 @@
 
     span{
         font-size: 14px !important;
-        font-weight: 400;
+        font-weight: 500;
         font-family: 'Heebo';
         line-height: 24px ;
-        margin-top: -4px;
+        margin-top: 0px;
         color: $label-list-value-color !important;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        
     }
 }
 

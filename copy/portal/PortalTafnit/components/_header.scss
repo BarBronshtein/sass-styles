@@ -5,7 +5,8 @@
 .header-suppliers{
 img{
   width: 100% !important;
-  height: 45px !important;
+  height: 65px !important;
+  cursor: pointer;
 }
 }
 // header main //
@@ -92,6 +93,7 @@ font-size: 13px;
 line-height: 120%;
 text-align: right;
 color: $header-link-color;
+margin-top: 7px;
 }
 & span{
 font-family: 'Heebo';

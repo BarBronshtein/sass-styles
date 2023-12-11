@@ -23,8 +23,8 @@
 
     .selected-flag{
         border-radius: 4px;
-        border: 1px solid var(--vanilla-neutral-400, #DEDEDE);
-        background: var(--color-other-white, #FFF);
+        border: 1px solid var(--input-border-color-default);
+        background: var(--input-bg-color-default) ;
         height: 40px;
         padding-right: 5px;
 
@@ -40,8 +40,8 @@ input{
     
   &:focus,
   &:focus-within{
-    box-shadow:$control-box-shadow-focus ;
-    border: $control-border-focus ;
+    box-shadow:var(--input-focus-shadow) ;
+    border: 1px solid var(--input-border-color-focus) ;
     outline: none !important;
   }
 
@@ -60,7 +60,7 @@ input{
                 align-items: center;
                 display: grid;
                 height: 38px;
-                color: var(--vanilla-other-black, var(--color-other-black, #000));
+                color: var(--input-text-color-default);
                 text-align: right;
                 font-family: Heebo;
                 font-size: 14px;

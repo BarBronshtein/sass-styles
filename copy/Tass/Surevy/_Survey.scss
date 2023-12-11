@@ -5,15 +5,18 @@
 }
 
 #TafnitCore_SaaSServer_Survey_UI_Survey {
+
+    .xstyle-image-wrapper      {
+
+        img{
+        height: auto !important;
+        }
+    }
     .x-control-wrapper{
         flex-wrap: wrap;
         width: 100%;
       }
-   & div[uxid=SurveyLogo] img{
-    width: 270px !important; 
-    top: 50% !important;
-    transform: translateY(10px) !important;
-   } 
+
     
     & .surveyTitle{
 
@@ -150,16 +153,21 @@
   & .xstyle-checkbox-wrapper.x-control-wrapper {
 
     & input{
-     
+        border-color:$checkbox-unselect-icon-color-default;
 
-        &:checked{
-            box-shadow:  $check-box-on-drop-shadow !important;
+
+     &:checked::before{
+        color:$checkbox-unselect-icon-color-default;
+     }
+    
+
+      &:focus{
+        border: 1px solid $checkbox-unselected-border-color-focus;
+
+        &:before{
+            color:$checkbox-unselected-border-color-focus;
         }
-
-        &:checked::before{
-            background: $check-box-on-background;
-
-        }
+      }
     }
    }
 
@@ -241,7 +249,7 @@
     &:active,
     &:focus-visible{
         border: 1px solid $focus-border!important; 
-        box-shadow: none !important;
+     
     }
 }
 

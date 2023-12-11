@@ -41,7 +41,7 @@
             font-size: 25px;
             /* top: 5px; */
             left: -24px;
-            color: $control-color-icon;
+            color: var(--input-icon-color-default);
         }
     }
  }
@@ -52,12 +52,12 @@
         @extend %texbox-input;
 
         &:focus-within{
-            border: $control-border-focus;
-            box-shadow: $control-box-shadow-focus;
+            box-shadow:var(--input-focus-shadow) ;
+            border: 1px solid var(--input-border-color-focus) ;
         }
     }
     & input{
-text-align: right;
+        text-align: right;
         padding: 0;
     }
 
@@ -66,11 +66,11 @@ text-align: right;
     
         width: 100%;
        
-        align-self: center;
+        align-self: center ;
       
    
         &::placeholder{
-            color: $control-color-placeholder ;
+            color:var(--input-text-color-place-holder);
         }
 
      
@@ -97,7 +97,7 @@ text-align: right;
       
             font-size: 25px;
             left: -24px;
-            color: $control-color-icon;
+            color:  var(--input-icon-color-default);
         }
             left: 14px;
         &.k-i-calendar::before{
@@ -106,7 +106,7 @@ text-align: right;
             font-size: 25px;
             /* top: 5px; */
             left: -24px;
-            color: $control-color-icon;
+            color:  var(--input-icon-color-default);
         }
     }
  }
@@ -119,9 +119,9 @@ text-align: right;
 
 .k-animation-container .k-popup:has(.k-calendar-table){
 
-    background: #F5F5F5;
+    background: var(--calender-window-bg-color);
     border-radius: 10px;
-    box-shadow: $calendar-box-shadow ;
+    box-shadow: var(--calendar-shadow) ;
     .k-calendar{
         background: none;
         border-radius: 10px;
@@ -137,13 +137,13 @@ text-align: right;
     .k-header.k-hstack{
         align-items: center;
        
-        background: $calendar-bg-header;
+        background: var(--calender-header-bg-color);
         border: none ;
 
            .k-nav-prev{
 
             span{
-                color:$calendar-color-icon-header ;
+                color:var(--calender-header-icon-color) ;
                }
            }
 
@@ -160,7 +160,7 @@ text-align: right;
                 align-items: center;
                 text-align: center;
                 letter-spacing: 0.1px;
-                color: $calendar-color-text-header;  
+                color: var(--calender-header-text-colo);  
 
             }
            }
@@ -168,7 +168,7 @@ text-align: right;
            .k-nav-next{
 
             span{
-                color: $calendar-color-icon-header ;
+                color:var(---calender-header-icon-color) ;
               }
            }
     }
@@ -180,8 +180,8 @@ text-align: right;
 
     .k-calendar-view.k-calendar-yearview,
     .k-calendar-view.k-calendar-decadeview{
-        background: $calendar-bg-body;
-        border-bottom:$calendar-border-bottom-body ;
+        background:--color-other-white;
+        border-bottom:1px solid (--calender-footer-border);
         table{
             tbody{
               tr{

@@ -8,3 +8,14 @@
         line-height: 20px; 
     }
 }
+
+.x-taas-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    z-index: 0;
+}

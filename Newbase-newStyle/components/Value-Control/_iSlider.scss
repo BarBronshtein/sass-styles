@@ -2,15 +2,15 @@
 
 
 .x-islider-wrapper {
-    .k-slider-horizontal .k-draghandle{
-        width: 35px;
+    .k-slider-horizontal .k-draghandle,.k-draghandle{
+        width: 20px;
         height: 20px;
-        background: var(--vanilla-primary-700, #759BAC);
-        border: 1px solid white;
+        border: 1px solid var(--slider-handle-border-color-default);
+        background: var(--slider-handle-bg-color-default);
     }
     .k-slider-selection{
 
-        background: var(--vanilla-primary-700, #759BAC);
+        background: var(--slider-progress-bg-color-default);
     }
     .k-slider-vertical {
         &:first-of-type {

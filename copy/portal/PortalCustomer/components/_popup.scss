@@ -30,7 +30,7 @@
           height: 40px;
           padding: 0;
 
-            &.k-selected.k-focus{
+            &.k-selected.k-focus,&.k-selected{
               background: $list-view-selected-line ;
               border: none;
               box-shadow: none;
@@ -390,7 +390,6 @@
           border-top-right-radius: 0px;
           border-top-left-radius: s0px;
           padding-top: 12px;
-          font-family: map-get($map: $typographyVariables, $key: -font-family);
           font-style: normal;
           font-weight: 500;
           font-size: 13px;
@@ -525,7 +524,7 @@
             border-radius: 10px ;
             border:none;
             color: $button-color-text ;
-            font-size: 16px;
+            font-size: 14px;
             &:hover{
               background: $button-bg-hover ;
               color: $button-color-text-hover;
@@ -559,7 +558,7 @@
           
                 &:focus{
                   background: $special-button-bg-focus ;
-                  box-shadow: none ;
+                  box-shadow: $button-box-shadow-focus ;
                   color: $special-button-color-text-focus;
                   border:1px solid $special-button-color-border-hover;
                   opacity: 1;

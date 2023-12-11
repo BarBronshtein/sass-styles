@@ -69,6 +69,13 @@
     box-shadow: 0px 0px 10px 0px rgba(148, 182, 198, 0.25);
     border: none;
     padding: 20px;
+    right: 0 !important;
+    left: 0 !important;
+    max-width: 95%;
+    margin: 0 auto;
+    .k-window-content{
+        padding: 0;
+    }
     .k-window-titlebar{
 
         border: none;

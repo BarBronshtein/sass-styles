@@ -8,7 +8,9 @@
    & .x-checkbox{
 
       border-color: $checkbox-border;
-   
+      width:14px;
+      height: 14px;
+      border-radius: 2px;
 
     &:checked{
         border-color: $checkbox-border-checked;

@@ -4,14 +4,13 @@
 
 
 .xstyle-textareacontrol-wrapper,.xstyle-textareaforut-wrapper{
+  margin-top: 15px;
   &.k-state-disabled{
     opacity: 1 ;
-   & input.k-textbox{
 
-   }
 
    & label{
-       color: #CCCCCC ; 
+    color: var(--label-disable) ; 
      }
 }
   & span.x-fild_block{
@@ -21,12 +20,12 @@
         
     @extend %texbox-input;
       height: 150px ;
-            margin-bottom: 20px ;
+
             outline: none ;
             
     &:focus{
-      box-shadow:$control-box-shadow-focus ;
-      border: $control-border-focus ;
+      box-shadow:var(--input-focus-shadow) ;
+      border: 1px solid var(--input-border-color-focus) ;
   }
     }
 

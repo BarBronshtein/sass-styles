@@ -1,6 +1,12 @@
 
 
+.k-grid .k-auto-scrollable{
+  background: none !important;
 
+  .k-alt{
+    background: none !important;
+  }
+}
 .portalGrid{
   h4{
     font-family: 'Heebo';
@@ -109,19 +115,8 @@
     .k-grid-header {
         background: none;
         border: none;
-        padding: $grid-content-padding;
 
-        .k-grid-filter {
-            &.k-state-active {
-                background: $grid-header-filter-active-background;
-
-                span {
-                    &:before {
-                        color: $grid-header-filter-active-color !important;
-                    }
-                }
-            }
-        }
+      
 
         tr {
 
@@ -161,7 +156,7 @@
         }
 
         thead {
-            background: $grid-header-title-background;
+            background: none;
         }
     }
 
@@ -175,11 +170,10 @@
             &.k-grid-edit-row {
                 .k-numerictextbox {
                     .k-numeric-wrap {
-                        border-color: $grid-edited-numeric-border-color;
+
 
                         .k-link {
-                            background-color: $grid-edited-numeric-arrow-background-color;
-                            color: $grid-edited-numeric-arrow-color;
+                    
                             transition: 0.2s all;
 
                             &:hover {
@@ -194,25 +188,24 @@
             &:hover td {
                 background-image: none;
                 background-color: $grid-tr-bg-hover !important;
-                color: $grid-content-line-color-hover !important;
+        
             }
 
             &.k-selected {
-                background: $grid-content-line-background-selected !important;
-                color: $grid-content-line-color-selected !important;
+                background: none !important;
+                color: #000 !important;
 
                 td {
-                    background: $grid-content-line-background-selected !important;
-                    color: $grid-content-line-color-selected !important;
+                    background: none !important;
+                    color: #000 !important;
                 }
             }
         }
 
         td {
-            border: $grid-content-border;
-            border-left: $grid-content-border-left;
+           
             font-size: 14px;
-            padding: $grid-content-padding;
+    
 
             .col-template-val {
                 margin: 0;
@@ -220,16 +213,15 @@
         }
 
         .k-alt {
-            background: $grid-content-odd-background;
+     
 
             @media only screen and (max-width:768px) {
-                background: $grid-content-odd-background-mobile;
+               
             }
         }
     }
 
     .k-grid-pager {
-        background: $grid-pager-background;
         border:none;
 
         .k-pager-nav {
@@ -247,23 +239,14 @@
         .k-link {
             &:hover {
                 background-image: none !important;
-                background-color: $grid-pager-nav-background-hover !important;
-                color: $grid-pager-nav-color-hover !important;
+            
             }
         }
 
         // }
     }
 
-    .k-grid-footer {
-        background-color: $grid-footer-background-color;
-        border-color: $grid-footer-border-color;
 
-        td {
-            background-color: $grid-footer-background-color;
-            border-color: $grid-footer-border-color;
-        }
-    }
 
     .k-auto-scrollable {
 
@@ -278,25 +261,20 @@
         scrollbar-shadow-color: #000;
         scrollbar-darkshadow-color: #000;
 
-        &::-webkit-scrollbar-track {
-            border-radius: $grid-scoller-radius;
-        }
+    
 
         &::-webkit-scrollbar {
-            width: $grid-scoller-width;
-            height: $grid-scoller-height;
-            background: $grid-scoller-webkit-background;
+
+      
         }
 
         &::-webkit-scrollbar-thumb {
             background: $grid-scoller-background;
-            border-radius: $grid-scoller-radius;
+            border-radius: 10px;
         }
 
 
-        &::-webkit-scrollbar-thumb:hover {
-            background: darken($grid-scoller-background, 5);
-        }
+   background: darken($grid-scoller-background, 5);
     }
 }
 
@@ -331,15 +309,15 @@
   
   .grid-icon {
     font-size: 30px;
-    color: map-get($map: $Colors , $key: grid-icons);
+
   }
   
   .grid-border-bt {
     margin-left: 20px;
-    background: map-get($map: $Colors , $key: grid-popup-filter-bg-button-off);
+ 
     width: 50px;
     height: 50px;
-    box-shadow: map-get($map: $Colors , $key: login-screen-boxshadow);
+
     border-radius: 10px;
   }
   
@@ -363,12 +341,12 @@
   .grid-import-bt {
     width: 50px;
     height: 50px;
-    background: map-get($map: $Colors , $key: grid-popup-filter-button);
-    box-shadow: 0px 0px 8px map-get($map: $Colors , $key: login-screen-boxshadow);
+
+
     border-radius: 10px;
   
     > span {
-      color: map-get($map: $Colors , $key: grid-popup-filter-button-text);
+
     }
   }
   
@@ -383,12 +361,11 @@
   .grid-import-bt {
     width: 50px;
     height: 50px;
-    background: map-get($map: $Colors , $key: grid-popup-filter-button);
-    box-shadow: 0px 0px 8px map-get($map: $Colors , $key: login-screen-boxshadw);
+
     border-radius: 10px;
   
     > span {
-      color: map-get($map: $Colors , $key:grid-popup-filter-button-text );
+
     }
   }
   
@@ -404,7 +381,7 @@
   .grid-filter-card {
     font-size: 12px;
     height: 30px;
-    background: map-get($map: $Colors , $key: grid-bg-filtered);
+
     margin-right: 12px;
     text-align: right;
     display: flex;
@@ -419,7 +396,7 @@
   
   .girid-label {
     margin-top: 7px;
-    font-family: map-get($map: $typographyVariables, $key: -font-family);
+
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -437,21 +414,7 @@
   }
   
    .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable{
-  
-    & >:nth-child(2){
-     
-        &.k-button:hover{
-          background: #690779 !important;
-          opacity: 1 !important;
-        }
-        &.k-button:focus{
-          background: #690779 !important;
-        }
-  
-        &>span{
-        color: white !important;
-        }
-    }
+
   
     background: none;
     border: none;
@@ -472,31 +435,24 @@
     
       width: 50px;
       height: 50px;
-      background: map-get($map: $Colors, $key: bg-qube );
-      box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow );
+
       border-radius: 10px !important;
       border: none !important;
       margin-left: 20px;
      
       &#xNew{
 
-        background: #7d0a8c !important;
+
         & .k-icon.primary-color-button{
           color: white !important;
         }
       }
 
  
-     
-      &.k-toolbar-first-visible{
 
-        background: map-get($map: $Colors, $key: main-color ) !important;
-      }
   
       &:hover{
-        background: map-get($map: $Colors, $key: bg-qube ) !important;
-        opacity: 0.5;
-        box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+
         border-radius: 10px;
       }
       
@@ -515,16 +471,10 @@
     }
   
   & .k-button-group{
-    background: map-get($map: $Colors, $key: bg-qube );
-  box-shadow: 0px 0px 8px map-get($map: $Colors, $key: login-screen-boxshadow );
+
   border-radius: 10px;
   margin-left: 20px !important;
 
- 
-  &:focus-within{
- 
-    box-shadow: 0px 0px 5px rgba(123, 9, 141, 0.25) !important;
-  }
 
   
   & .k-button{
@@ -538,9 +488,6 @@
   
   }
 
-  .k-pager-info.k-label{
-    color: map-get($map: $Colors, $key: text-defualt ) !important;
-  }
   
   .roundedNoneMobile{
     padding: 0 !important;
@@ -557,12 +504,12 @@
       margin-top: 0 !important;
     } 
    & >:first-child>div>div>div>h4{
-    font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+
     font-style: normal;
     font-weight: 400 !important;
     font-size: 30px !important;
     line-height: 30px;
-    color: #7B098B !important;
+
   
    }
     & >:nth-child(2){
@@ -574,8 +521,6 @@
       & >.rectAll {
         width: 100px;
         height: 35px;
-
-        box-shadow: 0px 4px 8px rgba(126, 123, 123, 0.1);
         border-radius: 10px;
       }
       & >.rectFrozen {
@@ -597,7 +542,7 @@
         }
          
          & >div>div>div>div>span{
-          font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+
           font-style: normal !important;
           font-weight: 300 !important;
           font-size: 13px !important;
@@ -641,6 +586,7 @@
     justify-content: center;
     margin: auto;
     margin-bottom: 15px;
+    background: none;
    
     & >.k-pager-nav:hover{
       border: none !important;
@@ -800,7 +746,7 @@
     
         & >table>tbody>tr>td{
   
-          font-family: map-get($map: $typographyVariables, $key: -font-family) ;
+
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -817,7 +763,7 @@
           padding-right: 10px;
 
           &.text-spicel{
-            color: #7B098B !important;
+
           }
 
           a{
@@ -850,18 +796,7 @@
           }
             
           
-  
-          & >.statusOngoing{
-  
-            background: none !important;
-            font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 130%;
-            text-align: right;
-            color: map-get($map: $Colors, $key: text-defualt ) !important;
-          }
+
           
         
           & >i.fa-wrench{
@@ -899,18 +834,7 @@
       margin-right:  -10px !important;
      
     }
-    & >table>thead>tr>th>span>span{
-    
-      font-family: map-get($map: $typographyVariables, $key: -font-family);
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 130%;
-      text-align: right;
-      color: $grid-header-text-color;
-  
-     
-    }
+
 
     & .k-grid-filter-menu.k-grid-filter{
       padding: 0 !important;
@@ -968,21 +892,14 @@
       border: none !important;
       width: 50px;
       height: 50px;
-      background: map-get($map: $Colors, $key: bg-qube ) !important;
-    -webkit-box-shadow: 0px 0px 12px rgb(123 9 141 / 12%) !important;
-    box-shadow: 0px 0px 12px rgb(123 9 141 / 12%) !important;
     border-radius: 10px;
     top: 4px;
     margin-left: 13px;
 
-    &:focus-within{
-      border: 1px solid #DDC3E7 !important;
-      box-shadow: 0px 0px 5px rgba(123, 9, 141, 0.25) !important;
-    }
+
   
       & span{
 
-        color: map-get($map: $Colors, $key:main-color ) !important;
         &::before{
           top:0 !important;
         }
@@ -1024,7 +941,7 @@
   .k-pager-sizes.k-label{
     position: absolute;
     left: 0;
-    font-family: map-get($map: $typographyVariables, $key: -font-family);
+
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -1044,7 +961,7 @@
     border: none;
   }
   & >span>span{
-  font-family: map-get($map: $typographyVariables, $key: -font-family) !important;
+
   font-style: normal !important;
   font-weight: 400;
   font-size: 13px !important;
@@ -1095,7 +1012,7 @@
 
     
       background: #FBFBFB !important;
-      box-shadow: map-get($map: $Colors, $key: login-screen-boxshadow ) !important;
+
       border-radius: 10px !important;
 
       & #xExport_buttonmenu,
@@ -1139,33 +1056,32 @@
    
           & .k-i-grid-icon{
             font-size: 22px;
-            color: #7B098B ;
+
           }
          }
         & >span{
            padding-top: 0 !important;
            padding-bottom: 0 !important;
            min-height: 44px;
-           font-family: map-get($map: $typographyVariables, $key: -font-family);
            font-style: normal;
            font-weight: 400;
            font-size: 14px;
            line-height: 18px;
            background: none !important;
-           color: map-get($map: $Colors, $key: text-defualt );
+
 
            & >span:first-child{
             &.k-menu-link-text{
-              font-family: map-get($map: $typographyVariables, $key: -font-family);
+   
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
               line-height: 18px;
               background: none !important;
-              color: map-get($map: $Colors, $key: text-defualt );
+
             }  
             font-size: 22px;
-            color: #7B098B ;
+
            }
         }
       

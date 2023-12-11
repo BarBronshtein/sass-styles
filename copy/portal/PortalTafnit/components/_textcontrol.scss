@@ -26,6 +26,7 @@
     & input{
       @extend %texbox-input;
       padding-right: 10px !important;
+      padding-left: 10px !important;
       padding: 0;
 
         &:focus{

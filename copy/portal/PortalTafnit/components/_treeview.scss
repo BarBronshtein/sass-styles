@@ -21,7 +21,7 @@
     }
     &.k-selected{
         border-radius: 4px;
-        background: var(--vanilla-primary-500, #8EBBCF);
+        background: var(--vanilla-primary-500, #7B098B);
 
         .k-treeview-leaf-text,span{
             color: var(--vanilla-other-white, var(--color-other-white, #FFF));
@@ -29,7 +29,7 @@
     }
     &.k-focus{
         border-radius: 4px;
-        box-shadow: 0px 0px 8px 0px rgba(166, 203, 221, 0.50);
+        box-shadow: 0px 0px 8px 0px rgba(123, 9, 139, 0.30);
     }
 
     &.k-hover{

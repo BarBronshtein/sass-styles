@@ -12,13 +12,83 @@
     }
 }
 
-/*kendo rating*/
 
-.kendo-rating {
-    .k-i-close-circle {
-        &:hover {
-            cursor: pointer;
-            color: red;
+
+
+
+.xstyle-krating-wrapper{
+  margin-top: 15px;
+    & label{
+        @extend %texbox-label;
+    }
+
+    & .k-icon.k-i-close-circle{
+        color: var(--icon-color-close) ;
+        font-size: 20px;
+     
+        &:hover{
+
+            color: #CCCCCC ;
+        }
+        &::before{
+            content: "\e9a5";
+            font-family: "icomoon";
+            font-size: 20px ;
+            font-weight: 600;
         }
     }
+
+   & .kendo-rating{
+
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    & .k-rating.k-widget{
+        display: grid;
+        grid-template-columns: 85% 15%;
+      
+
+       & .k-rating-label{
+        direction: ltr;
+        & span{
+            font-family: 'Heebo' ;
+            font-style: normal ;
+            font-weight: 400 ;
+            font-size: 14px ;
+            line-height: 100% ;
+            text-align: right ;
+            color: var(--label-text-color-caption) ;
+        }
+       }
+
+        & .k-rating-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            
+
+            & .k-icon{
+                margin: auto;
+                color: var(--labelstar-off-icon-color);
+                font-size: 28px;
+                &::before{
+                    content: "\e9c5";
+                    font-family: 'icomoon';
+                }
+            
+            }
+
+            & .k-icon.k-i-star{
+                 text-shadow: none ;
+                color: var(--labelstar-on-icon-color) ;
+                &::before{
+                    content: "\e9c6";
+                    font-family: 'icomoon';
+                }
+            }
+        }
+    }
+
+   }
+
 }
+

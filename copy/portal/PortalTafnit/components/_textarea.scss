@@ -23,6 +23,8 @@
       height: 150px !important;
             margin-bottom: 20px !important;
             outline: none !important;
+            line-height: 1.5;
+            font-size: 13px !important;
             
     &:focus{
       box-shadow:$control-box-shadow-focus !important;
