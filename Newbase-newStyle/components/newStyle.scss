@@ -14,6 +14,7 @@
 @import '../components/container-controls/tab';
 @import '../components/container-controls/window';
 @import '../components/container-controls/ButtonGroup';
+@import '../components/grid';
 
 
 
@@ -94,6 +95,7 @@
 @import '../components/Other/videoStream';
 @import '../components/Other/virtual-keyboard';
 @import '../components/Other/vkeyboard';
+@import '../components/Other/json';
 @import '../components/toolbar';
 
 @import '../pages/login';
@@ -102,8 +104,7 @@
 @import '../pages/meeting';
 
 
-
-// @import '../pages/Tass/errorPage';
+ @import '../pages/Tass/errorPage';
  @import '../pages/Tass/FileViewer';
 // @import '../pages/Tass/FillAndSignV2Page';
  @import '../pages/Tass/payment';
@@ -112,7 +113,9 @@
 
 
 
-
+ .x-control-devmode-wrapper.s-control-devmode-wrapper {
+  position: absolute;
+}
 
 .xtafnit_pageContainer ,#uber-container{
   padding: 0;

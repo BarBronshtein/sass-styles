@@ -282,11 +282,11 @@
    //title//
 
    .greyPanel .x-section-header-wrapper .x-section-header{
-    font-size: 18px;
+    font-size: 16px;
    }
 
    .portalGrid h4{
-    font-size: 18px;
+    font-size: 16px;
     padding: 0;
    }
 
@@ -396,11 +396,13 @@
     height: 40px;
 }
 
-.order-hedr .x-kicon span{
+.order-hedr .x-kicon span.x-kicon-caption{
     font-size: 13px !important;
 }
 
-
+.order-hedr .x-kicon span.k-icon{
+    font-size: 10px !important;
+}
 
 .orderNumber .xstyle-textcontrol-wrapper{
     height: 40px;

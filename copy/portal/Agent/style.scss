@@ -2,7 +2,6 @@
 
 @import './variable/variable';
 
-@import './../../../Newbase-newStyle/components/newStyle.scss';
 @import './components/header';
 @import './components/multiselect';
 @import './components/row';
@@ -166,4 +165,17 @@ body,html{
 
 #uber-container {
     padding-right: 50px !important;
+}
+
+.xtaf-logo-image {
+    img{
+        height: auto !important;
+    }
+}
+
+div[uxid="rOpenLeasingOrders"]{
+
+    h4{
+        padding-right: 15px !important;
+    }
 }

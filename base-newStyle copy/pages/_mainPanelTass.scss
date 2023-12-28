@@ -1,3 +1,14 @@
+
+
+#TafnitCore_SaaSServer_UI_main{
+    header{
+    background: var(--tass-header-bg) !important;
+    border: none !important;
+    box-shadow: none;
+    }
+}
+
+
 #TafnitCore_SaaSServer_Survey_UI_Survey{
 
 
@@ -152,4 +163,83 @@
     
     }
 
+}
+
+mainbody > .row.x-taas-header,
+.x-taas-header {
+    height: 68px;
+    background: var(--taas-header-bg-color) !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0;
+    height: 68px;
+    z-index: 50;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--taas-header-border-color, #DEDEDE) !important;
+    .xstyle-image-wrapper {
+        position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    }
+    img{
+
+        width: 130px!important;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: auto !important;
+        max-height: 65px !important;
+    }
+} 
+
+
+
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) {
+
+
+    border: none !important;
+    background: #FCFCFC !important;
+    height: 76px !important;
+    box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
+    z-index: 50;
+    .x-taas-footer{
+
+        border: none !important;
+
+        & .xstyle-buttoncontrol-wrapper{
+
+            &.k-state-disabled{
+                opacity: 1 !important;
+                & button.k-button.x-button{
+                height: 40px !important;
+                border: 1px solid #F0F0F1 !important;
+                background: #F0F0F1 !important;
+                color: #6B6E77 !important;
+                border-radius: 30px !important;
+                box-shadow: none !important;
+            }
+        }
+            & button.x-button{
+    
+                height: 40px !important;
+                background: #8C4D9C !important;
+                border-radius: 30px !important;
+                font-family: 'Heebo';
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 14px !important;
+                line-height: 26px !important;
+                text-align: center !important;
+                color: white !important;
+                margin-top: 14px !important;
+                border: none;
+
+                
+            }
+        }
+    }
 }

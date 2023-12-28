@@ -21,30 +21,32 @@
     }
    .k-button{
         min-width: 40px;
-        background-color:var(--button-primary-bg-color-default) !important ;
         height: 40px ;
         border: none;
         border-radius: 4px;
-
+        background: var(--toolbar-button-bg-color-default) !important;
+        box-shadow: 0px 0px 4px 0px rgba(3, 144, 188, 0.25) !important;
+       &::before{
+        background: none;
+       }
         span{
-            color: var(--button-primary-text-color-default)
+            color: var(--toolbar-button-text-color-default)
         }
         &:hover{
             border: none;
-            background-color:var(--button-primary-bg-color-hover) !important ;
-    
+            background: var(--toolbar-button-bg-color-hover) !important;
+            box-shadow: 0px 0px 4px 0px rgba(2, 97, 128, 0.80) !important;
             span{
-                color: var(--button-primary-text-color-default)
+                color: var(--toolbar-button-text-color-default)
             }
         }
-        &:focus{
-            background: var(--button-primary-bg-color-focus) !important;
-            box-shadow: var(--button-primary-focus);
+        &:focus,&:focus-within,&:active{
+            border: 1px solid var(--toolbar-button-border-color-focus) !important;
+            background: var(--toolbar-button-bg-color-default) !important;
+            box-shadow: 0px -3px 4px 0px rgba(2, 97, 128, 0.20), 0px 3px 4px 0px rgba(2, 97, 128, 0.50) !important;
         }
     
-    
-    
-    
+      
     }
 
 .k-overflow-anchor{

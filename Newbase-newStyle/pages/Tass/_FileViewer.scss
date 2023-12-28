@@ -1,7 +1,9 @@
 #TafnitCore_SaaSServer_Storage_UI_FileViewer{
  .x-card-wrapper .x-card-flie{
+    border: none !important;
     border-bottom: 1px solid var(--taas-fileviewer-card-line-color) !important;
     border-radius: 0;
+    align-items: center;
  }
 .xstyle-dynamiclabelcontrol-wrapper.x-label-pagetitle span{
 

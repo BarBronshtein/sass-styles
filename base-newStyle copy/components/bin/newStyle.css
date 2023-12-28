@@ -557,23 +557,26 @@
 .x-text-with-button-wrapper .x-barcodeBtnContainer .k-icon.k-i-preview {
   left: 10px;
 }
+.x-text-with-button-wrapper .x-barcodeBtnContainer .k-icon.k-i-preview:focus-visible {
+  outline: none;
+  border: none;
+}
 
 .x-barcodeBtnContainer .k-icon.k-i-preview {
   left: 10px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  color: #8ebbcf;
 }
 
-.k-rtl .x-text-with-button-wrapper .x-barcodeBtnContainer {
-  right: auto !important;
-  border-right: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+:focus-visible {
+  outline: none !important;
+  border: none;
 }
 
 .xstyle-barcodetextcontrol-wrapper input.k-textbox.x-textbox {
-  padding-right: unset;
+  padding-right: 15px;
 }
 
 .x-text-with-button-wrapper.barcode-container {
@@ -581,16 +584,73 @@
 }
 
 .x-text-with-button-wrapper .x-barcodeBtnContainer {
+  border: none;
+  color: var(--button-primary-text-color-default);
+  background-color: var(--button-primary-bg-color-default);
   border-radius: 4px;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   left: unset;
   right: calc(100% + 5px);
-  color: #fff;
-  background-color: rgb(142, 187, 207);
+}
+.x-text-with-button-wrapper .x-barcodeBtnContainer .k-icon::before {
+  color: var(--button-primary-icon-color-default);
+}
+.x-text-with-button-wrapper .x-barcodeBtnContainer:hover {
+  border: none;
+  background-color: var(--button-primary-bg-color-hover);
+}
+.x-text-with-button-wrapper .x-barcodeBtnContainer:hover a {
+  color: var(--button-primary-text-color-default);
+}
+.x-text-with-button-wrapper .x-barcodeBtnContainer:focus, .x-text-with-button-wrapper .x-barcodeBtnContainer :active, .x-text-with-button-wrapper .x-barcodeBtnContainer :focus-within {
+  background: var(--button-primary-bg-color-focus) !important;
+  box-shadow: var(--button-primary-focus) !important;
+  border-radius: 4px;
+}
+
+#TafnitCore_System_UI_App_Tools_BarcodeScannerPopup a.k-window-action {
+  border: none;
+  background: none;
+}
+#TafnitCore_System_UI_App_Tools_BarcodeScannerPopup a.k-window-action .k-icon {
+  color: #d9d9d9;
 }
 
 .x-text-with-button-wrapper .x-barcodeBtnContainer {
   height: 100%;
   top: 0;
+}
+
+.k-drag-clue, .k-grid-header, .k-grouping-header, .k-header, .k-menu, .k-panelbar > .k-panelbar-header > .k-link, .k-progressbar, .k-state-highlight, .k-tabstrip, .k-tabstrip-items .k-item, .k-toolbar {
+  background-image: none !important;
+}
+
+.popUpWindowCls #TafnitCore_System_UI_App_Tools_BarcodeScannerPopup.x-pagePopup {
+  box-shadow: 0px 5px 8px 0px rgba(142, 187, 207, 0.2);
+  background-color: #fff;
+  border-radius: 4px;
+  max-height: 95%;
+  max-width: 95%;
+  margin: auto !important;
+}
+.popUpWindowCls #TafnitCore_System_UI_App_Tools_BarcodeScannerPopup::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+.popUpWindowCls #TafnitCore_System_UI_App_Tools_BarcodeScannerPopup::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+.popUpWindowCls #TafnitCore_System_UI_App_Tools_BarcodeScannerPopup::-webkit-scrollbar-thumb {
+  background: rgb(142, 187, 207);
+  border-radius: 10px;
+}
+.popUpWindowCls #TafnitCore_System_UI_App_Tools_BarcodeScannerPopup::-webkit-scrollbar-thumb:hover {
+  background: rgb(142, 187, 207);
 }
 
 .x-crumb-wrapper {
@@ -8496,7 +8556,7 @@ html, body {
   --link-text-color-default: #0eaadc;
   --otp-border-color-default: #dedede;
   --otp-bg-color-default: #ffffff;
-  --button-primary-bg-color-default: #7b098b;
+  --button-primary-bg-color-default: rgba(142, 187, 207, 1);
   --button-primary-text-color-default: #ffffff;
   --button-primary-icon-color-default: #ffffff;
 }
@@ -8682,6 +8742,12 @@ body:has(#TafnitCore_SaaSServer_Storage_UI_FileViewer) {
   line-height: 19px;
 }
 
+#TafnitCore_SaaSServer_UI_main header {
+  background: var(--tass-header-bg) !important;
+  border: none !important;
+  box-shadow: none;
+}
+
 #TafnitCore_SaaSServer_Survey_UI_Survey .x-taas-image {
   position: fixed;
   top: 0;
@@ -8790,6 +8856,74 @@ body:has(#TafnitCore_SaaSServer_Storage_UI_FileViewer) {
   font-weight: 500;
   line-height: 22px; /* 137.5% */
   text-decoration-line: underline;
+}
+
+mainbody > .row.x-taas-header,
+.x-taas-header {
+  height: 68px;
+  background: var(--taas-header-bg-color) !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0;
+  height: 68px;
+  z-index: 50;
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--taas-header-border-color, #DEDEDE) !important;
+}
+mainbody > .row.x-taas-header .xstyle-image-wrapper,
+.x-taas-header .xstyle-image-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+mainbody > .row.x-taas-header img,
+.x-taas-header img {
+  width: 130px !important;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: auto !important;
+  max-height: 65px !important;
+}
+
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) {
+  border: none !important;
+  background: #FCFCFC !important;
+  height: 76px !important;
+  box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
+  z-index: 50;
+}
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) .x-taas-footer {
+  border: none !important;
+}
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) .x-taas-footer .xstyle-buttoncontrol-wrapper.k-state-disabled {
+  opacity: 1 !important;
+}
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) .x-taas-footer .xstyle-buttoncontrol-wrapper.k-state-disabled button.k-button.x-button {
+  height: 40px !important;
+  border: 1px solid #F0F0F1 !important;
+  background: #F0F0F1 !important;
+  color: #6B6E77 !important;
+  border-radius: 30px !important;
+  box-shadow: none !important;
+}
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) .x-taas-footer .xstyle-buttoncontrol-wrapper button.x-button {
+  height: 40px !important;
+  background: #8C4D9C !important;
+  border-radius: 30px !important;
+  font-family: "Heebo";
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 26px !important;
+  text-align: center !important;
+  color: white !important;
+  margin-top: 14px !important;
+  border: none;
 }
 
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-form-field label, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper label {
@@ -10603,6 +10737,16 @@ html:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .x-footer {
   max-width: 420px !important;
   margin: auto !important;
 }
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page):has(#TafnitCore_SaaSServer_Funding_UI_Main),
+html:has(#TafnitCore_SaaSServer_Survey_UI_Survey):has(#TafnitCore_SaaSServer_Funding_UI_Main) {
+  max-width: none !important;
+  margin: auto !important;
+}
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page):has(#TafnitCore_SaaSServer_Funding_UI_Main) .x-footer,
+html:has(#TafnitCore_SaaSServer_Survey_UI_Survey):has(#TafnitCore_SaaSServer_Funding_UI_Main) .x-footer {
+  max-width: none !important;
+  margin: auto !important;
+}
 html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) #watermark,
 html:has(#TafnitCore_SaaSServer_Survey_UI_Survey) #watermark {
   right: 0 !important;
@@ -10719,6 +10863,26 @@ body.k-content {
 
 #TafnitCore_SaaSServer_OTP_UI_OTPValidation {
   padding: 0px 0px;
+}
+#TafnitCore_SaaSServer_OTP_UI_OTPValidation .alert-Message {
+  border-radius: 20px;
+  background: var(--Color-white-1000, #FFF);
+  box-shadow: 0px 2px 16px 0px rgba(11, 0, 77, 0.14);
+  padding: 20px 35px;
+  color: var(--label-text-color-subtitle, var(--prime-blue-white-1000, #232873));
+  text-align: center;
+  /* subtitle-large */
+  font-family: Heebo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  border: none;
+  width: max-content !important;
+  max-width: none !important;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 #TafnitCore_SaaSServer_OTP_UI_OTPValidation #watermark {
   background: var(--background-light-grey, #F9F9F9);

@@ -3,10 +3,7 @@
   box-shadow: none;
 }
 
-.k-list-item.k-selected{
-  background: #ae2a30;
-  color: white !important;
-}
+
 
 .k-rtl .k-window-titlebar .k-window-actions{
   right: auto;
@@ -67,6 +64,13 @@
                 color: $list-view-text-default;
             }
 
+
+            &.k-list-item.k-selected{
+              background: #ae2a30;
+              span{
+              color: white !important;
+              }
+            }
         }
     }
   }

@@ -1,0 +1,45 @@
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleHistory{
+    .greyPanel .gridHeaderButton > div .xstyle-buttoncontrol-wrapper .x-button-wrapper{
+        float: right;
+    }
+
+
+
+    .greyPanel .header-grid .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper{
+        float: left;
+        margin-bottom: 15px;
+    }
+
+    .header-grid .gridHeaderButton{
+        display: block;
+    }
+
+    .header-grid{
+        display: block;
+    }
+
+
+
+
+        .greyPanel .x-tab-control  .gridHeaderButton > div.xstyle-buttoncontrol-wrapper .x-button-wrapper{
+            float: left;
+        }
+        .greyPanel .x-tab-control .first-panel .gridHeaderButton{
+            gap: 0px;
+        }
+ 
+}
+
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_VehicleDrivers{
+    .header-grid{
+        .x-button-wrapper{
+            text-align: center;
+        }
+    }
+}
+
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_CreateDriver{
+    .x-button-wrapper {
+        text-align: left;
+    }
+}

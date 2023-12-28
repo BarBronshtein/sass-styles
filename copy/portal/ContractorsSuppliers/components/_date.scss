@@ -1,0 +1,342 @@
+:root{
+    --calender-footer-bg-color:#FBFBFB;
+    --calender-header-bg-color: #FBFBFB;
+    --calender-header-icon-color:#366934;
+    --calender-header-text-color:#000;
+    --calender-footer-border-color:#366934;
+    --calender-week-days-text-color:#204C1F;
+    --calender-item-text-color-default:#366934;
+    --calender-item-today-border-color-default:#366934;
+    --calender-item-text-color-default:#366934;
+    --calender-item-text-color-prev:#7E7B7B;
+    --calender-item-text-color-disable:#C8C8C8;
+    --calender-item-today-border-color-disable:#C8C8C8;
+    --calender-item-selected-bg-color-default:#366934;    
+    --calender-item-selected-text-color:#FFF;
+    --calender-item-text-color-hover:#204C1F;
+    --calender-footer-text-color:#5E955C;
+    --calender-window-bg-color :#FFF;
+}
+
+
+
+
+
+
+
+
+.xstyle-date-wrapper{
+    &:focus,&:focus-within{
+        box-shadow: none;
+        border: 1px solid var(--text-field-text-field-border-focus, #366934) !important;
+    }
+    padding: 5px ;
+    padding-bottom: 0;
+    border-radius: 0 !important;
+    &.k-state-disabled{
+
+        opacity: 1;
+
+        label{
+         
+            color: var(--text-field-text-field-caption-disable, #C8C8C8);
+              
+        }
+        .k-input.x-datePickerResponsive{
+
+            border-bottom: 1px solid var(--text-field-text-field-border-disable, #ECECEC);
+            button{
+ 
+                & span{
+               
+                &::before{
+     
+                    color: #C8C8C8;
+                }
+            }
+            }
+        }
+   
+
+    }
+
+    label{
+        color: var(--text-field-text-field-caption-default, #000);
+        text-align: right;
+        
+        /* desktop/label */
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 16.8px */
+    }
+
+  .k-input.x-datePickerResponsive{
+
+    border-bottom: 1px solid var(--text-field-text-field-border-default, #DEDEDE);
+    background: var(--text-field-text-field-bg-default, #FFF);
+    padding: 4px;
+    padding-top: 0;
+    &:focus,&:focus-within{
+        box-shadow: none;
+    
+    }
+
+    button{
+        top: -2px;
+        background: none;
+        & span{
+            left: 14px;
+        &::before{
+            content: "\e973" ;
+            font-family: "icomoon";
+            font-size: 25px;
+            /* top: 5px; */
+            left: -24px;
+            color: #5E955C;
+        }
+    }
+    }
+    input{
+        color: var(--text-field-text-field-input, #000);
+        text-align: right;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 15.4px */
+
+        &:focus,&:focus-within{
+            box-shadow: none;
+        }
+    }
+  }
+
+}
+
+// clander //
+
+.k-animation-container .k-popup:has(.k-calendar-table){
+
+    background: var(--calender-window-bg-color);
+    border-radius: 10px;
+    box-shadow:0px 4px 8px 0px rgba(94, 149, 92, 0.30) !important;
+    .k-calendar{
+        background: none;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .k-hover a{
+        border-radius: 100px;
+    }
+
+    // header calnder //
+
+    .k-header.k-hstack{
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        background: var(--calender-header-bg-color);
+        border: none !important;
+
+           .k-nav-prev{
+
+            span{
+                color:var(--calender-header-icon-color) !important;
+               }
+           }
+
+           .k-nav-fast{
+
+          
+
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: var(--calender-header-text-color) !important;  
+
+           
+           }
+
+           .k-nav-next{
+
+            span{
+                color: var(--calender-header-icon-color) !important;
+              }
+           }
+    }
+
+
+    // body calnder //
+
+  
+
+    .k-calendar-view.k-calendar-yearview,
+    .k-calendar-view.k-calendar-decadeview{
+        background:#fff;
+      
+        table{
+            tbody{
+              tr{
+        
+                td.k-calendar-td{
+                    padding: 10px 0px;
+                    height: 36px !important;
+
+                    &:hover{
+                        a {
+                            color: var(--calender-item-text-color-hover);;
+           
+                            border: 1px solid var(--calender-item-today-border-color-default);
+                            background: none;
+                            border-radius:100px !important;
+                            height: 36px !important;
+                            font-weight: 700;
+                        }
+                    }
+                    &.k-focus{
+                     
+
+                        a{
+                    
+                            font-weight: 700;
+                            box-shadow: none;
+                            height: 36px !important;
+                            background: var(--calender-item-selected-bg-color-default);
+                            color: var(--calender-item-selected-text-color) !important;
+                            border-radius: 100px;
+                            box-shadow: none;
+                        }
+
+                    }
+
+                    a{
+                        height: 36px !important;
+                        font-family: 'Heebo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 24px;
+                        color:var(--calender-item-text-color-default);
+                       
+                    }
+                }
+              }
+            }
+        }
+    }
+
+
+
+
+    // month calnder //
+
+       .k-calendar-view.k-calendar-monthview{
+          border-bottom: 1px solid var(--calender-footer-border-color);;
+             th{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 24px;
+                color: var(--calender-week-days-text-color);;
+             }
+
+             td{
+
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                color: var(--calender-item-text-color-default);;
+                
+            
+
+                // עמודה שהיא תאריך נוכחי //
+
+                &.k-today{
+                    a{
+                    border:  1px solid var(--calender-item-today-border-color-default);
+                    color:var(--calender-item-text-color-default);
+                    border-radius:50%;
+                    box-shadow: none;
+                    }
+                }
+
+                // עמודה מחודש אחר או חודש הבא //
+
+                &.k-other-month{
+              
+                    color: var(--calender-item-text-color-prev) !important;
+                    &:hover{
+                        a{
+                            border: 1px solid var(--calender-item-today-border-color-disable);
+                            color:var(--calender-item-text-color-disable);
+                        }
+                    }
+                }
+
+                // עמודה שהיא חלק מהספוש //
+
+                &.k-weekend{
+                    color:  var(--calender-item-text-color-disable);
+                    &:hover{
+                        a{
+                            border:1px solid var(--calender-item-today-border-color-disable);
+                            color:  var(--calender-item-text-color-disable);
+                        }
+                    }
+                }
+
+                // focus day //
+
+                &.k-focus{
+                    a {
+                        background: var(--calender-item-selected-bg-color-default);
+                        border-radius:50%;
+                        color: var(--calender-item-selected-text-color);
+                        font-weight: 700;
+                        box-shadow: none !important;
+                    }
+                }
+
+
+                // hover day //
+                &:hover{
+                    a {
+                        color: var(--calender-item-text-color-hover);;
+                        background: none;
+                        border-radius:50%;
+                        border: 1px solid var(--calender-item-today-border-color-default);
+                        font-weight: 700;
+                    }
+                }
+             }
+
+       }
+
+
+
+    // footer calnder //
+
+    .k-footer{
+        a{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            color: var(--calender-footer-text-color);
+        }
+    }
+
+}

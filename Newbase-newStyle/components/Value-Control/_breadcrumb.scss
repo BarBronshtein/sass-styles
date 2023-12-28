@@ -32,8 +32,9 @@
         text-decoration-line: underline;
         }
         &:focus{
-            color: var(--breadcrumb-text-color-selected);
+            color: var(--breadcrumb-text-color-selected) !important;
             font-weight: 500;
+            text-decoration-line:none !important;
         }
     }
     display: inline-block;

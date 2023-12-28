@@ -32,6 +32,17 @@ margin-top: 15px;
 
   span.x-dropdown-comp.s-dropdown-comp{
     height: 30px;
+    padding: 5px;
+
+    .k-input-value-text{
+      font-size: 12px !important;
+
+    
+    }
+  }
+
+  .k-input-button span.k-icon::before{
+    font-size: 17px;
   }
 }
 &:has(.x-login-user-error-msg){
@@ -117,40 +128,7 @@ margin-top: 15px;
 }
 
 
-.k-list-scroller,.k-virtual-content{
-scrollbar-face-color: #8EBBCF;
-scrollbar-track-color: #f3e9f8;
-scrollbar-arrow-color: #8EBBCF;
 
-/* width */
-/* Track */
-/* Handle */
-/* Handle on hover */
-
-&::-webkit-scrollbar {
-  width: 10px ;
-  border-radius: 10px;
-  position: absolute;
-}
-
-
-&::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: var(--scrollbar-track-bg-color);
-}
-
-&::-webkit-scrollbar-thumb {
-  background:var(--scrollbar-thumb-bg-color-default)  ;
-  border-radius: 10px;
-  
-
-  &:hover {
-    background: var(--scrollbar-thumb-bg-color-hover);
-    
-  }
-  }
-
-}
 
 
 .k-animation-container{
@@ -215,3 +193,39 @@ scrollbar-arrow-color: #8EBBCF;
 
 
 }
+
+
+.k-list-scroller,.k-virtual-content,.k-window-content{
+  scrollbar-face-color: #8EBBCF;
+  scrollbar-track-color: #f3e9f8;
+  scrollbar-arrow-color: #8EBBCF;
+  
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  
+  &::-webkit-scrollbar {
+    width: 10px ;
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: var(--scrollbar-track-bg-color);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background:var(--scrollbar-thumb-bg-color-default)  ;
+    border-radius: 10px;
+    
+  
+    &:hover {
+      background: var(--scrollbar-thumb-bg-color-hover);
+      
+    }
+    }
+  
+  }

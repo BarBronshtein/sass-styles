@@ -66,7 +66,7 @@
 
     border-radius: 10px;
     background: var(--vanilla-other-white, #FFF);
-    box-shadow: 0px 0px 10px 0px rgba(148, 182, 198, 0.25);
+    box-shadow:  0px 5px 8px 0px rgba(142, 187, 207, 0.20) !important;
     border: none;
     padding: 20px;
     right: 0 !important;
@@ -74,12 +74,17 @@
     max-width: 95%;
     margin: 0 auto;
     .k-window-content{
-        padding: 0;
+        padding: 0 !important;
+        margin-top: 30px;
     }
     .k-window-titlebar{
 
-        border: none;
-        background: none;
+        border: none;     
+        position: fixed;
+        top: 0;
+        z-index: 24;
+        background: #F5F5F5;
+        left: 0;
 
       .k-window-title{
 

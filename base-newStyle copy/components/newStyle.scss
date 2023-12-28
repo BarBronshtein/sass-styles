@@ -97,7 +97,16 @@ html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
     max-width: 420px !important;
     margin: auto !important;
   }
+  &:has(#TafnitCore_SaaSServer_Funding_UI_Main){
 
+    max-width: none !important;
+    margin: auto !important;
+  
+    .x-footer {
+      max-width: none !important;
+      margin: auto !important;
+    }
+  }
   #watermark{
     right: 0 !important;
   }
@@ -255,6 +264,27 @@ margin: 0;
 
 #TafnitCore_SaaSServer_OTP_UI_OTPValidation{
   padding: 0px 0px;
+
+  .alert-Message {
+    border-radius: 20px;
+    background: var(--Color-white-1000, #FFF);
+    box-shadow: 0px 2px 16px 0px rgba(11, 0, 77, 0.14);
+    padding: 20px 35px;
+    color: var(--label-text-color-subtitle, var(--prime-blue-white-1000, #232873));
+    text-align: center;
+    /* subtitle-large */
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border: none;
+    width: max-content !important;
+    max-width: none !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 
   #watermark{
     background: var(--background-light-grey, #F9F9F9);

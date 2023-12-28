@@ -163,6 +163,7 @@
     --grid-pager-nav-arrow-icon-color-disable: rgba(222, 222, 222, 1);
     --grid-pager-numpage-text-color-selected: rgba(142, 187, 207, 1);
     --grid-pager-numpage-text-color-default: rgba(200, 200, 200, 1);
+    --grid-cell-selected-bg-color:#8EBBCF;
     --scrollbar-track-bg-color: rgba(249, 249, 249, 1);
     --scrollbar-thumb-bg-color-default: rgba(142, 187, 207, 1);
     --scrollbar-thumb-bg-color-hover: rgba(128, 169, 187, 1);
@@ -178,6 +179,10 @@
     --tab-selected-border-color-disable: rgba(205, 231, 242, 1);
     --tab-selected-border-color-default: rgba(142, 187, 207, 1);
     --tab-border-color-default: rgba(222, 222, 222, 1);
+    --toolbar-button-bg-color-default:#fff;
+    --toolbar-button-border-color-focus:#0082AB;
+    --toolbar-button-text-color-default:#059FCF;
+    --toolbar-button-bg-color-hover:#F8F8F8;
     --circularprogresbar-primary-percent-text-color: rgba(142, 187, 207, 1);
     --circularprogressbar-primary-indicator-bg-color-progress: rgba(142, 187, 207, 1);
     --circularprogressbar-secondary-indicator-bg-color-step1: rgba(200, 200, 200, 1);
@@ -262,7 +267,7 @@
     --breadcrumb-text-color-hover: rgba(117, 155, 172, 1);
     --breadcrumb-arrow-icon-color: rgba(5, 159, 207, 1);
     --breadcrumb-text-color-passes: rgba(0, 130, 171, 1);
-    --breadcrumb-text-color-selected: rgba(14, 170, 220, 1);
+    --breadcrumb-text-color-selected: #0EAADC;
     --barcodescanner-icon-color: rgba(231, 231, 231, 1);
     --barcodescanner-message-text-color-error: rgba(238, 9, 9, 1);
     --barcosescanner-filename-text-color-default: rgba(126, 123, 123, 1);
