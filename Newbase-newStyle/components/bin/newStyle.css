@@ -9775,6 +9775,7 @@ label.btn {
 
 .xtafnit_pageContainer, #uber-container {
   padding: 0;
+  padding: 0;
 }
 
 html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),
