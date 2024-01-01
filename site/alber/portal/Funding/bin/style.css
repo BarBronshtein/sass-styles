@@ -7766,7 +7766,7 @@ label.btn {
   position: relative;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .container.pageContainer.xtafnit_pageContainer {
-  margin: 0;
+  margin: 0 !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=colControlType] {
   display: flex;
@@ -9904,6 +9904,7 @@ label.btn {
 }
 
 .xtafnit_pageContainer, #uber-container {
+  padding: 0;
   padding: 0;
 }
 
