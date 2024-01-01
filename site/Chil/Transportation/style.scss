@@ -1,0 +1,224 @@
+@use  './varible/varible' as *;
+@use './components/textcontrol';
+@use './components/buttoncontrol';
+@use './components/header';
+@use './components/fotter';
+@use './components/textarea';
+@use './components/linkcontrol';
+@use './components/drawer';
+@use './components/checkBox';
+@use './components/slider';
+@use './components/FillAndSign';
+@use './components/CarDamagePointWindow'; 
+@use './components/messageBox'; 
+@use './components/dropDown'; 
+@use './components/autocomplete'; 
+@use './components/mandatory'; 
+@use './components/card'; 
+@use './components/row'; 
+@use './components/cubetitle'; 
+
+@use './pages/Login';
+@use './pages/Tasklist';
+@use './pages/ReportDetails';
+@use './pages/Documents';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap');
+
+div[uxid="MainPanelRow"]{
+  margin-top: 100px;
+}
+ .userName-title{
+
+    & .x-kicon{
+        text-align: center !important;
+    & span.k-icon{
+        margin-bottom: 3px;
+        font-size: 60px;
+        color: #004070 !important;
+    }
+}
+& .secndary-title{
+  & .x-dynamic-label-control{
+    color: #8E8E8E;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+& .x-dynamic-label-control{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #0F6FB7;;
+    text-align: center !important;
+    margin-bottom: 15px;
+   
+}
+}
+
+.xstyle-cardamage-wrapper{
+
+  & .map{
+    width: 258px !important;
+    height: 217px !important;
+    margin-right: 9px !important;
+
+  }
+
+}
+
+.container.pageContainer.xtafnit_pageContainer{
+    margin-bottom: 90px !important;
+    margin-top: 70px !important;
+}
+
+.k-i-close::before{
+
+  content: "\f00d" !important;
+  font-family: "Font Awesome 5 pro" !important;
+}
+
+.alert-Message.failureMessage{
+
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #370202;
+  background-color: #edd5d5;
+  border-color: #ffffff;
+   box-shadow: 0px 5px 5px #0000001f, 0px 0px 5px #0000003b;
+ border-radius:10px;
+ font-family: 'Heebo';
+font-size: 16px;
+
+ 
+
+}
+
+
+.alert-Message.successMessage{
+  color: #ffffff;
+  background-color: #FDAA3F; 
+border-color: #ffffff;
+  border-radius: 10px;
+ box-shadow: 0px 5px 5px #0000001f,0px 0px 5px #0000003b;
+font-family: 'Heebo';
+font-size: 16px;
+
+
+}
+
+div[uxid="cCarDetailes"],
+div[uxid="cSource"],
+div[uxid="cDestination"]{
+  padding: 0 !important;
+}
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main{
+  padding: 0;
+}
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR{
+  padding: 0;
+
+  .col{
+    padding: 0;
+  }
+}
+
+html:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR),
+body:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR){
+  height: 100%;
+  background: #bababa !important;
+
+
+
+  div[uxid=MainPanelRow] {
+    margin-top: 76px;
+}
+
+#watermark{
+  display: none;
+}
+}
+
+.icon-xtab-Exclamation-mark{
+  color: #AF2324 !important;
+}
+
+.k-button.k-button-icon .k-icon, .k-grid-filter .k-icon, .k-header .k-icon{
+  text-indent: 0;
+}
+
+
+
+.k-content,#uber-container{
+  background-image: url('../../../../Images/Logo/chil.co.il/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto !important;
+  background-attachment: fixed !important;
+
+
+}
+
+.k-safari{
+
+  height: 100% !important;
+}
+
+
+.k-content:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage),
+#uber-container:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage){
+  background: none !important;
+
+  #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage{
+    padding: 0;
+    .bg-wrarper .col{
+      padding: 0;
+    }
+  }
+
+
+}
+
+
+div[uxid=MainPanelRow]:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_ActionPage){
+  margin-top: 70px;
+}
+
+.card-btn{
+  position: absolute;
+  top: 50%;
+}
+
+.pageContainer  {
+  width: 100%;
+}
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR){
+  width: 100% !important; 
+
+  #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR{
+     width: 100% !important;
+  }
+}
+
+.k-content:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR),
+#uber-container:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPR){
+  background-image: none !important;
+}
+
+.popUpWindowCls mainbody > .row{
+  box-shadow: none !important;
+}
+
+.popUpWindowCls .x-pagePopup{
+  border-radius: 10px !important;
+}

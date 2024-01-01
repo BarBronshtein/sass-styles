@@ -1,0 +1,121 @@
+// survey //
+$title-background: #10143A !default;
+$title-text: White !default;
+$title-secondary: #45B4E3 !default;
+$title-secondary-bottom-border: #94DEFD !default;
+$icon-color : #10143A !default;
+$required: #45B4E3 !default;
+$focus-border:  #45B4E3 !default;
+$high-light-caption : #45B4E3 !default;
+$radio-button-on-background:  #45B4E3 !default;
+$radio-button-on-drop-shadow: 0px 0px 4px #AE2A30 !default;
+$radio-button-on-border: #CCCCCC !default;
+$upload-text: #1182B1 !default;
+$upload-icon: #1182B1 !default;
+$check-box-on-background: #026F9E !default;
+$check-box-on-drop-shadow: none !default;
+$label-star-off-border: #94DEFD !default;
+$checkbox-unselect-icon-color-default:#232873;
+$checkbox-unselected-border-color-focus:#FF5A23;
+$label-star-on-background: #45B4E3 !default;
+$link-text: #0D6394 !default;
+$approve-icon-on: #45B4E3 !default;
+$button-background: #45B4E3 !default;
+$button-press-background: #30587C !default;
+$card-upload-file-icon-file: #1182B1 !default;
+$card-upload-file-name-file: #495057 !default;
+$card-upload-file-ok-text: #1182B1 !default;
+$card-upload-file-error-text: #DB1C33 !default;
+$card-upload-file_error-icon-file: #DB1C33 !default;
+$Box-shadow-footer: 0px -4px 8px rgba(17, 130, 177, 0.2) !default;
+$Box-shadow-button:none !default;
+$Box-shadow-messagebox: 0px -4px 8px rgba(17, 130, 177, 0.2) !default;
+$messagebox-icon-color:#10143A !default;
+$messagebox-border-color:#10143A !default;
+$signature-icon-before:#10143A !default;
+$signature-icon-after:#10143A !default;
+$pop-up-canvas-border:#10143A;
+$pop-up-canvas-box-shadow: 0px -4px 8px rgba(17, 130, 177, 0.2) !default;
+$list-view-border-selected:#10143A !default;
+$switch-bg-on:  #45B4E3 !default;
+$switch-box-shadow-on:0px 0px 4px #45B4E3 !default;
+// payment //
+
+$background: #10143A !default;
+$main-square: #45B4E3 !default;
+$text-square: white !default;
+$text-default: #10143A !default;
+$icon-description : #7E7B7B !default;
+$shadow-big-cube: 0px 0px 15px 15px rgba(0, 0, 0, 0.5) !default;
+$shadow-icon: drop-shadow(0px 0px 8px rgba(17, 130, 177, 0.3)) !default;
+$shadow-icon-press: inset 2px 2px 4px rgba(174, 42, 48, 0.2) !default;
+$back-button: #45B4E3 !default; 
+$icon-approve : #45B4E3 !default;
+$title-approve: #45B4E3 !default; 
+
+
+// _FillAndSignV2Page//
+
+
+$title-colo: #45B4E3 !default;
+$title-border: 1px solid #94DEFD !default; 
+$text-defult: #000000 !default;
+
+$icon-color-main: #45B4E3 !default;
+$icon-colot-text-main: #45B4E3 !default;
+$icon-play-stop-camera-bg: #10143A !default;
+$icon-color-defult:#45B4E3 !default;
+
+$upload-coor-text-file: #7E7B7B !default;
+$upload-coor-text-success: #1182B1 !default;
+$upload-file-error-text: #DB1C33 !default;
+$upload-file_error-icon-file: #DB1C33 !default;
+$upload-title: #45B4E3 !default;
+
+$button-background: #45B4E3 !default;
+$button-press-background: #aaaaaa !default;
+$button-Box-shadow:none !default;
+$button-focus-Box-shadow: 0px 0px 6px 0px rgba(229, 62, 7, 0.60) !default;
+$button-background-hover:#E53E07 !default;
+$button-secondary-focus-border:#ffffff !default;
+$button-secondary-focus-color:#14008E !default;
+$button-secondary-border: #BDBFD5 !default;
+$button-secondary-color: #232873 !default;
+$button-secondary-bg:#ffffff !default;
+$button-secondary-bg-hover: #232873 !default;
+$button-secondary-color-hover: #ffffff !default;
+$button-secondary-focus-box-shadow: 0px 0px 6px 0px rgba(20, 0, 142, 0.60) !default;
+
+$radio-button-on-background: #45B4E3  !default;
+$radio-button-on-drop-shadow: 0px 0px 4px #1182B1 !default; 
+$radio-button-label-text: #000000 !default; 
+
+$check-box-on-background: #ffff !default;
+$check-box-on-drop-shadow:  0px 0px 4px #1182B1 !default;
+$check-box-label-text: #000000 !default;
+
+$icon-color : #45B4E3 !default;
+$required: #45B4E3 !default;
+$focus-border:  #45B4E3 !default;
+$high-light-caption : #45B4E3 !default;
+
+$approve-icon-on: #45B4E3 !default;
+$Box-shadow-footer:0px -4px 8px rgba(17, 130, 177, 0.2) !default;
+
+$messagebox-Box-shadow:0px -4px 8px rgba(17, 130, 177, 0.2) !default;
+$messagebox-icon-color:#10143A !default;
+$messagebox-border-color:#10143A !default;
+
+$signature-icon-before:#10143A !default;
+$signature-icon-after:#10143A !default;
+
+// errorMessage//
+
+$title-background: #10143A !default;
+$card-body-background: white !default;
+$card-body-box-shadow: 2px 2px 10px rgb(22 169 199 / 20%) !default;
+$color-text-title: #10143A !default;
+$color-text-title-link: #10143A !default;
+$color-icon-bell: #10143A !default;
+$note-background: #45B4E3 !default;
+$note-color-text: white !default;

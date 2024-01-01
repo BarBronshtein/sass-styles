@@ -1,0 +1,221 @@
+
+@import './variable/variable';
+
+
+@import './components/header';
+@import './components/row';
+@import './components/cubeDashboard';
+@import './components/drawer';
+@import './components/grid';
+@import './components/linkmenucontrol';
+@import './components/firstPanel';
+@import './components/textcontrol';
+@import './components/datecontrol';
+@import './components/dropdown';
+@import './components/button';
+@import './components/checkBox';
+@import './components/orderCube';
+@import './components/popup';
+@import './components/messageBox';
+@import './components/mandatory';
+@import './components/autocomplete';
+@import './components/payment-cube';
+@import './components/total-panel';
+@import './components/upload';
+@import './components/timeControl';
+@import './components/intlphone';
+@import './components/textarea';
+@import './components/madia';
+@import './components/label';
+@import './components/DashboardMobile';
+@import './components/headerMobile';
+@import './components/tab';
+@import './components/treeview';
+
+@import './page/CloudDashboard';
+@import './page/login';
+@import './page/userDetailes';
+@import './page/ServiceCallCreate';
+@import './page/ClientMobile';
+@import './page/ServiceCallCreateMobile';
+@import './page/loginMobile';
+@import './page/MobilePortalTransaction';
+@import './page/AreaSelection';
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
+mainbody > .row{
+&.xtaf-btn-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: var(--row-bg, #FFF);
+    box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+    padding: 20px;
+    margin: 0;
+    & > .col{
+        display: flex;
+        gap: 10px;
+        justify-content: center; 
+    }
+
+    .xstyle-buttoncontrol-wrapper button{
+        min-width: 150px;
+    }
+}
+
+
+.xtaf-icon-goback{
+
+    .x-kicon-caption,.x-dynamic-label-control{
+        color: var(--first-panel-color-title, #7B098B);
+        text-align: right;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-right: 10px;
+    }
+
+    .k-icon {
+      color: #0EAADC;
+      font-size: 12px;
+    }
+}
+}
+
+.icon-xtar-pdf:before {
+    content: "\e98e";
+    font-family: 'icomoon';
+    color: #690779;
+}
+
+body,html{
+    font-family: 'Heebo';
+    line-height: 0;
+}
+.border{
+    border: none !important;
+}
+
+.container.pageContainer.xtafnit_pageContainer {
+    margin: 65px auto;
+    width: 99%;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+}
+
+.dir-ltr{
+    text-align: end !important;
+}
+
+#TafnitCore_SaaSServer_Portal_Default_UI_Disclaimer{
+    mainbody {
+        margin-top: 0px !important;
+    }
+}
+
+.k-disabled, .k-state-disabled {
+    opacity: 1; 
+}
+
+.icon-finance-graph:before,
+.icon-export-excel:before ,
+    .icon-xtar-print:after {
+   
+    color:$icon-before ;
+}
+
+.icon-export-excel:after ,
+.icon-xtar-print:before {
+    content: "\ea5f";
+    color:$special-button-color-icon;
+}
+
+
+.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2{
+
+    &:before{
+        color:$drawer-icon-color-after;
+    }
+
+    &:after{
+        color:$drawer-icon-color-before;
+    }
+
+}
+
+.icon-car:after,.icon-customers::after,.icon-tracker::after {
+    color: $drawer-icon-color-after;
+}
+
+.icon-car:before,.icon-customers::before,.icon-tracker::before{
+    color:$drawer-icon-color-before;
+}
+
+
+.icon-home-2,.icon-log-out{
+    &:after{
+        color:$drawer-icon-color-after;
+    }
+
+    &::before{
+        color:$drawer-icon-color-before;
+    }
+}
+
+.k-content:has(.k-drawer-mini){
+
+
+    .k-drawer-overlay.k-drawer-right .k-drawer{
+        width: 40px;
+        overflow-x: hidden;
+       }
+}
+
+
+
+.icon-xtar-attach{
+    font-size: 25px;
+}
+
+.justify-content-start {
+    justify-content:end !important;
+  }
+
+  .x-control-wrapper .x-control-caption-wrapper{
+    max-height: 25px;
+  }
+
+  .x-login-user-error {
+    border: 1px solid red !important;
+}
+
+.INDMobile{
+    background: none !important;
+}
+
+.k-i-file-image{
+    &::before{
+        content: "\e9af";
+        color: #690779 !important;
+        font-family: "icomoon";
+    }
+}
+
+img{
+    margin: auto;
+}

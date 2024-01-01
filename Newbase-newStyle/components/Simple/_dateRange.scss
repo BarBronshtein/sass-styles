@@ -1,0 +1,45 @@
+.xstyle-daterange-wrapper      {
+
+   .k-floating-label-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+    .k-label{
+        position: relative;
+        top: 0;
+        transform: none;
+        @extend %texbox-label;
+    }
+   }
+.k-dateinput {
+    @extend %texbox-input;
+
+    &:focus,:focus-within{
+        box-shadow:var(--input-focus-shadow) ;
+        border: 1px solid var(--input-border-color-focus) ;
+          outline: none !important;
+      }
+
+      &::placeholder{
+
+        color:var(--input-text-color-place-holder);
+
+      }
+}
+input{
+    text-align: right;
+}
+}
+
+
+
+.x-daterangev2{
+    display: grid !important;
+    align-items: end;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+
+
+ 
+
+}

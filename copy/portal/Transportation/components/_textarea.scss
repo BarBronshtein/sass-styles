@@ -1,0 +1,28 @@
+
+
+
+@use '../varible/varible' as *;
+
+ 
+ 
+
+ .xstyle-textareacontrol-wrapper{
+  margin-top: 15px;
+  & label{
+
+      @extend %labelMain;    
+   }
+
+   & textarea{
+      @extend %inputFont;
+      min-height: 100px !important;
+
+      &:focus-visible{
+         outline-color: #F09621 !important;
+      }
+
+      &:focus{
+         outline-color: #F09621;
+      }
+   }
+}

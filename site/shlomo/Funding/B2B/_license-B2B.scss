@@ -1,0 +1,68 @@
+@use '../variable/variable' as *;
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main){
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense){
+
+    box-shadow: 0px 10px 10px #05425C;
+    min-height: 500px !important;
+    max-width: 50%;
+    #TafnitCore_System_UI_App_Tools_DriverLicense{
+        margin-bottom: 0 !important;
+
+        .x-footer{
+            display: none !important;
+        }
+    }
+    .k-header.header {
+        display: none;
+    }
+    .x-row{
+        padding: 0 !important;
+        background: none !important;
+        box-shadow: none !important;
+    }
+
+
+.wrapper-card-license{
+    max-width: 500px;
+    margin-bottom: 60px;
+    .bg-user{
+    
+        width: 110px;
+        left: 23px;
+        top: 108px;
+    }
+
+
+    .license-part2 label,.license-part1 label,.license-part3 label{
+        font-size: 12.40462px;
+    }
+
+    .license-part1 span,
+    .license-part2 span,
+    .license-part3 span{
+        font-size: 13.8092px;
+    }
+
+    .wrapper-parts{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 82px;
+        padding-left: 5px !important;
+    }
+
+}
+
+
+.btn-license{
+
+    justify-content: center;
+    margin-top: 60px;
+
+    button{
+     
+        border: 1px solid  $Button-color-border !important;
+    }
+}
+
+}
+}

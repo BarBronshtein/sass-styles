@@ -1,0 +1,54 @@
+
+
+#TafnitCore_xHistadrut_UI_DrawerMenu{
+
+    background: #FCFCFC !important;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25), 0px 0px 10px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 12px !important;
+    padding: 0;
+    position: relative;
+    top: -21px;
+    right: 0px;
+    width: 65%;
+
+    & .headerNone{
+        padding-bottom: 0 !important;
+    }
+    & .Drower{
+        background: none !important;
+        box-shadow: none;
+        border-radius: 12px !important;
+
+
+        & .Drower-item{
+
+            border-bottom: 1px solid #EEEEEE;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            & .xstyle-kicon-wrapper{
+
+                & .k-icon{
+                    font-size: 20px;
+                    margin-left: 25px;
+                    color: #00AEE9;
+                }
+
+                & .x-kicon-caption{
+
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 29px;
+                    align-items: center;
+                    text-align: right;
+                    color: #4E4E4E ;
+                }
+            }
+        }
+    }
+
+}

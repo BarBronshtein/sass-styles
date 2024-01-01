@@ -1,0 +1,290 @@
+
+
+$button-color-text: #ffffff !default;
+$button-color-icon: #ffffff !default;
+$button-color-icon-hover: #ffffff !default;
+$button-color-text-hover: #ffffff !default;
+$button-color-text-focus: #ffffff !default;
+$button-bg: #366934 !default;
+$button-bg-hover: #82BD80 !default;
+$button-color-bg-focus: #39b54a !default;
+$button-disable-border: #e7e7e7 !default;
+$button-disable-text: #c7c7c7 !default;
+$button-disable-bg: #f8f8f8 !default;
+$calendar-color-text-header: #000000 !default;
+$calendar-body-butoon-color-text-focus: #ffffff !default;
+$calendar-month-color-days-focus: #ffffff !default;
+$calendar-fotter-color-text: #39b54a !default;
+$calendar-month-color-days: #39b54a !default;
+$calendar-month-color-title: #39b54a !default;
+$calendar-month-border-today: #39b54a !default;
+$calendar-body-butoon-bg-focus: #39b54a !default;
+$calendar-border-bottom-body: #39b54a !default;
+$calendar-color-icon-header: #39b54a !default;
+$calendar-body-button-color: #30973e !default;
+$calendar-body-butoon-color-text-hover: #267931 !default;
+$calendar-body-butoon-border-hover: #267931 !default;
+$calendar-month-color-today: #30973e !default;
+$calendar-month-bg-days-focus: #39b54a !default;
+$calendar-month-color-days-hover: #267931 !default;
+$calendar-month-border-days-hover: #267931 !default;
+$calendar-month-color-other-month-hover: #8e8e8e !default;
+$calendar-month-border-other-month-hover: #8e8e8e !default;
+$calendar-month-color-days-other-month: #8e8e8e !default;
+$calendar-bg-body: #f5f5f5 !default;
+$calendar-bg-header: #fcfcfc !default;
+$icon-after: #39B54A !default;
+$icon-before: #39B54A !default;
+$checkbox-border: #000000 !default;
+$checkbox-caption: #000000 !default;
+$checkbox-color-checked: #39b54a !default;
+$checkbox-border-checked: #39b54a !default;
+$check-box-focus-border: #6adbff !default;
+$check-box-disable-border: #a6a6a6 !default;
+$check-box-disable-checked: #a6a6a6 !default;
+$control-background: #ffffff !default;
+$control-color-input: #000000 !default;
+$control-color-icon: #39b54a !default;
+$control-border-input: #a6a6a6 !default;
+$control-color-placeholder: #c7c7c7 !default;
+$control-caption-color-text-disable: #c7c7c7 !default;
+$control-border-input-disable: #e7e7e7 !default;
+$control-caption-color-text: #4e4e4e !default;
+$controls-error-massage: #ed2f2f !default;
+$control-border-focus: #64cb72 !default;
+$cube-dashboard-color-price: #39b54a !default;
+$cube-dashboard-colot-text: #1d5b25 !default;
+$cube-dashboard-color-icon: #1d5b25 !default;
+$cube-dashboard-bg: #fcfcfc !default;
+$drawer-icon-color: #ffffff !default;
+$drawer-color: #ffffff !default;
+$drawer-background-color: #1d5b25 !default;
+$drawer-selected-color: #bde6c3 !default;
+$drawer-toggle-color: #bde6c3 !default;
+$first-panel-bg-icon-button: #ffffff !default;
+$first-panel-color-title: #39b54a !default;
+$first-panel-color-icon-button: #39b54a !default;
+$first-panel-border-icon-button: #39b54a !default;
+$grid-title-heder-h4-color: #39b54a !default;
+$grid-button-color: #39b54a !default;
+$grid-checkbox-border: #000000 !default;
+$grid-checkbox-checked-border: #39b54a !default;
+$grid-checkbox-checked-color: #39b54a !default;
+$grid-color-icon: #39b54a !default;
+$grid-header-text-color: #267931 !default;
+$grid-header-filter-color: #39b54a !default;
+$grid-header-serach-border: #c7c7c7 !default;
+$grid-header-serach-border-radius: #c7c7c7 !default;
+$grid-header-border: #39b54a !default;
+$grid-pagenumber-color-selected: #39b54a !default;
+$grid-pager-nav-color: #39b54a !default;
+$grid-text: #000000 !default;
+$grid-border-bottom: #e7e7e7 !default;
+$grid-tr-bg-hover: #f8f8f8 !default;
+$grid-page-number-color: #39B54A !default;
+$grid-header-toolbar-border-color:#fff !default;
+$header-bg: #ffffff !default;
+$header-border: #000000 !default;
+$header-hellotext-color: #000000 !default;
+$header-usernamedetails-color: #000000 !default;
+$header-details-span-color: #000000 !default;
+$header-details-label-color: #39b54a !default;
+$header-lastlogindetails-color: #a6a6a6 !default;
+$header-link-color: #30c6f5 !default;
+$label-list-value-color: #000000 !default;
+$label-list-caption-color: #1d5b25 !default;
+$label-list-bg: #ffe819 !default;
+$link-color: #30c6f5 !default;
+$list-view-bg-line-default: #ffffff !default;
+$list-view-icon-color-default: #39b54a !default;
+$list-view-text-default: #000000 !default;
+$list-view-border-bottom: #e7e7e7 !default;
+$list-view-hover-line: #f5f5f5 !default;
+$list-view-selected-line: #39b54a !default;
+$list-view-selected-line-icon: #ffffff !default;
+$list-view-selected-line-text: #ffffff !default;
+$list-view-focus-border: #64cb72 !default;
+$list-view-disable-bg: #f8f8f8 !default;
+$list-view-disable-text: #c7c7c7 !default;
+$list-view-disable-icon: #c7c7c7 !default;
+$list-view-arrow: #000000 !default;
+$mandatory-color: #64cb72 !default;
+$messagebox-bg: #ffffff !default;
+$messagebox-bg-button: #39b54a !default;
+$messagebox-color-text: #000000 !default;
+$messagebox-color-icon: #39b54a !default;
+$messagebox-color-icon-close: #a6a6a6 !default;
+$messagebox-bg-button-focus: #267931 !default;
+$messagebox-bg-button-hover: #64cb72 !default;
+$order-cube-bg: #f8f8f8 !default;
+$order-cube-caption-color-text: #676767 !default;
+$order-cube-caption-color-textbox: #676767 !default;
+$order-cube-span-color-text: #000000 !default;
+$order-cube-span-color-textbox: #000000 !default;
+$order-cube-border-textbox: #a6a6a6 !default;
+$order-cube-title-color: #39b54a !default;
+$popup-title-color: #000000 !default;
+$popup-border: #a6a6a6 !default;
+$popup-k-filter-menu-border: #e7e7e7 !default;
+$radio-button-text-label-color: #000000 !default;
+$radio-button-bg: #ffffff !default;
+$radio-button-bg-check: #39b54a !default;
+$radio-button-border-check: #39b54a !default;
+$radio-button-border-readonly: #a6a6a6 !default;
+$radio-button-border-readonly-check: #a6a6a6 !default;
+$radio-button-readonly-color: #a6a6a6 !default;
+$radio-button-border-disable: #a6a6a6 !default;
+$radio-button-border-disable-check: #a6a6a6 !default;
+$radio-button-color-disable: #a6a6a6 !default;
+$radio-button-border-default: #000000 !default;
+$radio-button-required-check: #64cb72 !default;
+$radio-button-required-border: #64cb72 !default;
+$radio-button-hover-check: #267931 !default;
+$radio-button-hover-border: #267931 !default;
+$radio-button-focus-check: #6adbff !default;
+$row-bg: #ffffff !default;
+$scroll-bg: #39b54a !default;
+$scroll-bg-hover: #267931 !default;
+$slider-car-icon-color-before: #39b54a !default;
+$slider-car-icon-color-after: #bde6c3 !default;
+$slider-color-icon: #39b54a !default;
+$slider-sum-color: #39b54a !default;
+$slider-tooltip-color: #39b54a !default;
+$slider-bg: #39b54a !default;
+$special-button-bg-focus: #ffffff !default;
+$special-button-bg: #ffffff !default;
+$special-button-press: #30973e !default;
+$special-button-color-border-focus: #30973e !default;
+$special-button-color-border: #39b54a !default;
+$special-button-color-icon: #39b54a !default;
+$special-button-color-text-hover: #ffffff !default;
+$special-button-bg-hover: #64cb72 !default;
+$special-button-color-text: #39b54a !default;
+$special-button-color-text-focus: #30973e !default;
+$tabscript-color-text: #39b54a !default;
+$tabscript-color-border: #39b54a !default;
+$upload-color-file-name: #000000 !default;
+$upload-color-text: #39b54a !default;
+$upload-color-icon: #39b54a !default;
+$upload-color-success: #64cb72 !default;
+$window-icon-close-color: #a6a6a6 !default; 
+$window-title-border: #39b54a !default;
+$window-title-color: #39b54a !default;
+$window-text-secondary-color: #000000 !default;
+$window-text-special-color: #39b54a !default;
+$button-color-border: #39b54a !default;
+$button-bg-press: #267931 !default;
+$check-box-focus-check: #6adbff !default;
+$drawer-icon-color-before: #ffffff !default;
+$drawer-icon-color-after: #6adbff !default; 
+$order-link-color: #30c6f5 !default;
+$radio-button-focus-border: #6adbff !default;
+$special-button-color-border-hover: #64cb72 !default;
+$upload-border-border-top: #267931 !default;
+
+$time-picker-number-default: #c7c7c7 !default; 
+$time-picker-title: #676767 !default;  
+$time-picker-link-now: #61d4d2 !default; 
+$time-picker-border-hour-select: #dedede !default; 
+$time-picker-border: #c1f2f8 !default; 
+$time-picker-shadow: 0px 5px 8px 0px rgba(97, 212, 210, 0.10) !default;
+
+
+$popup-k-filter-menu-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$button-box-shadow-focus: 0px 1px 3px 0px rgba(57, 181, 74, 0.30), 0px 4px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$row-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) !default;
+$check-box-focus-box-shadow: 0px 1px 3px 0px rgba(106, 219, 255, 0.30), 0px 4px 8px 0px rgba(106, 219, 255, 0.10 ) !default;
+$calendar-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) !default;
+$slider-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$window-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$messagebox-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$control-box-shadow-focus: 0px 1px 3px 0px rgba(57, 181, 74, 0.30), 0px 4px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) !default;
+$radio-button-box-shadow-focus: 0px 1px 3px 0px rgba(48, 198, 245, 0.30), 0px 4px 8px 0px rgba(48, 198, 245, 0.10 ) !default;
+$list-container-shadow: 0px 0px 5px 5px rgba(57, 181, 74, 0.10), 0px 2px 4px 0px rgba(57, 181, 74, 0.03), 0px 4px 5px 0px rgba(57, 181, 74, 0.04 ) !default;
+
+
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 12px ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 40px ;
+    background: $control-background ;
+    border: 1px solid $control-border-input ;
+    border-radius: 10px ;
+    padding: 10px 20px ;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 13px !important ;
+    color: $control-color-input ;
+    text-align: right ;
+}
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background ;
+    border:1px solid $control-border-input-disable ;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable ;
+}
+
+
+// special button //
+
+%special-button{
+    height: 50px !important ;
+    background: $special-button-bg ;
+    border-radius: 10px ;
+    font-family: "Heebo" ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $special-button-color-text ;
+    width: auto !important ;
+    min-width: 200px ;
+    border: 1px solid $special-button-color-border ;
+}
+
+// button//
+
+%button{
+    background: $button-bg ;
+    border:1px solid $button-color-border;
+    border-radius: 10px ;
+    align-items: center ;
+    height: 50px !important ;
+    color: $button-color-text ;
+    font-family: 'Heebo' !important ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    min-width: 200px ;
+}

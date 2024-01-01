@@ -1,0 +1,106 @@
+
+
+
+
+.greyPanel{
+
+.x-section-header-wrapper{
+    & .col{
+        padding-right: 0;
+    }
+    background: no-repeat;
+    margin-bottom: 10px;
+    .x-section-header {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: right;
+        color: $first-panel-color-title;
+    }
+}
+.first-panel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 15px;
+
+    & .col{
+        padding: 0;
+    }
+    .gridHeaderButton{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 15px;
+
+        & >div{
+            align-self: center;
+            top: 15px;
+            position: relative;
+            margin-left: 0 !important;
+            &.xstyle-kicon-wrapper{
+                background: $first-panel-bg-icon-button;
+                width: 50px;
+                height: 50px;
+                border: 1px solid $first-panel-border-icon-button;
+                border-radius: 10px;
+                align-items: center;
+                span::before{
+                    color: $special-button-color-text  !important;
+                  }
+                  span::after{
+                      color:   $special-button-color-text !important;
+                    }
+
+                &:hover{
+                    background: $special-button-bg-hover !important;
+                    color: $special-button-color-text-hover !important;
+                    span::before{
+                      color: $special-button-color-text-hover !important;
+                    }
+                    span::after{
+                        color:   $special-button-color-text-hover !important;
+                      }
+                  }
+                  &:focus-within,&:active{
+                    background: $special-button-bg-focus !important;
+                    color: $special-button-color-text-focus !important;
+                    opacity: 1;
+
+                    span::before{
+                        color: $special-button-color-text-focus!important;
+                      }
+                      span::after{
+                          color:  $special-button-color-text-focus !important;
+                        }
+                  }
+             
+                & .k-icon{
+                   font-size: 32px;
+                }
+                .x-kicon-caption{
+                    display: none;
+                }
+            }
+
+
+      
+        }
+    }
+}
+}
+
+
+#TafnitCore_SaaSServer_Portal_Default_UI_OrdersAwaitingSupplier,
+#TafnitCore_SaaSServer_Portal_Default_UI_OrdersAwaitingExecution,
+#TafnitCore_SaaSServer_Portal_Default_UI_OrderReportExecution,
+#TafnitCore_SaaSServer_Portal_Default_UI_OrderToInvoice,
+#TafnitCore_SaaSServer_Portal_Default_UI_DeliveryCertificatesLookup{
+
+    .first-panel{
+        display: grid;
+        grid-template-columns: 1fr  1fr auto;
+        gap: 15px;
+    }    
+
+}

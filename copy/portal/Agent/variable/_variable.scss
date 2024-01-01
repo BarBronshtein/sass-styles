@@ -1,0 +1,309 @@
+@import '../../../../base/variables/masterVariable' ;
+
+$button-color-text: #ffffff; 
+$button-color-icon: #ffffff; 
+$button-color-icon-hover: #ffffff; 
+$button-color-text-hover: #ffffff; 
+$button-color-text-focus: #ffffff; 
+$button-bg: #ae2a30; 
+$button-bg-hover: #334768; 
+$button-color-bg-focus: #741d21; 
+$button-disable-border: #e7e7e7; 
+$button-disable-text: #c7c7c7; 
+$button-disable-bg: #f8f8f8; 
+$calendar-color-text-header: #000000; 
+$calendar-body-butoon-color-text-focus: #ffffff; 
+$calendar-month-color-days-focus: #ffffff; 
+$calendar-fotter-color-text: #3a659b; 
+$calendar-month-color-days: #3a659b; 
+$calendar-month-color-title: #3a659b; 
+$calendar-month-border-today: #3a659b; 
+$calendar-body-butoon-bg-focus: #3a659b; 
+$calendar-border-bottom-body: #3a659b; 
+$calendar-color-icon-header: #3a659b; 
+$calendar-body-button-color: #3a659b; 
+$calendar-body-butoon-color-text-hover: #85b9fa; 
+$calendar-body-butoon-border-hover: #85b9fa; 
+$calendar-month-color-today: #334768; 
+$calendar-month-bg-days-focus: #3a659b; 
+$calendar-month-color-days-hover: #85b9fa; 
+$calendar-month-border-days-hover: #85b9fa; 
+$calendar-month-color-other-month-hover: #8e8e8e; 
+$calendar-month-border-other-month-hover: #8e8e8e; 
+$calendar-month-color-days-other-month: #8e8e8e; 
+$calendar-bg-body: #f5f5f5; 
+$calendar-bg-header: #fcfcfc; 
+$icon-after: #fe9398; 
+$icon-before: #ae2a30; 
+$checkbox-border: #676767; 
+$checkbox-caption: #000000; 
+$checkbox-color-checked: #ae2a30; 
+$checkbox-border-checked: #ae2a30; 
+$check-box-focus-border: #676767; 
+$check-box-disable-border: #dedede; 
+$check-box-disable-checked: #dedede; 
+$control-background: #ffffff; 
+$control-color-input: #000000; 
+$control-color-icon: #ae2a30; 
+$control-border-input: #a6a6a6; 
+$control-color-placeholder: #c7c7c7; 
+$control-caption-color-text-disable: #c7c7c7; 
+$control-border-input-disable: #e7e7e7; 
+$control-caption-color-text: #4e4e4e; 
+$controls-error-massage: #ed2f2f; 
+$control-border-focus: #000000; 
+$cube-dashboard-color-price: #3571bc; 
+$cube-dashboard-colot-text: #334768; 
+$cube-dashboard-color-icon: #334768; 
+$cube-dashboard-bg: #fcfcfc; 
+$drawer-icon-color-before: #ffffff; 
+$drawer-color: #ffffff; 
+$drawer-background-color: #334768; 
+$drawer-selected-color: #b5d6ff; 
+$drawer-toggle-color: #b5d6ff; 
+$first-panel-bg-icon-button: #ffffff; 
+$first-panel-color-title: #ae2a30; 
+$first-panel-color-icon-button: #ae2a30; 
+$first-panel-border-icon-button: #ae2a30; 
+$grid-title-heder-h4-color: #ae2a30; 
+$grid-button-color: #3571bc; 
+$grid-checkbox-border: #676767; 
+$grid-checkbox-checked-border: #ae2a30; 
+$grid-checkbox-checked-color: #ae2a30; 
+$grid-color-icon: #ae2a30; 
+$grid-header-text-color: #ae2a30; 
+$grid-header-filter-color: #ea686e; 
+$grid-header-serach-border: #c7c7c7; 
+$grid-header-serach-border-radius: #c7c7c7; 
+$grid-header-border: #334768; 
+$grid-pagenumber-color-selected: #3571bc; 
+$grid-pager-nav-color: #3571bc; 
+$grid-text: #000000; 
+$grid-border-bottom: #e7e7e7; 
+$grid-tr-bg-hover: #f8f8f8; 
+$grid-page-number-color: #b5d6ff; 
+$header-bg: #ffffff; 
+$header-border: #000000; 
+$header-hellotext-color: #000000; 
+$header-usernamedetails-color: #000000; 
+$header-details-span-color: #000000; 
+$header-details-label-color: #ae2a30; 
+$header-lastlogindetails-color: #a6a6a6; 
+$header-link-color: #0044cc; 
+$label-list-value-color: #000000; 
+$label-list-caption-color: #334768; 
+$label-list-bg: #3571bc; 
+$link-color: #0044cc; 
+$list-view-bg-line-default: #ffffff; 
+$list-view-icon-color-default: #ae2a30; 
+$list-view-text-default: #000000; 
+$list-view-border-bottom: #e7e7e7; 
+$list-view-hover-line: #f5f5f5; 
+$list-view-selected-line: #ae2a30; 
+$list-view-selected-line-icon: #ffffff; 
+$list-view-selected-line-text: #ffffff; 
+$list-view-focus-border: #000000; 
+$list-view-disable-bg: #f8f8f8; 
+$list-view-disable-text: #c7c7c7; 
+$list-view-disable-icon: #c7c7c7; 
+$list-view-arrow: #000000; 
+$mandatory-color: #b5d6ff; 
+$messagebox-bg: #ffffff; 
+$messagebox-bg-button: #ae2a30; 
+$messagebox-color-text: #000000; 
+$messagebox-color-icon: #ae2a30; 
+$messagebox-color-icon-close: #a6a6a6; 
+$messagebox-bg-button-focus: #741d21; 
+$messagebox-bg-button-hover: #334768; 
+$order-cube-bg: #f8f8f8; 
+$order-cube-caption-color-text: #676767; 
+$order-cube-caption-color-textbox: #676767; 
+$order-cube-span-color-text: #000000; 
+$order-cube-span-color-textbox: #000000; 
+$order-cube-border-textbox: #a6a6a6; 
+$order-cube-title-color: #ae2a30; 
+$popup-title-color: #000000; 
+$popup-border: #a6a6a6; 
+$popup-k-filter-menu-border: #e7e7e7; 
+$radio-button-text-label-color: #000000; 
+$radio-button-bg: #ffffff; 
+$radio-button-bg-check: #ae2a30; 
+$radio-button-border-check: #ae2a30; 
+$radio-button-border-readonly: #676767; 
+$radio-button-border-readonly-check: #676767; 
+$radio-button-readonly-color: #676767; 
+$radio-button-border-disable: #dedede; 
+$radio-button-border-disable-check: #dedede; 
+$radio-button-color-disable: #a6a6a6; 
+$radio-button-border-default: #676767; 
+$radio-button-required-check: #85b9fa; 
+$radio-button-required-border: #85b9fa; 
+$radio-button-hover-check: #741d21; 
+$radio-button-hover-border: #676767; 
+$radio-button-focus-check: #ae2a30; 
+$row-bg: #ffffff; 
+$scroll-bg: #334768; 
+$scroll-bg-hover: #1f314e; 
+$slider-car-icon-color-before: #ae2a30; 
+$slider-car-icon-color-after: #fe9398; 
+$slider-color-icon: #ae2a30; 
+$slider-sum-color: #ae2a30; 
+$slider-tooltip-color: #ae2a30; 
+$slider-bg: #ae2a30; 
+$special-button-bg-focus: #ffffff; 
+$special-button-bg: #ffffff; 
+$special-button-press: #741d21; 
+$special-button-color-border-focus: #741d21; 
+$special-button-color-border: #ae2a30; 
+$special-button-color-icon: #ae2a30; 
+$special-button-color-text-hover: #ffffff; 
+$special-button-bg-hover: #334768; 
+$special-button-color-text: #ae2a30; 
+$special-button-color-text-focus: #741d21; 
+$tabscript-color-text: #334768; 
+$tabscript-color-border: #334768; 
+$upload-color-file-name: #000000; 
+$upload-color-text: #3571bc; 
+$upload-color-icon: #3571bc; 
+$upload-color-success: #3571bc; 
+$window-icon-close-color: #a6a6a6; 
+$window-title-border: #85b9fa; 
+$window-title-color: #3571bc; 
+$window-bg: #ffffff; 
+$window-text-secondary-color: #000000; 
+$window-text-special-color: #3571bc; 
+$button-color-border: #ae2a30; 
+$button-bg-press: #741d21; 
+$check-box-focus-check: #ae2a30; 
+$drawer-icon-color-after: #b5d6ff; 
+$order-link-color: #0044cc; 
+$radio-button-focus-border: #676767; 
+$special-button-color-border-hover: #334768; 
+$upload-border-border-top: #334768; 
+$button-color-border-hover: #334768; 
+$time-picker-number-default: #a6a6a6; 
+$time-picker-title: #676767; 
+$time-picker-link-now: #334768; 
+$time-picker-hour-select: #334768; 
+$time-picker-border-hour-select: #dedede; 
+$time-picker-border: #3571bc; 
+$time-picker-number-hover: #a6a6a6; 
+$time-picker-chosen-hour: #334768; 
+
+
+$popup-k-filter-menu-box-shadow: 0px 5px 8px 0px rgba(53, 113, 188, 0.10);
+$button-box-shadow-focus: 0px 1px 3px 0px rgba(53, 113, 188, 0.30), 0px 4px 8px 0px rgba(53, 113, 188, 0.10);
+ $row-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+ $check-box-focus-box-shadow: 0px 1px 3px 0px rgba(53, 113, 188, 0.30), 0px 4px 8px 0px rgba(53, 113, 188, 0.10);
+ $calendar-box-shadow: 0px 5px 8px 0px rgba(53, 113, 188, 0.10);
+$header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+$slider-box-shadow: 0px 5px 8px 0px rgba(53, 113, 188, 0.10);
+$window-box-shadow: 0px 5px 8px 0px rgba(53, 113, 188, 0.10);
+$messagebox-box-shadow: 0px 5px 8px 0px rgba(53, 113, 188, 0.10);
+$control-box-shadow-focus: 0px 1px 3px 0px rgba(53, 113, 188, 0.30), 0px 4px 8px 0px rgba(53, 113, 188, 0.10);
+$cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+$radio-button-box-shadow-focus: 0px 1px 3px 0px rgba(53, 113, 188, 0.30), 0px 4px 8px 0px rgba(53, 113, 188, 0.10);
+$list-container-shadow: 0px 0px 5px 5px rgba(53, 113, 188, 0.10), 0px 2px 4px 0px rgba(53, 113, 188, 0.03), 0px 4px 5px 0px rgba(53, 113, 188, 0.04);
+$time-picker-shadow: 0px 5px 8px 0px rgba(53, 113, 188, 0.10);
+
+
+$popup-k-filter-menu-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$button-box-shadow-focus: 0px 1px 3px 0px rgba(57, 181, 74, 0.30), 0px 4px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$row-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) !default;
+$check-box-focus-box-shadow: 0px 1px 3px 0px rgba(106, 219, 255, 0.30), 0px 4px 8px 0px rgba(106, 219, 255, 0.10 ) !default;
+$calendar-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) !default;
+$slider-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$window-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$messagebox-box-shadow: 0px 5px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$control-box-shadow-focus: 0px 1px 3px 0px rgba(57, 181, 74, 0.30), 0px 4px 8px 0px rgba(57, 181, 74, 0.10 ) !default;
+$cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10 ) !default;
+$radio-button-box-shadow-focus: 0px 1px 3px 0px rgba(48, 198, 245, 0.30), 0px 4px 8px 0px rgba(48, 198, 245, 0.10 ) !default;
+$list-container-shadow: 0px 0px 5px 5px rgba(57, 181, 74, 0.10), 0px 2px 4px 0px rgba(57, 181, 74, 0.03), 0px 4px 5px 0px rgba(57, 181, 74, 0.04 ) !default;
+
+
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 12px ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 50px ;
+    background: $control-background ;
+    border: 1px solid $control-border-input ;
+    border-radius: 10px ;
+    padding: 10px 20px ;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 13px !important ;
+    color: $control-color-input ;
+    text-align: right ;
+}
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background ;
+    border:1px solid $control-border-input-disable ;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable ;
+}
+
+
+// special button //
+
+%special-button{
+    height: 40px !important ;
+    background: $special-button-bg ;
+    border-radius: 10px ;
+    font-family: "Heebo" ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $special-button-color-text ;
+    width: auto !important ;
+    min-width: 40px ;
+    max-width: 40px;
+    padding: 0;
+    border: 1px solid $special-button-color-border ;
+}
+
+// button//
+
+%button{
+    background: $button-bg ;
+    border: none ;
+    border-radius: 10px ;
+    align-items: center ;
+    height: 50px !important ;
+    color: $button-color-text ;
+    font-family: 'Heebo' !important ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    min-width: 200px ;
+}

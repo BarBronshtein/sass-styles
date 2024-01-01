@@ -1,0 +1,99 @@
+@use '../variable/variable' as *;
+
+//radio disable//
+
+.xstyle-radio-wrapper {
+    label{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #000000;
+    }
+
+    // readonly //
+
+      &.x-readonly {
+        opacity: 1 !important;
+        & input.k-radio {
+          border-color: $radio-button-border-readonly !important;
+          &:checked {
+            border-color: $radio-button-border-readonly-check !important;
+            &::before {
+              color: $radio-button-readonly-color !important;
+            }
+          }
+        }
+    
+        & label {
+          font-size: 14px !important;
+          &.x-control-caption-text {
+            color: $radio-button-text-label-color !important;
+            font-size: 16px !important;
+          }
+        }
+      }
+     
+      // disables //
+
+    
+      &.k-state-disabled {
+        opacity: 1 !important;
+        & input.k-radio {
+          border-color: $radio-button-border-disable !important;
+          &:checked {
+            border-color: $radio-button-border-disable-check !important;
+            &::before {
+              color: $radio-button-color-disable !important;
+            }
+          }
+        }
+    
+        & button span::before {
+          color: $radio-button-color-disable !important;
+        }
+    
+        & label {
+          color: $radio-button-color-disable !important;
+          font-size: 14px !important;
+          &.x-control-caption-text {
+            color: $radio-button-text-label-color !important;
+            font-size: 16px !important;
+          }
+        }
+      }
+
+     // defult //
+
+      .k-radio {
+        &:checked {
+          
+           border: $radio-button-border;
+
+           &::before{
+            background: $radio-button-bg-check !important;
+           }
+        }
+      
+        border: 1px solid #727272;
+        color: #727272;
+        background-color:$radio-button-bg;
+        border-radius: 50%;
+      
+    
+      }
+
+
+    }
+
+
+    .radio-border{
+        text-align: center;
+        padding: 10px 1px;
+        border-top: 1px solid #DEDEDE;
+        border-bottom: 1px solid #DEDEDE;
+      
+    }
+  
+    

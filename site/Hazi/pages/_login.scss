@@ -1,0 +1,38 @@
+
+
+#TafnitCore_Sales_V2_UI_Login{
+        margin: 0;
+        padding: 0;
+
+        mainbody{
+            margin-top: 0 !important;
+        }
+       .logo{
+        img{
+            background: white;
+            padding: 15px;
+            border-radius: 50%;
+            width: 176px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: -90px;
+        }
+       }
+       img{
+        max-height: 550px;
+        width: 100%;
+       }
+    
+    .xstyle-buttoncontrol-wrapper button{
+        width: 100% !important;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .x-footer{
+        display: none;
+    }
+
+}

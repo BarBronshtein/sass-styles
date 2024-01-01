@@ -1,0 +1,54 @@
+
+@use '../varible/varible' as *;
+
+.xstyle-googleaddress-wrapper{
+    margin-top: 20px;
+// caption //
+.x-control-caption-wrapper {
+    label{
+        @extend %SimpleCaption; 
+    }
+}
+
+// input //
+
+.x-control-content-wrapper{
+
+    span{
+    &.x-textbox.s-textbox.x-googleaddress{
+    border: none;
+    background: none;
+        &:focus{
+            box-shadow: none
+        }
+        &:focus-within{
+            box-shadow: none
+        }
+
+    }
+}
+
+input{
+    @extend %SimpleInput;
+    text-align: right !important;
+    &:focus{
+        box-shadow: inset 4px 4px 5px rgba(57, 181, 74, 0.2) !important;
+    }
+}
+}
+
+// icon //
+
+.x-barcodeBtnContainer.s-barcodeBtnContainer{
+    background: none;
+    border: none;
+    top: 50% !important;
+    transform: translateY(-50%);
+    left: 12px !important;
+
+    & .k-icon{
+        font-size: 22px;  
+        color: #39B54A;
+    }
+}
+}

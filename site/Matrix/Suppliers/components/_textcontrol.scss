@@ -1,0 +1,53 @@
+
+@use '../variable/variable' as *;
+
+
+ div[uxid="tbID"], div[uxid="tbPassword"]{
+    margin-top: 5px !important;
+}
+.xstyle-textcontrol-wrapper {
+
+// disable // 
+
+    &.k-state-disabled{
+
+        & input.k-textbox{
+
+            @extend %texbox-input;
+           
+        }
+
+        & label{
+            color: $control-caption-color-text-disable !important; 
+          }
+    }
+
+
+    & input{
+      @extend %texbox-input;
+      padding-right: 10px !important;
+      padding: 0;
+
+        &:focus{
+            box-shadow:$control-box-shadow-focus !important;
+            border: $control-border-focus !important;
+        }
+
+        &::placeholder{
+
+            color: $control-color-placeholder !important;
+
+        }
+    }
+
+    & label{
+        @extend %texbox-label;
+
+    }
+}
+
+
+
+
+
+

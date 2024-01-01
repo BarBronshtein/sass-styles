@@ -1,0 +1,134 @@
+
+
+
+.k-i-calendar {
+  &:before{
+    content: "\e973";
+    font-family: 'icomoon';
+  }
+}
+.xstyle-date-wrapper{
+  margin-top: 20px;
+// input parent-mobile samsong // 
+  & .s-datePickerResponsive.x-datePicker-mobile{
+
+}
+
+// span  input//
+& span.k-datepicker{
+border: none;
+
+    &:focus-within{
+     
+    }
+}
+
+// input // 
+
+& input{
+  background: none;
+  height: 45px;
+  border: 1px solid #DEDEDE !important;
+  padding-right: 10px;
+  border-radius: 0px;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+
+    &::placeholder{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #AAAAAA;
+    }
+
+    // focus //
+  
+  &:focus{
+    border: 1px solid #F37A1F !important;
+  }
+
+ 
+}
+// caption //
+& label{
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #00AEE9;
+  margin-bottom: 3px;
+}
+
+// button // 
+& .k-button.k-input-button.k-icon-button{
+  height: 35px !important;
+  width: 35px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00AEE9 !important;
+  border-radius: 0;
+  left: 5px !important;
+  font-size: 16px;
+& span{
+      
+    &::before{
+        color: white;
+        font-size: 18px;
+    }
+}
+}
+  
+// foceus //
+    &:focus-within {
+   
+    }
+
+  
+// contextmenu //
+  
+    &.x-contextmenu {
+      & div:nth-child(1) > div.x-control-caption-wrapper::before {
+    
+      }
+    }
+  
+// x-readonly //
+  
+    &.x-readonly {
+      & div:last-child input {
+        
+        &::placeholder {
+       
+        }
+      }
+      & button span::before {
+       
+      }
+    }
+  
+// disable //
+  
+    &.k-state-disabled {
+     
+      opacity: 1;
+      & label{
+        color: #AAAAAA !important;
+      }
+      .k-button.k-input-button.k-icon-button{
+        background: #DEDEDE !important;
+      }
+    }
+  
+
+
+  
+
+
+   }

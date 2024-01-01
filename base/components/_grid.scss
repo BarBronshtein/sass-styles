@@ -1,4 +1,4 @@
-@use '../variables/masterVariable' as *;
+
 
 .k-grid {
     border: none;
@@ -86,7 +86,7 @@
     }
 
     .k-grid-content {
-        height: $grid-content-height;
+        height:inherit;
 
         tr {
             transition: 0.6s all;
@@ -116,7 +116,7 @@
                 color: $grid-content-line-color-hover !important;
             }
 
-            &.k-state-selected {
+            &.k-selected {
                 background: $grid-content-line-background-selected !important;
                 color: $grid-content-line-color-selected !important;
 
@@ -161,7 +161,7 @@
         }
 
         .k-link {
-            &.k-state-selected {
+            &.k-selected {
                 background: $grid-pager-nav-background;
             }
         }

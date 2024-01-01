@@ -1,0 +1,71 @@
+
+
+.k-widget.k-window:has(#TafnitCore_xHistadrut_UI_MembershipMessage){
+
+    background: #FFFFFF !important;
+    box-shadow: 0px 10px 10px rgba(1, 103, 177, 0.3) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 5px;
+    height: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    & .k-window-content{
+        margin-top: 30px !important;
+    }
+
+  & .k-window-titlebar{
+
+    background: none !important;
+    border: none !important;
+    display: block;
+
+    & .k-window-actions.k-hstack{
+
+        position: absolute;
+        top: 9px;
+        left: 14px;
+        & span{
+        color: #727272 !important;
+        font-size: 22px;
+
+        
+        }
+    }
+  }
+
+  & #TafnitCore_xHistadrut_UI_MembershipMessage{
+    
+    & .navbar-fixed-top.k-header.header.x-header{
+        display: none !important;
+    }
+
+    & .headerNone{
+        margin-top: 5px !important;
+
+        & .xstyle-kicon-wrapper{
+            margin-bottom: 25px;
+            & span{
+                
+               font-size: 54px;
+               color: #0167B1;
+            }
+        }
+
+        & .xstyle-dynamiclabelcontrol-wrapper{
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 160%;
+                align-items: center;
+                text-align: center;
+                color: #E51925;
+            }
+        }
+    }
+
+  }
+}

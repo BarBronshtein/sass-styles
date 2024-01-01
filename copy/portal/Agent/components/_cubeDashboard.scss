@@ -1,0 +1,55 @@
+
+;
+
+
+
+.cube.cubeFix{
+    padding: 40px 20px 40px 40px !important;
+    height: 148px;
+    background: $cube-dashboard-bg;
+    box-shadow: $cube-dashboard-box-shadow;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+
+    .x-dynamic-label-control{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $cube-dashboard-colot-text;
+    }
+
+    .shekel-wrapper{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 5px;
+
+        & > .col{
+            padding: 0;
+        }
+
+        .x-control-wrapper {
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+
+        }
+
+        .x-dynamic-label-control{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 130%;
+            color: $cube-dashboard-color-price;
+            direction: ltr;
+        }
+
+        .k-icon {
+          color: $cube-dashboard-color-icon;
+        }
+    }
+
+} 

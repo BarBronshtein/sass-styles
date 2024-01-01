@@ -1,0 +1,157 @@
+
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_TaskList{
+    & .row{
+        border: none !important;
+    }
+
+    & .serch-body{
+        display: grid;
+        justify-content: space-between;
+        margin-top: 5px;
+        grid-template-columns: 65% 29%;
+        & .serch{
+           & input{
+            height: 47px;
+            background: #FCFCFC;
+            border: 1px solid #E7E7E7;
+            border-radius: 10px;
+            padding: 15px 20px;
+           }
+        }
+        & .button-serch{
+          
+            & button{
+                height: 47px;
+                background: #0F6FB7;
+                border-radius: 10px;
+                color: white;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    & .cards{
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        margin-top: 25px ;
+        gap: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        & .card-body{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 6px rgb(0 122 191 / 20%);
+            border-radius: 10px;
+            max-width: 350px !important;
+            flex: 0 0 88%;
+            margin: auto;
+            min-height: 657px;
+
+            & .title-card{
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+
+                & span{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 29px;
+                    align-items: center;
+                    text-align: right;
+                    color: #F09621;
+                }
+
+                & a{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 110%;
+                    text-align: center;
+                    color: #1C87D7;
+                }
+            }
+
+            & .pages{
+                padding: 0;
+                margin-bottom: 25px ;
+                margin-top: -7px;
+
+                & span{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #9D5900; 
+                }
+            }
+
+            & .icons{
+                min-height: 40px;
+                margin-bottom: 35px;
+                 .x-self-container {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                & .mark-offline{
+                    & .xstyle-kicon-wrapper{
+                    
+                        & span{
+                           color: #C7C7C7 !important;
+                    }
+                }
+                }
+                & .icon{
+                    padding: 0;
+                    border-left: 1px dashed #39AAFD;
+                 
+                }
+                & .xstyle-kicon-wrapper{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    & span{
+                        font-size: 30px;
+                   
+                        &.fa-car-side{
+                            transform: rotateY(180deg);
+                            transform-origin: center;
+                        }
+                    }
+                }
+
+                & .xstyle-dynamiclabelcontrol-wrapper{
+               
+                    & span{
+                        font-family: 'Heebo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 160%;
+                        align-items: center;
+                        text-align: right;
+                        color: #052136;
+
+                        & a{
+                            color: #1C87D7 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

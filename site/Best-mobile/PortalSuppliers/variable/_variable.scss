@@ -1,0 +1,287 @@
+
+@import '../../../../base/variables/masterVariable' ;
+
+
+$tabscript-color-border: #0176e1; 
+$tabscript-color-text: #0176e1; 
+$window-title-border: #0176e1; 
+$window-title-color: #0176e1; 
+$window-text-special-color: #0176e1; 
+$window-icon-close-color: #a6a6a6; 
+$window-text-secondary-color: #000000; 
+$window-bg: #ffffff; 
+$upload-border-border-top: #00539f; 
+$upload-color-text: #000000; 
+$upload-color-icon: #000000; 
+$upload-color-success: #65b5ff; 
+$upload-color-file-name: #000000; 
+$button-bg-press: #4e4e4e; 
+$button-color-bg-focus: #000000; 
+$button-color-text-focus: #ffffff; 
+$button-color-icon: #ffffff; 
+$button-color-icon-hover: #000000; 
+$button-color-text-hover: #000000; 
+$button-color-border: #000000; 
+$button-bg: #000000; 
+$button-bg-hover: #ffffff; 
+$button-disable-text: #c7c7c7; 
+$button-disable-border: #e7e7e7; 
+$button-disable-bg: #f8f8f8; 
+$button-color-text: #ffffff; 
+$calendar-body-button-color-text-hover: #00539f; 
+$calendar-body-button-border-hover: #00539f; 
+$calendar-month-color-days-hover: #00539f; 
+$calendar-month-border-days-hover: #00539f; 
+$calendar-body-butoon-color-text-hover: #00539f !default;
+$calendar-body-butoon-border-hover: #00539f !default;
+$calendar-month-color-today: #0a66bb; 
+$calendar-body-button-color: #0a66bb; 
+$calendar-fotter-color-text: #0176e1; 
+$calendar-month-color-days: #0176e1; 
+$calendar-month-color-title: #0176e1; 
+$calendar-month-border-today: #0176e1; 
+$calendar-body-button-bg-focus: #0176e1; 
+$calendar-border-bottom-body: #0176e1; 
+$calendar-color-icon-header: #0176e1; 
+$calendar-month-bg-days-focus: #0176e1; 
+$calendar-month-color-days-other-month: #8e8e8e; 
+$calendar-month-border-other-month-hover: #8e8e8e; 
+$calendar-month-color-other-month-hover: #8e8e8e; 
+$calendar-bg-body: #f5f5f5; 
+$calendar-bg-header: #fcfcfc; 
+$calendar-color-text-header: #000000; 
+$calendar-month-color-days-focus: #ffffff; 
+$calendar-body-butoon-color-text-focus: #ffffff; 
+$checkbox-color-checked: #0176e1; 
+$checkbox-border-checked: #0176e1; 
+$check-box-focus-border: #34f6b1; 
+$check-box-disable-border: #a6a6a6; 
+$check-box-disable-checked: #a6a6a6; 
+$checkbox-caption: #000000; 
+$checkbox-border: #000000; 
+$check-box-focus-check: #34f6b1; 
+$control-color-icon: #000000; 
+$control-border-focus: #65B5FF; 
+$control-border-input: #a6a6a6; 
+$control-color-placeholder: #c7c7c7; 
+$control-border-input-disable: #e7e7e7; 
+$control-color-input: #000000; 
+$control-background: #ffffff; 
+$controls-error-massage: #ed2f2f; 
+$control-caption-color-text: #003260; 
+$control-caption-color-text-disable: #c7c7c7; 
+$cube-dashboard-color-icon: #00488a; 
+$cube-dashboard-color-text: #00488a; 
+$cube-dashboard-color-price: #0176e1; 
+$cube-dashboard-bg: #fcfcfc; 
+$drawer-background-color: #000000; 
+$drawer-icon-color-before: #ffffff; 
+$drawer-color: #ffffff; 
+$drawer-toggle-color: #95ccff; 
+$drawer-icon-color-after: #65b5ff; 
+$drawer-selected-color: #65b5ff; 
+$first-panel-color-title: #0176e1; 
+$first-panel-color-icon-button: #65b5ff; 
+$first-panel-border-icon-button: #000000; 
+$first-panel-bg-icon-button: #ffffff; 
+$grid-header-text-color: #00539f; 
+$grid-header-border: #0176e1; 
+$grid-title-heder-h4-color: #0176e1; 
+$grid-button-color: #0176e1; 
+$grid-checkbox-checked-border: #0176e1; 
+$grid-checkbox-checked-color: #0176e1; 
+$grid-color-icon: #0176e1; 
+$grid-header-filter-color: #0176e1; 
+$grid-pagenumber-color-selected: #0176e1; 
+$grid-pager-nav-color: #0176e1; 
+$grid-page-number-color: #95ccff; 
+$grid-tr-bg-hover: #f8f8f8; 
+$grid-header-serach-border: #c7c7c7; 
+$grid-header-serach-border-radius: #c7c7c7; 
+$grid-border-bottom: #e7e7e7; 
+$grid-checkbox-border: #000000; 
+$grid-text: #000000; 
+$header-details-label-color: #95ccff; 
+$header-link-color: #14cd8a; 
+$header-lastlogindetails-color: #f5f5f5; 
+$header-details-span-color: #ffffff; 
+$header-usernamedetails-color: #ffffff; 
+$header-hellotext-color: #ffffff; 
+$header-border: #ffffff; 
+$header-bg: #000000; 
+$icon-before: #000000; 
+$icon-after: #000000; 
+$lable-list-bg: #0edc92; 
+$lable-list-caption-color: #003260; 
+$lable-list-value-color: #000000; 
+$link-color: #14cd8a; 
+$list-view-selected-line: #0176e1; 
+$list-view-icon-color-default: #0176e1; 
+$list-view-focus-border: #188bf5; 
+$list-view-disable-icon: #c7c7c7; 
+$list-view-disable-text: #c7c7c7; 
+$list-view-border-bottom: #e7e7e7; 
+$list-view-hover-line: #f5f5f5; 
+$list-view-disable-bg: #f8f8f8; 
+$list-view-text-default: #000000; 
+$list-view-selected-line-text: #ffffff; 
+$list-view-selected-line-icon: #ffffff; 
+$list-view-bg-line-default: #ffffff; 
+$mandatory-color: #188bf5; 
+$messagebox-bg-button-focus: #00539f; 
+$messagebox-bg-button: #0176e1; 
+$messagebox-color-text: #000000; 
+$messagebox-color-icon: #0176e1; 
+$messagebox-color-icon-close: #a6a6a6; 
+$messagebox-bg-button-hover: #1697df; 
+$messagebox-bg: #ffffff; 
+$order-cube-title-color: #0176e1; 
+$order-link-color: #14cd8a; 
+$order-cube-caption-color-text: #8e8e8e; 
+$order-cube-caption-color-textbox: #676767; 
+$order-cube-border-textbox: #a6a6a6; 
+$order-cube-bg: #f8f8f8; 
+$order-cube-span-color-text: #000000; 
+$order-cube-span-color-textbox: #000000; 
+$popup-title-color: #0176e1; 
+$popup-k-filter-menu-border: #95ccff; 
+$radio-button-required-border: #188bf5; 
+$radio-button-required-check: #188bf5; 
+$radio-button-bg-check: #0176e1; 
+$radio-button-focus-checkd: #34f6b1; 
+$radio-button-color-disable: #a6a6a6; 
+$radio-button-border-disable-check: #c7c7c7; 
+$radio-button-border-disable: #c7c7c7; 
+$radio-button-readonly-color: #a6a6a6; 
+$radio-button-border-readonly: #a6a6a6; 
+$radio-button-text-label-color: #000000; 
+$radio-button-border-check: #0176e1; 
+$radio-button-bg: #ffffff; 
+$radio-button-border-readonly-check: #a6a6a6; 
+$radio-button-border-default: #000000; 
+$radio-button-hover-border: #65b5ff; 
+$radio-button-hover-check: #65b5ff; 
+$radio-button-focus-border: #34f6b1; 
+$row-bg: #ffffff; 
+$scroll-bg-hover: #00539f; 
+$scroll-bg: #0176e1; 
+$special-button-color-text-focus: #ffffff; 
+$special-button-color-border-focus: #000000; 
+$special-button-press: #4e4e4e; 
+$special-button-color-border: #000000; 
+$special-button-color-border-hover: #000000; 
+$special-button-color-text: #000000; 
+$special-button-bg-hover: #000000; 
+$special-button-color-icon: #000000; 
+$special-button-color-text-hover: #ffffff; 
+$special-button-bg: #ffffff; 
+$special-button-bg-focus: #000000; 
+$specail-label-text-color: #0176E1 ;
+
+$header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+ 
+$popup-k-filter-menu-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+ 
+$calendar-box-shadow: 0px 5px 8px 0px rgba(1, 118, 225, 0.10);
+ 
+$row-box-shadow:  0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+
+$check-box-focus-box-shadow: 0px 1px 3px 0px rgba(52, 246, 177, 0.30), 0px 4px 8px 0px rgba(52, 246, 177, 0.30);
+ 
+$button-box-shadow-focus: 0px 1px 3px 0px rgba(1, 118, 225, 0.30), 0px 4px 8px 0px rgba(1, 118, 225, 0.30);
+ 
+$Cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(13, 13, 13, 0.10);
+ 
+$window-box-shdow:  0px 5px 8px 0px rgba(1, 118, 225, 0.10);
+ 
+$messagebox-box-shaow:  0px 5px 8px 0px rgba(1, 118, 225, 0.10);
+ 
+$radio-button-box-shadow-focus:  0px 1px 3px 0px rgba(52, 246, 177, 0.30), 0px 4px 8px 0px rgba(52, 246, 177, 0.30);
+ 
+$control-box-shadow-focus:  0px 1px 3px 0px rgba(1, 118, 225, 0.30), 0px 4px 8px 0px rgba(1, 118, 225, 0.30);;
+ 
+$list-container-shadow: 0px 0px 5px 5px rgba(0, 130, 197, 0.10), 0px 2px 4px 0px rgba(0, 130, 197, 0.03), 0px 4px 5px 0px rgba(0, 130, 197, 0.04);
+
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 50px ;
+    background: $control-background ;
+    border: 1px solid $control-border-input ;
+    border-radius: 10px ;
+    padding: 10px 20px ;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 16px !important ;
+    color: $control-color-input ;
+    text-align: right ;
+}
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background ;
+    border:1px solid $control-border-input-disable ;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable ;
+}
+
+
+// special button //
+
+%special-button{
+    height: 50px !important ;
+    background: $special-button-bg ;
+    border-radius: 10px ;
+    font-family: "Heebo" ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $special-button-color-text ;
+    width: auto !important ;
+    min-width: 200px ;
+    border: 1px solid $special-button-color-border ;
+}
+
+// button//
+
+%button{
+    background: $button-bg ;
+    border: none ;
+    border-radius: 10px ;
+    align-items: center ;
+    height: 50px !important ;
+    color: $button-color-text ;
+    font-family: 'Heebo' !important ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    min-width: 200px ;
+}

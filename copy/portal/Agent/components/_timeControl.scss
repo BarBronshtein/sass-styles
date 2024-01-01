@@ -1,0 +1,206 @@
+
+
+
+
+.xstyle-timepicker-wrapper {
+
+    & .k-timepicker {
+        border: none !important;
+
+        &:focus{
+            border: none !important;
+            box-shadow: none !important;
+        }
+    
+        &:focus-within{
+            box-shadow: none ;
+        }
+
+        & button{
+            border: 0px !important;
+            position: absolute;
+            left: 0;
+            z-index: 10;
+            margin-left: 4px;
+            margin-top: -4px;
+            background: transparent !important;
+            & .k-icon{
+                left: 16px;
+                &::before{
+                    font-size: 25px;
+                    /* top: 5px; */
+                    left: -24px;
+                    color: $control-color-icon;
+                }
+            }
+
+        }
+    }
+    &.k-state-disabled{
+        opacity: 1 !important;
+       & input.k-textbox{
+
+        @extend %texbox-input;
+       }
+
+       & label{  
+         color: $control-caption-color-text-disable !important; 
+         }
+   }
+
+    & label{
+        @extend %texbox-label;
+    }
+    & input{
+        @extend %texbox-input;
+        padding-right: 10px !important;
+  
+        &:focus,
+        &:active,
+        &:focus-visible{
+            box-shadow:$control-box-shadow-focus !important;
+            border:1px solid $control-border-focus !important;
+            outline:none !important;
+        }
+}
+
+}
+
+.k-animation-container .k-popup.k-timeselector{
+    border: 1px solid $time-picker-border;
+    background: #FFF;
+    box-shadow: $time-picker-shadow;
+
+    .k-time-header{
+        .k-button-text{
+            color:  $time-picker-link-now;
+            text-align: right;
+            font-family: Heebo;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+
+
+    .k-time-list-container{
+        background: none;
+
+        .k-time-list-wrapper{
+            background: none;
+
+            &.k-focus{
+                box-shadow: none;
+                border: none;
+
+                &::before{
+                    background: none;
+                }
+
+                &::after{
+                    background: none;
+                }
+            }
+
+            .k-title{
+                background: none;
+                border: none;
+                color:  $time-picker-title;
+                text-align: center;
+                font-family: Heebo;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 100%;
+            }
+            .k-time-list{
+                background: none;
+                &.k-focus{
+                    box-shadow: none;
+                    border: none;
+                    background: none;
+                }
+         
+
+                &::before{
+                    box-shadow: none;
+                }
+            }
+
+            .k-item{
+                span{
+                    color: $time-picker-number-default;
+                    text-align: center;
+                    font-family: Heebo;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 18px; 
+                }
+            }
+
+
+
+
+        }
+    }
+
+    .k-time-cancel{
+        height: 40px !important;
+        min-width: 75px !important;
+        @extend %special-button;
+
+
+        &:hover{
+          background: $special-button-bg-hover;
+          color: $special-button-color-text-hover !important;
+          border:none !important;
+          span::before{
+            color: $special-button-color-text-hover !important;
+          }
+        }
+  
+        &:focus{
+          background: $special-button-bg-focus;
+          color: $special-button-color-text-focus !important;
+          opacity: 1;
+          span:before,span::after{
+            color: $special-button-color-text-focus !important;
+          }
+        }
+    }
+
+    .k-button-solid-primary{
+        height: 40px !important;
+        min-width: 75px !important;
+        @extend %button;
+        max-width: 200px;
+      &:hover{
+        background: $button-bg-hover;
+        color: $button-color-text-hover !important;
+        border:1px solid $button-bg-hover;
+        span::before{
+          color: $button-color-text-hover !important;
+        }
+      }
+
+      &:focus{
+        background: $button-color-bg-focus;
+        color: $button-color-text-focus !important;
+        box-shadow: $button-box-shadow-focus;
+        opacity: 1;
+        span:before{
+          color:  $button-color-text-focus !important;
+        }
+      }
+    }
+
+    .k-time-list::after{
+        box-shadow: none !important;
+    }
+
+    .k-time-highlight{
+        border-color: $time-picker-border-hour-select;
+    }
+}

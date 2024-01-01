@@ -1,0 +1,53 @@
+@use '../variable/variable' as *;
+
+
+.xstyle-idropdownlist-wrapper{
+
+
+  // readonly + disabled //
+
+
+  & span.x-dropdown-comp.s-dropdown-comp {
+   
+       @extend %texbox-input;
+
+  &:focus,
+  &:focus-within{
+    border: $control-border-focus;
+    box-shadow: $control-box-shadow-focus;
+  }
+
+  & .k-input-inner{
+    padding: 0
+  }
+
+  }
+
+  & label{
+
+    @extend %texbox-label;
+  }
+
+ 
+  & .k-input-button{
+    left: 10px;
+      &:hover{
+        background: none;
+      }
+    & span.k-icon{
+      &::before{
+        
+        content: "\f0d7";
+        font-size: 22px;
+        font-family: "Font Awesome 5 Pro";
+        color: $control-color-icon;
+        font-weight: 700;
+      }
+
+  }
+  
+  }
+
+
+}
+

@@ -1,0 +1,303 @@
+
+@import '../../../../base/variables/masterVariable' ;
+
+$tabscript-color-border: #7b098b; 
+$tabscript-color-text: #7b098b; 
+$window-title-border: #7b098b; 
+$window-title-color: #7b098b; 
+$window-text-special-color: #7b098b; 
+$window-icon-close-color: #a6a6a6; 
+$window-text-secondary-color: #000000; 
+$window-bg: #ffffff; 
+$label-list-value-color: #000000 !default;
+$label-list-caption-color: #310538 !default;
+$label-list-bg: #7B098B !default;
+$upload-border-border-top: #690779; 
+$upload-color-text: #7b098b; 
+$upload-color-icon: #690779; 
+$upload-color-success: #000000;
+$upload-close-icon-color: #A6A6A6;
+$upload-color-file-name: #000000; 
+$button-bg-press: #690779; 
+$button-color-bg-focus: #7b098b; 
+$button-color-text-focus: #ffffff; 
+$button-color-icon: #ffffff; 
+$button-color-border: #7b098b; 
+$button-bg: #7b098b; 
+$button-disable-text: #c7c7c7; 
+$button-disable-border: #e7e7e7; 
+$button-disable-bg: #f8f8f8; 
+$button-color-text: #ffffff; 
+$button-color-border-hover:#690779;
+$button-bg-hover:#690779;
+$button-color-text-hover:#FFFFFF;
+$button-color-icon-hover:#FFFFFF;
+$calendar-body-button-color-text-hover: #690779; 
+$calendar-body-button-border-hover: #690779; 
+$calendar-month-color-days-hover: #690779; 
+$calendar-month-border-days-hover: #690779; 
+$calendar-month-color-today: #650872; 
+$calendar-body-button-color: #650872; 
+$calendar-fotter-color-text: #7b098b; 
+$calendar-month-color-days: #7b098b; 
+$calendar-month-color-title: #7b098b; 
+$calendar-month-border-today: #7b098b; 
+$calendar-body-button-bg-focus: #7b098b; 
+$calendar-border-bottom-body: #7b098b; 
+$calendar-color-icon-header: #7b098b; 
+$calendar-month-bg-days-focus: #7b098b; 
+$calendar-month-color-days-other-month: #8e8e8e; 
+$calendar-month-border-other-month-hover: #8e8e8e; 
+$calendar-month-color-other-month-hover: #8e8e8e; 
+$calendar-bg-body: #f5f5f5; 
+$calendar-bg-header: #fcfcfc; 
+$calendar-color-text-header: #000000; 
+$calendar-month-color-days-focus: #ffffff; 
+$calendar-body-butoon-color-text-focus: #ffffff; 
+$calendar-month-color-days-focus: #ffffff !default; 
+$calendar-body-button-color-text-focus: #ffffff !default; 
+$calendar-body-butoon-color-text-hover: #00539f !default;
+$calendar-body-butoon-border-hover: #00539f !default;
+
+$checkbox-color-checked: #7b098b; 
+$checkbox-border-checked: #7b098b; 
+$check-box-focus-border: #30c6f5; 
+$check-box-disable-border: #a6a6a6; 
+$check-box-disable-checked: #a6a6a6; 
+$checkbox-caption: #000000; 
+$checkbox-border: #000000; 
+$check-box-focus-check: #30c6f5; 
+$control-color-icon: #7b098b; 
+$control-border-focus: #30c6f5; 
+$control-border-input: #a6a6a6; 
+$control-color-placeholder: #c7c7c7; 
+$control-border-input-disable: #e7e7e7; 
+$control-color-input: #000000; 
+$control-background: #ffffff; 
+$controls-error-massage: #ed2f2f; 
+$control-caption-color-text: #310538; 
+$control-caption-color-text-disable: #c7c7c7; 
+$cube-dashboard-color-icon: #4b1754; 
+$cube-dashboard-color-text: #4b1754; 
+$cube-dashboard-color-price: #7b098b; 
+$cube-dashboard-bg: #fcfcfc; 
+$drawer-background-color: #7b098b; 
+$drawer-icon-color-before: #ffffff; 
+$drawer-color: #ffffff; 
+$drawer-toggle-color: #ffdc83; 
+$drawer-selected-color: #ffb444; 
+$first-panel-color-title: #7b098b; 
+$first-panel-color-icon-button: #7b098b; 
+$first-panel-border-icon-button: #7b098b; 
+$first-panel-bg-icon-button: #ffffff; 
+$grid-header-text-color: #690779; 
+$grid-header-border: #7b098b; 
+$grid-title-heder-h4-color: #7b098b; 
+$grid-button-color: #7b098b; 
+$grid-checkbox-checked-border: #7b098b; 
+$grid-checkbox-checked-color: #7b098b; 
+$grid-color-icon: #7b098b; 
+$grid-header-filter-color: #7b098b; 
+$grid-pagenumber-color-selected: #7b098b; 
+$grid-pager-nav-color: #7b098b; 
+$grid-page-number-color: #ddc3e7; 
+$grid-tr-bg-hover: #f8f8f8; 
+$grid-header-serach-border: #c7c7c7; 
+$grid-header-serach-border-radius: #c7c7c7; 
+$grid-border-bottom: #e7e7e7; 
+$grid-checkbox-border: #000000; 
+$grid-text: #000000; 
+$header-details-label-color: #7b098b; 
+$header-link-color: #0eaadc; 
+$header-lastlogindetails-color: #8e8e8e; 
+$header-details-span-color: #000000; 
+$header-usernamedetails-color: #000000; 
+$header-hellotext-color: #000000; 
+$header-border: #000000; 
+$header-bg: #ffffff; 
+$icon-before: #7b098b; 
+$icon-after: #cda3dd; 
+$lable-list-bg: #7b098b; 
+$lable-list-caption-color: #310538; 
+$lable-list-value-color: #000000; 
+$link-color: #0eaadc; 
+$list-view-selected-line: #7b098b; 
+$list-view-icon-color-default: #7b098b; 
+$list-view-focus-border: #b285c4; 
+$list-view-disable-icon: #c7c7c7; 
+$list-view-disable-text: #c7c7c7; 
+$list-view-border-bottom: #e7e7e7; 
+$list-view-hover-line: #f5f5f5; 
+$list-view-disable-bg: #f8f8f8; 
+$list-view-text-default: #000000; 
+$list-view-selected-line-text: #ffffff; 
+$list-view-selected-line-icon: #ffffff; 
+$list-view-bg-line-default: #ffffff; 
+$mandatory-color: #b285c4; 
+$messagebox-bg-button-focus: #690779; 
+$messagebox-bg-button: #7b098b; 
+$messagebox-color-text: #000000; 
+$messagebox-color-icon: #7b098b; 
+$messagebox-color-icon-close: #a6a6a6; 
+$messagebox-bg-button-hover: #915fa5; 
+$messagebox-bg: #ffffff; 
+$order-cube-title-color: #7b098b; 
+$order-link-color: #0eaadc; 
+$order-cube-caption-color-text: #8e8e8e; 
+$order-cube-caption-color-textbox: #676767; 
+$order-cube-border-textbox: #a6a6a6; 
+$order-cube-bg: #f8f8f8; 
+$order-cube-span-color-text: #000000; 
+$order-cube-span-color-textbox: #000000; 
+$popup-title-color: #7b098b; 
+$popup-k-filter-menu-border: #ddc3e7; 
+$radio-button-required-border: #b285c4; 
+$radio-button-required-check: #b285c4; 
+$radio-button-bg-check: #7b098b; 
+$radio-button-focus-checkd: #30c6f5; 
+$radio-button-color-disable: #a6a6a6; 
+$radio-button-border-disable-check: #c7c7c7; 
+$radio-button-border-disable: #c7c7c7; 
+$radio-button-readonly-color: #a6a6a6; 
+$radio-button-border-readonly: #a6a6a6; 
+$radio-button-text-label-color: #000000; 
+$radio-button-border-check: #7b098b; 
+$radio-button-bg: #ffffff; 
+$radio-button-border-readonly-check: #a6a6a6; 
+$radio-button-border-default: #000000; 
+$radio-button-hover-border: #cda3dd; 
+$radio-button-hover-check: #cda3dd; 
+$radio-button-focus-border: #30c6f5; 
+$row-bg: #ffffff; 
+$scroll-bg-hover: #690779; 
+$scroll-bg: #7b098b; 
+$special-button-color-text-focus: #690779; 
+$special-button-color-border-focus: #690779; 
+$special-button-press: #690779; 
+$special-button-color-border: #690779; 
+$special-button-color-border-hover: #690779; 
+$special-button-color-text: #690779; 
+$special-button-bg-hover: #690779; 
+$special-button-color-icon: #690779; 
+$special-button-color-text-hover: #ffffff; 
+$special-button-bg: #ffffff; 
+$special-button-bg-focus: #ffffff; 
+$button-bg-press: #690779; 
+$grid-header-border: #7b098b; 
+$slider-color-icon: #7b098b; 
+$slider-car-icon-color-after: #7b098b; 
+$slider-car-icon-color-before: #7b098b; 
+$slider-sum-color: #7b098b; 
+$slider-tooltip-color: #7b098b; 
+$slider-bg: #7b098b; 
+$list-view-arrow: #000000; 
+$popup-border: #a6a6a6; 
+$time-picker-number-default: #a6a6a6; 
+$time-picker-title: #676767; 
+$time-picker-link-now: #0eaadc; 
+$time-picker-hour-select: #7b098b; 
+$time-picker-border-hour-select: #dedede; 
+$time-picker-border: #ddc3e7; 
+$time-picker-number-hover: #a6a6a6; 
+$time-picker-chosen-hour: #7b098b; 
+$drawer-icon-color-after: #ffb444; 
+$specail-label-text-color: #690779 !default;
+
+
+$popup-k-filter-menu-box-shadow: 0px 5px 8px 0px rgba(123, 9, 139, 0.10);
+$button-box-shadow-focus: 0px 1px 3px 0px rgba(123, 9, 139, 0.30), 0px 4px 8px 0px rgba(123, 9, 139, 0.30);
+$row-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+ $check-box-focus-box-shadow: 0px 1px 3px 0px rgba(48, 198, 245, 0.30), 0px 4px 8px 0px rgba(48, 198, 245, 0.30);
+ $calendar-box-shadow: 0px 5px 8px 0px rgba(123, 9, 139, 0.10);
+ $header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10);
+ $window-box-shdow:  0px 5px 8px 0px rgba(123, 9, 139, 0.10);;
+ $messagebox-box-shaow: 0px 5px 8px 0px rgba(123, 9, 139, 0.10);
+ $control-box-shadow-focus: 0px 1px 3px 0px rgba(48, 198, 245, 0.30), 0px 4px 8px 0px rgba(48, 198, 245, 0.30);
+ $cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(13, 13, 13, 0.10);
+ $radio-button-box-shadow-focus: 0px 1px 3px 0px rgba(48, 198, 245, 0.30), 0px 4px 8px 0px rgba(48, 198, 245, 0.30);
+ $list-container-shadow: 0px 0px 5px 5px rgba(123, 9, 139, 0.10), 0px 2px 4px 0px rgba(123, 9, 139, 0.03), 0px 4px 5px 0px rgba(123, 9, 139, 0.04);
+ $slider-box-shadow: 0px 5px 8px 0px rgba(123, 9, 139, 0.10);
+
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 50px ;
+    background: $control-background ;
+    border: 1px solid $control-border-input ;
+    border-radius: 10px ;
+    padding: 10px 20px ;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 16px !important ;
+    color: $control-color-input ;
+    text-align: right ;
+}
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background ;
+    border:1px solid $control-border-input-disable ;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable ;
+}
+
+
+// special button //
+
+%special-button{
+    height: 50px !important ;
+    background: $special-button-bg ;
+    border-radius: 10px ;
+    font-family: "Heebo" ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $special-button-color-text ;
+    width: auto !important ;
+    min-width: 200px ;
+    border: 1px solid $special-button-color-border ;
+}
+
+// button//
+
+%button{
+    background: $button-bg ;
+    border: none ;
+    border-radius: 10px ;
+    align-items: center ;
+    height: 50px !important ;
+    color: $button-color-text ;
+    font-family: 'Heebo' !important ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    min-width: 200px ;
+}

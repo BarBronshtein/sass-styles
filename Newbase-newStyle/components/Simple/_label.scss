@@ -1,0 +1,258 @@
+.xstyle-dynamiclabelcontrol-wrapper{
+
+&.x-label-large{
+    span,label{
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+&.x-label-medium{
+    label,span{
+        font-size: 18px;
+    }
+}
+
+label{
+    color: var(--label-text-color-caption);
+    text-align: right;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+}
+
+span{
+    color: var(--label-text-color-default);
+    text-align: right;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+    
+
+&.x-label-list{
+
+    span{
+        color: var(--label-text-color-listcaption);
+        text-align: right;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; 
+    }
+
+    label{
+        overflow: hidden;
+        color: var(--label-text-color-listcaption);
+        text-align: right;
+        text-overflow: ellipsis;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+
+    &.x-label-large{
+        span,label{
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }   
+
+}
+
+&.x-label-pagetitle{
+
+    span{
+        color: var(--label-text-color-title);
+        font-family: Heebo;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%;
+        text-align: center;
+    }
+    &.x-label-large{
+        span,label{
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+    
+    &.x-label-medium{
+        label,span{
+            font-size: 22px;
+        }
+    }
+
+
+}
+
+
+&.x-label-pagesubtitle{
+ 
+    span{
+    color: var(--label-text-color-subtitle);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    }
+
+    &.x-label-large{
+        span,label{
+            font-size: 20px;
+            font-style: normal;
+         
+        }
+    }
+    &.x-label-medium{
+        label,span{
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+&.x-label-loginTitle{
+    span{
+        color: var(--label-text-color-default);
+        text-align: right;
+        font-family: Heebo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+    }
+    &.x-label-large{
+        span,label{
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+    &.x-label-medium{
+        label,span{
+            font-size: 24px;
+            font-weight: 500;
+
+        }
+    }
+
+}
+
+
+
+
+&.x-label-display
+{
+
+    color: var(--label-text-color-default);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+
+    &.x-label-large{
+
+    span{
+    color: var(--label-text-color-default);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; 
+    }
+}
+
+&.x-label-medium{
+    label,span{
+        font-size: 64px;
+     
+
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+&.x-label-rowtitle{
+    span{
+        color: var(--label-row-title);
+        text-align: right;
+        /* label-row-title */
+        font-family: Heebo;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+    }
+}
+  &.x-label-toolbartitle{
+    span{
+        color: var(--label-toolbar-title);
+        text-align: right;
+        /* label-toolbar-title */
+        font-family: Heebo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+    }
+  }
+
+}
+
+.x-highlight{
+
+    & label{
+        color: #8EBBCF ;
+    }
+    & input.k-textbox.x-textbox.s-textbox{
+        border: 1px solid #8EBBCF ;
+    }
+}
+
+.xstyle-freehandhtml-wrapper{
+    margin-top: 50px ;
+    margin-bottom: 50px;
+  & center{
+    background: none !important;
+    border: none !important;
+    border-bottom: none ;
+    text-align: right !important;
+    font-family: 'Heebo' !important;
+    font-weight: 400 !important;
+    font-size: 20px  !important;
+   border-radius: 0px ;
+    line-height: 140% ;
+    color: var(--label-text-color-default) !important;
+  }  
+
+}

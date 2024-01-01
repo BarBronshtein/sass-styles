@@ -1,0 +1,33 @@
+
+
+.INDhasDragTooltip #INDWrap #INDmenu-btn[data-INDdrag]{
+    top: 50%;
+    bottom: auto;
+    left: -1px !important;
+}
+
+
+
+.xstyle-floatbuttonv2-wrapper{
+   button.x-floatbutton{
+    background: $floatbutton-bg;
+box-shadow:$floatbutton-box-shadow;
+    span{
+        font-size: 62px;
+        width: 75px;
+        height: 75px;
+        color: $floatbutton-text-color;
+    
+    }
+}
+
+
+    &.tracker{
+        button.x-floatbutton{
+            background: #c5c5c5;
+        box-shadow: 0px 0px 10px rgb(182 182 182 / 40%), 0px 6px 4px rgb(144 144 144 / 60%);
+        }
+    
+   }
+}
+   

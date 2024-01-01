@@ -1,0 +1,45 @@
+
+
+.xstyle-buttongroup-wrapper{
+    margin-top: 30px;
+
+    .k-button-icon{
+        font-size: 20px;
+    }
+    button.k-button{
+
+        color: var(--groupbutton-text-color-default);
+        border: 1px solid var(--groupbutton-border-color-default);
+        background: var(--groupbutton-bg-color-default);
+        height: 40px !important;
+        min-width: 50px;
+        &:hover{
+
+            background-color:var(--groupbutton-bg-color-hover) ;
+            color:var(--groupbutton-text-color-hover) ;
+            border: 1px solid var(--groupbutton-border-color-default);
+            span{
+                color:var(--groupbutton-text-color-hover);
+            }
+        }
+        &:focus,&:focus-within{
+            color: var(--groupbutton-text-color-default) !important;
+            background: var(--groupbutton-bg-color-default)  !important;
+            border: 1px solid var(--groupbutton-border-color-focus);
+            box-shadow: var(--groupbutton-shadow-focus);
+
+            span{
+                color:var(--groupbutton-text-color-default) !important;
+            }
+        }
+       &.k-selected{
+        border: 1px solid var(--groupbutton-border-color-default);
+        background: var(--groupbutton-bg-color-selected);
+
+        span{
+            color: var(--groupbutton-text-color-selected);
+
+        }
+       }
+    }
+}

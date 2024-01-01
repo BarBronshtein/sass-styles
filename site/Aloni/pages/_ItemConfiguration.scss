@@ -1,0 +1,60 @@
+
+
+#TafnitCore_Sales_V2_UI_ItemConfiguration{
+
+    margin-top: -7px !important;
+    img{
+        width: 100%;
+     
+    }
+
+  .dataAndScrollview{
+    .x-image-wrapper{
+        padding-top: 15px;
+    }
+    img{
+        width: 100%;
+        border-radius: 2px;
+    }
+  }
+    .col-detailView{
+        padding: 0 0px 0 40px;
+
+
+        .row-flex-2{
+            justify-content: space-between;
+            
+            .col-flex{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 15px;
+
+                &:has(.k-icon){
+                    grid-template-columns: auto 1fr; 
+                    .xstyle-buttoncontrol-wrapper{
+                
+                         button{
+                            padding: 0 10px;
+                            width: 50px !important;
+                         }
+                    } 
+                }
+            
+
+                .xstyle-buttoncontrol-wrapper{
+                
+                .btn-special button{
+                    width: 100% !important;
+                }
+                 button{
+                    width: 100% !important;
+                 }
+            }
+            }
+        }
+    }
+
+    .col-scrollview{
+        margin-top: 25px;
+    }
+}

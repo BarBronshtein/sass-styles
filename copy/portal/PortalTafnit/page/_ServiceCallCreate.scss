@@ -1,0 +1,179 @@
+.k-window:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate){
+    .k-window-titlebar {
+        position: fixed;
+    z-index: 10005;
+    left: 0;
+    }
+}
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate{
+    .greyPanel .x-section-header-wrapper .x-section-header{
+        margin-top: 10px;
+    }
+ div[uxid="ctserciveCallDesc1"]{
+    padding-right: 20px !important;
+ }
+
+    .xtaf-cube-upload{
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+        padding: 10px;
+         margin-top: 0 !important;
+        width: 100%;
+
+        .k-icon{
+          &::before{
+            color: #690779;
+            font-size: 22px;
+          }
+        }
+
+        .dynamicConstructor-icon{
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+        .x-kicon-caption{
+            margin-right: 5px; 
+            color: var(--upload-color-file-name, #000);
+            text-align: right;
+            font-family: Heebo;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            white-space: nowrap;       
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+    }
+    .mt-26{
+        margin-top: 26rem !important;
+    }
+    mainbody{
+        margin-top: 395px !important;
+
+        &:has(.xtaf-mt-0){
+                margin-top: 0px !important; 
+        }
+    }
+    header{
+        background: none;
+        position: fixed;
+        padding: 60px 20px 30px 20px;
+        background: #F5F5F5;
+        border-radius: 10px 10px 0 0;
+    .xtaf-logo-image {
+
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        .x-image-wrapper{
+            text-align: center;
+        }
+    }
+       .xstyle-progressbar-wrapper{
+        background: none;
+        border: none;
+        direction: ltr;
+        .x-progressbar{
+            height: 10px;
+            border: none;
+        }
+
+        ul{
+            background: var(--step-step-progressbar-default, #DEDEDE);
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+
+
+            li{
+                height: 10px;
+                border:none;
+                border-radius:0;
+
+                &.k-first{
+                    border-radius: 4px 0px 0px 4px;
+                }
+
+                &.k-last{
+                    border-radius: 0 4px 4px 0;
+                }
+
+                &.k-selected{
+                    background: #0EAADC !important;
+                }
+            }
+        }
+       }
+
+
+       .xtaf-progressbar{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+         span{
+            color: var(--step-step-text-default, #A6A6A6);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Heebo;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center; 
+        }
+        .xtaf-activeTab{
+
+            span{
+            color: var(--step-step-text-done, #026180);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Heebo;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            }
+        }
+       }
+
+    }
+}
+
+div[uxid="ctserciveCallDesc2"]{
+    .templatex-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+}
+
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

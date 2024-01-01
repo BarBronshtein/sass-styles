@@ -1,0 +1,328 @@
+
+@use '../variable/variable' as *;
+
+
+
+.xstyle-date-wrapper.mandatory > div:nth-child(2) span{
+    border-bottom: 1$control-border-input !important;
+}
+.xstyle-date-wrapper{
+
+
+    &:has(.x-login-user-error-msg){
+        .s-datePickerResponsive.x-datePicker-mobile,
+        span.k-datepicker{
+           border-bottom: $control-border-error  !important;
+        }
+    }
+    // disable // 
+
+margin-top: 15px;
+    &.k-state-disabled{
+        opacity: 1 !important;
+       & input.k-textbox{
+
+           @extend %texbox-input-disable;
+       }
+
+       & label{
+        @extend %texbox-label-disable;
+         }
+         & button span:before{
+            @extend %texbox-label-disable;
+         }
+
+   }
+
+
+    & .s-datePickerResponsive.x-datePicker-mobile{
+
+        @extend %texbox-input;
+        &:focus{
+            box-shadow:$control-box-shadow-focus !important;
+            border: $control-border-focus !important;
+        }
+        
+    }
+    
+    
+    
+    
+    & span.k-datepicker{
+        @extend %texbox-input;
+      
+        &:focus-within{
+            border: $control-border-focus !important;
+            box-shadow: $control-box-shadow-focus;
+        }
+    }
+    & input{
+
+        padding: 0;
+    }
+
+    & span.k-datepicker,
+    & input{
+    
+        width: 100%;
+        height: 50px;
+        align-self: center;
+      
+   
+        &::placeholder{
+            color: $control-color-placeholder !important;
+        }
+
+     
+    }
+
+// caption // 
+
+    & label{
+        @extend %texbox-label; 
+    }
+
+// button date //
+
+ & button{
+    left: 6px;
+    margin-left: 12px;
+    background: none !important;
+    & span{
+            left: 16px;
+        &::before{
+            content: "\e973" !important;
+            font-family: "icomoon";
+            font-size: 25px;
+            /* top: 5px; */
+            left: -24px;
+            color: $control-color-icon;
+        }
+    }
+ }
+}
+
+
+
+
+// clander //
+
+.k-animation-container .k-popup:has(.k-calendar-table){
+
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: $calendar-box-shadow !important;
+    .k-footer a{
+        color:#14008E !important ;
+    }
+    .k-calendar{
+        background: none;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    // header calnder //
+
+    .k-header.k-hstack{
+        align-items: center;
+        height: 50px;
+        background: $calendar-bg-header;
+        border: none !important;
+
+           .k-nav-prev{
+
+            span{
+                color:$calendar-color-icon-header !important;
+               }
+           }
+
+           .k-nav-fast{
+
+            span{
+
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: $calendar-color-text-header;  
+
+            }
+           }
+
+           .k-nav-next{
+
+            span{
+                color: $calendar-color-icon-header !important;
+              }
+           }
+    }
+
+
+    // body calnder //
+
+  
+
+    .k-calendar-view.k-calendar-yearview,
+    .k-calendar-view.k-calendar-decadeview{
+        background: $calendar-bg-body;
+        border-bottom:$calendar-border-bottom-body ;
+        table{
+            tbody{
+              tr{
+        
+                td.k-calendar-td{
+                    padding: 10px 0px;
+                    height: 36px !important;
+
+                    &:hover{
+                        a {
+                            color:$calendar-body-butoon-color-text-hover ;
+                            background: none;
+                            border-radius:100px;
+                            background: #14008E !important;
+                            font-weight: 700;
+                        }
+                    }
+                    &.k-focus{
+                     
+
+                        a{
+                            color:$calendar-body-butoon-color-text-focus !important;
+                            font-weight: 700;
+                            box-shadow: none;
+                            height: 36px !important;
+                            background: $calendar-body-butoon-bg-focus;
+                            border-radius: 100px;
+                            box-shadow: none;
+                        }
+
+                    }
+
+                    a{
+                        height: 36px !important;
+                        font-family: 'Assistant';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $calendar-body-button-color;
+                       
+                    }
+                }
+              }
+            }
+        }
+    }
+
+
+
+
+    // month calnder //
+
+       .k-calendar-view.k-calendar-monthview{
+          border-bottom: $calendar-border-bottom-body;
+             th{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $calendar-month-color-title;
+             }
+
+             td{
+
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $calendar-month-color-days;
+                
+            
+
+                // עמודה שהיא תאריך נוכחי //
+
+                &.k-today{
+                    a{
+                    border: $calendar-month-border-today;
+                    color: $calendar-month-color-today;
+                    border-radius:50%;
+                    box-shadow: none;
+                    }
+                }
+
+                // עמודה מחודש אחר או חודש הבא //
+
+                &.k-other-month{
+              
+                    color: $calendar-month-color-days-other-month !important;
+                    &:hover{
+                        a{
+                            border: $calendar-month-border-other-month-hover;
+                            color: $calendar-month-color-other-month-hover;
+                        }
+                    }
+                }
+
+                // עמודה שהיא חלק מהספוש //
+
+                &.k-weekend{
+                    color: #C7C7C7;
+                    &:hover{
+                        a{
+                            border:$calendar-month-border-other-month-hover;
+                            color: $calendar-month-color-other-month-hover;
+                        }
+                    }
+                }
+
+                // focus day //
+
+                &.k-focus{
+                    a {
+                        background: $calendar-month-bg-days-focus;
+                        border-radius:50%;
+                        color: $calendar-month-color-days-focus;
+                        font-weight: 700;
+                        box-shadow: none !important;
+                    }
+                }
+
+
+                // hover day //
+                &:hover{
+                    a {
+                        color: $calendar-month-color-days-hover;
+                        background: none;
+                        border-radius:50%;
+                        border: $calendar-month-border-days-hover;
+                        font-weight: 700;
+                    }
+                }
+             }
+
+       }
+
+
+
+    // footer calnder //
+
+    .k-footer{
+
+        a{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $calendar-fotter-color-text; 
+        }
+    }
+
+}

@@ -1,0 +1,101 @@
+
+
+.total-panel{
+    display: grid;
+   justify-content: end;
+
+   .border-bottom{
+    border-bottom: 1px solid #8E8E8E !important;
+    margin-bottom: 15px;
+   }
+
+    .labelTitle{
+        height: 25px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        & >.x-cell{
+            max-width: 100%;
+        }
+    label{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 120% !important;
+        text-align: right !important;
+        color: #8E8E8E !important;
+    }
+    
+    & span.s-dynamic-label-control.x-label{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 120%;
+        color: #000000 !important;
+        text-align: left !important;
+        direction: ltr;
+    }
+    
+    }
+    
+    .totalCol{
+        padding-top: 10px;
+        border-top: 1px solid #8E8E8E;
+        label{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px !important;
+            line-height: 120%;
+            text-align: right;
+            color: #000000;
+            }
+    
+               span{
+                color: #AE2A30;
+                text-align: left !important;
+                font-family: Heebo;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
+                direction: ltr;
+               }
+        .labelTitle.xstyle-textcontrol-wrapper{
+            height: auto !important;
+            display: grid;
+        grid-template-columns: 1fr auto;
+
+        & >.x-cell{
+            max-width: 100%;
+        }
+      
+        }
+    }
+    
+}
+
+.total-body-row1{
+    min-width: 470px;
+    .xstyle-dynamiclabelcontrol-wrapper{
+       label{
+        color:  #8E8E8E;
+        text-align: right;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+       }
+        span{
+            font-family: Heebo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            color: #000000;
+            text-align: left !important;
+        }
+    }
+}

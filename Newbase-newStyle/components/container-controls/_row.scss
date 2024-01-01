@@ -1,0 +1,170 @@
+
+
+
+
+mainbody{
+
+// row-main //
+& > .row{
+
+
+    border: none !important;
+    background: var(--row-primary-bg-color); 
+    border: none;   
+    box-shadow: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    
+&.x-row-shadow{
+    box-shadow: var(--row-shadow);
+    background: var(--row-primary-bg-color);
+}
+
+&.x-row-border{
+    border: 1px solid var(--row-border-border-color) !important;
+    padding: 20px;
+}
+
+&.x-row-bg-color{
+    background: var(--row-bg-bg-color); 
+}
+
+&.x-row-hidden{
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+}
+
+
+
+
+}
+
+
+
+.row{
+
+
+
+    
+&.x-row-shadow{
+    box-shadow: var(--row-shadow);
+    background: var(--row-primary-bg-color);
+    border: none !important;
+}
+
+&.x-row-border{
+    border: 1px solid var(--row-border-border-color) !important;
+    padding: 20px;
+}
+
+&.x-row-bg-color{
+    background: var(--row-bg-bg-color); 
+}
+
+&.x-row-hidden{
+    border: none !important;
+    box-shadow: none;
+    background: white;
+    margin: 0;
+    padding:0;
+
+}
+
+&.x-row-floatBottom{
+    position: absolute;
+    bottom: 0px;
+}
+}
+
+
+
+
+// row-bg-color //
+
+.x-row.row-flex{
+  & > .col-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    & > .x-self-container {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+  }
+}
+
+
+.x-row.row-flex-scroll{
+
+    & > .col-flex-scroll{
+        overflow-y: hidden;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        gap: 15px;
+        max-width: 95%;
+        margin: auto;
+    }
+  }
+
+
+.k-header.row.x-row {
+
+    background: none;
+    border: none;
+    margin-bottom: 15px;
+
+    & > .x-col{
+        padding: 0;
+        h3{
+            font-family: 'Heebo';
+            font-size: 16px;
+            color: black;
+        }
+    }
+}
+
+h4.x-cell-header.s-cell-header{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Heebo';
+    color: black;
+}
+
+.x-row-shadow{
+    box-shadow: var(--row-shadow);
+    background: var(--row-primary-bg-color);
+    border: none !important;
+}
+
+.x-row {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: relative;
+    background: var(--row-primary-bg-color); 
+
+}
+
+.x-section-wrraper:has(.x-row-hidden){
+    border: none !important;
+    box-shadow: none;
+    background: white;
+    margin: 0;
+    padding:0;
+
+}
+
+
+
+

@@ -1,0 +1,45 @@
+@use "../variable/variable" as *;
+
+.xstyle-buttoncontrol-wrapper,
+.k-time-footer.k-action-buttons {
+  & .k-button {
+
+    max-width: 200px;
+    line-height: 16px;
+    height: 30px !important;
+    background: #7B098B;
+    border-radius: 10px;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    margin-bottom: 15px;
+ 
+    &:hover {
+      background: #9749A2 !important ;
+    }
+
+    &:focus {
+    background: #690779 !important;
+    color: #fff !important;
+    font-weight: 400!important;
+    text-decoration-line: underline;
+    }
+  }
+}
+
+
+.x-button-wrapper {
+    & .k-button[disabled] {
+      background: #FBFBFB !important;
+      border-radius: 10px;
+      border: none !important;
+      border: 1px solid #ECECEC !important;
+      opacity: 1 !important;
+      color: #C8C8C8 !important;
+    }
+  }
+
+
+  .k-button.k-input-button{
+    top: 0px;
+  }

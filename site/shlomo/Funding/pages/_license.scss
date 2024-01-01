@@ -1,0 +1,121 @@
+
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense){
+
+    background: #FFFFFF;
+    box-shadow: 0px 4.91781px 4.91781px #05425C;
+    border-radius: 10px;
+    border: none;
+    width: 90% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+ 
+    height: auto !important;
+    max-height: 90%;
+    #TafnitCore_System_UI_App_Tools_DriverLicense{
+        margin-bottom: 0 !important;
+
+        .x-footer{
+            display: none !important;
+        }
+    }
+    .k-header.header {
+        display: none;
+    }
+    .x-row{
+        padding: 0 !important;
+        background: none !important;
+        box-shadow: none !important;
+    }
+
+    .k-window-titlebar{
+        background: none;
+        border: none;
+    }
+.wrapper-card-license{
+    max-width: 340px;
+    margin: auto;
+    max-height: 240px;
+    min-height: 230px;
+    .bg-user{
+        position: absolute;
+        width: 92px;
+        left: 6px;
+        top: 60px;
+    }
+    .bg-license{
+        position: absolute;
+        padding: 0;
+        width: 100%;
+
+        img{
+            min-height: 218px;
+        }
+    }
+
+
+
+    .wrapper-parts{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 50px;
+    }
+
+    .license-part1,
+    .license-part3{
+
+        display: grid;
+        align-items: flex-end;
+        grid-template-rows: 1fr auto;
+    }
+
+    .license-part2{
+        padding-left: 24px;
+    }
+    .license-part1,
+    .license-part2,
+    .license-part3{
+.x-control-caption-wrapper,.x-control-content-wrapper {
+    display: grid;
+}
+        label{
+       
+            font-style: normal;
+            font-weight: 400;
+            font-size: 5.40462px;
+            line-height: 100%;
+            text-align: left;
+            color: #757575;
+        }
+
+        span{
+          
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10.8092px;
+            line-height: 100%;
+            text-align: left;
+            color: #323C4B;
+            height: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+
+.btn-license{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    text-align: center;
+
+    button{
+        min-width: 110px;
+        width: auto !important;
+    }
+}
+
+}

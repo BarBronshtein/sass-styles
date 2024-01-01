@@ -1,0 +1,50 @@
+:root{
+
+/* Color styles */
+--taas-fileviewer-card-bg-color-default: rgba(255, 255, 255, 1);
+--taas-fileviewer-card-icon-color: rgba(142, 187, 207, 1);
+--taas-fileviewer-card-title-text-color: rgba(117, 155, 172, 1);
+--taas-fileviewer-card-subtitle-text-color: rgba(117, 155, 172, 1);
+--taas-fileviewer-card-line-color: rgba(204, 204, 204, 1);
+--taas-fileviewer-card-button-text-color-default: rgba(126, 123, 123, 1);
+--taas-fileviewer-card-button-icon-color-default: rgba(126, 123, 123, 1);
+--taas-header-bg-color: rgba(255, 255, 255, 1);
+--taas-header-border-color: rgba(222, 222, 222, 1);
+--taas-bg-color: rgba(172, 206, 221, 1);
+--taas-payment-row-bg-bg-color: rgba(117, 155, 172, 1);
+--taas-payment-main-text-color: rgba(255, 255, 255, 1);
+--taas-row-bg-color-primary: rgba(255, 255, 255, 1);
+--taas-payment-icon-color: rgba(117, 155, 172, 1);
+--taas-uploadfiles-bg-color: rgba(249, 249, 249, 1);
+--taas-footer-bg-color: rgba(252, 252, 252, 1);
+--taas-error-row-bg-bg-color: rgba(117, 155, 172, 1);
+--taas-reception-row-bg-bg-color: rgba(252, 252, 252, 1);
+--taas-reception-footer-bg-color: rgba(142, 187, 207, 1);
+--taas-reception-footer-link: rgba(255, 255, 255, 1);
+
+
+
+--taas-error-row-shadow:  2px 2px 10px rgba(117, 155, 172, 0.2);
+--taas-fileviewer-row-shadow:  0px 1px 2px rgba(108, 108, 108, 0.12);
+--taas-footer-box-shadow:  0px -2px 6px rgba(142, 187, 207, 0.2);
+--taas-payment-row-shadow:  0px 10px 6px rgba(117, 155, 172, 0.4);
+--taas-payment-button-img-shadow:  0px 0px 12px rgba(20, 0, 142, 0.2);
+--taas-reception-row-shadow:  0px 0px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#TafnitCore_System_UI_App_Tools_FillAndSignV2Page,
+#TafnitCore_SaaSServer_Survey_UI_Survey{
+.x-control-wrapper{
+    flex-wrap: wrap;
+}
+
+
+}
+
+
+
+#TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=sQuestions]{
+    padding: 30px 10px;
+    padding-bottom: 70px;
+}

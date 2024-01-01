@@ -1,0 +1,68 @@
+
+@use "../variable/variable" as *;
+
+//required-control//
+
+.mandatory.p-floating-container,
+.xstyle-timepicker-wrapper.mandatory,
+.xstyle-idropdownlist-wrapper.mandatory,
+.xstyle-upload-wrapper.mandatory,
+.mandatory.xstyle-textcontrol-wrapper, 
+.xstyle-date-wrapper.mandatory,
+.xstyle-checkbox-wrapper:has(.x-control-caption-wrapper).mandatory,
+.xstyle-password-wrapper.mandatory,
+.xstyle-radio-wrapper.mandatory,
+.xstyle-timepicker-wrapper.mandatory {
+  .x-control-caption-wrapper{
+    & label {
+      &:before {
+        content: "*";
+        font-family: "Font Awesome 5 pro" !important;
+        position: absolute;
+        top: -4px;
+        right: 9px;
+        font-size: 7px;
+        color: #f09621;
+      }
+    }
+  }
+
+  & > div:nth-child(2) span {
+    border-bottom: none !important;
+  }
+}
+
+
+.xstyle-numberrange-wrapper.mandatory{
+  .x-control-caption-wrapper {
+    & label {
+      &:before {
+        content: "*";
+        font-family: "Font Awesome 5 pro" !important;
+        position: absolute;
+        top: 1px;
+        right: 11px;
+        font-size: 7px;
+        color: #f09621;
+       ;
+      }
+    }
+  }
+}
+
+.xstyle-daterangev2-wrapper.mandatory{
+  .x-control-caption-wrapper {
+    & label {
+      &:before {
+        content: "*";
+        font-family: "Font Awesome 5 pro" !important;
+        position: absolute;
+        top: 1px;
+        right: 9px;
+        font-size: 7px;
+        color: #f09621;
+      }
+    }
+  }
+
+}

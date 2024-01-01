@@ -1,0 +1,149 @@
+
+
+#TafnitCore_SaaSServer_Portal_FnxFunding_UI_SavingsProducts{
+    margin-top: 80px !important;
+    margin-right: 150px;
+
+    .products{
+        .product {
+        padding: 0;
+            & > div{
+                display: grid;
+                grid-template-columns: auto 20% 20% 20%;
+                gap: 30px;
+                background: white !important;
+                max-width: 700px;
+                height: 90px;
+                align-items: center;
+                margin-top: 14px;
+                padding-right: 20px;
+                .title-Product{
+
+                    &:has(.x-control-caption-wrapper){
+                        span{
+                            font-family: 'Ploni DL 1.1 AAA';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px !important;
+                            line-height: 19px;
+                            text-align: right;
+                            color: #232873;
+                        }
+                    }
+                    & .x-control-caption-wrapper {
+                        height: 20px;
+                    }
+                    label,span{
+                        font-family: 'Ploni DL 1.1 AAA';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 23px;
+                        text-align: right;
+                        color: #232873;
+                    }
+              
+                }
+
+                .main-Product{
+
+                    .info-product{
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        gap: 0px;
+                        & .infoGap{
+                            grid-column: 2;
+                            grid-row: 1;
+                        }
+                        & .x-infoBubble{
+                            background: white;
+                            border-radius: 6px;
+                            border: none;
+                            filter: drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.1));
+                            padding: 15px;
+                            width: 335px;
+                            right: -100%;
+                            top: 122% !important;
+                            &::after{
+                                top: 0;
+                                right: 10px;
+                                transform: rotate(225deg);
+                                z-index: -1;
+                                width: 40px;
+                                height: 40px;
+                                background: white;
+                                border: none;
+                            }
+                            & .x-infoBubbleTitle{
+                                display: none;
+                            }
+
+                            & .x-infoBubbleContent{
+                                font-family: 'Ploni DL 1.1 AAA';
+                                font-style: normal;
+                                font-weight: 400 !important;
+                                font-size: 16px !important;
+                                line-height: 19px;
+                                display: flex;
+                                align-items: center;
+                                text-align: right;
+                                color: #333333 !important;
+                                padding: 0;
+                            }
+                        }
+                        & .x-infoButton{
+                            background: none;
+                            &::before{
+                                content: "\e97b";
+                                font-family: "icomoon"; 
+                                color: #6B6E77;
+                            }
+                        }
+                        & .x-infoWrap.s-infoWrap{
+                            text-align: left ;
+                        }
+                        span{
+                            color: #6B6E77; 
+                            font-size: 16px !important;
+                        }
+                    }
+
+                    label{
+                        font-family: 'Ploni DL 1.1 AAA';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px ;
+                        line-height: 19px;
+                        text-align: right;
+                        color: #6B6E77;
+                    }
+
+                    span{
+                        font-family: 'Ploni DL 1.1 AAA';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 23px;
+                        text-align: right;
+                        color: #333333;
+                    }
+                }
+
+            }
+        }
+    }
+
+    & .Explanation{
+        margin-top: 16px;
+        max-width: 480px;
+        .x-dynamic-label-control {
+            font-family: 'Ploni DL 1.1 AAA';
+            font-style: normal;
+            font-weight: 400 !important;
+            font-size: 16px !important;
+            line-height: 19px;
+            text-align: right;
+            color: #6B6E77;
+        }
+    }
+}

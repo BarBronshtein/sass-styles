@@ -1,0 +1,100 @@
+
+
+
+.payment-cube-row1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin-bottom: 15px;
+    
+    & > div {
+        padding: 0;
+    }
+}
+.greyPanel{
+.payment-cube-row2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    & > div {
+        padding: 0;
+    }
+
+        .gridHeaderButton{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 15px;
+            padding: 0px;
+
+            button{
+                margin-bottom: 0;
+            }
+
+        }
+    }
+     
+}
+
+.greyPanel{
+    .gridHeaderButton{
+        display: block;
+        gap: 0px;
+        padding: 0;
+        padding-bottom: 10px;
+
+        & >div{
+            align-self: center;
+            top: 15px;
+            position: relative;
+            &.xstyle-kicon-wrapper{
+                background: $first-panel-bg-icon-button;
+                width: 50px;
+                height: 50px;
+                border:1px solid  $first-panel-border-icon-button;
+                border-radius: 10px;
+                align-items: center;
+                &:hover{
+                    background: $button-bg-hover;
+                    border: 1px solid $special-button-color-border-hover;
+                    color: white !important;
+                    span::before{
+                      color:  white !important;
+                    }
+                    span::after{
+                        color:  white !important;
+                      }
+                  }
+            
+                  &:focus:before{
+                    background: $button-color-bg-focus;
+                    color: white !important;
+                    opacity: 1;
+                    span{
+                      color:  white !important;
+                    }
+                  }
+                & .k-icon{
+                   font-size: 32px;
+                }
+                .x-kicon-caption{
+                    display: none;
+                }
+
+
+
+            }
+
+
+            .xstyle-buttoncontrol-wrapper{
+                 .x-button-wrapper {
+                    float: left;
+                 }
+             
+            }
+        }
+    }
+}
+
+

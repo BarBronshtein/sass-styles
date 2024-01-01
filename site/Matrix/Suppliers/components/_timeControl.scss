@@ -1,0 +1,68 @@
+
+@use '../variable/variable' as *;
+
+
+.xstyle-timepicker-wrapper {
+
+    & .k-timepicker {
+        border: none !important;
+
+        &:focus{
+            border: none !important;
+            box-shadow: none !important;
+        }
+    
+        &:focus-within{
+            box-shadow: none ;
+        }
+
+        & button{
+            border: 0px !important;
+            position: absolute;
+            left: 0;
+            z-index: 10;
+            margin-left: 12px;
+            margin-top: 9px;
+            background: transparent !important;
+            & .k-icon{
+                left: 16px;
+                &::before{
+                    font-size: 25px;
+                    /* top: 5px; */
+                    left: -24px;
+                    color: $control-color-icon;
+                }
+            }
+
+        }
+    }
+    &.k-state-disabled{
+        opacity: 1 !important;
+       & input.k-textbox{
+
+        @extend %texbox-input;
+       }
+
+       & label{  
+         color: $control-caption-color-text-disable !important; 
+         }
+   }
+
+    & label{
+        @extend %texbox-label;
+    }
+    & input{
+        @extend %texbox-input;
+        height: 50px !important;
+        padding-right: 10px !important;
+  
+        &:focus,
+        &:active,
+        &:focus-visible{
+            box-shadow:$control-box-shadow-focus !important;
+            border: $control-border-focus !important;
+            outline:none !important;
+        }
+}
+
+}

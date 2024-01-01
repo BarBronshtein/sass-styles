@@ -1,0 +1,15 @@
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio {
+
+    .xstyle-switch-wrapper .k-switch-on .k-switch-track,
+    .xstyle-switch-wrapper .k-switch{
+        height: 20px !important;
+        width: 50px;
+    }
+
+    .xstyle-switch-wrapper .k-switch-on .k-switch-thumb,
+    .xstyle-switch-wrapper .k-switch-off .k-switch-thumb{
+        position: fixed;
+        z-index: 10;
+
+    }
+}

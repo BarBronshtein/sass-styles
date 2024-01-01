@@ -1,0 +1,132 @@
+@import './variable/variable';
+
+@import '../../../Newbase-newStyle/components/newStyle.scss';
+@import './components/textcontrol';
+@import './components/mandatory';
+@import './components/row';
+@import './components/header';
+@import './components/dropdown';
+@import './components/intlphone';
+@import './components/stepper';
+@import './components/autocomplete';
+@import './components/datecontrol';
+@import './components/checkBox';
+@import './components/button';
+@import './components/fotter';
+@import './components/messageBox';
+@import './components/popup';
+@import './components/grid';
+@import './components/upload';
+@import './components/drawer';
+@import './components/slider';
+@import './components/tooltip';
+
+@import './pages/license';
+@import './pages/ID';
+
+
+@import './B2C/login';
+@import './B2C/cubemain';
+@import './B2C/headeer';
+@import './B2C/cubeLoans';
+@import './B2C/xmenucontrol';
+@import './B2C/offerdetails';
+
+
+@import './B2B/header2';
+@import './B2B/dashboard';
+@import './B2B/row2';
+@import './B2B/lotselect';
+@import './B2B/grid2';
+@import './B2B/BDICheck';
+@import './B2B/LoanSecurity';
+@import './B2B/createCustomer';
+@import './B2B/LoanRequest';
+@import './B2B/AdditionalLoaners';
+@import './B2B/ID-B2B';
+@import './B2B/license-B2B';
+@import './B2B/shortLoan';
+@import './B2B/Extendedcreditreport';
+@import './B2B/j5';
+@import './B2B/Simulation';
+@import './B2B/Survey';
+@import './B2B/popup-B2B';
+@import './B2B/AddLoaner';
+@import './B2B/mobile';
+
+@import './B2B/login2';
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
+
+
+body,html{
+    font-family: 'Assistant';
+    background: #ffff !important;
+    height: auto ;
+}
+.border.row{
+    border: none !important;
+}
+
+
+.bg-onborading{
+    position: absolute;
+    top: 100px;
+
+    img{
+        width: 100%;
+    }
+}
+
+.x-section-header-wrapper{
+    background: none;
+    border: none;
+    h3{
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: right;
+        color: #323C4B;
+    }
+}
+
+
+
+#TafnitCore_SaaSServer_Funding_onBorading_UI_BDICheck.container.pageContainer.xtafnit_pageContainer{
+    margin-top: 100px !important;
+}
+#TafnitCore_SaaSServer_Funding_onBorading_UI_BDICheck.container.pageContainer.xtafnit_pageContainer ,
+#TafnitCore_SaaSServer_Funding_onBorading_UI_CreateNewOffer.container.pageContainer.xtafnit_pageContainer ,
+#TafnitCore_SaaSServer_Funding_onBorading_UI_PrivateSurvey.container.pageContainer.xtafnit_pageContainer {
+    margin-top: 20px !important;
+  }
+.d-none:has(.bg-onborading) + .row-main{
+    margin-top: 20px !important;
+}
+
+.container.pageContainer.xtafnit_pageContainer{
+    margin-bottom: 0 !important;
+    .headerNone{
+        padding-bottom: 0 !important;
+    }
+}
+
+.k-overlay{
+
+    background: #323C4B  !important;
+    opacity: 0.5 !important;
+}
+
+.templatex-wrapper{
+    gap: 20px;
+  }

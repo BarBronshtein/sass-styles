@@ -1,0 +1,17 @@
+
+div.mandatory:has(.x-control-caption-wrapper){
+    &:before{
+        content: "*";
+        font-family: "Font Awesome 5 pro" !important;
+        position: absolute;
+        top: 3px;
+        right: 4px;
+        font-size: 7px;
+        color: #F09621;
+        
+    }
+
+    & label{
+        margin-right: 10px;
+    }
+}

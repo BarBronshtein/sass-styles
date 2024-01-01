@@ -1,0 +1,40 @@
+
+
+
+
+.xstyle-checkbox-wrapper{
+    align-items: center;
+    margin: 5px;
+
+   & .x-checkbox{
+      border: 1px solid $CheckBox-border;
+      border-radius: 3px;
+      margin-left: 7px;
+
+    &:checked{
+        border-color: $CheckBox-border-checked;
+        background:$CheckBox--checked-bg ;
+        &:before{
+        color: $CheckBox-color-checked;
+        }
+    }
+
+    &:focus{
+        box-shadow: none;
+    }
+   }
+
+   & label{
+
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: right;
+    color: $CheckBox-caption;
+
+   }
+
+
+}

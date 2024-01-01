@@ -1,0 +1,36 @@
+
+
+
+
+
+.xstyle-textareacontrol-wrapper,.xstyle-textareaforut-wrapper{
+  margin-top: 15px;
+  &.k-state-disabled{
+    opacity: 1 ;
+
+
+   & label{
+    color: var(--label-disable) ; 
+     }
+}
+  & span.x-fild_block{
+    outline: none ;
+  }
+  & textarea{
+        
+    @extend %texbox-input;
+      height: 150px ;
+
+            outline: none ;
+            
+    &:focus{
+      box-shadow:var(--input-focus-shadow) ;
+      border: 1px solid var(--input-border-color-focus) ;
+  }
+    }
+
+    & label{
+      @extend %texbox-label;  
+      
+    }
+}

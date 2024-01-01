@@ -1,0 +1,108 @@
+.xstyle-itreeview-wrapper {
+    .k-sprite {
+        font-size: 18px ;
+        color:var(--treeview-arrow-color-default);
+    }
+
+    .k-icon{
+        color: var(--treeview-arrow-color-default);
+        font-size: 18px;
+    }
+    .k-treeview-leaf{
+    background: none;
+    padding: 4px 8px;
+     .k-treeview-leaf-text,span{
+        color: var(--treeview-text-color-default);
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; 
+    }
+    &.k-selected{
+        border-radius: 4px;
+        background: var(--treeview-bg-color-selected);
+        .k-treeview-leaf-text,span{
+            color: var(--treeview-text-color-selected, var(--color-other-white));
+
+        }
+    }
+    &.k-focus{
+        border-radius: 4px;
+        box-shadow:var(--treeview-item-focus);
+    }
+
+    &.k-hover{
+
+        background: var(--treeview-bg-color-hover);
+    }
+
+
+}
+
+
+.k-checkbox-wrapper{
+    input.k-checkbox{
+        width: 14px;
+        height: 14px;
+        border-color: var(--checkbox-unselect-icon-color-default);
+
+        &:checked{
+            border-color: var(--checkbox-selected-icon-color-default);
+            color: var(--checkbox-selected-icon-color-default);
+            &::before{
+                color: var(--checkbox-selected-icon-color-default);
+            }
+        }
+    }
+}
+
+
+
+.fa-file-image::before{
+  font-family: 'icomoon';
+  content: "\e9af";
+}
+
+.fa-file-pdf::before{
+    font-family: 'icomoon';
+    content: "\e98e";
+}
+
+.fa-file-alt::before{
+    font-family: 'icomoon';
+    content: "\e9b6";
+}
+
+.fa-envelope::before{
+    font-family: 'icomoon';
+    content: "\e985";
+}
+
+.fa-file-word::before{
+    font-family: 'icomoon';
+    content: "\e9ae";
+}
+
+
+.fa-folder::before{
+    font-family: 'icomoon';
+    content: "\e9ac";
+}
+   
+}
+
+#TafnitCore_Archive_UI_SearchByKeywords {
+    ul.k-group.k-treeview-group li.k-item {
+
+        input{ 
+            display:block;
+        }
+        .k-treeview-toggle + .k-checkbox-wrapper input { 
+            display:none;
+        }
+        div + ul.k-group .k-treeview-toggle + .k-checkbox-wrapper input {
+            display:block;
+        }
+    }
+}

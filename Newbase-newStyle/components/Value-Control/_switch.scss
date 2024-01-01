@@ -1,0 +1,71 @@
+.xstyle-switch-wrapper{
+    margin-top: 15px;
+    .k-switch{
+        width: 60px;
+        height: 35px;
+    }
+
+    label{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: right;
+        color: var(--label-text-color-default);
+    }
+
+    .k-switch-off{
+
+        .k-switch-track {
+
+            background: var(--switch-track-bg-color-default);
+            border: 1px solid var(--switch-track-border-color-default);
+            border-radius: 60px;
+            height: 40px;
+      
+
+            .k-switch-label-off{
+                display: none;
+            }
+        }
+
+        &:focus{
+            box-shadow: var( --switch--on-shadow) !important;
+        }
+
+        .k-switch-thumb {
+            background: var(--switch-off-handle-bg-color);
+            width: 25px;
+            height: 25px;
+            border: none;
+
+        }
+    }
+    .k-switch-on{
+        .k-switch-track {
+
+            border: 1px solid var(--switch-track-border-color-default);
+            background: var(--switch-track-bg-color-default);
+            border-radius: 60px;
+            height: 40px;
+            border: none;
+
+            .k-switch-label-on{
+                display: none;
+            }
+        }
+
+        &:focus{
+            box-shadow: var( --switch--on-shadow) !important;
+        }
+
+        .k-switch-thumb {
+            width: 25px;
+            height: 25px;
+            background:  var(--switch-on-handle-bg-color-default) !important;
+            border: none;
+        }
+    }
+
+}

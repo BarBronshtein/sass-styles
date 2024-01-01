@@ -1,0 +1,50 @@
+.xstyle-tab-wrapper{
+    padding-top: 20px;
+
+    .k-tabstrip:focus{
+        box-shadow: none;
+    }
+    .x-tab-control {
+        background: none;
+        border: none;
+
+        .k-tabstrip-items-wrapper{
+            border: none;
+           padding: 0 15px;
+            .k-tabstrip-item{
+                background: none;
+                border: none;
+
+                .k-loading{
+                    border: none;
+                }
+
+                span{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: var(--tab-text-color-default);  
+                }
+                border-radius: 0 !important;
+                border-bottom: 1px solid var(--tab-border-color-default);
+                &.k-active{
+                    border-bottom: 2px solid var(--tab-selected-border-color-default);
+                    background: none;
+                    border-radius: 0;
+
+                    span{
+                        font-weight: 700;
+                        color: var(--tab-selected-text-color-default);
+                    }
+                }
+            }
+        }
+
+        .k-tabstrip-content {
+            background: none;
+            border: none;
+        }
+    }
+}

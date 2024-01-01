@@ -1,0 +1,56 @@
+
+// #TafnitCore_System_UI_App_Tools_Studio_UXStudio{
+
+// .xstyle-idropdownlist-wrapper{
+
+
+//   // readonly + disabled //
+
+
+//   & span.x-dropdown-comp.s-dropdown-comp {
+   
+//        @extend %texbox-inputstudio;
+
+//   &:focus,
+//   &:focus-within{
+//     border:1px solid $control-border-focus;
+//     box-shadow: $control-box-shadow-focus;
+//   }
+
+//   & .k-input-inner{
+//     padding: 0
+//   }
+
+//   }
+
+//   & label{
+//     @extend %texbox-labelstudio;
+//   }
+
+ 
+//   & .k-input-button{
+//     left: 10px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//       &:hover{
+//         background: none;
+//       }
+//     & span.k-icon{
+//       &::before{
+        
+//         content: "\f0d7";
+//         font-size: 22px;
+//         font-family: "Font Awesome 5 Pro";
+//         color: $control-color-icon;
+//         font-weight: 700;
+//       }
+
+//   }
+  
+//   }
+
+
+// }
+
+// }
+

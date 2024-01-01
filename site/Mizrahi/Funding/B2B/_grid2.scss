@@ -1,0 +1,46 @@
+#TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect{
+
+.xstyle-gridv4-wrapper     {
+ .k-grid-header{
+    display: none;
+ }
+    
+    .k-toolbar-resizable{
+        background: none !important;
+        border: none !important;
+
+        .k-overflow-anchor,
+        .k-spacer{
+            display: none !important;
+        }
+
+        .k-searchbox {
+            height: 50px;
+            background: #FFFFFF;
+            border: 1px solid #CED4DA !important;
+            min-width: 260px;
+            span{
+              color: #EF8813;
+
+            }
+
+            input{
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: right;
+                color: #ADB5BD; 
+            }
+
+        }
+    }
+}
+
+.btn-lot{
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+}
+}

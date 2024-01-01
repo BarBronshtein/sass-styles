@@ -17,19 +17,18 @@
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 16px;
   line-height: 1.2999999523em;
   color: #ffffff;
   width: 100% !important;
   height: 50px !important;
   text-align: center !important;
   padding: 10px 20px !important;
-  -webkit-box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1);
-          box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1);
+  box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1);
   margin-bottom: 15px !important;
 }
 
-.xstyle-timepicker-wrapper input, .xstyle-textareacontrol-wrapper textarea, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-idropdownlist-wrapper span.k-dropdown, .xstyle-textcontrol-wrapper input, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper input,
+.xstyle-googleaddress-wrapper .x-control-content-wrapper input, .xstyle-timepicker-wrapper input, .xstyle-textareacontrol-wrapper textarea, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper input, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper input,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .xstyle-textcontrol-wrapper input,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .xstyle-textcontrol-wrapper input,
@@ -53,8 +52,7 @@
   height: 50px !important;
   background: #ffffff !important;
   border: 1px solid #CCCCCC !important;
-  -webkit-box-shadow: inset 4px 4px 5px rgba(204, 204, 204, 0.5) !important;
-          box-shadow: inset 4px 4px 5px rgba(204, 204, 204, 0.5) !important;
+  box-shadow: inset 4px 4px 5px rgba(204, 204, 204, 0.5) !important;
   border-radius: 20px !important;
   font-family: "Heebo" !important;
   font-style: normal !important;
@@ -78,7 +76,13 @@
   margin-bottom: 30px !important;
 }
 
-.xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-textareacontrol-wrapper.k-state-disabled input.k-textbox, .xstyle-date-wrapper.k-state-disabled input.k-textbox, .xstyle-idropdownlist-wrapper.k-state-disabled input.k-textbox, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox,
+.xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-textareacontrol-wrapper.k-state-disabled input.k-textbox, .xstyle-date-wrapper.k-state-disabled input.k-textbox, .xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper.x-readonly input.k-textbox.x-textbox.s-textbox,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .xstyle-textcontrol-wrapper.x-readonly input.k-textbox.x-textbox.s-textbox,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper.x-readonly input.k-textbox.x-textbox.s-textbox,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .xstyle-textcontrol-wrapper.x-readonly input.k-textbox.x-textbox.s-textbox,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .xstyle-textcontrol-wrapper.x-readonly input.k-textbox.x-textbox.s-textbox,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .xstyle-textcontrol-wrapper.x-readonly input.k-textbox.x-textbox.s-textbox,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .xstyle-textcontrol-wrapper.x-readonly input.k-textbox.x-textbox.s-textbox, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox,
@@ -89,7 +93,7 @@
   border: 1px solid #E6E6E6 !important;
 }
 
-.xstyle-textareacontrol-wrapper label, .xstyle-date-wrapper label, .xstyle-idropdownlist-wrapper label, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper label,
+.xstyle-googleaddress-wrapper .x-control-caption-wrapper label, .xstyle-textareacontrol-wrapper label, .xstyle-date-wrapper label, .xstyle-idropdownlist-wrapper label, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper label,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .xstyle-textcontrol-wrapper label,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper label,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .xstyle-textcontrol-wrapper label,
@@ -109,33 +113,14 @@ div[uxid=tbID], div[uxid=tbPassword] {
   margin-top: 5px !important;
 }
 
-.xstyle-textcontrol-wrapper {
-  margin-top: 20px;
-}
 .xstyle-textcontrol-wrapper.k-state-disabled label {
   color: #CCCCCC !important;
 }
 .xstyle-textcontrol-wrapper.shadowIn {
   margin-top: 10px !important;
 }
-.xstyle-textcontrol-wrapper input {
-  margin-bottom: 10px !important;
-}
 .xstyle-textcontrol-wrapper input:focus {
-  -webkit-box-shadow: inset 4px 4px 5px rgba(57, 181, 74, 0.2) !important;
-          box-shadow: inset 4px 4px 5px rgba(57, 181, 74, 0.2) !important;
-}
-.xstyle-textcontrol-wrapper input::-webkit-input-placeholder {
-  color: #BBBBBB !important;
-}
-.xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #BBBBBB !important;
-}
-.xstyle-textcontrol-wrapper input:-ms-input-placeholder {
-  color: #BBBBBB !important;
-}
-.xstyle-textcontrol-wrapper input::-ms-input-placeholder {
-  color: #BBBBBB !important;
+  box-shadow: inset 4px 4px 5px rgba(57, 181, 74, 0.2) !important;
 }
 .xstyle-textcontrol-wrapper input::placeholder {
   color: #BBBBBB !important;
@@ -144,22 +129,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_HomePage .xstyle-textcontrol-wrapper input {
   font-size: 20px !important;
   border-radius: 30px !important;
-}
-
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .tbMainSubject input.k-textbox::-webkit-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .tbMainSubject input.k-textbox::-webkit-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .tbMainSubject input.k-textbox::-webkit-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .tbMainSubject input.k-textbox::-webkit-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .tbMainSubject input.k-textbox::-webkit-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .tbMainSubject input.k-textbox::-webkit-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .tbMainSubject input.k-textbox::-webkit-input-placeholder {
-  color: black !important;
-}
-
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .tbMainSubject input.k-textbox::-moz-placeholder {
-  color: black !important;
-}
-
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .tbMainSubject input.k-textbox:-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .tbMainSubject input.k-textbox:-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .tbMainSubject input.k-textbox:-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .tbMainSubject input.k-textbox:-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .tbMainSubject input.k-textbox:-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .tbMainSubject input.k-textbox:-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .tbMainSubject input.k-textbox:-ms-input-placeholder {
-  color: black !important;
-}
-
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .tbMainSubject input.k-textbox::-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .tbMainSubject input.k-textbox::-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .tbMainSubject input.k-textbox::-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .tbMainSubject input.k-textbox::-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .tbMainSubject input.k-textbox::-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .tbMainSubject input.k-textbox::-ms-input-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .tbMainSubject input.k-textbox::-ms-input-placeholder {
-  color: black !important;
 }
 
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .tbMainSubject input.k-textbox::placeholder,
@@ -178,6 +147,24 @@ div[uxid=tbID], div[uxid=tbPassword] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .tbMainSubject label.s-control-caption-text,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .tbMainSubject label.s-control-caption-text,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .tbMainSubject label.s-control-caption-text {
+  color: #7E7B7B !important;
+}
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper.x-readonly,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .xstyle-textcontrol-wrapper.x-readonly,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper.x-readonly,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .xstyle-textcontrol-wrapper.x-readonly,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .xstyle-textcontrol-wrapper.x-readonly,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .xstyle-textcontrol-wrapper.x-readonly,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .xstyle-textcontrol-wrapper.x-readonly {
+  opacity: 1 !important;
+}
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper.x-readonly label,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .xstyle-textcontrol-wrapper.x-readonly label,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper.x-readonly label,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .xstyle-textcontrol-wrapper.x-readonly label,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .xstyle-textcontrol-wrapper.x-readonly label,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .xstyle-textcontrol-wrapper.x-readonly label,
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .xstyle-textcontrol-wrapper.x-readonly label {
   color: #7E7B7B !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .xstyle-textcontrol-wrapper.k-state-disabled,
@@ -215,44 +202,18 @@ div[uxid=tbID], div[uxid=tbPassword] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .xstyle-textcontrol-wrapper input:focus,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .xstyle-textcontrol-wrapper input:focus {
   border: 1px solid #E6E6E6 !important;
-  -webkit-box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
-          box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
+  box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
   border-radius: 20px 0px !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input {
   margin-bottom: 15px !important;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input::-webkit-input-placeholder {
-  color: black;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: black;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:-ms-input-placeholder {
-  color: black;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input::-ms-input-placeholder {
-  color: black;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input::placeholder {
   color: black;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within {
   background: #39B54A !important;
-  -webkit-box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
-          box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
-  color: #FFFFFF !important;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within::-webkit-input-placeholder {
-  color: #FFFFFF !important;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within::-moz-placeholder {
-  color: #FFFFFF !important;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within:-ms-input-placeholder {
-  color: #FFFFFF !important;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within::-ms-input-placeholder {
+  box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
   color: #FFFFFF !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within::placeholder {
@@ -263,10 +224,9 @@ div[uxid=lLastUpdate] {
   margin-bottom: 20px;
 }
 
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Login .xstyle-buttoncontrol-wrapper button {
-  margin-top: 20px !important;
+.xstyle-buttoncontrol-wrapper {
+  margin-top: 10px !important;
 }
-
 .xstyle-buttoncontrol-wrapper.k-state-disabled {
   opacity: 1 !important;
 }
@@ -274,6 +234,9 @@ div[uxid=lLastUpdate] {
   background: #FFFFFF !important;
   border: 1px solid #CCCCCC !important;
   color: #CCCCCC !important;
+}
+.xstyle-buttoncontrol-wrapper button {
+  border: none;
 }
 .xstyle-buttoncontrol-wrapper button:active {
   background: #267931 !important;
@@ -290,7 +253,7 @@ div[uxid=lLastUpdate] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_HomePage img,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination img {
   width: 100% !important;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_HomePage .optionDriver2 .s-row.xstyle-buttoncontrol-wrapper button.k-button.x-button.s-button,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .optionDriver2 .s-row.xstyle-buttoncontrol-wrapper button.k-button.x-button.s-button {
@@ -307,8 +270,7 @@ div[uxid=lLastUpdate] {
   width: 100% !important;
   height: 90px !important;
   background: #FFFFFF !important;
-  -webkit-box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1) !important;
-          box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1) !important;
+  box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1) !important;
   border-radius: 30px 0px !important;
   font-family: "Heebo";
   font-style: normal;
@@ -324,8 +286,7 @@ div[uxid=lLastUpdate] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .optionDriver .s-row.xstyle-buttoncontrol-wrapper button.k-button.x-button:focus-within,
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .optionDriver2 .s-row.xstyle-buttoncontrol-wrapper button.k-button.x-button:focus-within {
   background: #39B54A !important;
-  -webkit-box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
-          box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
+  box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
   border-radius: 0px 20px !important;
   color: #FFFFFF !important;
 }
@@ -372,8 +333,7 @@ div[uxid=lLastUpdate] {
   background-color: #FFFFFF !important;
   color: #267931 !important;
   margin-top: 30px !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage {
@@ -387,8 +347,7 @@ div[uxid=lLastUpdate] {
 
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-buttoncontrol-wrapper button.k-button.x-button:focus-within {
   background: #39B54A !important;
-  -webkit-box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
-          box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
+  box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
   color: #FFFFFF !important;
 }
 
@@ -399,8 +358,7 @@ div[uxid=lLastUpdate] {
   background: none !important;
   color: #39B54A !important;
   border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 130% !important;
@@ -408,6 +366,10 @@ div[uxid=lLastUpdate] {
 .buttonsSummary button.k-button span {
   font-size: 20px !important;
   margin-left: 7% !important;
+}
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Login .xstyle-textcontrol-wrapper.shadowIn input {
+  margin-bottom: 10px;
 }
 
 .titlePage h4 {
@@ -434,9 +396,9 @@ div[uxid=lLastUpdate] {
   font-weight: 400 !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_HomePage .lCarModel span {
-  margin-top: 30px !important;
+  margin-top: 20px !important;
   margin-bottom: 0px !important;
-  line-height: 100% !important;
+  line-height: 30px !important;
   font-size: 20px !important;
   font-weight: 400 !important;
   color: #000000 !important;
@@ -453,7 +415,6 @@ div[uxid=lLastUpdate] {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 100% !important;
-  margin-bottom: 30px !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_HomePage .lLicensePlate span {
   font-weight: 800 !important;
@@ -471,9 +432,9 @@ div[uxid=lLastUpdate] {
   font-size: 12px !important;
   line-height: 100% !important;
   text-align: right;
-  color: #000000 !important;
+  color: #000000;
   text-align: right !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 0px !important;
 }
 
 .secondaryTitle span {
@@ -497,7 +458,6 @@ div[uxid=lLastUpdate] {
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 130% !important;
-  margin-bottom: 20px !important;
   margin-top: 0 !important;
   color: black !important;
 }
@@ -546,18 +506,19 @@ div[uxid=lLastUpdate] {
   margin-bottom: 20px !important;
 }
 
+.error-folder .xstyle-dynamiclabelcontrol-wrapper span {
+  margin-top: 20px;
+}
+
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .headerDriver {
   height: 53px !important;
   background: white !important;
-  -webkit-box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1) !important;
-          box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1) !important;
+  box-shadow: 0px 2px 2px rgba(57, 181, 74, 0.1) !important;
   border: none !important;
   padding-right: 12px;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .headerDriver .headerDriverContainer {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border: none !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .headerDriver .iLogoHeader .x-image-wrapper {
@@ -568,18 +529,12 @@ div[uxid=lLastUpdate] {
   margin-top: 8px !important;
   margin-left: 15px !important;
 }
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .headerDriver .kIconHeader {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -ms-flex-pack: distribute !important;
-      justify-content: space-around !important;
-  padding-right: 0;
-}
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .headerDriver .kIconHeader .kBurger span {
+  font-size: 30px !important;
+  top: 12px;
+}
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .headerDriver .kIconHeader .kBurger span::before {
   color: #39B54A !important;
-  font-size: 22px !important;
-  top: 14px;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .headerDriver .kIconHeader .kMap span {
   color: #39B54A !important;
@@ -596,18 +551,13 @@ div[uxid=lLastUpdate] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .iconFotter {
   height: 70px !important;
   background: white !important;
-  -webkit-box-shadow: 0px -2px 4px rgba(57, 181, 74, 0.1);
-          box-shadow: 0px -2px 4px rgba(57, 181, 74, 0.1);
+  box-shadow: 0px -2px 4px rgba(57, 181, 74, 0.1);
   border-radius: 0px !important;
   border: none !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .iconFotter .icons {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  justify-content: space-between !important;
   padding-right: 100px;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main .iconFotter .icons div.col-3 {
@@ -664,13 +614,13 @@ div[uxid=lLastUpdate] {
   padding-right: 0 !important;
 }
 
-.xstyle-idropdownlist-wrapper {
-  margin-top: 25px !important;
-}
-.xstyle-idropdownlist-wrapper.k-state-disabled {
+.xstyle-idropdownlist-wrapper.k-state-disabled, .xstyle-idropdownlist-wrapper.x-readonly {
   opacity: 1 !important;
 }
-.xstyle-idropdownlist-wrapper.k-state-disabled label {
+.xstyle-idropdownlist-wrapper.k-state-disabled span.x-dropdown-comp.s-dropdown-comp span.k-icon::before, .xstyle-idropdownlist-wrapper.x-readonly span.x-dropdown-comp.s-dropdown-comp span.k-icon::before {
+  content: "";
+}
+.xstyle-idropdownlist-wrapper.k-state-disabled label, .xstyle-idropdownlist-wrapper.x-readonly label {
   color: #CCCCCC !important;
 }
 .xstyle-idropdownlist-wrapper span {
@@ -678,18 +628,23 @@ div[uxid=lLastUpdate] {
   font-weight: 400 !important;
   font-size: 16px !important;
 }
-.xstyle-idropdownlist-wrapper span.k-dropdown:focus, .xstyle-idropdownlist-wrapper span.k-dropdown:focus-within {
+.xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus-within {
   border: 1px solid #E6E6E6 !important;
-  -webkit-box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
-          box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
+  box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
   border-radius: 20px 0px;
 }
 .xstyle-idropdownlist-wrapper button {
   margin-left: 10px !important;
 }
-.xstyle-idropdownlist-wrapper span.k-icon {
-  font-size: 28px !important;
-  left: 7px;
+.xstyle-idropdownlist-wrapper .k-input-button {
+  margin-left: 15px;
+}
+.xstyle-idropdownlist-wrapper span.k-icon::before {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 700;
+  font-size: 30px;
+  right: -5px;
   color: #39B54A !important;
 }
 
@@ -702,19 +657,16 @@ div[uxid=lLastUpdate] {
 .k-animation-container div {
   background: none !important;
   border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .k-animation-container .k-popup.k-group.k-reset.k-rtl {
   width: 86% !important;
   border-radius: 20px 0px;
-  padding: 30px 20px;
   margin: 0px auto;
   left: 0px;
   right: 0px;
   background: rgb(255, 255, 255) !important;
-  -webkit-box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
-          box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
+  box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
   top: 0px;
 }
 .k-animation-container div.k-list-content span.k-list-item-text {
@@ -724,6 +676,9 @@ div[uxid=lLastUpdate] {
   font-size: 14px !important;
   line-height: 130% !important;
   color: #000000 !important;
+}
+.k-animation-container ul {
+  padding: 30px 20px;
 }
 .k-animation-container li {
   background: #FBFBFB !important;
@@ -735,8 +690,7 @@ div[uxid=lLastUpdate] {
 .k-animation-container li.k-selected.k-focus {
   background: #F5F5F5 !important;
   border: 1px solid #E6E6E6 !important;
-  -webkit-box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
-          box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
+  box-shadow: inset 4px 4px 4px rgba(217, 217, 217, 0.5) !important;
   border-radius: 20px !important;
 }
 .k-animation-container li.k-selected.k-focus span {
@@ -744,17 +698,13 @@ div[uxid=lLastUpdate] {
 }
 .k-animation-container li:hover {
   background: #F5F5F5 !important;
-  -webkit-box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
-          box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
+  box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
   border-radius: 20px !important;
 }
 .k-animation-container li:hover span:hover {
   font-weight: 700 !important;
 }
 
-.xstyle-date-wrapper {
-  margin-top: 20px;
-}
 .xstyle-date-wrapper.k-state-disabled {
   opacity: 1 !important;
 }
@@ -768,51 +718,24 @@ div[uxid=lLastUpdate] {
 }
 .xstyle-date-wrapper span.k-datepicker:focus-within {
   border: 1px solid #cccccc !important;
-  -webkit-box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
-          box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
+  box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
   border-radius: 20px 0px;
 }
 .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper input {
   background: white !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px !important;
   gap: 10px !important;
   width: 100% !important;
   height: 50px !important;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  -ms-flex-positive: 0;
-      flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
   color: black !important;
-  padding-right: 10px !important;
-}
-.xstyle-date-wrapper span.k-datepicker::-webkit-input-placeholder, .xstyle-date-wrapper input::-webkit-input-placeholder {
-  color: #000000 !important;
-}
-.xstyle-date-wrapper span.k-datepicker::-moz-placeholder, .xstyle-date-wrapper input::-moz-placeholder {
-  color: #000000 !important;
-}
-.xstyle-date-wrapper span.k-datepicker:-ms-input-placeholder, .xstyle-date-wrapper input:-ms-input-placeholder {
-  color: #000000 !important;
-}
-.xstyle-date-wrapper span.k-datepicker::-ms-input-placeholder, .xstyle-date-wrapper input::-ms-input-placeholder {
-  color: #000000 !important;
+  padding-right: 5px !important;
 }
 .xstyle-date-wrapper span.k-datepicker::placeholder, .xstyle-date-wrapper input::placeholder {
   color: #000000 !important;
@@ -820,6 +743,7 @@ div[uxid=lLastUpdate] {
 .xstyle-date-wrapper button {
   left: 6px;
   margin-left: 12px;
+  background: none !important;
 }
 .xstyle-date-wrapper button span {
   left: 16px;
@@ -844,13 +768,12 @@ div[uxid=lLastUpdate] {
 }
 .xstyle-textareacontrol-wrapper textarea {
   height: 150px !important;
-  margin-bottom: 25px !important;
+  margin-bottom: 20px !important;
   outline: none !important;
 }
 .xstyle-textareacontrol-wrapper textarea:focus {
   border: 1px solid #E6E6E6 !important;
-  -webkit-box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
-          box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
+  box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3);
   border-radius: 20px 0px;
 }
 .xstyle-ilink-wrapper .x-control-content-wrapper.s-control-content-wrapper {
@@ -892,9 +815,7 @@ div[uxid=lLastUpdate] {
   line-height: 150%;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .contact-icons {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 40px;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .contact-icons div {
@@ -905,13 +826,13 @@ div[uxid=lLastUpdate] {
   color: #7E7B7B !important;
 }
 
-.k-drawer-container drawer-item-container:active, .k-drawer-container drawer-item-container:focus-within {
+.k-drawer-container .drawer-item-container:active, .k-drawer-container .drawer-item-container:focus-within {
   background: #E6E6E6 !important;
 }
-.k-drawer-container drawer-item-container:active span.x-dynamic-label-control.s-dynamic-label-control, .k-drawer-container drawer-item-container:focus-within span.x-dynamic-label-control.s-dynamic-label-control {
+.k-drawer-container .drawer-item-container:active span.x-dynamic-label-control.s-dynamic-label-control, .k-drawer-container .drawer-item-container:focus-within span.x-dynamic-label-control.s-dynamic-label-control {
   font-weight: 700 !important;
 }
-.k-drawer-container drawer-item-container:active span.k-icon.fas, .k-drawer-container drawer-item-container:active span.k-icon.far, .k-drawer-container drawer-item-container:focus-within span.k-icon.fas, .k-drawer-container drawer-item-container:focus-within span.k-icon.far {
+.k-drawer-container .drawer-item-container:active span.k-icon.fas, .k-drawer-container .drawer-item-container:active span.k-icon.far, .k-drawer-container .drawer-item-container:focus-within span.k-icon.fas, .k-drawer-container .drawer-item-container:focus-within span.k-icon.far {
   color: #30973E !important;
 }
 .k-drawer-container .k-overlay {
@@ -938,8 +859,8 @@ div[uxid=lLastUpdate] {
 .k-drawer-container .drTitle span {
   font-family: "Heebo";
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px !important;
+  font-weight: 500;
+  font-size: 16px !important;
   line-height: 140% !important;
   text-align: center !important;
   color: #000000 !important;
@@ -950,40 +871,25 @@ div[uxid=lLastUpdate] {
 }
 .k-drawer-container .drTitle .drawer-item-control-wrapper {
   text-align: center !important;
-  background: #FFFFFF !important;
+  background: #F5F5F5 !important;
   padding: 20px !important;
   border-bottom: 1px solid #DFDFDF !important;
 }
 .k-drawer-container .drList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   padding: 15px 20px;
   gap: 10px;
   width: 100% !important;
   height: 51px !important;
   background: #FFFFFF !important;
   border-bottom: 1px solid #DFDFDF !important;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  -ms-flex-positive: 0;
-      flex-grow: 0;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 .k-drawer-container .drList span.k-icon {
   right: 3px;
@@ -1021,8 +927,7 @@ div[uxid=lLastUpdate] {
 .tabs.row .activeTab span {
   background: white !important;
   color: #267931 !important;
-  -webkit-filter: drop-shadow(2px 2px 3px rgba(12, 48, 17, 0.5)) !important;
-          filter: drop-shadow(2px 2px 3px rgba(12, 48, 17, 0.5)) !important;
+  filter: drop-shadow(2px 2px 3px rgba(12, 48, 17, 0.5)) !important;
 }
 .tabs.row span {
   cursor: pointer !important;
@@ -1077,8 +982,7 @@ div[uxid=lLastUpdate] {
   background: none;
   background: white !important;
   border-radius: 20px 0px;
-  -webkit-box-shadow: rgba(57, 181, 74, 0.4) 0px 0px 10px !important;
-          box-shadow: rgba(57, 181, 74, 0.4) 0px 0px 10px !important;
+  box-shadow: rgba(57, 181, 74, 0.4) 0px 0px 10px !important;
   margin: 0 auto;
   right: 0;
   left: 0;
@@ -1113,8 +1017,7 @@ div[uxid=lLastUpdate] {
   line-height: 22px !important;
 }
 .k-calendar-container.k-popup.k-group.k-reset.k-rtl .k-widget.k-calendar .k-calendar-view tbody tr td.k-state-focused a.k-link {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   background: #267931 !important;
   border: 2px solid #7BCE86 !important;
   border-radius: 50px !important;
@@ -1155,8 +1058,7 @@ div[uxid=lLastUpdate] {
   border: 1px solid #BDE6C3 !important;
   border-radius: 50px;
   color: #39B54A !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   font-weight: 700 !important;
   font-size: 14px !important;
 }
@@ -1220,8 +1122,7 @@ div[uxid=lLastUpdate] {
   color: #E6E6E6 !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-calendar-wrapper .k-widget.k-calendar .k-calendar-view tbody tr td.k-state-focused a.k-link, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-calendar-wrapper .k-widget.k-calendar .k-calendar-view tbody tr td.k-state-selected a.k-link {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   background: #267931 !important;
   border: 2px solid #7BCE86 !important;
   border-radius: 50px !important;
@@ -1239,8 +1140,8 @@ div[uxid=lLastUpdate] {
   font-size: 20px;
   top: 50%;
   position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 33px;
 }
 .xstyle-upload-wrapper:has(.k-file.k-file-success) .k-upload-async .k-button-solid-base.k-upload-button span.k-icon.fa-up-from-line::after {
   content: "" !important;
@@ -1250,6 +1151,21 @@ div[uxid=lLastUpdate] {
   color: #39B54A !important;
 }
 
+.xstyle-upload-wrapper .k-focus {
+  box-shadow: none !important;
+}
+.xstyle-upload-wrapper [class^="k-file-validation-message !k-text-success"] {
+  font-family: "Heebo" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px;
+}
+.xstyle-upload-wrapper [class="k-file-validation-message !k-text-error"] {
+  font-family: "Heebo" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px;
+}
 .xstyle-upload-wrapper .k-file-invalid {
   border-top: 1px solid #39B54A !important;
 }
@@ -1287,12 +1203,10 @@ div[uxid=lLastUpdate] {
   width: auto !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button.k-state-focused {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base:focus {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border: none !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-i-close::before {
@@ -1312,6 +1226,8 @@ div[uxid=lLastUpdate] {
 }
 .xstyle-upload-wrapper .k-upload-async .k-file.k-file-success {
   border-top: 1px solid #39B54A !important;
+  border-color: #39B54A;
+  border-bottom: none;
 }
 .xstyle-upload-wrapper .k-upload-async .k-upload-files.k-reset {
   border: none !important;
@@ -1344,20 +1260,18 @@ div[uxid=lLastUpdate] {
   font-weight: 400 !important;
 }
 .xstyle-upload-wrapper .k-upload-async.k-upload-empty .k-button-solid-base.k-upload-button.k-state-focused {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button {
-  -webkit-box-pack: right !important;
-      -ms-flex-pack: right !important;
-          justify-content: right !important;
+  justify-content: right !important;
   padding-right: 16px;
   border: none !important;
   text-align: right !important;
   background: none !important;
   color: #39B54A !important;
-  font-weight: 700;
+  font-weight: 500;
   height: 80px !important;
+  margin-left: 0;
 }
 .xstyle-upload-wrapper .k-upload-async .k-button-solid-base.k-upload-button span span.k-icon {
   position: absolute !important;
@@ -1370,7 +1284,9 @@ div[uxid=lLastUpdate] {
 }
 
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes),
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage),
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage),
+.k-widget.k-window:has(#MessageBoxWindow) {
   position: absolute !important;
   width: 90% !important;
   height: auto !important;
@@ -1380,20 +1296,25 @@ div[uxid=lLastUpdate] {
   top: 74px !important;
   background: #FFFFFF !important;
   border: 1px solid #BBBBBB !important;
-  -webkit-box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
-          box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
+  box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
   border-radius: 20px 0px;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .k-header.header.x-header,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-header.header.x-header {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-header.header.x-header,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .k-header.header.x-header,
+.k-widget.k-window:has(#MessageBoxWindow) .k-header.header.x-header {
   display: none !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes,
+.k-widget.k-window:has(#MessageBoxWindow) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes {
   margin-bottom: 5px !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .k-window-titlebar.k-hstack,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-window-titlebar.k-hstack {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-window-titlebar.k-hstack,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .k-window-titlebar.k-hstack,
+.k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
   background: none !important;
   border: none !important;
   position: absolute !important;
@@ -1403,31 +1324,43 @@ div[uxid=lLastUpdate] {
   z-index: 1400;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .k-window-titlebar.k-hstack span,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-window-titlebar.k-hstack span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-window-titlebar.k-hstack span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .k-window-titlebar.k-hstack span,
+.k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack span {
   color: #BBBBBB !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .k-header.header.x-header,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-header.header.x-header {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-header.header.x-header,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .k-header.header.x-header,
+.k-widget.k-window:has(#MessageBoxWindow) .k-header.header.x-header {
   display: none !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone {
   margin-top: 55px !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone .titleGarageDetailes h4,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .titleGarageDetailes h4 {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .titleGarageDetailes h4,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone .titleGarageDetailes h4,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone .titleGarageDetailes h4 {
   color: #39B54A !important;
   font-size: 16px !important;
   font-weight: 500 !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone .textSpeed,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .textSpeed {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .textSpeed,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone .textSpeed,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone .textSpeed {
   position: absolute !important;
   top: 8px !important;
   left: 13px;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone .textSpeed span,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .textSpeed span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .textSpeed span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone .textSpeed span,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone .textSpeed span {
   text-align: left !important;
   color: #39B54A !important;
   font-size: 12px !important;
@@ -1435,7 +1368,9 @@ div[uxid=lLastUpdate] {
   overflow: hidden;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone .textAddress span,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .textAddress span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .textAddress span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone .textAddress span,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone .textAddress span {
   text-align: right !important;
   font-weight: 400 !important;
   font-size: 14px !important;
@@ -1445,7 +1380,9 @@ div[uxid=lLastUpdate] {
   overflow: hidden;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone .secondaryTitle span,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .secondaryTitle span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .secondaryTitle span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone .secondaryTitle span,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone .secondaryTitle span {
   text-align: right !important;
   font-weight: 700 !important;
   font-size: 14px !important;
@@ -1455,7 +1392,9 @@ div[uxid=lLastUpdate] {
   overflow: hidden;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone .secondaryText span,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .secondaryText span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone .secondaryText span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone .secondaryText span,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone .secondaryText span {
   text-align: right !important;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -1464,37 +1403,75 @@ div[uxid=lLastUpdate] {
   margin-bottom: 5px !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone button,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone button {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone button,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone button,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone button {
   font-weight: 400 !important;
 }
 .k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .headerNone button span,
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone button span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone button span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone button span,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone button span {
   margin-left: 10px !important;
 }
 
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .x-image-wrapper.s-image-wrapper,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .x-image-wrapper.s-image-wrapper {
+  width: 55%;
+  margin: auto;
+}
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage {
+  margin: 0 !important;
+}
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage mainbody > .row.x-row,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage mainbody > .row.x-row {
+  margin: 0;
+}
+
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage),
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage),
+.k-widget.k-window:has(#MessageBoxWindow) {
   top: 82px !important;
   border: none !important;
 }
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage,
+.k-widget.k-window:has(#MessageBoxWindow) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage {
   margin-bottom: 0 !important;
 }
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .titleMessage span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage mainbody > .row,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage mainbody > .row,
+.k-widget.k-window:has(#MessageBoxWindow) #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage mainbody > .row {
+  margin-bottom: 0px;
+}
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .titleMessage span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .titleMessage span,
+.k-widget.k-window:has(#MessageBoxWindow) .titleMessage span {
   color: #000000 !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   margin-bottom: 0 !important;
+  overflow: hidden;
+  margin-top: 15px;
 }
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .textMessage span {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .textMessage span,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .textMessage span,
+.k-widget.k-window:has(#MessageBoxWindow) .textMessage span {
   color: #000000 !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   margin-bottom: 8px !important;
+  overflow: hidden;
 }
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .headerNone,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .headerNone,
+.k-widget.k-window:has(#MessageBoxWindow) .headerNone {
   margin-top: 38px !important;
 }
-.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-window-titlebar.k-hstack {
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SuccessMessage) .k-window-titlebar.k-hstack,
+.k-widget.k-window:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage) .k-window-titlebar.k-hstack,
+.k-widget.k-window:has(#MessageBoxWindow) .k-window-titlebar.k-hstack {
   height: 0px !important;
   left: 4px !important;
   direction: rtl !important;
@@ -1505,6 +1482,34 @@ div[uxid=lLastUpdate] {
 .k-content:has(#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_SelectedGarageDetailes) .k-overlay {
   background: #133C19 !important;
   opacity: 0.9 !important;
+}
+
+.k-widget.k-window:has(#MessageBoxWindow) #controlCell1Container {
+  display: none;
+}
+.k-widget.k-window:has(#MessageBoxWindow) #controlCell2Container {
+  margin: auto;
+}
+.k-widget.k-window:has(#MessageBoxWindow) button {
+  background: #39B54A;
+  border-radius: 20px;
+  border: none !important;
+  height: 50px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.k-widget.k-window:has(#MessageBoxWindow) #divCocontrolMessageText span {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
 }
 
 .eroorMessage span {
@@ -1519,16 +1524,23 @@ div[uxid=lLastUpdate] {
   padding: 0 !important;
 }
 
-.xstyle-timepicker-wrapper {
-  margin-top: 25px !important;
+.error-message span.x-dynamic-label-control {
+  color: #ED2F2F !important;
 }
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ErrorMessage img {
+  width: 80%;
+}
+
 .xstyle-timepicker-wrapper .k-timepicker {
   border: none !important;
 }
 .xstyle-timepicker-wrapper .k-timepicker:focus {
   border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
+}
+.xstyle-timepicker-wrapper .k-timepicker:focus-within {
+  box-shadow: none;
 }
 .xstyle-timepicker-wrapper .k-timepicker button {
   border: 0px !important;
@@ -1568,8 +1580,7 @@ div[uxid=lLastUpdate] {
 }
 .xstyle-timepicker-wrapper input:focus, .xstyle-timepicker-wrapper input:active, .xstyle-timepicker-wrapper input:focus-visible {
   border: 1px solid #E6E6E6 !important;
-  -webkit-box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
-          box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
+  box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
   border-radius: 20px 0px !important;
   outline: none !important;
 }
@@ -1577,8 +1588,7 @@ div[uxid=lLastUpdate] {
 .xstyle-checkbox-wrapper input {
   border: 1px solid #7E7B7B !important;
   background: white !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border-radius: 50px;
 }
 .xstyle-checkbox-wrapper input:checked {
@@ -1609,6 +1619,9 @@ div[uxid=lLastUpdate] {
 .xstyle-intlphonenumber-wrapper.k-state-disabled {
   opacity: 1 !important;
 }
+.xstyle-intlphonenumber-wrapper.k-state-disabled .flag-container {
+  display: none;
+}
 .xstyle-intlphonenumber-wrapper.k-state-disabled label {
   color: #CCCCCC !important;
 }
@@ -1625,20 +1638,11 @@ div[uxid=lLastUpdate] {
   color: #000000 !important;
 }
 .xstyle-intlphonenumber-wrapper input {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
   border: none !important;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
   padding: 10px 20px !important;
   gap: 10px;
   width: 100% !important;
@@ -1646,9 +1650,7 @@ div[uxid=lLastUpdate] {
   background: #FFFFFF !important;
   border: 1px solid #cccccc !important;
   border-radius: 20px 0px !important;
-  -webkit-box-flex: 0 !important;
-      -ms-flex: none !important;
-          flex: none !important;
+  flex: none !important;
   margin-bottom: 0px !important;
   text-align: right !important;
 }
@@ -1677,6 +1679,37 @@ div.mandatory:before {
 }
 div.mandatory label {
   margin-right: 15px;
+}
+
+.xstyle-googleaddress-wrapper {
+  margin-top: 20px;
+}
+.xstyle-googleaddress-wrapper .x-control-content-wrapper span.x-textbox.s-textbox.x-googleaddress {
+  border: none;
+  background: none;
+}
+.xstyle-googleaddress-wrapper .x-control-content-wrapper span.x-textbox.s-textbox.x-googleaddress:focus {
+  box-shadow: none;
+}
+.xstyle-googleaddress-wrapper .x-control-content-wrapper span.x-textbox.s-textbox.x-googleaddress:focus-within {
+  box-shadow: none;
+}
+.xstyle-googleaddress-wrapper .x-control-content-wrapper input {
+  text-align: right !important;
+}
+.xstyle-googleaddress-wrapper .x-control-content-wrapper input:focus {
+  box-shadow: inset 4px 4px 5px rgba(57, 181, 74, 0.2) !important;
+}
+.xstyle-googleaddress-wrapper .x-barcodeBtnContainer.s-barcodeBtnContainer {
+  background: none;
+  border: none;
+  top: 50% !important;
+  transform: translateY(-50%);
+  left: 12px !important;
+}
+.xstyle-googleaddress-wrapper .x-barcodeBtnContainer.s-barcodeBtnContainer .k-icon {
+  font-size: 22px;
+  color: #39B54A;
 }
 
 div[uxid=rDocuments] .documents {
@@ -1741,8 +1774,7 @@ div[uxid=rDocuments] .documents .linkDocuments a {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Messages .optionServ {
   background: #FFFFFF !important;
   border: 1px solid #BBBBBB !important;
-  -webkit-box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
-          box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
+  box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
   border-radius: 40px 0px !important;
   margin-bottom: 20px !important;
   height: auto !important;
@@ -1784,6 +1816,15 @@ div[uxid=rDocuments] .documents .linkDocuments a {
   color: black !important;
 }
 
+body, #watermark {
+  max-width: 450px;
+  margin: auto;
+}
+
+body {
+  font-family: "Heebo" !important;
+}
+
 #uber-container .beforeLoad {
   margin-top: 50% !important;
 }
@@ -1806,10 +1847,11 @@ body {
 mainbody > .row {
   background: none !important;
   border: none !important;
+  margin-bottom: 20px;
 }
 
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Main {
-  margin-bottom: 85px !important;
+  margin-bottom: 70px !important;
 }
 
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Login .imgCar {
@@ -1844,8 +1886,7 @@ mainbody > .row {
   position: absolute !important;
   top: 62% !important;
   left: 50% !important;
-  -webkit-transform: translate(-50%, -50%) !important;
-          transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ServiceCalls .optionServ .border .titleServ span, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ServiceCalls .optionServ .border .DateServ span, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ServiceCalls .optionServ .border .StateServ span {
   font-family: "Heebo";
@@ -1857,8 +1898,7 @@ mainbody > .row {
   text-align: right !important;
   margin-right: 11px;
   top: 50%;
-  -webkit-transform: translateY(-35%);
-          transform: translateY(-35%);
+  transform: translateY(-35%);
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_ServiceCalls .optionServ .border .extraDataServ span {
   text-align: right !important;
@@ -1905,8 +1945,7 @@ mainbody > .row {
   border: 1px solid #BBBBBB !important;
   border-radius: 20px 0px !important;
   margin-bottom: 15px !important;
-  -webkit-box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
-          box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
+  box-shadow: 0px 4px 4px rgba(57, 181, 74, 0.2), 0px 0px 4px rgba(57, 181, 74, 0.1) !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_FindGarage .optionServ .border .garageName .address span.x-dynamic-label-control.s-dynamic-label-control {
   color: #BBBBBB !important;
@@ -1929,3 +1968,15 @@ mainbody > .row {
   line-height: 100% !important;
   margin-top: 60% !important;
 }
+
+.headerNone {
+  margin-top: 20px !important;
+}
+
+.mt-2 {
+  margin-top: 20px !important;
+}
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AppointmentSummary img {
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */

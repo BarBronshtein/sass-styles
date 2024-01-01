@@ -1,4 +1,4 @@
-@use '../variables/masterVariable' as *;
+
 
 
 // .k-rtl{
@@ -10,7 +10,7 @@
 .k-animation-container {
     .k-list-container {
         .k-list-optionlabel {
-            &.k-state-selected {
+            &.k-selected {
                 background: $animator-container-selected-background-color !important;
                 color: $animator-container-selected-color !important;
             }
@@ -68,8 +68,8 @@
             }
         }
 
-        .k-state-selected {
-            &.k-state-focused {
+        .k-selected {
+            &.k-focused {
                 box-shadow: none !important;
                 background: $animator-container-selected-background-color!important;
             }

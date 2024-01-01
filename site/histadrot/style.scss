@@ -1,0 +1,125 @@
+@use  './varible/varible' as *;
+@use './components/textcontrol';
+@use './components/buttoncontrol';
+@use './components/header';
+@use './components/autocomplete.scss';
+@use './components/texbox-grid';
+@use './components/title';
+@use './components/text-line';
+@use './components/popup';
+@use './components/HomePage';
+@use './components/MessageBoxWindo';
+@use './components/intlphone';
+@use './components/membershipMessage';
+@use './components/drower';
+@use './components/ChangeCompany';
+@use './components/GeneralDetails';
+@use './components/dropdown';
+@use './components/mandatory';
+@use './components/date';
+@use './components/textareacontrol';
+@use './components/checkBox';
+@use './components/radioButton';
+@use './components/row';
+@use './components/floatbutton';
+@use './components/tab';
+@use './components/switch';
+@use './components/textwithbuttonsimple';
+@use './components/daterange';
+
+
+@use './pages/customerservvice';
+@use './pages/ServiceCallData';
+@use './pages/AccountList';
+@use './pages/visits';
+@use './pages/TaskList';
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap');
+
+.border{
+  border: none !important;
+}
+
+body,#watermark,header{
+  max-width: 450px;
+  margin: auto;
+}
+ .userName-title{
+
+    & .x-kicon{
+        text-align: center !important;
+    & span.k-icon{
+        margin-bottom: 3px;
+        font-size: 25px;
+        color: #004070 !important;
+    }
+}
+
+& .x-dynamic-label-control{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0F6FB7;
+    text-align: center !important;
+   
+}
+}
+
+.xstyle-cardamage-wrapper{
+
+  & .map{
+    width: 350px !important;
+    height: 290px !important;
+    margin-right: -20px !important;
+  & canvas{
+        width: 350px !important;
+        height: 290px !important;
+    }
+  }
+
+}
+
+.container.pageContainer.xtafnit_pageContainer{
+    margin-bottom: 35px !important;
+}
+
+.k-i-close::before{
+
+  content: "\f00d" !important;
+  font-family: "Font Awesome 5 pro" !important;
+}
+
+.fa-home-lg{
+  background: #0167B1;
+  box-shadow: 1px 3px 2px rgba(4, 83, 140, 0.25);
+  padding: 22px;
+  border-radius: 50%;
+  margin-top: -6px;
+  color: white;
+  font-size: 24px !important;
+}
+
+.x-footer:has(.watermark){
+  background: white !important;
+  border: none !important;
+}
+
+.x-footer:has(.watermark) .watermark span{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+}
+
+#TafnitCore_xHistadrut_UI_LegalDisclaimer{
+  .navbar-fixed-top {
+    height: 0px;
+}
+}

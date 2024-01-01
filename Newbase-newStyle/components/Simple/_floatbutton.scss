@@ -1,0 +1,58 @@
+
+
+.xstyle-floatbuttonv2-wrapper{
+
+
+    &.k-state-disabled{
+        opacity: 1;
+    
+    .x-floatbutton {
+        border: 1px solid #ECECEC;
+        background:var(--floatbutton-bg-disable);
+        color: var(--floatbutton-text-disable);
+        box-shadow:var(--x-floatbutton-shadow-disable);
+        opacity: 1;
+
+        span{
+            color: var(--floatbutton-icon-disable);
+        }
+    }
+}
+    &.btn-small{
+        button{
+            height: 46px;
+        }
+    }
+    &.btn-medium{
+        button{
+            height: 60px;
+        }
+    }
+    button{
+    background:  var(--floatbutton-bg-color-default) ;
+     box-shadow:var(--floatbutton-shadow);
+     padding: 25px;
+     border-radius: 0;
+     height: 80px;
+    
+
+     & .k-icon{
+        color: var(--floatbutton-icon-color-default);
+     }
+
+     & .k-fab-text{
+        font-family: 'Heebo';
+        color: var(--floatbutton-text-color-default);
+     }
+
+
+     &:hover{
+        background: var(--floatbutton-bg-color-hover) ;
+     }
+
+     &:focus{
+        background: var(--floatburron-bg-color-focus);
+        border: 1px solid var(--floatbutton-border-color-focus);
+     }
+    }
+}

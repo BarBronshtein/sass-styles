@@ -1,0 +1,91 @@
+
+.tabs-filter{
+
+    display: grid;
+    grid-template-columns:auto 1fr auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding: 0 40px;
+
+    .tabs{
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 20px;
+
+        .activeTab{
+            padding-bottom: 0px;
+            border-bottom: 1px solid $tab-script-border-bottom;
+            border-radius: 0;
+            span{
+                font-weight: 500;
+           
+            }
+        }
+
+        span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            color: $tab-script-color-text;
+        }
+    }
+
+
+    .filter{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+
+        span{
+            font-size: 20px;
+            color: black;
+        }
+    }
+
+}
+
+
+
+.project-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 40px;
+    padding: 0 40px;
+    align-items: center;
+ .templatex-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 40px;
+    align-items: center;
+ }
+    span{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 130%;
+        color: $bread-crumb-color-default;
+        
+        &.k-icon{
+            font-size: 12px;
+        }
+
+    }
+
+    .name-tabs{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 5px;
+
+        .activeTab span{
+            font-weight: 700;
+            color: $bread-crumb-color-active; 
+        }
+    }
+}

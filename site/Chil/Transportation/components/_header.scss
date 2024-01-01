@@ -1,0 +1,110 @@
+@use '../varible/varible' as *;
+
+
+ 
+ // header main //
+ 
+ #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main{
+    .x-row{
+        border: none !important;
+    }
+     & mainbody{
+         margin-top: -80px !important;
+ 
+         &.headerNone{
+             margin-top: 0 !important;
+         }
+     }
+ 
+    
+     & .x-header{
+         padding: 0;
+         border: none !important;
+ 
+         & .xstyle-itoolbar-wrapper{
+ 
+             border: none;
+             & .x-itoolbar{
+
+              & .k-overflow-anchor{
+                display: none !important;
+              }
+               & .k-toolbar-item.k-hidden{
+                display: block !important;
+               }
+                 padding: 10px 20px;
+                 height: 62px;
+                 background: white;
+                 border: none;
+                 grid-template-columns: 0 auto auto 1fr auto 1fr;
+                 display: grid !important;
+                 align-items: center;
+ 
+ 
+                 & #portalLogo{
+                    direction: ltr;
+ 
+                     & img{
+                      
+                         float: left;
+                     }
+                 }
+ 
+                & #kiDrawer{
+                     margin-left: 30px;
+                 & span{
+                     font-size: 30px !important;
+                     color: #052136 !important;
+                 }
+                }
+ 
+                & #kiUserIcon{
+ 
+                 & span{
+                     font-size: 20px;
+                     color: #0F6FB7 !important;
+ 
+                 }
+                }
+ 
+                & #username{
+ 
+ 
+                 & span{
+                     font-family: 'Heebo';
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 21px;
+                     text-align: center;
+                     color: #0F6FB7;
+                 }
+                }
+             }
+         
+ 
+         }
+     }
+ 
+ 
+    
+ 
+     & .outerTitle{
+         border: none !important;
+         & .x-section-header-wrapper{
+ 
+             background: none;
+             border: none;
+ 
+             & h3{
+                 font-family: 'Heebo';
+                 font-style: normal;
+                 font-weight: 700;
+                 font-size: 16px;
+                 line-height: 24px;
+                 text-align: center;
+                 color: #0F6FB7;
+             }
+         }
+     }
+ }

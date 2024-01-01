@@ -1,4 +1,4 @@
-@use '../variables/masterVariable' as *;
+
 
 #uber-container {
     >.xtafnit_pageContainer {
@@ -14,8 +14,7 @@
 
 mainbody {
     >.row {
-        background-color: $row-background-color;
-        box-shadow:   0px 0px 12px map-get($map: $Colors, $key: login-screen-boxshadow );
+      
         border-radius: 10px;
         padding: $row-padding;
         margin: $row-margin auto;

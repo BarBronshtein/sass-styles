@@ -1,0 +1,179 @@
+
+
+
+.k-drawer-container {
+    .k-panelbar .k-group>.k-item>.k-link.k-focus, .k-panelbar .k-group>.k-item>.k-link.k-state-focus, .k-panelbar .k-group>.k-item>.k-link.k-state-focused, .k-panelbar .k-group>.k-item>.k-link:focus, .k-panelbar .k-group>.k-panelbar-item>.k-link.k-focus, .k-panelbar .k-group>.k-panelbar-item>.k-link.k-state-focus, .k-panelbar .k-group>.k-panelbar-item>.k-link.k-state-focused, .k-panelbar .k-group>.k-panelbar-item>.k-link:focus, .k-panelbar .k-panelbar-group>.k-item>.k-link.k-focus, .k-panelbar .k-panelbar-group>.k-item>.k-link.k-state-focus, .k-panelbar .k-panelbar-group>.k-item>.k-link.k-state-focused, .k-panelbar .k-panelbar-group>.k-item>.k-link:focus, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link.k-focus, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link.k-state-focus, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link.k-state-focused, .k-panelbar .k-panelbar-group>.k-panelbar-item>.k-link:focus{
+        box-shadow: none ;
+    }
+    .k-panelbar>.k-item>.k-link.k-focus, .k-panelbar>.k-item>.k-link.k-state-focus, .k-panelbar>.k-item>.k-link.k-state-focused, .k-panelbar>.k-item>.k-link:focus, .k-panelbar>.k-panelbar-header>.k-link.k-focus, .k-panelbar>.k-panelbar-header>.k-link.k-state-focus, .k-panelbar>.k-panelbar-header>.k-link.k-state-focused, .k-panelbar>.k-panelbar-header>.k-link:focus{
+        box-shadow: none ;
+    }
+    
+    & .k-selected{
+        background: none ;
+    }
+    &.x-openDrawer {
+        &.k-drawer-expanded {
+            .k-overlay {
+                display: none ;
+            }
+
+            .k-drawer {
+                width: 20%;
+
+                .k-drawer-wrapper {
+                    width: 100% ;
+                }
+            }
+        }
+    }
+
+    .k-drawer {
+
+        &.hide-scroller {
+            &::-webkit-scrollbar {
+                display: none ;
+            }
+        }
+
+        .k-panelbar {
+            .k-item {
+                >.k-link {
+                    background: transparent ;
+
+                    &.k-state-hover,
+                    &.k-state-selected {
+                        background: transparent ;
+                    }
+                }
+            }
+        }
+
+        overflow-y: auto ;
+
+        .k-drawer-wrapper {
+            overflow-x: unset ;
+            overflow-y: unset ;
+
+            li[data-role="drawer-item"] {
+                align-items: flex-start ;
+                padding: 3px 0px;
+
+                .k-icon-wrapper {
+                    margin-top: 2px;
+                }
+
+                &.k-state-hover,
+                &:hover {
+                    background-color: initial ;
+                }
+
+                &.k-state-selected.k-state-hover {
+                    background-color: none ;
+                }
+
+                &.k-state-selected:hover {
+                    background-color: none ;
+                }
+
+                &.d-none {
+                    display: none !important;
+                }
+
+                >span {
+                    margin: 0 ;
+                    padding: 10px 16px ;
+                }
+
+                .drawer-item-control-wrapper {
+                    padding: 4px 10px;
+                    width: 100%;
+                    min-height: 30px;
+                    line-height: 30px;
+
+                    .k-panelbar {
+                        background-color: initial;
+                        color: #003f59 ;
+                        border: 0px ;
+
+                        .k-state-focused.k-state-selected {
+                            box-shadow: none;
+                        }
+
+                        .k-item {
+                            font-weight: normal ;
+
+                            .k-panelbar-expand,
+                            .k-panelbar-collapse {
+                                margin: -8px 0px;
+                            }
+
+                        }
+
+                        .k-group.k-panel {
+
+                            border: 0px ;
+                            font-weight: normal ;
+
+                            .k-item {
+                                font-weight: normal ;
+
+                                .k-link {
+                                    padding-right: 0px ;
+                                    padding-left: 0px ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .k-textbox.x-textbox {
+                margin-top: 1px;
+            }
+
+            .x-dynamic-label-control {
+                white-space: nowrap;
+            }
+
+            .k-link.k-header {
+                font-weight: bold ;
+                padding-right: 0px ;
+                padding-left: 0px ;
+                background-color: initial;
+                color: #003f59 ;
+                border: 0px ;
+            }
+        }
+    }
+}
+
+.k-drawer-right {
+    .k-drawer {
+        .k-panelbar {
+            .k-group.k-panel {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+
+.k-drawer-left {
+    .k-drawer {
+        .k-panelbar {
+            .k-group.k-panel {
+                margin-left: 10px;
+            }
+        }
+    }
+
+
+    .k-panelbar>.k-item>.k-link, .k-panelbar>.k-panelbar-header>.k-link {
+        flex-direction: row-reverse;
+    }
+    .k-item .k-panelbar-item > span{
+        flex-direction: row-reverse;
+    }
+}

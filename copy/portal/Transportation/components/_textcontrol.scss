@@ -1,0 +1,112 @@
+
+@use '../varible/varible' as *;
+
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Login{
+ 
+
+        // textcontrol //
+
+        & .xstyle-textcontrol-wrapper{
+            margin-top: 15px;
+            
+            &.k-state-disabled{
+
+                   color: #052136;
+                & label{
+                    color: #C7C7C7;
+                }
+                & input.x-textbox{
+
+                    border: 1px solid #C7C7C7;
+                }
+
+            }
+            & label{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                text-align: right;
+                color: #052136;
+             
+            }
+            & span.x-textbox{
+                border: none !important;
+                box-shadow: none !important;
+            }
+            & input.x-textbox{
+                border: 1px solid #9BD5FF;
+                border-radius: 10px;
+                background: none;
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: right;
+                color: #052136;
+                padding-right: 10px;
+                height: 45px !important;
+
+                &:focus{
+                    border: 1px solid #F57920 !important;
+                }
+    
+                &::placeholder{
+                    color: #C7C7C7;
+                }
+            }
+    
+        }
+
+}
+
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main{
+
+
+    & .xstyle-textcontrol-wrapper{
+        margin-top: 15px ;
+
+
+        &.k-state-disabled{
+
+            color: #052136;
+         & label{
+             color: #C7C7C7;
+         }
+         & input.x-textbox{
+
+             border: 1px solid #C7C7C7;
+         }
+        }
+         & input{
+            @extend %inputFont;
+            &:focus{
+                border: 1px solid #F57920 !important;
+            }
+         }
+ 
+         & label{
+ 
+            @extend %labelMain;    
+         }
+     }
+
+
+}
+
+
+// // textbox-with-icon //
+
+.textbox-icon{
+   position: absolute;
+   left: 30px;
+   top: 48px;
+   span{
+    font-size: 20px;
+    color: #0F6FB7;
+   }
+}

@@ -1,0 +1,99 @@
+
+// חלון הודעות//
+
+.k-window:has(#MessageBoxWindow) {
+    background: $messagebox-bg;
+    box-shadow: $messagebox-box-shadow;
+    border-radius: 0px;
+    border: none;
+    max-height: 95%;
+    & .k-window-titlebar.k-hstack {
+      background: none !important;
+      border: none;
+.k-button{
+    margin-left: 0px;
+}
+      .k-i-close{
+        &::before{
+            content: "\e904";
+            font-family: 'icomoon';
+            font-size: 14px;
+            color: $messagebox-color-icon-close;
+
+        }
+      }
+
+    }
+
+    #MessageBoxWindow{
+        div#ctrlSectionMainSection{
+            display: block;
+             & >div{
+              margin: auto;
+              text-align: center;
+
+              
+              & i::before{
+                content: "\e9cb";
+                font-family: 'icomoon';
+                color: $messagebox-color-icon;
+                font-weight: 500;
+              }
+
+              & i.x-fa-success::before{
+                content: "\e98a";
+                font-family: 'icomoon';
+                color: $messagebox-color-icon;
+                font-weight: 500;
+              }
+
+              & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px !important;
+                line-height: 100%;
+                color: $messagebox-color-text;
+              }
+             }
+         }
+
+        #divCobuttonbtn1{
+          width: fit-content;
+          margin: auto;
+          &:focus,&:focus-within,&:active{
+            border: 1px solid $button-border-color-focus;
+            padding: 2px;
+         }
+        }
+         button{
+            min-width: 200px !important;
+            height: 40px;
+            background: $messagebox-bg-button;
+            border-radius: 0px;
+            border: none;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: right;
+            color: white;
+            margin: auto;
+
+            &:focus,
+            &:active,
+            &:focus-within{
+                background: $messagebox-bg-button-focus;
+            }
+
+            &:hover{
+
+                background:$messagebox-bg-button-hover;
+            }
+
+         }
+
+    }
+
+  }

@@ -1,0 +1,84 @@
+@use '../variable/variable' as *;
+
+
+
+.greyPanel{
+
+.x-section-header-wrapper{
+    & .col{
+        padding-right: 0;
+    }
+    background: no-repeat;
+    margin-bottom: 10px;
+    .x-section-header {
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: right;
+        color: $first-panel-color-title;
+    }
+}
+.first-panel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 15px;
+
+    & .col{
+        padding: 0;
+    }
+    .gridHeaderButton{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 15px;
+
+        & >div{
+            align-self: center;
+            top: 15px;
+            position: relative;
+            .xstyle-kicon-wrapper{
+                background: $first-panel-bg-icon-button;
+                width: 50px;
+                height: 50px;
+                border: $first-panel-border-icon-button;
+                border-radius: 10px;
+                align-items: center;
+                & .k-icon{
+                    &:before{
+                        color: $first-panel-color-icon-button;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+                .x-kicon-caption{
+                    display: none;
+                }
+            }
+
+
+            .xstyle-buttoncontrol-wrapper{
+
+                & button{
+                   @extend %spicel-button;
+                }
+            }
+        }
+    }
+}
+}
+
+
+#TafnitCore_SaaSServer_Portal_Default_UI_OrdersAwaitingSupplier,
+#TafnitCore_SaaSServer_Portal_Default_UI_OrdersAwaitingExecution,
+#TafnitCore_SaaSServer_Portal_Default_UI_OrderReportExecution,
+#TafnitCore_SaaSServer_Portal_Default_UI_OrderToInvoice,
+#TafnitCore_SaaSServer_Portal_Default_UI_DeliveryCertificatesLookup{
+
+    .first-panel{
+        display: grid;
+        grid-template-columns: 1fr  1fr auto;
+        gap: 15px;
+    }    
+
+}

@@ -1,0 +1,14 @@
+
+
+.link_Comp{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    color: $link-color !important;
+
+    &:hover{
+        font-weight: 600 !important;
+    }
+}

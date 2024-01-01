@@ -1,0 +1,26 @@
+
+
+.k-listview-content{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+
+    & .ListViewItemListViewMenu.x-listview-item.s-listview-item.k-listview-item,
+    & .ListViewItemlvWorkPlaces.x-listview-item.s-listview-item.k-listview-item{
+
+        flex: 0 0 45%;
+        max-width: 45%;
+    margin-bottom: 20px;
+     height: 145px;
+     box-shadow: none !important;
+     background: none !important;
+ 
+        & img.x-listview-img{
+
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

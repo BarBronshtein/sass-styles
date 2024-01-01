@@ -1,0 +1,70 @@
+
+
+//required-control//
+
+.mandatory.p-floating-container,
+.xstyle-numberrange-wrapper.mandatory,
+.xstyle-timepicker-wrapper.mandatory,
+.mandatory.xstyle-textcontrol-wrapper,
+.xstyle-daterangev2-wrapper.mandatory,
+.xstyle-date-wrapper.mandatory,
+.xstyle-idropdownlist-wrapper .mandatory,
+.xstyle-password-wrapper.mandatory,
+.xstyle-timepicker-wrapper.mandatory,
+.xstyle-autocomplete-wrapper.mandatory {
+
+& label{
+  padding-right: 10px;
+}
+& input{
+  background: none !important;
+}
+  :has(.x-control-caption-wrapper) {
+    & label {
+      &:before {
+        content: "*";
+        font-family: "Font Awesome 5 pro" !important;
+        position: absolute;
+        top: -5px;
+        right: 2px;
+        font-size: 8px;
+        color: #0167B1;
+      }
+    }
+  }
+
+  & > div:nth-child(2) span {
+    border-bottom: none !important;
+  }
+}
+
+
+.xstyle-textareacontrol-wrapper {
+
+
+
+    &.mandatory {
+
+
+      & label{
+         padding-right: 10px;
+      }
+
+      & textarea {
+        background: none !important;
+      }
+      &:has(.x-control-caption-wrapper) {
+        & label {
+          &:before {
+            content: "*";
+            font-family: "Font Awesome 5 pro" !important;
+            position: absolute;
+            top: -5px;
+            right: 2px;
+            font-size: 8px;
+            color: #0167B1;
+          }
+        }
+      }
+    }
+  }

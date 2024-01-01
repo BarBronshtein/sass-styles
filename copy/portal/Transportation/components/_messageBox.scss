@@ -1,0 +1,134 @@
+
+
+.k-window.k-window:has(#MessageBoxWindow){
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 122, 191, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    width: 90% !important;
+    left: 0 !important;
+    right: 0;
+    margin: 0 auto;
+
+  & .k-window-titlebar{
+    background: none !important;
+    border: none !important;
+
+    & .k-i-close{
+        font-size: 20px;
+        color: #A6A6A6;
+        font-weight: 100;
+    }
+  }
+
+
+& #MessageBoxWindow{
+
+    & #ctrlSectionMainSection{
+        display: block;
+        text-align: center;
+
+        & .col-4{
+            margin: auto;
+            flex: 0 0 40% !important;
+            max-width: 40% !important;
+
+            & i{
+            border-radius: 0;
+            font-weight: 100 !important;
+            &::before{
+                content: "\f4ab";
+                font-family: "Font Awesome 5 pro" !important;
+                color: #AF2324 ;
+            }
+        }
+        }
+
+        & .col-8{
+            margin: auto;
+            text-align: center;
+            & #controlMessageText{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px !important;
+                line-height: 120%;
+                align-items: center;
+                color: #004070;
+
+            }
+        }
+    }
+
+   & #divCobuttonbtn1{
+
+    overflow: hidden;
+
+    & button{
+        height: 47px !important;
+        background: #0F6FB7 !important;
+        border-radius: 10px !important;
+        border: none !important;
+        font-family: 'Heebo';
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: center;
+        color: #FFFFFF;
+
+        &#buttonbtn2{
+            background: #FFFFFF !important;
+            border: 1px solid #0F6FB7  !important;
+            text-align: center;
+            color: #0F6FB7 !important;
+          }
+
+    }
+   }
+}
+}
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPRPopUp,
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_LNPRPopUpLot{
+    .headerNone{
+        padding: 0 !important;
+    }
+    .k-icon-wrapper {
+        text-align: center;
+    }
+    span.k-icon{
+       font-size: 55px;
+       color: #F09621;
+    }
+
+    & .k-window-action{
+        background: none !important;
+        border: none !important;
+    
+        & .k-i-close{
+            font-size: 20px;
+            color: #A6A6A6;
+            font-weight: 100;
+        }
+      }
+
+      .x-dynamic-label-control{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        align-items: center;
+        text-align: center;
+        color: #004070;
+        margin-top: 10px;
+      }
+}
+
+.popUpWindowCls{
+    padding: 15px;
+    border-radius: 10px !important;
+}

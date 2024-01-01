@@ -1,0 +1,600 @@
+
+.k-list-item.k-focus, .k-list-item:focus{
+  box-shadow: none;
+}
+
+
+
+.k-rtl .k-window-titlebar .k-window-actions{
+  right: auto;
+    left: -15px;
+    position: relative;
+}
+.k-animation-container{
+
+  & .k-popup{
+
+    box-shadow: $list-container-shadow ;
+    border: $list-view-border-bottom ;
+    border-radius: 10px;
+    margin-top: 5px;
+
+    .k-list{
+      border-radius: 10px;
+    }
+    & .k-list-content.k-list-scroller{
+      border-radius: 10px;
+        background: none ;
+        padding: 0;
+& ul{
+  background: $list-view-bg-line-default ;
+}
+        & li{
+          height: 40px;
+          padding: 0;
+
+            &.k-selected.k-focus{
+              background: $list-view-selected-line ;
+              border: none;
+              box-shadow: none;
+
+              .k-list-item-text{
+                color: $list-view-selected-line-text ;
+                font-weight: 700;
+              }
+            }
+
+            &:hover{
+              background: $list-view-hover-line;
+            
+              .k-list-item-text{
+                color: $list-view-text-default ;
+                font-weight: 700;
+              }
+            }
+
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                align-items: center;
+                text-align: center;
+                color: $list-view-text-default;
+            }
+
+
+            &.k-list-item.k-selected{
+              background: #ae2a30;
+              span{
+              color: white !important;
+              }
+            }
+        }
+    }
+  }
+
+
+}
+
+// window //
+
+
+
+.k-window{
+  background: #FFFFFF;
+  box-shadow:$window-box-shadow !important;
+  border-radius: 10px;
+  border:none;
+  padding: 0px 20px 20px;
+  max-height: 95%;
+  height: auto !important;
+  max-width: 70% !important;
+  margin: 0 auto;
+  left: 0 !important;
+  right: 0;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  .k-button.k-active::before, .k-button:active::before {
+  opacity: 1;
+}
+  .k-window-titlebar{
+    border: none;
+    background: none;
+    top: 0;
+    span{
+      color: $window-icon-close-color;
+    }
+  }
+
+  .k-window-content{
+    overflow: auto !important ;
+  }
+
+  .x-footer{
+    background: none;
+    border: none;
+  }
+ 
+   
+  #TafnitCore_SaaSServer_Portal_Default_UI_userDetailes{
+    margin-bottom: 0;
+    header{
+     display: none;
+    }
+    mainbody{
+      margin-top: 0px ;
+      padding-bottom: 22px;
+    }
+
+    .k-grid-header{
+      display: none;
+    }
+
+  }
+
+
+
+  .ttitle-border {
+    padding: 7px 5px ;
+    border-bottom:1px solid $window-title-border;
+    border-top:1px solid $window-title-border;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center ;
+      color: $window-title-color;
+    }
+  }
+
+  .text-secondary{
+    span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color:$window-text-secondary-color;
+      margin-bottom: 20px;
+    }
+  }
+
+  .text-spicel{
+    label{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $window-text-special-color;
+        margin-bottom: 10px;
+    }
+  }
+    
+.col-list{
+  padding-bottom: 15px ;
+
+}
+  .list{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    height: 25px;
+    span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: #000000;
+    }
+
+    label{
+      font-family: "Heebo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: #690779;
+      width: max-content;
+      margin-top: 5px;
+
+    }
+  }
+   .col-grid{
+    padding: 0 ;
+   }
+
+   .col-button{
+    box-shadow: none;
+    border: none;
+    padding: 0;
+   }
+  .xstyle-gridv4-wrapper {
+    padding: 0 ;
+    .toolbar.x-embeddedToolbar span.k-searchbox{
+      background: #FFFFFF;
+      border: 1px solid #A6A6A6 !important ;
+      border-radius: 10px;
+      height: 40px;
+
+      input{
+        text-align: right;
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #000000;
+      }
+    }
+
+ 
+    td{
+      padding-left:0 ;
+    }
+
+    tr:nth-child(2){
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #690779;
+    }
+  }
+
+}
+
+// window edit //
+
+.k-window:has(.k-edit-form-container){
+
+  .k-form-field  {
+    label{
+      @extend %texbox-label;
+    }
+  }
+
+  .k-input.k-textbox,.k-numerictextbox{
+    @extend %texbox-input;
+
+    input{
+      text-align: right ;
+    }
+
+    &:focus-within{
+      box-shadow:$control-box-shadow-focus ;
+      border: $control-border-focus ;
+  }
+
+  }
+  .k-edit-form-container{
+  width: 100%;
+  }
+  .k-window-title{
+    margin-top: 20px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: $window-title-color;
+  }
+
+  .k-popup-edit-form {
+    padding: 0;
+    margin-top: 20px;
+  }
+   .k-edit-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+   }
+  button{
+
+    &.k-button-solid-primary{
+      @extend %special-button;
+
+
+      &:hover{
+        background: $button-bg-hover;
+        color: white ;
+        span::before{
+          color:  white ;
+        }
+      }
+
+      &:focus:before{
+        background: $button-color-bg-focus;
+        color: white ;
+        opacity: 1;
+        span{
+          color:  white ;
+        }
+      }
+      
+    }
+    @extend %button;
+    margin-right: 0 ;
+    
+  &:hover{
+    background: $button-bg-hover;
+    color: $button-color-text;
+   
+  }
+
+  &:focus{
+    background: $button-color-bg-focus;
+    opacity: 1;
+ 
+  }
+    }
+
+}
+
+.k-grid-content.k-auto-scrollable,.k-window-content,.k-list-scroller{
+
+  scrollbar-face-color: #7B098B ;
+  scrollbar-track-color: #f3e9f8;
+  scrollbar-arrow-color: #7B098B ;
+
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+
+  &::-webkit-scrollbar {
+    width: 10px ;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f0f0f0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scroll-bg;
+    border-radius: 10px;
+    
+
+    &:hover {
+      background:  $scroll-bg-hover;
+      
+    }
+    }
+  }
+
+
+  .k-animation-container .k-filter-menu {
+    background: #FFFFFF ;
+    border: 1px solid   $popup-k-filter-menu-border ;
+    box-shadow:   $popup-k-filter-menu-box-shadow ;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: 230px;
+    padding: 10px;
+  
+    > .k-filter-menu-container {
+      padding: 0;
+ 
+  
+      > {
+        .k-filter-help-text {
+          width: 100%;
+          background: white;
+          color:$popup-title-color;
+          height: 28px;
+          text-align: right;
+          border-top-right-radius: 0px;
+          border-top-left-radius: s0px;
+          padding-top: 12px;
+          font-family: map-get($map: $typographyVariables, $key: -font-family);
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 18px;
+        }
+  
+        .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
+          @extend %texbox-input;
+          background: #FFFFFF ;
+          border: 1px solid #A6A6A6 ;
+            width: 100%;
+            margin-bottom: 10px;
+            &:focus,
+            &:focus-within{
+              border:1px solid $control-border-focus ;
+              box-shadow: $control-box-shadow-focus;
+            }
+            & .k-input-button{
+              left: 10px;
+                &:hover{
+                  background: none;
+                }
+              & span.k-icon{
+                &::before{
+                  
+                  content: "\f0d7";
+                  font-size: 22px;
+                  font-family: "Font Awesome 5 Pro";
+                  color: $control-color-icon;
+                  font-weight: 700;
+                }
+          
+            }
+            
+            }
+  
+        }
+
+         .k-numerictextbox{
+          @extend %texbox-input;
+          background: #FFFFFF ;
+          border: 1px solid #A6A6A6 ;
+            width: 100%;
+            margin-bottom: 10px;
+            &:focus,
+            &:focus-within{
+              border:1px solid $control-border-focus ;
+              box-shadow: $control-box-shadow-focus;
+            }
+            & .k-button{
+              left: -8px;
+              background: none ;
+                &:hover{
+                  background: none;
+                }
+
+        
+              & span.k-icon{
+                &::before{
+        
+                  color: $control-color-icon;
+                  font-size: 25px;
+                }
+          
+            }
+            
+            }
+  
+         }
+
+        .k-datepicker  {
+          @extend %texbox-input;
+          font-size: 13px !important;
+          background: #FFFFFF ;
+          border: 1px solid #A6A6A6 ;
+            width: 100%;
+            margin-bottom: 10px;
+            &:focus,
+            &:focus-within{
+              border:1px solid $control-border-focus ;
+              box-shadow: $control-box-shadow-focus;
+            }
+            & .k-input-button{
+              left: 10px;
+              background: none ;
+                &:hover{
+                  background: none;
+                }
+
+        
+              & span.k-icon{
+                &::before{
+        
+                  content: "\e973";
+                  font-size: 22px;
+                  font-family: "icomoon";
+                  color: $control-color-icon;
+                 
+                }
+          
+            }
+            
+            }
+  
+        }
+  
+        .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid {
+         
+          @extend %texbox-input;
+          background: #FFFFFF ;
+          border: 1px solid #A6A6A6 ;
+
+          input{
+          text-align: right ;
+          }
+          &:focus,
+          &:focus-within{
+            border:1px solid $control-border-focus ;
+            box-shadow: $control-box-shadow-focus;
+          }
+        }
+  
+        .k-action-buttons {
+          display: flex;
+          flex-direction: row ;
+        
+  
+          > button {
+            width: 45% ;
+            height: 40px;
+            background: $button-bg;
+            border-radius: 10px ;
+            border:none;
+            color: $button-color-text ;
+            font-size: 16px;
+            &:hover{
+              background: $button-bg-hover ;
+              color: $button-color-text-hover;
+              span::before{
+                color:  $button-color-icon-hover ;
+              }
+            }
+      
+            &:focus{
+              background: $button-color-bg-focus ;
+              box-shadow: $button-box-shadow-focus ;
+              color: $button-color-text-focus ;
+              opacity: 1;
+              span{
+                color:  $button-color-text-focus  ;
+              }
+            }
+            
+            &.k-button-solid-base{
+                background: $special-button-bg ;
+                border: 1px solid $special-button-color-border ;
+                color: $special-button-color-text ;
+                &:hover{
+                  background: $special-button-bg-hover ;
+                  color: $special-button-color-text-hover ;
+                  border:1px solid $special-button-color-border-hover;
+                  span::before{
+                    color:  $special-button-color-text-hover  ;
+                  }
+                }
+          
+                &:focus{
+                  background: $special-button-bg-focus ;
+                  box-shadow: none ;
+                  color: $special-button-color-text-focus;
+                  border:1px solid $special-button-color-border-hover;
+                  opacity: 1;
+                  span{
+                    color:  $special-button-color-text-focus ;
+                  }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .k-i-close{
+    font-size: 18px ;
+  }
+  
+  .k-window-titlebar .k-window-action{
+    opacity: 1 ;
+    &:focus::after{
+      opacity: 0 ;
+    }
+      &::before{
+        background: none ;
+        opacity: 1 ;
+      }
+  }

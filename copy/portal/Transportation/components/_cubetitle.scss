@@ -1,0 +1,260 @@
+
+
+mainbody > .row.cube-title{
+    background: #072F4E !important;
+    border-radius: 0;
+    min-height: 93px;
+    padding: 20px 40px;
+    .col{
+        padding: 0;
+    }
+
+    .title{
+        span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 29px;
+            text-align: right !important;
+            color: #FFFFFF;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            max-height: calc(2em * 2);
+          
+        }
+    }
+
+    .tetx{
+     
+        span,label{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #9BD5FF;
+            text-align: right !important;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          
+            max-height: calc(2em * 2);
+          
+            
+        }
+
+        &:has(.x-control-caption-wrapper){
+            span{
+                margin-right:  20px; ;
+            }
+        }
+    }
+
+    .col:has(.xstyle-ilink-wrapper){
+        align-self: center;
+        text-align: left;
+
+        a{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FDAA3F;  
+        }
+    }
+}
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main{
+
+.fotter-page{
+    position: fixed;
+    bottom: 0;
+
+    .xstyle-buttoncontrol-wrapper{
+        background: #052136;
+        height: 170px;
+        align-items: center;
+    text-align: center;
+    border-radius: 0 !important;
+
+        .x-control-content-wrapper button.x-button.k-button.s-button{
+            background: #FFFFFF !important;
+            border-radius: 50% !important;  
+            width: 98px;
+            height: 98px !important; 
+            margin-top: 0 !important;
+        }
+    }
+
+    .xstyle-dynamiclabelcontrol-wrapper     {
+        background: #39AAFD;
+        padding: 20px 40px;
+        height: 75px;
+        align-items: center;
+  &.dark-blue{
+    background: #072F4E
+  }
+  &.blueP{
+    background: #39AAFD;
+  }
+  &.orange{
+    background: #F09621;
+  }
+        span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: #FFFFFF;
+            justify-content: space-between;
+            &:after{
+               content: "\f00c";
+               font-family: "Font Awesome 5 pro" !important;
+            }
+        }
+
+    }
+}
+
+}
+
+
+.xstyle-lnpr-wrapper{
+   .icons-wrapper{
+    display: none;
+
+   }
+
+   .redRect{
+
+
+    border: 1px solid #9BD5FF !important;
+border-radius: 10px;
+   }
+
+   
+
+}
+
+mainbody > .row.cube-info  {
+    height: 77px;
+     background: #004070 !important;
+     border-radius: 0 ;
+     align-items: center;
+
+     .xstyle-dynamiclabelcontrol-wrapper{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 5px;
+        height: 25px;
+     }
+
+     .col-two{
+
+        label{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            width: max-content;
+        }
+
+        span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            width: max-content;
+        }
+     }
+
+     .col-tow-border {
+        border-right: 1px solid #FDAA3F;
+     }
+   }
+
+   #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main {
+
+   .x-row.warrper-cube{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    min-height: 84px;
+    padding: 20px 20px 20px 30px;
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid #E7E7E7 !important;
+    gap: 20px;
+    & > div.col{
+        padding: 0;
+    }
+    align-items: center;
+    .title{
+      span{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: #8E8E8E;
+        
+      }
+    }
+
+    .text{
+        span{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: #052136;
+        }
+    }
+
+    .icon{
+       span{
+        color: #39AAFD;
+        font-size: 30px;
+       }
+    }
+
+    .delete{
+
+        width: 50px;
+        height: 50px;
+        border: 1px solid #E7E7E7 !important;
+        border-radius: 12px;
+        align-self: center;
+        align-items: center;
+
+        &:focus-within,
+        &:active{
+            background: #f5f5f5;
+        }
+
+        .k-icon-wrapper.align-items-center{
+            text-align: center !important;
+        }
+        span{
+            color: #E7E7E7;
+            font-size: 30px;   
+        }
+    }
+
+
+   }
+}

@@ -1,0 +1,42 @@
+
+
+#TafnitCore_SaaSServer_Funding_B2B_UI_LoanRequest{
+    margin-top: 60px !important;
+
+    .col-checkBox{
+        align-items: end;
+
+        .xstyle-checkbox-wrapper  {
+            align-items: end !important;
+        }
+    }
+
+ 
+    mainbody >  .row-main.row-float{
+        bottom: -105px !important;
+        .col-float{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 25px;
+            padding-top: 15px;
+            border-bottom: 1px solid #0f4167;
+
+            .col-border{
+
+                border-left: 1px solid #0f4167 !important;
+                border-radius: 0 !important;
+            }
+        }
+
+        .col-list{
+            padding-right: 65px !important;
+            padding-top: 15px !important;
+
+            .row-hidden{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+            }
+        }
+    }
+}

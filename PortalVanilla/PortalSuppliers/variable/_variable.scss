@@ -1,0 +1,296 @@
+
+
+
+$button-bg-press: #4e4e4e !default; 
+$button-color-bg-focus: #000000 !default; 
+$button-color-text-focus: #ffffff !default; 
+$button-color-icon: #ffffff !default; 
+$button-color-icon-hover: #000000 !default; 
+$button-color-text-hover: #000000 !default; 
+$button-color-border: #000000 !default; 
+$button-bg: #000000 !default; 
+$button-bg-hover: #ffffff !default; 
+$button-disable-text: #c7c7c7 !default; 
+$button-disable-border: #e7e7e7 !default; 
+$button-disable-bg: #f8f8f8 !default; 
+$button-color-text: #ffffff !default; 
+
+$calendar-body-button-color-text-hover: #00539f !default; 
+$calendar-body-button-border-hover: #00539f !default; 
+$calendar-month-color-days-hover: #00539f !default; 
+$calendar-month-border-days-hover: #00539f !default; 
+$calendar-month-color-today: #0a66bb !default; 
+$calendar-body-button-color: #0a66bb !default; 
+$calendar-fotter-color-text: #0176e1 !default; 
+$calendar-month-color-days: #0176e1 !default; 
+$calendar-month-color-title: #0176e1 !default; 
+$calendar-month-border-today: #0176e1 !default; 
+$calendar-body-button-bg-focus: #0176e1 !default; 
+$calendar-border-bottom-body: #0176e1 !default; 
+$calendar-color-icon-header: #0176e1 !default; 
+$calendar-month-bg-days-focus: #0176e1 !default; 
+$calendar-month-color-days-other-month: #8e8e8e !default; 
+$calendar-month-border-other-month-hover: #8e8e8e !default; 
+$calendar-month-color-other-month-hover: #8e8e8e !default; 
+$calendar-bg-body: #f5f5f5 !default; 
+$calendar-bg-header: #fcfcfc !default; 
+$calendar-color-text-header: #000000 !default; 
+$calendar-month-color-days-focus: #ffffff !default; 
+$calendar-body-button-color-text-focus: #ffffff !default; 
+$calendar-body-butoon-color-text-hover: #00539f !default;
+$calendar-body-butoon-border-hover: #00539f !default;
+
+
+
+
+
+
+
+
+
+$checkbox-color-checked: #0176e1 !default; 
+$checkbox-border-checked: #0176e1 !default; 
+$check-box-focus-border: #34f6b1 !default; 
+$check-box-disable-border: #a6a6a6 !default; 
+$check-box-disable-checked: #a6a6a6 !default; 
+$checkbox-caption: #000000 !default; 
+$checkbox-border: #000000 !default; 
+$check-box-focus-check: #34f6b1 !default; 
+$control-color-icon: #000000 !default; 
+$control-border-focus: #34f6b1 !default; 
+$control-border-input: #a6a6a6 !default; 
+$control-color-placeholder: #c7c7c7 !default; 
+$control-border-input-disable: #e7e7e7 !default; 
+$control-color-input: #000000 !default; 
+$control-background: #ffffff !default; 
+$controls-error-massage: #ed2f2f !default; 
+$control-caption-color-text: #003260 !default; 
+$control-caption-color-text-disable: #c7c7c7 !default; 
+$cube-dashboard-color-icon: #00488a !default; 
+$cube-dashboard-color-text: #00488a !default; 
+$cube-dashboard-color-price: #0176e1 !default; 
+$cube-dashboard-bg: #fcfcfc !default; 
+$drawer-background-color: #000000 !default; 
+$drawer-icon-color-before: #ffffff !default; 
+$drawer-color: #ffffff !default; 
+$drawer-toggle-color: #95ccff !default; 
+$drawer-icon-color-after: #65b5ff !default; 
+$drawer-selected-color: #65b5ff !default; 
+$first-panel-color-title: #0176e1 !default; 
+$first-panel-color-icon-button: #65b5ff !default; 
+$first-panel-border-icon-button: #65b5ff !default; 
+$first-panel-bg-icon-button: #ffffff !default; 
+$grid-header-text-color: #00539f !default; 
+$grid-header-border: #0176e1 !default; 
+$grid-title-heder-h4-color: #0176e1 !default; 
+$grid-button-color: #0176e1 !default; 
+$grid-checkbox-checked-border: #0176e1 !default; 
+$grid-checkbox-checked-color: #0176e1 !default; 
+$grid-color-icon: #0176e1 !default; 
+$grid-header-filter-color: #0176e1 !default; 
+$grid-pagenumber-color-selected: #0176e1 !default; 
+$grid-pager-nav-color: #0176e1 !default; 
+$grid-page-number-color: #95ccff !default; 
+$grid-tr-bg-hover: #f8f8f8 !default; 
+$grid-header-serach-border: #c7c7c7 !default; 
+$grid-header-serach-border-radius: #c7c7c7 !default; 
+$grid-border-bottom: #e7e7e7 !default; 
+$grid-checkbox-border: #000000 !default; 
+$grid-text: #000000 !default; 
+$header-details-label-color: #95ccff !default; 
+$header-link-color: #14cd8a !default; 
+$header-lastlogindetails-color: #f5f5f5 !default; 
+$header-details-span-color: #ffffff !default; 
+$header-usernamedetails-color: #ffffff !default; 
+$header-hellotext-color: #ffffff !default; 
+$header-border: #ffffff !default; 
+$header-bg: #000000 !default; 
+$icon-before: #0176e1 !default; 
+$icon-after: #65b5ff !default; 
+$lable-list-bg: #0edc92 !default; 
+$lable-list-caption-color: #003260 !default; 
+$lable-list-value-color: #000000 !default; 
+$link-color: #14cd8a !default; 
+$list-view-selected-line: #0176e1 !default; 
+$list-view-icon-color-default: #0176e1 !default; 
+$list-view-focus-border: #188bf5 !default; 
+$list-view-disable-icon: #c7c7c7 !default; 
+$list-view-disable-text: #c7c7c7 !default; 
+$list-view-border-bottom: #e7e7e7 !default; 
+$list-view-hover-line: #f5f5f5 !default; 
+$list-view-disable-bg: #f8f8f8 !default; 
+$list-view-text-default: #000000 !default; 
+$list-view-selected-line-text: #ffffff !default; 
+$list-view-selected-line-icon: #ffffff !default; 
+$list-view-bg-line-default: #ffffff !default; 
+$mandatory-color: #188bf5 !default; 
+$messagebox-bg-button-focus: #00539f !default; 
+$messagebox-bg-button: #0176e1 !default; 
+$messagebox-color-text: #000000 !default; 
+$messagebox-color-icon: #0176e1 !default; 
+$messagebox-color-icon-close: #a6a6a6 !default; 
+$messagebox-bg-button-hover: #1697df !default; 
+$messagebox-bg: #ffffff !default; 
+$order-cube-title-color: #0176e1 !default; 
+$order-link-color: #14cd8a !default; 
+$order-cube-caption-color-text: #8e8e8e !default; 
+$order-cube-caption-color-textbox: #676767 !default; 
+$order-cube-border-textbox: #a6a6a6 !default; 
+$order-cube-bg: #f8f8f8 !default; 
+$order-cube-span-color-text: #000000 !default; 
+$order-cube-span-color-textbox: #000000 !default; 
+$popup-title-color: #0176e1 !default; 
+$popup-k-filter-menu-border: #95ccff !default; 
+$radio-button-required-border: #188bf5 !default; 
+$radio-button-required-check: #188bf5 !default; 
+$radio-button-bg-check: #0176e1 !default; 
+$radio-button-focus-checkd: #34f6b1 !default; 
+$radio-button-color-disable: #a6a6a6 !default; 
+$radio-button-border-disable-check: #c7c7c7 !default; 
+$radio-button-border-disable: #c7c7c7 !default; 
+$radio-button-readonly-color: #a6a6a6 !default; 
+$radio-button-border-readonly: #a6a6a6 !default; 
+$radio-button-text-label-color: #000000 !default; 
+$radio-button-border-check: #0176e1 !default; 
+$radio-button-bg: #ffffff !default; 
+$radio-button-border-readonly-check: #a6a6a6 !default; 
+$radio-button-border-default: #000000 !default; 
+$radio-button-hover-border: #65b5ff !default; 
+$radio-button-hover-check: #65b5ff !default; 
+$radio-button-focus-border: #34f6b1 !default; 
+$row-bg: #ffffff !default; 
+$scroll-bg-hover: #00539f !default; 
+$scroll-bg: #0176e1 !default; 
+$special-button-color-text-focus: #000000 !default; 
+$special-button-color-border-focus: #000000 !default; 
+$special-button-press: #4e4e4e !default; 
+$special-button-color-border: #000000 !default; 
+$special-button-color-border-hover: #000000 !default; 
+$special-button-color-text: #000000 !default; 
+$special-button-bg-hover: #000000 !default; 
+$special-button-color-icon: #000000 !default; 
+$special-button-color-text-hover: #ffffff !default; 
+$special-button-bg: #ffffff !default; 
+$special-button-bg-focus: #ffffff !default; 
+$tabscript-color-border: #0176e1 !default; 
+$tabscript-color-text: #0176e1 !default; 
+$window-title-border: #0176e1 !default; 
+$window-title-color: #0176e1 !default; 
+$window-text-special-color: #0176e1 !default; 
+$window-icon-close-color: #a6a6a6 !default; 
+$window-text-secondary-color: #000000 !default; 
+$window-bg: #ffffff !default; 
+$upload-border-border-top: #00539f !default; 
+$upload-color-text: #000000 !default; 
+$upload-color-icon: #000000 !default; 
+$upload-color-success: #65b5ff !default; 
+$upload-color-file-name: #000000 !default; 
+$specail-label-text-color: #0176E1 !default;
+
+$header-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10) !default;
+ 
+$popup-k-filter-menu-box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.10) !default;
+ 
+$calendar-box-shadow: 0px 5px 8px 0px rgba(1, 118, 225, 0.10) !default;
+ 
+$row-box-shadow:  0px 0px 10px 0px rgba(103, 103, 103, 0.10) !default;
+
+$check-box-focus-box-shadow: 0px 1px 3px 0px rgba(52, 246, 177, 0.30), 0px 4px 8px 0px rgba(52, 246, 177, 0.30) !default;
+ 
+$button-box-shadow-focus: 0px 1px 3px 0px rgba(1, 118, 225, 0.30), 0px 4px 8px 0px rgba(1, 118, 225, 0.30) !default;
+ 
+$cube-dashboard-box-shadow: 0px 0px 10px 0px rgba(13, 13, 13, 0.10) !default;
+ 
+$window-box-shdow:  0px 5px 8px 0px rgba(1, 118, 225, 0.10) !default;
+ 
+$messagebox-box-shaow:  0px 5px 8px 0px rgba(1, 118, 225, 0.10) !default;
+ 
+$radio-button-box-shadow-focus:  0px 1px 3px 0px rgba(52, 246, 177, 0.30), 0px 4px 8px 0px rgba(52, 246, 177, 0.30) !default;
+ 
+ 
+$control-box-shadow-focus:  0px 1px 3px 0px rgba(52, 246, 177, 0.30), 0px 4px 8px 0px rgba(52, 246, 177, 0.30) !default;
+ 
+$list-container-shadow: 0px 0px 5px 5px rgba(0, 130, 197, 0.10), 0px 2px 4px 0px rgba(0, 130, 197, 0.03), 0px 4px 5px 0px rgba(0, 130, 197, 0.04) !default;
+
+//label//
+
+%texbox-label{
+
+   
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 21px ;
+    text-align: right ;
+    color: $control-caption-color-text ;
+    margin: 0 ;
+}
+
+//input//
+
+%texbox-input{
+
+    height: 50px ;
+    background: $control-background ;
+    border: 1px solid $control-border-input ;
+    border-radius: 10px ;
+    padding: 10px 20px ;
+    font-family: 'Heebo' ;
+    font-style: normal ;
+    font-weight: 400 ;
+    font-size: 16px !important ;
+    color: $control-color-input ;
+    text-align: right ;
+}
+
+
+// disable // 
+
+%texbox-input-disable{
+
+    background: $control-background ;
+    border:1px solid $control-border-input-disable ;
+}
+
+// disable-caption // 
+
+%texbox-label-disable{
+    color: $control-caption-color-text-disable ;
+}
+
+
+// special button //
+
+%special-button{
+    height: 50px !important ;
+    background: $special-button-bg ;
+    border-radius: 10px ;
+    font-family: "Heebo" ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    text-align: right ;
+    color: $special-button-color-text ;
+    width: auto !important ;
+    min-width: 200px ;
+    border: 1px solid $special-button-color-border ;
+}
+
+// button//
+
+%button{
+    background: $button-bg ;
+    border: none ;
+    border-radius: 10px ;
+    align-items: center ;
+    height: 50px !important ;
+    color: $button-color-text ;
+    font-family: 'Heebo' !important ;
+    font-style: normal ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    line-height: 24px ;
+    min-width: 200px ;
+}

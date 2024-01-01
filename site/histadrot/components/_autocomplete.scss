@@ -1,0 +1,107 @@
+
+
+
+
+.xstyle-autocomplete-wrapper {
+
+    margin-top: 20px;
+
+& .k-clear-value{
+  display: none;
+} 
+& label {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #00AEE9;
+    margin-bottom: 3px;
+
+}
+& .k-autocomplete {
+
+
+& input{
+  border: 1px solid #DEDEDE;
+    border-radius: 0px;
+    font-family: "Heebo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #000000;
+    height: 45px;
+    padding-right: 10px;
+
+
+
+    &:focus{
+      box-shadow: none !important;
+      border: 1px solid #F37A1F !important;
+    }
+  }
+  
+
+  border-radius: 0px;
+    border: none !important;
+  
+ &:focus,
+ &:focus-within {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0px;
+
+  }
+  // &::after {
+  //   content: "\f0dc";
+  //   font-family: "Font Awesome 5 pro" !important;
+  //   color: white;
+  //   font-weight: 600;
+  //   font-size: 16px;
+  //   height: 34px;
+  //   width: 34px;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   background: #00AEE9;
+ 
+  // }
+
+  }
+ }
+
+
+
+#TafnitCore_xHistadrut_UI_WorkPlace{
+  & .k-autocomplete {
+    &::after {
+      content: "\f0b1" !important;
+      padding: 8px 10px !important; 
+      left: 6px !important;
+    }
+  }
+
+
+
+}
+
+#TafnitCore_xHistadrut_UI_CustomerServiceCalls{
+
+  .textbox-grid .xstyle-kicon-wrapper .x-control-content-wrapper{
+    top: -42px !important;
+  }
+  .xstyle-autocomplete-wrapper {
+
+    .k-autocomplete::after{
+    display: none;
+    }
+
+
+
+  }
+
+}

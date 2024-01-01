@@ -1,0 +1,60 @@
+$title-background: #14008e; 
+$title-text: #ffffff; 
+$title-secondary: #14008e; 
+$title-secondary-bottom-border: #bdbfd5; 
+$icon-color: #14008e; 
+$required: #ff5a23; 
+$focus-border: #ff5a23; 
+$high-light-caption: #14008e; 
+$radio-button-on-background: #14008e; 
+$radio-button-on-border: #ffffff; 
+$upload-text: #e53e07; 
+$upload-icon: #e53e07; 
+$check-box-on-background: #14008e; 
+$label-star-off-border: #bdbfd5; 
+$label-star-on-background: #14008e; 
+$link-text: #232873; 
+$approve-icon-on: #14008e; 
+$button-background: #ff5a23; 
+$button-press-background: #ff5a23; 
+$button-focus-Box-shadow: 0px 0px 6px 0px rgba(229, 62, 7, 0.60) ;
+$button-background-hover:#E53E07 ;
+$card-upload-file-icon-file: #0c0e1f; 
+$card-upload-file-name-file: #7e7b7b; 
+$card-upload-file-ok-text: #0c0e1f; 
+$card-upload-file_error-icon-file: #db1c33; 
+$card-upload-file-error-text: #db1c33; 
+$messagebox-icon-color: #14008e; 
+$messagebox-border-color: #14008e; 
+$signature-icon-before: #e53e07; 
+$signature-icon-after: #14008e; 
+$pop-up-canvas-border:#14008E;
+$pop-up-canvas-box-shadow: 0px 6px 3px 0px rgba(20, 0, 142, 0.10), 0px 0px 3px 0px rgba(20, 0, 142, 0.30);
+$list-view-border-selected:#14008E ;
+$switch-bg-on:#FF5A23 ;
+$switch-box-shadow-on:0px 0px 4px 0px rgba(20, 0, 142, 0.20);
+$Box-shadow-messagebox: 0px 10px 5px 0px rgba(20, 0, 142, 0.10), 0px 0px 8px 0px rgba(20, 0, 142, 0.30);
+$radio-button-on-drop-shadow: 0px 0px 4px 0px rgba(20, 0, 142, 0.60);
+$Box-shadow-footer: 0px -4px 8px 0px rgba(20, 0, 142, 0.10);
+$Box-shadow-button: 3px 3px 4px 0px rgba(229, 62, 7, 0.30);
+$check-box-on-drop-shadow: 0px 0px 4px 0px rgba(20, 0, 142, 0.20);
+
+
+
+
+
+.xstyle-textcontrol-wrapper {
+    & input{
+       
+        color:  #232873 !important;
+        &:focus,
+        &:focus-within,
+        &:active{
+            box-shadow: 0px 4px 8px 0px rgba(255, 90, 35, 0.20);
+        }
+    }
+}
+
+
+
+

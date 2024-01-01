@@ -1,0 +1,233 @@
+
+
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar { display:flex; gap:5px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar >* { flex:1;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper canvas,.signature-wrapper canvas:active { cursor:url(images/UnitTest/pen-black.png)  5 140, auto;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > .x-cell{ width:fit-content}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker .k-value-icon {border:none;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-dropdownlist{max-width:200px}
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker .k-input-inner {max-width:22px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-color-preview-mask {border-radius:50%}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar span {align-items:center}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-wrapper {position:relative;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .x-signaturev2  {min-width:300px}
+
+// .xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-upload .k-upload-button {min-width:30px;max-width:30px;width:30px}
+.k-signature-action.k-signature-clear.k-button.k-icon-button{display:none !important}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > span:has(.stroke-color-input) button { width:100%;left: -33px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > span:has(.background-color-input) button { width:100%;left: -40px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > span:has(.stroke-color-input) { flex-basis:110px;position:relative;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > span:has(.stroke-width-input) { flex-basis:90px;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar > span:has(.background-color-input) { flex-basis:123px;position:relative;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker:has(.stroke-color-input){
+
+    flex-direction: row-reverse; 
+    max-width:110px;
+    width:110px;
+
+    .k-i-arrow-s:before{
+       content: " " !important;
+    }
+
+&::after{
+    right: 10px;
+    position: absolute;
+    color: var(--taa-s-other-black, #000);
+    text-align: right;
+    font-family: Assistant;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+}
+
+}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-colorpicker:has(.background-color-input){
+    flex-direction:row-reverse ; 
+    max-width:123px;width:123px;
+    background:#fff;
+    border:1px solid #DEDEDE;
+
+    .k-i-arrow-s:before{
+        content: " " !important;
+     }
+
+     &::after{
+        right: 10px;
+        position: absolute;
+        color: var(--taa-s-other-black, #000);
+        text-align: right;
+        font-family: Assistant;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; 
+    }
+ 
+}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .x-button-wrapper:has(.signature-clear-btn){position:absolute;bottom:0px;left:0px;z-index:10;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-clear-btn{width:100%;height:30px !important;}
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .signature-clear-btn::after{content:'\e9e5'}
+
+.xstyle-signaturev2-wrapper
+{
+    .x-control-content-wrapper{
+        .toolbar{
+            .k-value-icon.k-color-preview{
+                width: 60%;
+                height: 60%;
+            }
+            .k-i-arrow-s:before {
+                color: #8EBBCF;
+            }
+            >*{
+                color: #000;
+            }
+            margin-bottom: 1.25rem;
+            >*:not(:last-child){
+                background-color: #fff;
+                border: 1px solid #DEDEDE;
+                border-radius: 0.25rem;
+                height: 40px;
+            }
+            >span.k-picker.k-dropdownlist.x-dropdown-comp{
+                .k-button:hover{
+                    background-color: transparent;
+                }
+                max-width: 150px;
+                flex-basis: 110px;
+            }
+            >span button{
+                background: none;
+            }
+            /*
+            .k-dropzone{
+                >div{
+                    background-color: #fff;
+                    border: 1px solid #dedede;
+                    .icon-upload-files:before{
+                        right: -2px;
+                    }
+                }
+            }
+            */
+        }
+        .x-signaturev2{
+            border: 1px solid #D9D9D9;
+        }
+        button.k-button:hover span{
+            color: inherit;
+        }
+        .signature-clear-btn {
+        background: none;
+        border: none;
+        span{
+            &::before{
+                color: #A1A3A5;
+                font-size: 1.25rem;
+            }
+            
+        }
+        }
+    }
+}
+.k-widget{
+
+    .k-i-hyperlink-open:before{
+        color: #759BAC;
+    }
+}
+
+.k-signature-action.k-signature-maximize.k-button.k-icon-button{color:#759BAC;}
+
+    @media screen and (max-width:440px) {
+        .k-widget:has(.k-signature-canvas){
+            width: 100%;
+            .k-signature.k-signature-maximized{
+                width:auto;
+                height: auto;
+            }
+        }
+    }
+    
+
+.k-animation-container{
+    [data-role="colorpicker"]{
+        table{
+            tbody{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                tr{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    td{
+                        border-radius: 50%;
+                    }
+                    
+                    &:last-child{
+                        td:first-child{
+                            outline: 1px solid #e2e2e2;
+                        }
+                    }
+                }
+            }
+        }   
+     }
+}
+.k-animation-container
+{
+    .k-dropzone >.k-upload-button.k-button-solid-base{
+        background:#fff;
+        border:none;
+        span{
+            width:100%;
+            text-align:right;
+            &::before{
+                width: 100%;
+                text-decoration:underline;
+                color:#0EAADC;
+            }
+        }
+    }
+}
+
+
+.signature-container {
+    width: 750px !important;
+}
+
+.signature-wrapper {
+  
+}
+
+.signature-wrapper .k-signature {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+
+.xstyle-signaturev2-wrapper .x-control-content-wrapper .toolbar .k-input-value-text{
+    right: 10px;
+    position: absolute;
+    color: var(--taa-s-other-black, #000);
+    text-align: right;
+    font-family: Assistant;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+}
+
+
+.xstyle-signature-wrapper{
+    flex-wrap: nowrap;
+    display: block;
+    height: auto;
+}

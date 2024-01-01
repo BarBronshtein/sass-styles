@@ -1,0 +1,118 @@
+
+
+
+.xstyle-idropdownlist-wrapper{
+
+
+  // readonly + disabled //
+
+
+  & span.x-dropdown-comp.s-dropdown-comp {
+   
+       @extend %texbox-input;
+
+  &:focus,
+  &:focus-within{
+    border:1px solid $control-border-focus;
+    box-shadow: $control-box-shadow-focus;
+  }
+
+  & .k-input-inner{
+    padding: 0
+  }
+
+  }
+
+  & label{
+
+    @extend %texbox-label;
+  }
+
+ 
+  & .k-input-button{
+    left: 10px;
+      &:hover{
+        background: none;
+      }
+    & span.k-icon{
+      &::before{
+        
+        content: "\f0d7";
+        font-size: 22px;
+        font-family: "Font Awesome 5 Pro";
+        color: $control-color-icon;
+        font-weight: 700;
+      }
+
+  }
+  
+  }
+
+
+}
+
+.k-rtl .k-window-titlebar .k-window-actions{
+  right: auto;
+    left: -15px;
+    position: relative;
+}
+.k-animation-container{
+
+  & .k-popup{
+
+    box-shadow: $list-container-shadow ;
+    border: $list-view-border-bottom ;
+    border-radius: 10px;
+    margin-top: 5px;
+
+    .k-list{
+      border-radius: 10px;
+    }
+    & .k-list-content.k-list-scroller{
+      border-radius: 10px;
+        background: none ;
+        padding: 0;
+& ul{
+  background: $list-view-bg-line-default ;
+}
+        & li{
+          height: 40px;
+          padding: 0;
+
+            &.k-selected.k-focus{
+              background: $list-view-selected-line ;
+              border: none;
+              box-shadow: none;
+
+              .k-list-item-text{
+                color: $list-view-selected-line-text ;
+                font-weight: 700;
+              }
+            }
+
+            &:hover{
+              background: $list-view-hover-line;
+            
+              .k-list-item-text{
+                color: $list-view-text-default ;
+                font-weight: 700;
+              }
+            }
+
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                align-items: center;
+                text-align: center;
+                color: $list-view-text-default;
+            }
+
+        }
+    }
+  }
+
+
+}

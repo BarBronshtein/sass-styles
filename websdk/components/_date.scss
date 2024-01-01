@@ -1,0 +1,389 @@
+@use "../variable/variable" as *;
+//calnder //
+
+$calendar-box-shadow: 0px 0px 10px rgba(123, 9, 139, 0.1), 0px 5px 8px rgba(123, 9, 139, 0.1);
+$calendar-bg-header:#FCFCFC;
+$calendar-color-icon-header:#7B098B;
+$calendar-color-text-header:#000000;
+$calendar-bg-body:#F5F5F5;
+$calendar-border-bottom-body:1px solid #7B098B;
+$calendar-body-button-color:#7B098B; 
+$calendar-body-butoon-color-text-focus:white;
+$calendar-body-butoon-bg-focus:#4B1754;
+$calendar-body-butoon-color-text-hover: white;
+$calendar-body-butoon-border-hover:1px solid #650872;
+$calendar-month-color-days-focus:#ffffff;
+$calendar-month-bg-days-focus:#7B098B;
+$calendar-month-color-today:#7B098B;
+$calendar-month-border-today: 1px solid #7B098B;
+$calendar-month-color-days-other-month:#8E8E8E;
+$calendar-month-border-other-month-hover:1px solid #8E8E8E;
+$calendar-month-color-other-month-hover:#8E8E8E;
+$calendar-month-color-title:#7B098B;
+$calendar-month-color-days:#7B098B;
+$calendar-month-color-days-hover:#650872;
+$calendar-month-border-days-hover:1px solid #7B098B;;
+$calendar-fotter-color-text:#7B098B;
+
+
+
+.xstyle-date-wrapper{
+  border-bottom: $border-text-fields;
+  height: $height-text-fields !important;
+  border-radius: 0px !important;
+  margin-top: 5px;
+  align-items: center;
+
+  .x-link_Comp{
+    color: #1998D5 ;
+    font-size: 13px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    display: grid;
+    align-items: center;
+    height: auto !important;
+    padding-right: 15px;
+    line-height: 0.9 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+  
+    &:hover{
+      font-weight: 700 !important;
+      text-decoration: none;
+    }
+  }
+  label{
+    @extend %texbox-lable;
+  }
+  .k-datepicker.k-input.x-datePickerResponsive {
+    @extend %texbox-input;
+    padding-right: 0 ;
+
+    input{
+      background: none !important;
+    }
+  }   
+
+  button{
+    background: none !important;
+  }
+
+  
+    // foceus //
+    &:focus-within {
+      border: 1px solid #ddc3e7 !important;
+      box-shadow: 0px 0px 10px #f6ecfb !important;
+      outline: none !important;
+    }
+    // focus //
+  
+    & input.k-textbox.x-textbox.s-textbox:focus-within,
+    & input.k-textbox.x-form-control:focus-visible,
+    & .k-input:focus-within,
+    & .k-widget.k-input:focus-within {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  
+    // contextmenu //
+  
+    &.x-contextmenu {
+      &  div.x-control-caption-wrapper::before {
+        content: "\f0d8" !important;
+        font-family: "Font Awesome 5 PRO";
+        font-weight: 900;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 1px;
+        color: #037295 !important;
+      }
+    }
+  
+    // x-readonly //
+  
+    &.x-readonly {
+      & div:last-child input {
+        color: black !important;
+        &::placeholder {
+          color: #ececec !important;
+        }
+      }
+      & button span::before {
+        color: #a1a3a5 !important;
+      }
+    }
+  
+    // disable //
+  
+    &.k-state-disabled {
+      background: #f9f9f9;
+      opacity: 1 !important;
+      & .k-icon::before {
+        color: #a1a3a5 !important;
+      }
+      & label.x-control-caption-text {
+        color: #a1a3a5 !important;
+      }
+      & div:last-child input {
+        color: #a1a3a5 !important;
+        &::placeholder {
+          color: #a1a3a5 !important;
+        }
+      }
+
+      button.k-button{
+        background: none !important;
+      }
+  
+      & button span::before {
+        color: #a1a3a5 !important;
+      }
+    }
+  
+    & .col-33 {
+      display: flex;
+      align-items: center;
+    }
+
+   }
+
+
+   // clander //
+
+.k-animation-container .k-popup:has(.k-calendar-table){
+
+  background: #F5F5F5 !important;
+  padding: 0 !important;
+  border-radius: 10px;
+  border: none !important ;
+  box-shadow: $calendar-box-shadow !important;
+
+  .k-footer{
+    background: #F5F5F5 !important;
+  }
+  .k-footer a{
+      color:#7B098B !important ;
+  }
+  .k-calendar{
+      background: none;
+      border-radius: 10px;
+      align-items: center;
+
+     a.k-button{
+        color:$calendar-color-text-header !important;
+      }
+  }
+
+  // header calnder //
+
+  .k-header.k-hstack{
+      align-items: center;
+      height: 50px;
+      background: $calendar-bg-header;
+      border: none !important;
+   
+         .k-nav-prev{
+
+          span{
+              color:$calendar-color-icon-header !important;
+             }
+         }
+
+         .k-nav-fast{
+
+          span{
+
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              letter-spacing: 0.1px;
+              color: $calendar-color-text-header;  
+
+          }
+         }
+
+         .k-nav-next{
+
+          span{
+              color: $calendar-color-icon-header !important;
+            }
+         }
+  }
+
+
+  // body calnder //
+
+
+
+  .k-calendar-view.k-calendar-yearview,
+  .k-calendar-view.k-calendar-decadeview{
+      background: $calendar-bg-body;
+      border-bottom:$calendar-border-bottom-body ;
+      table{
+          tbody{
+            tr{
+      
+              td.k-calendar-td{
+                  padding: 10px 0px;
+                  height: 36px !important;
+                  width: auto;
+                  &:hover{
+                      a {
+                          color:$calendar-body-butoon-color-text-hover ;
+                          background: none;
+                          border-radius:100px;
+                          background: #650872 !important;
+                          font-weight: 700;
+                          width: auto;
+                      }
+                  }
+                  &.k-focus{
+                   
+
+                      a{
+                          color:$calendar-body-butoon-color-text-focus !important;
+                          font-weight: 700;
+                          box-shadow: none;
+                          height: 36px !important;
+                          background: $calendar-body-butoon-bg-focus;
+                          border-radius: 100px;
+                          box-shadow: none;
+                          width: auto;
+                      }
+
+                  }
+
+                  a{
+                      height: 36px !important;
+                      font-family: 'Assistant';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 24px;
+                      color: $calendar-body-button-color;
+                      width: auto;
+                     
+                  }
+              }
+            }
+          }
+      }
+  }
+
+
+
+
+  // month calnder //
+
+     .k-calendar-view.k-calendar-monthview{
+        border-bottom: $calendar-border-bottom-body;
+        background: #F5F5F5 !important;
+           th{
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              color: $calendar-month-color-title;
+           }
+
+           td{
+
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $calendar-month-color-days;
+              
+          
+
+              // עמודה שהיא תאריך נוכחי //
+
+              &.k-today{
+                  a{
+                  border: $calendar-month-border-today;
+                  color: $calendar-month-color-today;
+                  border-radius:50%;
+                  box-shadow: none;
+                  }
+              }
+
+              // עמודה מחודש אחר או חודש הבא //
+
+              &.k-other-month{
+            
+                  color: $calendar-month-color-days-other-month !important;
+                  &:hover{
+                      a{
+                          border: $calendar-month-border-other-month-hover;
+                          color: $calendar-month-color-other-month-hover;
+                      }
+                  }
+              }
+
+              // עמודה שהיא חלק מהספוש //
+
+              &.k-weekend{
+                  color: #C7C7C7;
+                  &:hover{
+                      a{
+                          border:$calendar-month-border-other-month-hover;
+                          color: $calendar-month-color-other-month-hover;
+                      }
+                  }
+              }
+
+              // focus day //
+
+              &.k-focus{
+                  a {
+                      background: $calendar-month-bg-days-focus;
+                      border-radius:50%;
+                      color: $calendar-month-color-days-focus;
+                      font-weight: 700;
+                      box-shadow: none !important;
+                  }
+              }
+
+
+              // hover day //
+              &:hover{
+                  a {
+                      color: $calendar-month-color-days-hover;
+                      background: none;
+                      border-radius:50%;
+                      border: $calendar-month-border-days-hover;
+                      font-weight: 700;
+                  }
+              }
+           }
+
+     }
+
+
+
+  // footer calnder //
+
+  .k-footer{
+
+      a{
+          font-family: 'Assistant';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: $calendar-fotter-color-text; 
+      }
+  }
+
+}

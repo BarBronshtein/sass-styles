@@ -1,0 +1,72 @@
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Login{
+
+ // checkbox control //
+
+ & .xstyle-checkbox-wrapper {
+    margin-top: 10px !important;
+       
+   & label{
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+    color: #052136;
+   }
+
+   & input.x-checkbox {
+    border: 1px solid #052136;
+    box-shadow: none;
+    &::before{
+        content: "";
+        background: #F09621 !important;
+        box-shadow: none;
+
+    }
+    &:checked{
+        border: 1px solid #F09621 !important;
+       
+    }
+   }
+}
+
+}
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Main{
+
+    // checkbox control //
+   
+    & .xstyle-checkbox-wrapper {
+       margin-top: 10px !important;
+       min-height: auto;
+      & label{
+   
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 110%;
+       text-align: center;
+       color: #052136;
+      }
+   
+      & input.x-checkbox {
+       border: 1px solid #052136;
+       box-shadow: none;
+       &::before{
+           content: "";
+           background: #F09621 !important;
+           box-shadow: none;
+   
+       }
+       &:checked{
+           border: 1px solid #F09621 !important;
+          
+       }
+      }
+   }
+   
+   }

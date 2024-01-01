@@ -1,0 +1,369 @@
+
+
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-upload-wrapper .k-file.k-file-success [class^="k-file-validation-message !k-text-success"]{
+    color: $card-upload-file-ok-text;
+}
+
+
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) {
+
+
+    border: none !important;
+    background: #FCFCFC !important;
+    height: 76px !important;
+    box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
+    z-index: 50;
+    .x-taas-footer{
+
+        border: none !important;
+
+        & .xstyle-buttoncontrol-wrapper{
+
+    
+            & button.x-button{
+    
+                background: $button-background !important;
+
+                &:hover{
+                    background: $button-background-hover !important; 
+                 }
+                 &.k-button:focus-within,
+                 &.k-button:focus{
+                         background: $button-press-background !important;  
+                         box-shadow:  $button-focus-Box-shadow !important;
+                 }
+             
+            }
+        }
+    }
+}
+
+
+#TafnitCore_SaaSServer_Survey_UI_Survey {
+
+    .xstyle-image-wrapper      {
+
+        img{
+        height: auto !important;
+        }
+    }
+    .x-control-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+    
+    & .surveyTitle{
+
+        background: $title-background !important;
+    }
+
+& .xstyle-signature-wrapper .GraphicalSignaturePlaceHolders a:before{
+
+    color: $signature-icon-before !important;
+}
+
+& .xstyle-popupsignature-wrapper .GraphicalSignaturePlaceHolders::after{
+   color: $signature-icon-after !important;
+}
+
+
+// footer // 
+
+& .s-footer.x-footer{
+    box-shadow:  $Box-shadow-footer !important;
+}
+
+& .x-footer div[uxid=cSubmit] button.x-button.s-button.k-button,
+& .xstyle-buttoncontrol-wrapper button.x-button.k-button.s-button{
+
+    background: $button-background !important;
+
+    &:hover{
+        background: $button-background-hover !important; 
+     }
+     &.k-button:focus-within,
+     &.k-button:focus{
+             background: $button-press-background !important;  
+             box-shadow:  $button-focus-Box-shadow !important;
+     }
+ 
+}
+
+}
+#TafnitCore_SaaSServer_Survey_UI_Survey .xstyle-switch-wrapper .k-switch-on .k-switch-thumb{
+
+    background: $switch-bg-on  !important;
+    box-shadow: $switch-box-shadow-on !important;
+}
+// message box //
+.k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-animation-container li.k-focus{
+    border: 1px solid $list-view-border-selected !important;
+}
+.k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) {
+
+    .k-widget.k-window:has(.x-signature-canvas) {
+        border: 1px solid $pop-up-canvas-border  !important;
+        box-shadow:  $pop-up-canvas-box-shadow !important;
+    }   
+
+& .k-widget.k-window.k-rtl:has(#MessageBoxWindow){
+    border: 1px solid $messagebox-border-color  !important;
+    box-shadow:  $Box-shadow-messagebox !important;
+
+    & .x-icons{
+
+        &::before{
+        color: $messagebox-icon-color !important;
+        font-weight: 500;
+        }
+    }
+     
+& #MessageBoxWindow{
+   
+
+
+& button.k-button{
+
+    background: $button-background!important;
+    box-shadow:  $Box-shadow-button !important;
+
+    &:focus{
+
+        background: $button-press-background !important;
+    }
+
+ }
+}
+}
+
+// button succuss canvas //
+
+& .xstyle-canvas-wrapper .x-control-content-wrapper .k-icon.k-i-check.canvasSaveBtn-indicate-saved{
+    background: $approve-icon-on !important;
+}
+
+// radio button // 
+
+&  .xstyle-radio-wrapper.x-control-wrapper{
+ 
+
+    & input{
+        &:checked{
+            border: 2px solid $radio-button-on-border !important;
+            box-shadow:  $radio-button-on-drop-shadow !important;
+        }
+
+
+        &::before{
+            color: $radio-button-on-background !important;
+            width: 10px !important;
+           height: 10px !important;
+        }
+    }
+
+   }
+
+// highlight //
+
+  &  .x-highlight{
+
+    & label{
+        color: $high-light-caption!important;
+    }
+  
+}
+
+// title // 
+
+& .x-freehandhtml-wrapper {
+    center{
+        border-bottom: 1px solid $title-secondary-bottom-border !important;
+        color: $title-secondary!important; 
+    }
+}
+
+   // check box //
+
+  & .xstyle-checkbox-wrapper.x-control-wrapper {
+
+    & input{
+        border-color:$checkbox-unselect-icon-color-default;
+
+
+     &:checked::before{
+        color:$checkbox-unselect-icon-color-default;
+     }
+    
+
+      &:focus{
+        border: 1px solid $checkbox-unselected-border-color-focus;
+
+        &:before{
+            color:$checkbox-unselected-border-color-focus;
+        }
+      }
+    }
+   }
+
+
+.k-auto-scrollable{
+    overflow: auto;
+
+    &.k-grid-header{
+        display: none;
+    }
+}
+
+.xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a{
+    color: $link-text;
+
+    &::after{
+        color: $link-text;
+    }
+}
+
+// star control //
+
+& .xstyle-krating-wrapper.x-control-wrapper{
+
+
+
+   & .kendo-rating{
+
+
+
+    &:has(.k-selected){
+        & .k-i-close-circle{
+            color: $label-star-on-background !important ;
+        }
+    }
+    & .k-rating.k-widget{
+        display: grid;
+        grid-template-columns: 85% 15%;
+      
+        & .k-rating-container{
+           
+            
+
+            & .k-icon{
+                color:  $label-star-off-border;
+        
+            }
+ 
+            & .k-icon.k-i-star{
+            
+                color:  $label-star-on-background !important;
+              
+            }
+        }
+    }
+
+   }
+
+}
+
+// focus color //
+
+& .xstyle-textareacontrol-wrapper textarea{
+
+    &:focus-visible{
+
+        outline: 1px solid $focus-border!important;
+    }
+}
+&  .xstyle-date-wrapper span.k-datepicker.k-input,
+& .xstyle-idropdownlist-wrapper span.k-picker.k-dropdownlist,
+& .xstyle-textcontrol-wrapper input,
+& .xstyle-autocomplete-wrapper input,
+& .xstyle-geoaddress-wrapper input,
+& .xstyle-googleaddress-wrapper input,
+& .xstyle-intlphonenumber-wrapper input{
+    &:focus,
+    &:focus-within,
+    &:active,
+    &:focus-visible{
+        border: 1px solid $focus-border!important; 
+     
+    }
+}
+
+
+// all control lbael + text //
+.xstyle-googleaddress-wrapper .x-barcodeBtnContainer a{
+    color: $icon-color !important;
+
+}
+.xstyle-geoaddress-wrapper,
+.xstyle-geoaddress-wrapper,
+.xstyle-idropdownlist-wrapper,
+.xstyle-date-wrapper,
+.xstyle-textcontrol-wrapper{
+
+
+
+    & .x-control-wrapper .k-icon, 
+    & .x-control-content-wrapper .k-icon {
+
+        color: $icon-color !important;
+    
+        &::before{
+            
+        color: $icon-color !important;
+        }
+    }
+}
+
+
+// linke //
+
+& .xstyle-ilink-wrapper a{
+
+    color: $link-text !important;
+}
+
+//uplod control //
+
+& .k-i-file-pdf,
+& .k-i-file-data,
+& .k-i-file-txt,
+& .k-i-file,
+& .k-i-file-image.k-file-group.k-icon{
+    &::before{
+        color: $card-upload-file-icon-file !important; 
+    }
+}
+
+& .k-file-validation-message.k-text-success{
+    color: $card-upload-file-icon-file !important; 
+}
+
+& .xstyle-upload-wrapper .k-upload-button span{
+
+    color: $upload-text !important;
+}
+
+& .k-upload-button.k-focus{
+    box-shadow: none !important;
+    border: none;
+}
+
+& .xstyle-upload-wrapper .k-upload-button span::after{
+    color: $upload-icon !important;
+}
+
+
+// mandatory //
+
+& .mandatory{
+    & label.x-control-caption-text{
+        margin-right: 12px !important;
+        &::before{
+            content: "*";
+            color: $required !important;
+        }
+
+    }
+}
+
+}

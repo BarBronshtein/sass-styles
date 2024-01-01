@@ -1,0 +1,76 @@
+
+
+#TafnitCore_SaaSServer_Funding_B2C_UI_Login{
+    margin-top: 0 !important;
+    background: #fff !important;
+    padding: 0 !important;
+
+    .headerNone{
+        margin-top: 0 !important;
+    }
+
+    .x-row{
+        box-shadow: none;
+        background: none;
+        border: none;
+        padding:  0 !important;
+    }
+
+    .logo-img{
+        .x-image-wrapper{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            img{
+                width: 45%;
+            }
+        }
+    }
+
+    .title-login{
+        span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #323C4B;
+        }
+    }
+
+    .text-login{
+        text-align: center;
+        span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            text-align: center;
+            color: #323C4B;
+            margin-top: 15px;
+            width: 70%;
+        }
+    }
+
+
+    .xstyle-ilink-wrapper{
+
+        a{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: right;
+            color: #FF780B;
+        }
+    }
+
+    .xstyle-buttoncontrol-wrapper button{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,62 @@
+/*when kendo support rtl timeline remove this component css */
+/*this rtl support is only for vertical timeline*/
+
+
+
+.k-rtl {
+    .k-timeline-vertical {
+        .k-timeline-card {
+            .k-card {
+                margin-right: 16px;
+            }
+        }
+
+        &.k-timeline-alternating {
+            .k-timeline-event {
+                &.k-reverse {
+                    .k-timeline-date-wrap {
+                        text-align: right;
+                        padding-left: 0;
+                        padding-right: 16px;
+                    }
+
+                    .k-timeline-card {
+                        .k-card {
+                            margin-left: 16px;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .k-card {
+            .k-card-callout {
+                &.k-callout-e {
+                    top: 36px;
+                    left: 0;
+                    right: auto;
+                    transform: translate(-50%, -50%) rotate(-45deg) scaleX(-1);
+                }
+
+                &.k-callout-w {
+                    transform: translate(1940%, -50%) rotate(45deg);
+                }
+            }
+        }
+
+        .k-timeline-card {
+            &.k-collapsed {
+                .k-event-collapse {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .k-timeline-date-wrap {
+            padding-left: 16px;
+            text-align: left;
+        }
+
+    }
+}

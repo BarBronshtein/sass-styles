@@ -4,17 +4,10 @@ div[uxid="lLastUpdate"]{
     margin-bottom: 20px ;
 }
 
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Login{
-    .xstyle-buttoncontrol-wrapper{
 
-        & button{
-            margin-top: 20px !important;
-        }
-    }
 
-}
 .xstyle-buttoncontrol-wrapper{
-
+ margin-top: 10px !important;
 &.k-state-disabled{
     opacity: 1 !important;
     & button.k-button{
@@ -24,7 +17,7 @@ div[uxid="lLastUpdate"]{
     }
 }
 & button{
-
+border: none;
 @extend %SimpleButton;
 &:active{
     background: #267931 !important;
@@ -50,7 +43,7 @@ div[uxid="lLastUpdate"]{
     
     & img{
         width: 100% !important;
-        margin-top: 5px;
+        margin-top: 20px;
     }
   
     & .optionDriver2{
@@ -189,5 +182,13 @@ div[uxid="lLastUpdate"]{
             font-size: 20px !important;
             margin-left: 7% !important;
         }
+    }
+}
+
+
+#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Login{
+
+    .xstyle-textcontrol-wrapper.shadowIn input{
+        margin-bottom: 10px;
     }
 }

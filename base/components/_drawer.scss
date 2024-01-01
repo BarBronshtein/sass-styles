@@ -1,4 +1,4 @@
-@use '../variables/masterVariable' as *;
+
 
 .k-drawer .k-drawer-items *:not(.popUpWindowCls * , input.k-textbox , .DrawerItem-icon){
     color: $drawer-color !important;
@@ -36,7 +36,7 @@
         .k-drawer-item {
             background-image: none !important;
 
-            &.k-state-selected {
+            &.k-selected {
                 background: none !important;
             }
         }

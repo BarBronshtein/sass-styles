@@ -1,4 +1,4 @@
-@use '../variables/masterVariable' as *;
+
 
 #TafnitCore_System_UI_App_WebSDK_Login,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login {
@@ -36,7 +36,7 @@
 
     input.k-textbox{
         padding-right: 10px!important;
-        border: none !important;
+      
     }
     ::placeholder{
         font-weight: normal!important;

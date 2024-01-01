@@ -1,0 +1,52 @@
+
+
+
+
+
+.xstyle-tab-wrapper{
+    padding-top: 20px;
+
+    .k-tabstrip:focus{
+        box-shadow: none;
+    }
+    .x-tab-control {
+        background: none;
+        border: none;
+
+        .k-tabstrip-items-wrapper{
+            border: none;
+
+            .k-tabstrip-item{
+                background: none;
+                border: none;
+
+                .k-loading{
+                    border: none;
+                }
+
+                span{
+                    font-family: 'Heebo';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: $tab-script-color-text;  
+                }
+
+                &.k-active{
+                    border-bottom: 1px solid $tab-script-border-bottom;
+                    background: none;
+
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .k-tabstrip-content {
+            background: none;
+            border: none;
+        }
+    }
+}

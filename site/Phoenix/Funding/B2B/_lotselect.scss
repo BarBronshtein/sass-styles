@@ -1,0 +1,116 @@
+
+
+.k-widget.k-window{
+
+
+    background: #FFFFFF;
+    box-shadow:  0px 0px 2px rgba(35, 40, 115, 0.1), 0px 8px 8px rgba(35, 40, 115, 0.15);
+    border-radius: 10px;
+    height: auto !important;
+    border: none;
+    max-height: fit-content;
+   .k-window-titlebar {
+    background: none !important;
+    border: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .k-button {
+        &:active,&:focus{
+            background: none !important;
+            border: none !important;
+
+            &::before{
+                opacity: 1 !important;
+            }
+        }
+
+        color: white !important;
+
+        span{
+            color: #7E7B7B !important;
+        }
+    }
+   }
+
+
+   #TafnitCore_SaaSServer_Funding_B2B_UI_LotSelect{
+   header{
+    display: none !important;
+   }
+
+   .k-i-search{
+    font-size: 20px;
+    right: 7px;
+    font-weight: 600;
+
+    &:before{
+        content: "\ea3a";
+        color: #323c4b;
+        font-family: 'icomoon';
+    }
+
+    &:after{
+        content: "\ea3b";
+        color: #da3382;
+        font-family: 'icomoon';
+    }
+   }
+    .title-lot{
+        span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: right;
+            color: #323C4B;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .link-lot{
+        span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: right;
+            color: #14008E;
+        }
+    }
+
+    .text-lot{
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        .xstyle-dynamiclabelcontrol-wrapper{
+            .col-4{
+                flex: 0 0.1;
+            }
+        }
+        label{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: right;
+            color: #323C4B;
+        }
+
+        span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: right;
+            color: #323C4B;
+        }
+    }
+   }
+}

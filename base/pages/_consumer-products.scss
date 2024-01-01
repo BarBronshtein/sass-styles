@@ -1,4 +1,4 @@
-@use '../variables/masterVariable' as *;
+
 
 body {
     background: $consumer-body-background-color !important;
@@ -512,7 +512,7 @@ span.mandatory.active+span.k-switch.k-widget .k-switch-container {
             }
 
             td {
-                &.k-state-selected {
+                &.k-selected {
                     .k-link {
                         border-radius: 50% !important;
                         background-color: $consumer-calendar-selectday-background-color !important;
@@ -528,7 +528,7 @@ span.mandatory.active+span.k-switch.k-widget .k-switch-container {
             }
 
             .k-today {
-                &.k-state-selected {
+                &.k-selected {
                     .k-link {
                         color: $consumer-calendar-today-selected-color !important;
                     }

@@ -1,0 +1,52 @@
+
+
+.xstyle-combobox-wrapper {
+    .x-combobox.k-combobox-clearable {
+
+
+   
+            @extend %texbox-input;
+     
+           
+     
+       &:focus,
+       &:focus-within{
+        box-shadow:var(--input-focus-shadow) ;
+        border: 1px solid var(--input-border-color-focus) ;
+       }
+     
+       & .k-input-inner{
+         padding: 0
+       }
+     
+       }
+     
+       & label{
+     
+         @extend %texbox-label;
+       }
+     
+      
+       & .k-input-button{
+        background: var(--input-bg-color-default) ;
+         margin-left: 20px;
+           &:hover{
+            background: var(--input-bg-color-default) ;
+           }
+         & span.k-icon{
+           &::before{
+             
+             content: "\f0d7";
+             font-size: 20px;
+             font-family: "Font Awesome 5 Pro";
+             color: var(--input-icon-color-default);
+             font-weight: 700;
+           }
+     
+       }
+       
+       }
+     
+     
+     
+    }

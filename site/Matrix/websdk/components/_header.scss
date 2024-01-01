@@ -1,0 +1,284 @@
+
+@use '../variable/variable' as *;
+
+
+.mobileView{
+
+  div[uxid="UserNameDetails"]{
+    & .x-dynamic-label-control{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 30px;
+    }
+
+  }
+
+}
+
+
+.headerCard {
+    > div:nth-child(2) {
+      height: auto;
+    }
+  
+    background-color: map-get($map: $Colors , $key: bg-qube)!important;
+    box-shadow:  0px 6px 6px rgba(123, 9, 141, 0.1) !important;
+    border-radius: 0 0 10px 10px !important;
+    width: 97.8% !important;
+    height: 100px !important;
+    margin: auto;
+    padding: 0px !important;
+    position: sticky !important;
+    top: 0 !important;
+    max-height: 120px !important;
+    z-index: 10002 !important;
+  
+  }
+
+
+  .mobileView,
+  .roundedAvatar,
+  div[uxid="portalUser"],
+  .minScreen.col,
+  .logo {
+
+
+        max-height: 100px !important;
+
+  }
+
+  .roundedAvatar img {
+    border-radius: 50%;
+    width: 75px !important;
+    height: 75px !important;
+    min-height: 75px !important;
+    min-width: 75px !important;
+  }
+  
+
+  .border:has(.textCard){
+    height: 73px;
+  }
+
+.textCard {
+    padding: 0 !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding-right: 10px !important;
+    height: 73px;
+  }
+
+  .nameComp {
+
+    line-height: 3;
+    &:last-child a {
+      color:  map-get($map: $Colors , $key: main-color ) !important;
+      text-decoration: none;
+      font-family: map-get($map: $typographyVariables, $key: -font-family);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+     
+    }
+  
+    &:first-child .x-control-caption-wrapper {
+      height: 20px !important;
+      font-family: map-get($map: $typographyVariables, $key: -font-family);
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+
+  
+.details .right > div {
+  &:first-child {
+    font-family: map-get($map: $typographyVariables, $key: -font-family);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    position: relative;
+  }
+
+  &:last-child {
+    font-family: map-get($map: $typographyVariables, $key: -font-family);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 30px;
+    color:  map-get($map: $Colors , $key: text-defualt) !important;
+  }
+}
+
+.details .left > div:last-child {
+  font-family: map-get($map: $typographyVariables, $key: -font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: -20px;
+}
+
+
+@media screen and (max-width: 1292px) and (min-width: 700px) {
+  .searchDesign input.k-textbox {
+    text-indent: 15% !important;
+  }
+
+  header.k-header{
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    }
+
+  .doBorder div:first-child > div.k-icon-wrapper > span.k-icon.icon-xtab-small-search {
+  
+    top: -21px;
+}
+
+  .k-rtl .details .right {
+    flex: 0 0 34% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .roundedAvatar {
+    flex: 0 0 3% !important;
+    padding-left: 0 !important;
+  }
+
+  .logo {
+    flex: 0 0 30%;
+    max-width: 27%;
+  }
+
+  .minScreen {
+    border-right: 1px solid !important;
+    border-left: none !important;
+    flex: 0 0 35%;
+    height: 91px;
+    margin: auto;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    height: 73px;
+
+    > :first-child {
+      display: block !important;
+      width: 100% !important;
+      border-radius: 0;
+      height: 91px;
+    }
+  }
+
+  .searchDesign {
+    margin-top: 5px;
+    padding: 0%;
+  }
+
+  .iconsLan {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .textCard {
+    border: none !important;
+  }
+
+  .doBorder {
+    margin: auto;
+    height: 91px;
+    border: none !important;
+    padding: 0;
+
+    div {
+      &:first-child {
+        display: flex !important;
+        width: 98% !important;
+        top: -3px;
+        margin: 0 ;
+        padding-right: 2px;
+        margin-top: -8px;
+      }
+
+      .language {
+        width: 50px !important;
+      }
+    }
+  }
+
+  .icon-ar, .icon-en {
+    display: none;
+  }
+
+  .k-rtl .details .right {
+    margin: auto;
+    height: 91px;
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
+    padding-right: 2%;
+  }
+
+  .d-lg-flex {
+    display: flex !important;
+  }
+
+  .nameComp div {
+    &:nth-child(1) {
+      flex: 0 0 0%;
+      top: 2px;
+      margin-left: 4px;
+    }
+
+    &:nth-child(2) {
+      flex: 0 0 60%;
+    }
+  }
+
+  .textCard div:nth-child(2) {
+    height: 24px !important;
+    margin-top: -24px;
+  }
+
+  .col-lg-67 {
+    flex: 0 0 91.5%;
+    max-width: 90.5%;
+  }
+
+  .nameComp {
+    display: flex !important;
+    max-width: 100%;
+  }
+
+  .details .left * {
+    width: 300% !important;
+  }
+  
+  .nameComp{
+    line-height: 0;
+    padding-top: 0 !important;
+  }
+  .details .left > div:last-child{
+    margin-top: -77px !important;
+  }
+}
+
+.searchDesign .s-row.xstyle-textcontrol-wrapper
+{
+  & .s-text-control-container input::placeholder{
+
+    padding-right: 20px;
+  }
+}
+
+.popUpWindowCls {
+  right: 135px !important;
+  top: 100px !important;
+  max-width: 100% !important;
+}

@@ -1,0 +1,137 @@
+
+
+.k-content:has(.k-drawer-container) #uber-container {
+  padding-right: 0px !important;
+}
+
+.icon-menu2{
+  font-size: 28px;
+}
+// header main //
+header.navbar-fixed-top.header-customer {
+  display: grid;
+  grid-template-columns: 80%20%;
+  height: 53px;
+  padding: 0px;
+  background: $header-bg;
+  box-shadow: $header-box-shadow;
+  border-radius: 0px;
+  width: 100% !important;
+  margin: auto;
+  top: 0px;
+  border: none !important;
+  position: sticky;
+.xstyle-dynamiclabelcontrol-wrapper     {
+  height: 25px;
+}
+  & div{
+    max-height: 121px;
+  }
+div[uxid="iLogo"]{
+  padding-left: 30px;
+}
+  // first-cube //
+
+.mobileView{
+
+  display: grid;
+  grid-template-columns: auto auto 1fr ;
+  gap: 10px;
+  & div.border-left{
+      border-left:$header-border;
+  }
+  & > div{
+    align-self: center;
+  }
+
+  & .helloText{
+    & span{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: $header-hellotext-color;
+    }
+  }
+
+  & .UserNameDetails{
+    & span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $header-usernamedetails-color;
+    }
+  }
+
+  & .LastLoginDetails{
+    & span{
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      color: $header-lastlogindetails-color;
+      margin-top: 10px;
+    }
+  }
+}
+
+// secand cube //
+
+.details {
+& .left{
+
+  & a{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: right;
+    color: $header-link-color;
+    text-decoration: underline;
+  }
+  & span{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    color: $header-details-span-color;
+ 
+  }
+  .xstyle-dynamiclabelcontrol-wrapper > .col-4, 
+  .details .left .xstyle-dynamiclabelcontrol-wrapper .col-33{
+
+    flex: 0 0 0.1%;
+    & label{
+      margin-left: 5px;
+      font-family: 'Heebo';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 27px;
+      text-align: right;
+      color: $header-details-label-color;
+      margin-bottom: 0;
+    }
+ } 
+}
+
+
+}
+
+// logo //
+
+.logo .x-self-container.s-self-container{
+  position: absolute;
+  width: 275px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+}

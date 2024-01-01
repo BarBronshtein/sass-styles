@@ -1,0 +1,216 @@
+@use "../variable/variable" as *;
+
+.k-drawer-item.k-drawer-separator {
+    background: map-get($map: $Colors, $key: bg-qube) !important;
+    height: 1px !important;
+    width: 90% !important;
+    align-self: center;
+  }
+  
+  .k-drawer-expanded > .k-rtl.k-drawer {
+    width: 345px;
+    max-width: 409px;
+    z-index: 10005 !important;
+  }
+  
+  .d-flex.justify-content-between.align-items-center.text-Right.k-drawer-item.drawerSearch
+    > span.k-icon.icon-xtab-small-search.DrawerItem-icon {
+    text-indent: 9px;
+    top: 53px;
+  }
+  
+  li.k-item.k-panelbar-item.k-level-0.k-level-1 {
+    /* height: 30px; */
+    margin-bottom: 5px;
+  }
+  
+  .k-drawer {
+    .k-panelbar .k-item {
+      background: map-get($map: $Colors, $key: drawer) important;
+    }
+  
+    .k-drawer-items
+      *:not(.popUpWindowCls *):not(input.k-textbox):not(.DrawerItem-icon) {
+      padding-right: 0 !important;
+      justify-content: space-between;
+    }
+  }
+  
+  .k-panelbar-group.k-group.k-panel
+    > li.k-item.k-panelbar-item.k-level-0.k-level-1
+    > span.k-link {
+    background: map-get($map: $Colors, $key: main-color) !important;
+  
+    > .k-panelbar-item-text {
+      background: map-get($map: $Colors, $key: main-color) !important;
+    }
+  }
+  
+  .k-drawer-container {
+    .k-drawer .k-drawer-wrapper li[data-role="drawer-item"] {
+      .drawer-item-control-wrapper .k-panelbar .k-group.k-panel .k-item .k-link {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+      }
+  
+      > span {
+        font-size: 20px !important;
+        padding: 10px 30px !important;
+        padding-left: 0 !important;
+      }
+    }
+  
+    &.k-drawer-expanded
+      .k-drawer
+      .k-drawer-wrapper
+      li[data-role="drawer-item"]
+      > span.icon-xtab-open-drawer {
+      transform: rotate(180deg);
+      background: transparent;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .k-drawer
+      .k-drawer-wrapper
+      li[data-role="drawer-item"]
+      > span.icon-xtab-open-drawer {
+      background: transparent;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  
+  .k-drawer .k-panelbar .k-item .k-panel .k-item > .k-link {
+    background: map-get($map: $Colors, $key: drawer) !important;
+  }
+  
+  .k-item.k-panelbar-item.k-level-0.k-level-1 > .k-link {
+    background: map-get($map: $Colors, $key: drawer) !important;
+  
+    /* height: 30px !important; */
+  }
+  
+  .k-drawer
+    .k-panelbar
+    .k-item
+    .k-panel
+    .k-item
+    > .k-link
+    > span.k-panelbar-item-text {
+    width: 96%;
+    background: map-get($map: $Colors, $key: drawer) !important;
+    text-indent: 14px;
+  
+    + span {
+      background: map-get($map: $Colors, $key: drawer) !important;
+    }
+  }
+  
+  .k-icon.k-panelbar-toggle.k-panelbar-collapse.k-i-arrow-chevron-up::before {
+    font-family: "Font Awesome 5 pro" !important;
+    content: "\f0d8" !important;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .k-drawer-overlay .k-drawer .k-drawer-wrapper .k-drawer-items li:hover {
+    background: map-get($map: $Colors, $key: drawer) !important;
+  }
+
+#panelbarnavbarControl.k-panelbar {
+    border: none !important;
+    & .k-item.k-panelbar-header {
+      border: none;
+      background: #fbfbfb !important;
+      margin-bottom: 8px !important;
+      width: 100%;
+  
+      &.k-active {
+        background: none !important;
+        & span.k-link {
+          background: #f5f5f5 !important;
+  
+          & .k-panelbar-item-text {
+            color: #000000 !important;
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 700 !important;
+            font-size: 14px;
+            line-height: 18px;
+          }
+  
+          &:focus {
+            box-shadow: none !important;
+          }
+        }
+      }
+  
+      & span.k-link {
+        background: none;
+        border-right: 3px solid #7b098b !important ;
+        height: 38px;
+  
+        &:hover {
+          background: #f5f5f5 !important;
+        }
+        &:focus {
+          box-shadow: none !important;
+        }
+  
+        & .k-panelbar-item-text {
+          color: #000000 !important;
+          font-family: "Heebo";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        & .k-icon {
+          font-size: 22px;
+          color: #690779 !important ;
+        }
+      }
+      & .k-panelbar-group.k-group.k-panel {
+        & .k-panelbar-item {
+          height: 38px;
+          display: flex;
+          text-indent: 8px;
+          color: black;
+          font-weight: 400;
+          font-size: 14px;
+  
+          &:hover {
+            font-weight: 700 !important;
+          }
+        }
+        margin-top: 8px !important;
+  
+        & .k-link {
+          border: none !important;
+          background: none !important;
+        }
+      }
+    }
+  }
+  
+  .classifiedButton {
+    button:has(.icon-xtab-next) {
+      direction: ltr;
+    }
+  }
+  
+  .k-panelbar .k-group > .k-item > .k-link.k-state-selected,
+  .k-panelbar .k-group > .k-panelbar-item > .k-link.k-state-selected,
+  .k-panelbar .k-panelbar-group > .k-item > .k-link.k-state-selected,
+  .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-state-selected {
+    color: #7b098b !important;
+  }
+
+  .drawerSearch input.k-textbox {
+    margin-right: 11px;
+    width: 97%;
+    height: auto;
+  }
+
+  .k-drawer-overlay.k-drawer-right .k-drawer {
+    background: map-get($map: $Colors, $key: drawer) !important;
+  }

@@ -1,5 +1,5 @@
 
-@use '../variables/masterVariable' as *;
+
 
 @import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
 
@@ -387,7 +387,7 @@ $dash-chart-2:#7cceee!default;
         }
 
         .k-link {
-            &.k-state-selected {
+            &.k-selected {
                 background: $dash-torq;
             }
 

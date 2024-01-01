@@ -1,0 +1,21 @@
+.xstyle-image-wrapper      {
+    label{
+        color: var(--vanilla-neutral-600, var(--color-grey-600, #A1A3A5));
+        font-family: Heebo;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+    }
+}
+
+.x-taas-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    z-index: 0;
+}

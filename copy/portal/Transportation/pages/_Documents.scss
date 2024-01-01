@@ -1,0 +1,308 @@
+
+
+#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Documents{
+
+
+  
+ 
+& .parent-documents{
+    padding: 0 !important;
+}
+& .documents {
+
+    display: grid;
+    align-items: center;
+    min-height: 51px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(16, 93, 150, 0.25), 0px 4px 4px rgba(155, 213, 255, 0.25) !important;
+    border-radius: 10px;
+    border: 1px solid #95D6FB !important;
+    grid-template-columns: 1fr auto auto;
+    margin-top: 15px;
+
+
+    & .mainDocuments {
+        & span.x-dynamic-label-control {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            align-items: center;
+            text-align: right;
+            color: #004070;
+        }
+    }
+
+    & .linkDocuments {
+      & .x-control-content-wrapper {
+        text-align: center;
+      }
+        & a.x-link{
+
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            align-items: center;
+            text-align: right;
+            color: #1C87D7;
+        }
+    }
+
+
+    & .iconDocuments{
+
+     & .k-icon{
+       color: #C7C7C7;
+     }
+
+    }
+}
+
+& .add-linke{
+    margin-top: 20px;
+    & .x-control-content-wrapper {
+        text-align: center;
+      }
+        & a.x-link{
+
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight:400;
+            font-size: 14px;
+            line-height: 18px;
+            align-items: center;
+            text-align: right;
+            color: #1C87D7;
+        }
+
+}
+
+}
+
+
+.k-window:has(#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_DocumentAdd){
+
+    height: auto !important;
+    width: 80% !important;
+    margin: 0 auto;
+    left: 0 !important;
+    right: 0;
+    top: 33% !important;
+    transform: translateY(-50%) !important;
+    border: none !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 0px 5px rgb(0 122 191 / 20%) !important;
+    border-radius: 10px;
+    padding: 5px;
+
+ & .col{
+    padding: 0 !important;
+    overflow: hidden;
+ }
+  & .row{
+    border: none !important;
+  }
+    & .navbar-fixed-top{
+        border: none !important;
+    }
+    & .k-window-titlebar{
+        background: none !important;
+        border: none !important;
+        overflow: hidden;
+    
+        & .k-i-close{
+            font-size: 20px;
+            color: #A6A6A6;
+            font-weight: 100;
+        }
+      }
+    
+
+      & .drop-down{
+
+        & h4{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            align-items: center;
+            text-align: center;
+            color: #004070;
+            margin-bottom: 0;
+        }
+    
+    & .xstyle-idropdownlist-wrapper{
+    
+    margin-top: 5px ;
+        & label{
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 100%;
+            align-items: center;
+            color: #F09621;
+            margin: 0;
+        
+        }
+    
+        & .x-dropdown-comp{
+    
+            height: 45px !important;
+            border: 1px solid #9BD5FF !important;
+            border-radius: 10px;
+            background: none;
+
+            &:focus{
+                border: 1px solid #F57920 !important; 
+            }
+    
+            & .k-input-button{
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 10px;
+    
+                & .k-icon{
+                    &::before{
+                        content: "\f0dc";
+                        font-family: "Font Awesome 5 pro" !important;
+                        color: #0F6FB7;
+                        font-weight: 600;
+                        font-size: 21px;
+    
+                    }
+                }
+            }
+            
+        }
+    
+    
+    
+    }
+    
+      }
+      & div[uxid="uDocument"]{
+        & .k-state-disabled{
+            opacity: 1 !important;
+            & .k-button{
+                background: #F5F5F5 !important;
+                border: none !important;
+                
+
+                & span{
+                    color: #A6A6A6 !important;
+                }
+            }
+        }
+        & .k-button{
+            border: none !important;
+            width: 100% !important;
+            margin: auto;
+            background: #0F6FB7;
+            height: 47px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+    
+            & input{
+                background: none;
+                border: none;
+                width: 100%;
+    
+                
+            }
+    
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+    
+}
+
+
+
+.k-animation-container{
+    margin: 0 auto;
+    left: 0 !important;
+    right: 0 !important;
+    & div{
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    & .k-popup.k-group.k-reset.k-rtl{
+        
+        margin: 0px auto;
+        left: 0px;
+        right: 0px;
+        background: rgb(255, 255, 255) !important;
+        border: 1px solid #95D6FB !important;
+        border-radius: 10px !important;        
+        top: 0px;
+    }
+    div.k-list-content span.k-list-item-text{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px !important;
+        line-height: 130% !important;
+        color: #052436;
+    }
+
+    & li{
+        height: 44px !important;
+
+      
+
+    &.k-selected.k-focus {
+        background: #F8F8F8 !important;
+        border-radius: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+
+        &::after{
+            content: "\f00c";
+            font-family: "Font Awesome 5 pro" !important;
+            color: #007ABF !important;
+        }
+
+        & span{
+            font-weight: 700 !important;
+            color: #007ABF !important;
+        }
+    } 
+        // &:nth-child(1){
+        //     background: #FFFFFF !important;
+        //     box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.3) !important;
+        // }
+
+        &:hover{
+            background: #F5F5F5 !important;
+            border-radius: 0px !important;
+            
+            & span:hover{
+            font-weight: 700 !important;
+            }
+        }
+    }
+}
+
+
+ #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_DocumentAdd{
+
+   &.container.pageContainer.xtafnit_pageContainer{
+    margin-bottom: 15px !important;
+   }
+}
