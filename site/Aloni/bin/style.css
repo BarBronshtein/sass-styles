@@ -1623,6 +1623,9 @@ h4.x-cell-header.s-cell-header {
 
 .xstyle-barcodetextcontrol-wrapper input.k-textbox.x-textbox {
   padding-right: 40px;
+  background: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .barcodeIcon {
@@ -9771,6 +9774,7 @@ label.btn {
 }
 
 .x-control-devmode-wrapper.s-control-devmode-wrapper {
+  position: absolute;
   position: absolute;
 }
 
