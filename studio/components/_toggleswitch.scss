@@ -1,112 +1,15 @@
-// #TafnitCore_System_UI_App_Tools_Studio_UXStudio {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio {
 
-//    .xtaf-switch-studio .col {
-//       display: flex;
-//       flex-direction: row;
-//       padding-bottom: 20px;
-//       gap: 20px;
-//       align-items: center;
-//       justify-content: right;
-//    }
+    .xstyle-switch-wrapper .k-switch-on .k-switch-track,
+    .xstyle-switch-wrapper .k-switch{
+        height: 20px !important;
+        width: 50px;
+    }
 
+    .xstyle-switch-wrapper .k-switch-on .k-switch-thumb,
+    .xstyle-switch-wrapper .k-switch-off .k-switch-thumb{
+        position: fixed;
+        z-index: 10;
 
-//    .controlltoggleBorderSwitch {
-//       color: var(--switch-switch-on-text, #077294);
-//       text-align: right;
-//       font-family: Heebo;
-//       font-size: 12px;
-//       font-style: normal;
-//       font-weight: 400;
-//       line-height: 130%;
-//       /* 15.6px */
-//    }
-
-//    .k-switch-on {
-//       .k-switch-thumb {
-//          color: #159BC5;
-//       }
-//    }
-
-//    .k-switch-off {
-//       .k-switch-thumb {
-//          color: #F5F5F5;
-//       }
-//    }
-
-
-//    .k-switch-label-on .k-switch-thumb {
-//       display: none;
-//    }
-
-//    .k-switch-label-off {
-//       display: none;
-//    }
-// }
-
-// .x-col{
-
-//   display: grid;
-//   grid-template-columns: auto 1fr;
-//   gap: 5px;
-//   align-items: center;
-//   .k-switch{
-
-//       height: 35px;
-//       .k-switch-track{
-//           height: 20px;
-//       }
-
-//       .k-switch-thumb {
-//           height: 23px;
-//           width: 30px;
-//       }
-//   }
-
-//   span{
-//       color: #7E7B7B;
-//       text-align: right;
-//       font-family: Heebo;
-//       font-size: 12px;
-//       font-style: normal;
-//       font-weight: 400;
-//       line-height: 130%;
-//   }
-
-
-//   .xstyle-switch-wrapper .k-switch-off .k-switch-track {
-//       background: #F5F5F5;
-//       box-shadow: inset -2px 2px 4px rgba(126, 123, 123, 0.2);
-//       border-radius: 10px;
-//       border: none;
-//     }
-//     .k-switch-label-off {
-//       display: none;
-//     }
-//     .xstyle-switch-wrapper .k-switch-off:focus {
-//       box-shadow: none !important;
-//     }
-//     .xstyle-switch-wrapper .k-switch-off .k-switch-thumb {
-//       background: #DEDEDE;
-//       border: 1px solid #F5F5F5;
-
-//     }
-//     .xstyle-switch-wrapper .k-switch-on .k-switch-track {
-//       background: #F5F5F5;
-//       box-shadow: inset -2px 2px 4px rgba(126, 123, 123, 0.2);
-//       border-radius: 10px;
-//       border: 1px solid #159BC5;
-
-//     }
-//   .k-switch-label-on {
-//       display: none;
-//     }
-//     .xstyle-switch-wrapper .k-switch-on:focus {
-//       box-shadow: none !important;
-//     }
-//     .xstyle-switch-wrapper .k-switch-on .k-switch-thumb {
-//       background: #159BC5;
-
-//       box-shadow: 0px 0px 4px rgba(126, 123, 123, 0.2);
-
-//     }
-// }
+    }
+}

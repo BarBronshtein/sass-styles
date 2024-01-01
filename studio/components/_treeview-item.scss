@@ -1,5 +1,19 @@
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio {
 
+ .xstyle-itreeview-wrapper .k-treeview-group li.k-treeview-item .k-treeview-group{
+        li.k-item{
+                span{
+                    color: #000 !important;
+                }
+            
+        }
+    }
+
+    .k-sprite {
+        display: none;
+    }
+
+
     .k-focus,
     .k-selected {
         box-shadow: none;
@@ -17,7 +31,7 @@
             .k-treeview-top,
             .k-treeview-mid,
             .k-treeview-bot {
-                border-bottom: 1px solid#d3bcbc;
+                border-bottom: 1px solid#fff;
                 background: #29AFD9;
                 height: 35px;
                 display: flex;
@@ -36,6 +50,7 @@
                     right: 30px;
                 
                 }
+
 
                 .k-treeview-leaf {
 
@@ -87,14 +102,16 @@
                             margin-right: 5px;
                             margin-left: 0;
                             height: 25px;
-                            width: 20px;
-
+                            width: 25px;
+                            display: block;
                             &:before {
                                 content: "\e991";
                                 font-family: "icomoon";
                                 color: #159BC5;
                                 font-size: 20px;
                                 font-weight: 400;
+                                top: 3px;
+                                position: relative;
                             }
                         }
 

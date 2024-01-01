@@ -24,7 +24,6 @@
         .row:last-of-type {
             .col-12:nth-of-type(1) {
                 flex-grow: 0;
-                width: fit-content;
                 flex: none;
 
                 button {
@@ -78,73 +77,17 @@
     }
 
     .border {
-        border: none !important;
+        border: none ;
     }
 
     .xstyle-itoolbar-wrapper:nth-of-type(1) {
         display: none;
     }
 
-    .xtaf-switch-studio>.col {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 20px;
-        gap: 20px;
-        align-items: center;
-        justify-content: right;
-        height: fit-content;
-    }
+
 
     .header-studio {
         padding-inline: 30px;
-    }
-
-
-    span[xid=controlltoggleBorderSwitch] {
-        color: var(--switch-switch-on-text, #077294);
-        text-align: right;
-        font-family: Heebo;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
-        /* 15.6px */
-    }
-
-    .k-switch {
-        font-size: 8px;
-        height: 20px;
-    }
-
-    .k-switch-track {
-        height: 20px;
-        border: none;
-        background-color: #F5F5F5;
-    }
-
-    .k-switch-thumb {
-        border: none;
-    }
-
-    .k-switch-on {
-        .k-switch-thumb {
-            color: #159BC5;
-        }
-    }
-
-    .k-switch-off {
-        .k-switch-thumb {
-            color: #F5F5F5;
-        }
-    }
-
-
-    .k-switch-label-on {
-        display: none;
-    }
-
-    .k-switch-label-off {
-        display: none;
     }
 
     width: 100%;
@@ -174,7 +117,7 @@
     }
 
     .container.pageContainer.xtafnit_pageContainer {
-        margin: 0;
+        margin: 0 !important;
     }
 
     div[uxid=colControlType] {
@@ -207,6 +150,7 @@
 
         mainbody {
             flex: 1 1 auto;
+            margin: 0 !important;
         }
 
         header,
@@ -732,3 +676,4 @@
 @import './components/treeview-item';
 @import './components/dropdown';
 @import './components/popup';
+@import './components/toggleswitch';

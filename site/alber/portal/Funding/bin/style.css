@@ -1151,7 +1151,8 @@ mainbody > .row {
   border: none;
   box-shadow: none;
   border-radius: 8px;
-  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 20px;
 }
 mainbody > .row.x-row-shadow {
@@ -7401,7 +7402,221 @@ label.btn {
   color: #1877F2 !important;
 }
 
-.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-form-field label, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper label {
+#uber-container:has(#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt) {
+  background: white;
+}
+
+#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt div {
+  background: white;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt .rececipt-foldPage img {
+  width: 115px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt .rececipt-foldPage::before {
+  content: none;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt .rececipt-border-dashed {
+  border: none;
+}
+
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .logoReceipt {
+  background: none;
+  border: none;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .logoReceipt div {
+  height: 120px;
+  border: none;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .logoReceipt img {
+  position: absolute;
+  width: 43%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt {
+  background: #FCFCFC;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 20px;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 33vh;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt div:nth-child(1) {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .xstyle-image-wrapper {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control {
+  border: none;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control td:hover {
+  background: #f2f2f2;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table {
+  border-collapse: collapse;
+  background: #FCFCFC;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:has(span) {
+  background: #E6E6E6;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:has(span) td {
+  font-weight: 700;
+  font-size: 14px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr {
+  background: none;
+  height: 44px;
+  border-bottom: 1px solid #F5F5F5;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:hover {
+  background: #f2f2f2;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:hover td {
+  background: #f2f2f2;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr td {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+  border: none;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr td:nth-child(2) {
+  width: 49%;
+  direction: ltr;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr td:hover {
+  background: #f2f2f2;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt {
+  background: none;
+  border: none;
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt .col-12:has(label) {
+  padding-left: 0;
+  padding-right: 0;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt div.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt label {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 180%;
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px solid #F5F5F5;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt span {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+  text-align: center;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .bodyReceipt {
+  position: absolute;
+  bottom: 29px;
+  background: none;
+  border: none;
+  width: 95%;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .linkReceipt {
+  background: none;
+  border: none;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .linkReceipt .x-control-content-wrapper {
+  text-align: center;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .linkReceipt a {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #0675B4;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt {
+  background: none;
+  border: none;
+  margin-bottom: 20px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt div {
+  height: 80px;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt .k-icon-wrapper {
+  text-align: center;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt .k-icon-wrapper span {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #1F8FCE;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) {
+  height: 46px;
+  background: #1F8FCE;
+  position: absolute;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) div {
+  background: none;
+  border: none;
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) .x-control-content-wrapper {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-13%);
+}
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) a {
+  color: white;
+  text-align: center;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: underline;
+}
+
+#TafnitCore_SaaSServer_Meeting_UI_MeetingPage {
+  margin: 0;
+}
+#TafnitCore_SaaSServer_Meeting_UI_MeetingPage .headerNone .x-row {
+  border: none !important;
+  box-shadow: none;
+}
+#TafnitCore_SaaSServer_Meeting_UI_MeetingPage .headerNone .x-iframe {
+  border: none;
+}
+
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-form-field label {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -7413,7 +7628,7 @@ label.btn {
 }
 
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-input.k-textbox,
-.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-numerictextbox, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp {
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-numerictextbox {
   height: 40px;
   background: #ffffff;
   border: 1px solid #D9D9D9;
@@ -7482,7 +7697,6 @@ label.btn {
 }
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-widget .row:last-of-type .col-12:nth-of-type(1) {
   flex-grow: 0;
-  width: fit-content;
   flex: none;
 }
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-widget .row:last-of-type .col-12:nth-of-type(1) button {
@@ -7526,56 +7740,13 @@ label.btn {
   transition: all 100ms cubic-bezier(0.62, -0.07, 0.69, 1.25);
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .border {
-  border: none !important;
+  border: none;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itoolbar-wrapper:nth-of-type(1) {
   display: none;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xtaf-switch-studio > .col {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 20px;
-  gap: 20px;
-  align-items: center;
-  justify-content: right;
-  height: fit-content;
-}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio {
   padding-inline: 30px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio span[xid=controlltoggleBorderSwitch] {
-  color: var(--switch-switch-on-text, #077294);
-  text-align: right;
-  font-family: Heebo;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  /* 15.6px */
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch {
-  font-size: 8px;
-  height: 20px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-track {
-  height: 20px;
-  border: none;
-  background-color: #F5F5F5;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-thumb {
-  border: none;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-on .k-switch-thumb {
-  color: #159BC5;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-off .k-switch-thumb {
-  color: #F5F5F5;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-label-on {
-  display: none;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-label-off {
-  display: none;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .x-control-caption-wrapper {
   display: flex;
@@ -7624,6 +7795,7 @@ label.btn {
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div mainbody {
   flex: 1 1 auto;
+  margin: 0 !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div header,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div footer,
@@ -8288,6 +8460,9 @@ label.btn {
   font-size: 25px;
   font-weight: 200;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio .col-header1 .k-icon:hover, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio .col-header2 .k-icon:hover {
+  color: #159BC5;
+}
 
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio {
   margin-top: 0px !important;
@@ -8377,6 +8552,12 @@ label.btn {
   text-decoration-line: underline;
 }
 
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper .k-treeview-group li.k-treeview-item .k-treeview-group li.k-item span {
+  color: #000 !important;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-sprite {
+  display: none;
+}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-focus,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-selected {
   box-shadow: none;
@@ -8389,7 +8570,7 @@ label.btn {
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot {
-  border-bottom: 1px solid #d3bcbc;
+  border-bottom: 1px solid #fff;
   background: #29AFD9;
   height: 35px;
   display: flex;
@@ -8461,7 +8642,8 @@ label.btn {
   margin-right: 5px;
   margin-left: 0;
   height: 25px;
-  width: 20px;
+  width: 25px;
+  display: block;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-sprite:before,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-sprite:before,
@@ -8471,6 +8653,8 @@ label.btn {
   color: #159BC5;
   font-size: 20px;
   font-weight: 400;
+  top: 3px;
+  position: relative;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-treeview-leaf,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-treeview-leaf,
@@ -8500,29 +8684,6 @@ label.btn {
   width: 100%;
   height: 100%;
   cursor: pointer !important;
-}
-
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus-within {
-  border: 1px solid #B7DFEC;
-  box-shadow: 0px 4px 8px 0px rgba(142, 187, 207, 0.5);
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp .k-input-inner {
-  padding: 0;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper .k-input-button {
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper .k-input-button:hover {
-  background: none;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper .k-input-button span.k-icon::before {
-  content: "\f0d7";
-  font-size: 22px;
-  font-family: "Font Awesome 5 Pro";
-  color: #159BC5;
-  font-weight: 700;
 }
 
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-rtl .k-window-titlebar .k-window-actions {
@@ -9211,218 +9372,15 @@ label.btn {
   border-left: 1px solid #ECECEC !important;
 }
 
-#uber-container:has(#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt) {
-  background: white;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch-on .k-switch-track,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch {
+  height: 20px !important;
+  width: 50px;
 }
-
-#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt div {
-  background: white;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt .rececipt-foldPage img {
-  width: 115px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt .rececipt-foldPage::before {
-  content: none;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_Receipt .rececipt-border-dashed {
-  border: none;
-}
-
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .logoReceipt {
-  background: none;
-  border: none;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .logoReceipt div {
-  height: 120px;
-  border: none;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .logoReceipt img {
-  position: absolute;
-  width: 43%;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt {
-  background: #FCFCFC;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  padding: 20px;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 33vh;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt div:nth-child(1) {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .xstyle-image-wrapper {
-  width: 65%;
-  margin: auto;
-  margin-bottom: 25px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control {
-  border: none;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control td:hover {
-  background: #f2f2f2;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table {
-  border-collapse: collapse;
-  background: #FCFCFC;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:has(span) {
-  background: #E6E6E6;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:has(span) td {
-  font-weight: 700;
-  font-size: 14px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr {
-  background: none;
-  height: 44px;
-  border-bottom: 1px solid #F5F5F5;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:hover {
-  background: #f2f2f2;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr:hover td {
-  background: #f2f2f2;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr td {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  color: #000000;
-  border: none;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr td:nth-child(2) {
-  width: 49%;
-  direction: ltr;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .mainReceipt .gridReceipt .x-grid-control.s-grid-control table tr td:hover {
-  background: #f2f2f2;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt {
-  background: none;
-  border: none;
-  width: 95%;
-  margin: auto;
-  margin-top: 50px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt .col-12:has(label) {
-  padding-left: 0;
-  padding-right: 0;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt div.col {
-  padding-left: 0;
-  padding-right: 0;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt label {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 180%;
-  color: #000000;
-  text-align: center;
-  border-bottom: 1px solid #F5F5F5;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .tabelReceipt span {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  color: #000000;
-  text-align: center;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .bodyReceipt {
-  position: absolute;
-  bottom: 29px;
-  background: none;
-  border: none;
-  width: 95%;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .linkReceipt {
-  background: none;
-  border: none;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .linkReceipt .x-control-content-wrapper {
-  text-align: center;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .linkReceipt a {
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #0675B4;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt {
-  background: none;
-  border: none;
-  margin-bottom: 20px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt div {
-  height: 80px;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt .k-icon-wrapper {
-  text-align: center;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .iconsReceipt .k-icon-wrapper span {
-  font-size: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  color: #1F8FCE;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) {
-  height: 46px;
-  background: #1F8FCE;
-  position: absolute;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) div {
-  background: none;
-  border: none;
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) .x-control-content-wrapper {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  transform: translateY(-13%);
-}
-#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage .x-footer:has(.footerReceipt) a {
-  color: white;
-  text-align: center;
-  font-family: "Assistant";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  text-decoration: underline;
-}
-
-#TafnitCore_SaaSServer_Meeting_UI_MeetingPage {
-  margin: 0;
-}
-#TafnitCore_SaaSServer_Meeting_UI_MeetingPage .headerNone .x-row {
-  border: none !important;
-  box-shadow: none;
-}
-#TafnitCore_SaaSServer_Meeting_UI_MeetingPage .headerNone .x-iframe {
-  border: none;
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch-on .k-switch-thumb,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch-off .k-switch-thumb {
+  position: fixed;
+  z-index: 10;
 }
 
 #TafnitCore_SaaSServer_Storage_UI_FileViewer .x-card-wrapper .x-card-flie {

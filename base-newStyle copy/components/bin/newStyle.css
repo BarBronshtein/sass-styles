@@ -8926,7 +8926,7 @@ mainbody > .row.x-taas-header img,
   border: none;
 }
 
-.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-form-field label, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper label {
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-form-field label {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -8938,7 +8938,7 @@ mainbody > .row.x-taas-header img,
 }
 
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-input.k-textbox,
-.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-numerictextbox, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp {
+.k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-window:has(.k-edit-form-container) .k-numerictextbox {
   height: 40px;
   background: #ffffff;
   border: 1px solid #D9D9D9;
@@ -8998,7 +8998,6 @@ mainbody > .row.x-taas-header img,
 }
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-widget .row:last-of-type .col-12:nth-of-type(1) {
   flex-grow: 0;
-  width: fit-content;
   flex: none;
 }
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-widget .row:last-of-type .col-12:nth-of-type(1) button {
@@ -9042,56 +9041,13 @@ mainbody > .row.x-taas-header img,
   transition: all 100ms cubic-bezier(0.62, -0.07, 0.69, 1.25);
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .border {
-  border: none !important;
+  border: none;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itoolbar-wrapper:nth-of-type(1) {
   display: none;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xtaf-switch-studio > .col {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 20px;
-  gap: 20px;
-  align-items: center;
-  justify-content: right;
-  height: fit-content;
-}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio {
   padding-inline: 30px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio span[xid=controlltoggleBorderSwitch] {
-  color: var(--switch-switch-on-text, #077294);
-  text-align: right;
-  font-family: Heebo;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  /* 15.6px */
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch {
-  font-size: 8px;
-  height: 20px;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-track {
-  height: 20px;
-  border: none;
-  background-color: #F5F5F5;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-thumb {
-  border: none;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-on .k-switch-thumb {
-  color: #159BC5;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-off .k-switch-thumb {
-  color: #F5F5F5;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-label-on {
-  display: none;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-switch-label-off {
-  display: none;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .x-control-caption-wrapper {
   display: flex;
@@ -9140,6 +9096,7 @@ mainbody > .row.x-taas-header img,
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div mainbody {
   flex: 1 1 auto;
+  margin: 0 !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div header,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[xid=controlxstudioMainpanel] > div footer,
@@ -9804,6 +9761,9 @@ mainbody > .row.x-taas-header img,
   font-size: 25px;
   font-weight: 200;
 }
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio .col-header1 .k-icon:hover, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .header-studio .col-header2 .k-icon:hover {
+  color: #159BC5;
+}
 
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio {
   margin-top: 0px !important;
@@ -9893,6 +9853,12 @@ mainbody > .row.x-taas-header img,
   text-decoration-line: underline;
 }
 
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-itreeview-wrapper .k-treeview-group li.k-treeview-item .k-treeview-group li.k-item span {
+  color: #000 !important;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-sprite {
+  display: none;
+}
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-focus,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-selected {
   box-shadow: none;
@@ -9905,7 +9871,7 @@ mainbody > .row.x-taas-header img,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-top,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-mid,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-bot {
-  border-bottom: 1px solid #d3bcbc;
+  border-bottom: 1px solid #fff;
   background: #29AFD9;
   height: 35px;
   display: flex;
@@ -9977,7 +9943,8 @@ mainbody > .row.x-taas-header img,
   margin-right: 5px;
   margin-left: 0;
   height: 25px;
-  width: 20px;
+  width: 25px;
+  display: block;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-sprite:before,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-sprite:before,
@@ -9987,6 +9954,8 @@ mainbody > .row.x-taas-header img,
   color: #159BC5;
   font-size: 20px;
   font-weight: 400;
+  top: 3px;
+  position: relative;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-top .k-treeview-leaf,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio .k-treeview-lines .k-treeview-item .k-treeview-group .k-treeview-item .k-treeview-mid .k-treeview-leaf,
@@ -10016,29 +9985,6 @@ mainbody > .row.x-taas-header img,
   width: 100%;
   height: 100%;
   cursor: pointer !important;
-}
-
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus, #TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp:focus-within {
-  border: 1px solid #B7DFEC;
-  box-shadow: 0px 4px 8px 0px rgba(142, 187, 207, 0.5);
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp .k-input-inner {
-  padding: 0;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper .k-input-button {
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper .k-input-button:hover {
-  background: none;
-}
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-idropdownlist-wrapper .k-input-button span.k-icon::before {
-  content: "\f0d7";
-  font-size: 22px;
-  font-family: "Font Awesome 5 Pro";
-  color: #159BC5;
-  font-weight: 700;
 }
 
 .k-content:has(#TafnitCore_System_UI_App_Tools_Studio_UXStudio) .k-rtl .k-window-titlebar .k-window-actions {
@@ -10725,6 +10671,17 @@ mainbody > .row.x-taas-header img,
 }
 #TafnitCore_System_UI_App_Tools_Studio_ComplexControlChildrenSettings div[uxid=colProps] .x-control-content-wrapper {
   border-left: 1px solid #ECECEC !important;
+}
+
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch-on .k-switch-track,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch {
+  height: 20px !important;
+  width: 50px;
+}
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch-on .k-switch-thumb,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .xstyle-switch-wrapper .k-switch-off .k-switch-thumb {
+  position: fixed;
+  z-index: 10;
 }
 
 html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),

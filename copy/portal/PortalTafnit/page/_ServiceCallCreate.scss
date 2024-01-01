@@ -15,12 +15,12 @@
  }
 
     .xtaf-cube-upload{
-        max-width: 250px;
         border-radius: 10px;
         background: #FFF;
         box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
         padding: 10px;
-        margin-bottom: 15px;
+         margin-top: 0 !important;
+        width: 100%;
 
         .k-icon{
           &::before{
@@ -41,7 +41,10 @@
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
-            line-height: 100%
+            line-height: 100%;
+            white-space: nowrap;       
+            overflow: hidden;
+            text-overflow: ellipsis; 
         }
     }
     .mt-26{
@@ -134,5 +137,43 @@
         }
        }
 
+    }
+}
+
+div[uxid="ctserciveCallDesc2"]{
+    .templatex-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+}
+
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    div[uxid="ctserciveCallDesc2"]{
+        .templatex-wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
