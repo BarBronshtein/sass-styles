@@ -3,6 +3,12 @@
     .k-switch{
         width: 60px;
         height: 35px;
+        border: 1px solid var(--switch-track-border-color-default);
+
+        &.k-switch-on{
+            border: 1px solid var(--switch-track-border-color-focus) !important;
+
+        }
     }
 
     label{

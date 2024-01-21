@@ -11,4 +11,16 @@
     word-wrap: break-word !important;
     white-space: normal;
    }
+
+
+ 
+}
+
+.fa-paste{
+  &::before{
+    content: "\ea8b" !important;
+    font-family: 'icomoon';
+    font-size: 25px;
+    color: var(--icon-color-default);
+  }
 }

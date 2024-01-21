@@ -77,12 +77,22 @@
                 }
 
                 &.d-none {
-                    display: none !important;
+                 
                 }
 
                 >span {
                     margin: 0 ;
                     padding: 10px 16px ;
+                
+                    &.k-icon {
+                        font-size: 24px;
+                        &::before{
+                            color: black;
+                        }
+                        &::after{
+                            color: rgba(128, 169, 187, 1);
+                        }
+                    }
                 }
 
                 .drawer-item-control-wrapper {
@@ -134,6 +144,9 @@
 
             .x-dynamic-label-control {
                 white-space: nowrap;
+                color: black !important;
+                font-family: 'heebo';
+                font-size: 18px !important;
             }
 
             .k-link.k-header {

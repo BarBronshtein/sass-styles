@@ -1,0 +1,37 @@
+
+
+.xstyle-dynamiclabelcontrol-wrapper {
+
+&.x-label-list{
+
+
+&.x-label-large{
+
+    span{
+
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    label{
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+}
+
+}
+
+&.x-label-display{
+    span{
+        font-weight: 500;
+        font-size: 40px;
+    }
+}
+
+
+&.x-label-pagetitle span{
+    font-weight: 500 ;
+}
+}

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
-.xstyle-intlphonenumber-wrapper label, .xstyle-vkeyboard-wrapper label, .xstyle-krating-wrapper label, .xstyle-numberrange-wrapper label, .xstyle-numberrange-wrapper span, .xstyle-progressbar-wrapper label, .xstyle-otpinput-wrapper label, .xstyle-multiselect-wrapper label, .x-selection-lookup label, .x-phoneNumber_wrapper .intl-tel-input label, .xstyle-idropdownlist-wrapper label, .xstyle-combobox-wrapper label, .xstyle-autocomplete-wrapper label, .xstyle-googleaddress-wrapper label, .xstyle-upload-wrapper label, .xstyle-textwithbuttonsimple-wrapper label, .xstyle-textcontrol-wrapper label, .xstyle-testcontrol-wrapper label, .xstyle-textareacontrol-wrapper label, .xstyle-textareaforut-wrapper label, .xstyle-password-wrapper label, .xstyle-daterange-wrapper .k-floating-label-container .k-label, .xstyle-date-wrapper label, .xstyle-datetimepicker-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-daterangev2-wrapper label, .xstyle-signaturev2-wrapper .x-control-caption-text {
+.xstyle-intlphonenumber-wrapper label, .xstyle-vkeyboard-wrapper label, .xstyle-krating-wrapper label, .xstyle-numberrange-wrapper label, .xstyle-numberrange-wrapper span, .xstyle-progressbar-wrapper label, .xstyle-otpinput-wrapper label, .xstyle-multiselect-wrapper label, .x-selection-lookup label, .xstyle-lookuptafnit-wrapper label, .xstyle-lookup-wrapper label, .x-phoneNumber_wrapper .intl-tel-input label, .xstyle-idropdownlist-wrapper label, .xstyle-combobox-wrapper label, .xstyle-autocomplete-wrapper label, .xstyle-googleaddress-wrapper label, .xstyle-upload-wrapper label, .xstyle-textwithbuttonsimple-wrapper label, .xstyle-textcontrol-wrapper label, .xstyle-testcontrol-wrapper label, .xstyle-textareacontrol-wrapper label, .xstyle-textareaforut-wrapper label, .xstyle-password-wrapper label, .xstyle-daterange-wrapper .k-floating-label-container .k-label, .xstyle-date-wrapper label, .xstyle-datetimepicker-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-daterangev2-wrapper label, .xstyle-signaturev2-wrapper .x-control-caption-text {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 500;
@@ -65,7 +65,7 @@
   line-height: 24px;
 }
 
-.xstyle-intlphonenumber-wrapper label, .xstyle-vkeyboard-wrapper label, .xstyle-krating-wrapper label, .xstyle-numberrange-wrapper label, .xstyle-numberrange-wrapper span, .xstyle-progressbar-wrapper label, .xstyle-otpinput-wrapper label, .xstyle-multiselect-wrapper label, .x-selection-lookup label, .x-phoneNumber_wrapper .intl-tel-input label, .xstyle-idropdownlist-wrapper label, .xstyle-combobox-wrapper label, .xstyle-autocomplete-wrapper label, .xstyle-googleaddress-wrapper label, .xstyle-upload-wrapper label, .xstyle-textwithbuttonsimple-wrapper label, .xstyle-textcontrol-wrapper label, .xstyle-testcontrol-wrapper label, .xstyle-textareacontrol-wrapper label, .xstyle-textareaforut-wrapper label, .xstyle-password-wrapper label, .xstyle-daterange-wrapper .k-floating-label-container .k-label, .xstyle-date-wrapper label, .xstyle-datetimepicker-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-daterangev2-wrapper label, .xstyle-signaturev2-wrapper .x-control-caption-text {
+.xstyle-intlphonenumber-wrapper label, .xstyle-vkeyboard-wrapper label, .xstyle-krating-wrapper label, .xstyle-numberrange-wrapper label, .xstyle-numberrange-wrapper span, .xstyle-progressbar-wrapper label, .xstyle-otpinput-wrapper label, .xstyle-multiselect-wrapper label, .x-selection-lookup label, .xstyle-lookuptafnit-wrapper label, .xstyle-lookup-wrapper label, .x-phoneNumber_wrapper .intl-tel-input label, .xstyle-idropdownlist-wrapper label, .xstyle-combobox-wrapper label, .xstyle-autocomplete-wrapper label, .xstyle-googleaddress-wrapper label, .xstyle-upload-wrapper label, .xstyle-textwithbuttonsimple-wrapper label, .xstyle-textcontrol-wrapper label, .xstyle-testcontrol-wrapper label, .xstyle-textareacontrol-wrapper label, .xstyle-textareaforut-wrapper label, .xstyle-password-wrapper label, .xstyle-daterange-wrapper .k-floating-label-container .k-label, .xstyle-date-wrapper label, .xstyle-datetimepicker-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-daterangev2-wrapper label, .xstyle-signaturev2-wrapper .x-control-caption-text {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -196,20 +196,48 @@
   --row-border-border-color: rgba(222, 222, 222, 1);
   --row-primary-bg-color: rgba(255, 255, 255, 1);
   --row-bg-bg-color: rgba(251, 251, 251, 1);
-  --checkbox-bg-color-hover: rgba(245, 245, 245, 1);
-  --checkbox-bg-color-default: rgba(255, 255, 255, 1);
-  --checkbox-selected-icon-color-default: rgba(142, 187, 207, 1);
-  --checkbox-unselect-icon-color-default: rgba(0, 0, 0, 1);
-  --checkbox-icon-color-disable: rgba(200, 200, 200, 1);
-  --checkbox-selected-icon-color-focus: rgba(172, 206, 221, 1);
-  --checkbox-unselect-icon-color-focus: rgba(172, 206, 221, 1);
-  --radio-selected-icon-color-default: rgba(142, 187, 207, 1);
-  --radio-unselect-icon-color-default: rgba(0, 0, 0, 1);
-  --radio-bg-color-default: rgba(255, 255, 255, 1);
-  --radio-icon-color-disable: rgba(200, 200, 200, 1);
-  --radio-bg-color-hover: rgba(245, 245, 245, 1);
-  --radio-selected-icon-color-focus: rgba(172, 206, 221, 1);
-  --radio-unselected-icon-color-focus: rgba(172, 206, 221, 1);
+  --checbox-focus: 0px 0px 5px 0px rgba(142, 187, 207, 0.60);
+  --checkbox-unselected-bg-color-default: #ffffff;
+  --checkbox-unselected-bg-color-disable: #ffffff;
+  --checkbox-unselected-bg-color-mandatory: #ffffff;
+  --checkbox-unselected-bg-color-hover: #ffffff;
+  --checkbox-unselected-bg-color-focus: #ffffff;
+  --checkbox-unselected-border-color-default: #000000;
+  --checkbox-unselected-border-color-disable: #C8C8C8;
+  --checkbox-unselected-border-color-mandatory: #30C6F5;
+  --checkbox-unselected-border-color-hover: #80A9BB;
+  --checkbox-unselected-border-color-focus: #ACCEDD;
+  --checkbox-selected-bg-color-default: #ffffff;
+  --checkbox-selected-bg-color-disable: #ffffff;
+  --checkbox-selected-bg-color-mandatory: #ffffff;
+  --checkbox-selected-bg-color-hover: #ffffff;
+  --checkbox-selected-bg-color-focus: #ffffff;
+  --checkbox-selected-border-color-default: #8EBBCF;
+  --checkbox-selected-border-color-disable: #c8c8c8;
+  --checkbox-selected-border-color-mandatory: #30C6F5;
+  --checkbox-selected-border-color-hover: #80A9BB;
+  --checkbox-selected-border-color-focus: #ACCEDD;
+  --checkbox-selected-icon-color-default: #8EBBCF;
+  --checkbox-selected-icon-color-disable: #C8C8C8;
+  --checkbox-selected-icon-color-mandatory: #30C6F5;
+  --checkbox-selected-icon-color-hover: #80A9BB;
+  --checkbox-selected-icon-color-focus: #ACCEDD;
+  --radio-unselect-bg-color-default: #ffffff;
+  --radio-unselect-border-color-default: #000000;
+  --radio-unselect-border-color-disable: #C8C8C8;
+  --radio-unselect-border-color-mandatory: #30C6F5;
+  --radio-unselect-border-color-hover: #000000;
+  --radio-unselected-border-color-focus: #ACCEDD;
+  --radio-selected-bg-color-default: #8EBBCF;
+  --radio-selected-border-color-default: #8EBBCF;
+  --radio-selected-bg-color-disable: #C8C8C8;
+  --radio-selected-border-color-disable: #C8C8C8;
+  --radio-selected-bg-color-mandatory: #30C6F5;
+  --radio-selected-border-color-mandatory: #30C6F5;
+  --radio-selected-bg-color-hover: #8EBBCF;
+  --radio-selected-border-color-hover: #8EBBCF;
+  --radio-selected-bg-color-focus: #ACCEDD;
+  --radio-selected-border-color-focus: #ACCEDD;
   --treeview-arrow-color-default: rgba(0, 0, 0, 1);
   --treeview-arrow-color-disable: rgba(200, 200, 200, 1);
   --treeview-bg-color-focus: rgba(255, 255, 255, 1);
@@ -219,7 +247,7 @@
   --treeview-text-color-selected: rgba(255, 255, 255, 1);
   --treeview-text-color-default: rgba(0, 0, 0, 1);
   --treeview-text-color-disable: rgba(200, 200, 200, 1);
-  --listitem-bg-color-default: rgba(252, 252, 252, 1);
+  --listitem-bg-color-default: #fff;
   --listitem-bg-color-hover: rgba(245, 245, 245, 1);
   --listitem-border-color-default: rgba(245, 245, 245, 1);
   --listitem-icon-color-default: rgba(142, 187, 207, 1);
@@ -310,6 +338,8 @@
   --combobox-summary-bg-color: rgba(249, 249, 249, 1);
   --combobox-summary-border-color: rgba(126, 123, 123, 1);
   --window-bg-color-default: rgba(255, 255, 255, 1);
+  --window-border-color-default:#E5F6FE;
+  --window-window-title-header:#4B4B4B;
   --loanslider-track-bg-color-default: rgba(245, 245, 245, 1);
   --loanslider-progress-bg-color-default: rgba(142, 187, 207, 1);
   --loanslider-progress-bg-color-disable: rgba(200, 200, 200, 1);
@@ -409,9 +439,6 @@
   --listitem-text-color-disable: rgba(200, 200, 200, 1);
   --label-row-title: rgba(142, 187, 207, 1);
   --label-toolbar-title: rgba(255, 255, 255, 1);
-  --checkbox-icon-color-mandatory: rgba(48, 198, 245, 1);
-  --checkbox-selected-icon-color-hover: rgba(128, 169, 187, 1);
-  --checkbox-unselected-icon-color-hover: rgba(128, 169, 187, 1);
   --listview-border-color-default: rgba(222, 222, 222, 1);
   --toolbar-bg-color: rgba(5, 159, 207, 1);
   --listitem-container-border-color: rgba(205, 231, 242, 1);
@@ -424,7 +451,7 @@
   --label-text-color-title: rgba(0, 130, 171, 1);
   --label-text-color-subtitle: rgba(126, 123, 123, 1);
   --label-text-color-display: rgba(255, 255, 255, 1);
-  --label-text-color-listvalue: rgba(0, 130, 171, 1);
+  --label-text-color-listvalue: black;
   --label-text-color-listcaption: rgba(0, 130, 171, 1);
   --vanilla--other--black: rgba(0, 0, 0, 1);
   --vanilla--other--white: rgba(255, 255, 255, 1);
@@ -524,12 +551,9 @@
   --floatbutton-shadow-disable: 0px 0px 5px rgba(200, 200, 200, 0.08), 0px 2px 4px rgba(200, 200, 200, 0.1), 0px 4px 5px rgba(200, 200, 200, 0.15);
   --switch-focus: 0px 4px 8px rgba(142, 187, 207, 0.5);
   --checbox-focus: 0px 0px 5px rgba(142, 187, 207, 0.6);
-  --radio-focus: 0px 0px 0px rgba(142, 187, 207, 0.3);
   --loanslider-handle-focus: 0px 0px 0px rgba(172, 206, 221, 0.5);
   --groupbutton-shadow-focus: 0px 0px 6px rgba(142, 187, 207, 1);
   --canvas-icon-shdow-focus: 0px 0px 6px rgba(142, 187, 207, 0.25);
-  --checkbox-hover: 0px 0px 0px rgba(231, 231, 231, 1);
-  --radio-hover: 0px 0px 0px rgba(231, 231, 231, 1);
   --messagebox-box-shadow: 0px 4px 8px rgba(142, 187, 207, 0.2), 0px 0px 5px rgba(142, 187, 207, 0.1);
   --button--focus: 0px 4px 8px rgba(142, 187, 207, 0.5);
   --button--floating-button-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 8px rgba(0, 0, 0, 0.1);
@@ -735,12 +759,18 @@
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item].k-state-selected:hover {
   background-color: none;
 }
-.k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item].d-none {
-  display: none !important;
-}
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] > span {
   margin: 0;
   padding: 10px 16px;
+}
+.k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] > span.k-icon {
+  font-size: 24px;
+}
+.k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] > span.k-icon::before {
+  color: black;
+}
+.k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] > span.k-icon::after {
+  color: rgb(128, 169, 187);
 }
 .k-drawer-container .k-drawer .k-drawer-wrapper li[data-role=drawer-item] .drawer-item-control-wrapper {
   padding: 4px 10px;
@@ -779,6 +809,9 @@
 }
 .k-drawer-container .k-drawer .k-drawer-wrapper .x-dynamic-label-control {
   white-space: nowrap;
+  color: black !important;
+  font-family: "heebo";
+  font-size: 18px !important;
 }
 .k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header {
   font-weight: bold;
@@ -1083,7 +1116,7 @@ mainbody > .row.x-taas-header img,
 }
 
 mainbody > .row {
-  border: none !important;
+  border: none;
   background: var(--row-primary-bg-color);
   border: none;
   box-shadow: none;
@@ -1122,7 +1155,7 @@ mainbody > .row.x-row-hidden {
   background: var(--row-bg-bg-color);
 }
 .row.x-row-hidden {
-  border: none !important;
+  border: none;
   box-shadow: none;
   background: white;
   margin: 0;
@@ -1193,7 +1226,7 @@ h4.x-cell-header.s-cell-header {
 }
 
 .x-section-wrraper:has(.x-row-hidden) {
-  border: none !important;
+  border: none;
   box-shadow: none;
   background: white;
   margin: 0;
@@ -1241,7 +1274,7 @@ h4.x-cell-header.s-cell-header {
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper {
   border: none;
-  padding: 0 15px;
+  padding: 0 0px;
 }
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item {
   background: none;
@@ -1255,7 +1288,7 @@ h4.x-cell-header.s-cell-header {
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-items-wrapper .k-tabstrip-item span {
   font-family: "Heebo";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 130%;
   color: var(--tab-text-color-default);
@@ -1272,6 +1305,7 @@ h4.x-cell-header.s-cell-header {
 .xstyle-tab-wrapper .x-tab-control .k-tabstrip-content {
   background: none;
   border: none;
+  padding: 15px 0;
 }
 
 .k-window {
@@ -1279,6 +1313,9 @@ h4.x-cell-header.s-cell-header {
 }
 .k-window #watermark {
   display: none;
+}
+.k-window footer {
+  border-radius: 0 0 10px 10px !important;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .k-window footer {
@@ -1300,9 +1337,9 @@ h4.x-cell-header.s-cell-header {
 
 .k-window {
   margin-top: 15px;
-  border-radius: 10px;
+  border-radius: 4px;
   background: var(--vanilla-other-white, #FFF);
-  box-shadow: 0px 5px 8px 0px rgba(142, 187, 207, 0.2) !important;
+  box-shadow: var(--window-shadow) !important;
   border: none;
   padding: 20px;
   right: 0 !important;
@@ -1339,11 +1376,11 @@ h4.x-cell-header.s-cell-header {
   position: fixed;
   top: 0;
   z-index: 24;
-  background: #F5F5F5;
+  background: var(--window-header-bg-color);
   left: 0;
 }
 .k-window .k-window-titlebar .k-window-title {
-  color: var(--vanilla-primary-500, #8EBBCF);
+  color: var(--window-window-title-header);
   text-align: right;
   font-family: "Heebo";
   font-size: 16px;
@@ -1393,62 +1430,87 @@ h4.x-cell-header.s-cell-header {
   color: var(--groupbutton-text-color-selected);
 }
 
-.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable {
+.xstyle-gridv4-wrapper .k-auto-scrollable::-webkit-scrollbar, .xstyle-igrid-wrapper .k-auto-scrollable::-webkit-scrollbar, .xstyle-gridv4lookup-wrapper .k-auto-scrollable::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+.xstyle-gridv4-wrapper .k-auto-scrollable::-webkit-scrollbar-track, .xstyle-igrid-wrapper .k-auto-scrollable::-webkit-scrollbar-track, .xstyle-gridv4lookup-wrapper .k-auto-scrollable::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+.xstyle-gridv4-wrapper .k-auto-scrollable::-webkit-scrollbar-thumb, .xstyle-igrid-wrapper .k-auto-scrollable::-webkit-scrollbar-thumb, .xstyle-gridv4lookup-wrapper .k-auto-scrollable::-webkit-scrollbar-thumb {
+  background: rgb(142, 187, 207);
+  border-radius: 10px;
+}
+.xstyle-gridv4-wrapper .k-auto-scrollable::-webkit-scrollbar-thumb:hover, .xstyle-igrid-wrapper .k-auto-scrollable::-webkit-scrollbar-thumb:hover, .xstyle-gridv4lookup-wrapper .k-auto-scrollable::-webkit-scrollbar-thumb:hover {
+  background: rgb(142, 187, 207);
+}
+.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable, .xstyle-igrid-wrapper .k-toolbar.k-toolbar-resizable, .xstyle-gridv4lookup-wrapper .k-toolbar.k-toolbar-resizable {
   background: var(--grid-toolbar-bg-color-default);
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
-.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-button {
+.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-button, .xstyle-igrid-wrapper .k-toolbar.k-toolbar-resizable .k-button, .xstyle-gridv4lookup-wrapper .k-toolbar.k-toolbar-resizable .k-button {
   min-width: 40px;
   height: 40px;
   border-radius: 8px !important;
 }
-.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-button .k-icon {
+.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-button .k-icon, .xstyle-igrid-wrapper .k-toolbar.k-toolbar-resizable .k-button .k-icon, .xstyle-gridv4lookup-wrapper .k-toolbar.k-toolbar-resizable .k-button .k-icon {
   font-size: 22px;
 }
-.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow {
+.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow, .xstyle-igrid-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow, .xstyle-gridv4lookup-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow {
   position: absolute;
   z-index: 5;
   background: none !important;
 }
-.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow span:before {
+.xstyle-gridv4-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow span:before, .xstyle-igrid-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow span:before, .xstyle-gridv4lookup-wrapper .k-toolbar.k-toolbar-resizable .k-split-button .k-split-button-arrow span:before {
   content: "";
 }
-.xstyle-gridv4-wrapper .x-grid-control {
+.xstyle-gridv4-wrapper .x-grid-control, .xstyle-gridv4-wrapper .x-control-content-wrapper, .xstyle-igrid-wrapper .x-grid-control, .xstyle-igrid-wrapper .x-control-content-wrapper, .xstyle-gridv4lookup-wrapper .x-grid-control, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper {
   background: none;
   border: none;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control, .xstyle-igrid-wrapper .x-grid-control .k-grid-header, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control {
   border: none;
   border-top: 1px solid var(--grid-header-border-color-default);
   border-bottom: 1px solid var(--grid-header-border-color-default);
   background: var(--grid-header-bg-color-default);
+  padding: 5px;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header thead, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control thead, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header thead, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control thead, .xstyle-igrid-wrapper .x-grid-control .k-grid-header thead, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control thead, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header thead, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control thead, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header thead, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control thead, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header thead, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control thead {
+  background: none;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable {
   border: none;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr {
   border: none;
   background: none;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th {
   border: none;
   background: none;
   color: var(--grid-header-text-color-default);
   text-align: right;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Heebo;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  box-shadow: none !important;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-grid-filter-menu {
   margin: 0 !important;
   padding: 0;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th:has(a.k-grid-filter-menu) .k-icon.k-i-filter::before {
   content: "\f0dc";
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
@@ -1456,18 +1518,18 @@ h4.x-cell-header.s-cell-header {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 14px !important;
+  font-size: 12px !important;
   font-weight: 300;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter {
   position: relative;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th .k-cell-inner .k-grid-filter .k-icon.k-i-filter::before {
   content: "\f0dc";
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
@@ -1475,48 +1537,51 @@ h4.x-cell-header.s-cell-header {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 14px !important;
+  font-size: 12px !important;
   font-weight: 300;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th span {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th span, .xstyle-gridv4-wrapper .x-grid-control .k-grid-header .k-selectable tr th span, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th span, .xstyle-gridv4-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th span, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th span, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th span, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th span, .xstyle-gridv4-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th span, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th span, .xstyle-igrid-wrapper .x-grid-control .k-grid-header .k-selectable tr th span, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th span, .xstyle-igrid-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th span, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th span, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th span, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th span, .xstyle-igrid-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th span, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-grid-header-wrap tr th span, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-header .k-selectable tr th span, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-grid-header-wrap tr th span, .xstyle-gridv4lookup-wrapper .x-grid-control .x-oldGrid-control .k-selectable tr th span, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-grid-header-wrap tr th span, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-header .k-selectable tr th span, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-grid-header-wrap tr th span, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .x-oldGrid-control .k-selectable tr th span {
   color: var(--grid-header-text-color-default);
   text-align: right;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Heebo;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   padding: 0;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content.k-auto-scrollable, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content.k-auto-scrollable, .xstyle-igrid-wrapper .x-grid-control .k-grid-content.k-auto-scrollable, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content.k-auto-scrollable, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content.k-auto-scrollable, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content.k-auto-scrollable {
+  overflow: auto;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr {
   height: 35px !important;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-alt {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-alt, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr.k-alt, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr.k-alt, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr.k-alt, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr.k-alt, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr.k-alt {
   background: none;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr.k-selected, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr.k-selected, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected {
   background: var(--grid-cell-selected-bg-color);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected td {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected td, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected td, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr.k-selected td, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected td, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr.k-selected td, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected td {
   background: var(--grid-cell-selected-bg-color);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected:hover {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected:hover, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected:hover, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr.k-selected:hover, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected:hover, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr.k-selected:hover, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected:hover {
   background: var(--grid-cell-bg-color-hover) !important;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected:hover td {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr.k-selected:hover td, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected:hover td, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr.k-selected:hover td, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected:hover td, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr.k-selected:hover td, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr.k-selected:hover td {
   background: var(--grid-cell-bg-color-hover) !important;
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr:hover {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr:hover, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr:hover, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr:hover, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr:hover, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr:hover, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr:hover {
   background: var(--grid-cell-bg-color-hover);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td {
   color: var(--grid-cell-text-color-default);
   text-align: right;
   font-family: Heebo;
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   border: none;
   height: 35px !important;
@@ -1524,37 +1589,93 @@ h4.x-cell-header.s-cell-header {
   line-height: 120%;
   border-bottom: 1px solid var(--grid-cell-border-color-default);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:hover {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete), .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit), .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update), .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel), .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete), .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit), .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update), .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel), .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete), .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit), .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update), .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel), .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete), .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit), .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update), .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel), .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete), .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit), .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update), .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update), .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-areas: "item2 item1";
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete {
+  grid-area: item1;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete .k-icon:before {
+  color: var(--grid-cell-icon-color-default) !important;
+  content: "\e970";
+  font-family: "icomoon";
+  font-size: 18px;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit {
+  grid-area: item2;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit .k-icon:before {
+  content: "\e9b8";
+  font-family: "icomoon";
+  color: var(--grid-cell-icon-color-default) !important;
+  font-size: 18px;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel {
+  grid-area: item1;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel .k-icon:before {
+  content: "\e96c";
+  font-family: "icomoon";
+  color: var(--grid-cell-icon-color-default) !important;
+  font-size: 18px;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update {
+  grid-area: item2;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update .k-icon:before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update .k-icon:before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update .k-icon:before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update .k-icon:before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update .k-icon:before {
+  content: "\e9a2";
+  font-family: "icomoon";
+  color: var(--grid-cell-icon-color-default) !important;
+  font-size: 18px;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-button-text, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-button-text, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-button-text, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-button-text, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-button-text, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-button-text, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-button-text, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-button-text, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-button-text, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-button-text, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-button-text, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-button-text, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-button-text, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-button-text, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-button-text, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-button-text, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-button-text, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-button-text, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-button-text, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-button-text, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-button-text, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-button-text, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-button-text, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-button-text {
+  display: none;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-delete) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-edit) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-update) .k-grid-cancel, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-edit, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-update, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:has(.k-grid-cancel) .k-grid-cancel {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td button, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td button, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td button, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td button, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td button, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td button {
+  float: left;
+}
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td:hover, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td:hover, .xstyle-igrid-wrapper .x-grid-control .k-grid-content tr td:hover, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content tr td:hover, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content tr td:hover, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content tr td:hover {
   background: var(--grid-cell-bg-color-hover);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete {
   color: var(--button-secondary-text-color-default);
   background-color: var(--button-secondary-bg-color-default);
   border: 1px solid var(--button-secondary-border-color-default);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete span::before {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete span::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete span::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete span::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete span::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete span::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete span::before {
   color: var(--button-secondary-text-color-default);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover {
   background-color: var(--button-secondary-bg-color-hover);
   color: var(--button-secondary-text-color-hover);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover span, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover span, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover span {
   color: var(--button-secondary-text-color-hover);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span::before {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover span::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover span::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:hover span::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:hover span::before {
   color: var(--button-secondary-text-color-hover);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within {
   color: var(--button-secondary-text-color-default);
   background-color: var(--button-secondary-bg-color-default);
   border: 1px solid var(--button-secondary-border-color-default);
   box-shadow: var(--button-secondary-focus);
 }
-.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span::before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span::before {
+.xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span::before, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span, .xstyle-gridv4-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus span, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus span::before, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within span, .xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within span::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span::before, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span, .xstyle-igrid-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus span, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus span::before, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within span, .xstyle-igrid-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within span::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus span::before, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span, .xstyle-gridv4lookup-wrapper .x-grid-control .k-grid-content button.k-button.k-grid-delete:focus-within span::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus span, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus span::before, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within span, .xstyle-gridv4lookup-wrapper .x-control-content-wrapper .k-grid-content button.k-button.k-grid-delete:focus-within span::before {
   color: var(--button-secondary-text-color-default);
 }
-.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap {
+.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap, .xstyle-igrid-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap, .xstyle-gridv4lookup-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap {
   margin-top: 15px !important;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -1565,31 +1686,31 @@ h4.x-cell-header.s-cell-header {
   background: none;
   border: none;
 }
-.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-nav:hover {
+.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-nav:hover, .xstyle-igrid-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-nav:hover, .xstyle-gridv4lookup-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-nav:hover {
   border: none !important;
   background: none !important;
 }
-.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap .k-pager-info.k-label {
+.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap .k-pager-info.k-label, .xstyle-igrid-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap .k-pager-info.k-label, .xstyle-gridv4lookup-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap .k-pager-info.k-label {
   position: absolute;
   right: 0;
   color: var(--label-text-color-default);
   text-align: right;
   font-family: Heebo;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
 }
-.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers {
+.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers, .xstyle-igrid-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers, .xstyle-gridv4lookup-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers {
   color: var(--grid-pager-numpage-text-color-default);
   text-align: right;
   font-family: Heebo;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
 }
-.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > .k-selected {
+.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > .k-selected, .xstyle-igrid-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > .k-selected, .xstyle-gridv4lookup-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > .k-selected {
   color: var(--grid-pager-numpage-text-color-selected);
   text-align: right;
   font-family: Heebo;
@@ -1600,48 +1721,48 @@ h4.x-cell-header.s-cell-header {
   letter-spacing: 0.24px;
   background: none;
 }
-.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:hover {
+.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:hover, .xstyle-igrid-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:hover, .xstyle-gridv4lookup-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:hover {
   background: none !important;
   border: none !important;
 }
-.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:focus {
+.xstyle-gridv4-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:focus, .xstyle-igrid-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:focus, .xstyle-gridv4lookup-wrapper .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-numbers-wrap > .k-pager-numbers > li > a:focus {
   box-shadow: none !important;
 }
-.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span {
+.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span, .xstyle-igrid-wrapper .k-grid .k-grid-pager .k-pager-nav > span, .xstyle-gridv4lookup-wrapper .k-grid .k-grid-pager .k-pager-nav > span {
   font-size: 16px !important;
 }
-.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-left::before {
+.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-left::before, .xstyle-igrid-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-left::before, .xstyle-gridv4lookup-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-left::before {
   content: "\f104";
   font-family: "Font Awesome 5 Pro";
 }
-.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-left::before {
+.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-left::before, .xstyle-igrid-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-left::before, .xstyle-gridv4lookup-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-left::before {
   content: "\f100";
   font-family: "Font Awesome 5 Pro";
 }
-.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-right::before {
+.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-right::before, .xstyle-igrid-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-right::before, .xstyle-gridv4lookup-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-60-right::before {
   content: "\f105";
   font-family: "Font Awesome 5 Pro";
 }
-.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-right::before {
+.xstyle-gridv4-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-right::before, .xstyle-igrid-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-right::before, .xstyle-gridv4lookup-wrapper .k-grid .k-grid-pager .k-pager-nav > span.k-i-arrow-end-right::before {
   content: "\f101";
   font-family: "Font Awesome 5 Pro";
 }
-.xstyle-gridv4-wrapper .k-pager-nav {
+.xstyle-gridv4-wrapper .k-pager-nav, .xstyle-igrid-wrapper .k-pager-nav, .xstyle-gridv4lookup-wrapper .k-pager-nav {
   border: none;
 }
-.xstyle-gridv4-wrapper .k-pager-nav:focus {
+.xstyle-gridv4-wrapper .k-pager-nav:focus, .xstyle-igrid-wrapper .k-pager-nav:focus, .xstyle-gridv4lookup-wrapper .k-pager-nav:focus {
   box-shadow: none !important;
 }
-.xstyle-gridv4-wrapper .k-pager-nav .k-icon {
+.xstyle-gridv4-wrapper .k-pager-nav .k-icon, .xstyle-igrid-wrapper .k-pager-nav .k-icon, .xstyle-gridv4lookup-wrapper .k-pager-nav .k-icon {
   font-size: 16px;
   color: var(--grid-pager-nav-arrow-icon-color-default) !important;
 }
-.xstyle-gridv4-wrapper .k-pager-info.k-label {
+.xstyle-gridv4-wrapper .k-pager-info.k-label, .xstyle-igrid-wrapper .k-pager-info.k-label, .xstyle-gridv4lookup-wrapper .k-pager-info.k-label {
   font-size: 12px !important;
   font-weight: 400;
   font-family: "Heebo";
 }
-.xstyle-gridv4-wrapper .k-pager-sizes.k-label {
+.xstyle-gridv4-wrapper .k-pager-sizes.k-label, .xstyle-igrid-wrapper .k-pager-sizes.k-label, .xstyle-gridv4lookup-wrapper .k-pager-sizes.k-label {
   position: absolute;
   left: 0;
   font-style: normal;
@@ -1651,7 +1772,7 @@ h4.x-cell-header.s-cell-header {
   text-align: right;
   color: var(--grid-pager-nav-arrow-icon-color-default);
 }
-.xstyle-gridv4-wrapper .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
+.xstyle-gridv4-wrapper .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .xstyle-igrid-wrapper .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .xstyle-gridv4lookup-wrapper .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
@@ -1661,30 +1782,96 @@ h4.x-cell-header.s-cell-header {
   margin-left: 22px !important;
   border: none;
 }
-.xstyle-gridv4-wrapper .k-pager-sizes.k-label > span > span {
+.xstyle-gridv4-wrapper .k-pager-sizes.k-label > span > span, .xstyle-igrid-wrapper .k-pager-sizes.k-label > span > span, .xstyle-gridv4lookup-wrapper .k-pager-sizes.k-label > span > span {
   font-style: normal !important;
   font-weight: 400;
-  font-size: 13px !important;
+  font-size: 12px !important;
   line-height: 30px;
   color: var(--grid-pager-nav-arrow-icon-color-default) !important;
   left: -5px;
   top: 1px;
 }
-.xstyle-gridv4-wrapper .k-pager-sizes.k-label span .k-input-button {
+.xstyle-gridv4-wrapper .k-pager-sizes.k-label span .k-input-button, .xstyle-igrid-wrapper .k-pager-sizes.k-label span .k-input-button, .xstyle-gridv4lookup-wrapper .k-pager-sizes.k-label span .k-input-button {
   left: 2px;
   background: white !important;
   top: 2px;
 }
-.xstyle-gridv4-wrapper .k-pager-sizes.k-label span .k-input-button span:before {
+.xstyle-gridv4-wrapper .k-pager-sizes.k-label span .k-input-button span:before, .xstyle-igrid-wrapper .k-pager-sizes.k-label span .k-input-button span:before, .xstyle-gridv4lookup-wrapper .k-pager-sizes.k-label span .k-input-button span:before {
   content: "\f078";
   font-family: "Font Awesome 5 Pro";
   color: var(--grid-pager-nav-arrow-icon-color-default) !important;
-  font-size: 13px;
+  font-size: 12px;
   right: 5px;
   top: 5px;
 }
-.xstyle-gridv4-wrapper .k-pager-sizes.k-label span .k-input-button:hover {
+.xstyle-gridv4-wrapper .k-pager-sizes.k-label span .k-input-button:hover, .xstyle-igrid-wrapper .k-pager-sizes.k-label span .k-input-button:hover, .xstyle-gridv4lookup-wrapper .k-pager-sizes.k-label span .k-input-button:hover {
   background: none !important;
+}
+
+.k-filter-menu.k-popup {
+  border-radius: 4px !important;
+  padding: 20px;
+  box-shadow: 0px 6px 5px 0px rgba(187, 216, 229, 0.3) !important;
+  border: 1px solid var(--window-border-color-default);
+  background: var(--window-bg-color-default);
+}
+.k-filter-menu.k-popup .k-filter-menu-container {
+  padding: 0;
+}
+.k-filter-menu.k-popup .k-filter-help-text {
+  color: var(--label-text-color-title);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.k-filter-menu.k-popup .k-dropdownlist {
+  background: none;
+}
+.k-filter-menu.k-popup .k-dropdownlist .k-icon-button:hover {
+  background: none !important;
+}
+.k-filter-menu.k-popup .k-dropdownlist .k-icon-button span {
+  color: #000;
+}
+.k-filter-menu.k-popup .k-input-value-text {
+  color: var(--input-text-color-default);
+  text-align: right;
+  /* Window Content */
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+.k-filter-menu.k-popup .k-textbox {
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid var(--input-border-color-default);
+  background: var(--color-other-white);
+}
+.k-filter-menu.k-popup .k-textbox:focus-within {
+  box-shadow: var(--input-focus-shadow) !important;
+  border: 1px solid var(--input-border-color-focus);
+  outline: none !important;
+}
+.k-filter-menu.k-popup .k-textbox input {
+  color: var(--input-text-color-default);
+  text-align: right;
+  /* Window Content */
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  height: 40px;
+  padding: 0;
+}
+.k-filter-menu.k-popup button {
+  margin: 0 !important;
 }
 
 .xstyle-barcodetextcontrol-wrapper input.k-textbox.x-textbox {
@@ -1845,6 +2032,16 @@ h4.x-cell-header.s-cell-header {
   width: 30px;
   height: 32px;
 }
+.xstyle-canvas-wrapper .x-canvas-wrapper-comp .x-canvas-button-wrapper-comp .x-canvas-button.canvasSaveBtn-indicate-saved {
+  background: var(--canvas-icon-bg-color-selected);
+  color: var(--canvas-icon-color-selected);
+  border: none;
+}
+.xstyle-canvas-wrapper .x-canvas-wrapper-comp .x-canvas-button-wrapper-comp .x-canvas-button:focus, .xstyle-canvas-wrapper .x-canvas-wrapper-comp .x-canvas-button-wrapper-comp .x-canvas-button:active, .xstyle-canvas-wrapper .x-canvas-wrapper-comp .x-canvas-button-wrapper-comp .x-canvas-button:focus-within {
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(142, 187, 207, 0.25);
+}
 .xstyle-canvas-wrapper .x-canvas-wrapper-comp .x-canvas-button-wrapper-comp .x-canvas-save-button,
 .xstyle-canvas-wrapper .x-canvas-wrapper-comp .x-canvas-button-wrapper-comp .x-canvas-clear-button {
   float: right;
@@ -1878,6 +2075,9 @@ h4.x-cell-header.s-cell-header {
 }
 
 /*car damage window*/
+.x-sectionDamageTypeAndCamera {
+  padding-bottom: 40px;
+}
 .x-sectionDamageTypeAndCamera .x-winHeadLine {
   display: inline-block;
 }
@@ -1917,7 +2117,7 @@ h4.x-cell-header.s-cell-header {
   color: var(--vanilla-other-black, #000);
   text-align: right;
   font-family: Heebo;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -1939,14 +2139,14 @@ h4.x-cell-header.s-cell-header {
   visibility: hidden;
 }
 .x-sectionDamageTypeAndCamera .x-damageTypeAndCamera .x-cameraSection .x-cameraSection_btns_wrapper {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   float: right;
   align-items: center;
 }
 .x-sectionDamageTypeAndCamera .x-damageTypeAndCamera .x-cameraSection .x-cameraSection_btns_wrapper .x-camera1 {
-  margin: 0 5%;
+  margin: 0 10px;
 }
 .x-sectionDamageTypeAndCamera .x-damageTypeAndCamera .x-cameraSection .x-cameraSection_btns_wrapper .x-camera1 #cameraBtnPoint {
   width: 40px;
@@ -2071,12 +2271,23 @@ h4.x-cell-header.s-cell-header {
   display: inline-block;
   width: 100%;
   margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  right: 0;
+  margin: 0 auto;
+  width: auto;
+  border-radius: 4px 4px 0px 0px;
+  background: var(--color-other-white, #FFF);
+  box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.1);
 }
 .x-sectionDamageTypeAndCamera .x-confirmCancelBtns .k-button {
   float: right;
   width: 20%;
   font-size: 15px;
   margin: 0 2px;
+  height: 40px !important;
 }
 .x-sectionDamageTypeAndCamera .x-confirmCancelBtns #deleteBtnPoint {
   float: left;
@@ -2792,10 +3003,56 @@ h4.x-cell-header.s-cell-header {
   opacity: 1;
 }
 
+.x-button-float button.k-button.k-disabled, .x-button-float button.k-button[disabled] {
+  border: 1px solid var(--button-primary-border-color-disable);
+  background: var(--button-primary-bg-color-disable);
+  color: var(--button-primary-text-color-disable);
+  opacity: 1;
+}
+.x-button-float button.k-button.k-disabled .k-icon::before, .x-button-float button.k-button[disabled] .k-icon::before {
+  color: var(--button-primary-text-color-disable);
+}
+.x-button-float button.k-button {
+  border-radius: 100px !important;
+  height: 60px !important;
+  width: 60px !important;
+  background: var(--floatbutton-bg-color-default);
+  box-shadow: var(--floatbutton-shadow);
+  padding: 0;
+}
+.x-button-float button.k-button .k-icon {
+  color: var(--floatbutton-icon-color-default);
+}
+.x-button-float button.k-button .k-fab-text {
+  font-family: "Heebo";
+  color: var(--floatbutton-text-color-dafault) !important;
+}
+.x-button-float button.k-button:hover {
+  background: var(--floatbutton-bg-color-hover) !important;
+}
+.x-button-float button.k-button:focus {
+  background: var(--floatburron-bg-color-focus) !important;
+  border: 1px solid var(--floatbutton-border-color-focus);
+  box-shadow: 0px 0px 5px 5px rgba(117, 155, 172, 0.2), 0px 2px 4px 0px rgba(117, 155, 172, 0.2), 0px 4px 5px 0px rgba(117, 155, 172, 0.4) !important;
+}
+.x-button-float button.k-button:focus span {
+  color: white !important;
+}
+.x-button-float button.k-button .k-icon {
+  font-size: 28px;
+}
+
+.x-button-secondary button.k-button.k-disabled, .x-button-secondary button.k-button[disabled] {
+  border: 1px solid var(--button-secondary-border-color-disable);
+  background: var(--button-secondary-bg-color-disable);
+  color: var(--button-secondary-text-color-disable);
+  opacity: 1;
+}
 .x-button-secondary button.k-button {
   color: var(--button-secondary-text-color-default);
   background-color: var(--button-secondary-bg-color-default);
   border: 1px solid var(--button-secondary-border-color-default);
+  padding: 0;
 }
 .x-button-secondary button.k-button:hover {
   background-color: var(--button-secondary-bg-color-hover);
@@ -2804,11 +3061,22 @@ h4.x-cell-header.s-cell-header {
 .x-button-secondary button.k-button:hover span {
   color: var(--button-secondary-text-color-hover);
 }
+.x-button-secondary button.k-button:hover .k-icon::before {
+  color: var(--button-secondary-icon-color-hover);
+}
 .x-button-secondary button.k-button:focus, .x-button-secondary button.k-button:focus-within {
   color: var(--button-secondary-text-color-default);
   background-color: var(--button-secondary-bg-color-default);
   border: 1px solid var(--button-secondary-border-color-default);
   box-shadow: var(--button-secondary-focus);
+}
+.x-button-secondary button.k-button:focus .k-icon::before, .x-button-secondary button.k-button:focus-within .k-icon::before {
+  color: var(--button-secondary-icon-color-default) !important;
+}
+.x-button-secondary button.k-button .k-icon::before {
+  color: var(--button-secondary-icon-color-default);
+  font-size: 22px;
+  right: -3px;
 }
 
 .x-button-medium button.k-button {
@@ -2824,6 +3092,7 @@ button.k-button {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  padding: 0;
 }
 button.k-button .k-icon::before {
   color: var(--button-primary-icon-color-default);
@@ -3025,7 +3294,7 @@ button.k-button .k-icon {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   display: flex;
   align-items: center;
@@ -3071,7 +3340,7 @@ button.k-button .k-icon {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   color: #BB2E71;
 }
@@ -3082,7 +3351,7 @@ button.k-button .k-icon {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   color: #DA3382;
 }
@@ -3090,7 +3359,7 @@ button.k-button .k-icon {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   color: #DA3382;
 }
@@ -3132,7 +3401,7 @@ button.k-button .k-icon {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   color: #007FC1;
 }
@@ -3185,7 +3454,7 @@ button.k-button .k-icon {
   height: 60px;
 }
 .xstyle-floatbuttonv2-wrapper button {
-  background: var(--floatbutton-bg-color-default);
+  background: var(--floatbutton-bg-color-default) !important;
   box-shadow: var(--floatbutton-shadow);
   padding: 25px;
   border-radius: 0;
@@ -3196,14 +3465,18 @@ button.k-button .k-icon {
 }
 .xstyle-floatbuttonv2-wrapper button .k-fab-text {
   font-family: "Heebo";
-  color: var(--floatbutton-text-color-default);
+  color: var(--floatbutton-text-color-dafault) !important;
 }
 .xstyle-floatbuttonv2-wrapper button:hover {
-  background: var(--floatbutton-bg-color-hover);
+  background: var(--floatbutton-bg-color-hover) !important;
 }
 .xstyle-floatbuttonv2-wrapper button:focus {
-  background: var(--floatburron-bg-color-focus);
+  background: var(--floatburron-bg-color-focus) !important;
   border: 1px solid var(--floatbutton-border-color-focus);
+  box-shadow: 0px 0px 5px 5px rgba(117, 155, 172, 0.2), 0px 2px 4px 0px rgba(117, 155, 172, 0.2), 0px 4px 5px 0px rgba(117, 155, 172, 0.4) !important;
+}
+.xstyle-floatbuttonv2-wrapper button:focus span {
+  color: white !important;
 }
 
 .x-infoWrap {
@@ -3339,14 +3612,21 @@ button.k-button .k-icon {
   font-weight: 400;
   line-height: 130%;
 }
+.xstyle-dynamiclabelcontrol-wrapper.x-label-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+}
 .xstyle-dynamiclabelcontrol-wrapper.x-label-list span {
-  color: var(--label-text-color-listcaption);
+  color: var(--label-text-color-listvalue);
   text-align: right;
   font-family: Heebo;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .xstyle-dynamiclabelcontrol-wrapper.x-label-list label {
   overflow: hidden;
@@ -3358,6 +3638,7 @@ button.k-button .k-icon {
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
+  margin-top: 1px;
 }
 .xstyle-dynamiclabelcontrol-wrapper.x-label-list.x-label-large span, .xstyle-dynamiclabelcontrol-wrapper.x-label-list.x-label-large label {
   font-size: 15px;
@@ -3380,6 +3661,15 @@ button.k-button .k-icon {
 }
 .xstyle-dynamiclabelcontrol-wrapper.x-label-pagetitle.x-label-medium label, .xstyle-dynamiclabelcontrol-wrapper.x-label-pagetitle.x-label-medium span {
   font-size: 22px;
+}
+.xstyle-dynamiclabelcontrol-wrapper.x-label-pagetitle.x-label-small span {
+  color: var(--label-text-color-title);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
 }
 .xstyle-dynamiclabelcontrol-wrapper.x-label-pagesubtitle span {
   color: var(--label-text-color-subtitle);
@@ -3415,7 +3705,16 @@ button.k-button .k-icon {
   font-size: 24px;
   font-weight: 500;
 }
-.xstyle-dynamiclabelcontrol-wrapper.x-label-display {
+.xstyle-dynamiclabelcontrol-wrapper.x-label-note span {
+  color: var(--label-text-color-subtitle);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Heebo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+.xstyle-dynamiclabelcontrol-wrapper.x-label-display span {
   color: var(--label-text-color-default);
   text-align: center;
   font-family: Heebo;
@@ -3490,6 +3789,9 @@ a:not([href]):hover {
   color: black;
 }
 
+.xstyle-ilink-wrapper.k-state-disabled a {
+  color: var(--link-text-color-disable);
+}
 .xstyle-ilink-wrapper label {
   color: var(--label-text-color-default);
   text-align: right;
@@ -4524,26 +4826,40 @@ input.k-input[dir=ltr] + .k-clear-value {
   margin-top: 15px;
 }
 .xstyle-checkbox-wrapper input {
-  border: 1px solid var(--checkbox-unselect-icon-color-default);
+  border: 1px solid var(--checkbox-unselected-border-color-default);
   width: 14px;
   height: 14px;
   border-radius: 2px;
+  background: var(--checkbox-unselected-bg-color-default);
 }
 .xstyle-checkbox-wrapper input:checked {
-  border: 1px solid var(--checkbox-selected-icon-color-default);
+  border: 1px solid var(--checkbox-selected-border-color-default);
+  background: var(--checkbox-selected-bg-color-default);
+}
+.xstyle-checkbox-wrapper input:checked::before {
+  color: var(--checkbox-selected-icon-color-default);
+}
+.xstyle-checkbox-wrapper input:checked:hover {
+  border-radius: 2px;
+  border: 1px solid var(--checkbox-selected-border-color-hover);
+  background: var(--checkbox-selected-bg-color-hover);
+}
+.xstyle-checkbox-wrapper input:checked:hover::before {
+  color: var(--checkbox-selected-icon-color-hover);
 }
 .xstyle-checkbox-wrapper input:hover {
   border-radius: 2px;
-  border: 1px solid var(--checkbox-selected-icon-color-hover);
-  background: var(--color-other-white);
+  border: 1px solid var(--checkbox-unselected-border-color-hover);
+  background: var(--checkbox-unselected-bg-color-hover);
 }
 .xstyle-checkbox-wrapper input:hover::before {
   color: var(--checkbox-selected-icon-color-hover);
 }
 .xstyle-checkbox-wrapper input:focus {
-  border: 1px solid var(--checkbox-unselect-icon-color-focus);
-  background: var(--color-other-white);
-  box-shadow: 0px 0px 5px 0px rgba(142, 187, 207, 0.6) !important;
+  border-radius: 2px;
+  border: 1px solid var(--checkbox-selected-border-color-focus) !important;
+  background: var(--checkbox-selected-bg-color-focus);
+  box-shadow: var(--checkbox-focus) !important;
 }
 .xstyle-checkbox-wrapper input::before {
   color: var(--checkbox-selected-icon-color-focus);
@@ -4654,8 +4970,9 @@ input.k-input[dir=ltr] + .k-clear-value {
 }
 .k-animation-container .k-popup {
   box-shadow: none;
-  border-radius: 10px;
+  border-radius: 4px;
   margin-top: 5px;
+  border: 1px solid var(--listitem-container-border-color);
 }
 .k-animation-container .k-popup .k-list {
   border-radius: 10px;
@@ -4663,7 +4980,7 @@ input.k-input[dir=ltr] + .k-clear-value {
 .k-animation-container .k-popup .k-list-content.k-list-scroller, .k-animation-container .k-popup .k-list-content.k-virtual-content {
   border-radius: 10px;
   background: none;
-  padding: 5px 10px;
+  padding: 0px 0px;
 }
 .k-animation-container .k-popup .k-list-content.k-list-scroller ul, .k-animation-container .k-popup .k-list-content.k-virtual-content ul {
   background: var(--window-bg-color-default);
@@ -4979,6 +5296,37 @@ input.k-input[dir=ltr] + .k-clear-value {
   right: 0;
 }
 
+.xstyle-lookuptafnit-wrapper .x-selection-lookup, .xstyle-lookup-wrapper .x-selection-lookup {
+  display: block;
+  margin: 0;
+}
+.xstyle-lookuptafnit-wrapper .x-selection-lookup > div, .xstyle-lookup-wrapper .x-selection-lookup > div {
+  padding: 0;
+}
+.xstyle-lookuptafnit-wrapper .x-selection-lookup input, .xstyle-lookup-wrapper .x-selection-lookup input {
+  height: 40px !important;
+}
+.xstyle-lookuptafnit-wrapper .x-selection-lookup .xLookupFullDescription, .xstyle-lookup-wrapper .x-selection-lookup .xLookupFullDescription {
+  padding-right: 15px;
+  color: var(--input-text-color-default);
+  font-size: 13px !important;
+}
+.xstyle-lookuptafnit-wrapper .x-selection-lookup .x-open-lookup, .xstyle-lookup-wrapper .x-selection-lookup .x-open-lookup {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px !important;
+  width: fit-content !important;
+  position: absolute !important;
+}
+.xstyle-lookuptafnit-wrapper .x-selection-lookup .x-open-lookup .x-selection-lookup-button, .xstyle-lookup-wrapper .x-selection-lookup .x-open-lookup .x-selection-lookup-button {
+  background: none !important;
+  height: fit-content !important;
+  width: fit-content !important;
+}
+.xstyle-lookuptafnit-wrapper .x-selection-lookup .x-open-lookup .x-selection-lookup-button span.x-input-group-text.s-input-group-text.x-cs-btn, .xstyle-lookup-wrapper .x-selection-lookup .x-open-lookup .x-selection-lookup-button span.x-input-group-text.s-input-group-text.x-cs-btn {
+  color: var(--input-icon-color-default);
+}
+
 .x-description-lookup {
   height: 50px;
 }
@@ -5025,6 +5373,14 @@ input.k-input[dir=ltr] + .k-clear-value {
   border-radius: 4px;
   border: 1px solid var(--input-border-color-default) !important;
   background: var(--color-other-white);
+  color: var(--input-text-color-default);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  padding-right: 15px;
 }
 .x-selection-lookup input:focus {
   box-shadow: var(--input-focus-shadow);
@@ -5073,14 +5429,13 @@ input.k-input[dir=ltr] + .k-clear-value {
   border: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  color: white;
 }
 .k-rtl .x-lookup .x-selection-lookup .x-form-control {
   width: 100%;
   height: 100%;
-  border-radius: 0;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  font-size: 18px;
+  color: var(--input-text-color-default);
+  font-size: 13px !important;
 }
 .k-rtl .x-lookup .x-description-lookup.x-description-full-display {
   padding-top: 5px;
@@ -5169,6 +5524,43 @@ input.k-input[dir=ltr] + .k-clear-value {
   width: 48%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.xstyle-multiplecheckboxdropdown-wrapper li {
+  color: var(--label-text-color-default);
+  text-align: right;
+  font-family: "Heebo";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.xstyle-multiplecheckboxdropdown-wrapper input {
+  border: 1px solid var(--checkbox-unselect-icon-color-default) !important;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+}
+.xstyle-multiplecheckboxdropdown-wrapper input:checked {
+  border: 1px solid var(--checkbox-selected-icon-color-default) !important;
+  accent-color: var(--checkbox-selected-icon-color-focus);
+}
+.xstyle-multiplecheckboxdropdown-wrapper input:hover {
+  border-radius: 2px;
+  border: 1px solid var(--checkbox-selected-icon-color-hover) !important;
+  background: var(--color-other-white);
+}
+.xstyle-multiplecheckboxdropdown-wrapper input:hover::before {
+  color: var(--checkbox-selected-icon-color-hover);
+}
+.xstyle-multiplecheckboxdropdown-wrapper input:focus {
+  border: 1px solid var(--checkbox-unselect-icon-color-focus);
+  background: var(--color-other-white);
+  box-shadow: 0px 0px 5px 0px rgba(142, 187, 207, 0.6) !important;
+}
+.xstyle-multiplecheckboxdropdown-wrapper input::before {
+  color: var(--checkbox-selected-icon-color-focus);
+  accent-color: var(--checkbox-selected-icon-color-focus);
 }
 
 .x-main-multiCheckbox {
@@ -5334,6 +5726,9 @@ input.k-input[dir=ltr] + .k-clear-value {
   margin-bottom: 3.2px;
 }
 
+.xstyle-otpinput-wrapper .x-login-user-error-msg {
+  text-align: center;
+}
 .xstyle-otpinput-wrapper input {
   width: 50px;
   height: 50px;
@@ -5439,10 +5834,14 @@ input.k-input[dir=ltr] + .k-clear-value {
   margin-bottom: 5px;
 }
 .xstyle-radio-wrapper .x-radio-input {
-  border: 1px solid var(--radio-unselect-icon-color-default);
+  border: 1px solid var(--radio-unselect-border-color-default);
+  background: var(--radio-unselect-bg-color-default);
+}
+.xstyle-radio-wrapper .x-radio-input:hover {
+  border: 1px solid var(--radio-unselect-border-color-hover);
 }
 .xstyle-radio-wrapper .x-radio-input:checked {
-  border: 1px solid var(--radio-selected-icon-color-default);
+  border: 1px solid var(--radio-selected-border-color-default);
 }
 .xstyle-radio-wrapper .x-radio-input:checked:before {
   background: var(--radio-selected-icon-color-default);
@@ -5922,12 +6321,20 @@ input.k-input[dir=ltr] + .k-clear-value {
   display: block;
 }
 
+.ListViewItemListViewPEOPLE img, .ListViewItemListViewCARS img {
+  width: 100% !important;
+}
+
 .xstyle-switch-wrapper {
   margin-top: 15px;
 }
 .xstyle-switch-wrapper .k-switch {
   width: 60px;
   height: 35px;
+  border: 1px solid var(--switch-track-border-color-default);
+}
+.xstyle-switch-wrapper .k-switch.k-switch-on {
+  border: 1px solid var(--switch-track-border-color-focus) !important;
 }
 .xstyle-switch-wrapper label {
   font-family: "Heebo";
@@ -7258,6 +7665,13 @@ label.btn {
 .xstyle-jsondisplay-wrapper .type-string {
   word-wrap: break-word !important;
   white-space: normal;
+}
+
+.fa-paste::before {
+  content: "\ea8b" !important;
+  font-family: "icomoon";
+  font-size: 25px;
+  color: var(--icon-color-default);
 }
 
 .xstyle-itoolbar-wrapper {
@@ -9866,7 +10280,7 @@ html:has(#TafnitCore_SaaSServer_Survey_UI_Survey) #watermark {
 }
 
 .x-login-user-error {
-  border-bottom: 1px solid red;
+  border: 1px solid red !important;
 }
 
 a.k-icon {
@@ -9964,7 +10378,7 @@ body.k-content {
 .x-control-wrapper {
   flex-wrap: nowrap;
   width: auto;
-  gap: 10px;
+  gap: 5px;
 }
 .x-control-wrapper.flex-column {
   gap: 0;

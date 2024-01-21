@@ -1,0 +1,18 @@
+
+.k-window:has(#TafnitCore_CarOrder_UI_tradeIn){
+    width: 400px !important;
+    height: fit-content !important;
+    top: 75% !important;
+    right: 20%!important;
+    margin: unset !important;
+    left: unset !important;
+    position: absolute !important;
+
+
+}
+
+body,html{
+
+    position: static !important;
+    overflow:unset !important;
+}

@@ -30,13 +30,70 @@
     opacity: 1;
 }
 
+.x-button-float{
+    button.k-button.k-disabled, button.k-button[disabled]{
+        border: 1px solid var(--button-primary-border-color-disable);
+        background:  var(--button-primary-bg-color-disable);
+        color: var(--button-primary-text-color-disable);
+        opacity: 1;
 
+        .k-icon::before{
+            color: var(--button-primary-text-color-disable);
+        }
+    }
+    button.k-button {
+      
+        border-radius: 100px !important;
+        height: 60px !important;
+        width: 60px !important;
+        background: var(--floatbutton-bg-color-default);
+        box-shadow:var(--floatbutton-shadow);
+        padding: 0;
+        & .k-icon{
+            color: var(--floatbutton-icon-color-default);
+         }
+    
+         & .k-fab-text{
+            font-family: 'Heebo';
+            color: var(--floatbutton-text-color-dafault) !important;
+         }
+    
+    
+         &:hover{
+            background: var(--floatbutton-bg-color-hover) !important;
+         }
+    
+         &:focus{
+            background: var(--floatburron-bg-color-focus) !important;
+            border: 1px solid var(--floatbutton-border-color-focus) ;
+            box-shadow: 0px 0px 5px 5px rgba(117, 155, 172, 0.20), 0px 2px 4px 0px rgba(117, 155, 172, 0.20), 0px 4px 5px 0px rgba(117, 155, 172, 0.40) !important;
+    
+            span{
+                color: white !important;
+            }
+         }
+
+         .k-icon{
+            font-size: 28px;
+         }
+    }
+}
 .x-button-secondary{
+   
+    button.k-button.k-disabled, button.k-button[disabled]{
+        border: 1px solid var(--button-secondary-border-color-disable);
+        background:  var( --button-secondary-bg-color-disable);
+        color: var(--button-secondary-text-color-disable);
+        opacity: 1;
+    }
+
+
     button.k-button {
 
         color: var(--button-secondary-text-color-default);
         background-color: var(--button-secondary-bg-color-default)  ;
         border: 1px solid var(--button-secondary-border-color-default);
+        padding: 0; 
         &:hover{
 
             background-color:var(--button-secondary-bg-color-hover) ;
@@ -45,15 +102,27 @@
             span{
                 color:var(--button-secondary-text-color-hover);
             }
+
+            .k-icon::before{
+                color: var(--button-secondary-icon-color-hover);
+            }
         }
         &:focus,&:focus-within{
             color: var(--button-secondary-text-color-default);
             background-color: var(--button-secondary-bg-color-default)  ;
             border: 1px solid var(--button-secondary-border-color-default);
             box-shadow: var(--button-secondary-focus);
+
+            .k-icon::before{
+                color: var(--button-secondary-icon-color-default) !important;
+            }
         }
     
-
+ .k-icon::before{
+    color: var(--button-secondary-icon-color-default);
+    font-size: 22px;
+    right: -3px;
+ }
         
 
     
@@ -76,7 +145,7 @@ button.k-button {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-
+padding: 0;
 
 
 

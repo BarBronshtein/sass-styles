@@ -37,14 +37,22 @@ span{
 
 &.x-label-list{
 
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+
+
     span{
-        color: var(--label-text-color-listcaption);
+        color: var(--label-text-color-listvalue);
         text-align: right;
         font-family: Heebo;
-        font-size: 14px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
     }
 
     label{
@@ -57,6 +65,7 @@ span{
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
+        margin-top: 1px;
     }
 
 
@@ -95,7 +104,17 @@ span{
         }
     }
 
-
+   &.x-label-small{
+    span{
+     color: var(--label-text-color-title);
+    text-align: right;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    }
+   }
 }
 
 
@@ -154,11 +173,24 @@ span{
 
 }
 
+&.x-label-note{
+span{
+    color: var(--label-text-color-subtitle);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Heebo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
 
+}
 
 
 &.x-label-display
 {
+
+    span{
 
     color: var(--label-text-color-default);
     text-align: center;
@@ -167,6 +199,7 @@ span{
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
+    }
 
     &.x-label-large{
 

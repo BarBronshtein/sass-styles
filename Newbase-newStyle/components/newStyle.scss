@@ -143,7 +143,7 @@ html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
   color: red ;
 }
 .x-login-user-error{
-    border-bottom: 1px solid red ;
+    border: 1px solid red !important;
   }
 
 a.k-icon{
@@ -276,7 +276,7 @@ margin: 0;
 
   flex-wrap: nowrap;
   width: auto;
-  gap: 10px;
+  gap: 5px;
 &.flex-column{
   gap: 0;
 }

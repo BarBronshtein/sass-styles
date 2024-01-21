@@ -1,0 +1,82 @@
+.xstyle-xmenu-wrapper{
+  .x-xmenu{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--special-button-color-border, #7B098B);
+    background: var(--first-panel-bg-icon-button, #FFF);
+    z-index: 60000;
+    li{
+        width: max-content;
+        height: fit-content;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        &:focus{
+          box-shadow: none !important;
+        }
+        span{
+            padding: 0;
+            .k-icon{
+                color: #690779;
+            }
+        }
+    }
+  }
+
+  .k-animation-container{
+    background: white !important;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    left: 30px !important;
+    .k-popup{
+        border-radius: 0;
+        background: white !important;
+        border: none;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.10), 0px 2px 4px 0px rgba(0, 0, 0, 0.03), 0px 4px 5px 0px rgba(0, 0, 0, 0.04); 
+        padding: 0;
+        min-width: 200px;
+        & > .x-row{
+            display: block;
+            padding: 0;
+            & > .col{
+                padding: 10px 10px;
+                border-bottom: 1px solid var(--list-view-border-bottom, #E7E7E7);
+               background: var(--list-view-bg-line-default, #FFF);
+               &:hover{
+                background: var(--list-view-hover-line, #F5F5F5);
+               }
+
+               &:focus,&:focus-within,&:active{
+                background: var(--list-view-selected-line, #7B098B) !important;
+                .x-kicon-caption,.k-icon,.k-icon:before{
+                  color: var(--list-view-selected-line-text, var(--color-other-white, #FFF)) !important;
+                }
+
+               }
+               .x-kicon-caption{
+                color: var(--list-view-text-default, #000);
+                text-align: right;
+                /* desktop/label */
+                font-family: Heebo;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+               }
+
+               .k-icon{
+                font-size: 18px;
+               margin-left: 3px;
+               }
+            }
+
+        }
+    }
+  }
+}
