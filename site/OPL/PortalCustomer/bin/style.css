@@ -4125,10 +4125,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login .xtaf-logo-image img {
   width: 284px !important;
   height: auto !important;
-<<<<<<< HEAD
-=======
   margin: auto;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login div[uxid=cPassword1] {
   margin-bottom: 10px !important;

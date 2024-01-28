@@ -7,13 +7,6 @@
 }
 
 #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallCreate{
-<<<<<<< HEAD
- 
-
-
-    .xtaf-cube-upload{
-        max-width: 250px;
-=======
     .greyPanel .x-section-header-wrapper .x-section-header{
         margin-top: 10px;
     }
@@ -22,16 +15,12 @@
  }
 
     .xtaf-cube-upload{
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
         border-radius: 10px;
         background: #FFF;
         box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
         padding: 10px;
-<<<<<<< HEAD
-=======
          margin-top: 0 !important;
         width: 100%;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
         .k-icon{
           &::before{
@@ -40,16 +29,6 @@
           }
         }
 
-<<<<<<< HEAD
-
-        .x-kicon-caption{
-            margin-right: 20px; 
-            overflow: hidden;
-            color: var(--upload-color-file-name, #000);
-            text-align: right;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-=======
         .dynamicConstructor-icon{
             display: grid;
             grid-template-columns: auto 1fr;
@@ -58,19 +37,14 @@
             margin-right: 5px; 
             color: var(--upload-color-file-name, #000);
             text-align: right;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
             font-family: Heebo;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
-<<<<<<< HEAD
-            line-height: 100%
-=======
             line-height: 100%;
             white-space: nowrap;       
             overflow: hidden;
             text-overflow: ellipsis; 
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
         }
     }
     .mt-26{
@@ -164,8 +138,6 @@
        }
 
     }
-<<<<<<< HEAD
-=======
 }
 
 div[uxid="ctserciveCallDesc2"]{
@@ -204,5 +176,4 @@ div[uxid="ctserciveCallDesc2"]{
             grid-template-columns: repeat(2, 1fr);
         }
     }
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 @media (max-width: 900px) {
 
 .k-drawer-overlay.k-drawer-right .k-drawer.x-drawer {
@@ -16,7 +12,6 @@
 
   padding-right: 0;
 }
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 .k-drawer .k-drawer-items *:not(.popUpWindowCls * , input.k-textbox , .DrawerItem-icon){
   color: $drawer-color ;
 }
@@ -137,11 +132,7 @@
   
     .k-drawer-items
       *:not(.popUpWindowCls *):not(input.k-textbox):not(.DrawerItem-icon) {
-<<<<<<< HEAD
-      padding-right: 0 ;
-=======
     
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
       justify-content: space-between;
  
       &.k-panelbar-toggle{

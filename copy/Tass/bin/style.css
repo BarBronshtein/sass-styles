@@ -421,19 +421,8 @@ body {
   width: 10px !important;
   height: 10px !important;
 }
-<<<<<<< HEAD
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper {
-  flex-direction: row-reverse !important;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper .x-control-caption-wrapper {
-  flex: 0 0 100%;
-}
-#TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper .x-control-content-wrapper {
-  flex-grow: 0.1;
-=======
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper .x-control-content-wrapper {
   flex-grow: 0.1 !important;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }
 #TafnitCore_System_UI_App_Tools_FillAndSignV2Page .xstyle-checkbox-wrapper.x-control-wrapper input:checked {
   box-shadow: none !important;
@@ -512,16 +501,6 @@ body {
   color: #1182B1;
 }
 
-<<<<<<< HEAD
-#TafnitCore_SaaSServer_Survey_UI_Survey .x-control-wrapper {
-  flex-wrap: wrap;
-  width: 100%;
-}
-#TafnitCore_SaaSServer_Survey_UI_Survey div[uxid=SurveyLogo] img {
-  width: 270px !important;
-  top: 50% !important;
-  transform: translateY(10px) !important;
-=======
 #TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) {
   border: none !important;
   background: #FCFCFC !important;
@@ -554,7 +533,6 @@ body {
 #TafnitCore_SaaSServer_Survey_UI_Survey .x-control-wrapper {
   flex-wrap: wrap;
   width: 100%;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }
 #TafnitCore_SaaSServer_Survey_UI_Survey .surveyTitle {
   background: #10143A !important;

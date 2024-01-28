@@ -1,8 +1,5 @@
 
 
-<<<<<<< HEAD
-
-=======
 .k-grid-content-locked{
   height: auto !important;
   padding: 0;
@@ -19,7 +16,6 @@
     padding-right: 10px;
   }
 }
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 .portalGrid{
   h4{
     font-family: 'Heebo';
@@ -30,9 +26,6 @@
     color: $grid-title-heder-h4-color;
     height: auto;
   }
-<<<<<<< HEAD
-
-=======
   .d-flex {
     gap: 15px;
 
@@ -47,7 +40,6 @@
       line-height: 100%;
     }
 }
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }
 
 
@@ -82,13 +74,9 @@
     th,td{
       & input.k-checkbox{
         border-color: $grid-checkbox-border;
-<<<<<<< HEAD
-      
-=======
         width: 14px;
         height: 14px;
         border-radius: 2px;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
         &:checked{
             border-color: $grid-checkbox-checked-border;
@@ -240,14 +228,10 @@
             border-left: $grid-content-border-left;
             font-size: 14px;
             padding: $grid-content-padding;
-<<<<<<< HEAD
-
-=======
             &.xtaf-bg{
               padding-right: 10px;
               background: var(--neutral-200, #F5F5F5) !important;
             }
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
             .col-template-val {
                 margin: 0;
             }
@@ -951,13 +935,7 @@
     &.k-active{
         
       & .k-icon.k-i-filter::before{
-<<<<<<< HEAD
-
-        content: "\e971" !important;
-        color: #7B098B !important;
-=======
 font-weight: 600;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
       }
 
      }
@@ -1247,21 +1225,13 @@ font-weight: 600;
       border-top: 1px solid $grid-header-border !important;
       border-bottom: 1px solid $grid-header-border !important ;
       margin-top: 15px;
-<<<<<<< HEAD
-      margin-bottom: 15px;
-=======
       margin-bottom: 0px;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
      }
 
      .k-grid-content.k-auto-scrollable{
       border-right: none !important;
       border-bottom: none !important;
-<<<<<<< HEAD
-     max-height: 450px;
-=======
      max-height: 250px;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
      }
 
@@ -1288,10 +1258,6 @@ font-weight: 600;
 
 .xstyle-gridv4-wrapper{
 
-<<<<<<< HEAD
-  border-bottom: 1px solid #DEDEDE;
-=======
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   border-radius: 0px;
   padding-top: 0px;
   margin-bottom: 25px;

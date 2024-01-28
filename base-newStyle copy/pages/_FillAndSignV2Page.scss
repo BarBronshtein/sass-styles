@@ -205,21 +205,13 @@ html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page){
 
         &.x-control-wrapper {
 
-<<<<<<< HEAD
-            flex-direction: row-reverse !important;
-=======
             //flex-direction: row-reverse !important;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
             .x-control-caption-wrapper {
                 flex: auto;
             }
         
             .x-control-content-wrapper {
-<<<<<<< HEAD
-                flex-grow: 0.1;
-=======
                 flex-grow: 0.1 !important;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
                 width: auto;
             }
 

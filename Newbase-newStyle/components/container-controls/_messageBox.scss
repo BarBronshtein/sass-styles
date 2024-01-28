@@ -1,0 +1,33 @@
+#MessageBoxWindow{
+    .row{
+        display: block;
+
+        div{
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+.x-icons {
+    font-size: 50px;
+    border-radius: 50%;
+
+    &.x-fa-success {
+        color: #1dbb00;
+    }
+
+    &.x-fa-error {
+        color: #ef0000;
+    }
+
+    &.x-fa-question,
+    &.x-fa-info {
+        color: #006bef;
+    }
+
+    &.x-fa-warning {
+        color: #ffbc00;
+    }
+}

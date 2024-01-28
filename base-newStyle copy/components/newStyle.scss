@@ -1,87 +1,4 @@
 
-<<<<<<< HEAD
-@import '../fonts/font.scss';
-@import '../components/animation';
-@import '../components/barcode';
-@import '../components/breadcrumb';
-@import '../components/button';
-@import '../components/calendar';
-@import '../components/canvas';
-@import '../components/carDamage';
-@import '../components/cell';
-@import '../components/chat';
-@import '../components/checkbox';
-@import '../components/compass';
-@import '../components/creditGuard';
-@import '../components/currentLocation';
-@import '../components/date-picker';
-@import '../components/diagram';
-@import '../components/drawer';
-@import '../components/drop-down';
-@import '../components/dropDownTree';
-@import '../components/fileViewer';
-@import '../components/footer';
-@import '../components/generalClass';
-@import '../components/grid';
-@import '../components/groupBox';
-@import '../components/header';
-@import '../components/imap';
-@import '../components/infoBubble';
-@import '../components/intelPhone';
-@import '../components/iSlider';
-@import '../components/layout';
-@import '../components/listview';
-@import '../components/loanSlider';
-@import '../components/lookup';
-@import '../components/mediaQuery';
-@import '../components/menu';
-@import '../components/messageBox';
-@import '../components/multiCheckboxDropdown';
-@import '../components/multichoice';
-@import '../components/multiselect';
-@import '../components/pFloating';
-@import '../components/popupSignature';
-@import '../components/popupwincls';
-@import '../components/progressBar';
-@import '../components/radio-button';
-@import '../components/rangeNumber';
-@import '../components/rating';
-@import '../components/scrollviewKendo';
-@import '../components/section';
-@import '../components/spinner';
-@import '../components/switch';
-@import '../components/textbox';
-@import '../components/timelineRTL';
-@import '../components/timepicker';
-@import '../components/treeview';
-@import '../components/upload';
-@import '../components/video';
-@import '../components/videoStream';
-@import '../components/virtual-keyboard';
-@import '../components/window';
-@import '../components/autocomplete';
-@import '../components/threeoptionsSwitch';
-@import '../components/linke';
-@import '../components/linklist';
-@import '../components/simpleXML';
-@import '../components/signature';
-@import '../pages/accessiblity-edit';
-
-
-
-@import '../pages/login';
-@import '../pages/payment';
-@import '../pages/Survey';
-@import '../pages/receipt';
-@import '../pages/errorPage';
-@import '../pages/FillAndSignV2Page';
-@import '../pages/meeting';
-@import '../pages/Transportation';
-@import '../pages/accessiblity-viewer';
-@import '../pages/MakeRequest';
-
-
-=======
 @forward '../fonts/font.scss';
 @forward '../components/animation';
 @forward '../components/barcode';
@@ -164,11 +81,12 @@
 @forward '../pages/MakeRequest';
 @forward '../pages/FileViewer';
 @forward '../pages/mainPanelTass';
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 
 
-@import '../../studio/style.scss';
+
+
+@forward '../../studio/style.scss';
 
 html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page),
 html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
@@ -347,8 +265,6 @@ margin: 0;
 #TafnitCore_SaaSServer_OTP_UI_OTPValidation{
   padding: 0px 0px;
 
-<<<<<<< HEAD
-=======
   .alert-Message {
     border-radius: 20px;
     background: var(--Color-white-1000, #FFF);
@@ -370,7 +286,6 @@ margin: 0;
     margin: 0 auto;
   }
 
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   #watermark{
     background: var(--background-light-grey, #F9F9F9);
 
@@ -493,11 +408,7 @@ input{
 
 }
 
-<<<<<<< HEAD
-.k-window:has(#TafnitCore_SaaSServer_OTP_UI_ErrorMessage){
-=======
 .k-window:has(#TafnitCore_SaaSServer_OTP_UI_ResultMessage){
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
   border-radius: 6px;
   background: var(--color-white-1000, #FFF);
@@ -512,14 +423,9 @@ input{
   right: 0 !important;
   margin: 0 auto;
 
-<<<<<<< HEAD
-  #TafnitCore_SaaSServer_OTP_UI_ErrorMessage{
-    margin: 0 !important;
-=======
   #TafnitCore_SaaSServer_OTP_UI_ResultMessage{
     margin: 0 !important;
 
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   }
 .x-header {
   display: none;
@@ -615,11 +521,8 @@ input{
 .x-control-content-wrapper{
   grid-column: 1 / 3;
 }
-<<<<<<< HEAD
-=======
 }
 
 img{
   margin: auto;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }

@@ -31,10 +31,6 @@
     
     
     
-<<<<<<< HEAD
-    
-    & span.k-datepicker{
-=======
     & .x-datePickerResponsive.s-datePickerResponsive.x-datePicker-mobile{
         height: 40px ;
         background: $control-background ;
@@ -53,7 +49,6 @@
         }
     }
     & span.k-datepicker {
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
         @extend %texbox-input;
 
         &:focus-within{

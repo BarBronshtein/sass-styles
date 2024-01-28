@@ -29,26 +29,20 @@
 @import './components/label';
 @import './components/DashboardMobile';
 @import './components/headerMobile';
-<<<<<<< HEAD
-=======
 @import './components/tab';
 @import './components/treeview';
 @import './components/xmenu';
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 @import './page/CloudDashboard';
 @import './page/login';
 @import './page/userDetailes';
 @import './page/ServiceCallCreate';
 @import './page/ClientMobile';
-<<<<<<< HEAD
-=======
 @import './page/ServiceCallCreateMobile';
 @import './page/loginMobile';
 @import './page/MobilePortalTransaction';
 @import './page/AreaSelection';
 @import './page/ServiceCallAction';
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 
 
@@ -61,13 +55,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
-<<<<<<< HEAD
-
-
-body,html{
-    font-family: 'Heebo';
-    background: #F8F8F8 !important;
-=======
 mainbody > .row{
 &.xtaf-btn-footer{
     position: fixed;
@@ -119,7 +106,6 @@ mainbody > .row{
 body,html{
     font-family: 'Heebo';
     line-height: 0;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }
 .border{
     border: none !important;
@@ -151,30 +137,18 @@ body,html{
 .icon-finance-graph:before,
 .icon-export-excel:before ,
     .icon-xtar-print:after {
-<<<<<<< HEAD
-    content: "\ea5e";
-=======
    
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     color:$icon-before ;
 }
 
 .icon-export-excel:after ,
 .icon-xtar-print:before {
     content: "\ea5f";
-<<<<<<< HEAD
-    color:$icon-after;
-}
-
-
-.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2,.icon-tracker{
-=======
     color:$special-button-color-icon;
 }
 
 
 .icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2{
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
     &:before{
         color:$drawer-icon-color-after;
@@ -186,19 +160,11 @@ body,html{
 
 }
 
-<<<<<<< HEAD
-.icon-car:after,.icon-customers::after {
-    color: $drawer-icon-color-after;
-}
-
-.icon-car:before,.icon-customers::before{
-=======
 .icon-car:after,.icon-customers::after,.icon-tracker::after {
     color: $drawer-icon-color-after;
 }
 
 .icon-car:before,.icon-customers::before,.icon-tracker::before{
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     color:$drawer-icon-color-before;
 }
 
@@ -218,10 +184,7 @@ body,html{
 
     .k-drawer-overlay.k-drawer-right .k-drawer{
         width: 40px;
-<<<<<<< HEAD
-=======
         overflow-x: hidden;
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
        }
 }
 
@@ -233,9 +196,6 @@ body,html{
 
 .justify-content-start {
     justify-content:end !important;
-<<<<<<< HEAD
-  }
-=======
   }
 
   .x-control-wrapper .x-control-caption-wrapper{
@@ -261,4 +221,3 @@ body,html{
 img{
     margin: auto;
 }
->>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
