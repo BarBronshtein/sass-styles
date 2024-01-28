@@ -1,0 +1,90 @@
+.k-window.k-focus{
+    box-shadow: none !important;
+}
+.k-window:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction){
+
+    width: 940px !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+}
+
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction{
+    .greyPanel .x-section-header-wrapper .x-section-header{
+        margin-top: 10px;
+    }
+
+    header{
+        background: none;
+        position: fixed;
+        padding: 0px 20px 30px 20px;
+        background: #F5F5F5;
+        border-radius: 10px 10px 0 0;
+        min-height: 280px;
+    .xtaf-logo-image {
+        top: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+
+        .x-image-wrapper{
+            text-align: center;
+        }
+    }
+    }
+
+    mainbody{
+        margin-top: 312px !important;
+
+        &:has(.xtaf-mt-0){
+                margin-top: 0px !important; 
+        }
+
+        .row .xtaf-icon-goback .x-dynamic-label-control{
+            margin:0 !important;
+        }
+    }
+
+}
+
+
+.k-window:has(#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction) .k-window-titlebar {
+    position: fixed;
+    z-index: 10005;
+    left: 0;
+}
+
+
+//mobile//
+@media (max-width: 900px){
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction header {
+    position: relative;
+    padding-top: 5px;
+    border-radius: 0px;
+    background: none;
+    box-shadow: none;
+    border-radius: 10px;
+    z-index: 0;
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction mainbody > .row, #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction mainbody > .row-row-hidden {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.1);
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-bottom: 15px;
+}
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction mainbody{
+    margin-top: 0 !important;
+    padding-bottom: 80px !important; 
+}
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_ServiceCallAction header{
+    min-height: 200px;
+
+    img{
+        width: 215px !important;
+    }
+}
+}

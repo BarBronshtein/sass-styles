@@ -270,9 +270,6 @@
   box-shadow: none !important;
   border: 1px solid #AE8B49 !important;
 }
-.xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #ADB5BD !important;
-}
 .xstyle-textcontrol-wrapper input::placeholder {
   color: #ADB5BD !important;
 }
@@ -552,9 +549,6 @@
 .xstyle-password-wrapper input:focus {
   box-shadow: none !important;
   border: 1px solid #AE8B49 !important;
-}
-.xstyle-password-wrapper input::-moz-placeholder {
-  color: #ADB5BD !important;
 }
 .xstyle-password-wrapper input::placeholder {
   color: #ADB5BD !important;
@@ -1137,7 +1131,6 @@
   transform: translateY(-50%) !important;
   border: none;
   padding: 20px;
-  height: -moz-fit-content !important;
   height: fit-content !important;
   max-height: 90%;
 }
@@ -1356,7 +1349,6 @@
   border-radius: 0;
 }
 .k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1 {
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
 }

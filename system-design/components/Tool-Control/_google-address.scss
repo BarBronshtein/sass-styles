@@ -1,0 +1,46 @@
+.xstyle-googleaddress-wrapper      {
+    .x-control-content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 20px;
+        align-items: center;
+        padding: 0px 10px !important;
+        @extend %texbox-input;
+
+        &.x-login-user-error{
+        
+            border-bottom: 1px solid var(--input-border-color-error) ;
+          }
+    
+            &:focus{
+                box-shadow:var(--input-focus-shadow) ;
+                border: 1px solid var(--input-border-color-focus) ;
+                outline: none !important;
+            }
+    }
+
+    label{
+        @extend %texbox-label;
+    }
+
+    input,.k-textbox{
+        border: none;
+        background: none;
+        outline: none;
+
+        &:focus,&:focus-within{
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+
+    .x-barcodeBtnContainer {
+        background: none;
+        border: none;
+
+        a:before{
+            content: "\ea54";
+            font-family: 'icomoon';  
+        }
+    }
+}

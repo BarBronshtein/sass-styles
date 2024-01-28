@@ -108,48 +108,6 @@
   min-width: 200px;
 }
 
-/*header*/
-/*footer*/
-/*row*/
-/*window*/
-/*drawer*/
-/*k-animator*/
-/*k-filter*/
-/*button*/
-/*autocomplete*/
-/*calendar*/
-/*date-picker*/
-/*checkbox*/
-/*textbox*/
-/*virutal-keyboard*/
-/*drop-down*/
-/*grid*/
-/*time picker*/
-/*float-button*/
-/*textarea*/
-/*upload*/
-/*multiselect*/
-/*tabstrip*/
-/*slider*/
-/*rating*/
-/*radio*/
-/*freehand*/
-/*portal*/
-/*link*/
-/*stepper*/
-/*menu*/
-/*workflow*/
-/*timeline*/
-/*tooltip*/
-/*header mobile */
-/*consumer-product*/
-/*lookup*/
-/*websdk*/
-/*required*/
-/*funding*/
-/*phone*/
-/*spinner*/
-/*Dashboard*/
 .xstyle-textareacontrol-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-autocomplete-wrapper label, .k-window:has(.k-edit-form-container) .k-form-field label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label {
   font-family: "Heebo";
   font-style: normal;
@@ -1282,6 +1240,7 @@ mainbody mainbody {
   width: 50px;
   height: 50px;
   background: #ffffff !important;
+  -webkit-box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
   top: 4px;
@@ -1339,6 +1298,7 @@ mainbody mainbody {
 }
 .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
   background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px !important;
   width: 80px !important;
@@ -1813,9 +1773,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   box-shadow: 0px 1px 3px 0px rgba(48, 198, 245, 0.3), 0px 4px 8px 0px rgba(48, 198, 245, 0.3) !important;
   border: 1px solid #30c6f5 !important;
 }
-.xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #c7c7c7 !important;
-}
 .xstyle-textcontrol-wrapper input::placeholder {
   color: #c7c7c7 !important;
 }
@@ -1833,9 +1790,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   width: 100%;
   height: 50px;
   align-self: center;
-}
-.xstyle-date-wrapper span.k-datepicker::-moz-placeholder, .xstyle-date-wrapper input::-moz-placeholder {
-  color: #c7c7c7 !important;
 }
 .xstyle-date-wrapper span.k-datepicker::placeholder, .xstyle-date-wrapper input::placeholder {
   color: #c7c7c7 !important;
@@ -2568,7 +2522,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-size: 14px;
   line-height: 100%;
   color: #690779;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }
@@ -2986,9 +2939,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
   box-shadow: 0px 1px 3px 0px rgba(48, 198, 245, 0.3), 0px 4px 8px 0px rgba(48, 198, 245, 0.3) !important;
   border: 1px solid #30c6f5 !important;
-}
-.xstyle-autocomplete-wrapper .k-autocomplete::-moz-placeholder {
-  color: #c7c7c7 !important;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete::placeholder {
   color: #c7c7c7 !important;
@@ -3815,6 +3765,8 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   #TafnitCore_ToDo_UI_Login mainbody .checkboxHorizontal > div > div > div,
   #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .checkboxHorizontal > div > div > div,
   #TafnitCore_SaaSServer_Funding_UI_Login mainbody .checkboxHorizontal > div > div > div {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 1 0% !important;
     flex: 0 1 0% !important;
   }
 }
@@ -3827,6 +3779,8 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   #TafnitCore_ToDo_UI_Login mainbody .checkboxHorizontal > div > div > div:first-child,
   #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .checkboxHorizontal > div > div > div:first-child,
   #TafnitCore_SaaSServer_Funding_UI_Login mainbody .checkboxHorizontal > div > div > div:first-child {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 0 0% !important;
     flex: 1 0 0% !important;
   }
 }
@@ -3849,6 +3803,9 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 #TafnitCore_ToDo_UI_Login mainbody .xstyle-textcontrol-wrapper.x-login-user-error-msg,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .xstyle-textcontrol-wrapper.x-login-user-error-msg,
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .xstyle-textcontrol-wrapper.x-login-user-error-msg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -3883,6 +3840,8 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 #TafnitCore_ToDo_UI_Login mainbody [xid=controlcLogin1],
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody [xid=controlcLogin1],
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody [xid=controlcLogin1] {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
   flex: 0;
   margin: 20px auto;
   padding: 0;
@@ -4045,6 +4004,9 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 #TafnitCore_ToDo_UI_Login mainbody .xstyle-checkbox-wrapper,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .xstyle-checkbox-wrapper,
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .xstyle-checkbox-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -4079,6 +4041,9 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
 #TafnitCore_ToDo_UI_Login mainbody [xid=controlrLogin],
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody [xid=controlrLogin],
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody [xid=controlrLogin] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 550px;
   min-height: 450px;
@@ -4133,6 +4098,7 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   #TafnitCore_ToDo_UI_Login mainbody .col,
   #TafnitCore_SaaSServer_TafnitCloud_UI_Login mainbody .col,
   #TafnitCore_SaaSServer_Funding_UI_Login mainbody .col {
+    -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
   #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .xstyle-checkbox-wrapper,
@@ -4368,7 +4334,6 @@ header.navbar-fixed-top.header-suppliers .details .left .xstyle-dynamiclabelcont
   font-size: 14px;
   line-height: 100%;
   color: #7b098b;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }

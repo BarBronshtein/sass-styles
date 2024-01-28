@@ -75,9 +75,6 @@
 #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Login .xstyle-textcontrol-wrapper input.x-textbox:focus {
   border: 1px solid #F57920 !important;
 }
-#TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Login .xstyle-textcontrol-wrapper input.x-textbox::-moz-placeholder {
-  color: #C7C7C7;
-}
 #TafnitCore_SaaSServer_Portal_Transportation_V2_UI_Login .xstyle-textcontrol-wrapper input.x-textbox::placeholder {
   color: #C7C7C7;
 }
@@ -1264,7 +1261,6 @@ mainbody > .row.cube-info .col-two label {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
-  width: -moz-max-content;
   width: max-content;
 }
 mainbody > .row.cube-info .col-two span {
@@ -1274,7 +1270,6 @@ mainbody > .row.cube-info .col-two span {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
-  width: -moz-max-content;
   width: max-content;
 }
 mainbody > .row.cube-info .col-tow-border {

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 @import '../fonts/font.scss';
 @import '../components/animation';
 @import '../components/barcode';
@@ -80,6 +81,90 @@
 @import '../pages/MakeRequest';
 
 
+=======
+@forward '../fonts/font.scss';
+@forward '../components/animation';
+@forward '../components/barcode';
+@forward '../components/breadcrumb';
+@forward '../components/button';
+@forward '../components/calendar';
+@forward '../components/canvas';
+@forward '../components/carDamage';
+@forward '../components/cell';
+@forward '../components/chat';
+@forward '../components/checkbox';
+@forward '../components/compass';
+@forward '../components/creditGuard';
+@forward '../components/currentLocation';
+@forward '../components/date-picker';
+@forward '../components/diagram';
+@forward '../components/drawer';
+@forward '../components/drop-down';
+@forward '../components/dropDownTree';
+@forward '../components/fileViewer';
+@forward '../components/footer';
+@forward '../components/generalClass';
+@forward '../components/grid';
+@forward '../components/groupBox';
+@forward '../components/header';
+@forward '../components/imap';
+@forward '../components/infoBubble';
+@forward '../components/intelPhone';
+@forward '../components/iSlider';
+@forward '../components/layout';
+@forward '../components/listview';
+@forward '../components/loanSlider';
+@forward '../components/lookup';
+@forward '../components/mediaQuery';
+@forward '../components/menu';
+@forward '../components/messageBox';
+@forward '../components/multiCheckboxDropdown';
+@forward '../components/multichoice';
+@forward '../components/multiselect';
+@forward '../components/pFloating';
+@forward '../components/popupSignature';
+@forward '../components/popupwincls';
+@forward '../components/progressBar';
+@forward '../components/radio-button';
+@forward '../components/rangeNumber';
+@forward '../components/rating';
+@forward '../components/scrollviewKendo';
+@forward '../components/section';
+@forward '../components/spinner';
+@forward '../components/switch';
+@forward '../components/textbox';
+@forward '../components/timelineRTL';
+@forward '../components/timepicker';
+@forward '../components/treeview';
+@forward '../components/upload';
+@forward '../components/video';
+@forward '../components/videoStream';
+@forward '../components/virtual-keyboard';
+@forward '../components/window';
+@forward '../components/autocomplete';
+@forward '../components/threeoptionsSwitch';
+@forward '../components/linke';
+@forward '../components/linklist';
+@forward '../components/simpleXML';
+@forward '../components/signature';
+@forward '../components/otp';
+@forward '../pages/accessiblity-edit';
+
+
+
+@forward '../pages/login';
+@forward '../pages/payment';
+@forward '../pages/Survey';
+@forward '../pages/receipt';
+@forward '../pages/errorPage';
+@forward '../pages/FillAndSignV2Page';
+@forward '../pages/meeting';
+@forward '../pages/Transportation';
+@forward '../pages/accessiblity-viewer';
+@forward '../pages/MakeRequest';
+@forward '../pages/FileViewer';
+@forward '../pages/mainPanelTass';
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 
 
@@ -94,16 +179,26 @@ html:has(#TafnitCore_SaaSServer_Survey_UI_Survey){
     max-width: 420px !important;
     margin: auto !important;
   }
+  &:has(#TafnitCore_SaaSServer_Funding_UI_Main){
 
+    max-width: none !important;
+    margin: auto !important;
+  
+    .x-footer {
+      max-width: none !important;
+      margin: auto !important;
+    }
+  }
   #watermark{
     right: 0 !important;
   }
 }
 .x-login-user-error-msg{
   color: red !important;
+  line-height: 1.5;
 }
 .x-login-user-error{
-    border-bottom: 1px solid red !important;
+    border: 1px solid red !important;
   }
 
 a.k-icon{
@@ -252,6 +347,30 @@ margin: 0;
 #TafnitCore_SaaSServer_OTP_UI_OTPValidation{
   padding: 0px 0px;
 
+<<<<<<< HEAD
+=======
+  .alert-Message {
+    border-radius: 20px;
+    background: var(--Color-white-1000, #FFF);
+    box-shadow: 0px 2px 16px 0px rgba(11, 0, 77, 0.14);
+    padding: 20px 35px;
+    color: var(--label-text-color-subtitle, var(--prime-blue-white-1000, #232873));
+    text-align: center;
+    /* subtitle-large */
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border: none;
+    width: max-content !important;
+    max-width: none !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   #watermark{
     background: var(--background-light-grey, #F9F9F9);
 
@@ -374,7 +493,11 @@ input{
 
 }
 
+<<<<<<< HEAD
 .k-window:has(#TafnitCore_SaaSServer_OTP_UI_ErrorMessage){
+=======
+.k-window:has(#TafnitCore_SaaSServer_OTP_UI_ResultMessage){
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
   border-radius: 6px;
   background: var(--color-white-1000, #FFF);
@@ -389,8 +512,14 @@ input{
   right: 0 !important;
   margin: 0 auto;
 
+<<<<<<< HEAD
   #TafnitCore_SaaSServer_OTP_UI_ErrorMessage{
     margin: 0 !important;
+=======
+  #TafnitCore_SaaSServer_OTP_UI_ResultMessage{
+    margin: 0 !important;
+
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   }
 .x-header {
   display: none;
@@ -486,4 +615,11 @@ input{
 .x-control-content-wrapper{
   grid-column: 1 / 3;
 }
+<<<<<<< HEAD
+=======
+}
+
+img{
+  margin: auto;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }

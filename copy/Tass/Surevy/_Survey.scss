@@ -4,16 +4,67 @@
     color: $card-upload-file-ok-text;
 }
 
+
+#TafnitCore_SaaSServer_UI_styledpage .x-footer:has(.x-taas-footer) {
+
+
+    border: none !important;
+    background: #FCFCFC !important;
+    height: 76px !important;
+    box-shadow: 0px -4px 8px rgba(113, 7, 139, 0.1) !important;
+    z-index: 50;
+    .x-taas-footer{
+
+        border: none !important;
+
+        & .xstyle-buttoncontrol-wrapper{
+
+    
+            & button.x-button{
+    
+                background: $button-background !important;
+
+                &:hover{
+                    background: $button-background-hover !important; 
+                 }
+                 &.k-button:focus-within,
+                 &.k-button:focus{
+                         background: $button-press-background !important;  
+                         box-shadow:  $button-focus-Box-shadow !important;
+                 }
+             
+            }
+        }
+    }
+}
+
+
 #TafnitCore_SaaSServer_Survey_UI_Survey {
+<<<<<<< HEAD
+=======
+
+    .xstyle-image-wrapper      {
+        top: 50%;
+        transform: translateY(-50%);
+        img{
+        height: auto !important;
+        width: 150px !important;
+        }
+    }
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     .x-control-wrapper{
         flex-wrap: wrap;
         width: 100%;
       }
+<<<<<<< HEAD
    & div[uxid=SurveyLogo] img{
     width: 270px !important; 
     top: 50% !important;
     transform: translateY(10px) !important;
    } 
+=======
+
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     
     & .surveyTitle{
 
@@ -150,16 +201,21 @@
   & .xstyle-checkbox-wrapper.x-control-wrapper {
 
     & input{
-     
+        border-color:$checkbox-unselect-icon-color-default;
 
-        &:checked{
-            box-shadow:  $check-box-on-drop-shadow !important;
+
+     &:checked::before{
+        color:$checkbox-unselect-icon-color-default;
+     }
+    
+
+      &:focus{
+        border: 1px solid $checkbox-unselected-border-color-focus;
+
+        &:before{
+            color:$checkbox-unselected-border-color-focus;
         }
-
-        &:checked::before{
-            background: $check-box-on-background;
-
-        }
+      }
     }
    }
 
@@ -241,7 +297,7 @@
     &:active,
     &:focus-visible{
         border: 1px solid $focus-border!important; 
-        box-shadow: none !important;
+     
     }
 }
 

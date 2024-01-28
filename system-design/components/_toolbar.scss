@@ -1,0 +1,65 @@
+.xstyle-itoolbar-wrapper{
+
+    background: var(--toolbar-bg-color);
+    padding: 10px 30px !important;
+    border-radius:0 ;
+
+    .x-itoolbar{
+        padding: 0 !important;
+    }
+    .header-toolbar{
+        span{
+            color: var(--label-toolbar-title);
+            text-align: right;
+            /* label-toolbar-title */
+            font-family: Heebo;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+   .k-button{
+        min-width: 40px;
+        height: 40px ;
+        border: none;
+        border-radius: 4px;
+        background: var(--toolbar-button-bg-color-default) !important;
+        box-shadow: 0px 0px 4px 0px rgba(3, 144, 188, 0.25) !important;
+       &::before{
+        background: none;
+       }
+        span{
+            color: var(--toolbar-button-text-color-default)
+        }
+        &:hover{
+            border: none;
+            background: var(--toolbar-button-bg-color-hover) !important;
+            box-shadow: 0px 0px 4px 0px rgba(2, 97, 128, 0.80) !important;
+            span{
+                color: var(--toolbar-button-text-color-default)
+            }
+        }
+        &:focus,&:focus-within,&:active{
+            border: 1px solid var(--toolbar-button-border-color-focus) !important;
+            background: var(--toolbar-button-bg-color-default) !important;
+            box-shadow: 0px -3px 4px 0px rgba(2, 97, 128, 0.20), 0px 3px 4px 0px rgba(2, 97, 128, 0.50) !important;
+        }
+    
+      
+    }
+
+.k-overflow-anchor{
+    position: relative;
+}
+}
+
+.k-toolbar>*{
+    margin-top:0 ;
+    margin-bottom:0 ;
+    margin-left: 10px !important;
+}
+
+.x-header{
+    border: none !important;
+}

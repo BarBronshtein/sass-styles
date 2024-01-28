@@ -1,5 +1,6 @@
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio {
 
+<<<<<<< HEAD
     .k-focus,
     .k-selected {
         box-shadow: none;
@@ -140,5 +141,164 @@
             }
         }
     }
+=======
+ .xstyle-itreeview-wrapper .k-treeview-group li.k-treeview-item .k-treeview-group{
+        li.k-item{
+                span{
+                    color: #000 !important;
+                }
+            
+        }
+    }
+
+    .k-sprite {
+        display: none;
+    }
+
+
+    .k-focus,
+    .k-selected {
+        box-shadow: none;
+        border: none;
+        background: none;
+    }
+
+    .k-treeview-lines {
+
+
+        .k-treeview-item {
+
+            padding: 0px;
+
+            .k-treeview-top,
+            .k-treeview-mid,
+            .k-treeview-bot {
+                border-bottom: 1px solid#fff;
+                background: #29AFD9;
+                height: 35px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 100%;
+                position: relative;
+
+                &:hover {
+                    background: #D9D9D9 !important;
+                }
+
+                .k-treeview-toggle{
+                    position: absolute;
+                    right: 30px;
+                
+                }
+
+
+                .k-treeview-leaf {
+
+                    &:hover {
+                        background: none;
+                    }
+                    
+                    & , & > *{
+                        cursor:pointer !important;
+                    }
+
+                    span{
+                        width:fit-content;
+                        gap: 5px;
+                        color: #FFF !important;
+                    }
+
+                }
+
+                .k-i-expand:before,.k-i-collapse:before {
+                    content: "\e965";
+                    font-family: 'icomoon';
+                    color: #FFF;
+                    font-size: 13px;
+                }
+                
+                .k-i-expand:before {
+                    content: "\e965";
+                }
+                
+                .k-i-collapse:before {
+                    content: "\e965";
+                }
+                
+            }
+
+
+            .k-treeview-group {
+
+                .k-treeview-item {
+
+                    .k-treeview-top,
+                    .k-treeview-mid,
+                    .k-treeview-bot {
+                        background: none;
+
+                        .k-sprite {
+                            display: block;
+                            margin-right: 5px;
+                            margin-left: 0;
+                            height: 25px;
+                            width: 25px;
+                            display: block;
+                            &:before {
+                                content: "\e991";
+                                font-family: "icomoon";
+                                color: #159BC5;
+                                font-size: 20px;
+                                font-weight: 400;
+                                top: 3px;
+                                position: relative;
+                            }
+                        }
+
+                        .k-treeview-leaf {
+                            color: #000 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    
+    .expand-on-click{
+
+        .k-treeview-leaf {
+            width:100% !important;
+        }
+
+        .k-i-expand:before,.k-i-collapse:before {
+            content: "\e965";
+            padding-inline:10px;
+            font-family: 'icomoon';
+            color: #FFF;
+            font-size: 13px;
+            margin-left:0;
+        }
+
+        .k-treeview-toggle {
+            margin-right: 0px;
+            width: 100%;
+            height: 40px;
+            z-index: 2;
+            position:absolute;
+            right: 0 !important;
+
+            span{
+                width: 100%;
+                height: 100%;
+                cursor:pointer !important;
+            }
+        }
+    }
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 }

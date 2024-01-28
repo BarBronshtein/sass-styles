@@ -1,0 +1,43 @@
+
+.xstyle-otpinput-wrapper{
+    label{
+        font-family: 'Heebo' ;
+        font-style: normal ;
+        font-weight: 400 ;
+        font-size: 14px  ;
+        line-height: 21px ;
+        text-align: right ;
+        color: var(--label-text-color-caption);
+        margin: 0 ;
+        max-width: max-content ;
+    }
+      input{
+          width: 50px;
+          height: 50px;
+          border-radius: 4px;
+          border: 1px solid var(--otp-border-color-default);
+          background: var(--otp-bg-color-default);
+          outline: none;
+          color: var(--input-text-color-default);
+          text-align: center;
+          font-feature-settings: 'clig' off, 'liga' off;
+          font-family: Heebo;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 23px;
+          &:focus,&:focus-within{
+        
+              border: 1px solid var(--otp-border-color-focus);
+              box-shadow: var(--input-focus-shadow);
+          }
+        
+          &:focus-visible{
+            outline: none;
+          }
+      }
+
+      .x-otpinput{
+        text-align: center;
+      }
+  }

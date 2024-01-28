@@ -1,0 +1,75 @@
+
+
+
+.xstyle-numberrange-wrapper {
+   .k-textbox-container{
+    width: 100%;
+    max-width: 100%;
+   }
+    &.x-login-user-error,
+    &.x-login-user-error-msg {
+        border-color: var(--input-border-color-error) !important;
+    }
+
+    .x-login-user-error-msg {
+        color: var(--input-border-color-error);
+        font-size: 14px;
+    }
+
+    &.k-state-disabled{ 
+
+        opacity: 1;
+  
+          & input.k-textbox{
+  
+            background: var(--input-bg-color-default) ;
+             
+          }
+  
+          & label{
+            color: var(--label-text-color-disable) ; 
+            }
+      }
+
+    .x-numberrange{
+       
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: end;
+        border: none;
+
+  
+      
+      
+          & input{
+            @extend %texbox-input;
+            padding-right: 10px ;
+           
+            &.x-login-user-error{
+              
+              border-bottom: 1px solid var(--input-border-color-error) ;
+            }
+      
+              &:focus{
+                box-shadow:var(--input-focus-shadow) ;
+                border: 1px solid var(--input-border-color-focus) ;
+                  outline: none !important;
+              }
+      
+              &::placeholder{
+      
+
+                color:var(--input-text-color-place-holder);
+
+      
+              }
+          }
+      
+       
+    }
+
+    & label,span{
+        @extend %texbox-label;
+
+    }
+}

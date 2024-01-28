@@ -1,0 +1,238 @@
+
+.ListViewItemListViewMenu img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.x-listview-container {
+    .ListViewItemListViewMenu img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .k-pager-wrap{
+        margin-top: 30px ;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        width: auto;
+        justify-content: center;
+        margin: auto;
+        border: none;
+        background: none;
+       
+        & >.k-pager-nav:hover{
+          border: none ;
+          background: none ;
+        } 
+      
+    
+        .k-pager-nav{
+          background: none;
+          border: none;
+          color: var(--grid-pager-nav-arrow-icon-color-default);
+            &:focus{
+              box-shadow: none;
+              border: none;
+            }
+        }
+    
+        & .k-pager-info.k-label{
+    
+          position: absolute;
+          right: 0;
+          color:  var(--grid-pager-info-text-color);
+          text-align: right;
+          font-family: Heebo;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 30px;
+       }
+      
+    
+      }
+  
+      .k-pager-numbers .k-link{
+        color:  #ECECEC;
+        font-family: Assistant;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+  
+        &:hover{
+          background: #8EBBCF;
+          color: #000;
+        }
+      
+        &.k-selected{
+           background: none;
+           border: none;
+           color: #8EBBCF;
+          font-family: 'Assistant';
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 6.5px;
+        }
+      }
+    .x-listview-control {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        cursor: pointer;
+        border: 1px solid #DEDEDE;
+        border-radius: 4px;
+        padding: 20px;
+        .x-listview-item {
+            display: inline-block;
+            vertical-align: top;
+            min-height: 110px;
+            overflow: hidden;
+            position: relative;
+            border: 4px solid transparent;
+            margin: 0px 10px;
+            transition: 0.2s all;
+            background: none;
+
+
+            &.k-selected{
+               
+
+                .x-listview-h3 {
+
+                    background: var(--listview-bg-color-selected);
+
+                }
+            }
+            &:hover{
+                
+                .x-listview-h3 {
+                background: var(--listview-footer-bg-color-hover);
+                }
+            }
+           
+            &.checker-1 {
+                border: none;
+            }
+
+            .marker-0 {
+                display: none;
+
+                +.selectedTriangle {
+                    display: none;
+                }
+            }
+
+            &.k-state-selected {
+                border-radius: 5px;
+
+                .marker-1 {
+                    color: #fff ;
+                }
+            }
+
+            .marker-1 {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            .x-listview-remove-button {
+                left: 0;
+                z-index: 9;
+                display: inline-block;
+                position: absolute;
+                width: 20px ;
+                height: 20px ;
+                bottom: -4px;
+
+                &::before{
+                    content: "\e96c";
+                    font-family: 'icomoon';
+                    color: var(--icon-color-close);
+                }
+              
+            }
+
+            .x-listview-h3 {
+                margin: 0;
+                padding: 1px;
+                overflow: hidden;
+                width: 100%;
+                color: var(--listview-text-color-default);
+                text-align: right;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Heebo;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                padding: 7px 5px;
+                background: var(--listview-footer-bg-color-default);
+            }
+
+            .fa-check {
+                position: absolute;
+                font-size: 17px;
+                color: #003f59;
+                right: 0px;
+                top: -1px;
+                z-index: 9;
+                border: 3px solid white;
+                background: #f3d30b;
+                padding: 9px;
+                border-radius: 50%;
+          
+
+                &::before{
+                    content: "\f0f3";
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
+       
+ 
+
+    
+        }
+
+    }
+}
+
+
+.k-ltr {
+    .x-listview-container {
+        .x-listview-control {
+            .x-listview-item {
+                .x-listview-remove-button {
+                    left: initial ;
+                    right: 0;
+                }
+
+                .fa-check {
+                    right: initial ;
+                    left: 0;
+                }
+
+                .selectedTriangle {
+
+                    border-left: initial ;
+                    border-right: 30px solid transparent;
+                }
+
+                .removeTriangle {
+
+                    border-right: initial ;
+                    left: initial ;
+
+                    border-left: 30px solid transparent;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+

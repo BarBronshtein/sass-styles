@@ -275,13 +275,21 @@
 
     .k-form-field {
       label {
+<<<<<<< HEAD
         @extend %texbox-label;
+=======
+        @extend %texbox-labelstudio;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
       }
     }
 
     .k-input.k-textbox,
     .k-numerictextbox {
+<<<<<<< HEAD
       @extend %texbox-input;
+=======
+      @extend %texbox-inputstudio;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
       input {
         text-align: right;
@@ -434,7 +442,11 @@
         }
 
         .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
+<<<<<<< HEAD
           @extend %texbox-input;
+=======
+          @extend %texbox-inputstudio;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
           background: #FFFFFF;
           border: 1px solid #A6A6A6;
           width: 100%;
@@ -470,7 +482,11 @@
         }
 
         .k-numerictextbox {
+<<<<<<< HEAD
           @extend %texbox-input;
+=======
+          @extend %texbox-inputstudio;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
           background: #FFFFFF;
           border: 1px solid #A6A6A6;
           width: 100%;
@@ -505,7 +521,11 @@
         }
 
         .k-datepicker {
+<<<<<<< HEAD
           @extend %texbox-input;
+=======
+          @extend %texbox-inputstudio;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
           background: #FFFFFF;
           border: 1px solid #A6A6A6;
           width: 100%;
@@ -544,7 +564,11 @@
 
         .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid {
 
+<<<<<<< HEAD
           @extend %texbox-input;
+=======
+          @extend %texbox-inputstudio;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
           background: #FFFFFF;
           border: 1px solid #A6A6A6;
 

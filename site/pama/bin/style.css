@@ -683,9 +683,6 @@ input[type=time] {
   border-top-width: 0px;
   border-bottom-width: 1px;
 }
-.xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::-moz-placeholder {
-  color: #464247;
-}
 .xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::placeholder {
   color: #464247;
 }
@@ -726,6 +723,7 @@ input[type=time] {
 .k-slider .k-draghandle {
   border-color: #e14b4b;
   background-color: #e14b4b;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .k-slider .k-draghandle:hover {
@@ -2444,7 +2442,7 @@ progress[value]::-webkit-progress-value {
     max-height: 300px;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .drawerItemScroller {
     max-height: 300px;
   }
@@ -2654,29 +2652,13 @@ legend {
   font-weight: normal !important;
 }
 
-::-moz-placeholder {
-  color: #464247 !important;
-  font-size: 14px !important;
-  font-weight: bold;
-}
-
 ::placeholder {
   color: #464247 !important;
   font-size: 14px !important;
   font-weight: bold;
 }
 
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
 .p-floating-container input:not(:placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
-.p-floating-container textarea:not(:-moz-placeholder-shown) + label {
   font-size: 14px !important;
   color: #464247 !important;
 }
@@ -2710,7 +2692,8 @@ span.mandatory.active + label.switch > input.switch-input + span.switch-label,
 span.mandatory.active + textarea.k-textbox,
 span.mandatory.active + span.k-datepicker > span.k-picker-wrap > input,
 span.mandatory.active ~ label.k-checkbox-label:before,
-span.mandatory.active + span.k-switch.k-widget .k-switch-container {
+span.mandatory.active + span.k-switch.k-widget .k-switch-container,
+.p-floating-container.xstyle-idropdownlist-wrapper span.mandatory.active + .k-picker {
   background: #e8ebff !important;
 }
 
@@ -2946,17 +2929,11 @@ ul.fieldlist {
   padding-top: 15px;
   padding-right: 15px;
 }
-.textAreaPadding textarea::-moz-placeholder {
-  color: #464247 !important;
-}
 .textAreaPadding textarea::placeholder {
   color: #464247 !important;
 }
 
 /*color floating label*/
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  color: #464247 !important;
-}
 .p-floating-container input:not(:placeholder-shown) + label,
 .p-floating-container ul[role=listbox] + input + label {
   color: #464247 !important;
@@ -2970,19 +2947,11 @@ ul.fieldlist {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.xstyle-lookuptafnit-wrapper input.k-textbox::-moz-placeholder {
-  text-overflow: ellipsis;
-  width: 39%;
-}
 .xstyle-lookuptafnit-wrapper input.k-textbox::placeholder {
   text-overflow: ellipsis;
   width: 39%;
 }
 @media screen and (max-width: 576px) {
-  .xstyle-lookuptafnit-wrapper::-moz-placeholder {
-    text-overflow: ellipsis;
-    width: 69% !important;
-  }
   .xstyle-lookuptafnit-wrapper::placeholder {
     text-overflow: ellipsis;
     width: 69% !important;
@@ -3269,10 +3238,6 @@ ul.fieldlist {
 #TafnitCore_System_UI_App_WebSDK_Login input.k-textbox {
   padding-right: 10px !important;
 }
-#TafnitCore_System_UI_App_WebSDK_Login ::-moz-placeholder {
-  font-weight: normal !important;
-  padding-right: 10px !important;
-}
 #TafnitCore_System_UI_App_WebSDK_Login ::placeholder {
   font-weight: normal !important;
   padding-right: 10px !important;
@@ -3547,4 +3512,371 @@ input:not(.k-grid-search input):focus {
 }
 .k-content:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .k-widget.k-window:has(#MessageBoxWindow) #MessageBoxWindow button:hover {
   background: #BD2E39 !important;
-}/*# sourceMappingURL=style.css.map */
+}
+
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page), html:has(#TafnitCore_SaaSServer_Survey_UI_Survey),
+html:has(#TafnitCore_System_UI_App_Tools_FillAndSignV2Page) .x-footer, html:has(#TafnitCore_SaaSServer_Survey_UI_Survey) .x-footer {
+  max-width: none !important;
+}
+
+.k-list-item-text {
+  color: #000 !important;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) {
+  box-shadow: 0px 10px 10px #05425C;
+  min-height: 500px !important;
+  max-width: 50%;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) #TafnitCore_System_UI_App_Tools_DriverLicense {
+  margin-bottom: 0 !important;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) #TafnitCore_System_UI_App_Tools_DriverLicense .x-footer {
+  display: none !important;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .k-header.header {
+  display: none;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .x-row {
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license {
+  max-width: 500px;
+  margin-bottom: 60px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .bg-user {
+  width: 110px;
+  left: 23px;
+  top: 108px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 label, body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 label, body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 label {
+  font-size: 12.40462px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 span,
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 span,
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 span {
+  font-size: 13.8092px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .wrapper-parts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 82px;
+  padding-left: 5px !important;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .btn-license {
+  justify-content: center;
+  margin-top: 60px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .btn-license button {
+  border: 1px solid 1px solid #000 !important;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) {
+  box-shadow: 0px 4.91781px 4.91781px #05425C;
+  border: none;
+  max-width: 50% !important;
+  min-height: 500px !important;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID {
+  max-width: 500px;
+  margin-bottom: 70px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .bg-user {
+  width: 107px;
+  top: 107px;
+  right: 46px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .wrapper-parts {
+  display: grid;
+  grid-template-columns: 124px 1fr;
+  margin-top: 111px;
+  margin-right: 25px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part1 label,
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.40462px;
+  line-height: 100%;
+  color: #757575;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part1 span,
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.8092px;
+  line-height: 100%;
+  color: #323C4B;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .btn-license {
+  justify-content: center;
+  margin-top: 103px;
+}
+
+body:has(#TafnitCore_SaaSServer_Funding_B2B_UI_Main) .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .btn-license button {
+  min-width: 110px;
+  width: auto !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) {
+  background: #FFFFFF;
+  box-shadow: 0px 4.91781px 4.91781px #05425C;
+  border-radius: 10px;
+  border: none;
+  width: 90% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important;
+  height: auto !important;
+  max-height: 90%;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) #TafnitCore_System_UI_App_Tools_DriverLicense {
+  margin-bottom: 0 !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) #TafnitCore_System_UI_App_Tools_DriverLicense .x-footer {
+  display: none !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .k-header.header {
+  display: none;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .x-row {
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .k-window-titlebar {
+  background: none;
+  border: none;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license {
+  max-width: 340px;
+  margin: auto;
+  max-height: 240px;
+  min-height: 230px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .bg-user {
+  position: absolute;
+  width: 92px;
+  left: 6px;
+  top: 60px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .bg-license {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .bg-license img {
+  min-height: 218px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .wrapper-parts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 {
+  display: grid;
+  align-items: flex-end;
+  grid-template-rows: 1fr auto;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 {
+  padding-left: 24px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 .x-control-caption-wrapper, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 .x-control-content-wrapper,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 .x-control-caption-wrapper,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 .x-control-content-wrapper,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 .x-control-caption-wrapper,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 .x-control-content-wrapper {
+  display: grid;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 label,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 label,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.40462px;
+  line-height: 100%;
+  text-align: left;
+  color: #757575;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part1 span,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part2 span,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .wrapper-card-license .license-part3 span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.8092px;
+  line-height: 100%;
+  text-align: left;
+  color: #323C4B;
+  height: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .btn-license {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  text-align: center;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_DriverLicense) .btn-license button {
+  min-width: 110px;
+  width: auto !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) {
+  background: #FFFFFF;
+  box-shadow: 0px 4.91781px 4.91781px #05425C;
+  border-radius: 10px;
+  border: none;
+  width: 90% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important;
+  height: auto !important;
+  max-height: 90%;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) #TafnitCore_System_UI_App_Tools_SocialIdentification {
+  margin-bottom: 0 !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) #TafnitCore_System_UI_App_Tools_SocialIdentification .x-footer {
+  display: none !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .k-header.header {
+  display: none;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .x-row {
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .k-window-titlebar {
+  background: none;
+  border: none;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID {
+  max-width: 340px;
+  margin: auto;
+  max-height: 240px;
+  min-height: 230px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .bg-user {
+  position: absolute;
+  width: 92px;
+  top: 84px;
+  right: 23px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .bg-ID {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .bg-ID img {
+  min-height: 218px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .wrapper-parts {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-top: 97px;
+  margin-right: 8px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part1 {
+  display: grid;
+  align-items: flex-end;
+  grid-template-rows: 1fr auto;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 {
+  padding-left: 24px;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part1 .x-control-caption-wrapper, .k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part1 .x-control-content-wrapper,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 .x-control-caption-wrapper,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 .x-control-content-wrapper {
+  display: grid;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part1 label,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.40462px;
+  line-height: 100%;
+  color: #757575;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part1 span,
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .wrapper-card-ID .ID-part2 span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.8092px;
+  line-height: 100%;
+  color: #323C4B;
+  height: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .btn-license {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  text-align: center;
+}
+
+.k-widget.k-window:has(#TafnitCore_System_UI_App_Tools_SocialIdentification) .btn-license button {
+  min-width: 110px;
+  width: auto !important;
+} /*# sourceMappingURL=style.css.map */

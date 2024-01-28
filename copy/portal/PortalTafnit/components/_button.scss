@@ -14,7 +14,11 @@
 // button bordr //
 .gridHeaderButton{
     display:grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr auto;
+=======
+    grid-template-columns: 1fr ;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     gap: 15px;
     padding: 0px;
     & .spicelBTN{
@@ -27,7 +31,11 @@
     & button{
        
         @extend %button;
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
       &:hover{
         background: $button-bg-hover;
         color: $button-color-text-hover;
@@ -109,6 +117,10 @@
       }
      }
     & button{
+<<<<<<< HEAD
+=======
+      border: 1px solid $button-color-border;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
         @extend %button;
         max-width: 200px;
       &:hover{

@@ -1,0 +1,42 @@
+
+:root{
+    --tass-bg-page:#F9F9F9;
+    --taas-title-bg-color: #F9F9F9; 
+    --fileviewer-card-box-shadow: 0px 0px 4px 0px #D9D9D9, 0px 4px 10px 0px rgba(217, 217, 217, 0.50); 
+    --tass-header-bg: #14008e; 
+    --taas-bg-color: #F9F9F9; 
+
+    --fileviewer-card-bg-color-default: #ffffff; 
+    --fileviewer-card-icon-color: #232873; 
+    --fileviewer-card-title-color-default: #232873; 
+    --fileviewer-card-subtitle-color-default: #232873; 
+    --fileviewer-card-line-color: #cccccc; 
+    --fileviewer-card-button-text-color-default: #7e7b7b; 
+    --fileviewer-card-button-icon-color-default: #7e7b7b; 
+    --button-primary-bg-color-default: #ff5a23; 
+    --button-primary-text-color-default: #ffffff; 
+    --button-primary-icon-color-default: #ffffff; 
+    --taas-title-text-color: #232873; 
+    --taas-title-secondary-text-color: #6b6e77; 
+    --label-title-text-color-default: #232873; 
+    --label-text-color-default: #000000; 
+    --link-text-color-default: #6b6e77; 
+    --otp-border-color-default: #bdbfd5; 
+    --otp-bg-color-default: #ffffff; 
+
+}
+
+
+#TafnitCore_SaaSServer_Storage_UI_FileViewer .x-card-tass.row-hidden{
+    margin-top: 170px !important;
+}
+
+#TafnitCore_SaaSServer_Storage_UI_FileViewer .xstyle-buttoncontrol-wrapper {
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+
+#TafnitCore_SaaSServer_Storage_UI_FileViewer header > .x-row img{
+    transform: translateY(25%);
+}

@@ -1,0 +1,91 @@
+a:not([href]){
+    text-decoration: underline;
+    font-weight: 700;
+    &:hover{
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+.xstyle-ilink-wrapper      {
+    &.k-state-disabled{
+
+        a{
+            color: var(--link-text-color-disable);
+        }
+    }
+    label{
+        color: var(--label-text-color-default);
+        text-align: right;
+        /* base text large */
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    a{
+        color: var(--link-text-color-default);
+        text-align: right;
+        /* Link */
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        &:focus-visible{
+            outline: none;
+            border: none;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &:focus{
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+
+
+    &.x-link-secondary{
+        .x-control-content-wrapper{
+            text-align: center;
+        }
+        a{
+                color: var(--link-secondary-text-color-default) !important;
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Heebo;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px; /* 137.5% */
+                text-decoration-line: underline;
+         }
+        }
+
+
+}
+
+.x-control-caption-wrapper{
+    a{
+        color: var(--link-text-color-default-default);
+        text-align: right;
+        /* Link */
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &:focus{
+            font-weight: 700;
+        }
+    }
+}

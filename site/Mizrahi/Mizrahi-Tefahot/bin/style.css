@@ -687,9 +687,6 @@ input[type=time] {
   border-top-width: 0px;
   border-bottom-width: 1px;
 }
-.xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::-moz-placeholder {
-  color: #464247;
-}
 .xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::placeholder {
   color: #464247;
 }
@@ -730,6 +727,7 @@ input[type=time] {
 .k-slider .k-draghandle {
   border-color: #383838;
   background-color: #383838;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .k-slider .k-draghandle:hover {
@@ -2444,7 +2442,7 @@ progress[value]::-webkit-progress-value {
     max-height: 300px;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .drawerItemScroller {
     max-height: 300px;
   }
@@ -2654,29 +2652,13 @@ legend {
   font-weight: normal !important;
 }
 
-::-moz-placeholder {
-  color: #464247 !important;
-  font-size: 14px !important;
-  font-weight: bold;
-}
-
 ::placeholder {
   color: #464247 !important;
   font-size: 14px !important;
   font-weight: bold;
 }
 
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
 .p-floating-container input:not(:placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
-.p-floating-container textarea:not(:-moz-placeholder-shown) + label {
   font-size: 14px !important;
   color: #464247 !important;
 }
@@ -2945,17 +2927,11 @@ ul.fieldlist {
   padding-top: 15px;
   padding-right: 15px;
 }
-.textAreaPadding textarea::-moz-placeholder {
-  color: #464247 !important;
-}
 .textAreaPadding textarea::placeholder {
   color: #464247 !important;
 }
 
 /*color floating label*/
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  color: #464247 !important;
-}
 .p-floating-container input:not(:placeholder-shown) + label,
 .p-floating-container ul[role=listbox] + input + label {
   color: #464247 !important;
@@ -2969,19 +2945,11 @@ ul.fieldlist {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.xstyle-lookuptafnit-wrapper input.k-textbox::-moz-placeholder {
-  text-overflow: ellipsis;
-  width: 39%;
-}
 .xstyle-lookuptafnit-wrapper input.k-textbox::placeholder {
   text-overflow: ellipsis;
   width: 39%;
 }
 @media screen and (max-width: 576px) {
-  .xstyle-lookuptafnit-wrapper::-moz-placeholder {
-    text-overflow: ellipsis;
-    width: 69% !important;
-  }
   .xstyle-lookuptafnit-wrapper::placeholder {
     text-overflow: ellipsis;
     width: 69% !important;
@@ -3266,10 +3234,6 @@ ul.fieldlist {
   padding: 0 !important;
 }
 #TafnitCore_System_UI_App_WebSDK_Login input.k-textbox {
-  padding-right: 10px !important;
-}
-#TafnitCore_System_UI_App_WebSDK_Login ::-moz-placeholder {
-  font-weight: normal !important;
   padding-right: 10px !important;
 }
 #TafnitCore_System_UI_App_WebSDK_Login ::placeholder {

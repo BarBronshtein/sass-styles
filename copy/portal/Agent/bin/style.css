@@ -113,6 +113,7 @@
 .header-customer img {
   width: 100% !important;
   height: 45px !important;
+  cursor: pointer;
 }
 
 header.navbar-fixed-top.header-customer {
@@ -258,9 +259,12 @@ header.navbar-fixed-top.header-customer .logo .x-self-container.s-self-container
   box-shadow: 0px 1px 3px 0px rgba(53, 113, 188, 0.3), 0px 4px 8px 0px rgba(53, 113, 188, 0.1) !important;
   border: 1px solid #000000 !important;
 }
+<<<<<<< HEAD
 .xstyle-multiselect-wrapper .k-multiselect::-moz-placeholder {
   color: #c7c7c7 !important;
 }
+=======
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 .xstyle-multiselect-wrapper .k-multiselect::placeholder {
   color: #c7c7c7 !important;
 }
@@ -555,7 +559,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   color: #ae2a30;
   height: auto;
@@ -598,6 +602,8 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 }
 .k-grid th input.k-checkbox, .k-grid td input.k-checkbox {
   border-color: #676767;
+  width: 14px;
+  height: 14px;
 }
 .k-grid th input.k-checkbox:checked, .k-grid td input.k-checkbox:checked {
   border-color: #ae2a30;
@@ -1185,6 +1191,16 @@ mainbody mainbody {
   text-overflow: ellipsis;
   padding-right: 10px;
 }
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td span.k-textbox {
+  border: none !important;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td span.k-textbox:focus, .k-grid-content.k-auto-scrollable > table > tbody > tr > td span.k-textbox:focus-within {
+  box-shadow: 0px 0px 3px 0px rgba(53, 113, 188, 0.5) !important;
+}
+.k-grid-content.k-auto-scrollable > table > tbody > tr > td span.k-textbox input {
+  border: none !important;
+  color: #000 !important;
+}
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td.text-spicel {
   color: #7B098B !important;
 }
@@ -1250,8 +1266,8 @@ mainbody mainbody {
   padding: 0 !important;
 }
 .k-grid-header-wrap.k-auto-scrollable .k-grid-filter-menu.k-grid-filter.k-active .k-icon.k-i-filter::before {
-  content: "\e971" !important;
-  color: #7B098B !important;
+  content: "\ea74" !important;
+  font-family: "icomoon" !important;
 }
 .k-grid-header-wrap.k-auto-scrollable .k-i-filter::before {
   content: "\f0dc";
@@ -1291,6 +1307,7 @@ mainbody mainbody {
   width: 50px;
   height: 50px;
   background: #ffffff !important;
+  -webkit-box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
   top: 4px;
@@ -1349,6 +1366,7 @@ mainbody mainbody {
 }
 .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
   background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px !important;
   width: 80px !important;
@@ -1691,6 +1709,11 @@ mainbody mainbody {
   color: #000000;
 }
 
+.k-grid .k-cell-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
 .xstyle-ilink-wrapper a {
   font-family: "Heebo";
   font-style: normal;
@@ -1698,7 +1721,6 @@ mainbody mainbody {
   font-size: 13px;
   line-height: 120%;
   color: #0044cc;
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -1733,7 +1755,11 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
+<<<<<<< HEAD
   font-size: 18px;
+=======
+  font-size: 16px;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   line-height: 120%;
   text-align: right;
   color: #ae2a30;
@@ -1758,7 +1784,11 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
+<<<<<<< HEAD
   font-size: 18px;
+=======
+  font-size: 16px;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   line-height: 120%;
   text-align: right;
   color: #ae2a30;
@@ -1821,7 +1851,11 @@ mainbody mainbody {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
+<<<<<<< HEAD
   font-size: 18px;
+=======
+  font-size: 16px;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   line-height: 120%;
   text-align: right;
   color: #ae2a30;
@@ -1955,9 +1989,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   box-shadow: 0px 1px 3px 0px rgba(53, 113, 188, 0.3), 0px 4px 8px 0px rgba(53, 113, 188, 0.1) !important;
   border: 1px solid #000000 !important;
 }
-.xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #c7c7c7 !important;
-}
 .xstyle-textcontrol-wrapper input::placeholder {
   color: #c7c7c7 !important;
 }
@@ -1975,9 +2006,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   width: 100%;
   height: 50px;
   align-self: center;
-}
-.xstyle-date-wrapper span.k-datepicker::-moz-placeholder, .xstyle-date-wrapper input::-moz-placeholder {
-  color: #c7c7c7 !important;
 }
 .xstyle-date-wrapper span.k-datepicker::placeholder, .xstyle-date-wrapper input::placeholder {
   color: #c7c7c7 !important;
@@ -2298,7 +2326,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 120%;
   text-align: right;
   color: #0044cc;
@@ -2584,11 +2612,14 @@ div[uxid=tbID], div[uxid=tbPassword] {
   box-shadow: none;
 }
 
+<<<<<<< HEAD
 .k-list-item.k-selected {
   background: #ae2a30;
   color: white !important;
 }
 
+=======
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 .k-rtl .k-window-titlebar .k-window-actions {
   right: auto;
   left: -15px;
@@ -2641,6 +2672,12 @@ div[uxid=tbID], div[uxid=tbPassword] {
   align-items: center;
   text-align: center;
   color: #000000;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-list-item.k-selected {
+  background: #ae2a30;
+}
+.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-list-item.k-selected span {
+  color: white !important;
 }
 
 .k-window {
@@ -2747,7 +2784,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-size: 14px;
   line-height: 100%;
   color: #690779;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }
@@ -3180,9 +3216,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
   box-shadow: 0px 1px 3px 0px rgba(53, 113, 188, 0.3), 0px 4px 8px 0px rgba(53, 113, 188, 0.1) !important;
   border: 1px solid #000000 !important;
-}
-.xstyle-autocomplete-wrapper .k-autocomplete::-moz-placeholder {
-  color: #c7c7c7 !important;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete::placeholder {
   color: #c7c7c7 !important;
@@ -3933,11 +3966,11 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 .greyPanel .x-section-header-wrapper .x-section-header {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .portalGrid h4 {
-  font-size: 18px;
+  font-size: 16px;
   padding: 0;
 }
 
@@ -4029,8 +4062,12 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   height: 40px;
 }
 
-.order-hedr .x-kicon span {
+.order-hedr .x-kicon span.x-kicon-caption {
   font-size: 13px !important;
+}
+
+.order-hedr .x-kicon span.k-icon {
+  font-size: 10px !important;
 }
 
 .orderNumber .xstyle-textcontrol-wrapper {
@@ -4240,7 +4277,6 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   right: -16px;
 }
 .row-list .list label {
-  width: -moz-max-content;
   width: max-content;
   font-family: "Heebo";
   font-style: normal;
@@ -4387,6 +4423,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   text-align: center !important;
   margin-bottom: 15px;
 }
+#TafnitCore_SaaSServer_Portal_Agents_UI_Login .xtaf-logo-image .x-image-wrapper img {
+  height: auto !important;
+}
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login div[uxid=cPassword1] {
   margin-bottom: 0px !important;
 }
@@ -4421,11 +4460,15 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .checkboxHorizontal > div > div > div {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 1 0% !important;
     flex: 0 1 0% !important;
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .checkboxHorizontal > div > div > div:first-child {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 0 0% !important;
     flex: 1 0 0% !important;
   }
 }
@@ -4434,6 +4477,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .xstyle-textcontrol-wrapper.x-login-user-error-msg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -4447,6 +4493,8 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   }
 }
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody [xid=controlcLogin1] {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
   flex: 0;
   margin: 20px auto;
   padding: 0;
@@ -4515,6 +4563,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .xstyle-checkbox-wrapperr {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -4528,6 +4579,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody [xid=controlrLogin] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 550px;
   min-height: 450px;
@@ -4554,6 +4608,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .col {
+    -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
   #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .xstyle-checkbox-wrapper {
@@ -4646,7 +4701,6 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   font-size: 14px;
   line-height: 100%;
   color: #3571bc;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }
@@ -4918,4 +4972,15 @@ body, html {
 
 #uber-container {
   padding-right: 50px !important;
+<<<<<<< HEAD
+=======
+}
+
+.xtaf-logo-image img {
+  height: auto !important;
+}
+
+div[uxid=rOpenLeasingOrders] h4 {
+  padding-right: 15px !important;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }/*# sourceMappingURL=style.css.map */

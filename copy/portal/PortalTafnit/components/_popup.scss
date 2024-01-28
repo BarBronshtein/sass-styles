@@ -1,6 +1,16 @@
 
 
+<<<<<<< HEAD
 
+=======
+@media (max-width: 900px) {
+
+  .k-animation-container .k-popup .k-list-content.k-list-scroller li{
+    height: 50px !important;
+  }
+
+}
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 
 .k-animation-container{
@@ -23,9 +33,15 @@
   background: $list-view-bg-line-default !important;
 }
         & li{
+<<<<<<< HEAD
           height: 30px;
           padding: 0;
 
+=======
+          height: 40px;
+          padding: 0;
+         
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
             &.k-selected.k-focus{
               background: $list-view-selected-line !important;
               border: none;
@@ -143,7 +159,11 @@
       font-size: 14px;
       line-height: 100%;
       color:$window-text-secondary-color;
+<<<<<<< HEAD
       margin-bottom: 20px;
+=======
+      margin-bottom: 2px;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     }
   }
 
@@ -185,7 +205,11 @@
       line-height: 100%;
       color: #690779;
       width: max-content;
+<<<<<<< HEAD
       margin-top: 5px;
+=======
+
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
     }
   }

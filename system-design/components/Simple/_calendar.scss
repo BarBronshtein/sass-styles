@@ -1,0 +1,39 @@
+.k-calendar {
+    a.k-button {
+        color: inherit!important;
+        &:hover{
+            background: initial!important;
+        }
+    }
+    .k-calendar-view {
+        tbody {
+            tr {
+                td {
+                    position: relative;
+
+                    a {
+                        .x-calendar-date-caption {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            font-size: 14px;
+                            color: red;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.k-calendar td.k-focus .k-link, .k-calendar td.k-state-focused .k-link{
+    box-shadow: inset 0 0 4px 0 #DDC3E7;
+
+}
+
+.k-calendar td.k-selected .k-link, .k-calendar td.k-state-selected .k-link{
+    background:#DDC3E7;
+    border: none;
+}

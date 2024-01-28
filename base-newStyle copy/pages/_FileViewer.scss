@@ -1,0 +1,251 @@
+
+html,body{
+    height: 100%;
+
+
+}
+
+
+:root{
+    --tass-bg-page:#fff;
+    --tass-header-bg:#fff;
+    --fileviewer-card-box-shadow: 0px 0px 4px 0px #D9D9D9, 0px 4px 10px 0px rgba(217, 217, 217, 0.50); 
+
+
+    --taas-title-bg-color: #7b098b; 
+    --taas-title-text-color: #fff; 
+    --taas-title-secondary-text-color: #fff; 
+    --taas-bg-color: #ffffff; 
+    --label-text-color-default: #000000; 
+    --label-title-text-color-default: #7b098b; 
+    --fileviewer-card-bg-color-default: #fff; 
+    --fileviewer-card-icon-color: #7b098b; 
+    --fileviewer-card-title-color-default: #7b098b; 
+    --fileviewer-card-subtitle-color-default: #7b098b; 
+    --fileviewer-card-line-color: #dedede; 
+    --fileviewer-card-button-text-color-default: #7e7b7b; 
+    --fileviewer-card-button-icon-color-default: #7e7b7b; 
+    --link-text-color-default: #0eaadc; 
+    --otp-border-color-default: #dedede; 
+    --otp-bg-color-default: #ffffff; 
+    --button-primary-bg-color-default: rgba(142, 187, 207, 1);
+    --button-primary-text-color-default: #ffffff; 
+    --button-primary-icon-color-default: #ffffff; 
+    
+    
+    
+    
+
+}
+
+body:has(#TafnitCore_SaaSServer_Storage_UI_FileViewer){
+    background: var(--taas-bg-color) !important;
+}
+#TafnitCore_SaaSServer_Storage_UI_FileViewer{
+
+header{
+    right: 0px;
+    width: initial;
+    background: var(--tass-header-bg);
+    box-shadow: none;
+    border: none !important;
+    border-radius: 0; 
+    height: 68px;
+
+    & > .x-row{
+        border: none !important;
+        img{
+            width: 130px !important;
+            position: absolute;
+            top: 50%;
+            transform: translateY(50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+}
+  padding: 0;
+    .x-title-tass.row-hidden{
+        position: absolute;
+        height: 268px;
+        left: 0px;
+        top: 68px;
+        background: var(--taas-title-bg-color) !important;
+        border-radius: 20px 20px 0px 0px;
+        border: none !important;
+    }
+
+    .x-card-tass.row-hidden{
+        background: var(--taas-bg-color) !important;
+        border-radius: 20px !important;
+        border: none !important;
+        margin-top: 190px !important;
+        padding: 30px 15px !important;
+        width: 100%;
+        right: 0;
+        padding-bottom: 0 !important;
+
+        .templatex-wrapper{
+            margin: 0;
+        }
+    }
+    .row-hidden{
+        border: none !important;
+        box-shadow: none;
+        background: none !important;
+    }
+
+    
+
+    .xstyle-buttoncontrol-wrapper{
+        margin-top: 0px;
+        margin-bottom: 20px;
+
+        .x-button-wrapper {
+            text-align: center;
+        }
+        button{
+            border-radius: 30px;
+            background: var(--button-primary-bg-color-default);
+            width: auto;
+            color: var(--button-primary-text-color-default);
+            text-align: center;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Heebo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            border: none;
+            padding: 10px 20px;
+
+            span{
+                &::before{
+                    color: var(--button-primary-text-color-default);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .x-label-title {
+        span{
+            color: var(--taas-title-text-color);
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Heebo;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 33px;  
+            margin-top: 35px;
+        }
+    }
+    .x-label-title-secondary {
+        span{
+            color: var(--taas-title-secondary-text-color);
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Heebo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;  
+        }
+    }
+    .x-card-wrapper {
+        border-radius: 6px;
+        padding: 20px;
+        flex: 0 0 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        background: var(--fileviewer-card-bg-color-default);
+        box-shadow: var(--fileviewer-card-box-shadow);
+
+        .x-card-flie {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            padding-bottom: 20px;
+            align-items: center;
+            border-bottom: 1px solid var(--fileviewer-card-line-color) !important;
+            border-radius: 0;
+
+            .icon{
+                padding: 0;
+            }
+            .xstyle-kicon-wrapper{
+                span{
+                    color:var( --fileviewer-card-icon-color);
+                    font-size: 30px;
+                    margin-top: -4px;
+                }
+            }
+
+            .x-card-title {
+              span{
+                overflow: hidden;
+                color: var(--fileviewer-card-title-color-default);
+                text-align: right;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-family: Heebo;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+              }
+            }
+
+            .x-card-subtitle {
+                margin-top: -12px;
+              span{
+
+                overflow: hidden;
+                color: var(--fileviewer-card-subtitle-color-default);
+                text-align: right;
+                text-overflow: ellipsis;
+                font-family: Heebo;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+              }
+            }
+        }
+
+        .x-card-icons{
+
+            & > .col:nth-child(1){
+                padding-right: 0;
+            }
+            & > .col:nth-child(3){
+               padding-left: 0;
+            }
+            & > .col{
+                display: grid;
+                grid-template-columns: auto auto;
+                align-items: center;
+                padding-top: 10px;
+                .k-icon{
+                    color: var(--fileviewer-card-button-icon-color-default);
+                    float: left;
+                    font-size: 20px;
+                }
+
+                .s-dynamic-label-control {
+                    color: var(--fileviewer-card-button-text-color-default);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    font-family: Heebo;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+
+
+}

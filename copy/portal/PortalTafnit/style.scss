@@ -29,12 +29,26 @@
 @import './components/label';
 @import './components/DashboardMobile';
 @import './components/headerMobile';
+<<<<<<< HEAD
+=======
+@import './components/tab';
+@import './components/treeview';
+@import './components/xmenu';
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 @import './page/CloudDashboard';
 @import './page/login';
 @import './page/userDetailes';
 @import './page/ServiceCallCreate';
 @import './page/ClientMobile';
+<<<<<<< HEAD
+=======
+@import './page/ServiceCallCreateMobile';
+@import './page/loginMobile';
+@import './page/MobilePortalTransaction';
+@import './page/AreaSelection';
+@import './page/ServiceCallAction';
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 
 
@@ -47,11 +61,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
+<<<<<<< HEAD
 
 
 body,html{
     font-family: 'Heebo';
     background: #F8F8F8 !important;
+=======
+mainbody > .row{
+&.xtaf-btn-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: var(--row-bg, #FFF);
+    box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+    padding: 20px;
+    margin: 0;
+    & > .col{
+        display: flex;
+        gap: 10px;
+        justify-content: center; 
+    }
+
+    .xstyle-buttoncontrol-wrapper button{
+        min-width: 150px;
+    }
+}
+
+
+.xtaf-icon-goback{
+
+    .x-kicon-caption,.x-dynamic-label-control{
+        color: var(--first-panel-color-title, #7B098B);
+        text-align: right;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-right: 10px;
+    }
+
+    .k-icon {
+      color: #0EAADC;
+      font-size: 12px;
+    }
+}
+}
+
+.icon-xtar-pdf:before {
+    content: "\e98e";
+    font-family: 'icomoon';
+    color: #690779;
+}
+
+body,html{
+    font-family: 'Heebo';
+    line-height: 0;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }
 .border{
     border: none !important;
@@ -83,18 +151,30 @@ body,html{
 .icon-finance-graph:before,
 .icon-export-excel:before ,
     .icon-xtar-print:after {
+<<<<<<< HEAD
     content: "\ea5e";
+=======
+   
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     color:$icon-before ;
 }
 
 .icon-export-excel:after ,
 .icon-xtar-print:before {
     content: "\ea5f";
+<<<<<<< HEAD
     color:$icon-after;
 }
 
 
 .icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2,.icon-tracker{
+=======
+    color:$special-button-color-icon;
+}
+
+
+.icon-message1,.icon-report,.icon-invatation-2,.icon-dilvaery-2,.icon-money-2,.icon-menu-2{
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
     &:before{
         color:$drawer-icon-color-after;
@@ -106,11 +186,19 @@ body,html{
 
 }
 
+<<<<<<< HEAD
 .icon-car:after,.icon-customers::after {
     color: $drawer-icon-color-after;
 }
 
 .icon-car:before,.icon-customers::before{
+=======
+.icon-car:after,.icon-customers::after,.icon-tracker::after {
+    color: $drawer-icon-color-after;
+}
+
+.icon-car:before,.icon-customers::before,.icon-tracker::before{
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     color:$drawer-icon-color-before;
 }
 
@@ -130,6 +218,10 @@ body,html{
 
     .k-drawer-overlay.k-drawer-right .k-drawer{
         width: 40px;
+<<<<<<< HEAD
+=======
+        overflow-x: hidden;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
        }
 }
 
@@ -141,4 +233,32 @@ body,html{
 
 .justify-content-start {
     justify-content:end !important;
+<<<<<<< HEAD
   }
+=======
+  }
+
+  .x-control-wrapper .x-control-caption-wrapper{
+    max-height: 25px;
+  }
+
+  .x-login-user-error {
+    border: 1px solid red !important;
+}
+
+.INDMobile{
+    background: none !important;
+}
+
+.k-i-file-image{
+    &::before{
+        content: "\e9af";
+        color: #690779 !important;
+        font-family: "icomoon";
+    }
+}
+
+img{
+    margin: auto;
+}
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60

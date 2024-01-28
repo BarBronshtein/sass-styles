@@ -32,7 +32,11 @@
         display: grid;
         grid-template-columns: 1fr auto;
         gap: 15px;
+<<<<<<< HEAD
 
+=======
+         margin-top: -7px;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
         & >div{
             align-self: center;
             top: 15px;

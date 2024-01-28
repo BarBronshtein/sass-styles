@@ -493,7 +493,8 @@ span.mandatory.active+label.switch>input.switch-input+span.switch-label,
 span.mandatory.active+textarea.k-textbox,
 span.mandatory.active+span.k-datepicker>span.k-picker-wrap>input,
 span.mandatory.active~label.k-checkbox-label:before,
-span.mandatory.active+span.k-switch.k-widget .k-switch-container {
+span.mandatory.active+span.k-switch.k-widget .k-switch-container,
+.p-floating-container.xstyle-idropdownlist-wrapper span.mandatory.active + .k-picker  {
     background: $workflow-mandatory-background !important;
 }
 

@@ -122,9 +122,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-textcontrol-wrapper input:focus {
   box-shadow: inset 4px 4px 5px rgba(57, 181, 74, 0.2) !important;
 }
-.xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #BBBBBB !important;
-}
 .xstyle-textcontrol-wrapper input::placeholder {
   color: #BBBBBB !important;
 }
@@ -132,10 +129,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_HomePage .xstyle-textcontrol-wrapper input {
   font-size: 20px !important;
   border-radius: 30px !important;
-}
-
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_TreatmentOrder .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_onTheVehicle .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_VehivleDetails .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_PersonalDriver .tbMainSubject input.k-textbox::-moz-placeholder, #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_Contact .tbMainSubject input.k-textbox::-moz-placeholder {
-  color: black !important;
 }
 
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_AccidentReportPage .tbMainSubject input.k-textbox::placeholder,
@@ -215,18 +208,12 @@ div[uxid=tbID], div[uxid=tbPassword] {
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input {
   margin-bottom: 15px !important;
 }
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: black;
-}
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input::placeholder {
   color: black;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within {
   background: #39B54A !important;
   box-shadow: inset 5px 5px 10px rgba(0, 1, 2, 0.15) !important;
-  color: #FFFFFF !important;
-}
-#TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within::-moz-placeholder {
   color: #FFFFFF !important;
 }
 #TafnitCore_SaaSServer_Portal_PortalDrivers_UI_DateCoordination .xstyle-textcontrol-wrapper input:focus-within::placeholder {
@@ -609,6 +596,7 @@ div[uxid=lLastUpdate] {
   height: 75px;
   font-size: 28px !important;
   border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.15) !important;
   box-shadow: 0px 0px 4px rgba(57, 181, 74, 0.15) !important;
   right: 11px !important;
   max-width: 43%;
@@ -748,9 +736,6 @@ div[uxid=lLastUpdate] {
   flex-grow: 0;
   color: black !important;
   padding-right: 5px !important;
-}
-.xstyle-date-wrapper span.k-datepicker::-moz-placeholder, .xstyle-date-wrapper input::-moz-placeholder {
-  color: #000000 !important;
 }
 .xstyle-date-wrapper span.k-datepicker::placeholder, .xstyle-date-wrapper input::placeholder {
   color: #000000 !important;

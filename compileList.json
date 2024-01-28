@@ -1,0 +1,71 @@
+[
+    {
+      "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\Matrix\\PortalSuppliers\\style.scss",
+      "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\Matrix\\suppliers\\style.css",
+      "client":"מטריקס",
+      "type":"ספקים"
+    },
+  
+
+
+    {
+        "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\albar\\Portal\\PortalCustomer\\style.scss",
+        "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\albar\\ImporterCustomers\\style.css",
+        "client":"אלבר",
+        "type":"לקוחות"
+    },  
+    {
+        "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\albar\\Portal\\Funding\\style.scss",
+        "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\albar\\funding\\style.css",
+        "client":"אלבר",
+        "type":"מימון"
+    },  
+    {
+        "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\albar\\Tass\\style.scss",
+        "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\albar\\Tass\\style.css",
+        "client":"אלבר",
+        "type":"שירותי ענן"
+    },  
+
+
+    {
+        "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\Aloni\\style.scss",
+        "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\alony\\SaleMan\\style.css",
+        "client":"אלוני",
+        "type":"פורטל אלוני"
+    },  
+    
+    
+    {
+        "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\Avis\\avisPayment\\style.scss",
+        "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\Avis\\payments\\style.css",
+        "client":"אוויס",
+        "type": "שירותי ענן"
+    },  
+    {
+      "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\Avis\\PortalCustomer\\style.scss",
+      "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\Avis\\ImporterCustomers\\style.css",
+      "client":"אוויס",
+      "type": "לקוחות"
+  },
+
+
+  
+
+    {
+      "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\Chil\\Transportation\\style.scss",
+      "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\chil\\Transportation\\style.css",
+      "client":"חיל",
+      "type": "שינוע"
+  },
+
+
+  {
+    "input": "C:\\Users\\galhaise\\Desktop\\base\\site\\Best-mobile\\PortalSuppliers\\style.scss",
+    "output": "\\\\10.99.160.4\\xtafnit\\Styles\\CustomerEx\\best-mobile\\suppliers\\style.css",
+    "client":"בסט-מובייל",
+    "type":"ספקים"
+  }
+
+
+  ]

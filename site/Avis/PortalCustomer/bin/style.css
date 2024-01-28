@@ -1,49 +1,7 @@
-/*header*/
-/*footer*/
-/*row*/
-/*window*/
-/*drawer*/
-/*k-animator*/
-/*k-filter*/
-/*button*/
-/*autocomplete*/
-/*calendar*/
-/*date-picker*/
-/*checkbox*/
-/*textbox*/
-/*virutal-keyboard*/
-/*drop-down*/
-/*grid*/
-/*time picker*/
-/*float-button*/
-/*textarea*/
-/*upload*/
-/*multiselect*/
-/*tabstrip*/
-/*slider*/
-/*rating*/
-/*radio*/
-/*freehand*/
-/*portal*/
-/*link*/
-/*stepper*/
-/*menu*/
-/*workflow*/
-/*timeline*/
-/*tooltip*/
-/*header mobile */
-/*consumer-product*/
-/*lookup*/
-/*websdk*/
-/*required*/
-/*funding*/
-/*phone*/
-/*spinner*/
-/*Dashboard*/
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Heebo:wght@100;300;500&display=swap");
-.xstyle-textareacontrol-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-autocomplete-wrapper label, .k-window:has(.k-edit-form-container) .k-form-field label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label {
+.xstyle-multiselect-wrapper label, .xstyle-textareacontrol-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-autocomplete-wrapper label, .k-window:has(.k-edit-form-container) .k-form-field label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -54,7 +12,7 @@
   margin: 0;
 }
 
-.xstyle-textareacontrol-wrapper textarea, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper .k-autocomplete, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-window:has(.k-edit-form-container) .k-input.k-textbox, .k-window:has(.k-edit-form-container) .k-numerictextbox, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-textcontrol-wrapper input, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox {
+.xstyle-multiselect-wrapper .x-multiselect-wrapper, .xstyle-textareacontrol-wrapper textarea, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper .k-autocomplete, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-window:has(.k-edit-form-container) .k-input.k-textbox, .k-window:has(.k-edit-form-container) .k-numerictextbox, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-textcontrol-wrapper input, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox {
   height: 50px;
   background: #ffffff;
   border: 1px solid #a6a6a6;
@@ -108,61 +66,19 @@
   min-width: 200px;
 }
 
-/*header*/
-/*footer*/
-/*row*/
-/*window*/
-/*drawer*/
-/*k-animator*/
-/*k-filter*/
-/*button*/
-/*autocomplete*/
-/*calendar*/
-/*date-picker*/
-/*checkbox*/
-/*textbox*/
-/*virutal-keyboard*/
-/*drop-down*/
-/*grid*/
-/*time picker*/
-/*float-button*/
-/*textarea*/
-/*upload*/
-/*multiselect*/
-/*tabstrip*/
-/*slider*/
-/*rating*/
-/*radio*/
-/*freehand*/
-/*portal*/
-/*link*/
-/*stepper*/
-/*menu*/
-/*workflow*/
-/*timeline*/
-/*tooltip*/
-/*header mobile */
-/*consumer-product*/
-/*lookup*/
-/*websdk*/
-/*required*/
-/*funding*/
-/*phone*/
-/*spinner*/
-/*Dashboard*/
-.xstyle-textareacontrol-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-autocomplete-wrapper label, .k-window:has(.k-edit-form-container) .k-form-field label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label {
+.xstyle-multiselect-wrapper label, .xstyle-textareacontrol-wrapper label, .xstyle-intlphonenumber-wrapper label, .xstyle-timepicker-wrapper label, .xstyle-autocomplete-wrapper label, .k-window:has(.k-edit-form-container) .k-form-field label, .xstyle-idropdownlist-wrapper label, .xstyle-date-wrapper label, .xstyle-textcontrol-wrapper label {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   text-align: right;
   color: #4e4e4e;
   margin: 0;
 }
 
-.xstyle-textareacontrol-wrapper textarea, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper .k-autocomplete, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-window:has(.k-edit-form-container) .k-input.k-textbox, .k-window:has(.k-edit-form-container) .k-numerictextbox, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-textcontrol-wrapper input, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox {
-  height: 50px;
+.xstyle-multiselect-wrapper .x-multiselect-wrapper, .xstyle-textareacontrol-wrapper textarea, .xstyle-intlphonenumber-wrapper input, .xstyle-intlphonenumber-wrapper.k-state-disabled input, .xstyle-timepicker-wrapper input, .xstyle-timepicker-wrapper.k-state-disabled input.k-textbox, .xstyle-autocomplete-wrapper .k-autocomplete, .xstyle-autocomplete-wrapper.k-state-disabled input.k-textbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-textbox.k-input.k-input-md.k-rounded-md.k-input-solid, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-datepicker, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-numerictextbox, .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md, .k-window:has(.k-edit-form-container) .k-input.k-textbox, .k-window:has(.k-edit-form-container) .k-numerictextbox, .xstyle-idropdownlist-wrapper span.x-dropdown-comp.s-dropdown-comp, .xstyle-date-wrapper span.k-datepicker, .xstyle-date-wrapper .s-datePickerResponsive.x-datePicker-mobile, .xstyle-textcontrol-wrapper input, .xstyle-textcontrol-wrapper.k-state-disabled input.k-textbox {
+  height: 40px;
   background: #ffffff;
   border: 1px solid #a6a6a6;
   border-radius: 10px;
@@ -202,7 +118,7 @@
 
 .k-animation-container .k-popup.k-timeselector .k-button-solid-primary, .k-window:has(.k-edit-form-container) button, .xstyle-buttoncontrol-wrapper button, .gridHeaderButton button {
   background: #db1c33;
-  border: none;
+  border: 1px solid #db1c33;
   border-radius: 10px;
   align-items: center;
   height: 50px !important;
@@ -485,7 +401,6 @@ mainbody > .row.boxShadow-0.border-0 > div {
 }
 
 .k-drawer-item.k-drawer-separator {
-  background: #ffffff;
   height: 1px;
   width: 90%;
   align-self: center;
@@ -599,6 +514,13 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   font-family: "Heebo";
 }
 
+.k-grid .k-auto-scrollable {
+  background: none !important;
+}
+.k-grid .k-auto-scrollable .k-alt {
+  background: none !important;
+}
+
 .portalGrid h4 {
   font-family: "Heebo";
   font-style: normal;
@@ -682,13 +604,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .k-grid .k-grid-header {
   background: none;
   border: none;
-  padding: 10px 0px;
-}
-.k-grid .k-grid-header .k-grid-filter.k-state-active {
-  background: #ccc;
-}
-.k-grid .k-grid-header .k-grid-filter.k-state-active span:before {
-  color: #fff !important;
 }
 .k-grid .k-grid-header tr:hover, .k-grid .k-grid-header tr:hover td {
   background-image: none !important;
@@ -724,12 +639,7 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .k-grid .k-grid-content tr {
   transition: 0.6s all;
 }
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap {
-  border-color: #000;
-}
 .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link {
-  background-color: #9e30bf;
-  color: #fff;
   transition: 0.2s all;
 }
 .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link:hover {
@@ -738,7 +648,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .k-grid .k-grid-content tr:hover, .k-grid .k-grid-content tr:hover td {
   background-image: none;
   background-color: #f8f8f8 !important;
-  color: #000 !important;
 }
 .k-grid .k-grid-content tr.k-selected {
   background: none !important;
@@ -749,24 +658,12 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   color: #000 !important;
 }
 .k-grid .k-grid-content td {
-  border: none;
-  border-left: none;
   font-size: 14px;
-  padding: 10px 0px;
 }
 .k-grid .k-grid-content td .col-template-val {
   margin: 0;
 }
-.k-grid .k-grid-content .k-alt {
-  background: none;
-}
-@media only screen and (max-width: 768px) {
-  .k-grid .k-grid-content .k-alt {
-    background: #fdf9ff;
-  }
-}
 .k-grid .k-grid-pager {
-  background: none;
   border: none;
 }
 .k-grid .k-grid-pager .k-pager-nav {
@@ -778,16 +675,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 }
 .k-grid .k-grid-pager .k-link:hover {
   background-image: none !important;
-  background-color: #9e30bf !important;
-  color: #ebebeb !important;
-}
-.k-grid .k-grid-footer {
-  background-color: #fff;
-  border-color: #eee;
-}
-.k-grid .k-grid-footer td {
-  background-color: #fff;
-  border-color: #eee;
 }
 .k-grid .k-auto-scrollable {
   scrollbar-face-color: #db1c33;
@@ -798,21 +685,11 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   scrollbar-highlight-color: #000;
   scrollbar-shadow-color: #000;
   scrollbar-darkshadow-color: #000;
-}
-.k-grid .k-auto-scrollable::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-.k-grid .k-auto-scrollable::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  background: #7d0a8c;
+  background: #c4192e;
 }
 .k-grid .k-auto-scrollable::-webkit-scrollbar-thumb {
   background: #db1c33;
   border-radius: 10px;
-}
-.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb:hover {
-  background: #c4192e;
 }
 
 .k-separator {
@@ -843,15 +720,12 @@ th .grid-bt:focus {
 
 .grid-icon {
   font-size: 30px;
-  color: #7d0a8c;
 }
 
 .grid-border-bt {
   margin-left: 20px;
-  background: #ffffff;
   width: 50px;
   height: 50px;
-  box-shadow: rgba(123, 9, 141, 0.08);
   border-radius: 10px;
 }
 
@@ -872,14 +746,8 @@ th .grid-bt:focus {
 .grid-import-bt {
   width: 50px;
   height: 50px;
-  background: #7d0a8c;
-  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
   border-radius: 10px;
 }
-.grid-import-bt > span {
-  color: #ffffff;
-}
-
 .grid-enable-bt {
   opacity: 0.2;
 }
@@ -891,14 +759,8 @@ th .grid-bt:focus {
 .grid-import-bt {
   width: 50px;
   height: 50px;
-  background: #7d0a8c;
-  box-shadow: 0px 0px 8px;
   border-radius: 10px;
 }
-.grid-import-bt > span {
-  color: #ffffff;
-}
-
 .grid-enable-bt {
   opacity: 0.2;
 }
@@ -911,7 +773,6 @@ th .grid-bt:focus {
 .grid-filter-card {
   font-size: 12px;
   height: 30px;
-  background: #f5f5f5;
   margin-right: 12px;
   text-align: right;
   display: flex;
@@ -926,7 +787,6 @@ th .grid-bt:focus {
 
 .girid-label {
   margin-top: 7px;
-  font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -949,41 +809,20 @@ mainbody mainbody {
   margin-bottom: 16px;
   width: 101%;
 }
-.x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable > :nth-child(2).k-button:hover {
-  background: #690779 !important;
-  opacity: 1 !important;
-}
-.x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable > :nth-child(2).k-button:focus {
-  background: #690779 !important;
-}
-.x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable > :nth-child(2) > span {
-  color: white !important;
-}
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable a.k-disabled span.k-icon {
   color: #C8C8C8 !important;
 }
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button {
   width: 50px;
   height: 50px;
-  background: #ffffff;
-  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
   border-radius: 10px !important;
   border: none !important;
   margin-left: 20px;
 }
-.x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button#xNew {
-  background: #7d0a8c !important;
-}
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button#xNew .k-icon.primary-color-button {
   color: white !important;
 }
-.x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button.k-toolbar-first-visible {
-  background: #7d0a8c !important;
-}
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button:hover {
-  background: #ffffff !important;
-  opacity: 0.5;
-  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px;
 }
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button > span {
@@ -997,23 +836,14 @@ mainbody mainbody {
   top: 0 !important;
 }
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group {
-  background: #ffffff;
-  box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
   border-radius: 10px;
   margin-left: 20px !important;
-}
-.x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group:focus-within {
-  box-shadow: 0px 0px 5px rgba(123, 9, 141, 0.25) !important;
 }
 .x-control-content-wrapper.s-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-button-group .k-button {
   border: none !important;
   box-shadow: 0px 0px 0px 0px !important;
   margin-left: 0px !important;
   background: white;
-}
-
-.k-pager-info.k-label {
-  color: #000000 !important;
 }
 
 .roundedNoneMobile {
@@ -1029,12 +859,10 @@ mainbody mainbody {
   margin-top: 0 !important;
 }
 .roundedNoneMobile > :last-child > :first-child > div > div > div > h4 {
-  font-family: "Heebo" !important;
   font-style: normal;
   font-weight: 400 !important;
   font-size: 30px !important;
   line-height: 30px;
-  color: #7B098B !important;
 }
 .roundedNoneMobile > :last-child > :nth-child(2) {
   width: auto;
@@ -1046,7 +874,6 @@ mainbody mainbody {
 .roundedNoneMobile > :last-child > :nth-child(2) > .rectAll {
   width: 100px;
   height: 35px;
-  box-shadow: 0px 4px 8px rgba(126, 123, 123, 0.1);
   border-radius: 10px;
 }
 .roundedNoneMobile > :last-child > :nth-child(2) > .rectFrozen {
@@ -1066,7 +893,6 @@ mainbody mainbody {
   font-weight: 700 !important;
 }
 .roundedNoneMobile > :last-child > :nth-child(2) > div > div > div > div > div > span {
-  font-family: "Heebo" !important;
   font-style: normal !important;
   font-weight: 300 !important;
   font-size: 13px !important;
@@ -1096,6 +922,7 @@ mainbody mainbody {
   justify-content: center;
   margin: auto;
   margin-bottom: 15px;
+  background: none;
 }
 .k-pager-wrap.k-grid-pager.k-floatwrap > .k-pager-nav:hover {
   border: none !important;
@@ -1212,7 +1039,6 @@ mainbody mainbody {
   display: inline-block;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td {
-  font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1227,9 +1053,6 @@ mainbody mainbody {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-right: 10px;
-}
-.k-grid-content.k-auto-scrollable > table > tbody > tr > td.text-spicel {
-  color: #7B098B !important;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td a {
   font-family: "Heebo";
@@ -1253,16 +1076,6 @@ mainbody mainbody {
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td:last-child > a > i.icon-xtab-ok {
   border-right: 1px solid #F5F5F5 !important;
 }
-.k-grid-content.k-auto-scrollable > table > tbody > tr > td > .statusOngoing {
-  background: none !important;
-  font-family: "Heebo" !important;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
-  text-align: right;
-  color: #000000 !important;
-}
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td > i.fa-wrench {
   font-size: 25px !important;
 }
@@ -1279,15 +1092,6 @@ mainbody mainbody {
 .k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > a {
   width: 34px;
   margin-right: -10px !important;
-}
-.k-grid-header-wrap.k-auto-scrollable > table > thead > tr > th > span > span {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 130%;
-  text-align: right;
-  color: #a50017;
 }
 .k-grid-header-wrap.k-auto-scrollable .k-grid-filter-menu.k-grid-filter {
   padding: 0 !important;
@@ -1333,18 +1137,9 @@ mainbody mainbody {
   border: none !important;
   width: 50px;
   height: 50px;
-  background: #ffffff !important;
-  box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
   top: 4px;
   margin-left: 13px;
-}
-.k-toolbar.k-toolbar-resizable > .k-overflow-anchor.k-button.k-button-md.k-rounded-md.k-button-flat:focus-within {
-  border: 1px solid #DDC3E7 !important;
-  box-shadow: 0px 0px 5px rgba(123, 9, 141, 0.25) !important;
-}
-.k-toolbar.k-toolbar-resizable > .k-overflow-anchor.k-button.k-button-md.k-rounded-md.k-button-flat span {
-  color: #7d0a8c !important;
 }
 .k-toolbar.k-toolbar-resizable > .k-overflow-anchor.k-button.k-button-md.k-rounded-md.k-button-flat span::before {
   top: 0 !important;
@@ -1382,7 +1177,6 @@ mainbody mainbody {
 .k-pager-sizes.k-label {
   position: absolute;
   left: 0;
-  font-family: "Heebo";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -1392,6 +1186,7 @@ mainbody mainbody {
 }
 .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
   background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px !important;
   width: 80px !important;
@@ -1400,7 +1195,6 @@ mainbody mainbody {
   border: none;
 }
 .k-pager-sizes.k-label > span > span {
-  font-family: "Heebo" !important;
   font-style: normal !important;
   font-weight: 400;
   font-size: 13px !important;
@@ -1439,7 +1233,6 @@ mainbody mainbody {
 .k-animation-container.k-split-wrapper,
 .k-animation-container {
   background: #FBFBFB !important;
-  box-shadow: rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px !important;
 }
 .k-animation-container.k-split-wrapper #xExport_buttonmenu, .k-animation-container.k-split-wrapper #xImport_buttonmenu, .k-animation-container.k-split-wrapper #xExport_optionlist, .k-animation-container.k-split-wrapper .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up, .k-animation-container.k-split-wrapper .k-menu.k-menu-vertical.k-context-menu.k-popup,
@@ -1506,7 +1299,6 @@ mainbody mainbody {
 .k-animation-container .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item .k-link.k-menu-link .k-i-grid-icon,
 .k-animation-container .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item .k-link.k-menu-link .k-i-grid-icon {
   font-size: 22px;
-  color: #7B098B;
 }
 .k-animation-container.k-split-wrapper #xExport_buttonmenu .k-item > span, .k-animation-container.k-split-wrapper #xImport_buttonmenu .k-item > span, .k-animation-container.k-split-wrapper #xExport_optionlist .k-item > span, .k-animation-container.k-split-wrapper .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item > span, .k-animation-container.k-split-wrapper .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item > span,
 .k-animation-container #xExport_buttonmenu .k-item > span,
@@ -1517,13 +1309,11 @@ mainbody mainbody {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   min-height: 44px;
-  font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   background: none !important;
-  color: #000000;
 }
 .k-animation-container.k-split-wrapper #xExport_buttonmenu .k-item > span > span:first-child, .k-animation-container.k-split-wrapper #xImport_buttonmenu .k-item > span > span:first-child, .k-animation-container.k-split-wrapper #xExport_optionlist .k-item > span > span:first-child, .k-animation-container.k-split-wrapper .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item > span > span:first-child, .k-animation-container.k-split-wrapper .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item > span > span:first-child,
 .k-animation-container #xExport_buttonmenu .k-item > span > span:first-child,
@@ -1532,7 +1322,6 @@ mainbody mainbody {
 .k-animation-container .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item > span > span:first-child,
 .k-animation-container .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item > span > span:first-child {
   font-size: 22px;
-  color: #7B098B;
 }
 .k-animation-container.k-split-wrapper #xExport_buttonmenu .k-item > span > span:first-child.k-menu-link-text, .k-animation-container.k-split-wrapper #xImport_buttonmenu .k-item > span > span:first-child.k-menu-link-text, .k-animation-container.k-split-wrapper #xExport_optionlist .k-item > span > span:first-child.k-menu-link-text, .k-animation-container.k-split-wrapper .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item > span > span:first-child.k-menu-link-text, .k-animation-container.k-split-wrapper .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item > span > span:first-child.k-menu-link-text,
 .k-animation-container #xExport_buttonmenu .k-item > span > span:first-child.k-menu-link-text,
@@ -1540,13 +1329,11 @@ mainbody mainbody {
 .k-animation-container #xExport_optionlist .k-item > span > span:first-child.k-menu-link-text,
 .k-animation-container .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item > span > span:first-child.k-menu-link-text,
 .k-animation-container .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item > span > span:first-child.k-menu-link-text {
-  font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   background: none !important;
-  color: #000000;
 }
 .k-animation-container.k-split-wrapper #xExport_buttonmenu .k-item > span:hover, .k-animation-container.k-split-wrapper #xExport_buttonmenu .k-item a:hover, .k-animation-container.k-split-wrapper #xImport_buttonmenu .k-item > span:hover, .k-animation-container.k-split-wrapper #xImport_buttonmenu .k-item a:hover, .k-animation-container.k-split-wrapper #xExport_optionlist .k-item > span:hover, .k-animation-container.k-split-wrapper #xExport_optionlist .k-item a:hover, .k-animation-container.k-split-wrapper .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item > span:hover, .k-animation-container.k-split-wrapper .k-overflow-container.k-list-container.k-popup.k-group.k-reset.k-state-border-up .k-item a:hover, .k-animation-container.k-split-wrapper .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item > span:hover, .k-animation-container.k-split-wrapper .k-menu.k-menu-vertical.k-context-menu.k-popup .k-item a:hover,
 .k-animation-container #xExport_buttonmenu .k-item > span:hover,
@@ -1742,7 +1529,6 @@ mainbody mainbody {
   font-size: 13px;
   line-height: 120%;
   color: #8e8e8e;
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -1865,9 +1651,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   box-shadow: 0px 1px 3px 0px rgba(193, 26, 46, 0.3), 0px 4px 8px 0px rgba(193, 26, 46, 0.1) !important;
   border: 1px solid #f54c60 !important;
 }
-.xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #c7c7c7 !important;
-}
 .xstyle-textcontrol-wrapper input::placeholder {
   color: #c7c7c7 !important;
 }
@@ -1891,9 +1674,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   width: 100%;
   height: 50px;
   align-self: center;
-}
-.xstyle-date-wrapper span.k-datepicker::-moz-placeholder, .xstyle-date-wrapper input::-moz-placeholder {
-  color: #c7c7c7 !important;
 }
 .xstyle-date-wrapper span.k-datepicker::placeholder, .xstyle-date-wrapper input::placeholder {
   color: #c7c7c7 !important;
@@ -2523,12 +2303,12 @@ div[uxid=tbID], div[uxid=tbPassword] {
   height: 40px;
   padding: 0;
 }
-.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus {
+.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus, .k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected {
   background: #db1c33;
   border: none;
   box-shadow: none;
 }
-.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus .k-list-item-text {
+.k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected.k-focus .k-list-item-text, .k-animation-container .k-popup .k-list-content.k-list-scroller li.k-selected .k-list-item-text {
   color: #ffffff;
   font-weight: 700;
 }
@@ -2654,7 +2434,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   font-size: 14px;
   line-height: 100%;
   color: #690779;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }
@@ -2799,7 +2578,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   border-top-right-radius: 0px;
   border-top-left-radius: s0px;
   padding-top: 12px;
-  font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2895,7 +2673,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   border-radius: 10px;
   border: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button:hover {
   background: #eb4c5f;
@@ -2928,7 +2706,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
 }
 .k-animation-container .k-filter-menu > .k-filter-menu-container > .k-action-buttons > button.k-button-solid-base:focus {
   background: #ffffff;
-  box-shadow: none;
+  box-shadow: 0px 1px 3px 0px rgba(193, 26, 46, 0.3), 0px 4px 8px 0px rgba(193, 26, 46, 0.1);
   color: #c11a2e;
   border: 1px solid #EB4C5F;
   opacity: 1;
@@ -3096,9 +2874,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
 .xstyle-autocomplete-wrapper .k-autocomplete:focus-within {
   box-shadow: 0px 1px 3px 0px rgba(193, 26, 46, 0.3), 0px 4px 8px 0px rgba(193, 26, 46, 0.1) !important;
   border: 1px solid #f54c60 !important;
-}
-.xstyle-autocomplete-wrapper .k-autocomplete::-moz-placeholder {
-  color: #c7c7c7 !important;
 }
 .xstyle-autocomplete-wrapper .k-autocomplete::placeholder {
   color: #c7c7c7 !important;
@@ -3545,7 +3320,7 @@ div[uxid=tbID], div[uxid=tbPassword] {
   color: #c7c7c7;
   text-align: center;
   font-family: Heebo;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 18px;
@@ -4164,7 +3939,6 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   right: -16px;
 }
 .row-list .list label {
-  width: -moz-max-content;
   width: max-content;
   font-family: "Heebo";
   font-style: normal;
@@ -4228,6 +4002,80 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   border: none;
 }
 
+:root {
+  --multiselect-bg-color-hover: rgba(245, 245, 245, 1);
+  --multiselect-bg-color-default: rgba(255, 255, 255, 1);
+  --mulltiselect-border-color-default: rgba(222, 222, 222, 1);
+  --multiselect-border-color-focus: rgba(172, 206, 221, 1);
+  --multiselect-border-color-error: rgba(238, 9, 9, 1);
+  --chip-bg-color-default: rgba(245, 245, 245, 1);
+  --chip-border-color-default: rgba(222, 222, 222, 1);
+}
+
+.xstyle-multiselect-wrapper input.k-input {
+  padding-top: 5.5px;
+  padding-bottom: 5.5px;
+}
+.xstyle-multiselect-wrapper .k-chip-solid-base {
+  border-radius: 4px;
+  border: 1px solid var(--mulltiselect-border-color-default);
+  background: var(--multiselect-bg-color-default);
+}
+.xstyle-multiselect-wrapper .k-chip-solid-base .k-chip-label {
+  color: #000000;
+  text-align: center;
+  /* Base Text */
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.xstyle-multiselect-wrapper .k-chip-solid-base .k-chip-icon {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.xstyle-multiselect-wrapper .k-chip-solid-base .k-chip-icon::before {
+  content: "\e9c2";
+  font-family: "icomoon";
+  color: #000000;
+}
+.xstyle-multiselect-wrapper.k-state-disabled {
+  opacity: 1;
+}
+.xstyle-multiselect-wrapper.k-state-disabled .x-multiselect-wrapper {
+  background: var(--chip-bg-color-default);
+  border: 1px solid var(--chip-border-color-default);
+}
+.xstyle-multiselect-wrapper.k-state-disabled label {
+  color: #000000;
+}
+.xstyle-multiselect-wrapper .x-multiselect-wrapper {
+  padding-right: 10px;
+  align-items: center;
+}
+.xstyle-multiselect-wrapper .x-multiselect-wrapper.x-login-user-error {
+  border-bottom: 1px solid #ed2f2f;
+}
+.xstyle-multiselect-wrapper .x-multiselect-wrapper:focus, .xstyle-multiselect-wrapper .x-multiselect-wrapper:focus-within {
+  box-shadow: 0px 1px 3px 0px rgba(193, 26, 46, 0.3), 0px 4px 8px 0px rgba(193, 26, 46, 0.1) !important;
+  border: 1px solid #f54c60 !important;
+  outline: none !important;
+}
+.xstyle-multiselect-wrapper .x-multiselect-wrapper::placeholder {
+  color: #c7c7c7 !important;
+}
+.k-multiselect-wrap {
+  min-height: 37px;
+}
+.k-multiselect-wrap input {
+  width: auto !important;
+}
+.k-multiselect-wrap li.k-button {
+  margin-top: 3.2px;
+  margin-bottom: 3.2px;
+}
+
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login .xtaf-logo-image .x-image-wrapper {
   text-align: center !important;
   margin-bottom: 15px;
@@ -4235,6 +4083,10 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login .xtaf-logo-image img {
   width: 284px !important;
   height: auto !important;
+<<<<<<< HEAD
+=======
+  margin: auto;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 }
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login div[uxid=cPassword1] {
   margin-bottom: 10px !important;
@@ -4271,11 +4123,15 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .checkboxHorizontal > div > div > div {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 1 0% !important;
     flex: 0 1 0% !important;
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .checkboxHorizontal > div > div > div:first-child {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 0 0% !important;
     flex: 1 0 0% !important;
   }
 }
@@ -4284,6 +4140,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .xstyle-textcontrol-wrapper.x-login-user-error-msg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -4297,6 +4156,8 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   }
 }
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody [xid=controlcLogin1] {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
   flex: 0;
   margin: 20px auto;
   padding: 0;
@@ -4365,6 +4226,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .xstyle-checkbox-wrapperr {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -4378,6 +4242,9 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 }
 
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody [xid=controlrLogin] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 550px;
   min-height: 450px;
@@ -4407,6 +4274,7 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .col {
+    -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
   #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .xstyle-checkbox-wrapper {
@@ -4496,7 +4364,6 @@ header.navbar-fixed-top.header-customer .details .left .xstyle-dynamiclabelcontr
   font-size: 14px;
   line-height: 100%;
   color: #db1c33;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }

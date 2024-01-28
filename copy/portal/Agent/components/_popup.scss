@@ -67,6 +67,13 @@
                 color: $list-view-text-default;
             }
 
+
+            &.k-list-item.k-selected{
+              background: #ae2a30;
+              span{
+              color: white !important;
+              }
+            }
         }
     }
   }

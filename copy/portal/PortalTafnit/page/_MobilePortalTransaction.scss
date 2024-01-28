@@ -1,0 +1,31 @@
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_MobilePortalTransaction{
+
+    padding-bottom: 80px;
+
+    div[uxid=cTitle], div[uxid=ciGoBack2]{
+        display: block;
+    }
+    .header-grid {
+        align-items: center;
+    }
+.row-list{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+background: var(--row-bg, #FFF);
+padding: 20px;
+box-shadow: 0px 0px 10px 0px rgba(103, 103, 103, 0.15);
+
+.list label{
+    margin-bottom: -8px;
+}
+}
+
+}
+
+
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_PortalTransaction{
+.k-grid-content.k-auto-scrollable{
+    max-height: none;
+}
+}

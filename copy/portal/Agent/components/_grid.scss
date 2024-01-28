@@ -6,7 +6,7 @@
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 120%;
     color: $grid-title-heder-h4-color;
     height: auto;
@@ -61,7 +61,8 @@
     th,td{
       & input.k-checkbox{
         border-color: $grid-checkbox-border;
-      
+        width: 14px;
+        height: 14px;
 
         &:checked{
             border-color: $grid-checkbox-checked-border;
@@ -818,6 +819,17 @@
           text-overflow: ellipsis;
           padding-right: 10px;
 
+
+          span.k-textbox {
+            border: none !important;
+            &:focus,&:focus-within{
+              box-shadow: 0px 0px 3px 0px rgba(53, 113, 188, 0.50) !important;
+            }
+            input{
+              border: none !important;
+              color: #000 !important;
+            }
+          }
           &.text-spicel{
             color: #7B098B !important;
           }
@@ -920,8 +932,8 @@
         
       & .k-icon.k-i-filter::before{
 
-        content: "\e971" !important;
-        color: #7B098B !important;
+        content: "\ea74" !important;
+        font-family: 'icomoon' !important;
       }
 
      }
@@ -1379,3 +1391,7 @@
  }
 
 
+ .k-grid .k-cell-inner{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}

@@ -1,0 +1,185 @@
+
+#TafnitCore_SaaSServer_DigitalInvoice_UI_ReceiptPage{
+
+    & .logoReceipt {
+        background: none ;
+        border: none ;
+        & div{
+            height: 120px;
+            border: none ;
+        }
+
+        & img{
+            position: absolute;
+            width: 43%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+    & .mainReceipt{
+        background: #FCFCFC;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        border-radius: 8px;
+        padding: 20px;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 33vh;
+
+        & .xstyle-image-wrapper{
+            width: 40%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        & .gridReceipt{
+            & .x-grid-control.s-grid-control{
+                border: none;
+
+                & table{
+                    border-collapse: collapse ;
+                    background: #FCFCFC;
+                    & tr:has(span){
+                        background: #E6E6E6 ;
+                        & td{
+                            font-weight: 700 ;
+                            font-size: 16px ;
+                        }
+                    }
+                    & tr{
+                        background:none ;
+                        height: 44px;
+                        border-bottom: 1px solid #F5F5F5 ;
+                        & td{
+                            font-family: 'Assistant';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 100%;
+                            color: #000000;
+                            border: none ;
+                            &:nth-child(2){
+                                width: 40%;
+                                direction: ltr;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    & .tabelReceipt {
+        
+            background: none ;
+            border: none ;
+            width: 95%;
+            margin: auto;
+            margin-top: 50px;
+      
+        & label{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            color: #000000 ;
+            text-align: center ;
+            border-bottom: 1px solid #F5F5F5 ;
+
+        }
+
+        & span{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #000000;
+            text-align: center;
+        }
+
+    }
+
+    & .bodyReceipt{
+        position: absolute;
+        bottom: 29px;
+        background: none;
+        border: none ;
+        width: 95%;
+        }
+    & .linkReceipt {
+        background: none;
+        border: none ;
+        & .x-control-content-wrapper {
+            text-align: center ;
+        }
+        & a{
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            color: #0675B4 ;
+            text-decoration: none ;
+            text-align: center ;
+            margin-top: 10px ;
+            margin-bottom: 25px;
+        }
+    }
+
+    & .iconsReceipt{
+        background: none;
+        border: none ;
+        margin-bottom: 20px;
+        & div{
+        height: 80px;
+        }
+        & .k-icon-wrapper{
+            text-align: center;
+            & span{
+                font-size: 40px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                color: #1F8FCE ;
+            }
+        }
+
+    }
+
+    & .x-footer:has(.footerReceipt){
+        height: 46px;
+        background: #1F8FCE ;
+        position: absolute ;
+        & div{
+            background: none ;
+            border: none ;
+        }
+
+        & .x-control-content-wrapper {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-13%);
+        }
+
+        & a{
+            color: white ;
+            text-align: center;
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            text-decoration: underline;
+
+        }
+    }
+}

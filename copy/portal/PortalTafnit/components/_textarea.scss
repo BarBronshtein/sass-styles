@@ -20,9 +20,17 @@
   & textarea{
         
     @extend %texbox-input;
+<<<<<<< HEAD
       height: 150px !important;
             margin-bottom: 20px !important;
             outline: none !important;
+=======
+      height: 120px !important;
+            margin-bottom: 20px !important;
+            outline: none !important;
+            line-height: 1.5;
+            font-size: 13px !important;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
             
     &:focus{
       box-shadow:$control-box-shadow-focus !important;

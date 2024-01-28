@@ -1,0 +1,42 @@
+
+
+
+.xstyle-vkeyboard-wrapper {
+    #simple-keyboard-layout {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        background: #38383852;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+
+        .x-keyboard-wrapper {
+            position: fixed;
+            z-index: 9999;
+            top: 25%;
+            left: calc(50% - 250px);
+            width: 500px;
+
+            #x-btn-close {
+                position: absolute;
+                top: -35px;
+                left: 0;
+                padding: 8px;
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .k-icon {
+        &.fas.fa-keyboard {
+            width: 100%;
+            height: 100%;
+            right: 0;
+            left: 0;
+        }
+    }
+}

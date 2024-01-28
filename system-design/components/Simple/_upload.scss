@@ -1,0 +1,307 @@
+.k-upload {
+
+
+    background: transparent;
+    border: 0;
+
+    .k-dropzone {
+        padding: 0;
+        background-color: transparent;
+        background-image: none;
+
+        .k-upload-button {
+            margin-right: 0 ;
+
+            .x-upload_Button {
+                width: 100%;
+                height: 100%;
+            }
+
+            span {
+                direction: rtl;
+            }
+        }
+    }
+}
+
+.k-upload-files{
+    .k-file-validation-message{
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+
+
+}
+
+
+
+.xstyle-upload-wrapper{
+    margin-top: 15px;
+    label{
+        @extend %texbox-label;
+    }
+    & .k-file-group.k-i-file-config {
+        font-size: 22px;
+        color: var(--upload-icon-color-sucess) ;
+        top: 4px;
+        &::before {
+          content: "\e9ad" ;
+          font-family: "icomoon";
+        }
+      }
+    
+      & .k-file-success .k-progress {
+        background-color: #15b0c5;
+      }
+    
+      & .k-file.k-file-error {
+        & .k-file-group.k-i-file-config {
+          font-size: 22px;
+          color: var(--upload-icon-color-error) ;
+          top: 4px;
+          &::before {
+            content: "\e9b0";
+            font-family: "icomoon";
+          }
+        }
+      }
+    
+      & .k-file.k-file-success {
+        & .k-file-group.k-i-file-image {
+          font-size: 22px;
+          color: var(--upload-icon-color-sucess) ;
+          top: 4px;
+          &::before {
+            content: "\e9af";
+            font-family: "icomoon";
+          }
+        }
+    
+        & .k-file-group.k-i-file-config {
+          font-size: 22px;
+          color: var(--upload-icon-color-sucess) ;
+          top: 4px;
+          &::before {
+            content: "\e9ad" ;
+            font-family: "icomoon";
+          }
+        }
+    
+        & .k-file-group.k-i-file-txt {
+          font-size: 22px;
+          color: var(--upload-icon-color-sucess) ;
+          top: 4px;
+          &::before {
+            content: "\e9b6";
+            font-family: "icomoon";
+          }
+        }
+    
+        & .k-file-group.k-i-file-data {
+          font-size: 22px;
+          color: var(--upload-icon-color-sucess) ;
+          top: 4px;
+          &::before {
+            content: "\e9ac";
+            font-family: "icomoon";
+          }
+        }
+    
+        & .k-file-group.k-i-file {
+          font-size: 22px;
+          color: var(--upload-icon-color-sucess) ;
+          top: 4px;
+          &::before {
+            content: "\e9ae";
+            font-family: "icomoon";
+          }
+        }
+      }
+
+    .k-dropzone{
+         margin-bottom:5px;
+    }
+    
+    .k-focus{
+        box-shadow: none ;
+    }
+    
+    
+    & [class^="k-file-validation-message !k-text-success"] {
+        font-family: "Heebo" ;
+        font-style: normal ;
+        font-weight: 400 ;
+        font-size: 12px;
+        color: var(--upload-status-text-color-sucess) ;
+    
+      }
+      
+      & [class="k-file-validation-message !k-text-error"] {
+        font-family: "Heebo" ;
+        font-style: normal ;
+        font-weight: 400 ;
+        font-size: 12px;
+      }
+        & .k-file-invalid{
+            border-top: 1px solid var(--upload-border-color) ;
+            border-bottom: none ;
+            & .k-file-name{
+                font-weight: 500 ;
+                font-size: 14px ;
+                color: var(--upload-filename-text-color) ;
+                font-family: 'Heebo';
+            }
+    
+    
+            & .k-file-invalid-group-wrapper{
+                & .k-icon{
+                    color: var(--upload-icon-color-error) ;
+                    font-size: 30px;
+                    top: 2px;
+                    &::before{
+                        content: "\e9b0" ;
+                        font-family: 'icomoon' ;
+                    }
+                }
+            }
+        }
+    
+    
+        & .k-upload-async{
+    
+            & .k-button-solid-base.k-upload-button{
+    
+           
+    
+                &.k-state-focused{
+                    box-shadow: none ;
+                }
+              
+            }
+            & .k-button-solid-base:focus{
+                box-shadow: none ;
+                border: none ;
+            }
+            & .k-i-close{
+                &::before{
+                    content: "\e904";
+                    font-family: 'icomoon';
+                    font-weight: bolder;
+                    font-size: 12px;
+                    color: var( --upload-icon-color-error) ;
+                }
+            }
+    
+    
+            & .k-file-group-wrapper{
+                & .k-icon{
+                    font-size: 30px;
+                    top: 2px;
+    
+                    &.k-i-file-pdf{
+                    &::before{
+                        content: "\ea65" ;
+                        color: var(--upload-icon-color-sucess) ;
+                        font-family: 'icomoon';
+                    }
+    
+                    &:after{
+                        content: "\ea66" ;
+                        color: var(--upload-icon-color-sucesss);
+                        font-family: 'icomoon';
+                    }
+                }
+    
+                &.k-i-file-data{
+                    &::before{
+                        content: "\ea5e" ;
+                        color:var(--upload-icon-color-sucess) ;
+                        font-family: 'icomoon';
+                    }
+    
+                    &:after{
+                        content: "\ea5f" ;
+                        color: var(--upload-icon-color-sucess);
+                        font-family: 'icomoon';
+                    }
+                }
+                }
+            }
+            
+   
+    
+    
+            &.k-upload-empty{
+    
+           
+                & .k-button-solid-base.k-upload-button{
+    
+                   
+                    font-weight: 400 ;
+                    &.k-state-focused{
+                        box-shadow: none ;
+                    }
+                  
+                }
+            }
+    
+    
+            
+    
+            & .k-button-solid-base.k-upload-button{
+                border: none;
+                color:var(--button-primary-text-color-default);
+                background-color: var(--button-primary-bg-color-default);
+                border-radius: 4px;
+                height: 40px ;
+                font-family: Heebo;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+            & span{
+                
+                & span.k-icon{
+                    margin-left: 10px ;
+                    &::before{
+                        color:var(--button-primary-text-color-default);
+                        font-size: 22px ;  
+                    }
+                }
+            }
+    
+            &:hover{
+                border: none;
+                background-color:var(--button-primary-bg-color-hover) ;
+        
+                span{
+                    color:var(--button-primary-text-color-default);
+                }
+
+                & span{
+                
+                    & span.k-icon{
+                     
+                        &::before{
+                            color: var(--button-primary-text-color-default);
+            
+                        }
+                    }
+                }
+            }
+        
+            &:focus{
+                background: var(--button-primary-bg-color-focus);
+                box-shadow: var(--button-primary-focus);
+            }
+            
+        
+          
+    
+            
+            
+    
+     
+        }
+    }
+    }

@@ -1,0 +1,26 @@
+.xstyle-jsondisplay-wrapper{
+  .x-control-content-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .json-viewer{
+        padding: 0 !important;
+    }
+  }
+   .type-string{
+    word-wrap: break-word !important;
+    white-space: normal;
+   }
+
+
+ 
+}
+
+.fa-paste{
+  &::before{
+    content: "\ea8b" !important;
+    font-family: 'icomoon';
+    font-size: 25px;
+    color: var(--icon-color-default);
+  }
+}

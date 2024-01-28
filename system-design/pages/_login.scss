@@ -1,149 +1,87 @@
+<<<<<<< HEAD:system-design/pages/_login.scss
+
+=======
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60:Newbase-newStyle/pages/_login.scss
 
 
-@media screen and (min-width: 768px) {
-    #TafnitCore_System_UI_App_Login {
-        .x-section-wrraper {
-            margin: auto ;
-            min-height: 679px ;
-            height: 679px ;
+// body:has(#TafnitCore_System_UI_App_Login),html{
+//     height: 100% !important;
 
-            .x-section-content-wrapper {
-                height: 100% ;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+//     #uber-container{
+//         height: 100%;
+//     }
+// }
 
+
+// #TafnitCore_System_UI_App_Login{
+//     height: 100%;
+//     padding: 0;
+//     mainbody{
+//         height: 100%;
+//         & > .row{
+//             background: var(--vanilla-neutral-150, #F9F9F9); 
+//           height: 100% !important;
+//           min-width:auto;
+//           border-radius: 0;
+//           padding-left: 0px;
+//         }
+//     }
+//    .x-label-loginTitle{
+//     margin-bottom: 60px;
+
+//    }
+
+//     div[uxid="loginDetailsLeft"]{
+//         height: auto !important;
+//         top: -70px;
+
+//     }
+
+//     div[uxid="cSocialBtnLogin"]{
+//         padding: 0;
+//         margin-top: 45px;
+//     }
+
+//     .xstyle-buttoncontrol-wrapper  {
+//         button{
+//             margin-top: 20px;
+//         }
+//     }
+//     .xstyle-checkbox-wrapper      {
+//         margin-top: 10px;
+//     }
+// div[uxid="rSocialBtnLogin"]{
+//    & + .row{
+     
+//     border: none !important;
+//     box-shadow: none;
+//     position: absolute;
+//     bottom: -40px;
+//     left: 0;
+//     right: 0;
+//    }
+// }
+
+// }
+
+
+
+.fa-google,.icon-google-1 {
+    background: linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0 25%/48% 40%, linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%, linear-gradient(-40deg, transparent 53%, #ea4335 54%), linear-gradient(45deg, transparent 46%, #4285f4 48%), #34a853;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    &::before{
+        position: initial !important;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    #TafnitCore_System_UI_App_Login .x-section-wrraper {
-        width: 80% ;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #TafnitCore_System_UI_App_Login .x-section-wrraper {
-        width: 90% ;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #TafnitCore_System_UI_App_Login {
-        .x-section-wrraper {
-            width: 70% ;
-        }
-
-        .x-section-content-wrapper>.col:first-child {
-            display: block ;
-        }
-    }
-}
-
-
-#TafnitCore_System_UI_App_Login {
-    padding: 0 ;
-
-    mainbody {
-        padding: 0 ;
-
-        >.row {
-            height: 100vh;
-           
-        }
-    }
-
-    input.k-textbox {
-        border: 0;
-        background: #e4e4e4;
-        border-radius: 0;
-
-        &::placeholder {
-            color: #707070;
-        }
-    }
-
-    [xid="controlloginDetailsLeft"] {
-        >div {
-            &:first-child {
-                flex-grow: 0.7;
-                display: flex;
-                align-items: center;
-            }
-
-            &:last-child {
-                flex-grow: 1;
-                display: flex;
-                align-items: flex-start;
-                padding-top: 20px;
-            }
-        }
-
-    }
-
-    [xid="controlcSocialBtnLogin"]>div {
-        flex: 0 0 49%;
-    }
-
-    [xid="controlscrollviewColumn"] {
-        background: #e4e4e4;
-    }
-
-    .k-button {
-        background: white;
-        border-color: #dadada;
-        color: #003f59;
-        font-size: 14px;
-
-        .k-icon {
-            font-size: 22px;
-        }
-    }
-
-    [xid="controlbtnLoginPage"] {
-        background: #005a99;
-        color: white;
-    }
-
-    .fa-google {
-        background:
-            linear-gradient(to bottom left, transparent 49%, #fbbc05 50%) 0 25%/48% 40%,
-            linear-gradient(to top left, transparent 49%, #fbbc05 50%) 0 75%/48% 40%,
-
-            linear-gradient(-40deg, transparent 53%, #ea4335 54%),
-            linear-gradient(45deg, transparent 46%, #4285f4 48%),
-            #34a853;
-        background-repeat: no-repeat;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-
-        &.k-icon:before {
-            position: initial ;
-        }
-    }
-    .xstyle-checkbox-wrapper  {
-        .col-4{
-            order: 0;
-            flex: 0 0 95%;
-            max-width: 250px;
-            padding-right: 5px;
-        }
-      
-        .col-8 {
-            order: -1;
-            flex: 0 0 5%;
-        }
-    }
-}
-
-.k-ie{
-    #TafnitCore_System_UI_App_WebSDK_Login{
-        .d-flex.justify-content-between{
-            flex-basis:25px
-        }
+.fa-facebook-square,.icon-facebook{
+    font-size: 20px;
+    &::before{
+    color: #1877F2 !important;
     }
 }

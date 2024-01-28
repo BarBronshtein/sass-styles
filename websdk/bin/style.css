@@ -112,9 +112,6 @@
 .xstyle-autocomplete-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-autocomplete-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-autocomplete-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -132,9 +129,6 @@
   color: #a1a3a5 !important;
 }
 .xstyle-autocomplete-wrapper.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-autocomplete-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-autocomplete-wrapper.k-state-disabled div:last-child input::placeholder {
@@ -170,10 +164,6 @@
   border: none !important;
   font-size: 14px !important;
   height: 30px !important;
-}
-.xstyle-autocomplete-wrapper .x-autocomplete input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-autocomplete-wrapper .x-autocomplete input::placeholder {
   color: #ececec !important;
@@ -301,9 +291,6 @@ tr.k-master-row > td > input {
 
 .xstyle-checkbox-wrapper.mandatory input {
   border-color: #ff7a00 !important;
-}
-.xstyle-checkbox-wrapper.mandatory input::-moz-placeholder {
-  color: #ececec !important;
 }
 .xstyle-checkbox-wrapper.mandatory input::placeholder {
   color: #ececec !important;
@@ -470,9 +457,6 @@ tr.k-master-row > td > input {
 .xstyle-date-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-date-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-date-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -490,9 +474,6 @@ tr.k-master-row > td > input {
   color: #a1a3a5 !important;
 }
 .xstyle-date-wrapper.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-date-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-date-wrapper.k-state-disabled div:last-child input::placeholder {
@@ -667,9 +648,6 @@ tr.k-master-row > td > input {
   color: #000000 !important;
   font-size: 13px !important;
 }
-.xstyle-daterangev2-wrapper input::-moz-placeholder, .xstyle-daterange-wrapper input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-daterangev2-wrapper input::placeholder, .xstyle-daterange-wrapper input::placeholder {
   color: #ececec !important;
 }
@@ -708,14 +686,12 @@ tr.k-master-row > td > input {
 .xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input, .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input {
   border-right: 1px solid #d9d9d9 !important;
 }
-.xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::-moz-placeholder, .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-daterangev2-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::placeholder, .xstyle-daterange-wrapper .x-control-content-wrapper > div > span:nth-child(2) span.k-datepicker.k-input.x-datePickerResponsive input::placeholder {
   color: #ececec !important;
 }
 .xstyle-daterangev2-wrapper:focus-within, .xstyle-daterange-wrapper:focus-within {
   border: 1px solid #ddc3e7 !important;
+  -webkit-box-shadow: 0px 0px 10px #f6ecfb !important;
   box-shadow: 0px 0px 10px #f6ecfb !important;
 }
 .xstyle-daterangev2-wrapper .k-input:focus-within,
@@ -1066,9 +1042,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .xstyle-idropdownlist-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-idropdownlist-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-idropdownlist-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -1088,9 +1061,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
 .xstyle-idropdownlist-wrapper.k-state-disabled div:last-child input {
   color: #a1a3a5 !important;
 }
-.xstyle-idropdownlist-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
-  color: #a1a3a5 !important;
-}
 .xstyle-idropdownlist-wrapper.k-state-disabled div:last-child input::placeholder {
   color: #a1a3a5 !important;
 }
@@ -1105,10 +1075,14 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   color: #000000 !important;
   font-size: 13px !important;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .xstyle-idropdownlist-wrapper .col-33 {
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .xstyle-idropdownlist-wrapper div:nth-child(1) label {
@@ -1134,10 +1108,6 @@ li.k-item.k-panelbar-item.k-level-0.k-level-1 {
   border: none !important;
   font-size: 13px !important;
   height: 30px !important;
-}
-.xstyle-idropdownlist-wrapper div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-idropdownlist-wrapper div:last-child input::placeholder {
   color: #ececec !important;
@@ -1844,6 +1814,7 @@ mainbody mainbody {
   width: 50px;
   height: 50px;
   background: #ffffff !important;
+  -webkit-box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
   margin-left: 13px;
@@ -1909,6 +1880,7 @@ mainbody mainbody {
 }
 .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
   background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px !important;
   width: 80px !important;
@@ -2322,10 +2294,6 @@ mainbody mainbody {
   line-height: 120%;
   color: #000000 !important;
 }
-.xstyle-gridv4-wrapper .x-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-toolbar-item:has(.k-searchbox.k-grid-search) .k-searchbox.k-grid-search input::-moz-placeholder {
-  color: #c8c8c8 !important;
-  font-size: 12px !important;
-}
 .xstyle-gridv4-wrapper .x-control-content-wrapper > .k-toolbar.k-toolbar-resizable .k-toolbar-item:has(.k-searchbox.k-grid-search) .k-searchbox.k-grid-search input::placeholder {
   color: #c8c8c8 !important;
   font-size: 12px !important;
@@ -2494,10 +2462,6 @@ div[uxid=portalUser],
   font-size: 14px;
   line-height: 18px;
   margin-top: -20px;
-}
-
-.searchDesign .s-row.xstyle-textcontrol-wrapper .s-text-control-container input::-moz-placeholder {
-  padding-right: 20px;
 }
 
 .searchDesign .s-row.xstyle-textcontrol-wrapper .s-text-control-container input::placeholder {
@@ -2817,9 +2781,6 @@ div[uxid=portalUser],
 .xstyle-lookup-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-lookuptafnit-wrapper.x-readonly div:last-child input::-moz-placeholder, .xstyle-lookup-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-lookuptafnit-wrapper.x-readonly div:last-child input::placeholder,
 .xstyle-lookup-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
@@ -2853,9 +2814,6 @@ div[uxid=portalUser],
 .xstyle-lookup-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control {
   color: #a1a3a5 !important;
   background: none;
-}
-.xstyle-lookuptafnit-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::-moz-placeholder, .xstyle-lookup-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::-moz-placeholder {
-  color: #a1a3a5 !important;
 }
 .xstyle-lookuptafnit-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::placeholder,
 .xstyle-lookup-wrapper.k-state-disabled .x-lookup .x-selection-lookup input.x-form-control::placeholder {
@@ -2897,9 +2855,6 @@ div[uxid=portalUser],
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   color: #000000 !important;
-}
-.xstyle-lookuptafnit-wrapper .x-lookup.s-lookup input::-moz-placeholder, .xstyle-lookup-wrapper .x-lookup.s-lookup input::-moz-placeholder {
-  color: #ececec !important;
 }
 .xstyle-lookuptafnit-wrapper .x-lookup.s-lookup input::placeholder,
 .xstyle-lookup-wrapper .x-lookup.s-lookup input::placeholder {
@@ -3105,7 +3060,6 @@ div[uxid=portalUser],
   line-height: 130%;
   font-family: "Heebo";
   border: none;
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   left: 0;
@@ -3175,6 +3129,7 @@ div[uxid=portalUser],
   #TafnitCore_System_UI_App_WebSDK_PageInfo.xtafnit_pageContainer {
     width: auto !important;
     background: none !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     position: absolute !important;
     top: -9px !important;
@@ -3982,18 +3937,24 @@ div[uxid=portalUser],
   color: #037295 !important;
 }
 .xstyle-numberrange-wrapper .x-numberrange {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex !important;
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -ms-flex-align: start;
   align-items: flex-start;
   gap: 0px !important;
   height: 30px;
 }
 .xstyle-numberrange-wrapper:focus-within {
   border: 1px solid #ddc3e7 !important;
+  -webkit-box-shadow: 0px 0px 10px #f6ecfb !important;
   box-shadow: 0px 0px 10px #f6ecfb !important;
 }
 .xstyle-numberrange-wrapper .k-input:focus-within,
@@ -4062,6 +4023,7 @@ div[uxid=portalUser],
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container {
   width: 94%;
   display: flex;
+  -webkit-box-direction: normal;
   flex-flow: inherit;
   border-bottom: 1px solid #d9d9d9 !important;
   height: 30px;
@@ -4077,13 +4039,11 @@ div[uxid=portalUser],
   border-bottom-right-radius: 0px !important;
   width: 100% !important;
 }
-.xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container input::placeholder {
   color: #ececec !important;
 }
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container input:focus-within {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 .xstyle-numberrange-wrapper .x-numberrange span:last-child.k-textbox-container span {
@@ -4136,9 +4096,6 @@ div[uxid=portalUser],
 .xstyle-password-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-password-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-password-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -4158,9 +4115,6 @@ div[uxid=portalUser],
 .xstyle-password-wrapper.k-state-disabled div:last-child input {
   color: #a1a3a5 !important;
 }
-.xstyle-password-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
-  color: #a1a3a5 !important;
-}
 .xstyle-password-wrapper.k-state-disabled div:last-child input::placeholder {
   color: #a1a3a5 !important;
 }
@@ -4176,10 +4130,6 @@ div[uxid=portalUser],
 }
 .xstyle-password-wrapper:has(.x-control-caption-wrapper) div:last-child input {
   border-right: 1px solid #d9d9d9 !important;
-}
-.xstyle-password-wrapper .x-control-content-wrapper input::-moz-placeholder {
-  color: #ececec !important;
-  text-indent: 10px !important;
 }
 .xstyle-password-wrapper .x-control-content-wrapper input::placeholder {
   color: #ececec !important;
@@ -4416,6 +4366,7 @@ div[uxid=portalUser],
 }
 
 .xstyle-radio-wrapper .k-radio:focus, .x-damageTypeAndCamera .k-radio:focus {
+  -webkit-box-shadow: 0 0 3px 0 #7d0a8c;
   box-shadow: 0 0 3px 0 #7d0a8c;
 }
 
@@ -4737,6 +4688,7 @@ mainbody .col.flex-lg-row .x-self-container {
 .xstyle-textareacontrol-wrapper textarea:focus {
   outline: none !important;
   border: 1px solid #ddc3e7 !important;
+  -webkit-box-shadow: 0px 0px 10px #f6ecfb !important;
   box-shadow: 0px 0px 10px #f6ecfb !important;
 }
 .xstyle-textareacontrol-wrapper label {
@@ -4863,9 +4815,6 @@ input::-webkit-inner-spin-button {
 .xstyle-timepicker-wrapper.x-readonly div:last-child input {
   color: black !important;
 }
-.xstyle-timepicker-wrapper.x-readonly div:last-child input::-moz-placeholder {
-  color: #ececec !important;
-}
 .xstyle-timepicker-wrapper.x-readonly div:last-child input::placeholder {
   color: #ececec !important;
 }
@@ -4883,9 +4832,6 @@ input::-webkit-inner-spin-button {
   color: #a1a3a5 !important;
 }
 .xstyle-timepicker-wrapper.k-state-disabled div:last-child input {
-  color: #a1a3a5 !important;
-}
-.xstyle-timepicker-wrapper.k-state-disabled div:last-child input::-moz-placeholder {
   color: #a1a3a5 !important;
 }
 .xstyle-timepicker-wrapper.k-state-disabled div:last-child input::placeholder {
@@ -5982,6 +5928,7 @@ input::-webkit-inner-spin-button {
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header #tbbTitle {
   height: 80px !important;
+  -webkit-box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   width: 100%;
@@ -5994,6 +5941,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400 !important;
   font-size: 30px !important;
   line-height: 30px !important;
+  height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
   margin: auto !important;
@@ -6005,6 +5953,7 @@ input::-webkit-inner-spin-button {
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header .k-button-group {
   height: 80px !important;
   background: #FFFFFF !important;
+  -webkit-box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   padding-right: 30px !important;
@@ -6014,6 +5963,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 10px;
 }
 .k-content:has(#TafnitCore_Salary_UI_RequestHistory) .k-widget.k-window.k-rtl.k-display-inline-flex #TafnitCore_Salary_UI_RequestHistory header .k-button-group button.k-button {
+  -webkit-box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
   box-shadow: 0px 4px 4px rgba(123, 9, 141, 0.2), 0px 0px 8px rgba(123, 9, 141, 0.2) !important;
   border-radius: 10px !important;
   margin-left: 20px !important;
@@ -6259,6 +6209,7 @@ input::-webkit-inner-spin-button {
 }
 #TafnitCore_Salary_UI_SubmitRequest #rEmployee {
   height: 80px !important;
+  -webkit-box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   box-shadow: 0px 6px 6px rgba(123, 9, 141, 0.1) !important;
   border-radius: 10px !important;
   width: 100%;
@@ -6317,7 +6268,6 @@ input::-webkit-inner-spin-button {
   font-weight: 400 !important;
   font-size: 30px !important;
   line-height: 30px !important;
-  height: -moz-fit-content !important;
   height: fit-content !important;
   margin: auto !important;
   margin-right: 20px !important;
@@ -6891,9 +6841,6 @@ input::-webkit-inner-spin-button {
   color: #000 !important;
   padding: 0 !important;
 }
-#TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput .xstyle-date-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput1 .xstyle-date-wrapper input::-moz-placeholder {
-  color: #ececec !important;
-}
 #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput .xstyle-date-wrapper input::placeholder, #TafnitCore_xAgreements_UI_SalaryRequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput .xstyle-date-wrapper input::placeholder, #TafnitCore_Salary_UI_RequestBonus .salary-bonusInput1 .xstyle-date-wrapper input::placeholder,
 #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput .xstyle-date-wrapper input::placeholder,
 #TafnitCore_Salary_UI_RequestPromotion .salary-bonusInput1 .xstyle-date-wrapper input::placeholder {
@@ -6922,9 +6869,6 @@ input::-webkit-inner-spin-button {
   border-right: none;
   color: black !important;
   border: none !important;
-}
-#TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder, #TafnitCore_Salary_UI_RequestPromotion div[uxid=newValue] .xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #d9d9d9 !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::placeholder, #TafnitCore_Salary_UI_RequestBonus div[uxid=newValue] .xstyle-textcontrol-wrapper input::placeholder,
 #TafnitCore_Salary_UI_RequestPromotion div[uxid=newValue] .xstyle-textcontrol-wrapper input::placeholder {
@@ -7118,9 +7062,6 @@ input::-webkit-inner-spin-button {
   border-right: 0 !important;
   border-bottom: 1px solid #d9d9d9 !important;
 }
-#TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=newValue] input::-moz-placeholder, #TafnitCore_Salary_UI_RequestRaise div[uxid=newValue] input::-moz-placeholder {
-  color: #ececec !important;
-}
 #TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=newValue] input::placeholder,
 #TafnitCore_Salary_UI_RequestRaise div[uxid=newValue] input::placeholder {
   color: #ececec !important;
@@ -7136,9 +7077,6 @@ input::-webkit-inner-spin-button {
   z-index: 9;
   color: #000000 !important;
   border-right: none !important;
-}
-#TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=fromDate] input::-moz-placeholder, #TafnitCore_Salary_UI_RequestRaise div[uxid=fromDate] input::-moz-placeholder {
-  color: #ececec !important;
 }
 #TafnitCore_xAgreements_UI_SalaryRequestRaise div[uxid=fromDate] input::placeholder,
 #TafnitCore_Salary_UI_RequestRaise div[uxid=fromDate] input::placeholder {
@@ -7418,9 +7356,6 @@ input::-webkit-inner-spin-button {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-}
-.k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) .k-searchbox input::-moz-placeholder {
-  color: #000000 !important;
 }
 .k-content:has(#TafnitCore_Salary_UI_SubmitRequest) .k-window.k-widget.k-rtl:has(#TafnitCore_System_UI_App_Tools_LookupSelection) .k-searchbox input::placeholder {
   color: #000000 !important;
@@ -7884,7 +7819,6 @@ th .k-checkbox::before {
   font-weight: 400 !important;
   font-size: 30px !important;
   line-height: 30px !important;
-  height: -moz-fit-content !important;
   height: fit-content !important;
   margin: auto !important;
   margin-right: 20px !important;
@@ -8715,10 +8649,6 @@ mainbody .empty-message .s-self-container span.x-dynamic-label-control {
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login input.k-textbox {
   padding-right: 10px !important;
 }
-#TafnitCore_System_UI_App_WebSDK_Login ::-moz-placeholder, #TafnitCore_SaaSServer_TafnitCloud_UI_Login ::-moz-placeholder {
-  font-weight: normal !important;
-  padding-right: 10px !important;
-}
 #TafnitCore_System_UI_App_WebSDK_Login ::placeholder,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login ::placeholder {
   font-weight: normal !important;
@@ -9089,6 +9019,7 @@ mainbody > .row.x-row.s-row.border.border-0.boxShadow-0 {
     font-size: 13px !important;
   }
   .DashboardPage .dashLeftCol {
+    -webkit-box-shadow: 0 0px 9px 0 !important;
     box-shadow: 0 0px 0px 0 !important;
     border-radius: 20px !important;
     padding-top: 20px !important;
@@ -9100,6 +9031,7 @@ mainbody > .row.x-row.s-row.border.border-0.boxShadow-0 {
   .DashboardPage .dashDiary {
     margin-top: 0 !important;
     background-color: #ffffff !important;
+    -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
     box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
     border-radius: 20px !important;
     border-top: none !important;
@@ -9147,6 +9079,8 @@ mainbody > .row {
 }
 
 .details .right {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 14%;
   flex: 0 0 34%;
   color: #464247 !important;
 }
@@ -9173,6 +9107,8 @@ mainbody > .row {
 
 @media only screen and (min-width: 700px) {
   .cube-wrapper .cube {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 49%;
     flex: 0 0 49%;
     max-width: 49%;
   }
@@ -9183,10 +9119,6 @@ mainbody > .row {
 
 .goUpArrow {
   width: 50px !important;
-}
-
-::-moz-placeholder {
-  font-weight: normal;
 }
 
 ::placeholder {
@@ -9207,6 +9139,8 @@ mainbody > .row {
 
 @media only screen and (min-width: 1480px) {
   .cube-wrapper .cube {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 22% !important;
     flex: 0 0 22% !important;
     max-width: 22% !important;
   }
@@ -9402,6 +9336,7 @@ mainbody > .row {
     background-color: #ffffff;
   }
   .DashboardPage .dashLeftCol {
+    -webkit-box-shadow: 0 0px 9px 0;
     box-shadow: 0 0px 0px 0;
     border-radius: 20px;
     background: none !important;
@@ -9978,6 +9913,7 @@ li:has > a.active {
 
 #TafnitCore_System_UI_App_WebSDK_Main .x-control-wrapper.s-control-wrapper.row.x-row.s-row.xstyle-itoolbar-wrapper {
   background-color: #fff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08);
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.08);
   border-radius: 10px;
   padding: 10px;
@@ -10331,7 +10267,6 @@ mainbody > .row {
 .dashMyMission > div.border div.col.x-col.s-col:first-child,
 .dashStatus > div.border div.col.x-col.s-col:first-child,
 .dashOverview > div.border div.col.x-col.s-col:first-child {
-  max-width: -moz-fit-content !important;
   max-width: fit-content !important;
   margin-top: -30px !important;
   margin-right: -26px !important;
@@ -10344,7 +10279,6 @@ mainbody > .row {
 
 .dashContact > div.border div.col.x-col.s-col:first-child,
 .dashDiary > div.border div.col.x-col.s-col:first-child {
-  max-width: -moz-fit-content !important;
   max-width: fit-content !important;
 }
 .dashContact > div.border div:last-child,

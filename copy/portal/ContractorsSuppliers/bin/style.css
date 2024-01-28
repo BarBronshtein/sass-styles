@@ -345,9 +345,6 @@ div[uxid=tbID], div[uxid=tbPassword] {
   box-shadow: 0px 1px 3px 0px rgba(57, 181, 74, 0.3), 0px 4px 8px 0px rgba(57, 181, 74, 0.1) !important;
   border: 1px solid #366934 !important;
 }
-.xstyle-textcontrol-wrapper input::-moz-placeholder {
-  color: #c7c7c7 !important;
-}
 .xstyle-textcontrol-wrapper input::placeholder {
   color: #c7c7c7 !important;
 }
@@ -1231,7 +1228,6 @@ mainbody mainbody {
   display: none !important;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN:focus, .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN:focus-within, .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn.spicelBTN:active {
@@ -1259,7 +1255,6 @@ mainbody mainbody {
   color: #ffffff !important;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn:focus, .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn:focus-within, .k-grid-content.k-auto-scrollable > table > tbody > tr > td .xtf-btn:active {
@@ -1393,6 +1388,7 @@ mainbody mainbody {
   width: 50px;
   height: 50px;
   background: #ffffff !important;
+  -webkit-box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   box-shadow: 0px 0px 12px rgba(123, 9, 141, 0.12) !important;
   border-radius: 10px;
   top: 4px;
@@ -1451,6 +1447,7 @@ mainbody mainbody {
 }
 .k-pager-sizes.k-label span.k-picker.k-dropdownlist.k-picker-solid.k-picker-md.k-rounded-md {
   background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   box-shadow: 0px 0px 8px rgba(123, 9, 141, 0.08) !important;
   border-radius: 10px !important;
   width: 80px !important;
@@ -1987,7 +1984,6 @@ mainbody mainbody {
   font-size: 14px;
   line-height: 100%;
   color: #690779;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }
@@ -2349,7 +2345,6 @@ mainbody mainbody {
   height: 60px;
   display: grid;
   grid-template-columns: auto auto;
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   align-items: center;
@@ -2458,7 +2453,6 @@ mainbody mainbody {
   color: #000000;
 }
 .k-window:has(#MessageBoxWindow) #MessageBoxWindow #divCobuttonbtn1 {
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
 }
@@ -2507,6 +2501,232 @@ mainbody mainbody {
   display: none;
 }
 
+:root {
+  --calender-footer-bg-color:#FBFBFB;
+  --calender-header-bg-color: #FBFBFB;
+  --calender-header-icon-color:#366934;
+  --calender-header-text-color:#000;
+  --calender-footer-border-color:#366934;
+  --calender-week-days-text-color:#204C1F;
+  --calender-item-text-color-default:#366934;
+  --calender-item-today-border-color-default:#366934;
+  --calender-item-text-color-default:#366934;
+  --calender-item-text-color-prev:#7E7B7B;
+  --calender-item-text-color-disable:#C8C8C8;
+  --calender-item-today-border-color-disable:#C8C8C8;
+  --calender-item-selected-bg-color-default:#366934;
+  --calender-item-selected-text-color:#FFF;
+  --calender-item-text-color-hover:#204C1F;
+  --calender-footer-text-color:#5E955C;
+  --calender-window-bg-color:#FFF;
+}
+
+.xstyle-date-wrapper {
+  padding: 5px;
+  padding-bottom: 0;
+  border-radius: 0 !important;
+}
+.xstyle-date-wrapper:focus, .xstyle-date-wrapper:focus-within {
+  box-shadow: none;
+  border: 1px solid var(--text-field-text-field-border-focus, #366934) !important;
+}
+.xstyle-date-wrapper.k-state-disabled {
+  opacity: 1;
+}
+.xstyle-date-wrapper.k-state-disabled label {
+  color: var(--text-field-text-field-caption-disable, #C8C8C8);
+}
+.xstyle-date-wrapper.k-state-disabled .k-input.x-datePickerResponsive {
+  border-bottom: 1px solid var(--text-field-text-field-border-disable, #ECECEC);
+}
+.xstyle-date-wrapper.k-state-disabled .k-input.x-datePickerResponsive button span::before {
+  color: #C8C8C8;
+}
+.xstyle-date-wrapper label {
+  color: var(--text-field-text-field-caption-default, #000);
+  text-align: right;
+  /* desktop/label */
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+.xstyle-date-wrapper .k-input.x-datePickerResponsive {
+  border-bottom: 1px solid var(--text-field-text-field-border-default, #DEDEDE);
+  background: var(--text-field-text-field-bg-default, #FFF);
+  padding: 4px;
+  padding-top: 0;
+}
+.xstyle-date-wrapper .k-input.x-datePickerResponsive:focus, .xstyle-date-wrapper .k-input.x-datePickerResponsive:focus-within {
+  box-shadow: none;
+}
+.xstyle-date-wrapper .k-input.x-datePickerResponsive button {
+  top: -2px;
+  background: none;
+}
+.xstyle-date-wrapper .k-input.x-datePickerResponsive button span {
+  left: 14px;
+}
+.xstyle-date-wrapper .k-input.x-datePickerResponsive button span::before {
+  content: "\e973";
+  font-family: "icomoon";
+  font-size: 25px;
+  /* top: 5px; */
+  left: -24px;
+  color: #5E955C;
+}
+.xstyle-date-wrapper .k-input.x-datePickerResponsive input {
+  color: var(--text-field-text-field-input, #000);
+  text-align: right;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 15.4px */
+}
+.xstyle-date-wrapper .k-input.x-datePickerResponsive input:focus, .xstyle-date-wrapper .k-input.x-datePickerResponsive input:focus-within {
+  box-shadow: none;
+}
+
+.k-animation-container .k-popup:has(.k-calendar-table) {
+  background: var(--calender-window-bg-color);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(94, 149, 92, 0.3) !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar {
+  background: none;
+  border-radius: 10px;
+  align-items: center;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-hover a {
+  border-radius: 100px;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack {
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  background: var(--calender-header-bg-color);
+  border: none !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-prev span {
+  color: var(--calender-header-icon-color) !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-fast {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: var(--calender-header-text-color) !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-header.k-hstack .k-nav-next span {
+  color: var(--calender-header-icon-color) !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview {
+  background: #fff;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td {
+  padding: 10px 0px;
+  height: 36px !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td:hover a,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td:hover a {
+  color: var(--calender-item-text-color-hover);
+  border: 1px solid var(--calender-item-today-border-color-default);
+  background: none;
+  border-radius: 100px !important;
+  height: 36px !important;
+  font-weight: 700;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td.k-focus a,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td.k-focus a {
+  font-weight: 700;
+  box-shadow: none;
+  height: 36px !important;
+  background: var(--calender-item-selected-bg-color-default);
+  color: var(--calender-item-selected-text-color) !important;
+  border-radius: 100px;
+  box-shadow: none;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-yearview table tbody tr td.k-calendar-td a,
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-decadeview table tbody tr td.k-calendar-td a {
+  height: 36px !important;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--calender-item-text-color-default);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview {
+  border-bottom: 1px solid var(--calender-footer-border-color);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview th {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--calender-week-days-text-color);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--calender-item-text-color-default);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-today a {
+  border: 1px solid var(--calender-item-today-border-color-default);
+  color: var(--calender-item-text-color-default);
+  border-radius: 50%;
+  box-shadow: none;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-other-month {
+  color: var(--calender-item-text-color-prev) !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-other-month:hover a {
+  border: 1px solid var(--calender-item-today-border-color-disable);
+  color: var(--calender-item-text-color-disable);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-weekend {
+  color: var(--calender-item-text-color-disable);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-weekend:hover a {
+  border: 1px solid var(--calender-item-today-border-color-disable);
+  color: var(--calender-item-text-color-disable);
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td.k-focus a {
+  background: var(--calender-item-selected-bg-color-default);
+  border-radius: 50%;
+  color: var(--calender-item-selected-text-color);
+  font-weight: 700;
+  box-shadow: none !important;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-calendar-view.k-calendar-monthview td:hover a {
+  color: var(--calender-item-text-color-hover);
+  background: none;
+  border-radius: 50%;
+  border: 1px solid var(--calender-item-today-border-color-default);
+  font-weight: 700;
+}
+.k-animation-container .k-popup:has(.k-calendar-table) .k-footer a {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--calender-footer-text-color);
+}
+
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody div[uxid=bLogin] .x-button-wrapper .k-button {
   margin-top: 0px;
 }
@@ -2539,11 +2759,15 @@ mainbody mainbody {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody .checkboxHorizontal > div > div > div {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 1 0% !important;
     flex: 0 1 0% !important;
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody .checkboxHorizontal > div > div > div:first-child {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 0 0% !important;
     flex: 1 0 0% !important;
   }
 }
@@ -2552,6 +2776,9 @@ mainbody mainbody {
 }
 
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody .xstyle-textcontrol-wrapper.x-login-user-error-msg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -2565,6 +2792,8 @@ mainbody mainbody {
   }
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody [xid=controlcLogin1] {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
   flex: 0;
   margin: 20px auto;
   padding: 0;
@@ -2633,6 +2862,9 @@ mainbody mainbody {
 }
 
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody .xstyle-checkbox-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -2646,6 +2878,9 @@ mainbody mainbody {
 }
 
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody [xid=controlrLogin] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 500px;
   min-height: 450px;
@@ -2681,6 +2916,7 @@ mainbody mainbody {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody .col {
+    -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
   #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_login mainbody .xstyle-checkbox-wrapper {
@@ -2763,7 +2999,6 @@ html {
   border-spacing: 0px;
 }
 #TafnitCore_SaaSServer_Portal_ContractorsSuppliers_UI_ProjectSelect.container.pageContainer.xtafnit_pageContainer .x-button-wrapper {
-  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   margin-bottom: 20px;
@@ -2789,7 +3024,6 @@ html {
   font-size: 14px;
   line-height: 100%;
   color: #366934;
-  width: -moz-max-content;
   width: max-content;
   margin-top: 5px;
 }
@@ -2870,4 +3104,25 @@ body, html {
 
 .k-grid-content-expander {
   display: none;
+}
+
+.x-WroteQuantities-header .icon-btn button {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: auto;
+  float: inherit !important;
+  padding: 0;
+}
+.x-WroteQuantities-header .icon-btn button span {
+  font-size: 22px;
+}
+.x-WroteQuantities-header .xstyle-dynamiclabelcontrol-wrapper span {
+  color: var(--window-window-title-color, #5E955C);
+  text-align: right;
+  /* window title */
+  font-family: Heebo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
 }/*# sourceMappingURL=style.css.map */

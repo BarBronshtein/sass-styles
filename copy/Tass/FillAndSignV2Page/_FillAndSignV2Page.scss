@@ -97,6 +97,7 @@
 
   & .xstyle-checkbox-wrapper.x-control-wrapper {
 
+<<<<<<< HEAD
     flex-direction: row-reverse !important;
     .x-control-caption-wrapper {
         flex: 0 0 100%;
@@ -104,6 +105,13 @@
 
     .x-control-content-wrapper {
         flex-grow: 0.1;
+=======
+   // flex-direction: row-reverse !important;
+
+
+    .x-control-content-wrapper {
+        flex-grow: 0.1 !important;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     }
 
     & input{

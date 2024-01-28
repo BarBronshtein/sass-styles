@@ -3,7 +3,6 @@
 @import './variable/variable';
 
 @import './components/row';
-
 @import './components/button';
 @import './components/checkBox';
 @import './components/textcontrol';
@@ -17,6 +16,7 @@
 @import './components/link';
 @import './components/messageBox';
 @import './components/tooltip';
+@import './components/date';
 
 
 
@@ -91,4 +91,33 @@ body,html{
 
 .k-grid-content-expander{
     display: none;
+}
+
+.x-WroteQuantities-header{
+    .icon-btn{
+        button{
+            width: 40px !important;
+            height: 40px !important;
+            min-width: auto;
+            float: inherit !important;
+            padding: 0;
+            span{
+                font-size: 22px;
+            }
+        }
+    }
+
+    .xstyle-dynamiclabelcontrol-wrapper{
+        span{
+            color: var(--window-window-title-color, #5E955C);
+            text-align: right;
+
+            /* window title */
+            font-family: Heebo;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 20px */
+        }
+    }
 }

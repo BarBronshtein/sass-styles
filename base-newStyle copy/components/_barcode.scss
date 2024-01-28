@@ -52,6 +52,10 @@
 
             &.k-i-preview {
                 left: 10px;
+                &:focus-visible{
+                    outline: none;
+                    border: none;
+                }
             }
         }
     }
@@ -64,18 +68,105 @@
             position:absolute;
             top: 50%;
             transform: translateY(-50%);
+            color: #8ebbcf ;
         }
     }
 }
 
-.k-rtl {
-    .x-text-with-button-wrapper {
-        .x-barcodeBtnContainer {
-        
-            right: auto !important;
-            border-right: 0;
-            border-bottom-right-radius: 0;
-            border-top-right-radius: 0;
+
+
+    :focus-visible{
+        outline: none !important;
+        border: none;
+    }
+
+
+.xstyle-barcodetextcontrol-wrapper input.k-textbox.x-textbox{ padding-right:15px }
+
+.x-text-with-button-wrapper.barcode-container{width:fit-content}
+
+.x-text-with-button-wrapper .x-barcodeBtnContainer{   
+    
+    border: none;
+    color: var(--button-primary-text-color-default);
+    background-color: var(--button-primary-bg-color-default)  ;
+    border-radius: 4px;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    left:unset;
+    right:calc(100% + 5px);
+
+
+
+.k-icon::before{
+    color: var(--button-primary-icon-color-default);
+}
+
+    &:hover{
+        border: none;
+        background-color:var(--button-primary-bg-color-hover) ;
+
+        a{
+            color:var(--button-primary-text-color-default);
         }
     }
+
+    &:focus,:active,:focus-within{
+        background: var(--button-primary-bg-color-focus) !important;
+        box-shadow: var(--button-primary-focus) !important;
+        border-radius: 4px;
+    }}
+#TafnitCore_System_UI_App_Tools_BarcodeScannerPopup{
+    a.k-window-action{
+        border: none;
+        background: none;
+        .k-icon{
+            color: #d9d9d9;
+        }
+    }
+}
+.x-text-with-button-wrapper .x-barcodeBtnContainer {height:100%;top:0;}
+
+
+.k-drag-clue, .k-grid-header, .k-grouping-header, .k-header, .k-menu, .k-panelbar>.k-panelbar-header>.k-link, .k-progressbar, .k-state-highlight, .k-tabstrip, .k-tabstrip-items .k-item, .k-toolbar{
+    background-image: none !important;
+}
+
+
+.popUpWindowCls #TafnitCore_System_UI_App_Tools_BarcodeScannerPopup{
+    &.x-pagePopup{
+
+        box-shadow: 0px 5px 8px 0px rgba(142, 187, 207, 0.20);
+        background-color: #fff;
+        border-radius: 4px;
+        max-height: 95%;
+        max-width: 95%;
+       margin: auto !important;
+    }
+
+
+    &::-webkit-scrollbar {
+        width: 10px ;
+        border-radius: 10px;
+        position: absolute;
+      }
+    
+  
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #f0f0f0;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background:rgba(142, 187, 207, 1);
+        border-radius: 10px;
+        
+    
+        &:hover {
+          background:rgba(142, 187, 207, 1) ;
+          
+        }
+        }
 }

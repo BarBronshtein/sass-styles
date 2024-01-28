@@ -1,4 +1,12 @@
 #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login{
+<<<<<<< HEAD
+=======
+
+
+  .xstyle-textcontrol-wrapper label{
+    color: #000000;
+  }
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
   .xtaf-logo-image{
     .x-image-wrapper {
       text-align: center !important;
@@ -6,9 +14,15 @@
     }
 
     img{
+<<<<<<< HEAD
       width: 284px !important;
       height: auto !important;
 
+=======
+      width: 370px !important;
+      height: auto !important;
+      margin: auto;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     }
   }
 
@@ -31,6 +45,10 @@
     z-index: 10001;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
+=======
+    margin: auto;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
     -webkit-backface-visibility: hidden; 
   }
 }
@@ -203,7 +221,11 @@
   padding: 0;
   width: fit-content;
   position: absolute;
+<<<<<<< HEAD
   right: 56px;
+=======
+  right: 165px;
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
 
 }
 

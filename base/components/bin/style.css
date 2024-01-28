@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
 /*header*/
 /*footer*/
 /*row*/
@@ -43,6 +40,9 @@
 /*phone*/
 /*spinner*/
 /*Dashboard*/
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
 .k-autocomplete {
   border-radius: 0px;
   border: 0;
@@ -208,16 +208,16 @@
 .k-drawer .k-panelbar .k-item {
   background: none !important;
 }
-.k-drawer .k-panelbar .k-item .k-link.k-state-focused {
+.k-drawer .k-panelbar .k-item .k-link.k-state-focused, .k-drawer .k-panelbar .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-drawer .k-panelbar .k-item td.k-state-focused.k-state-hover {
   box-shadow: none !important;
   border: 0 !important;
 }
-.k-drawer .k-panelbar .k-item .k-link.k-header {
+.k-drawer .k-panelbar .k-item .k-link.k-header, .k-drawer .k-panelbar .k-item .k-calendar .k-calendar-view td.k-header.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-drawer .k-panelbar .k-item td.k-header.k-state-focused.k-state-hover {
   color: #fff !important;
   background-image: none !important;
   background: #9038ba !important;
 }
-.k-drawer .k-panelbar .k-item .k-panel .k-item .k-link.k-state-hover {
+.k-drawer .k-panelbar .k-item .k-panel .k-item .k-link.k-state-hover, .k-drawer .k-panelbar .k-item .k-panel .k-item .k-calendar .k-calendar-view td.k-state-hover.k-state-focused, .k-calendar .k-calendar-view .k-drawer .k-panelbar .k-item .k-panel .k-item td.k-state-hover.k-state-focused {
   background: none !important;
   font-weight: bold !important;
 }
@@ -349,12 +349,12 @@
 .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap {
   border-color: #000;
 }
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link {
+.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link, .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover {
   background-color: #9e30bf;
   color: #fff;
   transition: 0.2s all;
 }
-.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link:hover {
+.k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-link:hover, .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .k-grid .k-grid-content tr.k-grid-edit-row .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover:hover {
   opacity: 0.7;
 }
 .k-grid .k-grid-content tr:hover, .k-grid .k-grid-content tr:hover td {
@@ -398,10 +398,10 @@
 .k-grid .k-grid-pager .k-pager-nav > span {
   font-size: 27px !important;
 }
-.k-grid .k-grid-pager .k-link.k-selected {
+.k-grid .k-grid-pager .k-link.k-selected, .k-grid .k-grid-pager .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-grid .k-grid-pager td.k-selected.k-state-focused.k-state-hover {
   background: linear-gradient(to top, #5e1780 -46%, #7f2ba7 163%, #9e30bf 163%);
 }
-.k-grid .k-grid-pager .k-link:hover {
+.k-grid .k-grid-pager .k-link:hover, .k-grid .k-grid-pager .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .k-grid .k-grid-pager td.k-state-focused.k-state-hover:hover {
   background-image: none !important;
   background-color: #9e30bf !important;
   color: #ebebeb !important;
@@ -414,7 +414,7 @@
   background-color: #fff;
   border-color: #eee;
 }
-.k-grid .k-auto-scrollable {
+.k-grid .k-auto-scrollable, .k-grid .DashboardPage .dashDiary .k-scheduler-content, .DashboardPage .dashDiary .k-grid .k-scheduler-content {
   scrollbar-face-color: #7d0a8c;
   scrollbar-track-color: #ee9df8;
   scrollbar-arrow-color: #7d0a8c;
@@ -424,19 +424,19 @@
   scrollbar-shadow-color: #000;
   scrollbar-darkshadow-color: #000;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar-track {
+.k-grid .k-auto-scrollable::-webkit-scrollbar-track, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar-track, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar {
+.k-grid .k-auto-scrollable::-webkit-scrollbar, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar {
   width: 10px;
   height: 10px;
   background: #7d0a8c;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb {
+.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar-thumb, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar-thumb {
   background: #7d0a8c;
   border-radius: 10px;
 }
-.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb:hover {
+.k-grid .k-auto-scrollable::-webkit-scrollbar-thumb:hover, .k-grid .DashboardPage .dashDiary .k-scheduler-content::-webkit-scrollbar-thumb:hover, .DashboardPage .dashDiary .k-grid .k-scheduler-content::-webkit-scrollbar-thumb:hover {
   background: #680874;
 }
 
@@ -539,12 +539,12 @@ header.k-header .k-toolbar {
 .k-filter-menu .k-numerictextbox .k-numeric-wrap {
   border-color: #000;
 }
-.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link {
+.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link, .k-filter-menu .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-filter-menu .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover {
   background-color: #9e30bf;
   color: #fff;
   transition: 0.2s all;
 }
-.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link:hover {
+.k-filter-menu .k-numerictextbox .k-numeric-wrap .k-link:hover, .k-filter-menu .k-numerictextbox .k-numeric-wrap .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .k-filter-menu .k-numerictextbox .k-numeric-wrap td.k-state-focused.k-state-hover:hover {
   opacity: 0.7;
 }
 
@@ -635,9 +635,6 @@ header.k-header .k-toolbar {
   border-top-width: 0px;
   border-bottom-width: 1px;
 }
-.xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::-moz-placeholder {
-  color: #464247;
-}
 .xstyle-multiselect-wrapper .k-multiselect .k-multiselect-wrap input::placeholder {
   color: #464247;
 }
@@ -697,6 +694,7 @@ mainbody .x-section-header-wrraper {
 .k-slider .k-draghandle {
   border-color: #000;
   background-color: #000;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .k-slider .k-draghandle:hover {
@@ -754,7 +752,7 @@ mainbody .x-section-header-wrraper {
 .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item.k-state-active {
   background: #fff;
 }
-.xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link {
+.xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link, .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover {
   color: #7d0a8c;
 }
 .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-next,
@@ -1066,10 +1064,10 @@ input[type=time] {
 .DashboardPage .k-animation-container .k-header {
   background: #8733af;
 }
-.DashboardPage .k-animation-container .k-link:hover {
+.DashboardPage .k-animation-container .k-link:hover, .DashboardPage .k-animation-container .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .DashboardPage .k-animation-container td.k-state-focused.k-state-hover:hover {
   background: #7924a0 !important;
 }
-.DashboardPage .k-animation-container .k-calendar td.k-state-focused .k-link {
+.DashboardPage .k-animation-container .k-calendar td.k-state-focused .k-link, .DashboardPage .k-animation-container .k-calendar td.k-state-focused .k-calendar-view td.k-state-focused.k-state-hover, .DashboardPage .k-animation-container .k-calendar .k-calendar-view td.k-state-focused td.k-state-focused.k-state-hover {
   box-shadow: inset 0 0 2px 1px #8733af;
 }
 .DashboardPage .k-animation-container .k-calendar .k-footer .k-nav-today {
@@ -1081,7 +1079,7 @@ input[type=time] {
 .DashboardPage .k-grid .k-grid-content td a {
   color: #7d0a8c !important;
 }
-.DashboardPage .k-grid .k-link:hover {
+.DashboardPage .k-grid .k-link:hover, .DashboardPage .k-grid .k-calendar .k-calendar-view td.k-state-focused.k-state-hover:hover, .k-calendar .k-calendar-view .DashboardPage .k-grid td.k-state-focused.k-state-hover:hover {
   background: transparent !important;
 }
 .DashboardPage .k-button {
@@ -1338,10 +1336,16 @@ input[type=time] {
 .DashboardPage .dashOverview .k-pager-nav {
   border-color: #8733af;
 }
-.DashboardPage .dashMyMission .k-link.k-selected,
+.DashboardPage .dashMyMission .k-link.k-selected, .DashboardPage .dashMyMission .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .DashboardPage .dashMyMission td.k-selected.k-state-focused.k-state-hover,
 .DashboardPage .dashStatus .k-link.k-selected,
+.DashboardPage .dashStatus .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover,
+.k-calendar .k-calendar-view .DashboardPage .dashStatus td.k-selected.k-state-focused.k-state-hover,
 .DashboardPage .dashContact .k-link.k-selected,
-.DashboardPage .dashOverview .k-link.k-selected {
+.DashboardPage .dashContact .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover,
+.k-calendar .k-calendar-view .DashboardPage .dashContact td.k-selected.k-state-focused.k-state-hover,
+.DashboardPage .dashOverview .k-link.k-selected,
+.DashboardPage .dashOverview .k-calendar .k-calendar-view td.k-selected.k-state-focused.k-state-hover,
+.k-calendar .k-calendar-view .DashboardPage .dashOverview td.k-selected.k-state-focused.k-state-hover {
   background: #8733af;
 }
 .DashboardPage .dashMission1,
@@ -1798,7 +1802,7 @@ mainbody .gridHeaderButton .kIconPaint {
 .k-tabstrip .k-tabstrip-items .k-item.k-state-active {
   border-bottom: 4px solid #7d0a8c;
 }
-.k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link {
+.k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link, .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover {
   font-weight: bold;
 }
 
@@ -2333,7 +2337,7 @@ mainbody .gridHeaderButton .kIconPaint {
   font-size: 14px !important;
   color: #464247 !important;
 }
-.window-details-row .k-grid .k-grid-header th .k-link {
+.window-details-row .k-grid .k-grid-header th .k-link, .window-details-row .k-grid .k-grid-header th .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .window-details-row .k-grid .k-grid-header th td.k-state-focused.k-state-hover {
   color: #464247 !important;
   opacity: 0.7;
 }
@@ -2609,13 +2613,19 @@ mainbody .gridHeaderButton .kIconPaint {
 #TafnitCore_SaaSServer_Funding_UI_Login mainbody .xstyle-password-wrapper span.k-textbox {
   border: 0;
 }
-#TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-text-control-container .x-textbox, #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_ImporterCustomers_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_Student_Enrollment_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_B2B_TafnitSelfService_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Portal_Agents_UI_Login mainbody .k-filter-menu-container .x-textbox,
 #TafnitCore_ToDo_UI_Login mainbody .x-text-control-container .x-textbox,
-#TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-text-control-container .x-textbox {
+#TafnitCore_ToDo_UI_Login mainbody .k-filter-menu-container .x-textbox,
+#TafnitCore_SaaSServer_Funding_UI_Login mainbody .x-text-control-container .x-textbox,
+#TafnitCore_SaaSServer_Funding_UI_Login mainbody .k-filter-menu-container .x-textbox {
   border-bottom: 1.5px solid #043563 !important;
 }
 #TafnitCore_SaaSServer_Portal_Default_UI_Login mainbody .x-textbox,
@@ -2994,7 +3004,7 @@ progress[value]::-webkit-progress-value {
     max-height: 300px;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .drawerItemScroller {
     max-height: 300px;
   }
@@ -3053,10 +3063,10 @@ progress[value]::-webkit-progress-value {
 .k-drawer-container .k-drawer .k-drawer-wrapper .x-dynamic-label-control:hover {
   font-weight: bold !important;
 }
-.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header {
+.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header, .k-drawer-container .k-drawer .k-drawer-wrapper .k-calendar .k-calendar-view td.k-header.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-drawer-container .k-drawer .k-drawer-wrapper td.k-header.k-state-focused.k-state-hover {
   font-weight: normal !important;
 }
-.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header.k-state-hover {
+.k-drawer-container .k-drawer .k-drawer-wrapper .k-link.k-header.k-state-hover, .k-drawer-container .k-drawer .k-drawer-wrapper .k-calendar .k-calendar-view td.k-header.k-state-hover.k-state-focused, .k-calendar .k-calendar-view .k-drawer-container .k-drawer .k-drawer-wrapper td.k-header.k-state-hover.k-state-focused {
   font-weight: bold !important;
 }
 
@@ -3204,29 +3214,13 @@ legend {
   font-weight: normal !important;
 }
 
-::-moz-placeholder {
-  color: #464247 !important;
-  font-size: 14px !important;
-  font-weight: bold;
-}
-
 ::placeholder {
   color: #464247 !important;
   font-size: 14px !important;
   font-weight: bold;
 }
 
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
 .p-floating-container input:not(:placeholder-shown) + label {
-  font-size: 14px !important;
-  color: #464247 !important;
-}
-
-.p-floating-container textarea:not(:-moz-placeholder-shown) + label {
   font-size: 14px !important;
   color: #464247 !important;
 }
@@ -3482,17 +3476,11 @@ ul.fieldlist {
   padding-top: 15px;
   padding-right: 15px;
 }
-.textAreaPadding textarea::-moz-placeholder {
-  color: #464247 !important;
-}
 .textAreaPadding textarea::placeholder {
   color: #464247 !important;
 }
 
 /*color floating label*/
-.p-floating-container input:not(:-moz-placeholder-shown) + label {
-  color: #afaeb0 !important;
-}
 .p-floating-container input:not(:placeholder-shown) + label,
 .p-floating-container ul[role=listbox] + input + label {
   color: #afaeb0 !important;
@@ -3506,19 +3494,11 @@ ul.fieldlist {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.xstyle-lookuptafnit-wrapper input.k-textbox::-moz-placeholder {
-  text-overflow: ellipsis;
-  width: 39%;
-}
 .xstyle-lookuptafnit-wrapper input.k-textbox::placeholder {
   text-overflow: ellipsis;
   width: 39%;
 }
 @media screen and (max-width: 576px) {
-  .xstyle-lookuptafnit-wrapper::-moz-placeholder {
-    text-overflow: ellipsis;
-    width: 69% !important;
-  }
   .xstyle-lookuptafnit-wrapper::placeholder {
     text-overflow: ellipsis;
     width: 69% !important;
@@ -3565,7 +3545,7 @@ ul.fieldlist {
   opacity: 0.8;
 }
 
-.k-rtl .k-grid-header th.k-with-icon .k-link {
+.k-rtl .k-grid-header th.k-with-icon .k-link, .k-rtl .k-grid-header th.k-with-icon .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, .k-calendar .k-calendar-view .k-rtl .k-grid-header th.k-with-icon td.k-state-focused.k-state-hover {
   margin-left: 0 !important;
 }
 
@@ -3583,15 +3563,17 @@ ul.fieldlist {
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item.k-state-active span.k-link {
   border: none !important;
 }
-#TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link, #TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover,
+#TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link, .k-calendar .k-calendar-view #TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-link,
+.k-calendar .k-calendar-view #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item .k-calendar .k-calendar-view td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-calendar .k-calendar-view .xstyle-tab-wrapper .k-tabstrip .k-tabstrip-items .k-item td.k-state-focused.k-state-hover {
   color: #7d0a8c !important;
   opacity: 0.6 !important;
 }
-#TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link, #TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover,
+#TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link, .k-calendar .k-calendar-view #TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover, #TafnitCore_System_UI_App_WebSDK_Login .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-link,
+.k-calendar .k-calendar-view #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-tabstrip .k-tabstrip-items .k-item.k-state-active .k-calendar .k-calendar-view td.k-state-focused.k-state-hover,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login .k-calendar .k-calendar-view .k-tabstrip .k-tabstrip-items .k-item.k-state-active td.k-state-focused.k-state-hover {
   color: #7d0a8c !important;
@@ -3610,10 +3592,6 @@ ul.fieldlist {
 }
 #TafnitCore_System_UI_App_WebSDK_Login input.k-textbox,
 #TafnitCore_SaaSServer_TafnitCloud_UI_Login input.k-textbox {
-  padding-right: 10px !important;
-}
-#TafnitCore_System_UI_App_WebSDK_Login ::-moz-placeholder, #TafnitCore_SaaSServer_TafnitCloud_UI_Login ::-moz-placeholder {
-  font-weight: normal !important;
   padding-right: 10px !important;
 }
 #TafnitCore_System_UI_App_WebSDK_Login ::placeholder,

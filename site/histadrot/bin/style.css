@@ -66,9 +66,6 @@
 .xstyle-textcontrol-wrapper input.k-textbox.x-textbox:focus {
   border: 1px solid #F37A1F !important;
 }
-.xstyle-textcontrol-wrapper input.k-textbox.x-textbox::-moz-placeholder {
-  color: #BBBBBB !important;
-}
 .xstyle-textcontrol-wrapper input.k-textbox.x-textbox::placeholder {
   color: #BBBBBB !important;
 }
@@ -1244,14 +1241,6 @@
   line-height: 24px;
   color: #000000;
 }
-.xstyle-date-wrapper input::-moz-placeholder {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #AAAAAA;
-}
 .xstyle-date-wrapper input::placeholder {
   font-family: "Heebo";
   font-style: normal;
@@ -1648,7 +1637,6 @@ mainbody .row-main .col-list .list {
   gap: 4px;
 }
 mainbody .row-main .col-list .list label {
-  width: -moz-max-content;
   width: max-content;
   font-family: "Heebo";
   font-style: normal;
@@ -1865,9 +1853,6 @@ mainbody .row-main .col-list .list span {
 }
 .xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox:focus {
   border: 1px solid #F37A1F !important;
-}
-.xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox::-moz-placeholder {
-  color: #BBBBBB !important;
 }
 .xstyle-textwithbuttonsimple-wrapper input.k-textbox.x-textbox::placeholder {
   color: #BBBBBB !important;
@@ -2683,7 +2668,6 @@ mainbody .row-main .col-list .list span {
   margin-top: 3px;
 }
 #TafnitCore_xHistadrut_UI_VisitInfo .xstyle-textareacontrol-wrapper label {
-  width: -moz-max-content;
   width: max-content;
   font-family: "Heebo";
   font-style: normal;

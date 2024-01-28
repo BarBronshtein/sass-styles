@@ -31,8 +31,29 @@
     
     
     
+<<<<<<< HEAD
     
     & span.k-datepicker{
+=======
+    & .x-datePickerResponsive.s-datePickerResponsive.x-datePicker-mobile{
+        height: 40px ;
+        background: $control-background ;
+        border: 1px solid $control-border-input !important;
+        border-radius: 10px  !important;
+        padding: 10px 20px ;
+        font-family: 'Heebo' ;
+        font-style: normal ;
+        font-weight: 400 ;
+        font-size: 14px !important ;
+        color: $control-color-input !important;
+        text-align: right ;
+        &:focus-within{
+            border: 1px solid $control-border-focus !important;
+            box-shadow: $control-box-shadow-focus;
+        }
+    }
+    & span.k-datepicker {
+>>>>>>> d8024ddf2eb628e03a7b386290b8ee7da12a2b60
         @extend %texbox-input;
 
         &:focus-within{
