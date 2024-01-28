@@ -1,5 +1,26 @@
+
+.x-label-note{
+    span{
+        color: var(--label-text-color-subtitle) !important;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Heebo;
+        font-size: 12px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+    }
+    
+    }
+
 .xstyle-dynamiclabelcontrol-wrapper{
 
+
+&.k-state-disabled {
+
+   span,label{
+       color: var(--label-text-color-disable) !important;
+   }
+}
 &.x-label-large{
     span,label{
         font-size: 22px;
@@ -66,6 +87,52 @@ span{
         font-weight: 400;
         line-height: 100%;
         margin-top: 1px;
+    }
+
+
+    &.x-label-large{
+        span,label{
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }   
+
+}
+
+
+&.x-label-table{
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+
+
+    span{
+        color: var(--label-text-color-listvalue);
+        text-align: left !important;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
+    }
+
+    label{
+        overflow: hidden;
+        color: var(--label-text-color-listcaption);
+        text-align: right;
+        text-overflow: ellipsis;
+        font-family: Heebo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        margin-top: 1px;
+
     }
 
 

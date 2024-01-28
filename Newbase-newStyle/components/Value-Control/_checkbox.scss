@@ -1,9 +1,9 @@
 
 
-.xstyle-checkbox-wrapper{
-    min-height: 39px;
-    margin-top: 15px;
- input{
+.xstyle-checkbox-wrapper,input{
+      
+ 
+ input,&.k-checkbox{
     border: 1px solid var(--checkbox-unselected-border-color-default);
     width: 14px;
     height: 14px;

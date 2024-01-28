@@ -5,6 +5,8 @@
 @import './Page/TradeIn';
 @import './Page/AddAccessory.scss';
 @import './Page/LookUp';
+@import './Page/Documents';
+@import './Page/AddOwnership';
 
 @import './components/radiobutton';
 @import './components/drawer';
@@ -70,7 +72,7 @@
 .xstyle-date-wrapper span.k-datepicker,  
 .xstyle-date-wrapper span.x-timepicker.span, 
 .xstyle-datetimepicker-wrapper span.k-datepicker,
-.x-selection-lookup {
+.xstyle-lookuptafnit-wrapper,.xstyle-lookup-wrapper {
   label{
     font-size: 12px !important;
   }
@@ -91,10 +93,24 @@
 
 .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td a:has(.icon-xtar-wf-edit2){
 
-  text-decoration: none;
+  text-decoration: none !important;
   float: left;
-
+  color: var(--grid-cell-icon-color-default) !important;
   i{
     font-size: 18px;
+    color: var(--grid-cell-icon-color-default) !important;
+    text-decoration: none !important;
+  }
+}
+
+.xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td.color-text{
+  color: var(--label-text-color-subtitle);
+}
+
+.icon-xtar-double-arrow-right{
+  color: #ff0000 !important;
+  font-size: 13px;
+  &:hover{
+    font-weight: 500;
   }
 }

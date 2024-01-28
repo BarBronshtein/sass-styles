@@ -1,0 +1,28 @@
+
+.k-window:has(#TafnitCore_CarOrder_UI_Documents){
+    width: 50% !important;
+    height: fit-content !important;
+    top: 50% !important;
+    left: 0!important;
+    right: 0;
+    margin: 0 auto;
+    position: absolute !important;
+    transform: translateY(-50%) !important;
+
+    .k-window-title{
+        padding-right: 10px;
+        font-size: 18px;
+        color: var(--label -text-color-title);
+    }
+
+    td a:has(.document-not-exsit){
+        color: var(--grid-cell-text-color-default) !important;
+        text-align: right;
+         text-decoration: none !important;
+        font-family: Heebo;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 120%; /* 15.6px */
+    }
+}

@@ -205,25 +205,7 @@ padding: 0;
 
 /*row collapse button arrow*/
 
-.x-btn-collapse {
-    width: 20px;
-    height: 20px;
-    top: 5px;
-    position: absolute;
-    border: 1px solid;
-    left: 15px;
-    right: auto;
 
-    &.collapsed{
-        transform: rotate(180deg);
-    }
-
-    #x-arrow-collapse {
-        position: absolute;
-        top: 0;
-        left: 15%;
-    }
-}
 
 .k-ltr {
     .x-btn-collapse {

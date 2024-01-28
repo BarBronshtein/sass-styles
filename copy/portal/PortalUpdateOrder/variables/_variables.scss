@@ -143,21 +143,37 @@
 --checkbox-selected-icon-color-focus: #FFFFFF;
 
 --radio-unselected-bg-color-default: #ffffff;
+--radio-unselected-bg-color-disable: #ffffff;
+--radio-unselected-bg-color-mandatory: #ffffff;
+--radio-unselected-bg-color-hover: #ffffff;
+--radio-unselected-bg-color-focus: #ffffff;
+
 --radio-unselected-border-color-default: #000000;
 --radio-unselected-border-color-disable: #C8C8C8;
 --radio-unselected-border-color-mandatory: #000000;
 --radio-unselected-border-color-hover: #5E6164;
 --radio-unselected-border-color-focus: #FF0000;
---radio-selected-bg-color-default: #000000;
---radio-selected-border-color-default: #8EBBCF;
---radio-selected-bg-color-disable: #C8C8C8;
---radio-selected-border-color-disable: #C8C8C8;
---radio-selected-bg-color-mandatory: #000000;
+
+--radio-selected-bg-color-default: #ffffff;
+--radio-selected-bg-color-disable: #ffffff;
+--radio-selected-bg-color-mandatory: #ffffff;
+--radio-selected-bg-color-hover: #ffffff;
+--radio-selected-bg-color-focus: #ffffff;
+
+--radio-selected-border-color-default: #000000;
+--radio-selected-border-color-disable: #c8c8c8;
 --radio-selected-border-color-mandatory: #000000;
---radio-selected-bg-color-hover: #5E6164;
 --radio-selected-border-color-hover: #5E6164;
---radio-selected-bg-color-focus: #FF0000;
 --radio-selected-border-color-focus: #FF0000;
+
+--radio-selected-icon-color-default: #000000;
+--radio-selected-icon-color-disable: #C8C8C8;
+--radio-selected-icon-color-mandatory: #000000;
+--radio-selected-icon-color-hover: #5E6164;
+--radio-selected-icon-color-focus: #FF0000;
+
+--radio-focus:none;
+
 
 
 

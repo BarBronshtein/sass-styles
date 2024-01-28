@@ -1,11 +1,28 @@
-a:not([href]){
-    text-decoration: underline;
-    font-weight: 700;
+
+td a{
+    color: var(--link-text-color-default) !important;
+    text-align: right;
+    /* Link */
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 150%;
+    &:focus-visible{
+        outline: none;
+        border: none;
+    }
     &:hover{
         text-decoration: underline;
-        color: black;
+    }
+
+    &:focus{
+        font-weight: 500;
+        text-decoration: underline;
     }
 }
+
+
 
 .xstyle-ilink-wrapper      {
     &.k-state-disabled{

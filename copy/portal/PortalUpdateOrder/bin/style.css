@@ -57,6 +57,41 @@ body, html {
   padding-right: 20px;
 }
 
+.k-window:has(#TafnitCore_CarOrder_UI_Documents) {
+  width: 50% !important;
+  height: fit-content !important;
+  top: 50% !important;
+  left: 0 !important;
+  right: 0;
+  margin: 0 auto;
+  position: absolute !important;
+  transform: translateY(-50%) !important;
+}
+.k-window:has(#TafnitCore_CarOrder_UI_Documents) .k-window-title {
+  padding-right: 10px;
+  font-size: 18px;
+  color: var(--label -text-color-title);
+}
+.k-window:has(#TafnitCore_CarOrder_UI_Documents) td a:has(.document-not-exsit) {
+  color: var(--grid-cell-text-color-default) !important;
+  text-align: right;
+  text-decoration: none !important;
+  font-family: Heebo;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 120%; /* 15.6px */
+}
+
+.k-window:has(#TafnitCore_CarOrder_UI_AddOwnership) {
+  width: 350px !important;
+  height: fit-content !important;
+  top: 30% !important;
+  left: 35% !important;
+  margin: unset;
+  position: absolute !important;
+}
+
 .xstyle-radio-wrapper label {
   font-size: 12px;
 }
@@ -67,7 +102,7 @@ body, html {
   padding: 0px 0px 0px 10px;
 }
 
-.k-drawer-container .k-drawer {
+.k-drawer-container.k-drawer-expanded .k-drawer {
   height: auto !important;
   top: 60px !important;
   right: 10px !important;
@@ -92,6 +127,9 @@ body, html {
 .xstyle-dynamiclabelcontrol-wrapper.x-label-pagetitle span {
   font-weight: 500;
 }
+.xstyle-dynamiclabelcontrol-wrapper.x-label-pagesubtitle.x-label-medium span {
+  font-size: 16px;
+}
 
 button.k-button {
   border-radius: 6px;
@@ -103,6 +141,11 @@ button.k-button {
 }
 .xstyle-ilink-wrapper a:hover {
   font-weight: 500;
+}
+
+td a {
+  font-size: 13px;
+  text-decoration: underline !important;
 }
 
 :root {
@@ -225,21 +268,31 @@ button.k-button {
   --checkbox-selected-icon-color-hover: #FFFFFF;
   --checkbox-selected-icon-color-focus: #FFFFFF;
   --radio-unselected-bg-color-default: #ffffff;
+  --radio-unselected-bg-color-disable: #ffffff;
+  --radio-unselected-bg-color-mandatory: #ffffff;
+  --radio-unselected-bg-color-hover: #ffffff;
+  --radio-unselected-bg-color-focus: #ffffff;
   --radio-unselected-border-color-default: #000000;
   --radio-unselected-border-color-disable: #C8C8C8;
   --radio-unselected-border-color-mandatory: #000000;
   --radio-unselected-border-color-hover: #5E6164;
   --radio-unselected-border-color-focus: #FF0000;
-  --radio-selected-bg-color-default: #000000;
-  --radio-selected-border-color-default: #8EBBCF;
-  --radio-selected-bg-color-disable: #C8C8C8;
-  --radio-selected-border-color-disable: #C8C8C8;
-  --radio-selected-bg-color-mandatory: #000000;
+  --radio-selected-bg-color-default: #ffffff;
+  --radio-selected-bg-color-disable: #ffffff;
+  --radio-selected-bg-color-mandatory: #ffffff;
+  --radio-selected-bg-color-hover: #ffffff;
+  --radio-selected-bg-color-focus: #ffffff;
+  --radio-selected-border-color-default: #000000;
+  --radio-selected-border-color-disable: #c8c8c8;
   --radio-selected-border-color-mandatory: #000000;
-  --radio-selected-bg-color-hover: #5E6164;
   --radio-selected-border-color-hover: #5E6164;
-  --radio-selected-bg-color-focus: #FF0000;
   --radio-selected-border-color-focus: #FF0000;
+  --radio-selected-icon-color-default: #000000;
+  --radio-selected-icon-color-disable: #C8C8C8;
+  --radio-selected-icon-color-mandatory: #000000;
+  --radio-selected-icon-color-hover: #5E6164;
+  --radio-selected-icon-color-focus: #FF0000;
+  --radio-focus:none;
   --treeview-arrow-color-default: rgba(0, 0, 0, 1);
   --treeview-arrow-color-disable: rgba(200, 200, 200, 1);
   --treeview-bg-color-focus: rgba(255, 255, 255, 1);
@@ -643,7 +696,7 @@ button.k-button {
 .xstyle-date-wrapper span.k-datepicker label,
 .xstyle-date-wrapper span.x-timepicker.span label,
 .xstyle-datetimepicker-wrapper span.k-datepicker label,
-.x-selection-lookup label {
+.xstyle-lookuptafnit-wrapper label, .xstyle-lookup-wrapper label {
   font-size: 12px !important;
 }
 
@@ -660,9 +713,24 @@ button.k-button {
 }
 
 .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td a:has(.icon-xtar-wf-edit2) {
-  text-decoration: none;
+  text-decoration: none !important;
   float: left;
+  color: var(--grid-cell-icon-color-default) !important;
 }
 .xstyle-gridv4-wrapper .x-grid-control .k-grid-content tr td a:has(.icon-xtar-wf-edit2) i {
   font-size: 18px;
+  color: var(--grid-cell-icon-color-default) !important;
+  text-decoration: none !important;
+}
+
+.xstyle-gridv4-wrapper .x-control-content-wrapper .k-grid-content tr td.color-text {
+  color: var(--label-text-color-subtitle);
+}
+
+.icon-xtar-double-arrow-right {
+  color: #ff0000 !important;
+  font-size: 13px;
+}
+.icon-xtar-double-arrow-right:hover {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

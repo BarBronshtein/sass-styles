@@ -133,23 +133,40 @@
     --checkbox-selected-icon-color-focus: #ACCEDD;
 
     
-    --radio-unselect-bg-color-default: #ffffff;
-    --radio-unselect-border-color-default: #000000;
-    --radio-unselect-border-color-disable: #C8C8C8;
-    --radio-unselect-border-color-mandatory: #30C6F5;
-    --radio-unselect-border-color-hover: #000000;
+    --radio-unselected-bg-color-default: #ffffff;
+    --radio-unselected-bg-color-disable: #ffffff;
+    --radio-unselected-bg-color-mandatory: #ffffff;
+    --radio-unselected-bg-color-hover: #ffffff;
+    --radio-unselected-bg-color-focus: #ffffff;
+    
+    --radio-unselected-border-color-default: #000000;
+    --radio-unselected-border-color-disable: #C8C8C8;
+    --radio-unselected-border-color-mandatory: #30C6F5;
+    --radio-unselected-border-color-hover: #80A9BB;
     --radio-unselected-border-color-focus: #ACCEDD;
-    --radio-selected-bg-color-default: #8EBBCF;
+    
+    --radio-selected-bg-color-default: #ffffff;
+    --radio-selected-bg-color-disable: #ffffff;
+    --radio-selected-bg-color-mandatory: #ffffff;
+    --radio-selected-bg-color-hover: #ffffff;
+    --radio-selected-bg-color-focus: #ffffff;
+    
     --radio-selected-border-color-default: #8EBBCF;
-    --radio-selected-bg-color-disable: #C8C8C8;
-    --radio-selected-border-color-disable: #C8C8C8;
-    --radio-selected-bg-color-mandatory: #30C6F5;
+    --radio-selected-border-color-disable: #c8c8c8;
     --radio-selected-border-color-mandatory: #30C6F5;
-    --radio-selected-bg-color-hover: #8EBBCF;
-    --radio-selected-border-color-hover: #8EBBCF;
-    --radio-selected-bg-color-focus: #ACCEDD;
+    --radio-selected-border-color-hover: #80A9BB;
     --radio-selected-border-color-focus: #ACCEDD;
-
+    
+    --radio-selected-icon-color-default: #8EBBCF;
+    --radio-selected-icon-color-disable: #C8C8C8;
+    --radio-selected-icon-color-mandatory: #30C6F5;
+    --radio-selected-icon-color-hover: #80A9BB;
+    --radio-selected-icon-color-focus: #ACCEDD;
+    
+    --radio-focus: 0px 0px 1px rgba(142, 187, 207, 0.30);
+    
+    --collapse-bg-color:#E7E7E7;
+    --collapse-text-color:#000;
 
     --treeview-arrow-color-default: rgba(0, 0, 0, 1);
     --treeview-arrow-color-disable: rgba(200, 200, 200, 1);

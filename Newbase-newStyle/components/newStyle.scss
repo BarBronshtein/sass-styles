@@ -14,6 +14,7 @@
 @import '../components/container-controls/tab';
 @import '../components/container-controls/window';
 @import '../components/container-controls/ButtonGroup';
+@import '../components/container-controls/collapse';
 @import '../components/grid';
 
 
@@ -264,6 +265,32 @@ margin: 0;
     all: initial;
 
   }
+
+  &::-webkit-scrollbar {
+ 
+    height: 8px !important;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: var(--scrollbar-track-bg-color);
+    width: 5px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background:var(--scrollbar-thumb-bg-color-default)  ;
+    border-radius: 20px;
+    width: 5px;
+  
+    &:hover {
+      background: var(--scrollbar-thumb-bg-color-hover);
+      width: 5px;
+    }
+    }
 }
 
 .x-dev-mode-edit-btn::before{
