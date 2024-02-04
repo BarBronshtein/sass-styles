@@ -179,71 +179,71 @@
   background: white;
   padding-bottom: unset !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container footer,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container mainbody {
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFC328FF' stroke-width='1' stroke-dasharray='30%2c 20' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e") !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header.ux-studio-border-hover,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer.ux-studio-border-hover,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody.ux-studio-border-hover {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container header.ux-studio-border-hover,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container footer.ux-studio-border-hover,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container mainbody.ux-studio-border-hover {
   background-image: none !important;
   border: 1px solid #E2AB1D !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header.ux-studio-border-hover::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer.ux-studio-border-hover::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody.ux-studio-border-hover::before {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container header.ux-studio-border-hover::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container footer.ux-studio-border-hover::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container mainbody.ux-studio-border-hover::before {
   background-color: #E2AB1D;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-row {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .x-row {
   border-radius: 0;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .row,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container header,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container footer,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container mainbody {
   margin-block: 15px;
   padding: 15px;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container mainbody {
   position: relative;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .row,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .col {
   padding-block: 20px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23C8C8C8FF' stroke-width='1' stroke-dasharray='20%2c 10' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e") !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row.ux-studio-border-hover,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col.ux-studio-border-hover {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .row.ux-studio-border-hover,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .col.ux-studio-border-hover {
   background-image: none !important;
   border: 1px solid #A1A3A5 !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row.ux-studio-border-hover::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col.ux-studio-border-hover::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper.ux-studio-border-hover::before {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .row.ux-studio-border-hover::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .col.ux-studio-border-hover::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .x-control-wrapper.ux-studio-border-hover::before {
   background-color: #a1a3a5;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .x-control-wrapper {
   margin-block: 20px;
   padding: 5px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23C8C8C8FF' stroke-width='1' stroke-dasharray='20%2c 10' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e") !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper.ux-studio-bottom-border {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .x-control-wrapper.ux-studio-bottom-border {
   border-bottom: 2px solid #074b5f !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper.ux-studio-top-border {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .x-control-wrapper.ux-studio-top-border {
   border-top: 2px solid #074b5f !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper.ux-studio-border-hover {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .x-control-wrapper.ux-studio-border-hover {
   background-image: none !important;
   border: 1px solid #A1A3A5 !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .row::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .col::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .x-control-wrapper::before {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container header::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container footer::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container mainbody::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .row::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .col::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .x-control-wrapper::before {
   content: attr(data-controlType);
   position: absolute;
   top: -15px;
@@ -257,16 +257,16 @@
   font-weight: 500;
   line-height: 120%;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border header::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border footer::before,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border mainbody::before {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container header::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container footer::before,
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container mainbody::before {
   background-color: #FFC328;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .ux-studio-selected {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .ux-studio-selected {
   background-image: none !important;
   border: 1px solid #2950D9 !important;
 }
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border .ux-studio-selected::before {
+#TafnitCore_System_UI_App_Tools_Studio_UXStudio .ux-studio-border.ux-studio-xtafnit-container .ux-studio-selected::before {
   content: attr(data-controlType) "  \e9b8";
   background-color: #2950D9;
 }
@@ -280,7 +280,6 @@
   color: #C8C8C8 !important;
 }
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio,
-#TafnitCore_System_UI_App_Tools_Studio_UXStudio header,
 #TafnitCore_System_UI_App_Tools_Studio_UXStudio div[uxid=xstudioMainRow] {
   border-radius: 0;
   padding: 0 !important;

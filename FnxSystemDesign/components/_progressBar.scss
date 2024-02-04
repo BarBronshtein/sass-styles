@@ -1,0 +1,17 @@
+.xstyle-progressbar-wrapper{
+    direction: ltr;
+}
+.xstyle-progressbar-wrapper .x-progressbar{
+    height: 6px;
+    border-radius:0 ;
+}
+
+.xstyle-progressbar-wrapper ul{
+    border-radius:0 ;
+
+    li{
+        height: 6px;
+        border-radius: 0 !important;
+    }
+}
+

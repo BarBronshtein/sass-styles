@@ -1,0 +1,25 @@
+
+.xstyle-textcontrol-wrapper,.xstyle-testcontrol-wrapper {
+
+
+  
+  .x-control-caption-wrapper.s-control-caption-wrapper{
+    position: absolute;
+    top: -8px;
+    z-index: 2;
+    left: 20px;
+    background: white;
+    height: 17px;
+    width: fit-content;
+    padding: 0 10px;
+    right: 10px;
+  }
+
+  input{
+
+    border-radius: 6px !important;
+  }
+}
+
+
+

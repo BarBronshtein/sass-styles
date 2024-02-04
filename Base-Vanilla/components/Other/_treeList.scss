@@ -1,0 +1,23 @@
+.xstyle-treelist-wrapper{
+    .x-control-content-wrapper{
+
+        .x-treeList        {
+            border: none !important;
+            .k-icon{
+
+                &.k-i-collapse::before{
+                    content: "\f0d7";
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 700;
+                }
+                &.k-i-expand::before{
+                    content:"\f0da";
+                    font-family: "Font Awesome 5 Pro" ;
+                    font-weight: 700;
+                }
+            }
+            
+        }
+    }
+
+}

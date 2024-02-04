@@ -1,0 +1,231 @@
+
+
+.k-dropdown {
+    width: 100%;
+
+    span {
+        &.k-icon {
+            width: 100%;
+        }
+
+        &.k-input {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .k-select {
+        // border-color: transparent;
+        // background-color: transparent;
+        // width: 100%;
+        text-align: right;
+    }
+}
+
+
+
+
+.xstyle-idropdownlist-wrapper{
+margin-top: 15px;
+
+&.x-dropdown-small{
+
+  span.x-dropdown-comp.s-dropdown-comp{
+    height: 30px;
+    padding: 5px;
+
+    .k-input-value-text{
+      font-size: 12px !important;
+
+    
+    }
+  }
+
+  .k-input-button span.k-icon::before{
+    font-size: 17px;
+  }
+}
+&:has(.x-login-user-error-msg){
+  & span.x-dropdown-comp.s-dropdown-comp {
+    border-bottom: 1px solid var(--input-border-color-error) ;
+  }
+
+ }
+  // readonly + disabled //
+
+  &.k-state-disabled,
+  &.x-readonly{
+     & span.x-dropdown-comp.s-dropdown-comp{
+
+      background: var(--input-bg-color-default) ;
+      & span.k-icon{
+          &::before{
+            color: var(--label-text-color-disable) ; 
+          }
+         }
+
+
+      
+     }
+
+     & label{
+      color: var(--label-text-color-disable) ; 
+    }
+ }
+
+ 
+
+
+
+  & span.x-dropdown-comp.s-dropdown-comp {
+   
+       @extend %texbox-input;
+
+       .k-icon-button{
+        position: relative;
+        top: 50%;
+        transform:translateY(-50%);
+       }
+
+  &:focus,
+  &:focus-within{
+     box-shadow:var(--input-focus-shadow) ;
+          border: 1px solid var(--input-border-color-focus) ;
+  }
+
+  & .k-input-inner{
+    padding: 0
+  }
+
+  }
+
+  & label{
+
+    @extend %texbox-label;
+  }
+
+ 
+  & .k-input-button{
+
+      &:hover{
+        background: none;
+      }
+    & span.k-icon{
+      &::before{
+        
+        content: "\f0d7";
+        font-size: 20px;
+        font-family: "Font Awesome 5 Pro";
+        color: var(--input-icon-color-default);
+        font-weight: 700;
+      }
+
+  }
+  
+  }
+
+
+}
+
+
+
+
+
+.k-animation-container{
+  .k-list-optionlabel{
+    display: none ;
+  }
+  & .k-popup{
+
+    box-shadow: none ;
+    border-radius: 4px;
+    margin-top: 5px;
+    border: 1px solid var(--listitem-container-border-color);
+    .k-list{
+      border-radius: 0px;
+    }
+    & .k-list-content.k-list-scroller,.k-list-content.k-virtual-content{
+      border-radius: 10px;
+        background: none ;
+        padding: 0px 0px;
+& ul{
+  background: var(--window-bg-color-default) ;
+}
+        & li{
+            height: 41px;
+            border-bottom: 1px solid var(--listitem-border-color-default);
+            background: var(--listitem-bg-color-default);
+
+            &.k-selected.k-focus{
+              background: var(--listitem-bg-color-selected) ;
+              border-bottom: 1px solid var(--listitem-border-color-default);
+              box-shadow: none;
+
+              .k-list-item-text{
+                color: var(--listitem-text-color-selected) ;
+                font-weight: 700;
+              }
+            }
+
+            &:hover{
+              background:var(--listitem-bg-color-hover);
+            
+              .k-list-item-text{
+                color: var(--listitem-text-color-default) ;
+                font-weight: 700;
+              }
+            }
+
+            & span{
+                font-family: 'Heebo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                align-items: center;
+                text-align: right;
+                color: var(--listitem-text-color-default) ;
+            }
+
+        }
+    }
+  }
+
+
+}
+
+
+.k-list-scroller,.k-virtual-content,.k-window-content{
+  scrollbar-face-color: #8EBBCF;
+  scrollbar-track-color: #f3e9f8;
+  scrollbar-arrow-color: #8EBBCF;
+  
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  
+  &::-webkit-scrollbar {
+    width: 10px ;
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: var(--scrollbar-track-bg-color);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background:var(--scrollbar-thumb-bg-color-default)  ;
+    border-radius: 10px;
+    
+  
+    &:hover {
+      background: var(--scrollbar-thumb-bg-color-hover);
+      
+    }
+    }
+  
+  }

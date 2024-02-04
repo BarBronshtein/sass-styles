@@ -1,0 +1,59 @@
+
+#TafnitCore_UpdateCarOrder_UI_FNXsystemDesign{
+
+@import './components/button';
+@import './components/label';
+@import './components/textbox';
+@import './components/checkbox';
+@import './components/drop-down';
+@import './components/progressBar';
+@import './components/row';
+
+}
+
+@import './variables/variables';
+
+
+.k-content:has(#TafnitCore_UpdateCarOrder_UI_FNXsystemDesign){
+.k-animation-container{
+
+    & .k-popup{
+      border-radius: 4px;
+  
+      .k-list{
+        border-radius: 4px;
+      }
+      & .k-list-content.k-list-scroller,.k-list-content.k-virtual-content{
+        border-radius: 4px;
+     
+  
+          & li{
+    
+              & span{
+                 padding-right: 10px;
+                  font-weight: 400;
+                  font-size: 16px;
+               
+              }
+  
+            }
+      }
+    }
+  
+  
+  }
+  
+}
+  
+
+@media (max-width: 900px) {
+  .k-content:has(#TafnitCore_UpdateCarOrder_UI_FNXsystemDesign) .k-animation-container .k-popup {
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px -6px 6px 0px rgba(187, 216, 229, 0.10);
+}
+
+ }
