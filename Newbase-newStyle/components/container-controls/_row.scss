@@ -8,7 +8,7 @@ mainbody{
 & > .row{
 
 
-    border: none !important;
+    border: none ;
     background: var(--row-primary-bg-color); 
     border: none;   
     box-shadow: none;
@@ -67,7 +67,7 @@ mainbody{
 }
 
 &.x-row-hidden{
-    border: none !important;
+    border: none;
     box-shadow: none;
     background: white;
     margin: 0;
@@ -157,7 +157,7 @@ h4.x-cell-header.s-cell-header{
 }
 
 .x-section-wrraper:has(.x-row-hidden){
-    border: none !important;
+    border: none ;
     box-shadow: none;
     background: white;
     margin: 0;

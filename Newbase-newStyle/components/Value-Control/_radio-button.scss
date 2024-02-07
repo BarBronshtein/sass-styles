@@ -14,10 +14,16 @@
     }
 
     .x-radio-input{
-        border: 1px solid var(--radio-unselect-icon-color-default);
+        border: 1px solid var(--radio-unselect-border-color-default);
+        background: var(--radio-unselect-bg-color-default);
+
+        &:hover{
+           border: 1px solid var(--radio-unselect-border-color-hover); 
+        }
+
 
         &:checked{
-            border: 1px solid var(--radio-selected-icon-color-default);
+            border: 1px solid var(--radio-selected-border-color-default);
             &:before{
                 background: var(--radio-selected-icon-color-default);;
             }

@@ -1,0 +1,12 @@
+
+.k-window:has(#TafnitCore_CarOrder_UI_OrderNumber){
+    width: 440px !important;
+    height: fit-content !important;
+    top:15% !important;
+    right: 9% !important;
+    position: absolute !important;
+
+    .k-window-content{
+        margin-top: 5px !important;
+    }
+}

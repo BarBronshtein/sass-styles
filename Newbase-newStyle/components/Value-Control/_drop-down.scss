@@ -138,16 +138,16 @@ margin-top: 15px;
   & .k-popup{
 
     box-shadow: none ;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-top: 5px;
-
+    border: 1px solid var(--listitem-container-border-color);
     .k-list{
       border-radius: 10px;
     }
     & .k-list-content.k-list-scroller,.k-list-content.k-virtual-content{
       border-radius: 10px;
         background: none ;
-        padding: 5px 10px;
+        padding: 0px 0px;
 & ul{
   background: var(--window-bg-color-default) ;
 }

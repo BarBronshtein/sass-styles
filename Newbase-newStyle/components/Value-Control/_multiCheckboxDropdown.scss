@@ -1,5 +1,53 @@
 
 
+.xstyle-multiplecheckboxdropdown-wrapper     {
+  li{
+    color: var(--label-text-color-default);
+    text-align: right;
+    font-family: 'Heebo';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+    input{
+        border: 1px solid var(--checkbox-unselect-icon-color-default) !important;
+        width: 14px;
+        height: 14px;
+        border-radius: 2px;
+  
+        &:checked{
+            border: 1px solid var(--checkbox-selected-icon-color-default) !important;
+            accent-color: var( --checkbox-selected-icon-color-focus);;
+    
+        }
+    
+        &:hover{
+            border-radius: 2px;
+            border: 1px solid var(--checkbox-selected-icon-color-hover) !important;
+            background: var(--color-other-white); 
+            &::before{
+              color: var(--checkbox-selected-icon-color-hover);;
+            }
+        }
+    
+        &:focus{
+            border: 1px solid var(--checkbox-unselect-icon-color-focus);
+            background: var(--color-other-white);
+            box-shadow: 0px 0px 5px 0px rgba(142, 187, 207, 0.60) !important;
+        }
+        &::before{
+            color: var( --checkbox-selected-icon-color-focus);
+            accent-color: var( --checkbox-selected-icon-color-focus);;
+        }
+    
+    
+     }
+}
+
+
+
+
 .x-main-multiCheckbox {
     font-size: 18px;
 

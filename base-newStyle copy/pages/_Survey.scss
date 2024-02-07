@@ -38,12 +38,27 @@
     }
 }
 
+#TafnitCore_SaaSServer_Survey_UI_Survey {
 
+    .xstyle-image-wrapper      {
+        top: 50%;
+        transform: translateY(-50%);
+        img{
+        height: auto !important;
+        width: 150px !important;
+        }
+    }
+}
 #TafnitCore_SaaSServer_Survey_UI_Survey{
 
     .x-control-wrapper{
         flex-wrap: wrap;
         width: 100%;
+      }
+
+      div[uxid="SurveyMainSec"]{
+        height: 81px !important;
+        border: none !important;
       }
 
     .xstyle-linkslist-wrapper .x-grid-control .k-grid-content td a{
@@ -82,7 +97,7 @@ padding: 0 !important;
         position: absolute;
         height: 268px;
         left: 0px;
-        top: 69px;
+        top: 80px;
         background: #8C4D9C;
         border-radius: 20px 20px 0px 0px;
         border: none !important;
@@ -174,7 +189,7 @@ padding: 0 !important;
         background: #FFFFFF !important;
         border-radius: 20px !important;
         border: none !important;
-        margin-top:115px !important;
+        margin-top:120px !important;
         padding: 30px 15px !important;
         width: 100%;
         position: absolute;

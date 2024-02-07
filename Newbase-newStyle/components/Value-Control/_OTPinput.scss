@@ -1,4 +1,8 @@
 .xstyle-otpinput-wrapper{
+
+  .x-login-user-error-msg{
+    text-align: center
+  }
   label{
     @extend %texbox-label;
   }

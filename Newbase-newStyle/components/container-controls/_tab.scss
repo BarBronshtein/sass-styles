@@ -10,7 +10,7 @@
 
         .k-tabstrip-items-wrapper{
             border: none;
-           padding: 0 15px;
+           padding: 0 0px;
             .k-tabstrip-item{
                 background: none;
                 border: none;
@@ -22,7 +22,7 @@
                 span{
                     font-family: 'Heebo';
                     font-style: normal;
-                    font-weight: 300;
+                    font-weight: 400;
                     font-size: 14px;
                     line-height: 130%;
                     color: var(--tab-text-color-default);  
@@ -45,6 +45,7 @@
         .k-tabstrip-content {
             background: none;
             border: none;
+            padding: 15px 0;
         }
     }
 }

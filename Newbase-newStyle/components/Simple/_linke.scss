@@ -8,7 +8,12 @@ a:not([href]){
 }
 
 .xstyle-ilink-wrapper      {
+    &.k-state-disabled{
 
+        a{
+            color: var(--link-text-color-disable);
+        }
+    }
     label{
         color: var(--label-text-color-default);
         text-align: right;

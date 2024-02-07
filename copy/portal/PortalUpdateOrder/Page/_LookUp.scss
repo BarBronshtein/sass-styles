@@ -1,0 +1,16 @@
+
+.k-window:has(#TafnitCore_System_UI_App_Tools_LookupSelection){
+    width: 50% !important;
+    height: auto !important;
+    top: 20% !important;
+    position: absolute !important;
+    padding: 0;
+
+    mainbody > .row{
+        margin: 0;
+    }  
+
+    .k-window-title{
+        padding-right: 20px;
+    }
+}

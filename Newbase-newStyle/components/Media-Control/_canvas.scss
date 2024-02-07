@@ -25,6 +25,19 @@
             border-radius: 100%;
             width: 30px;
             height: 32px;
+
+        &.canvasSaveBtn-indicate-saved{
+            background: var(--canvas-icon-bg-color-selected);
+            color: var(--canvas-icon-color-selected);
+            border: none;
+        }
+
+        &:focus,&:active,&:focus-within{
+            border-radius: 50px;
+            background:#fff;
+            box-shadow: 0px 0px 6px 0px rgba(142, 187, 207, 0.25);
+        }
+
         }
 
         .x-canvas-save-button,
